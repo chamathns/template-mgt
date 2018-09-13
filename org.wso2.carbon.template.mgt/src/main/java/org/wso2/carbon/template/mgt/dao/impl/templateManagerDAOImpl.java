@@ -21,6 +21,7 @@ import org.wso2.carbon.database.utils.jdbc.exceptions.DataAccessException;
 import org.wso2.carbon.template.mgt.TemplateMgtConstants;
 import org.wso2.carbon.template.mgt.dao.templateManagerDAO;
 import org.wso2.carbon.template.mgt.exception.TemplateManagementException;
+import org.wso2.carbon.template.mgt.exception.TemplateManagementServerException;
 import org.wso2.carbon.template.mgt.model.Template;
 import org.wso2.carbon.template.mgt.util.JdbcUtils;
 import org.wso2.carbon.template.mgt.util.TemplateMgtUtils;
@@ -68,6 +69,25 @@ public class templateManagerDAOImpl implements templateManagerDAO {
     }
 
     public List<Template> getAllTemplates(Integer tenantId) throws TemplateManagementException {
+        List<Template> templates;
+        JdbcTemplate jdbcTemplate = JdbcUtils.getNewTemplate();
+
+        try {
+            templates = jdbcTemplate.executeQuery(TemplateMgtConstants.SqlQueries.LIST_TEMPLATES,(resultSet, rowNumber) ->
+                    new Template(resultSet.getInt(1),
+                            resultSet.getInt(2),
+                            resultSet.getString(3),
+                            resultSet.getString(4),
+                            resultSet.getString(5)),
+                    preparedStatement -> {
+                preparedStatement.setInt(1, tenantId);
+                    });
+        } catch (DataAccessException e) {
+            throw new TemplateManagementServerException(String.format(TemplateMgtConstants.ErrorMessages.ERROR_CODE_LIST_TEMPLATES.getMessage(),tenantId),
+                    TemplateMgtConstants.ErrorMessages.ERROR_CODE_LIST_TEMPLATES.getCode(),e);
+        }
+
+
         return null;
     }
 
