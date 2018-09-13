@@ -16,8 +16,16 @@
 package org.wso2.carbon.template.mgt;
 
 public class TemplateMgtConstants {
-    public static class SqlQueries{
 
+    public static final String MY_SQL = "MySQL";
+    public static final String POSTGRE_SQL = "PostgreSQL";
+    public static final String DB2 = "DB2";
+    public static final String H2 = "H2";
+    public static final String MICROSOFT = "Microsoft";
+    public static final String S_MICROSOFT = "microsoft";
+    public static final String INFORMIX = "Informix";
+
+    public static class SqlQueries{
         public static final String INSERT_TEMPLATE = "INSERT INTO IDN_TEMPLATE_MGT (TENANT_ID, NAME, DESCRIPTION, DATA) VALUES (?,?,?,?,?)";
         public static final String GET_TEMPLATE_BY_ID = "SELECT TEMPLATE_ID,TENANT_ID,NAME,DESCRIPTION,DATA FROM IDN_TEMPLATE_MGT WHERE TEMPLATE_ID=? AND TENANT_ID=?";
         public static final String LIST_TEMPLATES = "SELECT TEMPLATE_ID,TENANT_ID,NAME,DESCRIPTION,DATA FROM IDN_TEMPLATE_MGT WHERE TENANT_ID =?";
