@@ -86,8 +86,6 @@ public class templateManagerDAOImpl implements templateManagerDAO {
             throw new TemplateManagementServerException(String.format(TemplateMgtConstants.ErrorMessages.ERROR_CODE_LIST_TEMPLATES.getMessage(),tenantId),
                     TemplateMgtConstants.ErrorMessages.ERROR_CODE_LIST_TEMPLATES.getCode(),e);
         }
-
-
         return null;
     }
 
