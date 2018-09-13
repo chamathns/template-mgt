@@ -34,9 +34,10 @@ public class TemplateMgtConstants {
     }
 
     public enum ErrorMessages{
-        ERROR_CODE_INSERT_TEMPLATE("TM_00001", "Error occurred while adding the template: %s"),
-        ERROR_CODE_SELECT_TEMPLATE_BY_ID("TM_00002","Error occurred while retrieving template from DB for the ID: %s"),
-        ERROR_CODE_LIST_TEMPLATES("CM_000003", "Error occurred while listing template from DB for tenantID: %s");
+        ERROR_CODE_INSERT_TEMPLATE("TM_00001", "Error occurred while adding the template: %s."),
+        ERROR_CODE_SELECT_TEMPLATE_BY_ID("TM_00002","Error occurred while retrieving template from DB for tenant ID: %s and template ID: %s."),
+        ERROR_CODE_LIST_TEMPLATES("TM_00003", "Error occurred while listing template from DB for tenantID: %s"),
+        ERROR_CODE_DELETE_PURPOSE("TM_00004", "Error occurred while deleting template from DB for tenant ID: %s and template ID: %s.");
 
         private final String code;
         private final String message;

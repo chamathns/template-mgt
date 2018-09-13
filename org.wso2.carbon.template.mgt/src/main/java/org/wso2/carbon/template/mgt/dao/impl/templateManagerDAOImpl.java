@@ -26,6 +26,11 @@ import org.wso2.carbon.template.mgt.model.Template;
 import org.wso2.carbon.template.mgt.util.JdbcUtils;
 import org.wso2.carbon.template.mgt.util.TemplateMgtUtils;
 
+import java.io.ByteArrayInputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
 import java.util.List;
 
 public class templateManagerDAOImpl implements templateManagerDAO {
@@ -45,7 +50,6 @@ public class templateManagerDAOImpl implements templateManagerDAO {
         } catch (DataAccessException e) {
             throw TemplateMgtUtils.handleServerException(TemplateMgtConstants.ErrorMessages.ERROR_CODE_INSERT_TEMPLATE, template.getTemplateName(),e);
         }
-
     }
 
     public Template getTemplateById(Integer tenantId, Integer templateId) throws TemplateManagementException {
@@ -63,7 +67,8 @@ public class templateManagerDAOImpl implements templateManagerDAO {
                         preparedStatement.setInt(2,tenantId);
             });
         } catch (DataAccessException e) {
-            throw TemplateMgtUtils.handleServerException(TemplateMgtConstants.ErrorMessages.ERROR_CODE_SELECT_TEMPLATE_BY_ID, template.getTemplateId().toString(),e);
+            throw new TemplateManagementServerException(String.format(TemplateMgtConstants.ErrorMessages.ERROR_CODE_SELECT_TEMPLATE_BY_ID.getMessage(),tenantId, templateId),
+                    TemplateMgtConstants.ErrorMessages.ERROR_CODE_SELECT_TEMPLATE_BY_ID.getCode(),e);
         }
         return template;
     }
@@ -90,10 +95,52 @@ public class templateManagerDAOImpl implements templateManagerDAO {
     }
 
     public void updateTemplate(Integer tenantId, Integer templateId, Template newTemplate) {
-
+        JdbcTemplate jdbcTemplate = JdbcUtils.getNewTemplate();
+        try {
+            jdbcTemplate.executeUpdate(TemplateMgtConstants.SqlQueries.UPDATE_TEMPLATE, preparedStatement -> {
+                preparedStatement.setString(1,newTemplate.getTemplateName());
+                preparedStatement.setString(2,newTemplate.getDescription());
+                try {
+                    setBlobValue(newTemplate.getTemplateScript(), preparedStatement, 3);
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+                preparedStatement.setString(4, tenantId.toString());
+                preparedStatement.setString(5,templateId.toString());
+            });
+        } catch (DataAccessException e) {
+            e.printStackTrace();
+        }
     }
 
-    public void deleteTemplate(Integer tenantId, Integer templateId) {
+    public void deleteTemplate(Integer tenantId, Integer templateId) throws TemplateManagementException{
+        JdbcTemplate jdbcTemplate = JdbcUtils.getNewTemplate();
+        try {
+            jdbcTemplate.executeUpdate(TemplateMgtConstants.SqlQueries.DELETE_TEMPLATE, preparedStatement ->{
+                preparedStatement.setInt(1,tenantId);
+                preparedStatement.setInt(2,templateId);
+            });
+        } catch (DataAccessException e) {
+            throw new TemplateManagementServerException(String.format(TemplateMgtConstants.ErrorMessages.ERROR_CODE_DELETE_PURPOSE.getMessage(),tenantId.toString(),templateId.toString()),
+                    TemplateMgtConstants.ErrorMessages.ERROR_CODE_DELETE_PURPOSE.getCode(),e);
+        }
+    }
 
+    /**
+     * Set given string as Blob for the given index into the prepared-statement
+     *
+     * @param value    string value to be converted to blob
+     * @param prepStmt Prepared statement
+     * @param index    column index
+     * @throws SQLException
+     * @throws IOException
+     */
+    private void setBlobValue(String value, PreparedStatement prepStmt, int index) throws SQLException, IOException {
+        if (value != null) {
+            InputStream inputStream = new ByteArrayInputStream(value.getBytes());
+            prepStmt.setBinaryStream(index, inputStream, inputStream.available());
+        } else {
+            prepStmt.setBinaryStream(index, new ByteArrayInputStream(new byte[0]), 0);
+        }
     }
 }

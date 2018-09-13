@@ -29,5 +29,5 @@ public interface templateManagerDAO {
 
     void updateTemplate(Integer tenantId, Integer templateId, Template newTemplate);
 
-    void deleteTemplate(Integer tenantId, Integer templateId);
+    void deleteTemplate(Integer tenantId, Integer templateId) throws TemplateManagementException;
 }
