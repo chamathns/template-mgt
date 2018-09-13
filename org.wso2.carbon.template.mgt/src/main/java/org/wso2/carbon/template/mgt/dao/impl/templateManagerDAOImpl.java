@@ -16,6 +16,7 @@
 
 package org.wso2.carbon.template.mgt.dao.impl;
 
+import com.hazelcast.client.impl.protocol.template.TemplateConstants;
 import org.wso2.carbon.database.utils.jdbc.JdbcTemplate;
 import org.wso2.carbon.database.utils.jdbc.exceptions.DataAccessException;
 import org.wso2.carbon.template.mgt.TemplateMgtConstants;
@@ -94,7 +95,7 @@ public class templateManagerDAOImpl implements templateManagerDAO {
         return null;
     }
 
-    public void updateTemplate(Integer tenantId, Integer templateId, Template newTemplate) {
+    public void updateTemplate(Integer tenantId, Integer templateId, Template newTemplate) throws TemplateManagementServerException {
         JdbcTemplate jdbcTemplate = JdbcUtils.getNewTemplate();
         try {
             jdbcTemplate.executeUpdate(TemplateMgtConstants.SqlQueries.UPDATE_TEMPLATE, preparedStatement -> {
@@ -103,13 +104,13 @@ public class templateManagerDAOImpl implements templateManagerDAO {
                 try {
                     setBlobValue(newTemplate.getTemplateScript(), preparedStatement, 3);
                 } catch (IOException e) {
-                    e.printStackTrace();
+                    throw TemplateMgtUtils.handleRuntimeException(TemplateMgtConstants.ErrorMessages.ERROR_CODE_SET_BLOB,newTemplate.getTemplateName(),e);
                 }
                 preparedStatement.setString(4, tenantId.toString());
                 preparedStatement.setString(5,templateId.toString());
             });
         } catch (DataAccessException e) {
-            e.printStackTrace();
+            throw TemplateMgtUtils.handleServerException(TemplateMgtConstants.ErrorMessages.ERROR_CODE_UPDATE_TEMPLATE,newTemplate.getTemplateName(),e);
         }
     }
 
@@ -121,8 +122,8 @@ public class templateManagerDAOImpl implements templateManagerDAO {
                 preparedStatement.setInt(2,templateId);
             });
         } catch (DataAccessException e) {
-            throw new TemplateManagementServerException(String.format(TemplateMgtConstants.ErrorMessages.ERROR_CODE_DELETE_PURPOSE.getMessage(),tenantId.toString(),templateId.toString()),
-                    TemplateMgtConstants.ErrorMessages.ERROR_CODE_DELETE_PURPOSE.getCode(),e);
+            throw new TemplateManagementServerException(String.format(TemplateMgtConstants.ErrorMessages.ERROR_CODE_DELETE_TEMPLATE.getMessage(),tenantId.toString(),templateId.toString()),
+                    TemplateMgtConstants.ErrorMessages.ERROR_CODE_DELETE_TEMPLATE.getCode(),e);
         }
     }
 
@@ -135,7 +136,7 @@ public class templateManagerDAOImpl implements templateManagerDAO {
      * @throws SQLException
      * @throws IOException
      */
-    private void setBlobValue(String value, PreparedStatement prepStmt, int index) throws SQLException, IOException {
+    private void setBlobValue(String value, PreparedStatement prepStmt, int index) throws IOException, SQLException {
         if (value != null) {
             InputStream inputStream = new ByteArrayInputStream(value.getBytes());
             prepStmt.setBinaryStream(index, inputStream, inputStream.available());

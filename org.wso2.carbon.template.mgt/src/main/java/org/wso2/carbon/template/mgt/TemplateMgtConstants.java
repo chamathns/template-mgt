@@ -37,7 +37,9 @@ public class TemplateMgtConstants {
         ERROR_CODE_INSERT_TEMPLATE("TM_00001", "Error occurred while adding the template: %s."),
         ERROR_CODE_SELECT_TEMPLATE_BY_ID("TM_00002","Error occurred while retrieving template from DB for tenant ID: %s and template ID: %s."),
         ERROR_CODE_LIST_TEMPLATES("TM_00003", "Error occurred while listing template from DB for tenantID: %s"),
-        ERROR_CODE_DELETE_PURPOSE("TM_00004", "Error occurred while deleting template from DB for tenant ID: %s and template ID: %s.");
+        ERROR_CODE_DELETE_TEMPLATE("TM_00004", "Error occurred while deleting template from DB for tenant ID: %s and template ID: %s."),
+        ERROR_CODE_SET_BLOB("TM_00004", "Error occurred while reading from input stream of template: %s."),
+        ERROR_CODE_UPDATE_TEMPLATE("TM_00005", "Error occurred while updating the template: %s.");
 
         private final String code;
         private final String message;

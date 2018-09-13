@@ -16,8 +16,10 @@
 package org.wso2.carbon.template.mgt.util;
 
 
+import com.hazelcast.client.impl.protocol.template.TemplateConstants;
 import org.apache.commons.lang.StringUtils;
 import org.wso2.carbon.template.mgt.TemplateMgtConstants;
+import org.wso2.carbon.template.mgt.exception.TemplateManagementRuntimeException;
 import org.wso2.carbon.template.mgt.exception.TemplateManagementServerException;
 
 /**
@@ -42,5 +44,26 @@ public class TemplateMgtUtils {
             message = error.getMessage();
         }
         return new TemplateManagementServerException(message, error.getCode(), e);
+    }
+
+    /**
+     * This method can be used to generate a ConsentManagementRuntimeException from ConsentConstants.ErrorMessages
+     * object when an exception is thrown.
+     *
+     * @param error ConsentConstants.ErrorMessages.
+     * @param data  data to replace if message needs to be replaced.
+     * @param e     Parent exception.
+     * @return ConsentManagementRuntimeException
+     */
+    public static TemplateManagementRuntimeException handleRuntimeException(TemplateMgtConstants.ErrorMessages error,
+                                                                            String data, Throwable e) {
+
+        String message;
+        if (StringUtils.isNotBlank(data)) {
+            message = String.format(error.getMessage(), data);
+        } else {
+            message = error.getMessage();
+        }
+        return new TemplateManagementRuntimeException(message, error.getCode(), e);
     }
 }

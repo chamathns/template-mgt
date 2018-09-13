@@ -16,6 +16,7 @@
 package org.wso2.carbon.template.mgt.dao;
 
 import org.wso2.carbon.template.mgt.exception.TemplateManagementException;
+import org.wso2.carbon.template.mgt.exception.TemplateManagementServerException;
 import org.wso2.carbon.template.mgt.model.Template;
 
 import java.util.List;
@@ -27,7 +28,7 @@ public interface templateManagerDAO {
 
     List<Template> getAllTemplates(Integer tenantId) throws TemplateManagementException;
 
-    void updateTemplate(Integer tenantId, Integer templateId, Template newTemplate);
+    void updateTemplate(Integer tenantId, Integer templateId, Template newTemplate) throws TemplateManagementServerException;
 
     void deleteTemplate(Integer tenantId, Integer templateId) throws TemplateManagementException;
 }
