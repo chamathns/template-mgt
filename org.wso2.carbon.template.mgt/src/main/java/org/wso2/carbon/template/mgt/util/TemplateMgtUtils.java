@@ -19,6 +19,7 @@ package org.wso2.carbon.template.mgt.util;
 import com.hazelcast.client.impl.protocol.template.TemplateConstants;
 import org.apache.commons.lang.StringUtils;
 import org.wso2.carbon.template.mgt.TemplateMgtConstants;
+import org.wso2.carbon.template.mgt.exception.TemplateManagementClientException;
 import org.wso2.carbon.template.mgt.exception.TemplateManagementRuntimeException;
 import org.wso2.carbon.template.mgt.exception.TemplateManagementServerException;
 
@@ -66,4 +67,26 @@ public class TemplateMgtUtils {
         }
         return new TemplateManagementRuntimeException(message, error.getCode(), e);
     }
+
+    /**
+     * This method can be used to generate a TemplateManagementClientException from TemplateMgtConstants.ErrorMessages
+     * object when no exception is thrown.
+     *
+     * @param error templateMgtConstants.ErrorMessages.
+     * @param data  data to replace if message needs to be replaced.
+     * @return TemplateManagementClientException.
+     */
+    public static TemplateManagementClientException handleClientException(TemplateMgtConstants.ErrorMessages error,
+                                                                          String data) {
+
+        String message;
+        if (StringUtils.isNotBlank(data)) {
+            message = String.format(error.getMessage(), data);
+        } else {
+            message = error.getMessage();
+        }
+
+        return new TemplateManagementClientException(message, error.getCode());
+    }
+
 }
