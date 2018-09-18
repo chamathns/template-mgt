@@ -22,9 +22,33 @@ public class Template {
     private String description;
     private String content;
 
-
     public Template(Integer templateId, Integer tenantId, String templateName, String description, String content){
         this.templateId = templateId;
+        this.tenantId = tenantId;
+        this.templateName = templateName;
+        this.description = description;
+        this.content = content;
+    }
+
+    public Template(Integer templateId, Integer tenantId, String templateName, String description){
+        this.templateId = templateId;
+        this.tenantId = tenantId;
+        this.templateName = templateName;
+        this.description = description;
+    }
+
+    public Template(Integer templateId, Integer tenantId, String templateName){
+        this.templateId = templateId;
+        this.tenantId = tenantId;
+        this.templateName = templateName;
+    }
+
+    public Template(Integer templateId, Integer tenantId){
+        this.templateId = templateId;
+        this.tenantId = tenantId;
+    }
+
+    public Template(Integer tenantId, String templateName, String description, String content){
         this.tenantId = tenantId;
         this.templateName = templateName;
         this.description = description;

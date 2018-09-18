@@ -14,11 +14,11 @@ import javax.validation.constraints.NotNull;
 public class TemplateDTO  {
   
   
-  @NotNull
-  private Integer tenantId = null;
+  
+  private Integer templateId = null;
   
   @NotNull
-  private Integer templateId = null;
+  private Integer tenantId = null;
   
   
   private String templateName = null;
@@ -31,20 +31,9 @@ public class TemplateDTO  {
 
   
   /**
+   * An auto-incremented unique ID for a template
    **/
-  @ApiModelProperty(required = true, value = "")
-  @JsonProperty("tenantId")
-  public Integer getTenantId() {
-    return tenantId;
-  }
-  public void setTenantId(Integer tenantId) {
-    this.tenantId = tenantId;
-  }
-
-  
-  /**
-   **/
-  @ApiModelProperty(required = true, value = "")
+  @ApiModelProperty(value = "An auto-incremented unique ID for a template")
   @JsonProperty("templateId")
   public Integer getTemplateId() {
     return templateId;
@@ -55,8 +44,22 @@ public class TemplateDTO  {
 
   
   /**
+   * A unique ID for a tenant
    **/
-  @ApiModelProperty(value = "")
+  @ApiModelProperty(required = true, value = "A unique ID for a tenant")
+  @JsonProperty("tenantId")
+  public Integer getTenantId() {
+    return tenantId;
+  }
+  public void setTenantId(Integer tenantId) {
+    this.tenantId = tenantId;
+  }
+
+  
+  /**
+   * The name of the template given by the admin
+   **/
+  @ApiModelProperty(value = "The name of the template given by the admin")
   @JsonProperty("templateName")
   public String getTemplateName() {
     return templateName;
@@ -67,8 +70,9 @@ public class TemplateDTO  {
 
   
   /**
+   * A description for the template given by the admin
    **/
-  @ApiModelProperty(value = "")
+  @ApiModelProperty(value = "A description for the template given by the admin")
   @JsonProperty("description")
   public String getDescription() {
     return description;
@@ -79,8 +83,9 @@ public class TemplateDTO  {
 
   
   /**
+   * This indicates the script of the template
    **/
-  @ApiModelProperty(value = "")
+  @ApiModelProperty(value = "This indicates the script of the template")
   @JsonProperty("data")
   public String getData() {
     return data;
@@ -96,8 +101,8 @@ public class TemplateDTO  {
     StringBuilder sb = new StringBuilder();
     sb.append("class TemplateDTO {\n");
     
-    sb.append("  tenantId: ").append(tenantId).append("\n");
     sb.append("  templateId: ").append(templateId).append("\n");
+    sb.append("  tenantId: ").append(tenantId).append("\n");
     sb.append("  templateName: ").append(templateName).append("\n");
     sb.append("  description: ").append(description).append("\n");
     sb.append("  data: ").append(data).append("\n");

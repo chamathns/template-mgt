@@ -2,8 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a4b52234-6a17-458d-abd6-21576aba62b7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.template.mgt.endpoint/src/gen/java/org/wso2/carbon/template/mgt/endpoint/TemplatesApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.template.mgt.endpoint/src/gen/java/org/wso2/carbon/template/mgt/endpoint/TemplatesApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.template.mgt.endpoint/src/gen/java/org/wso2/carbon/template/mgt/endpoint/TemplatesApiService.java" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.template.mgt.endpoint/src/gen/java/org/wso2/carbon/template/mgt/endpoint/TemplatesApiService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.template.mgt.endpoint/src/gen/java/org/wso2/carbon/template/mgt/endpoint/dto/ErrorDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.template.mgt.endpoint/src/gen/java/org/wso2/carbon/template/mgt/endpoint/dto/ErrorDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.template.mgt.endpoint/src/gen/java/org/wso2/carbon/template/mgt/endpoint/dto/TemplateDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.template.mgt.endpoint/src/gen/java/org/wso2/carbon/template/mgt/endpoint/dto/TemplateDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.template.mgt.endpoint/src/main/resources/org.wso2.carbon.identity.template.mgt.api.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.template.mgt.endpoint/src/main/resources/org.wso2.carbon.identity.template.mgt.api.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.template.mgt/src/main/java/org/wso2/carbon/template/mgt/dao/impl/templateManagerDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.template.mgt/src/main/java/org/wso2/carbon/template/mgt/dao/impl/templateManagerDAOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.template.mgt/src/main/java/org/wso2/carbon/template/mgt/dao/templateManagerDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.template.mgt/src/main/java/org/wso2/carbon/template/mgt/dao/templateManagerDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.template.mgt/src/main/java/org/wso2/carbon/template/mgt/model/Template.java" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.template.mgt/src/main/java/org/wso2/carbon/template/mgt/model/Template.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -20,15 +27,16 @@
     <session id="1040724542">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.open.time.16" value="1" />
           <entry key="project.open.time.2" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.opened" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="gitignore" value="3" />
           <entry key="iml" value="1" />
-          <entry key="java" value="19" />
+          <entry key="java" value="23" />
           <entry key="xml" value="3" />
           <entry key="yaml" value="1" />
         </counts>
@@ -36,7 +44,7 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="IDEA_MODULE" value="1" />
-          <entry key="JAVA" value="19" />
+          <entry key="JAVA" value="23" />
           <entry key="PLAIN_TEXT" value="3" />
           <entry key="XML" value="3" />
           <entry key="YAML" value="1" />
@@ -45,13 +53,13 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="gitignore" value="6" />
-          <entry key="java" value="1343" />
+          <entry key="java" value="1798" />
           <entry key="xml" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="1343" />
+          <entry key="JAVA" value="1798" />
           <entry key="PLAIN_TEXT" value="6" />
           <entry key="XML" value="8" />
         </counts>
@@ -65,28 +73,40 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="10" selection-start-line="17" selection-start-column="10" selection-end-line="17" selection-end-column="10" />
+            <state relative-caret-position="135">
+              <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
+        <entry file="file://$PROJECT_DIR$/org.wso2.carbon.template.mgt.endpoint/src/main/resources/org.wso2.carbon.identity.template.mgt.api.yaml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="5" lean-forward="true" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+            <state relative-caret-position="509">
+              <caret line="290" column="15" lean-forward="true" selection-end-line="302" selection-end-column="32" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/org.wso2.carbon.template.mgt.endpoint/src/main/resources/org.wso2.carbon.identity.template.mgt.api.yaml">
+        <entry file="file://$PROJECT_DIR$/org.wso2.carbon.template.mgt.endpoint/src/gen/java/org/wso2/carbon/template/mgt/endpoint/dto/AddTemplateResponseDTO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="9" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
+            <state relative-caret-position="75">
+              <caret line="14" column="2" lean-forward="true" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/org.wso2.carbon.template.mgt/src/main/java/org/wso2/carbon/template/mgt/dao/templateManagerDAO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="31" column="12" selection-start-line="31" selection-start-column="12" selection-end-line="31" selection-end-column="12" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -94,8 +114,29 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/org.wso2.carbon.template.mgt/src/main/java/org/wso2/carbon/template/mgt/dao/impl/templateManagerDAOImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="40" column="15" selection-start-line="40" selection-start-column="15" selection-end-line="40" selection-end-column="15" />
+            <state relative-caret-position="315">
+              <caret line="53" column="100" selection-start-line="53" selection-start-column="100" selection-end-line="53" selection-end-column="100" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/org.wso2.carbon.template.mgt/src/main/java/org/wso2/carbon/template/mgt/model/Template.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="32" column="44" selection-start-line="32" selection-start-column="44" selection-end-line="32" selection-end-column="44" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/org.wso2.carbon.template.mgt.endpoint/src/main/java/org/wso2/carbon/template/mgt/endpoint/impl/TemplatesApiServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -115,7 +156,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/org.wso2.carbon.template.mgt/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
+            <state relative-caret-position="465">
               <caret line="31" column="10" selection-start-line="31" selection-start-column="10" selection-end-line="31" selection-end-column="10" />
             </state>
           </provider>
@@ -124,15 +165,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/org.wso2.carbon.template.mgt.endpoint/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="287">
+            <state relative-caret-position="345">
               <caret line="23" selection-start-line="23" selection-end-line="23" />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/org.wso2.carbon.template.mgt.ui/pom.xml">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -166,13 +202,14 @@
         <option value="$PROJECT_DIR$/org.wso2.carbon.template.mgt/src/main/java/org/wso2/carbon/template/mgt/internal/TemplateManagerComponent.java" />
         <option value="$PROJECT_DIR$/org.wso2.carbon.template.mgt/src/main/java/org/wso2/carbon/template/mgt/internal/TemplateManagerComponentDataHolder.java" />
         <option value="$PROJECT_DIR$/org.wso2.carbon.template.mgt/src/main/java/org/wso2/carbon/template/mgt/util/JdbcUtils.java" />
-        <option value="$PROJECT_DIR$/org.wso2.carbon.template.mgt/src/main/java/org/wso2/carbon/template/mgt/model/Template.java" />
         <option value="$PROJECT_DIR$/org.wso2.carbon.template.mgt/src/main/java/org/wso2/carbon/template/mgt/exception/TemplateManagementRuntimeException.java" />
         <option value="$PROJECT_DIR$/org.wso2.carbon.template.mgt/src/main/java/org/wso2/carbon/template/mgt/util/TemplateMgtUtils.java" />
         <option value="$PROJECT_DIR$/org.wso2.carbon.template.mgt/src/main/java/org/wso2/carbon/template/mgt/TemplateMgtConstants.java" />
-        <option value="$PROJECT_DIR$/org.wso2.carbon.template.mgt/src/main/java/org/wso2/carbon/template/mgt/dao/impl/templateManagerDAOImpl.java" />
-        <option value="$PROJECT_DIR$/org.wso2.carbon.template.mgt/src/main/java/org/wso2/carbon/template/mgt/dao/templateManagerDAO.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/org.wso2.carbon.template.mgt/src/main/java/org/wso2/carbon/template/mgt/dao/templateManagerDAO.java" />
+        <option value="$PROJECT_DIR$/org.wso2.carbon.template.mgt/src/main/java/org/wso2/carbon/template/mgt/dao/impl/templateManagerDAOImpl.java" />
+        <option value="$PROJECT_DIR$/org.wso2.carbon.template.mgt/src/main/java/org/wso2/carbon/template/mgt/model/Template.java" />
+        <option value="$PROJECT_DIR$/org.wso2.carbon.template.mgt.endpoint/src/main/resources/org.wso2.carbon.identity.template.mgt.api.yaml" />
       </list>
     </option>
   </component>
@@ -201,10 +238,9 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1920" />
     <option name="y" value="-2" />
     <option name="width" value="1920" />
-    <option name="height" value="1035" />
+    <option name="height" value="1082" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -214,7 +250,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -286,7 +321,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="mgt" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="template-mgt" type="b2602c69:ProjectViewProjectNode" />
@@ -298,6 +333,40 @@
               <item name="template-mgt" type="462c0819:PsiDirectoryNode" />
               <item name="org.wso2.carbon.template.mgt.endpoint" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="template-mgt" type="b2602c69:ProjectViewProjectNode" />
+              <item name="template-mgt" type="462c0819:PsiDirectoryNode" />
+              <item name="org.wso2.carbon.template.mgt.endpoint" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="gen" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="template-mgt" type="b2602c69:ProjectViewProjectNode" />
+              <item name="template-mgt" type="462c0819:PsiDirectoryNode" />
+              <item name="org.wso2.carbon.template.mgt.endpoint" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="gen" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="template-mgt" type="b2602c69:ProjectViewProjectNode" />
+              <item name="template-mgt" type="462c0819:PsiDirectoryNode" />
+              <item name="org.wso2.carbon.template.mgt.endpoint" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="gen" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="endpoint" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="template-mgt" type="b2602c69:ProjectViewProjectNode" />
+              <item name="template-mgt" type="462c0819:PsiDirectoryNode" />
+              <item name="org.wso2.carbon.template.mgt.endpoint" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="gen" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="endpoint" type="462c0819:PsiDirectoryNode" />
+              <item name="dto" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="template-mgt" type="b2602c69:ProjectViewProjectNode" />
@@ -305,6 +374,23 @@
               <item name="org.wso2.carbon.template.mgt.endpoint" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="template-mgt" type="b2602c69:ProjectViewProjectNode" />
+              <item name="template-mgt" type="462c0819:PsiDirectoryNode" />
+              <item name="org.wso2.carbon.template.mgt.endpoint" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="template-mgt" type="b2602c69:ProjectViewProjectNode" />
+              <item name="template-mgt" type="462c0819:PsiDirectoryNode" />
+              <item name="org.wso2.carbon.template.mgt.endpoint" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="template-mgt" type="b2602c69:ProjectViewProjectNode" />
@@ -318,14 +404,15 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="AndroidView" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1536840958219" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1537250298887" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -357,17 +444,18 @@
       <option name="presentableId" value="Default" />
       <updated>1536814933609</updated>
       <workItem from="1536814935811" duration="2490000" />
+      <workItem from="1537246538676" duration="1391000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20099000" />
+    <option name="totallyTimeSpent" value="27467000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1920" y="-2" width="1920" height="1035" extended-state="6" />
+    <frame x="0" y="-2" width="1920" height="1082" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25239617" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25239617" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -383,7 +471,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Spring" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.34684685" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.34652406" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Java Enterprise" order="10" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
@@ -410,27 +498,6 @@
     <entry file="file://$PROJECT_DIR$/org.wso2.carbon.template.mgt.ui/pom.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/org.wso2.carbon.template.mgt/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="31" column="10" selection-start-line="31" selection-start-column="10" selection-end-line="31" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/org.wso2.carbon.template.mgt.endpoint/src/main/resources/org.wso2.carbon.identity.template.mgt.api.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="9" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/org.wso2.carbon.template.mgt.endpoint/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/org.wso2.carbon.template.mgt/src/main/java/org/wso2/carbon/template/mgt/exception/TemplateManagementException.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -448,13 +515,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/org.wso2.carbon.template.mgt.endpoint/src/main/java/org/wso2/carbon/template/mgt/endpoint/impl/TemplatesApiServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="33" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/org.wso2.carbon.template.mgt/src/main/java/org/wso2/carbon/template/mgt/internal/TemplateManagerComponentDataHolder.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
@@ -466,6 +526,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
           <caret line="24" column="24" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#1340#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -476,16 +540,6 @@
           <folding>
             <element signature="e#0#3231#0" expanded="true" />
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/org.wso2.carbon.template.mgt/src/main/java/org/wso2/carbon/template/mgt/model/Template.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="75" column="7" selection-start-line="75" selection-start-column="7" selection-end-line="75" selection-end-column="7" />
-          <folding>
-            <element signature="e#0#2844#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -549,17 +603,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/org.wso2.carbon.template.mgt/src/main/java/org/wso2/carbon/template/mgt/dao/templateManagerDAO.java">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
+        <state relative-caret-position="255">
+          <caret line="17" column="10" selection-start-line="17" selection-start-column="10" selection-end-line="17" selection-end-column="10" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/org.wso2.carbon.template.mgt/src/main/java/org/wso2/carbon/template/mgt/dao/impl/templateManagerDAOImpl.java">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="40" column="15" selection-start-line="40" selection-start-column="15" selection-end-line="40" selection-end-column="15" />
+        <state relative-caret-position="135">
+          <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/org.wso2.carbon.template.mgt/src/main/java/org/wso2/carbon/template/mgt/dao/templateManagerDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="31" column="12" selection-start-line="31" selection-start-column="12" selection-end-line="31" selection-end-column="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/org.wso2.carbon.template.mgt/src/main/java/org/wso2/carbon/template/mgt/model/Template.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="32" column="44" selection-start-line="32" selection-start-column="44" selection-end-line="32" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/org.wso2.carbon.template.mgt.endpoint/src/main/java/org/wso2/carbon/template/mgt/endpoint/impl/TemplatesApiServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -573,17 +651,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/org.wso2.carbon.template.mgt/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="10" selection-start-line="17" selection-start-column="10" selection-end-line="17" selection-end-column="10" />
+        <state relative-caret-position="465">
+          <caret line="31" column="10" selection-start-line="31" selection-start-column="10" selection-end-line="31" selection-end-column="10" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$PROJECT_DIR$/org.wso2.carbon.template.mgt.endpoint/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="5" lean-forward="true" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+        <state relative-caret-position="345">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/org.wso2.carbon.template.mgt/src/main/java/org/wso2/carbon/template/mgt/dao/impl/templateManagerDAOImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="53" column="100" selection-start-line="53" selection-start-column="100" selection-end-line="53" selection-end-column="100" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/org.wso2.carbon.template.mgt.endpoint/src/gen/java/org/wso2/carbon/template/mgt/endpoint/dto/AddTemplateResponseDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="14" column="2" lean-forward="true" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/org.wso2.carbon.template.mgt.endpoint/src/main/resources/org.wso2.carbon.identity.template.mgt.api.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="509">
+          <caret line="290" column="15" lean-forward="true" selection-end-line="302" selection-end-column="32" />
         </state>
       </provider>
     </entry>

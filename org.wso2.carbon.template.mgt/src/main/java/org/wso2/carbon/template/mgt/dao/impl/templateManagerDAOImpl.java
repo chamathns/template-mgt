@@ -35,7 +35,7 @@ import java.sql.SQLException;
 import java.util.List;
 
 public class templateManagerDAOImpl implements templateManagerDAO {
-    public void addTemplate(Template template) throws TemplateManagementException {
+    public Template addTemplate(Template template) throws TemplateManagementException {
         Template templateResult;
         int insertedId;
         JdbcTemplate jdbcTemplate = JdbcUtils.getNewTemplate();
@@ -51,6 +51,8 @@ public class templateManagerDAOImpl implements templateManagerDAO {
         } catch (DataAccessException e) {
             throw TemplateMgtUtils.handleServerException(TemplateMgtConstants.ErrorMessages.ERROR_CODE_INSERT_TEMPLATE, template.getTemplateName(),e);
         }
+        templateResult = new Template(insertedId,template.getTenantId(),template.getTemplateName());
+        return templateResult;
     }
 
     public Template getTemplateById(Integer tenantId, Integer templateId) throws TemplateManagementException {

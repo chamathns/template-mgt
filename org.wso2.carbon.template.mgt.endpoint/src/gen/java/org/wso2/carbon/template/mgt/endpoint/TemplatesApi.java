@@ -6,9 +6,9 @@ import org.wso2.carbon.template.mgt.endpoint.factories.TemplatesApiServiceFactor
 
 import io.swagger.annotations.ApiParam;
 
-import org.wso2.carbon.template.mgt.endpoint.dto.CreateTemplateResponseDTO;
 import org.wso2.carbon.template.mgt.endpoint.dto.TemplateDTO;
 import org.wso2.carbon.template.mgt.endpoint.dto.ErrorDTO;
+import org.wso2.carbon.template.mgt.endpoint.dto.AddTemplateResponseDTO;
 import org.wso2.carbon.template.mgt.endpoint.dto.DeleteTemplateResponseDTO;
 import org.wso2.carbon.template.mgt.endpoint.dto.UpdateSuccessResponseDTO;
 
@@ -33,21 +33,21 @@ public class TemplatesApi  {
     
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
-    @io.swagger.annotations.ApiOperation(value = "Add a new template", notes = "", response = CreateTemplateResponseDTO.class)
+    @io.swagger.annotations.ApiOperation(value = "Add a new template\n", notes = "This API is used to store template information submitted by the user.\n", response = AddTemplateResponseDTO.class)
     @io.swagger.annotations.ApiResponses(value = { 
-        @io.swagger.annotations.ApiResponse(code = 202, message = "Template added"),
+        @io.swagger.annotations.ApiResponse(code = 201, message = "Successful response"),
         
         @io.swagger.annotations.ApiResponse(code = 400, message = "Bad Request"),
         
         @io.swagger.annotations.ApiResponse(code = 401, message = "Unauthorized"),
         
-        @io.swagger.annotations.ApiResponse(code = 404, message = "Not Found"),
+        @io.swagger.annotations.ApiResponse(code = 409, message = "Conflict"),
         
         @io.swagger.annotations.ApiResponse(code = 500, message = "Server Error") })
 
-    public Response addTemplate(@ApiParam(value = "Template object that needs to be added to the database" ,required=true ) TemplateDTO body)
+    public Response addTemplate(@ApiParam(value = "This represents the Template object that needs to be added to the database" ,required=true ) TemplateDTO template)
     {
-    return delegate.addTemplate(body);
+    return delegate.addTemplate(template);
     }
     @DELETE
     @Path("/{template_id}")

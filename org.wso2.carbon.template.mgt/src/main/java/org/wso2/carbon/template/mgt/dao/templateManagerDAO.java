@@ -22,7 +22,14 @@ import org.wso2.carbon.template.mgt.model.Template;
 import java.util.List;
 
 public interface templateManagerDAO {
-    void addTemplate (Template template) throws TemplateManagementException;
+    /**
+     * Add a {@link Template}.
+     *
+     * @param template {@link Template} to insert.
+     * @return Inserted {@link Template}.
+     * @throws TemplateManagementException If error occurs while adding the {@link Template}.
+     */
+    Template addTemplate (Template template) throws TemplateManagementException;
 
     Template getTemplateById(Integer tenantId, Integer templateId) throws TemplateManagementException;
 

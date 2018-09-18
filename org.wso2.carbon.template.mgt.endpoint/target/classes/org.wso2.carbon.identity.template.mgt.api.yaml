@@ -11,8 +11,8 @@ info:
   license:
     name: Apache 2.0
     url: http://www.apache.org/licenses/LICENSE-2.0.html
-host: apis.wso2.com
-basePath: /identity/template-mgt/v1.0
+# host: apis.wso2.com
+# basePath: /identity/template-mgt/v1.0
 schemes:
 - https
 consumes:
@@ -63,7 +63,10 @@ paths:
           schema:
             $ref: '#/definitions/Error'
     post:
-      summary: Add a new template
+      description: |
+        This API is used to store template information submitted by the user.
+      summary: |
+        Add a new template
       operationId: addTemplate
       consumes:
       - application/json
@@ -71,16 +74,16 @@ paths:
       - application/json
       parameters:
       - in: body
-        name: body
-        description: Template object that needs to be added to the database
+        name: template
+        description: This represents the Template object that needs to be added to the database
         required: true
         schema:
           $ref: '#/definitions/Template'
       responses:
-        202:
-          description: Template added
+        201:
+          description: Successful response
           schema:
-            $ref: '#/definitions/CreateTemplateResponse'
+            $ref: '#/definitions/AddTemplateResponse'
         400:
           description: Bad Request
           schema:
@@ -89,8 +92,8 @@ paths:
           description: Unauthorized
           schema:
             $ref: '#/definitions/Error'
-        404:
-          description: Not Found
+        409:
+          description: Conflict
           schema:
             $ref: '#/definitions/Error'
         500:
@@ -203,29 +206,42 @@ paths:
 securityDefinitions:
   UserSecurity:
     type: basic
+
 definitions:
+  #-----------------------------------------------------
+  # The Template Response  object
+  #-----------------------------------------------------
   Template:
     type: object
     required:
-    - template_id
     - tenant_id
     properties:
-      tenant_id:
-        type: integer
       template_id:
-        type: integer
+        type: 'integer'
+        description: 'An auto-incremented unique ID for a template'
+      tenant_id:
+        type: 'integer'
+        description: 'A unique ID for a tenant'
       template_name:
-        type: string
+        type: 'string'
+        description: 'The name of the template given by the admin'
       description:
-        type: string
+        type: 'string'
+        description: 'A description for the template given by the admin'
       data:
-        type: string
+        type: 'string'
+        description: 'This indicates the script of the template'
     example:
-      tenant_id: 0
+      tenant_id: 0001
       template_name: template_name
       data: data
       description: description
       template_id: 6
+  #-----------------------------------------------------
+
+  #-----------------------------------------------------
+  # The Error Response  object
+  #-----------------------------------------------------
   Error:
     type: object
     properties:
@@ -235,10 +251,11 @@ definitions:
         type: string
       description:
         type: string
-      properties:
-        type: object
-        additionalProperties:
-          type: string
+  #-----------------------------------------------------
+
+  #-----------------------------------------------------
+  # The UpdateSuccessResponse  object
+  #-----------------------------------------------------
   UpdateSuccessResponse:
     type: object
     properties:
@@ -249,16 +266,26 @@ definitions:
     example:
       last-modified: last-modified
       token: token
-  CreateTemplateResponse:
+  #-----------------------------------------------------
+
+  #-----------------------------------------------------
+  # The AddTemplateResponse object
+  #-----------------------------------------------------
+  AddTemplateResponse:
     type: object
     properties:
-      token:
+      tenant_id:
         type: string
-      created-by:
+      name:
         type: string
     example:
-      created-by: created-by
-      token: token
+      tenant_id: 0001
+      name: smapleTemplate
+  #-----------------------------------------------------
+
+  #-----------------------------------------------------
+  # The DeleteTemplateResponse  object
+  #-----------------------------------------------------
   DeleteTemplateResponse:
     type: object
     properties:
@@ -269,3 +296,8 @@ definitions:
     example:
       deleted-by: deleted-by
       token: token
+#-----------------------------------------------------
+
+# Added by API Auto Mocking Plugin
+host: virtserver.swaggerhub.com
+basePath: /h2448/Templates/1.0.0
