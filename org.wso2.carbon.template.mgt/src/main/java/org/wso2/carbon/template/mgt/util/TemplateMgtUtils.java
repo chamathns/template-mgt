@@ -15,8 +15,6 @@
  */
 package org.wso2.carbon.template.mgt.util;
 
-
-import com.hazelcast.client.impl.protocol.template.TemplateConstants;
 import org.apache.commons.lang.StringUtils;
 import org.wso2.carbon.context.PrivilegedCarbonContext;
 import org.wso2.carbon.template.mgt.TemplateMgtConstants;

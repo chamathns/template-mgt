@@ -1,0 +1,14 @@
+org/wso2/carbon/template/mgt/endpoint/dto/ErrorDTO.class
+org/wso2/carbon/template/mgt/endpoint/ApiException.class
+org/wso2/carbon/template/mgt/endpoint/dto/UpdateSuccessResponseDTO.class
+org/wso2/carbon/template/mgt/endpoint/ApiResponseMessage.class
+org/wso2/carbon/template/mgt/endpoint/dto/TemplateDTO.class
+org/wso2/carbon/template/mgt/endpoint/dto/CreateTemplateResponseDTO.class
+org/wso2/carbon/template/mgt/endpoint/dto/AddTemplateResponseDTO.class
+org/wso2/carbon/template/mgt/endpoint/factories/TemplatesApiServiceFactory.class
+org/wso2/carbon/template/mgt/endpoint/dto/TemplateRequestDTO.class
+org/wso2/carbon/template/mgt/endpoint/TemplatesApiService.class
+org/wso2/carbon/template/mgt/endpoint/dto/DeleteTemplateResponseDTO.class
+org/wso2/carbon/template/mgt/endpoint/util/TemplateEndpointUtils.class
+org/wso2/carbon/template/mgt/endpoint/impl/TemplatesApiServiceImpl.class
+org/wso2/carbon/template/mgt/endpoint/TemplatesApi.class

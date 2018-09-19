@@ -1,0 +1,16 @@
+org/wso2/carbon/template/mgt/util/JdbcUtils.class
+org/wso2/carbon/template/mgt/TemplateManager.class
+org/wso2/carbon/template/mgt/exception/TemplateManagementServerException.class
+org/wso2/carbon/template/mgt/internal/TemplateManagerComponent.class
+org/wso2/carbon/template/mgt/exception/TemplateManagementRuntimeException.class
+org/wso2/carbon/template/mgt/dao/TemplateManagerDAO.class
+org/wso2/carbon/template/mgt/exception/TemplateManagementException.class
+org/wso2/carbon/template/mgt/TemplateMgtConstants$ErrorMessages.class
+org/wso2/carbon/template/mgt/TemplateMgtConstants.class
+org/wso2/carbon/template/mgt/model/Template.class
+org/wso2/carbon/template/mgt/dao/impl/TemplateManagerDAOImpl.class
+org/wso2/carbon/template/mgt/TemplateManagerImpl.class
+org/wso2/carbon/template/mgt/internal/TemplateManagerComponentDataHolder.class
+org/wso2/carbon/template/mgt/exception/TemplateManagementClientException.class
+org/wso2/carbon/template/mgt/TemplateMgtConstants$SqlQueries.class
+org/wso2/carbon/template/mgt/util/TemplateMgtUtils.class

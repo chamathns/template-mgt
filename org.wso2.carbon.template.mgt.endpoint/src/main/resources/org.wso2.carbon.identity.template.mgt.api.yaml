@@ -11,7 +11,7 @@ info:
   license:
     name: Apache 2.0
     url: http://www.apache.org/licenses/LICENSE-2.0.html
-# host: apis.wso2.com
+# host: localhost
 # basePath: /identity/template-mgt/v1.0
 schemes:
 - https
