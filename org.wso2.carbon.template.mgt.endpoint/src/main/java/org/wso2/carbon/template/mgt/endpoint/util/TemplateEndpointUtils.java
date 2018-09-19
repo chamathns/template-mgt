@@ -18,13 +18,19 @@
 
 package org.wso2.carbon.template.mgt.endpoint.util;
 
-import org.wso2.carbon.template.mgt.endpoint.dto.TemplateDTO;
+import org.wso2.carbon.context.PrivilegedCarbonContext;
+import org.wso2.carbon.template.mgt.TemplateManager;
+import org.wso2.carbon.template.mgt.endpoint.dto.TemplateRequestDTO;
 import org.wso2.carbon.template.mgt.model.Template;
 
 public class TemplateEndpointUtils {
-    public static Template getTemplateRequest (TemplateDTO templateDTO){
-        return new Template(templateDTO.getTemplateId(),
-                            templateDTO.getTenantId(),
+
+    public static TemplateManager getTemplateManager(){
+        return (TemplateManager) PrivilegedCarbonContext.getThreadLocalCarbonContext().getOSGiService(TemplateManager.class,null);
+    }
+
+    public static Template getTemplateRequest (TemplateRequestDTO templateDTO){
+        return new Template(templateDTO.getTenantId(),
                             templateDTO.getTemplateName(),
                             templateDTO.getDescription(),
                             templateDTO.getData());

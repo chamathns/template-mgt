@@ -15,10 +15,25 @@ public class AddTemplateResponseDTO  {
   
   
   
+  private String templateId = null;
+  
+  
   private String tenantId = null;
   
   
   private String name = null;
+
+  
+  /**
+   **/
+  @ApiModelProperty(value = "")
+  @JsonProperty("templateId")
+  public String getTemplateId() {
+    return templateId;
+  }
+  public void setTemplateId(String templateId) {
+    this.templateId = templateId;
+  }
 
   
   /**
@@ -51,6 +66,7 @@ public class AddTemplateResponseDTO  {
     StringBuilder sb = new StringBuilder();
     sb.append("class AddTemplateResponseDTO {\n");
     
+    sb.append("  templateId: ").append(templateId).append("\n");
     sb.append("  tenantId: ").append(tenantId).append("\n");
     sb.append("  name: ").append(name).append("\n");
     sb.append("}\n");

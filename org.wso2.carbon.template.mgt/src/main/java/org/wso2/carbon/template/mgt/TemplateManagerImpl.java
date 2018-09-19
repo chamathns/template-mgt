@@ -20,10 +20,16 @@ package org.wso2.carbon.template.mgt;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
+import org.wso2.carbon.template.mgt.dao.TemplateManagerDAO;
+import org.wso2.carbon.template.mgt.dao.impl.TemplateManagerDAOImpl;
+import org.wso2.carbon.template.mgt.exception.TemplateManagementClientException;
 import org.wso2.carbon.template.mgt.exception.TemplateManagementException;
 import org.wso2.carbon.template.mgt.model.Template;
+import org.wso2.carbon.template.mgt.util.TemplateMgtUtils;
 
 import static org.apache.commons.lang.StringUtils.isBlank;
+import static org.wso2.carbon.template.mgt.util.TemplateMgtUtils.getTenantIdFromCarbonContext;
+import static org.wso2.carbon.template.mgt.util.TemplateMgtUtils.handleClientException;
 
 
 /**
@@ -35,18 +41,33 @@ public class TemplateManagerImpl implements  TemplateManager {
 
     @Override
     public Template addTemplate(Template template) throws TemplateManagementException {
+        validateInputParameters(template);
+        TemplateManagerDAO templateManagerDAO = new TemplateManagerDAOImpl();
+        Template templateResponse = templateManagerDAO.addTemplate(template);
 
-
-        return null;
+        return templateResponse;
     }
 
-    private void validateInputParameters(Template template) {
+    private void validateInputParameters(Template template) throws TemplateManagementClientException {
         if (isBlank(template.getTemplateName())){
             if (log.isDebugEnabled()){
                 log.debug("Template name cannot be empty");
             }
-//            throw handleClientException()
+            throw handleClientException(TemplateMgtConstants.ErrorMessages.ERROR_CODE_TEMPLATE_NAME_REQUIRED, null);
+        }
+
+        if (isBlank(template.getTemplateScript())){
+            if (log.isDebugEnabled()){
+                log.debug("Template script cannot be empty");
+            }
+            throw handleClientException(TemplateMgtConstants.ErrorMessages.ERROR_CODE_TEMPLATE_SCRIPT_REQUIRED, null);
+        }
+
+        if (template.getTenantId() == null){
+            template.setTenantId(getTenantIdFromCarbonContext());
         }
 
     }
+
+
 }

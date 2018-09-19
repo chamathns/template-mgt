@@ -15,10 +15,14 @@
  */
 package org.wso2.carbon.template.mgt.internal;
 
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
 import org.osgi.framework.BundleContext;
 import org.osgi.service.component.ComponentContext;
 import org.osgi.service.component.annotations.Activate;
 import org.osgi.service.component.annotations.Component;
+import org.wso2.carbon.template.mgt.dao.TemplateManagerDAO;
+import org.wso2.carbon.template.mgt.dao.impl.TemplateManagerDAOImpl;
 
 @Component(
         name = "carbon.identity.template.mgt.component",
@@ -26,6 +30,7 @@ import org.osgi.service.component.annotations.Component;
 )
 
 public class TemplateManagerComponent {
+    private  static Log log = LogFactory.getLog(TemplateManagerComponent.class);
     /**
      * Register Template Manager as an OSGi service.
      *
@@ -35,6 +40,10 @@ public class TemplateManagerComponent {
     protected void activate(ComponentContext componentContext){
         BundleContext bundleContext = componentContext.getBundleContext();
 
+        bundleContext.registerService(TemplateManagerDAO.class.getName(),new TemplateManagerDAOImpl(),null);
+        if (log.isDebugEnabled()){
+            log.debug("Template Manager bundle is activated");
+        }
 
     }
 }

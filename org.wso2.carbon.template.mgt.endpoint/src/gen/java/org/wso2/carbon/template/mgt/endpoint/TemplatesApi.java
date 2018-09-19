@@ -6,10 +6,11 @@ import org.wso2.carbon.template.mgt.endpoint.factories.TemplatesApiServiceFactor
 
 import io.swagger.annotations.ApiParam;
 
-import org.wso2.carbon.template.mgt.endpoint.dto.TemplateDTO;
 import org.wso2.carbon.template.mgt.endpoint.dto.ErrorDTO;
 import org.wso2.carbon.template.mgt.endpoint.dto.AddTemplateResponseDTO;
+import org.wso2.carbon.template.mgt.endpoint.dto.TemplateRequestDTO;
 import org.wso2.carbon.template.mgt.endpoint.dto.DeleteTemplateResponseDTO;
+import org.wso2.carbon.template.mgt.endpoint.dto.TemplateDTO;
 import org.wso2.carbon.template.mgt.endpoint.dto.UpdateSuccessResponseDTO;
 
 import java.util.List;
@@ -45,7 +46,7 @@ public class TemplatesApi  {
         
         @io.swagger.annotations.ApiResponse(code = 500, message = "Server Error") })
 
-    public Response addTemplate(@ApiParam(value = "This represents the Template object that needs to be added to the database" ,required=true ) TemplateDTO template)
+    public Response addTemplate(@ApiParam(value = "This represents the Template object that needs to be added to the database" ,required=true ) TemplateRequestDTO template)
     {
     return delegate.addTemplate(template);
     }

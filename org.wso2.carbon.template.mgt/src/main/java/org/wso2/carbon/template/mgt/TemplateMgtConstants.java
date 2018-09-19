@@ -25,6 +25,9 @@ public class TemplateMgtConstants {
     public static final String S_MICROSOFT = "microsoft";
     public static final String INFORMIX = "Informix";
 
+    public static final String TEMPLATE_RESOURCE_PATH = "/" + "templates";
+
+
     public static class SqlQueries{
         public static final String INSERT_TEMPLATE = "INSERT INTO IDN_TEMPLATE_MGT (TENANT_ID, NAME, DESCRIPTION, DATA) VALUES (?,?,?,?,?)";
         public static final String GET_TEMPLATE_BY_ID = "SELECT TEMPLATE_ID,TENANT_ID,NAME,DESCRIPTION,DATA FROM IDN_TEMPLATE_MGT WHERE TEMPLATE_ID=? AND TENANT_ID=?";
@@ -38,8 +41,11 @@ public class TemplateMgtConstants {
         ERROR_CODE_SELECT_TEMPLATE_BY_ID("TM_00002","Error occurred while retrieving template from DB for tenant ID: %s and template ID: %s."),
         ERROR_CODE_LIST_TEMPLATES("TM_00003", "Error occurred while listing template from DB for tenantID: %s"),
         ERROR_CODE_DELETE_TEMPLATE("TM_00004", "Error occurred while deleting template from DB for tenant ID: %s and template ID: %s."),
-        ERROR_CODE_SET_BLOB("TM_00004", "Error occurred while reading from input stream of template: %s."),
-        ERROR_CODE_UPDATE_TEMPLATE("TM_00005", "Error occurred while updating the template: %s.");
+        ERROR_CODE_SET_BLOB("TM_00005", "Error occurred while reading from input stream of template: %s."),
+        ERROR_CODE_UPDATE_TEMPLATE("TM_00006", "Error occurred while updating the template: %s."),
+        ERROR_CODE_TEMPLATE_NAME_REQUIRED("TM_00007", "Template name is required."),
+        ERROR_CODE_TEMPLATE_SCRIPT_REQUIRED("TM_00008", "Template script is required.");
+
 
         private final String code;
         private final String message;

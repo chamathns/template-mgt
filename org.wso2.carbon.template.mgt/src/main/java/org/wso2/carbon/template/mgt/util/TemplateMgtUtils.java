@@ -18,6 +18,7 @@ package org.wso2.carbon.template.mgt.util;
 
 import com.hazelcast.client.impl.protocol.template.TemplateConstants;
 import org.apache.commons.lang.StringUtils;
+import org.wso2.carbon.context.PrivilegedCarbonContext;
 import org.wso2.carbon.template.mgt.TemplateMgtConstants;
 import org.wso2.carbon.template.mgt.exception.TemplateManagementClientException;
 import org.wso2.carbon.template.mgt.exception.TemplateManagementRuntimeException;
@@ -89,4 +90,24 @@ public class TemplateMgtUtils {
         return new TemplateManagementClientException(message, error.getCode());
     }
 
+    /**
+     * Get the tenant id from carbon context.
+     *
+     * @return Tenant id.
+     */
+    public static int getTenantIdFromCarbonContext() {
+        return PrivilegedCarbonContext.getThreadLocalCarbonContext().getTenantId();
+    }
+
+//    /**
+//     * Get the tenant domain from carbon context.
+//     *
+//     * @return Tenant domain.
+//     */
+//    public static String getTenantDomainFromCarbonContext() {
+//        return PrivilegedCarbonContext.getThreadLocalCarbonContext().getTenantDomain();
+//    }
+
 }
+
+

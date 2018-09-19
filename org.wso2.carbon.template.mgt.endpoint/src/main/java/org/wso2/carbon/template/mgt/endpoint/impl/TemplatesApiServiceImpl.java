@@ -18,6 +18,7 @@
 
 package org.wso2.carbon.template.mgt.endpoint.impl;
 
+import org.wso2.carbon.template.mgt.TemplateMgtConstants;
 import org.wso2.carbon.template.mgt.endpoint.*;
 import org.wso2.carbon.template.mgt.endpoint.dto.*;
 
@@ -27,27 +28,42 @@ import org.wso2.carbon.template.mgt.endpoint.dto.ErrorDTO;
 import org.wso2.carbon.template.mgt.endpoint.dto.DeleteTemplateResponseDTO;
 import org.wso2.carbon.template.mgt.endpoint.dto.UpdateSuccessResponseDTO;
 
+import java.net.URI;
+import java.net.URISyntaxException;
 import java.util.List;
 
 import java.io.InputStream;
 import org.apache.cxf.jaxrs.ext.multipart.Attachment;
+import org.wso2.carbon.template.mgt.exception.TemplateManagementException;
 import org.wso2.carbon.template.mgt.model.Template;
 
 import javax.ws.rs.core.Response;
 
+import static org.wso2.carbon.template.mgt.endpoint.util.TemplateEndpointUtils.getTemplateManager;
 import static org.wso2.carbon.template.mgt.endpoint.util.TemplateEndpointUtils.getTemplateRequest;
 
 public class TemplatesApiServiceImpl extends TemplatesApiService {
 
 
     @Override
-    public Response addTemplate(TemplateDTO template){
-        // do some magic!
-        return Response.ok()
-                .entity(new ApiResponseMessage(ApiResponseMessage.OK, "magic!"))
-                .build();
+    public Response addTemplate(TemplateRequestDTO template) {
+        try {
+            AddTemplateResponseDTO response = postTemplate(template);
+            return Response.ok()
+                    .entity(response)
+                    .location(getTemplateLocationURI(response))
+                    .build();
+        } catch (TemplateManagementException e) {
+            e.printStackTrace();
+            return null;
+            //handle exception
+        } catch (Throwable e) {
+            e.printStackTrace();
+            return null;
+            //handle exception
+            //handle other exceptions
+        }
     }
-
 
     @Override
     public Response deleteTemplate(Integer templateId){
@@ -70,11 +86,31 @@ public class TemplatesApiServiceImpl extends TemplatesApiService {
         return Response.ok().entity(new ApiResponseMessage(ApiResponseMessage.OK, "magic!")).build();
     }
 
-    private AddTemplateResponseDTO postTemplate(TemplateDTO templateDTO){
+    private AddTemplateResponseDTO postTemplate(TemplateRequestDTO templateDTO) throws TemplateManagementException {
         Template templateRequest = getTemplateRequest(templateDTO);
-        Template templateResponse = null;
-        return null;
+        Template templateResponse = getTemplateManager().addTemplate(templateRequest);
+
+        AddTemplateResponseDTO responseDTO = new AddTemplateResponseDTO();
+        responseDTO.setTemplateId(templateResponse.getTemplateId().toString());
+        responseDTO.setTenantId(templateResponse.getTenantId().toString());
+        responseDTO.setName(templateResponse.getTemplateName());
+        return responseDTO;
     }
+
+    private URI getTemplateLocationURI(AddTemplateResponseDTO response) throws URISyntaxException {
+        return new URI(TemplateMgtConstants.TEMPLATE_RESOURCE_PATH + response.getTenantId());
+    }
+
+
+
+
+
+
+
+
+
+
+
 
 
 

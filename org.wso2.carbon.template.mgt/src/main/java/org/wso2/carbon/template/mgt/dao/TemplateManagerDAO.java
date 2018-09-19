@@ -21,7 +21,7 @@ import org.wso2.carbon.template.mgt.model.Template;
 
 import java.util.List;
 
-public interface templateManagerDAO {
+public interface TemplateManagerDAO {
     /**
      * Add a {@link Template}.
      *

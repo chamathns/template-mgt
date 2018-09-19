@@ -78,7 +78,7 @@ paths:
         description: This represents the Template object that needs to be added to the database
         required: true
         schema:
-          $ref: '#/definitions/Template'
+          $ref: '#/definitions/TemplateRequest'
       responses:
         201:
           description: Successful response
@@ -209,7 +209,36 @@ securityDefinitions:
 
 definitions:
   #-----------------------------------------------------
-  # The Template Response  object
+  # The Template Request object
+  #-----------------------------------------------------
+  TemplateRequest:
+    type: object
+    required:
+    - tenant_id
+    - template_name
+    properties:
+      tenant_id:
+        type: 'integer'
+        description: 'A unique ID for a tenant'
+      template_name:
+        type: 'string'
+        description: 'The name of the template given by the admin'
+      description:
+        type: 'string'
+        description: 'A description for the template given by the admin'
+      data:
+        type: 'string'
+        description: 'This indicates the script of the template'
+    example:
+      tenant_id: 0001
+      template_name: template_name
+      data: data
+      description: description
+      template_id: 6
+  #-----------------------------------------------------
+
+  #-----------------------------------------------------
+  # The Template object
   #-----------------------------------------------------
   Template:
     type: object
@@ -232,11 +261,11 @@ definitions:
         type: 'string'
         description: 'This indicates the script of the template'
     example:
-      tenant_id: 0001
+      tenant_id: 0002
       template_name: template_name
       data: data
       description: description
-      template_id: 6
+      template_id: 3
   #-----------------------------------------------------
 
   #-----------------------------------------------------
@@ -274,6 +303,8 @@ definitions:
   AddTemplateResponse:
     type: object
     properties:
+      template_id:
+        type: string
       tenant_id:
         type: string
       name:

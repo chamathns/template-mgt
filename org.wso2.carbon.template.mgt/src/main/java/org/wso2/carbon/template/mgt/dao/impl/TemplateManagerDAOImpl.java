@@ -16,11 +16,10 @@
 
 package org.wso2.carbon.template.mgt.dao.impl;
 
-import com.hazelcast.client.impl.protocol.template.TemplateConstants;
 import org.wso2.carbon.database.utils.jdbc.JdbcTemplate;
 import org.wso2.carbon.database.utils.jdbc.exceptions.DataAccessException;
 import org.wso2.carbon.template.mgt.TemplateMgtConstants;
-import org.wso2.carbon.template.mgt.dao.templateManagerDAO;
+import org.wso2.carbon.template.mgt.dao.TemplateManagerDAO;
 import org.wso2.carbon.template.mgt.exception.TemplateManagementException;
 import org.wso2.carbon.template.mgt.exception.TemplateManagementServerException;
 import org.wso2.carbon.template.mgt.model.Template;
@@ -34,7 +33,7 @@ import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.util.List;
 
-public class templateManagerDAOImpl implements templateManagerDAO {
+public class TemplateManagerDAOImpl implements TemplateManagerDAO {
     public Template addTemplate(Template template) throws TemplateManagementException {
         Template templateResult;
         int insertedId;
