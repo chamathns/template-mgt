@@ -1,0 +1,330 @@
+---
+swagger: "2.0"
+info:
+  description: A **RESTful API** to handle templates for dynamic prompt in adaptive authentication for **WSO2 Identity Server** <br/> Written with [swagger 2](https://swagger.io/)
+  version: 1.0.0
+  title: WSO2 Identity Server Rest API - Template Management
+  contact:
+    name: WSO2
+    url: http://wso2.com/products/identity-server/
+    email: architecture@wso2.org
+  license:
+    name: Apache 2.0
+    url: http://www.apache.org/licenses/LICENSE-2.0.html
+host: localhost
+basePath: /api/identity/template/mgt/v1.0
+schemes:
+- https
+consumes:
+- application/json
+produces:
+- application/json
+security:
+- UserSecurity: []
+paths:
+  /templates:
+    get:
+      summary: Get an array of templates
+      operationId: getTemplates
+      produces:
+      - application/json
+      parameters:
+      - name: limit
+        in: query
+        description: Limits the number of items on a page
+        required: false
+        type: integer
+      - name: offset
+        in: query
+        description: Specifies the page number of the templates to be displayed
+        required: false
+        type: integer
+      responses:
+        200:
+          description: Successfully returned an array of templates
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/Template'
+        400:
+          description: Invalid request
+          schema:
+            $ref: '#/definitions/Error'
+        401:
+          description: Unauthorized
+          schema:
+            $ref: '#/definitions/Error'
+        404:
+          description: Not Found
+          schema:
+            $ref: '#/definitions/Error'
+        500:
+          description: Server Error
+          schema:
+            $ref: '#/definitions/Error'
+    post:
+      description: |
+        This API is used to store template information submitted by the user.
+      summary: |
+        Add a new template
+      operationId: addTemplate
+      consumes:
+      - application/json
+      produces:
+      - application/json
+      parameters:
+      - in: body
+        name: template
+        description: This represents the Template object that needs to be added to the database
+        required: true
+        schema:
+          $ref: '#/definitions/TemplateRequest'
+      responses:
+        201:
+          description: Successful response
+          schema:
+            $ref: '#/definitions/AddTemplateResponse'
+        400:
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/Error'
+        401:
+          description: Unauthorized
+          schema:
+            $ref: '#/definitions/Error'
+        409:
+          description: Conflict
+          schema:
+            $ref: '#/definitions/Error'
+        500:
+          description: Server Error
+          schema:
+            $ref: '#/definitions/Error'
+  /templates/{template_id}:
+    get:
+      summary: Find template by ID
+      description: Returns a single template
+      operationId: getTemplateById
+      produces:
+      - application/json
+      parameters:
+      - name: template_id
+        in: path
+        description: ID of template to return
+        required: true
+        type: integer
+      responses:
+        200:
+          description: Successful operation
+          schema:
+            $ref: '#/definitions/Template'
+        400:
+          description: Invalid request
+          schema:
+            $ref: '#/definitions/Error'
+        401:
+          description: Unauthorized
+          schema:
+            $ref: '#/definitions/Error'
+        404:
+          description: Not Found
+          schema:
+            $ref: '#/definitions/Error'
+        500:
+          description: Server Error
+          schema:
+            $ref: '#/definitions/Error'
+    put:
+      summary: Update an existing template
+      operationId: updateTemplate
+      produces:
+      - application/json
+      parameters:
+      - name: template_id
+        in: path
+        description: ID of the template to be updated
+        required: true
+        type: integer
+      - in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/Template'
+      responses:
+        202:
+          description: Template updated
+          schema:
+            $ref: '#/definitions/UpdateSuccessResponse'
+        400:
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/Error'
+        401:
+          description: Unauthorized
+          schema:
+            $ref: '#/definitions/Error'
+        404:
+          description: Not Found
+          schema:
+            $ref: '#/definitions/Error'
+        500:
+          description: Server Error
+          schema:
+            $ref: '#/definitions/Error'
+    delete:
+      summary: Delete a template
+      operationId: deleteTemplate
+      produces:
+      - application/json
+      parameters:
+      - name: template_id
+        in: path
+        description: ID of the template to be deleted
+        required: true
+        type: integer
+      responses:
+        202:
+          description: Template deleted
+          schema:
+            $ref: '#/definitions/DeleteTemplateResponse'
+        400:
+          description: Bad Request
+          schema:
+            $ref: '#/definitions/Error'
+        401:
+          description: Unauthorized
+          schema:
+            $ref: '#/definitions/Error'
+        404:
+          description: Not Found
+          schema:
+            $ref: '#/definitions/Error'
+        500:
+          description: Server Error
+          schema:
+            $ref: '#/definitions/Error'
+securityDefinitions:
+  UserSecurity:
+    type: basic
+
+definitions:
+  #-----------------------------------------------------
+  # The Template Request object
+  #-----------------------------------------------------
+  TemplateRequest:
+    type: object
+    required:
+    - tenant_id
+    - template_name
+    properties:
+      tenant_id:
+        type: 'integer'
+        description: 'A unique ID for a tenant'
+      template_name:
+        type: 'string'
+        description: 'The name of the template given by the admin'
+      description:
+        type: 'string'
+        description: 'A description for the template given by the admin'
+      data:
+        type: 'string'
+        description: 'This indicates the script of the template'
+    example:
+      tenant_id: 0001
+      template_name: template_name
+      data: data
+      description: description
+      template_id: 6
+  #-----------------------------------------------------
+
+  #-----------------------------------------------------
+  # The Template object
+  #-----------------------------------------------------
+  Template:
+    type: object
+    required:
+    - tenant_id
+    properties:
+      template_id:
+        type: 'integer'
+        description: 'An auto-incremented unique ID for a template'
+      tenant_id:
+        type: 'integer'
+        description: 'A unique ID for a tenant'
+      template_name:
+        type: 'string'
+        description: 'The name of the template given by the admin'
+      description:
+        type: 'string'
+        description: 'A description for the template given by the admin'
+      data:
+        type: 'string'
+        description: 'This indicates the script of the template'
+    example:
+      tenant_id: 0002
+      template_name: template_name
+      data: data
+      description: description
+      template_id: 3
+  #-----------------------------------------------------
+
+  #-----------------------------------------------------
+  # The Error Response  object
+  #-----------------------------------------------------
+  Error:
+    type: object
+    properties:
+      code:
+        type: string
+      message:
+        type: string
+      description:
+        type: string
+  #-----------------------------------------------------
+
+  #-----------------------------------------------------
+  # The UpdateSuccessResponse  object
+  #-----------------------------------------------------
+  UpdateSuccessResponse:
+    type: object
+    properties:
+      token:
+        type: string
+      last-modified:
+        type: string
+    example:
+      last-modified: last-modified
+      token: token
+  #-----------------------------------------------------
+
+  #-----------------------------------------------------
+  # The AddTemplateResponse object
+  #-----------------------------------------------------
+  AddTemplateResponse:
+    type: object
+    properties:
+      template_id:
+        type: string
+      tenant_id:
+        type: string
+      name:
+        type: string
+    example:
+      tenant_id: 0001
+      name: smapleTemplate
+  #-----------------------------------------------------
+
+  #-----------------------------------------------------
+  # The DeleteTemplateResponse  object
+  #-----------------------------------------------------
+  DeleteTemplateResponse:
+    type: object
+    properties:
+      token:
+        type: string
+      deleted-by:
+        type: string
+    example:
+      deleted-by: deleted-by
+      token: token
+#-----------------------------------------------------

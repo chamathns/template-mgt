@@ -6,9 +6,9 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="org.wso2.carbon.template.mgt" />
-        <module name="org.wso2.carbon.template.mgt.endpoint" />
-        <module name="org.wso2.carbon.template.mgt.ui" />
+        <module name="org.wso2.carbon.identity.template.mgt" />
+        <module name="org.wso2.carbon.identity.template.mgt.endpoint" />
+        <module name="org.wso2.carbon.identity.template.mgt.ui" />
       </profile>
     </annotationProcessing>
   </component>

@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="FrameworkDetectionExcludesConfiguration">
-    <file type="Osmorc" url="file://$PROJECT_DIR$/org.wso2.carbon.template.mgt" />
-    <file type="web" url="file://$PROJECT_DIR$/org.wso2.carbon.template.mgt.endpoint" />
+    <file type="Osmorc" url="file://$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt" />
+    <file type="web" url="file://$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.endpoint" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
