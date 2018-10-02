@@ -291,8 +291,6 @@ definitions:
   UpdateSuccessResponse:
     type: "object"
     properties:
-      template_id:
-        type: "string"
       tenant_id:
         type: "string"
       name:

@@ -1,5 +1,6 @@
 /home/chamath/IdeaProjects/template-mgt/org.wso2.carbon.identity.template.mgt.endpoint/src/gen/java/org/wso2/carbon/identity/template/mgt/endpoint/TemplatesApi.java
 /home/chamath/IdeaProjects/template-mgt/org.wso2.carbon.identity.template.mgt.endpoint/src/gen/java/org/wso2/carbon/identity/template/mgt/endpoint/dto/TemplateDTO.java
+/home/chamath/IdeaProjects/template-mgt/org.wso2.carbon.identity.template.mgt.endpoint/src/gen/java/org/wso2/carbon/identity/template/mgt/endpoint/dto/UpdateTemplateRequestDTO.java
 /home/chamath/IdeaProjects/template-mgt/org.wso2.carbon.identity.template.mgt.endpoint/src/gen/java/org/wso2/carbon/identity/template/mgt/endpoint/factories/TemplatesApiServiceFactory.java
 /home/chamath/IdeaProjects/template-mgt/org.wso2.carbon.identity.template.mgt.endpoint/src/gen/java/org/wso2/carbon/identity/template/mgt/endpoint/dto/CreateTemplateResponseDTO.java
 /home/chamath/IdeaProjects/template-mgt/org.wso2.carbon.identity.template.mgt.endpoint/src/gen/java/org/wso2/carbon/identity/template/mgt/endpoint/dto/AddTemplateResponseDTO.java

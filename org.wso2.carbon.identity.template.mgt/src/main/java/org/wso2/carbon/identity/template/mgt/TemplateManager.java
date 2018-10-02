@@ -30,10 +30,10 @@ import org.wso2.carbon.identity.template.mgt.model.Template;
 public interface TemplateManager {
 
     /**
-     * This API is used to add a new Purpose.
+     * This API is used to add a new template.
      *
      * @param template Template element.
-     * @return 201 Created. Return template element with tenant Id and name.
+     * @return 201 Created. Return template element with template id, tenant Id and name.
      * @throws TemplateManagementException Template Management Exception.
      */
 
@@ -47,6 +47,18 @@ public interface TemplateManager {
      * @throws TemplateManagementException Template Management Exception.
      */
     Template getTemplateByName(String templateName) throws TemplateManagementException;
+
+    /**
+     * This API is used to add a new Purpose.
+     *
+     * @param templateName Name of the updated template.
+     * @param template Template element.
+     * @return 202 Updated. Return the updated template element with template id, tenant Id and name.
+     * @throws TemplateManagementException Template Management Exception.
+     */
+
+    Template updateTemplate(String templateName,Template template) throws TemplateManagementException;
+
 
     /**
      * This api is used to delete existing template by template name.

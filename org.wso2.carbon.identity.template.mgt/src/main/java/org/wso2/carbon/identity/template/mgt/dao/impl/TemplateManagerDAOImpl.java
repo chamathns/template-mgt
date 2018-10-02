@@ -96,7 +96,8 @@ public class TemplateManagerDAOImpl implements TemplateManagerDAO {
         return null;
     }
 
-    public void updateTemplate(Integer tenantId, Integer templateId, Template newTemplate) throws TemplateManagementServerException {
+    public Template updateTemplate(String templateName, Template newTemplate) throws TemplateManagementServerException {
+
         JdbcTemplate jdbcTemplate = JdbcUtils.getNewTemplate();
         try {
             jdbcTemplate.executeUpdate(TemplateMgtConstants.SqlQueries.UPDATE_TEMPLATE, preparedStatement -> {
@@ -107,12 +108,13 @@ public class TemplateManagerDAOImpl implements TemplateManagerDAO {
                 } catch (IOException e) {
                     throw TemplateMgtUtils.handleRuntimeException(TemplateMgtConstants.ErrorMessages.ERROR_CODE_SET_BLOB,newTemplate.getTemplateName(),e);
                 }
-                preparedStatement.setString(4, tenantId.toString());
-                preparedStatement.setString(5,templateId.toString());
+                preparedStatement.setInt(4, newTemplate.getTenantId());
+                preparedStatement.setString(5,templateName);
             });
         } catch (DataAccessException e) {
             throw TemplateMgtUtils.handleServerException(TemplateMgtConstants.ErrorMessages.ERROR_CODE_UPDATE_TEMPLATE,newTemplate.getTemplateName(),e);
         }
+        return new Template(newTemplate.getTenantId(), newTemplate.getTemplateName());
     }
 
     public void deleteTemplate(String templateName , Integer tenantId) throws TemplateManagementException{

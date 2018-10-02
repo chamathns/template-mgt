@@ -60,6 +60,28 @@ TemplatesApiServiceImpl extends TemplatesApiService {
     }
 
     @Override
+    public Response updateTemplate(String templateName, UpdateTemplateRequestDTO updateTemplateRequestDTO){
+        try {
+            UpdateSuccessResponseDTO response = putTemplate(templateName,updateTemplateRequestDTO);
+            return Response.ok()
+                    .entity(response)
+                    .location(getUpdatedTemplateLocationURI(response))
+                    .build();
+        } catch (TemplateManagementException e) {
+            e.printStackTrace();
+            return null;
+        } catch (URISyntaxException e) {
+            e.printStackTrace();
+            return null;
+        } catch (Throwable e){
+            e.printStackTrace();
+            return null;
+            //handle exceptions
+        }
+    }
+
+
+    @Override
     public Response getTemplateByName(String templateName){
         try {
             Template template = getTemplate(templateName);
@@ -98,12 +120,6 @@ TemplatesApiServiceImpl extends TemplatesApiService {
     }
 
 
-    @Override
-    public Response updateTemplate(String templateName, TemplateDTO data){
-        // do some magic!
-        return Response.ok().entity(new ApiResponseMessage(ApiResponseMessage.OK, "magic!")).build();
-    }
-
     private AddTemplateResponseDTO postTemplate(TemplateRequestDTO templateDTO) throws TemplateManagementException {
         Template templateRequest = TemplateEndpointUtils.getTemplateRequest(templateDTO);
         Template templateResponse = TemplateEndpointUtils.getTemplateManager().addTemplate(templateRequest);
@@ -115,12 +131,25 @@ TemplatesApiServiceImpl extends TemplatesApiService {
         return responseDTO;
     }
 
+    private UpdateSuccessResponseDTO putTemplate(String templateName, UpdateTemplateRequestDTO updateTemplateRequestDTO) throws TemplateManagementException {
+        Template updateTemplateRequest = TemplateEndpointUtils.getTemplateUpdateRequest(updateTemplateRequestDTO);
+        Template updateTemplateResponse = TemplateEndpointUtils.getTemplateManager().updateTemplate(templateName,updateTemplateRequest);
+
+        UpdateSuccessResponseDTO responseDTO= new UpdateSuccessResponseDTO();
+        responseDTO.setName(updateTemplateResponse.getTemplateName());
+        responseDTO.setTenantId(updateTemplateResponse.getTenantId().toString());
+        return responseDTO;
+    }
+
     private Template getTemplate(String templateName) throws TemplateManagementException {
         Template getTemplateResponse = TemplateEndpointUtils.getTemplateManager().getTemplateByName(templateName);
         return getTemplateResponse;
     }
 
     private URI getTemplateLocationURI(AddTemplateResponseDTO response) throws URISyntaxException {
+        return new URI(TemplateMgtConstants.TEMPLATE_RESOURCE_PATH + response.getTenantId());
+    }
+    private URI getUpdatedTemplateLocationURI(UpdateSuccessResponseDTO response) throws URISyntaxException {
         return new URI(TemplateMgtConstants.TEMPLATE_RESOURCE_PATH + response.getTenantId());
     }
 

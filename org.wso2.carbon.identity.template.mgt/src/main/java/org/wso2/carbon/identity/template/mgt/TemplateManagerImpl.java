@@ -43,7 +43,6 @@ public class TemplateManagerImpl implements  TemplateManager {
         validateInputParameters(template);
         TemplateManagerDAO templateManagerDAO = new TemplateManagerDAOImpl();
         Template templateResponse = templateManagerDAO.addTemplate(template);
-
         return templateResponse;
     }
 
@@ -51,6 +50,14 @@ public class TemplateManagerImpl implements  TemplateManager {
     public Template getTemplateByName(String templateName) throws TemplateManagementException {
         TemplateManagerDAO templateManagerDAO = new TemplateManagerDAOImpl();
         return templateManagerDAO.getTemplateByName(templateName, getTenantIdFromCarbonContext());
+    }
+
+    @Override
+    public Template updateTemplate(String templateName, Template template) throws TemplateManagementException {
+        validateInputParameters(template);
+        TemplateManagerDAO templateManagerDAO = new TemplateManagerDAOImpl();
+        Template updateSuccessResponse = templateManagerDAO.updateTemplate(templateName,template);
+        return updateSuccessResponse;
     }
 
     @Override

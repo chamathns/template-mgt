@@ -35,7 +35,7 @@ public interface TemplateManagerDAO {
 
     List<Template> getAllTemplates(Integer tenantId) throws TemplateManagementException;
 
-    void updateTemplate(Integer tenantId, Integer templateId, Template newTemplate) throws TemplateManagementServerException;
+    Template updateTemplate(String templateName, Template newTemplate) throws TemplateManagementServerException;
 
     void deleteTemplate(String templateName, Integer tenantId) throws TemplateManagementException;
 }

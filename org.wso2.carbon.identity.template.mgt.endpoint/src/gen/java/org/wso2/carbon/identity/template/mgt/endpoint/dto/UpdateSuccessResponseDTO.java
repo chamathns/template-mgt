@@ -13,27 +13,10 @@ import javax.validation.constraints.NotNull;
 @ApiModel(description = "")
 public class UpdateSuccessResponseDTO  {
   
-  
-  
-  private String templateId = null;
-  
-  
   private String tenantId = null;
   
   
   private String name = null;
-
-  
-  /**
-   **/
-  @ApiModelProperty(value = "")
-  @JsonProperty("templateId")
-  public String getTemplateId() {
-    return templateId;
-  }
-  public void setTemplateId(String templateId) {
-    this.templateId = templateId;
-  }
 
   
   /**
@@ -66,7 +49,6 @@ public class UpdateSuccessResponseDTO  {
     StringBuilder sb = new StringBuilder();
     sb.append("class UpdateSuccessResponseDTO {\n");
     
-    sb.append("  templateId: ").append(templateId).append("\n");
     sb.append("  tenantId: ").append(tenantId).append("\n");
     sb.append("  name: ").append(name).append("\n");
     sb.append("}\n");

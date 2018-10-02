@@ -2,6 +2,7 @@ org/wso2/carbon/identity/template/mgt/endpoint/dto/AddTemplateResponseDTO.class
 org/wso2/carbon/identity/template/mgt/endpoint/factories/TemplatesApiServiceFactory.class
 org/wso2/carbon/identity/template/mgt/endpoint/ApiException.class
 org/wso2/carbon/identity/template/mgt/endpoint/dto/ErrorDTO.class
+org/wso2/carbon/identity/template/mgt/endpoint/dto/UpdateTemplateRequestDTO.class
 org/wso2/carbon/identity/template/mgt/endpoint/dto/UpdateSuccessResponseDTO.class
 org/wso2/carbon/identity/template/mgt/endpoint/dto/TemplateDTO.class
 org/wso2/carbon/identity/template/mgt/endpoint/ApiResponseMessage.class

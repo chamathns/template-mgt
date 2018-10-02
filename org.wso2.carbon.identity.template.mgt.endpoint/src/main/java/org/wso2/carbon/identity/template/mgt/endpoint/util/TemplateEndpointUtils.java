@@ -22,6 +22,7 @@ import org.apache.cxf.jaxrs.ext.MessageContext;
 import org.wso2.carbon.context.PrivilegedCarbonContext;
 import org.wso2.carbon.identity.template.mgt.TemplateManager;
 import org.wso2.carbon.identity.template.mgt.endpoint.dto.TemplateRequestDTO;
+import org.wso2.carbon.identity.template.mgt.endpoint.dto.UpdateTemplateRequestDTO;
 import org.wso2.carbon.identity.template.mgt.model.Template;
 import org.wso2.carbon.identity.template.mgt.util.TemplateMgtUtils;
 
@@ -36,6 +37,13 @@ public class TemplateEndpointUtils {
                             templateDTO.getTemplateName(),
                             templateDTO.getDescription(),
                             templateDTO.getData());
+    }
+
+    public static Template getTemplateUpdateRequest (UpdateTemplateRequestDTO templateRequestDTO){
+        return new Template(TemplateMgtUtils.getTenantIdFromCarbonContext(),
+                            templateRequestDTO.getTemplateName(),
+                            templateRequestDTO.getDescription(),
+                            templateRequestDTO.getData());
     }
 
 //    public static String getTenantIdFromAuthenticatedUser(MessageContext context) {
