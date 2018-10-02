@@ -15,33 +15,48 @@ public class UpdateSuccessResponseDTO  {
   
   
   
-  private String token = null;
+  private String templateId = null;
   
   
-  private String lastModified = null;
+  private String tenantId = null;
+  
+  
+  private String name = null;
 
   
   /**
    **/
   @ApiModelProperty(value = "")
-  @JsonProperty("token")
-  public String getToken() {
-    return token;
+  @JsonProperty("templateId")
+  public String getTemplateId() {
+    return templateId;
   }
-  public void setToken(String token) {
-    this.token = token;
+  public void setTemplateId(String templateId) {
+    this.templateId = templateId;
   }
 
   
   /**
    **/
   @ApiModelProperty(value = "")
-  @JsonProperty("lastModified")
-  public String getLastModified() {
-    return lastModified;
+  @JsonProperty("tenantId")
+  public String getTenantId() {
+    return tenantId;
   }
-  public void setLastModified(String lastModified) {
-    this.lastModified = lastModified;
+  public void setTenantId(String tenantId) {
+    this.tenantId = tenantId;
+  }
+
+  
+  /**
+   **/
+  @ApiModelProperty(value = "")
+  @JsonProperty("name")
+  public String getName() {
+    return name;
+  }
+  public void setName(String name) {
+    this.name = name;
   }
 
   
@@ -51,8 +66,9 @@ public class UpdateSuccessResponseDTO  {
     StringBuilder sb = new StringBuilder();
     sb.append("class UpdateSuccessResponseDTO {\n");
     
-    sb.append("  token: ").append(token).append("\n");
-    sb.append("  lastModified: ").append(lastModified).append("\n");
+    sb.append("  templateId: ").append(templateId).append("\n");
+    sb.append("  tenantId: ").append(tenantId).append("\n");
+    sb.append("  name: ").append(name).append("\n");
     sb.append("}\n");
     return sb.toString();
   }

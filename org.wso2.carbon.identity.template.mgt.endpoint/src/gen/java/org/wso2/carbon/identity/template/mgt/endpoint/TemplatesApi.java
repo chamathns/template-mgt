@@ -11,6 +11,7 @@ import org.wso2.carbon.identity.template.mgt.endpoint.dto.AddTemplateResponseDTO
 import org.wso2.carbon.identity.template.mgt.endpoint.dto.TemplateRequestDTO;
 import org.wso2.carbon.identity.template.mgt.endpoint.dto.DeleteTemplateResponseDTO;
 import org.wso2.carbon.identity.template.mgt.endpoint.dto.TemplateDTO;
+import org.wso2.carbon.identity.template.mgt.endpoint.dto.UpdateTemplateRequestDTO;
 import org.wso2.carbon.identity.template.mgt.endpoint.dto.UpdateSuccessResponseDTO;
 
 import java.util.List;
@@ -74,7 +75,7 @@ public class TemplatesApi  {
     @Path("/{template_name}")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
-    @io.swagger.annotations.ApiOperation(value = "Find template by Name", notes = "This API is used to retrieve a specific template using the template name.      \n", response = TemplateDTO.class)
+    @io.swagger.annotations.ApiOperation(value = "Find template by Name\n", notes = "This API is used to retrieve a specific template using the template name. \n", response = TemplateDTO.class)
     @io.swagger.annotations.ApiResponses(value = { 
         @io.swagger.annotations.ApiResponse(code = 200, message = "Successful operation"),
         
@@ -115,7 +116,7 @@ public class TemplatesApi  {
     @Path("/{template_name}")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
-    @io.swagger.annotations.ApiOperation(value = "Update an existing template", notes = "", response = UpdateSuccessResponseDTO.class)
+    @io.swagger.annotations.ApiOperation(value = "Update an existing template      \n", notes = "This API is used to update a template. \n", response = UpdateSuccessResponseDTO.class)
     @io.swagger.annotations.ApiResponses(value = { 
         @io.swagger.annotations.ApiResponse(code = 202, message = "Template updated"),
         
@@ -128,9 +129,9 @@ public class TemplatesApi  {
         @io.swagger.annotations.ApiResponse(code = 500, message = "Server Error") })
 
     public Response updateTemplate(@ApiParam(value = "Name of the template to be updated",required=true ) @PathParam("template_name")  String templateName,
-    @ApiParam(value = "" ,required=true ) TemplateDTO data)
+    @ApiParam(value = "" ,required=true ) UpdateTemplateRequestDTO newTemplate)
     {
-    return delegate.updateTemplate(templateName,data);
+    return delegate.updateTemplate(templateName,newTemplate);
     }
 }
 

@@ -11,39 +11,23 @@ import javax.validation.constraints.NotNull;
 
 
 @ApiModel(description = "")
-public class TemplateRequestDTO  {
+public class UpdateTemplateRequestDTO  {
   
   
-  @NotNull
-  private Integer tenantId = null;
   
-  @NotNull
   private String templateName = null;
   
   
   private String description = null;
   
-  
+  @NotNull
   private String data = null;
-
-  
-  /**
-   * A unique ID for a tenant
-   **/
-  @ApiModelProperty(required = true, value = "A unique ID for a tenant")
-  @JsonProperty("tenantId")
-  public Integer getTenantId() {
-    return tenantId;
-  }
-  public void setTenantId(Integer tenantId) {
-    this.tenantId = tenantId;
-  }
 
   
   /**
    * The name of the template given by the admin
    **/
-  @ApiModelProperty(required = true, value = "The name of the template given by the admin")
+  @ApiModelProperty(value = "The name of the template given by the admin")
   @JsonProperty("templateName")
   public String getTemplateName() {
     return templateName;
@@ -69,7 +53,7 @@ public class TemplateRequestDTO  {
   /**
    * This indicates the script of the template
    **/
-  @ApiModelProperty(value = "This indicates the script of the template")
+  @ApiModelProperty(required = true, value = "This indicates the script of the template")
   @JsonProperty("data")
   public String getData() {
     return data;
@@ -83,9 +67,8 @@ public class TemplateRequestDTO  {
   @Override
   public String toString()  {
     StringBuilder sb = new StringBuilder();
-    sb.append("class TemplateRequestDTO {\n");
+    sb.append("class UpdateTemplateRequestDTO {\n");
     
-    sb.append("  tenantId: ").append(tenantId).append("\n");
     sb.append("  templateName: ").append(templateName).append("\n");
     sb.append("  description: ").append(description).append("\n");
     sb.append("  data: ").append(data).append("\n");
