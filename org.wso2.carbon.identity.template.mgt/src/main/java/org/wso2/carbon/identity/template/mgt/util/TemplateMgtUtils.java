@@ -97,6 +97,8 @@ public class TemplateMgtUtils {
         return PrivilegedCarbonContext.getThreadLocalCarbonContext().getTenantId();
     }
 
+
+
 //    /**
 //     * Get the tenant domain from carbon context.
 //     *

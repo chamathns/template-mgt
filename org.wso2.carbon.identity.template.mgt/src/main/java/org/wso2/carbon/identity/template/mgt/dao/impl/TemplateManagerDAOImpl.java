@@ -53,24 +53,24 @@ public class TemplateManagerDAOImpl implements TemplateManagerDAO {
         templateResult = new Template(insertedId,template.getTenantId(),template.getTemplateName());
         return templateResult;
     }
-
-    public Template getTemplateById(Integer tenantId, Integer templateId) throws TemplateManagementException {
-        Template template = null;
+    
+    public Template getTemplateByName(String templateName, Integer tenantId) throws TemplateManagementException {
+        Template template;
         JdbcTemplate jdbcTemplate = JdbcUtils.getNewTemplate();
         try {
-            template = jdbcTemplate.fetchSingleRecord(TemplateMgtConstants.SqlQueries.GET_TEMPLATE_BY_ID,(resultSet, rowNumber) ->
+            template = jdbcTemplate.fetchSingleRecord(TemplateMgtConstants.SqlQueries.GET_TEMPLATE_BY_NAME,(resultSet, rowNumber) ->
                     new Template(resultSet.getInt(1),
                             resultSet.getInt(2),
                             resultSet.getString(3),
                             resultSet.getString(4),
                             resultSet.getString(5)),
                     preparedStatement -> {
-                        preparedStatement.setInt(1,templateId);
+                        preparedStatement.setString(1,templateName);
                         preparedStatement.setInt(2,tenantId);
             });
         } catch (DataAccessException e) {
-            throw new TemplateManagementServerException(String.format(TemplateMgtConstants.ErrorMessages.ERROR_CODE_SELECT_TEMPLATE_BY_ID.getMessage(),tenantId, templateId),
-                    TemplateMgtConstants.ErrorMessages.ERROR_CODE_SELECT_TEMPLATE_BY_ID.getCode(),e);
+            throw new TemplateManagementServerException(String.format(TemplateMgtConstants.ErrorMessages.ERROR_CODE_SELECT_TEMPLATE_BY_NAME.getMessage(),tenantId, templateName),
+                    TemplateMgtConstants.ErrorMessages.ERROR_CODE_SELECT_TEMPLATE_BY_NAME.getCode(),e);
         }
         return template;
     }

@@ -19,9 +19,9 @@ import javax.ws.rs.core.Response;
 
 public abstract class TemplatesApiService {
     public abstract Response addTemplate(TemplateRequestDTO template);
-    public abstract Response deleteTemplate(Integer templateId);
-    public abstract Response getTemplateById(Integer templateId);
+    public abstract Response deleteTemplate(String templateName);
+    public abstract Response getTemplateByName(String templateName);
     public abstract Response getTemplates(Integer limit,Integer offset);
-    public abstract Response updateTemplate(Integer templateId,TemplateDTO data);
+    public abstract Response updateTemplate(String templateName,TemplateDTO data);
 }
 

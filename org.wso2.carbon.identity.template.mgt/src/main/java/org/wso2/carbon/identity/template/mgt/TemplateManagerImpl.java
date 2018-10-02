@@ -47,6 +47,12 @@ public class TemplateManagerImpl implements  TemplateManager {
         return templateResponse;
     }
 
+    @Override
+    public Template getTemplateByName(String templateName) throws TemplateManagementException {
+        TemplateManagerDAO templateManagerDAO = new TemplateManagerDAOImpl();
+        return templateManagerDAO.getTemplateByName(templateName, getTenantIdFromCarbonContext());
+    }
+
     private void validateInputParameters(Template template) throws TemplateManagementClientException {
         if (isBlank(template.getTemplateName())){
             if (log.isDebugEnabled()){

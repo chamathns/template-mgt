@@ -93,6 +93,8 @@ From: 'The Apache Software Foundation' (http://www.apache.org/)
     License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
   - Apache CXF Runtime JAX-RS Frontend (http://cxf.apache.org) org.apache.cxf:cxf-rt-frontend-jaxrs:jar:2.7.16
     License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Apache CXF JAX-RS Service Description (http://cxf.apache.org) org.apache.cxf:cxf-rt-rs-service-description:bundle:3.1.4
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
   - Apache CXF Runtime HTTP Transport (http://cxf.apache.org) org.apache.cxf:cxf-rt-transports-http:jar:2.7.16
     License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
   - XmlSchema Core (http://ws.apache.org/commons/xmlschema20/xmlschema-core/) org.apache.ws.xmlschema:xmlschema-core:bundle:2.1.0

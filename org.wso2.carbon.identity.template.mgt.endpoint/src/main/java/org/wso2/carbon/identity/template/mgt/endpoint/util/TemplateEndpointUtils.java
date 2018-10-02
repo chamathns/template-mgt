@@ -18,10 +18,13 @@
 
 package org.wso2.carbon.identity.template.mgt.endpoint.util;
 
+import org.apache.cxf.jaxrs.ext.MessageContext;
 import org.wso2.carbon.context.PrivilegedCarbonContext;
+import org.wso2.carbon.identity.auth.service.AuthenticationContext;
 import org.wso2.carbon.identity.template.mgt.TemplateManager;
 import org.wso2.carbon.identity.template.mgt.endpoint.dto.TemplateRequestDTO;
 import org.wso2.carbon.identity.template.mgt.model.Template;
+import org.wso2.carbon.identity.template.mgt.util.TemplateMgtUtils;
 
 public class TemplateEndpointUtils {
 
@@ -30,9 +33,20 @@ public class TemplateEndpointUtils {
     }
 
     public static Template getTemplateRequest (TemplateRequestDTO templateDTO){
-        return new Template(templateDTO.getTenantId(),
+        return new Template(TemplateMgtUtils.getTenantIdFromCarbonContext(),
                             templateDTO.getTemplateName(),
                             templateDTO.getDescription(),
                             templateDTO.getData());
     }
+
+//    public static String getTenantIdFromAuthenticatedUser(MessageContext context) {
+//        if (context.getHttpServletRequest().getAttribute("auth-context") instanceof AuthenticationContext){
+//            AuthenticationContext authenticationContext = (AuthenticationContext) context.getHttpServletRequest().getAttribute("auth-context");
+//            if (authenticationContext.getUser()!= null){
+//                return authenticationContext.getUser().getTenantDomain();
+//            }
+//
+//        }
+//        return null;
+//    }
 }

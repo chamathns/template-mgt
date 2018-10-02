@@ -15,9 +15,6 @@ public class TemplateRequestDTO  {
   
   
   @NotNull
-  private Integer tenantId = null;
-  
-  @NotNull
   private String templateName = null;
   
   
@@ -25,19 +22,6 @@ public class TemplateRequestDTO  {
   
   
   private String data = null;
-
-  
-  /**
-   * A unique ID for a tenant
-   **/
-  @ApiModelProperty(required = true, value = "A unique ID for a tenant")
-  @JsonProperty("tenantId")
-  public Integer getTenantId() {
-    return tenantId;
-  }
-  public void setTenantId(Integer tenantId) {
-    this.tenantId = tenantId;
-  }
 
   
   /**
@@ -85,7 +69,6 @@ public class TemplateRequestDTO  {
     StringBuilder sb = new StringBuilder();
     sb.append("class TemplateRequestDTO {\n");
     
-    sb.append("  tenantId: ").append(tenantId).append("\n");
     sb.append("  templateName: ").append(templateName).append("\n");
     sb.append("  description: ").append(description).append("\n");
     sb.append("  data: ").append(data).append("\n");

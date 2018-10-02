@@ -39,4 +39,14 @@ public interface TemplateManager {
 
     Template addTemplate(Template template) throws TemplateManagementException;
 
+    /**
+     * This API is used to get the template by template name and tenant ID.
+     *
+     * @param templateName Name of the purpose.
+     * @return Template matching the input parameters.
+     * @throws TemplateManagementException Template Management Exception.
+     */
+    Template getTemplateByName(String templateName) throws TemplateManagementException;
+
+
 }
