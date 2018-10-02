@@ -54,7 +54,7 @@ public class TemplatesApi  {
     @Path("/{template_name}")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
-    @io.swagger.annotations.ApiOperation(value = "Delete a template", notes = "", response = DeleteTemplateResponseDTO.class)
+    @io.swagger.annotations.ApiOperation(value = "Delete a template", notes = "This API is used to delete a template.\n", response = DeleteTemplateResponseDTO.class)
     @io.swagger.annotations.ApiResponses(value = { 
         @io.swagger.annotations.ApiResponse(code = 202, message = "Template deleted"),
         

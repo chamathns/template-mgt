@@ -77,8 +77,18 @@ TemplatesApiServiceImpl extends TemplatesApiService {
 
     @Override
     public Response deleteTemplate(String templateName){
-        // do some magic!
-        return Response.ok().entity(new ApiResponseMessage(ApiResponseMessage.OK, "magic!")).build();
+        try {
+            TemplateEndpointUtils.getTemplateManager().deletePurpose(templateName);
+            return Response.ok()
+                    .build();
+        } catch (TemplateManagementException e) {
+            e.printStackTrace();
+            return null;
+        }catch (Throwable e){
+            e.printStackTrace();
+            return null;
+        }
+
     }
 
     @Override
@@ -109,7 +119,6 @@ TemplatesApiServiceImpl extends TemplatesApiService {
         Template getTemplateResponse = TemplateEndpointUtils.getTemplateManager().getTemplateByName(templateName);
         return getTemplateResponse;
     }
-
 
     private URI getTemplateLocationURI(AddTemplateResponseDTO response) throws URISyntaxException {
         return new URI(TemplateMgtConstants.TEMPLATE_RESOURCE_PATH + response.getTenantId());

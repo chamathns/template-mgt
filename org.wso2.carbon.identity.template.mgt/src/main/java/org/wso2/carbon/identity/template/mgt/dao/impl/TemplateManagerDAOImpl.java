@@ -115,15 +115,15 @@ public class TemplateManagerDAOImpl implements TemplateManagerDAO {
         }
     }
 
-    public void deleteTemplate(Integer tenantId, Integer templateId) throws TemplateManagementException{
+    public void deleteTemplate(String templateName , Integer tenantId) throws TemplateManagementException{
         JdbcTemplate jdbcTemplate = JdbcUtils.getNewTemplate();
         try {
             jdbcTemplate.executeUpdate(TemplateMgtConstants.SqlQueries.DELETE_TEMPLATE, preparedStatement ->{
-                preparedStatement.setInt(1,tenantId);
-                preparedStatement.setInt(2,templateId);
+                preparedStatement.setString(1,templateName);
+                preparedStatement.setInt(2,tenantId);
             });
         } catch (DataAccessException e) {
-            throw new TemplateManagementServerException(String.format(TemplateMgtConstants.ErrorMessages.ERROR_CODE_DELETE_TEMPLATE.getMessage(),tenantId.toString(),templateId.toString()),
+            throw new TemplateManagementServerException(String.format(TemplateMgtConstants.ErrorMessages.ERROR_CODE_DELETE_TEMPLATE.getMessage(),tenantId.toString(),templateName),
                     TemplateMgtConstants.ErrorMessages.ERROR_CODE_DELETE_TEMPLATE.getCode(),e);
         }
     }

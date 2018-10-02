@@ -42,11 +42,18 @@ public interface TemplateManager {
     /**
      * This API is used to get the template by template name and tenant ID.
      *
-     * @param templateName Name of the purpose.
+     * @param templateName Name of the template.
      * @return Template matching the input parameters.
      * @throws TemplateManagementException Template Management Exception.
      */
     Template getTemplateByName(String templateName) throws TemplateManagementException;
 
+    /**
+     * This api is used to delete existing template by template name.
+     *
+     * @param templateName Name of the template.
+     * @throws TemplateManagementException Template Management Exception.
+     */
+    void deletePurpose(String templateName) throws TemplateManagementException;
 
 }
