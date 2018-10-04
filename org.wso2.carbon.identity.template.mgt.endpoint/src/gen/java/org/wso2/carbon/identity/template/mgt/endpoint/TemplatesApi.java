@@ -11,6 +11,7 @@ import org.wso2.carbon.identity.template.mgt.endpoint.dto.AddTemplateResponseDTO
 import org.wso2.carbon.identity.template.mgt.endpoint.dto.TemplateRequestDTO;
 import org.wso2.carbon.identity.template.mgt.endpoint.dto.DeleteTemplateResponseDTO;
 import org.wso2.carbon.identity.template.mgt.endpoint.dto.TemplateDTO;
+import org.wso2.carbon.identity.template.mgt.endpoint.dto.GetTemplatesResponseDTO;
 import org.wso2.carbon.identity.template.mgt.endpoint.dto.UpdateTemplateRequestDTO;
 import org.wso2.carbon.identity.template.mgt.endpoint.dto.UpdateSuccessResponseDTO;
 
@@ -95,7 +96,7 @@ public class TemplatesApi  {
     
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
-    @io.swagger.annotations.ApiOperation(value = "Get an array of templates", notes = "", response = TemplateDTO.class, responseContainer = "List")
+    @io.swagger.annotations.ApiOperation(value = "Get an array of templates", notes = "", response = GetTemplatesResponseDTO.class, responseContainer = "List")
     @io.swagger.annotations.ApiResponses(value = { 
         @io.swagger.annotations.ApiResponse(code = 200, message = "Successfully returned an array of templates"),
         

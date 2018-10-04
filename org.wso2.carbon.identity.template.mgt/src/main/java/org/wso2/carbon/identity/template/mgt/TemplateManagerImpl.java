@@ -26,6 +26,8 @@ import org.wso2.carbon.identity.template.mgt.exception.TemplateManagementClientE
 import org.wso2.carbon.identity.template.mgt.exception.TemplateManagementException;
 import org.wso2.carbon.identity.template.mgt.model.Template;
 
+import java.util.List;
+
 import static org.apache.commons.lang.StringUtils.isBlank;
 import static org.wso2.carbon.identity.template.mgt.util.TemplateMgtUtils.getTenantIdFromCarbonContext;
 import static org.wso2.carbon.identity.template.mgt.util.TemplateMgtUtils.handleClientException;
@@ -65,6 +67,13 @@ public class TemplateManagerImpl implements  TemplateManager {
         TemplateManagerDAO templateManagerDAO = new TemplateManagerDAOImpl();
         templateManagerDAO.deleteTemplate(templateName, getTenantIdFromCarbonContext());
 
+    }
+
+    @Override
+    public List<Template> listTemplates(Integer limit, Integer offset) throws TemplateManagementException {
+
+        TemplateManagerDAO templateManagerDAO = new TemplateManagerDAOImpl();
+        return templateManagerDAO.getAllTemplates(getTenantIdFromCarbonContext(),limit,offset);
     }
 
     private void validateInputParameters(Template template) throws TemplateManagementClientException {

@@ -51,6 +51,10 @@ public class Template {
         this.tenantId = tenantId;
         this.templateName = templateName;
     }
+    public Template(String templateName, String description){
+        this.templateName = templateName;
+        this.description = description;
+    }
 
 
     public Template(Integer tenantId, String templateName, String description, String content){

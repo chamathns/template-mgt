@@ -12,4 +12,5 @@ org/wso2/carbon/identity/template/mgt/endpoint/TemplatesApi.class
 org/wso2/carbon/identity/template/mgt/endpoint/util/TemplateEndpointUtils.class
 org/wso2/carbon/identity/template/mgt/endpoint/dto/CreateTemplateResponseDTO.class
 org/wso2/carbon/identity/template/mgt/endpoint/impl/TemplatesApiServiceImpl.class
+org/wso2/carbon/identity/template/mgt/endpoint/dto/GetTemplatesResponseDTO.class
 org/wso2/carbon/identity/template/mgt/endpoint/TemplatesApiService.class

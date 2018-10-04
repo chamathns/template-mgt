@@ -126,7 +126,6 @@
             <groupId>org.wso2.eclipse.osgi</groupId>
             <artifactId>org.eclipse.osgi.services</artifactId>
             <version>${eclipse.osgi.version}</version>
-
         </dependency>
         <dependency>
             <groupId>org.wso2.carbon</groupId>

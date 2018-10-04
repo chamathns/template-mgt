@@ -46,7 +46,7 @@ paths:
           schema:
             type: "array"
             items:
-              $ref: "#/definitions/Template"
+              $ref: "#/definitions/GetTemplatesResponse"
         400:
           description: "Invalid request"
           schema:
@@ -310,6 +310,16 @@ definitions:
     example:
       tenant_id: 1
       name: "smapleTemplate"
+  GetTemplatesResponse:
+    type: "object"
+    properties:
+      name:
+        type: "string"
+      description:
+        type: "string"
+    example:
+      name: "smapleTemplate"
+      description: "description"
   DeleteTemplateResponse:
     type: "object"
     properties:

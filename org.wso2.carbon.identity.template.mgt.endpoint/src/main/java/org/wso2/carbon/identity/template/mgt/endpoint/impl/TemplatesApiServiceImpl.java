@@ -32,6 +32,7 @@ import org.wso2.carbon.identity.template.mgt.endpoint.dto.*;
 
 import java.net.URI;
 import java.net.URISyntaxException;
+import java.util.List;
 
 import org.wso2.carbon.identity.template.mgt.exception.TemplateManagementClientException;
 import org.wso2.carbon.identity.template.mgt.exception.TemplateManagementException;
@@ -115,8 +116,24 @@ TemplatesApiServiceImpl extends TemplatesApiService {
 
     @Override
     public Response getTemplates(Integer limit,Integer offset){
-        // do some magic!
-        return Response.ok().entity(new ApiResponseMessage(ApiResponseMessage.OK, "magic!")).build();
+        try {
+            List<GetTemplatesResponseDTO> getTemplatesResponseDTOS = getTemplatesList(limit,offset);
+            return Response.ok()
+                    .entity(getTemplatesResponseDTOS)
+                    .build();
+        } catch (TemplateManagementException e) {
+            e.printStackTrace();
+            return null;
+        }catch (Throwable e){
+            e.printStackTrace();
+            return null;
+        }
+    }
+
+
+    private List<GetTemplatesResponseDTO> getTemplatesList (Integer limit, Integer offset) throws TemplateManagementException {
+        List<Template> templates = TemplateEndpointUtils.getTemplateManager().listTemplates(limit, offset);
+        return TemplateEndpointUtils.getTemplatesResponseDTOList(templates);
     }
 
 

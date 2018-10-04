@@ -21,6 +21,8 @@ package org.wso2.carbon.identity.template.mgt;
 import org.wso2.carbon.identity.template.mgt.exception.TemplateManagementException;
 import org.wso2.carbon.identity.template.mgt.model.Template;
 
+import java.util.List;
+
 /**
  * Template manager service interface.
  *
@@ -61,11 +63,21 @@ public interface TemplateManager {
 
 
     /**
-     * This api is used to delete existing template by template name.
+     * This API is used to delete existing template by template name.
      *
      * @param templateName Name of the template.
      * @throws TemplateManagementException Template Management Exception.
      */
     void deletePurpose(String templateName) throws TemplateManagementException;
+
+    /**
+     * This API is used to get the names and descriptions of all or filtered existing templates.
+     *
+     * @param limit  Number of search results.
+     * @param offset Start index of the search.
+     * @return Filtered list of Template elements
+     * @throws TemplateManagementException Template Management Exception.
+     */
+    List<Template> listTemplates(Integer limit, Integer offset) throws TemplateManagementException;
 
 }

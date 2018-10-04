@@ -33,7 +33,7 @@ public interface TemplateManagerDAO {
 
     Template getTemplateByName(String templateName, Integer tenantId) throws TemplateManagementException;
 
-    List<Template> getAllTemplates(Integer tenantId) throws TemplateManagementException;
+    List<Template> getAllTemplates(Integer tenantId, Integer limit, Integer offset) throws TemplateManagementException;
 
     Template updateTemplate(String templateName, Template newTemplate) throws TemplateManagementServerException;
 

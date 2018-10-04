@@ -21,10 +21,14 @@ package org.wso2.carbon.identity.template.mgt.endpoint.util;
 import org.apache.cxf.jaxrs.ext.MessageContext;
 import org.wso2.carbon.context.PrivilegedCarbonContext;
 import org.wso2.carbon.identity.template.mgt.TemplateManager;
+import org.wso2.carbon.identity.template.mgt.endpoint.dto.GetTemplatesResponseDTO;
 import org.wso2.carbon.identity.template.mgt.endpoint.dto.TemplateRequestDTO;
 import org.wso2.carbon.identity.template.mgt.endpoint.dto.UpdateTemplateRequestDTO;
 import org.wso2.carbon.identity.template.mgt.model.Template;
 import org.wso2.carbon.identity.template.mgt.util.TemplateMgtUtils;
+
+import java.util.List;
+import java.util.stream.Collectors;
 
 public class TemplateEndpointUtils {
 
@@ -44,6 +48,17 @@ public class TemplateEndpointUtils {
                             templateRequestDTO.getTemplateName(),
                             templateRequestDTO.getDescription(),
                             templateRequestDTO.getData());
+    }
+
+    public static List<GetTemplatesResponseDTO> getTemplatesResponseDTOList (List<Template> templates){
+        return templates.stream()
+                .map(template -> {
+                    GetTemplatesResponseDTO getTemplatesResponseDTO = new GetTemplatesResponseDTO();
+                    getTemplatesResponseDTO.setName(template.getTemplateName());
+                    getTemplatesResponseDTO.setDescription(template.getDescription());
+                    return getTemplatesResponseDTO;
+                })
+                .collect(Collectors.toList());
     }
 
 //    public static String getTenantIdFromAuthenticatedUser(MessageContext context) {

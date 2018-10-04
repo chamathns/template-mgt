@@ -75,17 +75,14 @@ public class TemplateManagerDAOImpl implements TemplateManagerDAO {
         return template;
     }
 
-    public List<Template> getAllTemplates(Integer tenantId) throws TemplateManagementException {
+    public List<Template> getAllTemplates(Integer tenantId, Integer limit, Integer offset) throws TemplateManagementException {
         List<Template> templates;
         JdbcTemplate jdbcTemplate = JdbcUtils.getNewTemplate();
 
         try {
             templates = jdbcTemplate.executeQuery(TemplateMgtConstants.SqlQueries.LIST_TEMPLATES,(resultSet, rowNumber) ->
-                    new Template(resultSet.getInt(1),
-                            resultSet.getInt(2),
-                            resultSet.getString(3),
-                            resultSet.getString(4),
-                            resultSet.getString(5)),
+                    new Template(resultSet.getString(1),
+                            resultSet.getString(2)),
                     preparedStatement -> {
                 preparedStatement.setInt(1, tenantId);
                     });
@@ -93,7 +90,7 @@ public class TemplateManagerDAOImpl implements TemplateManagerDAO {
             throw new TemplateManagementServerException(String.format(TemplateMgtConstants.ErrorMessages.ERROR_CODE_LIST_TEMPLATES.getMessage(),tenantId),
                     TemplateMgtConstants.ErrorMessages.ERROR_CODE_LIST_TEMPLATES.getCode(),e);
         }
-        return null;
+        return templates;
     }
 
     public Template updateTemplate(String templateName, Template newTemplate) throws TemplateManagementServerException {
