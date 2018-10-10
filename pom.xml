@@ -7,7 +7,7 @@
     <groupId>org.wso2.carbon</groupId>
     <artifactId>template-mgt</artifactId>
     <packaging>pom</packaging>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0.0-SNAPSHOT</version>
 
 
     <parent>
@@ -62,6 +62,11 @@
     <dependencyManagement>
         <dependencies>
             <dependency>
+                <groupId>org.wso2.carbon.identity.framework</groupId>
+                <artifactId>org.wso2.carbon.identity.application.common</artifactId>
+                <version>${carbon.identity.application.common}</version>
+            </dependency>
+            <dependency>
                 <groupId>org.wso2.eclipse.osgi</groupId>
                 <artifactId>org.eclipse.osgi.services</artifactId>
                 <version>${eclipse.osgi.version}</version>
@@ -86,6 +91,57 @@
                 <groupId>org.wso2.carbon.identity.framework</groupId>
                 <artifactId>org.wso2.carbon.identity.core</artifactId>
                 <version>${carbon.identity.core.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>commons-logging</groupId>
+                <artifactId>commons-logging</artifactId>
+                <version>${commons-logging.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.tomcat</groupId>
+                <artifactId>tomcat-catalina</artifactId>
+                <version>${apache.tomcat-catalina.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.wso2.carbon</groupId>
+                <artifactId>org.wso2.carbon.utils</artifactId>
+                <version>${carbon.utils.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.cxf</groupId>
+                <artifactId>cxf-rt-frontend-jaxrs</artifactId>
+                <version>${apache.cxf-rt-frontend-jaxrs.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.cxf</groupId>
+                <artifactId>cxf-rt-rs-service-description</artifactId>
+                <version>${apache.cxf-rt-rs-service-description.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.codehaus.jackson</groupId>
+                <artifactId>jackson-core-asl</artifactId>
+                <version>${codehaus.jackson-core-asl.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.codehaus.jackson</groupId>
+                <artifactId>jackson-mapper-asl</artifactId>
+                <version>${codehaus.jackson-mapper-asl.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.codehaus.jackson</groupId>
+                <artifactId>jackson-jaxrs</artifactId>
+                <version>${codehaus.jackson-jaxrs.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-web</artifactId>
+                <version>${springframework.spring-web.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>io.swagger</groupId>
+                <artifactId>swagger-jaxrs</artifactId>
+                <version>${swagger-jaxrs.versiion}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
@@ -207,7 +263,7 @@
         <osgi.framework.imp.pkg.version.range>[1.7.0, 2.0.0)</osgi.framework.imp.pkg.version.range>
         <osgi.service.component.imp.pkg.version.range>[1.2.0, 2.0.0)</osgi.service.component.imp.pkg.version.range>
         <eclipse.osgi.version>3.5.100.v20160504-1419</eclipse.osgi.version>
-
+        <axis2.osgi.version.range>[1.6.1.wso2v12, 2.0.0)</axis2.osgi.version.range>
 
         <!--Maven Plugin Version-->
         <maven.scr.plugin.version>1.22.0</maven.scr.plugin.version>
@@ -215,26 +271,28 @@
         <apache.felix.scr.ds.annotations.version>1.2.4</apache.felix.scr.ds.annotations.version>
         <maven.buildnumber.plugin.version>1.4</maven.buildnumber.plugin.version>
         <maven.compiler.plugin>3.8.0</maven.compiler.plugin>
+        <apache.cxf-rt-frontend-jaxrs.version>2.7.16</apache.cxf-rt-frontend-jaxrs.version>
+        <apache.cxf-rt-rs-service-description.version>3.1.4</apache.cxf-rt-rs-service-description.version>
+        <codehaus.jackson-core-asl.version>1.8.6</codehaus.jackson-core-asl.version>
+        <codehaus.jackson-mapper-asl.version>1.8.6</codehaus.jackson-mapper-asl.version>
+        <codehaus.jackson-jaxrs.version>1.8.6</codehaus.jackson-jaxrs.version>
+        <springframework.spring-web.version>4.1.6.RELEASE</springframework.spring-web.version>
+        <swagger-jaxrs.versiion>1.5.2</swagger-jaxrs.versiion>
 
-
-
-        <javax.activation.import.pkg.version>[0.0.0, 1.0.0)</javax.activation.import.pkg.version>
-
-
-        <axis2.osgi.version.range>[1.6.1.wso2v12, 2.0.0)</axis2.osgi.version.range>
         <commons-logging.osgi.version.range>[1.2,2.0)</commons-logging.osgi.version.range>
         <commons-collections.wso2.osgi.version.range>[3.2.0,4.0.0)</commons-collections.wso2.osgi.version.range>
 
+        <javax.activation.import.pkg.version>[0.0.0, 1.0.0)</javax.activation.import.pkg.version>
 
         <carbon.kernel.package.import.version.range>[4.4.0, 5.0.0)</carbon.kernel.package.import.version.range>
         <carbon.core.version>5.2.7</carbon.core.version>
-        <carbon.identity.framework.application.common.version>5.12.134</carbon.identity.framework.application.common.version>
+        <carbon.identity.application.common>5.12.134</carbon.identity.application.common>
         <carbon.identity.core.version>5.12.134</carbon.identity.core.version>
         <carbon.utils.database.version>2.0.8</carbon.utils.database.version>
-
-
+        <carbon.utils.version>4.4.34</carbon.utils.version>
+        <commons-logging.version>1.2</commons-logging.version>
         <jacoco.version>0.7.9</jacoco.version>
-
+        <apache.tomcat-catalina.version>9.0.11</apache.tomcat-catalina.version>
 
     </properties>
 

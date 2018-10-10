@@ -5,7 +5,7 @@
     <parent>
         <artifactId>template-mgt</artifactId>
         <groupId>org.wso2.carbon</groupId>
-        <version>1.0-SNAPSHOT</version>
+        <version>1.0.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
@@ -111,17 +111,6 @@
         </plugins>
     </build>
     <dependencies>
-        <!--<dependency>-->
-            <!--<groupId>javax.sql</groupId>-->
-            <!--<artifactId>jdbc-stdext</artifactId>-->
-            <!--<version>2.0</version>-->
-        <!--</dependency>-->
-        <!--<dependency>-->
-        <!--<groupId>org.wso2.carbon.identity.framework</groupId>-->
-        <!--<artifactId>identity-core</artifactId>-->
-        <!--<version>5.12.134</version>-->
-        <!--</dependency>-->
-
         <dependency>
             <groupId>org.wso2.eclipse.osgi</groupId>
             <artifactId>org.eclipse.osgi.services</artifactId>
@@ -132,12 +121,10 @@
             <artifactId>org.wso2.carbon.core</artifactId>
             <version>${carbon.core.version}</version>
         </dependency>
-
-
         <dependency>
             <groupId>org.wso2.carbon.identity.framework</groupId>
             <artifactId>org.wso2.carbon.identity.application.common</artifactId>
-            <version>5.12.134</version>
+            <version>${carbon.identity.application.common}</version>
         </dependency>
         <dependency>
             <groupId>org.wso2.carbon.utils</groupId>
@@ -155,5 +142,4 @@
             <version>${apache.felix.scr.ds.annotations.version}</version>
         </dependency>
     </dependencies>
-
 </project>

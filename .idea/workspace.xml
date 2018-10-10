@@ -3,32 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="a4b52234-6a17-458d-abd6-21576aba62b7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.endpoint/src/gen/java/org/wso2/carbon/identity/template/mgt/endpoint/TemplatesApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.endpoint/src/gen/java/org/wso2/carbon/identity/template/mgt/endpoint/TemplatesApi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.endpoint/src/gen/java/org/wso2/carbon/identity/template/mgt/endpoint/TemplatesApiService.java" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.endpoint/src/gen/java/org/wso2/carbon/identity/template/mgt/endpoint/TemplatesApiService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.endpoint/src/gen/java/org/wso2/carbon/identity/template/mgt/endpoint/dto/UpdateSuccessResponseDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.endpoint/src/gen/java/org/wso2/carbon/identity/template/mgt/endpoint/dto/UpdateSuccessResponseDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.endpoint/src/main/java/org/wso2/carbon/identity/template/mgt/endpoint/impl/TemplatesApiServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.endpoint/src/main/java/org/wso2/carbon/identity/template/mgt/endpoint/impl/TemplatesApiServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.endpoint/src/main/java/org/wso2/carbon/identity/template/mgt/endpoint/util/TemplateEndpointUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.endpoint/src/main/java/org/wso2/carbon/identity/template/mgt/endpoint/util/TemplateEndpointUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.endpoint/src/main/resources/org.wso2.carbon.identity.template.mgt.api.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.endpoint/src/main/resources/org.wso2.carbon.identity.template.mgt.api.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.endpoint/target/classes/org.wso2.carbon.identity.template.mgt.api.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.endpoint/target/classes/org.wso2.carbon.identity.template.mgt.api.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.endpoint/target/classes/org/wso2/carbon/identity/template/mgt/endpoint/TemplatesApi.class" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.endpoint/target/classes/org/wso2/carbon/identity/template/mgt/endpoint/TemplatesApi.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.endpoint/target/classes/org/wso2/carbon/identity/template/mgt/endpoint/TemplatesApiService.class" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.endpoint/target/classes/org/wso2/carbon/identity/template/mgt/endpoint/TemplatesApiService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.endpoint/target/classes/org/wso2/carbon/identity/template/mgt/endpoint/dto/UpdateSuccessResponseDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.endpoint/target/classes/org/wso2/carbon/identity/template/mgt/endpoint/dto/UpdateSuccessResponseDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.endpoint/target/classes/org/wso2/carbon/identity/template/mgt/endpoint/impl/TemplatesApiServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.endpoint/target/classes/org/wso2/carbon/identity/template/mgt/endpoint/impl/TemplatesApiServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.endpoint/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.endpoint/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.endpoint/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.endpoint/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.endpoint/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.endpoint/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.endpoint/target/org.wso2.carbon.identity.template.mgt.endpoint-1.0-SNAPSHOT/WEB-INF/classes/org.wso2.carbon.identity.template.mgt.api.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.endpoint/target/org.wso2.carbon.identity.template.mgt.endpoint-1.0-SNAPSHOT/WEB-INF/classes/org.wso2.carbon.identity.template.mgt.api.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.endpoint/target/org.wso2.carbon.identity.template.mgt.endpoint-1.0-SNAPSHOT/WEB-INF/classes/org/wso2/carbon/identity/template/mgt/endpoint/TemplatesApi.class" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.endpoint/target/org.wso2.carbon.identity.template.mgt.endpoint-1.0-SNAPSHOT/WEB-INF/classes/org/wso2/carbon/identity/template/mgt/endpoint/TemplatesApi.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.endpoint/target/org.wso2.carbon.identity.template.mgt.endpoint-1.0-SNAPSHOT/WEB-INF/classes/org/wso2/carbon/identity/template/mgt/endpoint/TemplatesApiService.class" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.endpoint/target/org.wso2.carbon.identity.template.mgt.endpoint-1.0-SNAPSHOT/WEB-INF/classes/org/wso2/carbon/identity/template/mgt/endpoint/TemplatesApiService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.endpoint/target/org.wso2.carbon.identity.template.mgt.endpoint-1.0-SNAPSHOT/WEB-INF/classes/org/wso2/carbon/identity/template/mgt/endpoint/dto/UpdateSuccessResponseDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.endpoint/target/org.wso2.carbon.identity.template.mgt.endpoint-1.0-SNAPSHOT/WEB-INF/classes/org/wso2/carbon/identity/template/mgt/endpoint/dto/UpdateSuccessResponseDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.endpoint/target/org.wso2.carbon.identity.template.mgt.endpoint-1.0-SNAPSHOT/WEB-INF/classes/org/wso2/carbon/identity/template/mgt/endpoint/impl/TemplatesApiServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.endpoint/target/org.wso2.carbon.identity.template.mgt.endpoint-1.0-SNAPSHOT/WEB-INF/classes/org/wso2/carbon/identity/template/mgt/endpoint/impl/TemplatesApiServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.endpoint/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.endpoint/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/src/main/java/org/wso2/carbon/identity/template/mgt/TemplateManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/src/main/java/org/wso2/carbon/identity/template/mgt/TemplateManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/src/main/java/org/wso2/carbon/identity/template/mgt/TemplateManagerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/src/main/java/org/wso2/carbon/identity/template/mgt/TemplateManagerImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/src/main/java/org/wso2/carbon/identity/template/mgt/TemplateMgtConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/src/main/java/org/wso2/carbon/identity/template/mgt/TemplateMgtConstants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/src/main/java/org/wso2/carbon/identity/template/mgt/dao/TemplateManagerDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/src/main/java/org/wso2/carbon/identity/template/mgt/dao/TemplateManagerDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/src/main/java/org/wso2/carbon/identity/template/mgt/dao/impl/TemplateManagerDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/src/main/java/org/wso2/carbon/identity/template/mgt/dao/impl/TemplateManagerDAOImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/src/main/java/org/wso2/carbon/identity/template/mgt/model/Template.java" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/src/main/java/org/wso2/carbon/identity/template/mgt/model/Template.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -91,7 +68,7 @@
           <entry key="dummy" value="2" />
           <entry key="gitignore" value="6" />
           <entry key="java" value="6453" />
-          <entry key="xml" value="770" />
+          <entry key="xml" value="1104" />
           <entry key="yaml" value="26" />
         </counts>
       </usages-collector>
@@ -100,7 +77,7 @@
           <entry key="CLASS" value="1" />
           <entry key="JAVA" value="6453" />
           <entry key="PLAIN_TEXT" value="8" />
-          <entry key="XML" value="770" />
+          <entry key="XML" value="1104" />
           <entry key="YAML" value="26" />
         </counts>
       </usages-collector>
@@ -116,43 +93,39 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.endpoint/src/main/java/org/wso2/carbon/identity/template/mgt/endpoint/impl/TemplatesApiServiceImpl.java">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="107">
-              <caret line="119" column="29" selection-start-line="119" selection-start-column="29" selection-end-line="119" selection-end-column="29" />
+            <state relative-caret-position="528">
+              <caret line="301" column="44" selection-start-line="301" selection-start-column="44" selection-end-line="301" selection-end-column="44" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1095">
+              <caret line="143" column="19" selection-start-line="143" selection-start-column="19" selection-end-line="143" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.endpoint/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="585">
+              <caret line="102" column="21" selection-start-line="62" selection-start-column="8" selection-end-line="102" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/src/main/java/org/wso2/carbon/identity/template/mgt/util/TemplateMgtUtils.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="737">
+              <caret line="98" selection-start-line="98" selection-end-line="98" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.endpoint/src/gen/java/org/wso2/carbon/identity/template/mgt/endpoint/dto/GetTemplatesResponseDTO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.endpoint/src/gen/java/org/wso2/carbon/identity/template/mgt/endpoint/dto/TemplateDTO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.endpoint/src/gen/java/org/wso2/carbon/identity/template/mgt/endpoint/dto/TemplateRequestDTO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="24" selection-start-line="24" selection-end-line="24" />
-              <folding>
-                <element signature="e#614#615#0" expanded="true" />
-                <element signature="e#639#640#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -161,56 +134,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.endpoint/src/main/java/org/wso2/carbon/identity/template/mgt/endpoint/util/TemplateEndpointUtils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="645">
-              <caret line="60" column="46" selection-start-line="60" selection-start-column="46" selection-end-line="60" selection-end-column="46" />
+            <state relative-caret-position="600">
+              <caret line="56" column="80" selection-start-line="56" selection-start-column="80" selection-end-line="56" selection-end-column="80" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/src/main/java/org/wso2/carbon/identity/template/mgt/TemplateManager.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="681">
-              <caret line="80" column="55" selection-start-line="80" selection-start-column="55" selection-end-line="80" selection-end-column="55" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/src/main/java/org/wso2/carbon/identity/template/mgt/TemplateManagerImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="606">
-              <caret line="75" column="95" selection-start-line="75" selection-start-column="95" selection-end-line="75" selection-end-column="95" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/src/main/java/org/wso2/carbon/identity/template/mgt/dao/impl/TemplateManagerDAOImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="366">
-              <caret line="90" column="94" lean-forward="true" selection-start-line="90" selection-start-column="94" selection-end-line="90" selection-end-column="94" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.endpoint/src/gen/java/org/wso2/carbon/identity/template/mgt/endpoint/dto/UpdateSuccessResponseDTO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="675">
-              <caret line="56" lean-forward="true" selection-start-line="56" selection-end-line="56" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/src/main/java/org/wso2/carbon/identity/template/mgt/dao/TemplateManagerDAO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
             </state>
           </provider>
         </entry>
@@ -233,6 +161,7 @@
       <find>AssertionBuilderRegistryImpl</find>
       <find>getDat</find>
       <find>getOSGiService</find>
+      <find>org.wso2.carbon.identity.application.common</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -271,16 +200,13 @@
         <option value="$PROJECT_DIR$/org.wso2.carbon.template.mgt.endpoint/src/main/java/org/wso2/carbon/template/mgt/endpoint/util/TemplateEndpointUtils.java" />
         <option value="$PROJECT_DIR$/org.wso2.carbon.template.mgt/src/main/java/org/wso2/carbon/template/mgt/internal/TemplateManagerComponent.java" />
         <option value="$PROJECT_DIR$/org.wso2.carbon.template.mgt/pom.xml" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.endpoint/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.endpoint/src/main/webapp/META-INF/webapp-classloading.xml" />
         <option value="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/src/main/java/org/wso2/carbon/identity/template/mgt/internal/TemplateManagerComponent.java" />
         <option value="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/src/main/java/org/wso2/carbon/identity/template/mgt/util/TemplateMgtUtils.java" />
-        <option value="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.endpoint/pom.xml" />
         <option value="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.endpoint/src/gen/java/org/wso2/carbon/identity/template/mgt/endpoint/dto/UpdateTemplateRequestDTO.java" />
         <option value="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.endpoint/src/gen/java/org/wso2/carbon/identity/template/mgt/endpoint/TemplatesApiService.java" />
         <option value="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/src/main/java/org/wso2/carbon/identity/template/mgt/TemplateMgtConstants.java" />
-        <option value="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/pom.xml" />
         <option value="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/src/main/java/org/wso2/carbon/identity/template/mgt/model/Template.java" />
         <option value="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.endpoint/src/main/resources/org.wso2.carbon.identity.template.mgt.api.yaml" />
         <option value="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/src/main/java/org/wso2/carbon/identity/template/mgt/dao/TemplateManagerDAO.java" />
@@ -290,6 +216,9 @@
         <option value="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.endpoint/src/main/java/org/wso2/carbon/identity/template/mgt/endpoint/util/TemplateEndpointUtils.java" />
         <option value="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.endpoint/src/main/java/org/wso2/carbon/identity/template/mgt/endpoint/impl/TemplatesApiServiceImpl.java" />
         <option value="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.endpoint/src/gen/java/org/wso2/carbon/identity/template/mgt/endpoint/dto/UpdateSuccessResponseDTO.java" />
+        <option value="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/pom.xml" />
+        <option value="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.endpoint/pom.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
@@ -322,6 +251,15 @@
           <item name="WSO2 Carbon - Identity Template Management" type="9519ce18:MavenProjectsStructure$ProjectNode" />
           <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
         </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="WSO2 Carbon - Template Manager" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="WSO2 Carbon - Template Manager" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
+        </path>
       </expand>
       <select />
     </treeState>
@@ -343,7 +281,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -351,219 +288,17 @@
               <item name="template-mgt" type="b2602c69:ProjectViewProjectNode" />
               <item name="template-mgt" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="template-mgt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="template-mgt" type="462c0819:PsiDirectoryNode" />
-              <item name="org.wso2.carbon.identity.template.mgt" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="template-mgt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="template-mgt" type="462c0819:PsiDirectoryNode" />
-              <item name="org.wso2.carbon.identity.template.mgt" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="template-mgt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="template-mgt" type="462c0819:PsiDirectoryNode" />
-              <item name="org.wso2.carbon.identity.template.mgt" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="template-mgt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="template-mgt" type="462c0819:PsiDirectoryNode" />
-              <item name="org.wso2.carbon.identity.template.mgt" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="template-mgt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="template-mgt" type="462c0819:PsiDirectoryNode" />
-              <item name="org.wso2.carbon.identity.template.mgt" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="mgt" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="template-mgt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="template-mgt" type="462c0819:PsiDirectoryNode" />
-              <item name="org.wso2.carbon.identity.template.mgt" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="mgt" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="template-mgt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="template-mgt" type="462c0819:PsiDirectoryNode" />
-              <item name="org.wso2.carbon.identity.template.mgt" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="mgt" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="template-mgt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="template-mgt" type="462c0819:PsiDirectoryNode" />
-              <item name="org.wso2.carbon.identity.template.mgt.endpoint" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="template-mgt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="template-mgt" type="462c0819:PsiDirectoryNode" />
-              <item name="org.wso2.carbon.identity.template.mgt.endpoint" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="template-mgt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="template-mgt" type="462c0819:PsiDirectoryNode" />
-              <item name="org.wso2.carbon.identity.template.mgt.endpoint" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="gen" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="template-mgt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="template-mgt" type="462c0819:PsiDirectoryNode" />
-              <item name="org.wso2.carbon.identity.template.mgt.endpoint" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="gen" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="template-mgt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="template-mgt" type="462c0819:PsiDirectoryNode" />
-              <item name="org.wso2.carbon.identity.template.mgt.endpoint" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="gen" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="endpoint" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="template-mgt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="template-mgt" type="462c0819:PsiDirectoryNode" />
-              <item name="org.wso2.carbon.identity.template.mgt.endpoint" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="gen" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="endpoint" type="462c0819:PsiDirectoryNode" />
-              <item name="dto" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="template-mgt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="template-mgt" type="462c0819:PsiDirectoryNode" />
-              <item name="org.wso2.carbon.identity.template.mgt.endpoint" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="template-mgt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="template-mgt" type="462c0819:PsiDirectoryNode" />
-              <item name="org.wso2.carbon.identity.template.mgt.endpoint" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="template-mgt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="template-mgt" type="462c0819:PsiDirectoryNode" />
-              <item name="org.wso2.carbon.identity.template.mgt.endpoint" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="endpoint" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="template-mgt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="template-mgt" type="462c0819:PsiDirectoryNode" />
-              <item name="org.wso2.carbon.identity.template.mgt.endpoint" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="endpoint" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="template-mgt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="template-mgt" type="462c0819:PsiDirectoryNode" />
-              <item name="org.wso2.carbon.identity.template.mgt.endpoint" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="endpoint" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="template-mgt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="template-mgt" type="462c0819:PsiDirectoryNode" />
-              <item name="org.wso2.carbon.identity.template.mgt.endpoint" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="template-mgt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="template-mgt" type="462c0819:PsiDirectoryNode" />
-              <item name="org.wso2.carbon.identity.template.mgt.endpoint" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="template-mgt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
-            <path>
-              <item name="template-mgt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
-            </path>
-            <path>
-              <item name="template-mgt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
-              <item name="javaws.jar" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="template-mgt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
-              <item name="javaws.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="jnlp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="template-mgt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
-              <item name="resources.jar" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="template-mgt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
-              <item name="resources.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="javax" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="template-mgt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
-              <item name="resources.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="javax" type="462c0819:PsiDirectoryNode" />
-              <item name="rowset" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538635070500" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539166944020" />
     <property name="last_opened_file_path" value="$USER_HOME$/WSO2IS/identity-carbon-auth-rest/pom.xml" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -632,13 +367,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="167405000" />
+    <option name="totallyTimeSpent" value="169380000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1920" y="-2" width="1920" height="1035" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49774775" visible="true" weight="0.2603834" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49774775" visible="true" weight="0.27316293" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -922,15 +657,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/src/main/java/org/wso2/carbon/identity/template/mgt/util/TemplateMgtUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1140">
-          <caret line="95" column="54" lean-forward="true" selection-start-line="95" selection-start-column="54" selection-end-line="95" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.endpoint/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="667">
-          <caret line="139" selection-start-line="139" selection-end-line="139" />
+        <state relative-caret-position="737">
+          <caret line="98" selection-start-line="98" selection-end-line="98" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -959,30 +690,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-          <folding>
-            <element signature="e#942#943#0" expanded="true" />
-            <element signature="e#970#971#0" expanded="true" />
-            <element signature="e#1021#1022#0" expanded="true" />
-            <element signature="e#1061#1062#0" expanded="true" />
-            <element signature="e#1267#1268#0" expanded="true" />
-            <element signature="e#1288#1289#0" expanded="true" />
-            <element signature="e#1325#1326#0" expanded="true" />
-            <element signature="e#1351#1352#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="719">
-          <caret line="208" column="8" selection-start-line="208" selection-start-column="8" selection-end-line="208" selection-end-column="75" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="591">
-          <caret line="149" column="68" lean-forward="true" selection-start-line="149" selection-start-column="68" selection-end-line="149" selection-end-column="68" />
         </state>
       </provider>
     </entry>
@@ -1091,10 +798,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
           <caret line="24" selection-start-line="24" selection-end-line="24" />
-          <folding>
-            <element signature="e#614#615#0" expanded="true" />
-            <element signature="e#639#640#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1107,8 +810,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.endpoint/src/main/java/org/wso2/carbon/identity/template/mgt/endpoint/util/TemplateEndpointUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="645">
-          <caret line="60" column="46" selection-start-line="60" selection-start-column="46" selection-end-line="60" selection-end-column="46" />
+        <state relative-caret-position="600">
+          <caret line="56" column="80" selection-start-line="56" selection-start-column="80" selection-end-line="56" selection-end-column="80" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1122,6 +825,27 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1095">
+          <caret line="143" column="19" selection-start-line="143" selection-start-column="19" selection-end-line="143" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.endpoint/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="102" column="21" selection-start-line="62" selection-start-column="8" selection-end-line="102" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="301" column="44" selection-start-line="301" selection-start-column="44" selection-end-line="301" selection-end-column="44" />
         </state>
       </provider>
     </entry>
