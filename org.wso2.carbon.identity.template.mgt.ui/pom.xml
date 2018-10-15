@@ -9,7 +9,51 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
+    <name>WSO2 Carbon - Template Management UI</name>
+    <description>Template Management UI component for WSO2 Carbon</description>
+    <url>http://wso2.org</url>
+    <packaging>bundle</packaging>
     <artifactId>org.wso2.carbon.template.mgt.ui</artifactId>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.apache.axis2.wso2</groupId>
+            <artifactId>axis2</artifactId>
+            <version>1.6.2.wso2v13</version>
+        </dependency>
+        <dependency>
+            <groupId>org.wso2.carbon</groupId>
+            <artifactId>org.wso2.carbon.ui</artifactId>
+            <version>4.4.34</version>
+        </dependency>
+        <dependency>
+            <groupId>org.wso2.orbit.org.owasp.encoder</groupId>
+            <artifactId>encoder</artifactId>
+            <version>1.2.0.wso2v2</version>
+        </dependency>
+        <dependency>
+            <groupId>org.wso2.carbon</groupId>
+            <artifactId>org.wso2.carbon.identity.template.mgt</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.felix</groupId>
+            <artifactId>org.apache.felix.scr.ds-annotations</artifactId>
+            <version>${apache.felix.scr.ds.annotations.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpclient</artifactId>
+            <version>4.5.6</version>
+        </dependency>
+        <dependency>
+            <groupId>org.json.wso2</groupId>
+            <artifactId>json</artifactId>
+            <version>3.0.0.wso2v1</version>
+        </dependency>
+    </dependencies>
+
+
 
 
 </project>

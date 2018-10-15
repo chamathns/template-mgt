@@ -18,23 +18,17 @@
 
 package org.wso2.carbon.identity.template.mgt.endpoint.impl;
 
-import io.swagger.models.auth.In;
-import org.wso2.carbon.context.PrivilegedCarbonContext;
 import org.wso2.carbon.identity.template.mgt.TemplateMgtConstants;
-import org.wso2.carbon.identity.template.mgt.endpoint.ApiResponseMessage;
 import org.wso2.carbon.identity.template.mgt.endpoint.TemplatesApiService;
 import org.wso2.carbon.identity.template.mgt.endpoint.dto.AddTemplateResponseDTO;
-import org.wso2.carbon.identity.template.mgt.endpoint.dto.TemplateDTO;
 import org.wso2.carbon.identity.template.mgt.endpoint.dto.TemplateRequestDTO;
 import org.wso2.carbon.identity.template.mgt.endpoint.util.TemplateEndpointUtils;
-import org.wso2.carbon.identity.template.mgt.endpoint.*;
 import org.wso2.carbon.identity.template.mgt.endpoint.dto.*;
 
 import java.net.URI;
 import java.net.URISyntaxException;
 import java.util.List;
 
-import org.wso2.carbon.identity.template.mgt.exception.TemplateManagementClientException;
 import org.wso2.carbon.identity.template.mgt.exception.TemplateManagementException;
 import org.wso2.carbon.identity.template.mgt.model.Template;
 
@@ -101,7 +95,7 @@ TemplatesApiServiceImpl extends TemplatesApiService {
     @Override
     public Response deleteTemplate(String templateName){
         try {
-            TemplateEndpointUtils.getTemplateManager().deletePurpose(templateName);
+            TemplateEndpointUtils.getTemplateManager().deleteTemplate(templateName);
             return Response.ok()
                     .build();
         } catch (TemplateManagementException e) {
