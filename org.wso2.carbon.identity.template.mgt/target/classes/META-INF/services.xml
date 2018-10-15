@@ -1,0 +1,35 @@
+<serviceGroup>
+    <service name="CarbonIdentityTemplateManagementAdminService" scope="transportsession">
+        <transports>
+            <transport>https</transport>
+        </transports>
+        <schema schemaNamespace="http://org.apache.axis2/xsd" elementFormDefaultQualified="true" />
+        <description>Function library related functionality</description>
+        <parameter name="ServiceClass">org.wso2.carbon.identity.template.mgt.TemplateManager</parameter>
+
+        <operation name="addTemplate">
+            <parameter name="AuthorizationAction" locked="true">/permission/protected/manage</parameter>
+        </operation>
+
+        <operation name="getTemplateByName">
+            <parameter name="AuthorizationAction" locked="true">/permission/protected/manage</parameter>
+        </operation>
+
+        <operation name="updateTemplate">
+            <parameter name="AuthorizationAction" locked="true">/permission/protected/manage</parameter>
+        </operation>
+
+        <operation name="deleteTemplate">
+            <parameter name="AuthorizationAction" locked="true">/permission/protected/manage</parameter>
+        </operation>
+
+
+        <operation name="listTemplates">
+            <parameter name="AuthorizationAction" locked="true">/permission/protected/manage</parameter>
+        </operation>
+
+
+        <parameter name="adminService" locked="true">true</parameter>
+    </service>
+    <parameter name="hiddenService" locked="true">true</parameter>
+</serviceGroup>
