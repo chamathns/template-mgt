@@ -264,6 +264,10 @@
         <osgi.service.component.imp.pkg.version.range>[1.2.0, 2.0.0)</osgi.service.component.imp.pkg.version.range>
         <eclipse.osgi.version>3.5.100.v20160504-1419</eclipse.osgi.version>
         <axis2.osgi.version.range>[1.6.1.wso2v12, 2.0.0)</axis2.osgi.version.range>
+        <carbon.core.version.range>[4.4.0, 5.0.0)</carbon.core.version.range>
+        <carbon.api.version.range>[1.0.1, 2.0.0)</carbon.api.version.range>
+
+
 
         <!--Maven Plugin Version-->
         <maven.scr.plugin.version>1.22.0</maven.scr.plugin.version>
@@ -293,6 +297,8 @@
         <commons-logging.version>1.2</commons-logging.version>
         <jacoco.version>0.7.9</jacoco.version>
         <apache.tomcat-catalina.version>9.0.11</apache.tomcat-catalina.version>
+        <org.json.wso2.version.range>[3.0.0.wso2v1, 4.0.0)</org.json.wso2.version.range>
+
 
     </properties>
 

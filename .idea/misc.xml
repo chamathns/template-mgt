@@ -3,6 +3,7 @@
   <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="Osmorc" url="file://$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt" />
+    <file type="Osmorc" url="file://$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui" />
     <file type="web" url="file://$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.endpoint" />
   </component>
   <component name="MavenProjectsManager">

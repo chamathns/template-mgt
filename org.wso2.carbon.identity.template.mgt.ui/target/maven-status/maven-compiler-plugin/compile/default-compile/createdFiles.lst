@@ -1,0 +1,6 @@
+org/wso2/carbon/identity/template/mgt/ui/dto/AddTemplateResponseDTO.class
+org/wso2/carbon/identity/template/mgt/ui/dto/UpdateTemplateRequestDTO.class
+org/wso2/carbon/identity/template/mgt/ui/client/TemplateManagementServiceClient.class
+org/wso2/carbon/identity/template/mgt/ui/internal/TemplateMgtUIServiceComponent.class
+org/wso2/carbon/identity/template/mgt/ui/dto/TemplateRequestDTO.class
+org/wso2/carbon/identity/template/mgt/ui/internal/TemplateManagementUIServiceDataHolder.class
