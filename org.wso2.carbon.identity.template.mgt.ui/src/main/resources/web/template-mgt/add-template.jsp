@@ -11,16 +11,27 @@
 
 <script src="codemirror/lib/codemirror.js"></script>
 <script src="codemirror/keymap/sublime.js"></script>
+<script src="codemirror/mode/xml/xml.js"></script>
+<script src="codemirror/mode/css/css.js"></script>
 <script src="codemirror/mode/javascript/javascript.js"></script>
+<script src="codemirror/mode/htmlmixed/htmlmixed.js"></script>
 
 <script src="codemirror/addon/lint/jshint.min.js"></script>
 <script src="codemirror/addon/lint/lint.js"></script>
 <script src="codemirror/addon/lint/javascript-lint.js"></script>
+<script src="codemirror/addon/lint/html-lint.js"></script>
+<script src="codemirror/addon/lint/css-lint.js"></script>
+
 <script src="codemirror/addon/hint/anyword-hint.js"></script>
 <script src="codemirror/addon/hint/show-hint.js"></script>
 <script src="codemirror/addon/hint/javascript-hint.js"></script>
 <script src="codemirror/addon/hint/wso2-hints.js"></script>
+<script src="codemirror/addon/hint/html-hint.js"></script>
+<script src="codemirror/addon/hint/css-hint.js"></script>
+<script src="codemirror/addon/hint/xml-hint.js"></script>
 
+<script src="codemirror/addon/edit/matchtags.js"></script>
+<script src="codemirror/addon/edit/closetag.js"></script>
 <script src="codemirror/addon/edit/closebrackets.js"></script>
 <script src="codemirror/addon/edit/matchbrackets.js"></script>
 <script src="codemirror/addon/fold/brace-fold.js"></script>
@@ -94,7 +105,7 @@
 <fmt:bundle basename="org.wso2.carbon.identity.template.mgt.ui.i18n.Resources">
 
     <div id="middle">
-        <h2>Add New Function Library</h2>
+        <h2>Add New Template</h2>
         <div id="workArea">
             <table class="styledLeft" width="100%">
                 <thead>
@@ -121,12 +132,12 @@
             </table>
             <br/>
             <form id="add-template-form" name="add-template-form" method="post"
-                  action="add-template-finish-ajaxprocessor.jsp">
-                <div class="sectionSeperator togglebleTitle"><fmt:message key='title.config.function.basic.config'/></div>
+                  action="add-template-finish.jsp">
+                <div class="sectionSeperator togglebleTitle"><fmt:message key='title.config.template.basic.config'/></div>
                 <div class="sectionSub">
                     <table class="carbonFormTable">
                         <tr>
-                            <td style="width:15%" class="leftCol-med labelField"><fmt:message key='config.function.info.basic.name'/>:<span class="required">*</span></td>
+                            <td style="width:15%" class="leftCol-med labelField"><fmt:message key='config.template.info.basic.name'/>:<span class="required">*</span></td>
                             <td>
                                 <input id="templateName" name="templateName" type="text" value="" white-list-patterns="^[a-zA-Z0-9\s._-]*$" autofocus/>
                                 <div class="sectionHelp">
@@ -149,13 +160,13 @@
                 </div>
 
                 <h2 id="authentication_step_config_head" class="sectionSeperator trigger active">
-                    <a href="#">Function Library Script</a>
+                    <a href="#">Template Script</a>
                 </h2>
                 <div class="toggle_container" id="editorRow">
                     <div style="position: relative;">
                         <div id="codeMirror" class="sectionSub step_contents" >
             <textarea id="scriptTextArea" name="scriptTextArea"
-                      placeholder="Write JavaScript Function..."
+                      placeholder="Write Custom Template..."
                       style="height: 500px;width: 100%; display: none;">
 
             </textarea>
@@ -176,7 +187,7 @@
                 <div style="clear:both"></div>
                 <div class="buttonRow" style=" margin-top: 10px;">
                     <input id="createLib" type="button" value="<fmt:message key='button.reg.template.manager'/>"  onclick="createTemplateOnclick()"/>
-                    <input type="button" onclick="javascript:location.href='template-mgt-list.jsp'" value="<fmt:message key='button.cancel'/>" />
+                    <input type="button" onclick="javascript:location.href='list-templates.jsp'" value="<fmt:message key='button.cancel'/>" />
                 </div>
             </form>
 
@@ -200,7 +211,7 @@
                         <td>
                             <input type="button" class="button"  value="<fmt:message key='button.import.template'/>"
                                    onclick="importTemplateOnclick();"/>
-                            <input type="button" class="button" onclick="javascript:location.href='template-mgt-list.jsp'" value="<fmt:message key='button.cancel'/>" />
+                            <input type="button" class="button" onclick="javascript:location.href='list-templates.jsp'" value="<fmt:message key='button.cancel'/>" />
                         </td>
                     </tr>
                     </tbody>

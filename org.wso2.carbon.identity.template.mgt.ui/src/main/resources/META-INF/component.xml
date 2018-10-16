@@ -3,7 +3,7 @@
         <menu>
             <id>template_menu</id>
             <i18n-key>template.menu</i18n-key>
-            <i18n-bundle>org.wso2.carbon.template.mgt.ui.i18n.Resources</i18n-bundle>
+            <i18n-bundle>org.wso2.carbon.identity.template.mgt.ui.i18n.Resources</i18n-bundle>
             <parent-menu>manage_menu</parent-menu>
             <link>#</link>
             <region>region1</region>
@@ -12,7 +12,7 @@
             <icon>../template/images/script.png</icon>
             <require-permission>/permission/admin/manage</require-permission>
             <require-not-logged-in>false</require-not-logged-in>
-            <at-least></at-least>
+
         </menu>
         <menu>
             <id>add_template</id>
@@ -31,8 +31,8 @@
             <id>list_templates</id>
             <i18n-key>templates.list</i18n-key>
             <i18n-bundle>org.wso2.carbon.identity.template.mgt.ui.i18n.Resources</i18n-bundle>
-            <parent-menu>templatemgt_menu</parent-menu>
-            <link>../template-mgt/template-mgt-list.jsp</link>
+            <parent-menu>template_menu</parent-menu>
+            <link>../template-mgt/list-templates.jsp</link>
             <region>region1</region>
             <order>2</order>
             <style-class>manage</style-class>
