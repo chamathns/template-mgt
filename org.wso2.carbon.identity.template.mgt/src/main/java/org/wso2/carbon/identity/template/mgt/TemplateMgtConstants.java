@@ -24,6 +24,11 @@ public class TemplateMgtConstants {
     public static final String MICROSOFT = "Microsoft";
     public static final String S_MICROSOFT = "microsoft";
     public static final String INFORMIX = "Informix";
+    public static final String PERMISSION_TEMPLATE_MGT_ADD = "/permission/admin/manage/identity/template/mgt/add";
+    public static final String PERMISSION_TEMPLATE_MGT_VIEW = "/permission/admin/manage/identity/template/mgt/view";
+    public static final String PERMISSION_TEMPLATE_MGT_LIST = "/permission/admin/manage/identity/template/mgt/list";
+    public static final String PERMISSION_TEMPLATE_MGT_UPDATE = "/permission/admin/manage/identity/template/mgt/update";
+    public static final String PERMISSION_TEMPLATE_MGT_DELETE = "/permission/admin/manage/identity/template/mgt/delete";
 
     public static final String TEMPLATE_RESOURCE_PATH = "/" + "templates";
 
@@ -44,7 +49,10 @@ public class TemplateMgtConstants {
         ERROR_CODE_SET_BLOB("TM_00005", "Error occurred while reading from input stream of template: %s."),
         ERROR_CODE_UPDATE_TEMPLATE("TM_00006", "Error occurred while updating the template: %s."),
         ERROR_CODE_TEMPLATE_NAME_REQUIRED("TM_00007", "Template name is required."),
-        ERROR_CODE_TEMPLATE_SCRIPT_REQUIRED("TM_00008", "Template script is required.");
+        ERROR_CODE_TEMPLATE_SCRIPT_REQUIRED("TM_00008", "Template script is required."),
+        ERROR_CODE_NO_AUTH_USER_FOUND("TM_00009", "No authenticated user found to perform the operation"),
+        ERROR_CODE_USER_NOT_AUTHORIZED("TM_00010", "User: %s is not authorized to perform this operation."),
+        ERROR_CODE_UNEXPECTED("TM_00011", "Unexpected Error");
 
 
         private final String code;
