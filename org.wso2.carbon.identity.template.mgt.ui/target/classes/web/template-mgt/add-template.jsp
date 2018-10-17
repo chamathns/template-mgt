@@ -27,6 +27,7 @@
 <script src="codemirror/addon/hint/javascript-hint.js"></script>
 <script src="codemirror/addon/hint/wso2-hints.js"></script>
 <script src="codemirror/addon/hint/html-hint.js"></script>
+<script src="codemirror/addon/hint/htmlhint.js"></script>
 <script src="codemirror/addon/hint/css-hint.js"></script>
 <script src="codemirror/addon/hint/xml-hint.js"></script>
 
@@ -37,6 +38,8 @@
 <script src="codemirror/addon/fold/brace-fold.js"></script>
 <script src="codemirror/addon/fold/foldcode.js"></script>
 <script src="codemirror/addon/fold/foldgutter.js"></script>
+<script src="codemirror/addon/fold/xml-fold.js"></script>
+
 <script src="codemirror/addon/display/fullscreen.js"></script>
 <script src="codemirror/addon/display/placeholder.js"></script>
 <script src="codemirror/addon/comment/comment.js"></script>
@@ -44,6 +47,7 @@
 <script src="codemirror/addon/dialog/dialog.js"></script>
 <script src="codemirror/addon/display/panel.js"></script>
 <script src="codemirror/util/formatting.js"></script>
+
 <script type="text/javascript" src="../identity/validation/js/identity-validate.js"></script>
 
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
@@ -57,7 +61,7 @@
         var templateName = document.getElementById("templateName").value.trim();
         var description = document.getElementById("template-description").value;
         if( templateName == '') {
-            CARBON.showWarningDialog('Please provide template Name');
+            CARBON.showWarningDialog('Template name cannot be empty');
             location.href = '#';
         } else if (!validateTextForIllegal(document.getElementById("templateName"))) {
             return false;
@@ -67,7 +71,7 @@
         }
     }
     function validateTextForIllegal(fild) {
-        var isValid = doValidateInput(fild, "Provided template name is invalid.");
+        var isValid = doValidateInput(fild, "Provided template name is invalid");
         if (isValid) {
             return true;
         } else {

@@ -5,7 +5,7 @@
     <parent>
         <artifactId>template-mgt</artifactId>
         <groupId>org.wso2.carbon</groupId>
-        <version>1.0-SNAPSHOT</version>
+        <version>1.0.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
@@ -33,19 +33,19 @@
                             javax.servlet.http,
                             javax.activation; version="${javax.activation.import.pkg.version}",
                             org.osgi.service.component; version="${osgi.service.component.imp.pkg.version.range}",
-                            org.wso2.carbon.ui.*; version="${carbon.core.version.range}",
+                            org.wso2.carbon.ui.*; version="${carbon.ui.version}",
                             org.wso2.carbon.ui.util; version="${carbon.kernel.package.import.version.range}",
                             org.wso2.carbon.utils; version="${carbon.kernel.package.import.version.range}",
                             org.wso2.carbon.user.core.service; version="${carbon.core.version.range}",
                             org.wso2.carbon.user.api.*; version="${carbon.api.version.range}",
                             org.wso2.carbon.context.*; version="${carbon.core.version.range}",
                             org.json.*; version="${org.json.wso2.version.range}",
-                            org.wso2.carbon.identity.template.mgt.*; version=${project.version},
+                            org.wso2.carbon.identity.template.mgt.*;version="${project.version}",
                             org.apache.axis2.*; version="${axis2.osgi.version.range}",
                             org.apache.commons.logging; version="${commons-logging.osgi.version.range}",
                             org.apache.commons.collections; version="${commons-collections.wso2.osgi.version.range}"
                         </Import-Package>
-                        <DynamicImport-Package>*</DynamicImport-Package>
+                        <!--<DynamicImport-Package>*</DynamicImport-Package>-->
                         <Carbon-Component>UIBundle</Carbon-Component>
                     </instructions>
                 </configuration>
@@ -63,24 +63,9 @@
 
     <dependencies>
         <dependency>
-            <groupId>org.apache.axis2.wso2</groupId>
-            <artifactId>axis2</artifactId>
-            <version>1.6.2.wso2v13</version>
-        </dependency>
-        <dependency>
-            <groupId>org.wso2.carbon</groupId>
-            <artifactId>org.wso2.carbon.ui</artifactId>
-            <version>4.4.34</version>
-        </dependency>
-        <dependency>
-            <groupId>org.wso2.orbit.org.owasp.encoder</groupId>
-            <artifactId>encoder</artifactId>
-            <version>1.2.0.wso2v2</version>
-        </dependency>
-        <dependency>
-            <groupId>org.wso2.carbon</groupId>
-            <artifactId>org.wso2.carbon.identity.template.mgt</artifactId>
-            <version>1.0-SNAPSHOT</version>
+            <groupId>org.wso2.eclipse.osgi</groupId>
+            <artifactId>org.eclipse.osgi.services</artifactId>
+            <version>${eclipse.osgi.version}</version>
         </dependency>
         <dependency>
             <groupId>org.apache.felix</groupId>
@@ -88,14 +73,35 @@
             <version>${apache.felix.scr.ds.annotations.version}</version>
         </dependency>
         <dependency>
+            <groupId>org.apache.axis2.wso2</groupId>
+            <artifactId>axis2</artifactId>
+            <version>${axis2.osgi.version.range}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.wso2.carbon</groupId>
+            <artifactId>org.wso2.carbon.ui</artifactId>
+            <version>${carbon.ui.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.wso2.orbit.org.owasp.encoder</groupId>
+            <artifactId>encoder</artifactId>
+            <version>${orbit.owasp.encoder.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.wso2.carbon</groupId>
+            <artifactId>org.wso2.carbon.identity.template.mgt</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+
+        <dependency>
             <groupId>org.apache.httpcomponents</groupId>
             <artifactId>httpclient</artifactId>
-            <version>4.5.6</version>
+            <version>${apache.httpclient.version}</version>
         </dependency>
         <dependency>
             <groupId>org.json.wso2</groupId>
             <artifactId>json</artifactId>
-            <version>3.0.0.wso2v1</version>
+            <version>${org.json.wso2.version.range}</version>
         </dependency>
     </dependencies>
 

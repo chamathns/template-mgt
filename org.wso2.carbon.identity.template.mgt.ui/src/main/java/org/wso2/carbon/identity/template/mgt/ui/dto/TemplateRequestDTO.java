@@ -19,6 +19,10 @@ package org.wso2.carbon.identity.template.mgt.ui.dto;
 
 public class TemplateRequestDTO {
 
+    public TemplateRequestDTO(){
+
+    }
+
     private Integer tenantId = null;
 
     private String templateName = null;

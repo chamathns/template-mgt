@@ -32,6 +32,7 @@ public class UpdateSuccessResponseDTO  {
     this.tenantId = tenantId;
   }
 
+  
   /**
    **/
   @ApiModelProperty(value = "")
@@ -42,6 +43,8 @@ public class UpdateSuccessResponseDTO  {
   public void setName(String name) {
     this.name = name;
   }
+
+  
 
   @Override
   public String toString()  {

@@ -35,7 +35,7 @@ From: 'an unknown organization'
 
   - ant.wso2 (http://wso2.org) org.apache.ant.wso2:ant:bundle:1.7.0.wso2v1
 
-  - axis2.wso2 (http://wso2.org) org.apache.axis2.wso2:axis2:bundle:1.6.2.wso2v13
+  - axis2.wso2 (http://wso2.org) org.apache.axis2.wso2:axis2:bundle:1.6.1-wso2v27
 
   - not-yet-commons-ssl  org.apache.commons.ssl:not-yet-commons-ssl:jar:0.3.9
 
@@ -88,8 +88,6 @@ From: 'an unknown organization'
   - JSON in Java (https://github.com/douglascrockford/JSON-java) org.json:json:jar:20140107
     License: The JSON License  (http://json.org/license.html)
   - WSO2 Carbon Orbit - JSON (org.json) (http://wso2.org) org.json.wso2:json:bundle:3.0.0.wso2v1
-
-  - WSO2 Carbon - Identity Template Management  org.wso2.carbon:org.wso2.carbon.identity.template.mgt:bundle:1.0-SNAPSHOT
 
   - org.eclipse.osgi  org.wso2.eclipse.osgi:org.eclipse.osgi:jar:3.11.0.v20160603-1336
 
@@ -241,7 +239,7 @@ From: 'The Apache Software Foundation' (http://www.apache.org/)
     License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
   - Commons Lang (http://commons.apache.org/lang/) org.apache.commons:commons-lang3:jar:3.1
     License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
-  - Annotations for DS (http://felix.apache.org/org.apache.felix.scr.ds-annotations/) org.apache.felix:org.apache.felix.scr.ds-annotations:jar:1.2.4
+  - Annotations for DS (http://felix.apache.org/org.apache.felix.scr.ds-annotations/) org.apache.felix:org.apache.felix.scr.ds-annotations:jar:1.2.8
     License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
   - Apache HttpClient (http://hc.apache.org/httpcomponents-client) org.apache.httpcomponents:httpclient:jar:4.5.6
     License: Apache License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
@@ -264,6 +262,8 @@ From: 'WSO2' (http://www.wso2.org/)
   - WSO2 Carbon Kernel - Core (http://wso2.com) org.wso2.carbon:org.wso2.carbon.core:bundle:5.2.7
     License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
   - WSO2 Carbon - Common Stub (http://wso2.org) org.wso2.carbon:org.wso2.carbon.core.commons.stub:bundle:4.4.34
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - WSO2 Carbon - Identity Template Management (http://www.wso2.org/template-mgt/org.wso2.carbon.identity.template.mgt/) org.wso2.carbon:org.wso2.carbon.identity.template.mgt:bundle:1.0.0-SNAPSHOT
     License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
   - WSO2 Carbon - Tenant Common (http://wso2.org/org.wso2.carbon.tenant.common) org.wso2.carbon.commons:org.wso2.carbon.tenant.common:bundle:4.5.2
     License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)

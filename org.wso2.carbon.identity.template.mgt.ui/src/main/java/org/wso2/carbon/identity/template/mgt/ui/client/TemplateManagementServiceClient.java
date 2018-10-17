@@ -42,7 +42,7 @@ public class TemplateManagementServiceClient {
 
 
     public Template addTemplate(TemplateRequestDTO templateRequestDTO) throws TemplateManagementException {
-        handleLoggedInUserAuthorization(TemplateMgtConstants.PERMISSION_TEMPLATE_MGT_ADD);
+//        handleLoggedInUserAuthorization(TemplateMgtConstants.PERMISSION_TEMPLATE_MGT_ADD);
         Template template = new Template(templateRequestDTO.getTenantId(), templateRequestDTO.getTemplateName(),
                                 templateRequestDTO.getDescription(),templateRequestDTO.getTemplateScript());
         Template templateResponse = getTemplateManager().addTemplate(template);

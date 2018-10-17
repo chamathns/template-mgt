@@ -7,7 +7,7 @@
     <groupId>org.wso2.carbon</groupId>
     <artifactId>template-mgt</artifactId>
     <packaging>pom</packaging>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0.0-SNAPSHOT</version>
 
 
     <parent>
@@ -143,6 +143,16 @@
                 <artifactId>swagger-jaxrs</artifactId>
                 <version>${swagger-jaxrs.versiion}</version>
             </dependency>
+            <dependency>
+                <groupId>org.apache.felix</groupId>
+                <artifactId>org.apache.felix.scr.ds-annotations</artifactId>
+                <version>${apache.felix.scr.ds.annotations.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.axis2.wso2</groupId>
+                <artifactId>axis2</artifactId>
+                <version>${axis2.osgi.version.range}</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
@@ -263,6 +273,7 @@
         <osgi.framework.imp.pkg.version.range>[1.7.0, 2.0.0)</osgi.framework.imp.pkg.version.range>
         <osgi.service.component.imp.pkg.version.range>[1.2.0, 2.0.0)</osgi.service.component.imp.pkg.version.range>
         <eclipse.osgi.version>3.5.100.v20160504-1419</eclipse.osgi.version>
+
         <axis2.osgi.version.range>[1.6.1.wso2v12, 2.0.0)</axis2.osgi.version.range>
         <carbon.core.version.range>[4.4.0, 5.0.0)</carbon.core.version.range>
         <carbon.api.version.range>[1.0.1, 2.0.0)</carbon.api.version.range>
@@ -290,6 +301,8 @@
 
         <carbon.kernel.package.import.version.range>[4.4.0, 5.0.0)</carbon.kernel.package.import.version.range>
         <carbon.core.version>5.2.7</carbon.core.version>
+        <carbon.ui.version>4.4.34</carbon.ui.version>
+        <orbit.owasp.encoder.version>1.2.0.wso2v2</orbit.owasp.encoder.version>
         <carbon.identity.application.common>5.12.134</carbon.identity.application.common>
         <carbon.identity.core.version>5.12.134</carbon.identity.core.version>
         <carbon.utils.database.version>2.0.8</carbon.utils.database.version>
@@ -298,6 +311,8 @@
         <jacoco.version>0.7.9</jacoco.version>
         <apache.tomcat-catalina.version>9.0.11</apache.tomcat-catalina.version>
         <org.json.wso2.version.range>[3.0.0.wso2v1, 4.0.0)</org.json.wso2.version.range>
+        <apache.httpclient.version>4.5.6</apache.httpclient.version>
+
 
 
     </properties>
