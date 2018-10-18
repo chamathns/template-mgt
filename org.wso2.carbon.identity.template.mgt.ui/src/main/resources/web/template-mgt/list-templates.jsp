@@ -5,17 +5,16 @@
 <%@ page import="org.wso2.carbon.ui.CarbonUIUtil" %>
 <%@ page import="org.wso2.carbon.utils.ServerConstants" %>
 <%@ page import="org.wso2.carbon.ui.CarbonUIMessage" %>
-<%@ page import="org.wso2.carbon.function.mgt.ui.client.FunctionLibraryManagementServiceClient" %>
-<%@ page import="org.wso2.carbon.function.mgt.model.xsd.FunctionLibrary" %>
 <%@ page import="java.util.ResourceBundle" %>
 <%@ page import="org.owasp.encoder.Encode" %>
+<%@ page import="org.wso2.carbon.identity.template.mgt.model.Template" %>
+<%@ page import="org.wso2.carbon.identity.template.mgt.ui.client.TemplateManagementServiceClient" %>
+<%@ page import="java.util.List" %>
 
 
-
-
-<fmt:bundle basename="org.wso2.carbon.function.mgt.ui.i18n.Resources">
-    <carbon:breadcrumb label="functionlib.mgt"
-                       resourceBundle="org.wso2.carbon.function.mgt.ui.i18n.Resources"
+<fmt:bundle basename="org.wso2.carbon.identity.template.mgt.ui.i18n.Resources">
+    <carbon:breadcrumb label="template.mgt"
+                       resourceBundle="org.wso2.carbon.identity.template.mgt.ui.i18n.Resources"
                        topPage="true" request="<%=request%>"/>
 
     <script type="text/javascript" src="../carbon/admin/js/breadcrumbs.js"></script>
@@ -24,46 +23,46 @@
     <div id="middle">
 
         <h2>
-            Function Library Management
+            Template Management
         </h2>
 
         <div id="workArea">
 
             <script type="text/javascript">
-                function removeItem(functionLibraryName) {
+                function removeItem(templateName) {
                     function doDelete() {
 
-                        var functionLibName = functionLibraryName;
-                        console.log(functionLibName);
+                        var templateName = templateName;
+                        console.log(templateName);
                         $.ajax({
                             type: 'POST',
-                            url: 'remove-function-library-finish-ajaxprocessor.jsp',
+                            url: 'remove-template-finish-ajaxprocessor.jsp',
                             headers: {
                                 Accept: "text/html"
                             },
-                            data: 'functionLibraryName=' + functionLibName,
+                            data: 'templateName=' + templateName,
                             async: false,
                             success: function (responseText, status) {
                                 if (status == "success") {
-                                    location.assign("function-mgt-list.jsp");
+                                    location.assign("list-templates.jsp");
                                 }
                             }
                         });
                     }
 
-                    CARBON.showConfirmationDialog('Are you sure you want to delete "' + functionLibraryName + '" Function Library? \n WARN: If you delete this library, ' +
+                    CARBON.showConfirmationDialog('Are you sure you want to delete "' + templateName + '" Template? \n WARN: If you delete this template, ' +
                         'the authentication scripts which used this will no longer function properly !',
                         doDelete, null);
                 }
             </script>
 
             <%
-                FunctionLibrary[] functionLibraries = null;
+                List<Template> templateList = null;
 
-                String BUNDLE = "org.wso2.carbon.function.mgt.ui.i18n.Resources";
+                String BUNDLE = "org.wso2.carbon.identity.template.mgt.ui.i18n.Resources";
                 ResourceBundle resourceBundle = ResourceBundle.getBundle(BUNDLE, request.getLocale());
-                FunctionLibrary[] functionLibrariesToDisplay = new FunctionLibrary[0];
-                String paginationValue = "region=region1&item=function_libraries_list";
+                Template[] templateListToDisplay = new Template[0];
+                String paginationValue = "region=region1&item=list_templates";
                 String pageNumber = request.getParameter("pageNumber");
 
                 int pageNumberInt = 0;
@@ -79,23 +78,18 @@
                 }
 
                 try {
-                    String cookie = (String) session.getAttribute(ServerConstants.ADMIN_SERVICE_COOKIE);
-                    String backendServerURL = CarbonUIUtil.getServerURL(config.getServletContext(), session);
-                    ConfigurationContext configContext = (ConfigurationContext) config.getServletContext()
-                            .getAttribute(CarbonConstants.CONFIGURATION_CONTEXT);
+                    String currentUser = (String) session.getAttribute("logged-user");
+                    TemplateManagementServiceClient serviceClient = new TemplateManagementServiceClient(currentUser);
+                    templateList = serviceClient.listTemplates(numberOfPages,resultsPerPage);
 
-                    FunctionLibraryManagementServiceClient serviceClient = new
-                            FunctionLibraryManagementServiceClient(cookie, backendServerURL, configContext);
-                    functionLibraries = serviceClient.listFunctionLibraries();
-
-                    if (functionLibraries != null) {
-                        numberOfPages = (int) Math.ceil((double) functionLibraries.length / resultsPerPage);
+                    if (templateList != null) {
+                        numberOfPages = (int) Math.ceil((double) templateList.size() / resultsPerPage);
                         int startIndex = pageNumberInt * resultsPerPage;
                         int endIndex = (pageNumberInt + 1) * resultsPerPage;
-                        functionLibrariesToDisplay = new FunctionLibrary[resultsPerPage];
+                        templateListToDisplay = new Template[resultsPerPage];
 
-                        for (int i = startIndex, j = 0; i < endIndex && i < functionLibraries.length; i++, j++) {
-                            functionLibrariesToDisplay[j] = functionLibraries[i];
+                        for (int i = startIndex, j = 0; i < endIndex && i < templateList.size(); i++, j++) {
+                            templateListToDisplay[j] = templateList.get(i);
                         }
                     }
                 } catch (Exception e) {
@@ -114,45 +108,45 @@
                             <thead>
                             <tr style="white-space: nowrap">
                                 <th class="leftCol-med"><fmt:message
-                                        key="function.library.name"/></th>
+                                        key="template.name"/></th>
                                 <th class="leftCol-big"><fmt:message
-                                        key="function.library.desc"/></th>
+                                        key="template.desc"/></th>
                                 <th style="width: 30%"><fmt:message
-                                        key="functionlib.list.action"/></th>
+                                        key="template.list.action"/></th>
                             </tr>
                             </thead>
 
                             <%
-                                if (functionLibraries != null && functionLibraries.length > 0){
+                                if (templateList != null && templateList.size() > 0){
 
                             %>
                             <tbody>
                             <%
-                                for(FunctionLibrary functionLib:functionLibraries){
-                                    if(functionLib !=null){
+                                for(Template template:templateList){
+                                    if(template !=null){
 
                             %>
                             <tr>
 
-                                <td><%=Encode.forHtml(functionLib.getFunctionLibraryName())%></td>
-                                <td><%=functionLib.getDescription() != null ? Encode.forHtml(functionLib.getDescription()) : ""%></td>
+                                <td><%=Encode.forHtml(template.getTemplateName())%></td>
+                                <td><%=template.getDescription() != null ? Encode.forHtml(template.getDescription()) : ""%></td>
                                 <td>
-                                    <a title="<fmt:message key='edit.functionlib.info'/>"
+                                    <a title="<fmt:message key='edit.template.info'/>"
                                        onclick=""
-                                       href="load-function-library.jsp?functionLibraryName=<%=Encode.forUriComponent(functionLib.getFunctionLibraryName())%>"
+                                       href="load-template.jsp?templateName=<%=Encode.forUriComponent(template.getTemplateName())%>"
                                        class="icon-link"
                                        style="background-image: url(images/edit.gif)">
                                         <fmt:message key='edit'/>
                                     </a>
-                                    <a title="<fmt:message key='export.functionlib.info'/>"
+                                    <a title="<fmt:message key='export.template.info'/>"
                                        onclick=""
                                        href="#"
                                        class="icon-link"
                                        style="background-image: url(images/export.gif)">
                                         <fmt:message key='export'/>
                                     </a>
-                                    <a title="<fmt:message key='delete.functionlib.info'/>"
-                                       onclick="removeItem('<%=Encode.forJavaScriptAttribute(functionLib.getFunctionLibraryName())%>');return false;"
+                                    <a title="<fmt:message key='delete.template.info'/>"
+                                       onclick="removeItem('<%=Encode.forJavaScriptAttribute(template.getTemplateName())%>');return false;"
                                        href=""
                                        class="icon-link"
                                        style="background-image: url(images/delete.gif)">
@@ -171,7 +165,7 @@
                             <%} else{ %>
                             <tbody>
                             <tr>
-                                <td colspan="3"><i>No Function Library created</i></td>
+                                <td colspan="3"><i>No Template created</i></td>
                             </tr>
                             </tbody>
                             <%}%>
@@ -182,9 +176,9 @@
             </table>
             <carbon:paginator pageNumber="<%=pageNumberInt%>"
                               numberOfPages="<%=numberOfPages%>"
-                              page="function-mgt-list.jsp"
+                              page="list-templates.jsp"
                               pageNumberParameterName="pageNumber"
-                              resourceBundle="org.wso2.carbon.function.mgt.ui.i18n.Resources"
+                              resourceBundle="org.wso2.carbon.identity.template.mgt.ui.i18n.Resources"
                               parameters="<%=paginationValue%>"
                               prevKey="prev" nextKey="next"/>
             <br/>
