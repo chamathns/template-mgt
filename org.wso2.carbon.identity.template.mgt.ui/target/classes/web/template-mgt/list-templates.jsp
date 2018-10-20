@@ -51,7 +51,7 @@
                     }
 
                     CARBON.showConfirmationDialog('Are you sure you want to delete "' + templateName + '" Template? \n WARN: If you delete this template, ' +
-                        'the authentication scripts which used this will no longer function properly !',
+                        'the authentication scripts which used this will no longer function properly!',
                         doDelete, null);
                 }
             </script>
@@ -93,7 +93,7 @@
                         }
                     }
                 } catch (Exception e) {
-                    String message = resourceBundle.getString("error.while.reading.function.libraries") + " : " + e.getMessage();
+                    String message = resourceBundle.getString("error.while.reading.templates") + " : " + e.getMessage();
                     CarbonUIMessage.sendCarbonUIMessage(message, CarbonUIMessage.ERROR, request, e);
                 }
             %>
@@ -104,7 +104,7 @@
                 <tbody>
                 <tr>
                     <td style="border:none !important">
-                        <table class="styledLeft"width="100%" id="FunctionLibraries">
+                        <table class="styledLeft"width="100%" id="Templates">
                             <thead>
                             <tr style="white-space: nowrap">
                                 <th class="leftCol-med"><fmt:message
@@ -133,7 +133,7 @@
                                 <td>
                                     <a title="<fmt:message key='edit.template.info'/>"
                                        onclick=""
-                                       href="load-template.jsp?templateName=<%=Encode.forUriComponent(template.getTemplateName())%>"
+                                       href="get-template.jsp?templateName=<%=Encode.forUriComponent(template.getTemplateName())%>"
                                        class="icon-link"
                                        style="background-image: url(images/edit.gif)">
                                         <fmt:message key='edit'/>

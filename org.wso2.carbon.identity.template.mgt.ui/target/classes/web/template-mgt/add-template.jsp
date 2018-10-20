@@ -83,7 +83,7 @@
         var reader = new FileReader();
         reader.onload = function () {
             var data = reader.result;
-            document.getElementById('template-file-content').value = data;
+            document.getElementById('template-file-templateScript').value = data;
         };
         document.getElementById('template-file-name').value = input.files[0].name;
         reader.readAsText(input.files[0]);
@@ -208,7 +208,7 @@
                         <td>
                             <span>File Location: </span><input type="file" class="button" id="template_file" name="template_file" onchange='openFile(event)'/>
                         </td>
-                        <textarea hidden="hidden" name="template-file-content" id="template-file-content"></textarea>
+                        <textarea hidden="hidden" name="template-file-templateScript" id="template-file-templateScript"></textarea>
                         <textarea hidden="hidden" name="template-file-name" id="template-file-name"></textarea>
                     </tr>
                     <tr>

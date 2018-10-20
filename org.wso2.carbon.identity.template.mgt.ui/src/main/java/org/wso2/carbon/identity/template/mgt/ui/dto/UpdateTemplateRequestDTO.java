@@ -18,8 +18,10 @@
 package org.wso2.carbon.identity.template.mgt.ui.dto;
 
 public class UpdateTemplateRequestDTO {
-    private Integer tenantId = null;
+//    private Integer tenantId = null;
+    public UpdateTemplateRequestDTO(){
 
+    }
 
     private String templateName = null;
 
@@ -29,13 +31,13 @@ public class UpdateTemplateRequestDTO {
 
     private String templateScript = null;
 
-    public Integer getTenantId() {
-        return tenantId;
-    }
-
-    public void setTenantId(Integer tenantId) {
-        this.tenantId = tenantId;
-    }
+//    public Integer getTenantId() {
+//        return tenantId;
+//    }
+//
+//    public void setTenantId(Integer tenantId) {
+//        this.tenantId = tenantId;
+//    }
 
     public String getTemplateName() {
         return templateName;

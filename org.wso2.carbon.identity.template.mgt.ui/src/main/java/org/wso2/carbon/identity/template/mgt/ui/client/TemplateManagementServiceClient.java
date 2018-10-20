@@ -50,24 +50,24 @@ public class TemplateManagementServiceClient {
     }
 
     public Template getTemplateByName(String templateName) throws TemplateManagementException{
-        handleLoggedInUserAuthorization(TemplateMgtConstants.PERMISSION_TEMPLATE_MGT_VIEW);
+//        handleLoggedInUserAuthorization(TemplateMgtConstants.PERMISSION_TEMPLATE_MGT_VIEW);
         return getTemplateManager().getTemplateByName(templateName);
     }
 
     public Template updateTemplate(String templateName, UpdateTemplateRequestDTO updateTemplateRequestDTO) throws TemplateManagementException{
-        handleLoggedInUserAuthorization(TemplateMgtConstants.PERMISSION_TEMPLATE_MGT_UPDATE);
-        Template updateTemplateRequest = new Template(updateTemplateRequestDTO.getTenantId(),updateTemplateRequestDTO.getTemplateName(),
+//        handleLoggedInUserAuthorization(TemplateMgtConstants.PERMISSION_TEMPLATE_MGT_UPDATE);
+        Template updateTemplateRequest = new Template(updateTemplateRequestDTO.getTemplateName(),
                                             updateTemplateRequestDTO.getDescription(),updateTemplateRequestDTO.getTemplateScript());
         return getTemplateManager().updateTemplate(templateName,updateTemplateRequest);
     }
 
     public void deleteTemplate(String templateName) throws TemplateManagementException{
-        handleLoggedInUserAuthorization(TemplateMgtConstants.PERMISSION_TEMPLATE_MGT_DELETE);
+//        handleLoggedInUserAuthorization(TemplateMgtConstants.PERMISSION_TEMPLATE_MGT_DELETE);
         getTemplateManager().deleteTemplate(templateName);
     }
 
     public List<Template> listTemplates(Integer limit, Integer offset) throws TemplateManagementException{
-        handleLoggedInUserAuthorization(TemplateMgtConstants.PERMISSION_TEMPLATE_MGT_UPDATE);
+//        handleLoggedInUserAuthorization(TemplateMgtConstants.PERMISSION_TEMPLATE_MGT_UPDATE);
         return getTemplateManager().listTemplates(limit,offset);
     }
 

@@ -1,5 +1,5 @@
 Manifest-Version: 1.0
-Bnd-LastModified: 1539887187671
+Bnd-LastModified: 1540037515298
 Build-Jdk: 1.8.0_181
 Built-By: chamath
 Bundle-Description: Template Management UI component for WSO2 Carbon
@@ -26,10 +26,10 @@ Import-Package: org.osgi.service.component;version="[1.2.0,2.0.0)",org.w
  5.0.0)",org.wso2.carbon.identity.template.mgt;version="1.0.0.SNAPSHOT",
  org.wso2.carbon.identity.template.mgt.exception;version="1.0.0.SNAPSHOT
  ",org.wso2.carbon.identity.template.mgt.model;version="1.0.0.SNAPSHOT",
- org.apache.commons.logging;version="[1.2,2.0)",org.wso2.carbon.utils;ve
- rsion="[4.4.0,5.0.0)",org.wso2.carbon.ui.util;version="[4.4.0,5.0.0)",j
- avax.servlet.http;version="[2.6,3)",org.apache.commons.collections;vers
- ion="[3.2.0,4.0.0)",javax.activation;version="[0.0.0,1.0.0)"
+ org.apache.commons.logging;version="[1.2,2.0)",javax.servlet.http;versi
+ on="[2.6,3)",org.apache.commons.collections;version="[3.2.0,4.0.0)",org
+ .wso2.carbon.utils;version="[4.4.0,5.0.0)",org.wso2.carbon.ui.util;vers
+ ion="[4.4.0,5.0.0)",javax.activation;version="[0.0.0,1.0.0)"
 Service-Component: OSGI-INF/org.wso2.carbon.identity.template.mgt.ui.int
  ernal.TemplateMgtUIServiceComponent.xml
 Tool: Bnd-2.1.0.20130426-122213

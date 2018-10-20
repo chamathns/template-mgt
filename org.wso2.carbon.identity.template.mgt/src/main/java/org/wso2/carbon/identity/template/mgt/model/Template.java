@@ -20,14 +20,14 @@ public class Template {
     private Integer tenantId;
     private String templateName;
     private String description;
-    private String content;
+    private String templateScript;
 
-    public Template(Integer templateId, Integer tenantId, String templateName, String description, String content){
+    public Template(Integer templateId, Integer tenantId, String templateName, String description, String templateScript){
         this.templateId = templateId;
         this.tenantId = tenantId;
         this.templateName = templateName;
         this.description = description;
-        this.content = content;
+        this.templateScript = templateScript;
     }
 
     public Template(Integer templateId, Integer tenantId, String templateName, String description){
@@ -55,13 +55,16 @@ public class Template {
         this.templateName = templateName;
         this.description = description;
     }
-
-
-    public Template(Integer tenantId, String templateName, String description, String content){
+    public Template(Integer tenantId, String templateName, String description, String templateScript){
         this.tenantId = tenantId;
         this.templateName = templateName;
         this.description = description;
-        this.content = content;
+        this.templateScript = templateScript;
+    }
+    public Template(String templateName, String description, String templateScript){
+        this.templateName = templateName;
+        this.description = description;
+        this.templateScript = templateScript;
     }
 
     /**
@@ -141,18 +144,18 @@ public class Template {
     /**
      * Get template script.
      *
-     * @return content
+     * @return templateScript
      */
     public String getTemplateScript() {
-        return content;
+        return templateScript;
     }
 
     /**
      * Set template script.
      *
-     * @param content content
+     * @param content templateScript
      */
     public void setTemplateScript(String content) {
-        this.content = content;
+        this.templateScript = content;
     }
 }
