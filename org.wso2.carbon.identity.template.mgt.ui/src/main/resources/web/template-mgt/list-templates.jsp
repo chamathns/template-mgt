@@ -36,7 +36,7 @@
                         console.log(templateName);
                         $.ajax({
                             type: 'POST',
-                            url: 'remove-template-finish-ajaxprocessor.jsp',
+                            url: 'remove-template-finish.jsp',
                             headers: {
                                 Accept: "text/html"
                             },
@@ -146,7 +146,7 @@
                                         <fmt:message key='export'/>
                                     </a>
                                     <a title="<fmt:message key='delete.template.info'/>"
-                                       onclick="removeItem('<%=Encode.forJavaScriptAttribute(template.getTemplateName())%>');return false;"
+                                       onclick="removeItem('<%=Encode.forJavaScriptAttribute(template.getTemplateName())%>');"
                                        href=""
                                        class="icon-link"
                                        style="background-image: url(images/delete.gif)">

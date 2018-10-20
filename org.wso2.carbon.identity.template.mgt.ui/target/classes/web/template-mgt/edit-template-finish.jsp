@@ -32,13 +32,6 @@
         updateTemplateRequestDTO.setDescription(description);
         updateTemplateRequestDTO.setTemplateScript(templateScript);
 
-
-        System.out.println("==============================================================");
-        System.out.println("=============================== old template name: "+oldTemplateName);
-        System.out.println("=============================== new template name: "+updateTemplateRequestDTO.getTemplateName());
-        System.out.println("=============================== template Description: "+updateTemplateRequestDTO.getDescription());
-        System.out.println("==============================================================");
-
         try {
 
             String currentUser = (String) session.getAttribute("logged-user");
@@ -48,7 +41,6 @@
 
 
         } catch (Exception e) {
-            e.printStackTrace();
             String message = resourceBundle.getString("alert.error.while.updating.template") + " : " + e.getMessage();
             CarbonUIMessage.sendCarbonUIMessage(message, CarbonUIMessage.ERROR, request, e);
 %>
