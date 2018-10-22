@@ -15,6 +15,7 @@
 <script src="codemirror/mode/css/css.js"></script>
 <script src="codemirror/mode/javascript/javascript.js"></script>
 <script src="codemirror/mode/htmlmixed/htmlmixed.js"></script>
+<script src="codemirror/mode/handlebars/handlebars.js"></script>
 
 <script src="codemirror/addon/lint/jshint.min.js"></script>
 <script src="codemirror/addon/lint/lint.js"></script>
@@ -30,6 +31,9 @@
 <script src="codemirror/addon/hint/htmlhint.js"></script>
 <script src="codemirror/addon/hint/css-hint.js"></script>
 <script src="codemirror/addon/hint/xml-hint.js"></script>
+
+<script src="../../addon/mode/simple.js"></script>
+<script src="../../addon/mode/multiplex.js"></script>
 
 <script src="codemirror/addon/edit/matchtags.js"></script>
 <script src="codemirror/addon/edit/closetag.js"></script>
