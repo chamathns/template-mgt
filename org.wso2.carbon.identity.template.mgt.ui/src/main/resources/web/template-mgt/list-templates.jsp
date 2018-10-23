@@ -32,15 +32,15 @@
                 function removeItem(templateName) {
                     function doDelete() {
 
-                        var templateName = templateName;
-                        console.log(templateName);
+                        var template_name = templateName;
+                        console.log(template_name);
                         $.ajax({
                             type: 'POST',
                             url: 'remove-template-finish.jsp',
                             headers: {
                                 Accept: "text/html"
                             },
-                            data: 'templateName=' + templateName,
+                            data: 'templateName=' + template_name,
                             async: false,
                             success: function (responseText, status) {
                                 if (status == "success") {
@@ -146,7 +146,7 @@
                                         <fmt:message key='export'/>
                                     </a>
                                     <a title="<fmt:message key='delete.template.info'/>"
-                                       onclick="removeItem('<%=Encode.forJavaScriptAttribute(template.getTemplateName())%>');"
+                                       onclick="removeItem('<%=Encode.forJavaScriptAttribute(template.getTemplateName())%>'); return false;"
                                        href=""
                                        class="icon-link"
                                        style="background-image: url(images/delete.gif)">

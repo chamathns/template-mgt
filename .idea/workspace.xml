@@ -4,14 +4,12 @@
     <list default="true" id="a4b52234-6a17-458d-abd6-21576aba62b7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/add-template.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/add-template.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/edit-template.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/edit-template.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/js/template-mgt.js" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/js/template-mgt.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/remove-template-finish.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/remove-template-finish.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/list-templates.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/list-templates.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/META-INF/MANIFEST.MF" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/add-template.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/add-template.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/edit-template.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/edit-template.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/js/template-mgt.js" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/js/template-mgt.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/remove-template-finish.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/remove-template-finish.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/list-templates.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/list-templates.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -27,33 +25,14 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="DockManager">
-    <window id="1">
-      <content type="file-editors">
-        <state>
-          <leaf>
-            <file pinned="false" current-in-tab="true">
-              <entry file="file://$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/edit-template.jsp">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="467">
-                    <caret line="136" selection-start-line="136" selection-end-line="136" />
-                  </state>
-                </provider>
-              </entry>
-            </file>
-          </leaf>
-        </state>
-      </content>
-    </window>
-  </component>
   <component name="FUSProjectUsageTrigger">
     <session id="1040724542">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="14" />
+          <entry key="project.closed" value="15" />
           <entry key="project.open.time.0" value="2" />
           <entry key="project.open.time.1" value="1" />
-          <entry key="project.open.time.12" value="1" />
+          <entry key="project.open.time.12" value="2" />
           <entry key="project.open.time.13" value="2" />
           <entry key="project.open.time.14" value="2" />
           <entry key="project.open.time.15" value="4" />
@@ -67,7 +46,8 @@
           <entry key="project.open.time.28" value="1" />
           <entry key="project.open.time.3" value="2" />
           <entry key="project.open.time.8" value="2" />
-          <entry key="project.opened" value="31" />
+          <entry key="project.open.time.9" value="1" />
+          <entry key="project.opened" value="33" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -80,9 +60,9 @@
           <entry key="gitignore" value="3" />
           <entry key="html" value="6" />
           <entry key="iml" value="1" />
-          <entry key="java" value="233" />
-          <entry key="js" value="9" />
-          <entry key="jsp" value="24" />
+          <entry key="java" value="234" />
+          <entry key="js" value="10" />
+          <entry key="jsp" value="27" />
           <entry key="png" value="1" />
           <entry key="properties" value="6" />
           <entry key="xml" value="70" />
@@ -96,9 +76,9 @@
           <entry key="HTML" value="6" />
           <entry key="IDEA_MODULE" value="1" />
           <entry key="Image" value="2" />
-          <entry key="JAVA" value="233" />
-          <entry key="JSP" value="21" />
-          <entry key="JavaScript" value="9" />
+          <entry key="JAVA" value="234" />
+          <entry key="JSP" value="24" />
+          <entry key="JavaScript" value="10" />
           <entry key="PLAIN_TEXT" value="9" />
           <entry key="Properties" value="6" />
           <entry key="XML" value="70" />
@@ -114,7 +94,7 @@
           <entry key="gitignore" value="6" />
           <entry key="java" value="8448" />
           <entry key="js" value="127" />
-          <entry key="jsp" value="1414" />
+          <entry key="jsp" value="1526" />
           <entry key="properties" value="455" />
           <entry key="xml" value="1586" />
           <entry key="yaml" value="26" />
@@ -125,7 +105,7 @@
           <entry key="CLASS" value="1" />
           <entry key="CSS" value="24" />
           <entry key="JAVA" value="8448" />
-          <entry key="JSP" value="1413" />
+          <entry key="JSP" value="1525" />
           <entry key="JavaScript" value="127" />
           <entry key="PLAIN_TEXT" value="38" />
           <entry key="Properties" value="455" />
@@ -147,26 +127,48 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/remove-template-finish.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
-              <caret line="33" selection-start-line="33" selection-end-line="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/add-template.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
-              <caret line="180" column="30" lean-forward="true" selection-start-line="180" selection-start-column="30" selection-end-line="180" selection-end-column="30" />
+            <state relative-caret-position="195">
+              <caret line="13" selection-start-line="13" selection-end-line="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/list-templates.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="126">
+              <caret line="31" column="51" selection-start-line="31" selection-start-column="51" selection-end-line="31" selection-end-column="51" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/js/template-mgt.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="546">
-              <caret line="38" column="34" selection-start-line="38" selection-start-column="34" selection-end-line="38" selection-end-column="34" />
+            <state relative-caret-position="45">
+              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/add-template.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="275">
+              <caret line="114" column="6" selection-start-line="114" selection-start-column="6" selection-end-line="114" selection-end-column="6" />
+              <folding>
+                <element signature="e#4934#7994#0#JSP" />
+                <element signature="e#10987#11036#0#HTML" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/java/org/wso2/carbon/identity/template/mgt/ui/client/TemplateManagementServiceClient.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="495">
+              <caret line="65" column="58" selection-start-line="65" selection-start-column="58" selection-end-line="65" selection-end-column="58" />
             </state>
           </provider>
         </entry>
@@ -174,8 +176,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/mode/handlebars/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" selection-start-line="8" selection-end-line="10" selection-end-column="57" />
+            <state relative-caret-position="300">
+              <caret line="20" column="42" selection-start-line="19" selection-start-column="44" selection-end-line="20" selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -190,33 +192,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/mode/handlebars/handlebars.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/edit-template.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="570">
+            <state relative-caret-position="2640">
               <caret line="176" column="170" selection-start-line="176" selection-start-column="170" selection-end-line="176" selection-end-column="170" />
-              <folding>
-                <element signature="e#8450#8499#0#HTML" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/org/wso2/carbon/identity/template/mgt/ui/i18n/Resources.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="27" column="73" selection-start-line="27" selection-start-column="73" selection-end-line="27" selection-end-column="73" />
             </state>
           </provider>
         </entry>
@@ -342,11 +321,11 @@
         <option value="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/META-INF/component.xml" />
         <option value="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/org/wso2/carbon/identity/template/mgt/ui/i18n/Resources.properties" />
         <option value="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/edit-template-finish.jsp" />
+        <option value="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/edit-template.jsp" />
+        <option value="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/add-template.jsp" />
         <option value="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/list-templates.jsp" />
         <option value="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/remove-template-finish.jsp" />
         <option value="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/js/template-mgt.js" />
-        <option value="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/edit-template.jsp" />
-        <option value="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/add-template.jsp" />
       </list>
     </option>
   </component>
@@ -414,6 +393,7 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -480,6 +460,33 @@
               <item name="org.wso2.carbon.identity.template.mgt.ui" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="template-mgt" type="b2602c69:ProjectViewProjectNode" />
+              <item name="template-mgt" type="462c0819:PsiDirectoryNode" />
+              <item name="org.wso2.carbon.identity.template.mgt.ui" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="ui" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="template-mgt" type="b2602c69:ProjectViewProjectNode" />
+              <item name="template-mgt" type="462c0819:PsiDirectoryNode" />
+              <item name="org.wso2.carbon.identity.template.mgt.ui" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="ui" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="template-mgt" type="b2602c69:ProjectViewProjectNode" />
+              <item name="template-mgt" type="462c0819:PsiDirectoryNode" />
+              <item name="org.wso2.carbon.identity.template.mgt.ui" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -489,46 +496,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="META-INF" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="template-mgt" type="b2602c69:ProjectViewProjectNode" />
               <item name="template-mgt" type="462c0819:PsiDirectoryNode" />
-              <item name="org.wso2.carbon.identity.template.mgt.ui" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="i18n" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="template-mgt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="template-mgt" type="462c0819:PsiDirectoryNode" />
-              <item name="org.wso2.carbon.identity.template.mgt.ui" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="template-mgt" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="template-mgt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="template-mgt" type="462c0819:PsiDirectoryNode" />
-              <item name="org.wso2.carbon.identity.template.mgt.ui" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="template-mgt" type="462c0819:PsiDirectoryNode" />
-              <item name="codemirror" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="template-mgt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="template-mgt" type="462c0819:PsiDirectoryNode" />
-              <item name="org.wso2.carbon.identity.template.mgt.ui" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="template-mgt" type="462c0819:PsiDirectoryNode" />
-              <item name="codemirror" type="462c0819:PsiDirectoryNode" />
-              <item name="mode" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="template-mgt" type="b2602c69:ProjectViewProjectNode" />
@@ -539,18 +507,6 @@
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="template-mgt" type="462c0819:PsiDirectoryNode" />
               <item name="codemirror" type="462c0819:PsiDirectoryNode" />
-              <item name="mode" type="462c0819:PsiDirectoryNode" />
-              <item name="handlebars" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="template-mgt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="template-mgt" type="462c0819:PsiDirectoryNode" />
-              <item name="org.wso2.carbon.identity.template.mgt.ui" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="template-mgt" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="template-mgt" type="b2602c69:ProjectViewProjectNode" />
@@ -566,13 +522,12 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540201055694" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540210343480" />
     <property name="last_opened_file_path" value="$USER_HOME$/WSO2IS/identity-carbon-auth-rest/pom.xml" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -658,18 +613,20 @@
       <workItem from="1539939669347" duration="4166000" />
       <workItem from="1539960824694" duration="653000" />
       <workItem from="1540005283979" duration="7551000" />
-      <workItem from="1540187118617" duration="3488000" />
+      <workItem from="1540187118617" duration="4810000" />
+      <workItem from="1540226838162" duration="598000" />
+      <workItem from="1540267282383" duration="5311000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="260420000" />
+    <option name="totallyTimeSpent" value="267651000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="-2" width="1920" height="1035" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49774775" visible="true" weight="0.24973376" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49774775" visible="true" weight="0.25239617" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -685,7 +642,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Spring" order="7" weight="0.32995495" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.6351351" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.3277027" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" weight="0.32995495" />
       <window_info anchor="bottom" id="Java Enterprise" order="10" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
@@ -1000,27 +957,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/list-templates.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="31" column="51" selection-start-line="31" selection-start-column="51" selection-end-line="31" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/java/org/wso2/carbon/identity/template/mgt/ui/internal/TemplateMgtUIServiceComponent.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="26" selection-start-line="26" selection-end-line="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/java/org/wso2/carbon/identity/template/mgt/ui/client/TemplateManagementServiceClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="65" column="58" selection-start-line="65" selection-start-column="58" selection-end-line="65" selection-end-column="58" />
         </state>
       </provider>
     </entry>
@@ -1035,6 +975,15 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="555">
           <caret line="65" column="16" selection-start-line="65" selection-start-column="16" selection-end-line="65" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/mode/handlebars/handlebars.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1059,10 +1008,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/remove-template-finish.jsp">
+    <entry file="file://$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/edit-template.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2640">
+          <caret line="176" column="170" selection-start-line="176" selection-start-column="170" selection-end-line="176" selection-end-column="170" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/java/org/wso2/carbon/identity/template/mgt/ui/client/TemplateManagementServiceClient.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="495">
-          <caret line="33" selection-start-line="33" selection-end-line="33" />
+          <caret line="65" column="58" selection-start-line="65" selection-start-column="58" selection-end-line="65" selection-end-column="58" />
         </state>
       </provider>
     </entry>
@@ -1073,43 +1029,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/js/template-mgt.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="546">
-          <caret line="38" column="34" selection-start-line="38" selection-start-column="34" selection-end-line="38" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/mode/handlebars/handlebars.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/mode/handlebars/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" selection-start-line="8" selection-end-line="10" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/edit-template.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="176" column="170" selection-start-line="176" selection-start-column="170" selection-end-line="176" selection-end-column="170" />
-          <folding>
-            <element signature="e#8450#8499#0#HTML" expanded="true" />
-          </folding>
+        <state relative-caret-position="300">
+          <caret line="20" column="42" selection-start-line="19" selection-start-column="44" selection-end-line="20" selection-end-column="42" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/add-template.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="180" column="30" lean-forward="true" selection-start-line="180" selection-start-column="30" selection-end-line="180" selection-end-column="30" />
+        <state relative-caret-position="275">
+          <caret line="114" column="6" selection-start-line="114" selection-start-column="6" selection-end-line="114" selection-end-column="6" />
+          <folding>
+            <element signature="e#4934#7994#0#JSP" />
+            <element signature="e#10987#11036#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/list-templates.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="31" column="51" selection-start-line="31" selection-start-column="51" selection-end-line="31" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/remove-template-finish.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/js/template-mgt.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>

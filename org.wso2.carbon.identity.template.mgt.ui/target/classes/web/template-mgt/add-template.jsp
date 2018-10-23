@@ -1,3 +1,4 @@
+<%@ page import="org.owasp.encoder.Encode" %>
 <link rel="stylesheet" href="codemirror/lib/codemirror.css">
 <link rel="stylesheet" href="codemirror/theme/mdn-like.css">
 <link rel="stylesheet" href="codemirror/addon/dialog/dialog.css">
@@ -111,6 +112,61 @@
 </script>
 
 <fmt:bundle basename="org.wso2.carbon.identity.template.mgt.ui.i18n.Resources">
+    <%String script = "<script id=\"sample-template\" type=\"text/x-handlebars-template\">\n" +
+            "\n" +
+            "    <!-- You can customize the user prompt template here... -->\n" +
+            "\t\n" +
+            "    <div class=\"uppercase\">\n" +
+            "        <h3>Welcome {{name}} !!! </h3>\n" +
+            "    </div>\n" +
+            "\n" +
+            "    <div class=\"boarder-all \">\n" +
+            "        <div class=\"clearfix\"></div>\n" +
+            "        <div class=\"padding-double login-form\">\n" +
+            "\n" +
+            "            <form action=\"../commonauth\" method=\"POST\"> <!-- *DO NOT CHANGE THIS*-->\n" +
+            "                <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12 form-group required\">\n" +
+            "\n" +
+            "                    <!-- Add the required input field/s here...\n" +
+            "                    It should follow the below mentioned format-->\n" +
+            "\n" +
+            "                    <label for=\"sampleInput\" class=\"control-label\"/>sample input</label>\n" +
+            "                    <input type=\"text\" id=\"sampleInput\" name=\"sample_input\" class=\"form-control\" placeholder=\"sample input placeholder\" />\n" +
+            "\n" +
+            "                </div>\n" +
+            "\n" +
+            "                <input type=\"hidden\" id=\"promptResp\" name=\"promptResp\" value=\"true\"> <!-- *DO NOT CHANGE THIS* -->\n" +
+            "                <input type=\"hidden\" id=\"promptId\" name=\"promptId\"> <!-- DO NOT CHANGE -->\n" +
+            "\n" +
+            "                <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12 form-group required\">\n" +
+            "                    <input type=\"submit\" class=\"wr-btn grey-bg col-xs-12 col-md-12 col-lg-12 uppercase font-extra-large\" value=\"Submit\">\n" +
+            "                </div>\n" +
+            "            </form>\n" +
+            "            <div class=\"clearfix\"></div>\n" +
+            "        </div>\n" +
+            "    </div>\n" +
+            "\n" +
+            "</script>\n" +
+            "\n" +
+            "<div id=\"template-holder\"></div>\n" +
+            "<!-- customized template will be added here -->\n" +
+            "\n" +
+            "<script type=\"text/javascript\">\n" +
+            "\n" +
+            "    var sampleInfo = document.getElementById(\"sample-template\").innerHTML;\n" +
+            "    var template = Handlebars.compile(sampleInfo);\n" +
+            "\n" +
+            "    var quoteData = template({\n" +
+            "        //add your data for the template script here...\n" +
+            "        \n" +
+            "        name: \"This is a sample prompt label\"\n" +
+            "    });\n" +
+            "  \n" +
+            "    document.getElementById(\"template-holder\").innerHTML += quoteData;\n" +
+            "  \tdocument.getElementById(\"promptId\").value= prompt_id; //*DO NOT CHANGE THIS*\n" +
+            "  \n" +
+            "</script>      ";
+    %>
 
     <div id="middle">
         <h2>Add New Template</h2>
@@ -174,10 +230,7 @@
                     <div style="position: relative;">
                         <div id="codeMirror" class="sectionSub step_contents" >
             <textarea id="scriptTextArea" name="scriptTextArea"
-                      placeholder="Write Custom Template..."
-                      style="height: 500px;width: 100%; display: none;">
-
-            </textarea>
+                      style="height: 500px;width: 100%; display: none;"><%=script%></textarea>
                         </div>
                         <!-- <div id="codeMirrorTemplate" class="step_contents">
                              <div class="add-template-container vertical-text">
