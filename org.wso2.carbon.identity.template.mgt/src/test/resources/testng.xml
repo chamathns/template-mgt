@@ -1,0 +1,14 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<!--<suite name="TemplateManagementTestSuite" object-factory="org.powermock.modules.testng.PowerMockObjectFactory">-->
+<suite thread-count="1" verbose="0" name="Surefire suite">
+
+
+    <test name="TemplateManagementTests" preserve-order="true" parallel="false">
+        <classes>
+            <class name="org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest"/>
+        </classes>
+    </test>
+</suite>
