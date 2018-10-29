@@ -100,11 +100,7 @@ public class TemplateManagerDAOImpl implements TemplateManagerDAO {
             jdbcTemplate.executeUpdate(TemplateMgtConstants.SqlQueries.UPDATE_TEMPLATE, preparedStatement -> {
                 preparedStatement.setString(1,newTemplate.getTemplateName());
                 preparedStatement.setString(2,newTemplate.getDescription());
-                try {
-                    setBlobValue(newTemplate.getTemplateScript(), preparedStatement, 3);
-                } catch (IOException e) {
-                    throw TemplateMgtUtils.handleRuntimeException(TemplateMgtConstants.ErrorMessages.ERROR_CODE_SET_BLOB,newTemplate.getTemplateName(),e);
-                }
+                preparedStatement.setString(3,newTemplate.getTemplateScript());
                 preparedStatement.setInt(4, newTemplate.getTenantId());
                 preparedStatement.setString(5,templateName);
             });

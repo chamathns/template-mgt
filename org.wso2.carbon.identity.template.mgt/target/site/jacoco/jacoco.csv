@@ -1,0 +1,15 @@
+GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
+WSO2 Carbon - Identity Template Management,org.wso2.carbon.identity.template.mgt.internal,TemplateManagerComponent,51,0,4,0,19,0,8,0,6,0
+WSO2 Carbon - Identity Template Management,org.wso2.carbon.identity.template.mgt.internal,TemplateManagerComponentDataHolder,17,0,0,0,6,0,5,0,5,0
+WSO2 Carbon - Identity Template Management,org.wso2.carbon.identity.template.mgt.exception,TemplateManagementRuntimeException,29,0,0,0,13,0,6,0,6,0
+WSO2 Carbon - Identity Template Management,org.wso2.carbon.identity.template.mgt.exception,TemplateManagementServerException,18,0,0,0,8,0,4,0,4,0
+WSO2 Carbon - Identity Template Management,org.wso2.carbon.identity.template.mgt.exception,TemplateManagementException,29,0,0,0,13,0,6,0,6,0
+WSO2 Carbon - Identity Template Management,org.wso2.carbon.identity.template.mgt.exception,TemplateManagementClientException,18,0,0,0,8,0,4,0,4,0
+WSO2 Carbon - Identity Template Management,org.wso2.carbon.identity.template.mgt.dao.impl,TemplateManagerDAOImpl,283,0,2,0,67,0,15,0,14,0
+WSO2 Carbon - Identity Template Management,org.wso2.carbon.identity.template.mgt.util,TemplateMgtUtils,80,0,6,0,14,0,8,0,5,0
+WSO2 Carbon - Identity Template Management,org.wso2.carbon.identity.template.mgt.util,JdbcUtils,54,0,14,0,8,0,14,0,7,0
+WSO2 Carbon - Identity Template Management,org.wso2.carbon.identity.template.mgt,TemplateMgtConstants.SqlQueries,3,0,0,0,1,0,1,0,1,0
+WSO2 Carbon - Identity Template Management,org.wso2.carbon.identity.template.mgt,TemplateMgtConstants,3,0,0,0,1,0,1,0,1,0
+WSO2 Carbon - Identity Template Management,org.wso2.carbon.identity.template.mgt,TemplateManagerImpl,101,0,10,0,28,0,13,0,8,0
+WSO2 Carbon - Identity Template Management,org.wso2.carbon.identity.template.mgt,TemplateMgtConstants.ErrorMessages,175,0,0,0,19,0,7,0,7,0
+WSO2 Carbon - Identity Template Management,org.wso2.carbon.identity.template.mgt.model,Template,134,0,0,0,56,0,18,0,18,0
