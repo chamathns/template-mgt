@@ -3,10 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="a4b52234-6a17-458d-abd6-21576aba62b7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/src/main/java/org/wso2/carbon/identity/template/mgt/TemplateManagerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/src/main/java/org/wso2/carbon/identity/template/mgt/TemplateManagerImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/src/test/java/org/wso2/carbon/identity/template/mgt/dao/impl/TemplateManagerDAOImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/src/test/java/org/wso2/carbon/identity/template/mgt/dao/impl/TemplateManagerDAOImplTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/src/test/resources/dbscripts/h2.sql" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/src/test/resources/dbscripts/h2.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/target/test-classes/dbscripts/h2.sql" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/target/test-classes/dbscripts/h2.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/target/test-classes/org/wso2/carbon/identity/template/mgt/dao/impl/TemplateManagerDAOImplTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/target/test-classes/org/wso2/carbon/identity/template/mgt/dao/impl/TemplateManagerDAOImplTest.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -26,11 +24,11 @@
     <session id="1040724542">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="17" />
+          <entry key="project.closed" value="18" />
           <entry key="project.open.time.0" value="2" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.12" value="2" />
-          <entry key="project.open.time.13" value="2" />
+          <entry key="project.open.time.13" value="3" />
           <entry key="project.open.time.14" value="2" />
           <entry key="project.open.time.15" value="4" />
           <entry key="project.open.time.16" value="3" />
@@ -42,10 +40,10 @@
           <entry key="project.open.time.25" value="2" />
           <entry key="project.open.time.27" value="1" />
           <entry key="project.open.time.28" value="1" />
-          <entry key="project.open.time.3" value="2" />
+          <entry key="project.open.time.3" value="3" />
           <entry key="project.open.time.8" value="2" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="39" />
+          <entry key="project.opened" value="41" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -92,7 +90,7 @@
           <entry key="css" value="24" />
           <entry key="dummy" value="27" />
           <entry key="gitignore" value="6" />
-          <entry key="java" value="10676" />
+          <entry key="java" value="10951" />
           <entry key="js" value="248" />
           <entry key="jsp" value="1526" />
           <entry key="properties" value="455" />
@@ -105,7 +103,7 @@
         <counts>
           <entry key="CLASS" value="1" />
           <entry key="CSS" value="24" />
-          <entry key="JAVA" value="10676" />
+          <entry key="JAVA" value="10951" />
           <entry key="JSP" value="1525" />
           <entry key="JavaScript" value="248" />
           <entry key="PLAIN_TEXT" value="38" />
@@ -129,8 +127,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/src/main/java/org/wso2/carbon/identity/template/mgt/dao/impl/TemplateManagerDAOImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="93" column="5" lean-forward="true" selection-start-line="93" selection-start-column="5" selection-end-line="93" selection-end-column="5" />
+            <state relative-caret-position="405">
+              <caret line="56" column="20" selection-start-line="56" selection-start-column="20" selection-end-line="56" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -138,8 +136,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/src/main/java/org/wso2/carbon/identity/template/mgt/util/TemplateMgtUtils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="45" selection-start-line="45" selection-end-line="45" />
+            <state relative-caret-position="270">
+              <caret line="37" column="52" selection-start-line="37" selection-start-column="52" selection-end-line="37" selection-end-column="52" />
             </state>
           </provider>
         </entry>
@@ -147,8 +145,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/src/test/java/org/wso2/carbon/identity/template/mgt/dao/impl/TemplateManagerDAOImplTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="156">
-              <caret line="135" column="41" selection-start-line="135" selection-start-column="41" selection-end-line="135" selection-end-column="41" />
+            <state relative-caret-position="2304">
+              <caret line="221" column="12" lean-forward="true" selection-start-line="221" selection-start-column="12" selection-end-line="221" selection-end-column="12" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -159,7 +157,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/src/test/java/org/wso2/carbon/identity/template/mgt/util/TestUtils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="779">
+            <state relative-caret-position="600">
               <caret line="58" selection-start-line="58" selection-end-line="58" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -180,7 +178,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
+            <state relative-caret-position="2925">
               <caret line="195" column="28" selection-start-line="195" selection-start-column="28" selection-end-line="195" selection-end-column="28" />
             </state>
           </provider>
@@ -189,7 +187,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.14.3/testng-6.14.3.jar!/org/testng/SuiteRunnerWorker.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="139">
+            <state relative-caret-position="645">
               <caret line="52" selection-start-line="52" selection-end-line="52" />
               <folding>
                 <element signature="e#2120#2121#0" expanded="true" />
@@ -201,7 +199,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/src/main/java/org/wso2/carbon/identity/template/mgt/TemplateManagerImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="681">
+            <state relative-caret-position="1035">
               <caret line="97" column="5" selection-start-line="97" selection-start-column="5" selection-end-line="97" selection-end-column="5" />
             </state>
           </provider>
@@ -219,7 +217,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/src/main/java/org/wso2/carbon/identity/template/mgt/TemplateManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
+            <state relative-caret-position="195">
               <caret line="32" selection-start-line="31" selection-start-column="34" selection-end-line="32" />
             </state>
           </provider>
@@ -400,7 +398,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -621,13 +618,14 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540815725050" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540872513190" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="TestNG" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.TestNG" value="" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers" value="true" />
@@ -669,7 +667,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.TemplateManagerDAOImplTest.testGetTemplateByName">
+  <component name="RunManager" selected="TestNG.TemplateManagerDAOImplTest.testGetTemplateList">
     <configuration name="IS-Server" type="Remote" factoryName="Remote">
       <option name="USE_SOCKET_TRANSPORT" value="true" />
       <option name="SERVER_MODE" value="false" />
@@ -700,6 +698,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TemplateManagerDAOImplTest.testAddTemplateServerException" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="org.wso2.carbon.identity.template.mgt" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.wso2.carbon.identity.template.mgt.dao.impl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.wso2.carbon.identity.template.mgt.dao.impl" />
+      <option name="MAIN_CLASS_NAME" value="org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest" />
+      <option name="METHOD_NAME" value="testAddTemplateServerException" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TemplateManagerDAOImplTest.testGetTemplateByName" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <module name="org.wso2.carbon.identity.template.mgt" />
       <extension name="coverage">
@@ -711,6 +727,24 @@
       <option name="PACKAGE_NAME" value="org.wso2.carbon.identity.template.mgt.dao.impl" />
       <option name="MAIN_CLASS_NAME" value="org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest" />
       <option name="METHOD_NAME" value="testGetTemplateByName" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TemplateManagerDAOImplTest.testGetTemplateByNameDataAccessException" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="org.wso2.carbon.identity.template.mgt" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.wso2.carbon.identity.template.mgt.dao.impl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.wso2.carbon.identity.template.mgt.dao.impl" />
+      <option name="MAIN_CLASS_NAME" value="org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest" />
+      <option name="METHOD_NAME" value="testGetTemplateByNameDataAccessException" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -736,37 +770,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TemplateManagerDAOImplTest.testGetTemplatebyNullName" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="org.wso2.carbon.identity.template.mgt" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.wso2.carbon.identity.template.mgt.dao.impl.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.wso2.carbon.identity.template.mgt.dao.impl" />
-      <option name="MAIN_CLASS_NAME" value="org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest" />
-      <option name="METHOD_NAME" value="testGetTemplatebyNullName" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
       <item itemvalue="Remote.IS-Server" />
       <item itemvalue="TestNG.TemplateManagerDAOImplTest.testAddTemplate" />
       <item itemvalue="TestNG.TemplateManagerDAOImplTest.testGetTemplateByName" />
-      <item itemvalue="TestNG.TemplateManagerDAOImplTest.testGetTemplatebyNullName" />
       <item itemvalue="TestNG.TemplateManagerDAOImplTest.testGetTemplateList" />
+      <item itemvalue="TestNG.TemplateManagerDAOImplTest.testGetTemplateByNameDataAccessException" />
+      <item itemvalue="TestNG.TemplateManagerDAOImplTest.testAddTemplateServerException" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.TemplateManagerDAOImplTest.testGetTemplateByName" />
-        <item itemvalue="TestNG.TemplateManagerDAOImplTest.testAddTemplate" />
         <item itemvalue="TestNG.TemplateManagerDAOImplTest.testGetTemplateList" />
-        <item itemvalue="TestNG.TemplateManagerDAOImplTest.testGetTemplatebyNullName" />
+        <item itemvalue="TestNG.TemplateManagerDAOImplTest.testGetTemplateByName" />
+        <item itemvalue="TestNG.TemplateManagerDAOImplTest.testGetTemplateByNameDataAccessException" />
+        <item itemvalue="TestNG.TemplateManagerDAOImplTest.testAddTemplateServerException" />
+        <item itemvalue="TestNG.TemplateManagerDAOImplTest.testAddTemplate" />
       </list>
     </recent_temporary>
   </component>
@@ -819,49 +837,51 @@
       <workItem from="1540525190682" duration="7924000" />
       <workItem from="1540621809994" duration="9622000" />
       <workItem from="1540786975422" duration="5367000" />
+      <workItem from="1540826213165" duration="1336000" />
+      <workItem from="1540870964683" duration="2065000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TemplateManagerDAOImplTest_testAddTemplate - 2018.10.29 at 16h 59m 20s.xml">
+    <history-entry file="TemplateManagerDAOImplTest_testGetTemplateByName - 2018.10.30 at 09h 20m 14s.xml">
+      <configuration name="TemplateManagerDAOImplTest.testGetTemplateByName" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="TemplateManagerDAOImplTest_testGetTemplateByNameDataAccessException - 2018.10.30 at 09h 30m 00s.xml">
+      <configuration name="TemplateManagerDAOImplTest.testGetTemplateByNameDataAccessException" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="TemplateManagerDAOImplTest_testGetTemplateByNameDataAccessException - 2018.10.30 at 09h 31m 06s.xml">
+      <configuration name="TemplateManagerDAOImplTest.testGetTemplateByNameDataAccessException" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="TemplateManagerDAOImplTest_testAddTemplateServerException - 2018.10.30 at 09h 33m 25s.xml">
+      <configuration name="TemplateManagerDAOImplTest.testAddTemplateServerException" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="TemplateManagerDAOImplTest_testAddTemplate - 2018.10.30 at 09h 34m 09s.xml">
       <configuration name="TemplateManagerDAOImplTest.testAddTemplate" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TemplateManagerDAOImplTest_testAddTemplate - 2018.10.29 at 17h 00m 01s.xml">
-      <configuration name="TemplateManagerDAOImplTest.testAddTemplate" configurationId="TestNG" />
+    <history-entry file="TemplateManagerDAOImplTest_testAddTemplateServerException - 2018.10.30 at 09h 35m 20s.xml">
+      <configuration name="TemplateManagerDAOImplTest.testAddTemplateServerException" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TemplateManagerDAOImplTest_testAddTemplate - 2018.10.29 at 17h 01m 15s.xml">
-      <configuration name="TemplateManagerDAOImplTest.testAddTemplate" configurationId="TestNG" />
+    <history-entry file="TemplateManagerDAOImplTest_testAddTemplateServerException - 2018.10.30 at 09h 35m 55s.xml">
+      <configuration name="TemplateManagerDAOImplTest.testAddTemplateServerException" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TemplateManagerDAOImplTest_testAddTemplate - 2018.10.29 at 17h 01m 57s.xml">
-      <configuration name="TemplateManagerDAOImplTest.testAddTemplate" configurationId="TestNG" />
+    <history-entry file="TemplateManagerDAOImplTest_testGetTemplateByNameDataAccessException - 2018.10.30 at 09h 37m 30s.xml">
+      <configuration name="TemplateManagerDAOImplTest.testGetTemplateByNameDataAccessException" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TemplateManagerDAOImplTest_testAddTemplate - 2018.10.29 at 17h 02m 24s.xml">
-      <configuration name="TemplateManagerDAOImplTest.testAddTemplate" configurationId="TestNG" />
+    <history-entry file="TemplateManagerDAOImplTest_testGetTemplateByName - 2018.10.30 at 09h 38m 17s.xml">
+      <configuration name="TemplateManagerDAOImplTest.testGetTemplateByName" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TemplateManagerDAOImplTest_testAddTemplate - 2018.10.29 at 17h 02m 34s.xml">
-      <configuration name="TemplateManagerDAOImplTest.testAddTemplate" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="TemplateManagerDAOImplTest_testAddTemplate - 2018.10.29 at 17h 04m 13s.xml">
-      <configuration name="TemplateManagerDAOImplTest.testAddTemplate" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="TemplateManagerDAOImplTest_testAddTemplate - 2018.10.29 at 17h 08m 21s.xml">
-      <configuration name="TemplateManagerDAOImplTest.testAddTemplate" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="TemplateManagerDAOImplTest_testAddTemplate - 2018.10.29 at 17h 17m 57s.xml">
-      <configuration name="TemplateManagerDAOImplTest.testAddTemplate" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="TemplateManagerDAOImplTest_testAddTemplate - 2018.10.29 at 17h 27m 10s.xml">
-      <configuration name="TemplateManagerDAOImplTest.testAddTemplate" configurationId="TestNG" />
+    <history-entry file="TemplateManagerDAOImplTest_testGetTemplateList - 2018.10.30 at 09h 38m 35s.xml">
+      <configuration name="TemplateManagerDAOImplTest.testGetTemplateList" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="313697000" />
+    <option name="totallyTimeSpent" value="317351000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1920" y="-2" width="1920" height="1035" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49774775" visible="true" weight="0.2630458" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49774775" visible="true" weight="0.2657082" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -871,7 +891,7 @@
       <window_info id="Image Layers" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32995495" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.47522524" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.9279279" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4189189" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -1227,20 +1247,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.14.3/testng-6.14.3.jar!/org/testng/SuiteRunnerWorker.class">
+    <entry file="file://$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/src/test/java/org/wso2/carbon/identity/template/mgt/util/TestUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
-          <caret line="52" selection-start-line="52" selection-end-line="52" />
+        <state relative-caret-position="600">
+          <caret line="58" selection-start-line="58" selection-end-line="58" />
           <folding>
-            <element signature="e#2120#2121#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="195" column="28" selection-start-line="195" selection-start-column="28" selection-end-line="195" selection-end-column="28" />
         </state>
       </provider>
     </entry>
@@ -1251,41 +1264,48 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/src/test/java/org/wso2/carbon/identity/template/mgt/util/TestUtils.java">
+    <entry file="file://$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="779">
-          <caret line="58" selection-start-line="58" selection-end-line="58" />
+        <state relative-caret-position="2925">
+          <caret line="195" column="28" selection-start-line="195" selection-start-column="28" selection-end-line="195" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.14.3/testng-6.14.3.jar!/org/testng/SuiteRunnerWorker.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="645">
+          <caret line="52" selection-start-line="52" selection-end-line="52" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#2120#2121#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/src/main/java/org/wso2/carbon/identity/template/mgt/util/TemplateMgtUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="45" selection-start-line="45" selection-end-line="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/src/main/java/org/wso2/carbon/identity/template/mgt/TemplateManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="32" selection-start-line="31" selection-start-column="34" selection-end-line="32" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/src/main/java/org/wso2/carbon/identity/template/mgt/TemplateManagerImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="681">
+        <state relative-caret-position="1035">
           <caret line="97" column="5" selection-start-line="97" selection-start-column="5" selection-end-line="97" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/src/main/java/org/wso2/carbon/identity/template/mgt/TemplateManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="32" selection-start-line="31" selection-start-column="34" selection-end-line="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/src/main/java/org/wso2/carbon/identity/template/mgt/util/TemplateMgtUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="37" column="52" selection-start-line="37" selection-start-column="52" selection-end-line="37" selection-end-column="52" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/src/main/java/org/wso2/carbon/identity/template/mgt/dao/impl/TemplateManagerDAOImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="93" column="5" lean-forward="true" selection-start-line="93" selection-start-column="5" selection-end-line="93" selection-end-column="5" />
+        <state relative-caret-position="405">
+          <caret line="56" column="20" selection-start-line="56" selection-start-column="20" selection-end-line="56" selection-end-column="20" />
         </state>
       </provider>
     </entry>
@@ -1298,8 +1318,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/src/test/java/org/wso2/carbon/identity/template/mgt/dao/impl/TemplateManagerDAOImplTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="135" column="41" selection-start-line="135" selection-start-column="41" selection-end-line="135" selection-end-column="41" />
+        <state relative-caret-position="2304">
+          <caret line="221" column="12" lean-forward="true" selection-start-line="221" selection-start-column="12" selection-end-line="221" selection-end-column="12" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
