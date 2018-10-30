@@ -16,8 +16,6 @@
 
 package org.wso2.carbon.identity.template.mgt.dao.impl;
 
-import org.compass.core.lucene.LuceneEnvironment;
-import org.mockito.Mockito;
 import org.powermock.core.classloader.annotations.PrepareForTest;
 import org.powermock.modules.testng.PowerMockTestCase;
 import org.testng.Assert;
@@ -25,8 +23,6 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
-import org.wso2.carbon.identity.core.util.IdentityDatabaseUtil;
-import org.wso2.carbon.identity.core.util.IdentityTenantUtil;
 import org.wso2.carbon.identity.template.mgt.dao.TemplateManagerDAO;
 import org.wso2.carbon.identity.template.mgt.exception.TemplateManagementClientException;
 import org.wso2.carbon.identity.template.mgt.exception.TemplateManagementException;
@@ -85,19 +81,11 @@ public class TemplateManagerDAOImplTest extends PowerMockTestCase {
 
     @BeforeMethod
     public void setUp() throws Exception {
-//        mockStatic(IdentityDatabaseUtil.class);
-//        mockStatic(IdentityTenantUtil.class);
-//
-//        when(IdentityTenantUtil.getTenantId(SAMPLE_TENANT_DOMAIN)).thenReturn(-1234);
-//        when(IdentityTenantUtil.getTenantDomain(-1234)).thenReturn(SAMPLE_TENANT_DOMAIN);
-//
-//        when(IdentityTenantUtil.getTenantId(SAMPLE_TENANT_DOMAIN2)).thenReturn(1);
-//        when(IdentityTenantUtil.getTenantDomain(1)).thenReturn(SAMPLE_TENANT_DOMAIN2);
 
         initiateH2Base();
 
-        Template template1 = new Template(-1234,"T1","Description 1", sampleScript);
-        Template template2 = new Template(1,"T2","Description 2",sampleScript);
+        Template template1 = new Template(SAMPLE_TENANT_ID,"T1","Description 1", sampleScript);
+        Template template2 = new Template(SAMPLE_TENANT_ID2,"T2","Description 2",sampleScript);
         templates.add(template1);
         templates.add(template2);
     }
@@ -109,8 +97,8 @@ public class TemplateManagerDAOImplTest extends PowerMockTestCase {
 
     @DataProvider (name = "TemplateDataProvider")
     public Object[][] addTemplateData() throws Exception {
-        Template template1 = new Template(-1234,"T1","Description 1", sampleScript);
-        Template template2 = new Template(1,"T2","Description 2",sampleScript);
+        Template template1 = new Template(SAMPLE_TENANT_ID,"T1","Description 1", sampleScript);
+        Template template2 = new Template(SAMPLE_TENANT_ID2,"T2","Description 2",sampleScript);
         return new Object[][]{
                 {
                     template1
@@ -163,7 +151,7 @@ public class TemplateManagerDAOImplTest extends PowerMockTestCase {
 
         }
         TemplateManagerDAO templateManagerDAO = new TemplateManagerDAOImpl();
-        Template templateResult = templateManagerDAO.addTemplate(((Template) template));
+        templateManagerDAO.addTemplate(((Template) template));
 
         Assert.fail("Expected: " + TemplateManagementServerException.class.getName());
     }
@@ -219,7 +207,7 @@ public class TemplateManagerDAOImplTest extends PowerMockTestCase {
             when(dataSource.getConnection()).thenReturn(spyConnection);
 
             TemplateManagerDAO templateManagerDAO = new TemplateManagerDAOImpl();
-            
+
 //            addTemplates(templateManagerDAO, Collections.singletonList(templateObject),dataSource);
 
             List<Template> templateList = templateManagerDAO.getAllTemplates(templates.get(0).getTenantId(),null, null);

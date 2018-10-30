@@ -18,8 +18,9 @@ package org.wso2.carbon.identity.template.mgt.util;
 
 import org.wso2.carbon.database.utils.jdbc.JdbcTemplate;
 import org.wso2.carbon.database.utils.jdbc.exceptions.DataAccessException;
-import org.wso2.carbon.identity.template.mgt.TemplateMgtConstants;
 import org.wso2.carbon.identity.template.mgt.internal.TemplateManagerComponentDataHolder;
+
+import static org.wso2.carbon.identity.template.mgt.TemplateMgtConstants.*;
 
 /**
  * A util class to support the Jdbc executions.
@@ -45,7 +46,7 @@ public class JdbcUtils {
      */
     public static boolean isH2MySqlOrPostgresDB() throws DataAccessException {
 
-        return isDBTypeOf(TemplateMgtConstants.MY_SQL) || isDBTypeOf(TemplateMgtConstants.H2) || isDBTypeOf(TemplateMgtConstants.POSTGRE_SQL);
+        return isDBTypeOf(MY_SQL) || isDBTypeOf(H2) || isDBTypeOf(POSTGRE_SQL);
     }
 
     /**
@@ -56,7 +57,7 @@ public class JdbcUtils {
      */
     public static boolean isDB2DB() throws DataAccessException {
 
-        return isDBTypeOf(TemplateMgtConstants.DB2);
+        return isDBTypeOf(DB2);
     }
 
     /**
@@ -67,7 +68,7 @@ public class JdbcUtils {
      */
     public static boolean isMSSqlDB() throws DataAccessException {
 
-        return isDBTypeOf(TemplateMgtConstants.MICROSOFT) || isDBTypeOf(TemplateMgtConstants.S_MICROSOFT);
+        return isDBTypeOf(MICROSOFT) || isDBTypeOf(S_MICROSOFT);
     }
 
     /**
@@ -78,7 +79,7 @@ public class JdbcUtils {
      */
     public static boolean isInformixDB() throws DataAccessException {
 
-        return isDBTypeOf(TemplateMgtConstants.INFORMIX);
+        return isDBTypeOf(INFORMIX);
     }
 
     /**

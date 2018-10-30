@@ -32,11 +32,16 @@ public class TemplateMgtConstants {
 
     public static final String TEMPLATE_RESOURCE_PATH = "/" + "templates";
 
-
     public static class SqlQueries{
         public static final String INSERT_TEMPLATE = "INSERT INTO IDN_TEMPLATE_MGT (TENANT_ID, NAME, DESCRIPTION, TEMPLATE_SCRIPT) VALUES (?,?,?,?)";
         public static final String GET_TEMPLATE_BY_NAME = "SELECT TEMPLATE_ID,TENANT_ID,NAME,DESCRIPTION,TEMPLATE_SCRIPT FROM IDN_TEMPLATE_MGT WHERE NAME=? AND TENANT_ID=?";
-        public static final String LIST_TEMPLATES = "SELECT NAME,DESCRIPTION FROM IDN_TEMPLATE_MGT WHERE TENANT_ID =?";
+//        public static final String LIST_TEMPLATES = "SELECT NAME,DESCRIPTION FROM IDN_TEMPLATE_MGT WHERE TENANT_ID =?";
+        public static final String LIST_PAGINATED_TEMPLATES_MYSQL = "SELECT NAME,DESCRIPTION FROM IDN_TEMPLATE_MGT WHERE TENANT_ID=? ORDER BY TEMPLATE_ID ASC LIMIT ? OFFSET ?";
+        public static final String LIST_PAGINATED_TEMPLATES_DB2 = "SELECT NAME,DESCRIPTION FROM IDN_TEMPLATE_MGT WHERE TENANT_ID=? ORDER BY TEMPLATE_ID ASC LIMIT ? OFFSET ?";
+        public static final String LIST_PAGINATED_TEMPLATES_MSSQL = "SELECT NAME,DESCRIPTION FROM IDN_TEMPLATE_MGT WHERE TENANT_ID=? ORDER BY TEMPLATE_ID ASC LIMIT ? OFFSET ?";
+        public static final String LIST_PAGINATED_TEMPLATES_INFORMIX = "SELECT NAME,DESCRIPTION FROM IDN_TEMPLATE_MGT WHERE TENANT_ID=? ORDER BY TEMPLATE_ID ASC LIMIT ? OFFSET ?";
+        public static final String LIST_PAGINATED_TEMPLATES_ORACLE = "SELECT NAME,DESCRIPTION FROM IDN_TEMPLATE_MGT WHERE TENANT_ID=? ORDER BY TEMPLATE_ID ASC LIMIT ? OFFSET ?";
+
         public static final String UPDATE_TEMPLATE = "UPDATE IDN_TEMPLATE_MGT SET NAME= ?, DESCRIPTION= ?, TEMPLATE_SCRIPT= ? WHERE TENANT_ID= ? AND NAME = ?";
         public static final String DELETE_TEMPLATE = "DELETE FROM IDN_TEMPLATE_MGT WHERE NAME=? AND TENANT_ID =?";
     }
@@ -53,7 +58,6 @@ public class TemplateMgtConstants {
         ERROR_CODE_NO_AUTH_USER_FOUND("TM_00009", "No authenticated user found to perform the operation"),
         ERROR_CODE_USER_NOT_AUTHORIZED("TM_00010", "User: %s is not authorized to perform this operation."),
         ERROR_CODE_UNEXPECTED("TM_00011", "Unexpected Error");
-
 
         private final String code;
         private final String message;

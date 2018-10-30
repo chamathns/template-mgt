@@ -68,6 +68,8 @@
                 int pageNumberInt = 0;
                 int numberOfPages = 0;
                 int resultsPerPage = 10;
+                int limit = 0;
+                int offset = 0;
 
                 if (pageNumber != null) {
                     try {
@@ -80,7 +82,7 @@
                 try {
                     String currentUser = (String) session.getAttribute("logged-user");
                     TemplateManagementServiceClient serviceClient = new TemplateManagementServiceClient(currentUser);
-                    templateList = serviceClient.listTemplates(numberOfPages,resultsPerPage);
+                    templateList = serviceClient.listTemplates(limit, offset);
 
                     if (templateList != null) {
                         numberOfPages = (int) Math.ceil((double) templateList.size() / resultsPerPage);

@@ -33,6 +33,9 @@ import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.util.List;
 
+import static org.wso2.carbon.identity.template.mgt.TemplateMgtConstants.SqlQueries.*;
+import static org.wso2.carbon.identity.template.mgt.util.JdbcUtils.*;
+
 public class TemplateManagerDAOImpl implements TemplateManagerDAO {
     public Template addTemplate(Template template) throws TemplateManagementException {
         Template templateResult;
@@ -76,15 +79,41 @@ public class TemplateManagerDAOImpl implements TemplateManagerDAO {
     }
 
     public List<Template> getAllTemplates(Integer tenantId, Integer limit, Integer offset) throws TemplateManagementException {
+
         List<Template> templates;
         JdbcTemplate jdbcTemplate = JdbcUtils.getNewTemplate();
 
         try {
-            templates = jdbcTemplate.executeQuery(TemplateMgtConstants.SqlQueries.LIST_TEMPLATES,(resultSet, rowNumber) ->
+            String query;
+            if (isH2MySqlOrPostgresDB()) {
+                query = LIST_PAGINATED_TEMPLATES_MYSQL;
+            } else if (isDB2DB()) {
+                query = LIST_PAGINATED_TEMPLATES_DB2;
+                int initialOffset = offset;
+                offset = offset + limit;
+                limit = initialOffset + 1;
+            } else if (isMSSqlDB()) {
+                int initialOffset = offset;
+                offset = limit + offset;
+                limit = initialOffset + 1;
+                query = LIST_PAGINATED_TEMPLATES_MSSQL;
+            } else if (isInformixDB()) {
+                query = LIST_PAGINATED_TEMPLATES_INFORMIX;
+            } else {
+                //oracle
+                query = LIST_PAGINATED_TEMPLATES_ORACLE;
+                limit = offset + limit;
+            }
+            int finalLimit = limit;
+            int finalOffset = offset;
+
+            templates = jdbcTemplate.executeQuery(query,(resultSet, rowNumber) ->
                     new Template(resultSet.getString(1),
                             resultSet.getString(2)),
                     preparedStatement -> {
                 preparedStatement.setInt(1, tenantId);
+                preparedStatement.setInt(2, finalLimit);
+                preparedStatement.setInt(3, finalOffset);
                     });
         } catch (DataAccessException e) {
             throw new TemplateManagementServerException(String.format(TemplateMgtConstants.ErrorMessages.ERROR_CODE_LIST_TEMPLATES.getMessage(),tenantId),
