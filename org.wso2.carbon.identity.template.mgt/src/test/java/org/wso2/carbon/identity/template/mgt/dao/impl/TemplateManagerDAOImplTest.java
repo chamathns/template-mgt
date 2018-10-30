@@ -201,9 +201,8 @@ public class TemplateManagerDAOImplTest extends PowerMockTestCase {
             TemplateManagerDAO templateManagerDAO = new TemplateManagerDAOImpl();
             addTemplates(templateManagerDAO, Collections.singletonList(templateObject),dataSource);
 
-                Template templateByName = templateManagerDAO.getTemplateByName(((Template) templateObject).getTemplateName(),tenantId);
+                templateManagerDAO.getTemplateByName(((Template) templateObject).getTemplateName(),tenantId);
                 Assert.fail("Expected: "+ TemplateManagementServerException.class.getName());
-
         }
     }
 
@@ -213,7 +212,6 @@ public class TemplateManagerDAOImplTest extends PowerMockTestCase {
         Template template1 = new Template(SAMPLE_TENANT_ID,"T1","Description 1", sampleScript);
         Template template2 = new Template(SAMPLE_TENANT_ID,"T2","Description 2",sampleScript);
         Template template3 = new Template(SAMPLE_TENANT_ID,"Template3","Description 3","Script 3");
-
 
         DataSource dataSource = mock(DataSource.class);
         mockComponentDataHolder(dataSource);
@@ -240,6 +238,30 @@ public class TemplateManagerDAOImplTest extends PowerMockTestCase {
 
     }
 
+    @Test
+    public void testDeleteTemplate() throws Exception {
+        Template template1 = new Template(SAMPLE_TENANT_ID,"T1","Description 1", sampleScript);
+
+        DataSource dataSource = mock(DataSource.class);
+        mockComponentDataHolder(dataSource);
+
+        try (Connection connection = getConnection()) {
+
+            Connection spyConnection = spyConnection(connection);
+            when(dataSource.getConnection()).thenReturn(spyConnection);
+
+            TemplateManagerDAO templateManagerDAO = new TemplateManagerDAOImpl();
+            Template templateResult = templateManagerDAO.addTemplate(template1);
+            Assert.assertEquals(templateResult.getTemplateName(), template1.getTemplateName());
+
+            String deletedTemplateName = templateManagerDAO.deleteTemplate(templateResult.getTemplateName(),templateResult.getTenantId());
+
+            Assert.assertEquals(deletedTemplateName, templateResult.getTemplateName());
+        }
+    }
+
+
+
 
     private void addTemplates(TemplateManagerDAO templateManagerDAO, List<Object> templates, DataSource dataSource) throws SQLException, TemplateManagementException {
 
@@ -247,10 +269,5 @@ public class TemplateManagerDAOImplTest extends PowerMockTestCase {
             templateManagerDAO.addTemplate((Template) template);
         }
     }
-
-
-
-
-
 
 }

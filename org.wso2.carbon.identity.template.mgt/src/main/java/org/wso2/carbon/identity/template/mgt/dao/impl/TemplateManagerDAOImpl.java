@@ -140,7 +140,7 @@ public class TemplateManagerDAOImpl implements TemplateManagerDAO {
         return new Template(newTemplate.getTenantId(), newTemplate.getTemplateName());
     }
 
-    public void deleteTemplate(String templateName , Integer tenantId) throws TemplateManagementException{
+    public String deleteTemplate(String templateName , Integer tenantId) throws TemplateManagementException{
         JdbcTemplate jdbcTemplate = JdbcUtils.getNewTemplate();
         try {
             jdbcTemplate.executeUpdate(DELETE_TEMPLATE, preparedStatement ->{
@@ -151,6 +151,7 @@ public class TemplateManagerDAOImpl implements TemplateManagerDAO {
             throw new TemplateManagementServerException(String.format(ERROR_CODE_DELETE_TEMPLATE.getMessage(),tenantId.toString(),templateName),
                     ERROR_CODE_DELETE_TEMPLATE.getCode(),e);
         }
+        return templateName;
     }
 
     /**

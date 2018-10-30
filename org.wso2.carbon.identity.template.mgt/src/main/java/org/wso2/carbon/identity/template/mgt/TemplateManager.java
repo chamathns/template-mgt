@@ -68,7 +68,7 @@ public interface TemplateManager {
      * @param templateName Name of the template.
      * @throws TemplateManagementException Template Management Exception.
      */
-    void deleteTemplate(String templateName) throws TemplateManagementException;
+    String deleteTemplate(String templateName) throws TemplateManagementException;
 
     /**
      * This API is used to get the names and descriptions of all or filtered existing templates.

@@ -65,10 +65,10 @@ public class TemplateManagerImpl implements  TemplateManager {
     }
 
     @Override
-    public void deleteTemplate(String templateName) throws TemplateManagementException {
+    public String deleteTemplate(String templateName) throws TemplateManagementException {
         TemplateManagerDAO templateManagerDAO = new TemplateManagerDAOImpl();
-        templateManagerDAO.deleteTemplate(templateName, getTenantIdFromCarbonContext());
-
+        String deletedTemplateName = templateManagerDAO.deleteTemplate(templateName, getTenantIdFromCarbonContext());
+        return deletedTemplateName;
     }
 
     @Override
