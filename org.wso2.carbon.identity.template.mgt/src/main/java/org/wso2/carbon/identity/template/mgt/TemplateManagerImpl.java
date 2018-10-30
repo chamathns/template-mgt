@@ -29,6 +29,7 @@ import org.wso2.carbon.identity.template.mgt.model.Template;
 import java.util.List;
 
 import static org.apache.commons.lang.StringUtils.isBlank;
+import static org.wso2.carbon.identity.template.mgt.TemplateMgtConstants.ErrorMessages.*;
 import static org.wso2.carbon.identity.template.mgt.util.TemplateMgtUtils.getTenantIdFromCarbonContext;
 import static org.wso2.carbon.identity.template.mgt.util.TemplateMgtUtils.handleClientException;
 
@@ -38,7 +39,8 @@ import static org.wso2.carbon.identity.template.mgt.util.TemplateMgtUtils.handle
  */
 public class TemplateManagerImpl implements  TemplateManager {
 
-    public static final Log log = LogFactory.getLog(TemplateManagerImpl.class);
+    private static final Log log = LogFactory.getLog(TemplateManagerImpl.class);
+    private static final Integer DEFAULT_SEARCH_LIMIT = 100;
 
     @Override
     public Template addTemplate(Template template) throws TemplateManagementException {
@@ -72,6 +74,14 @@ public class TemplateManagerImpl implements  TemplateManager {
     @Override
     public List<Template> listTemplates(Integer limit, Integer offset) throws TemplateManagementException {
 
+        validatePaginationParameters(limit,offset);
+        if (limit == 0) {
+            limit = DEFAULT_SEARCH_LIMIT;
+            if (log.isDebugEnabled()) {
+                log.debug("Limit is not defined in the request, default to: " + limit);
+            }
+        }
+
         TemplateManagerDAO templateManagerDAO = new TemplateManagerDAOImpl();
         return templateManagerDAO.getAllTemplates(getTenantIdFromCarbonContext(),limit,offset);
     }
@@ -81,14 +91,14 @@ public class TemplateManagerImpl implements  TemplateManager {
             if (log.isDebugEnabled()){
                 log.debug("Template name cannot be empty");
             }
-            throw handleClientException(TemplateMgtConstants.ErrorMessages.ERROR_CODE_TEMPLATE_NAME_REQUIRED, null);
+            throw handleClientException(ERROR_CODE_TEMPLATE_NAME_REQUIRED, null);
         }
 
         if (isBlank(template.getTemplateScript())){
             if (log.isDebugEnabled()){
                 log.debug("Template script cannot be empty");
             }
-            throw handleClientException(TemplateMgtConstants.ErrorMessages.ERROR_CODE_TEMPLATE_SCRIPT_REQUIRED, null);
+            throw handleClientException(ERROR_CODE_TEMPLATE_SCRIPT_REQUIRED, null);
         }
 
         if (template.getTenantId() == null){
@@ -96,5 +106,14 @@ public class TemplateManagerImpl implements  TemplateManager {
         }
 
     }
+
+    private void validatePaginationParameters(Integer limit, Integer offset) throws TemplateManagementClientException {
+
+        if (limit < 0 || offset < 0) {
+            throw handleClientException(ERROR_CODE_INVALID_ARGUMENTS_FOR_LIMIT_OFFSET, null);
+        }
+    }
+
+
 
 }

@@ -56,8 +56,9 @@ public class TemplateMgtConstants {
         ERROR_CODE_TEMPLATE_NAME_REQUIRED("TM_00007", "Template name is required."),
         ERROR_CODE_TEMPLATE_SCRIPT_REQUIRED("TM_00008", "Template script is required."),
         ERROR_CODE_NO_AUTH_USER_FOUND("TM_00009", "No authenticated user found to perform the operation"),
-        ERROR_CODE_USER_NOT_AUTHORIZED("TM_00010", "User: %s is not authorized to perform this operation."),
-        ERROR_CODE_UNEXPECTED("TM_00011", "Unexpected Error");
+        ERROR_CODE_INVALID_ARGUMENTS_FOR_LIMIT_OFFSET("CM_00010", "Limit or offset values cannot be negative."),
+        ERROR_CODE_USER_NOT_AUTHORIZED("TM_00011", "User: %s is not authorized to perform this operation."),
+        ERROR_CODE_UNEXPECTED("TM_00012", "Unexpected Error");
 
         private final String code;
         private final String message;

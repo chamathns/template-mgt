@@ -125,6 +125,17 @@ public class TemplateManagerDAOImplTest extends PowerMockTestCase {
         };
     }
 
+    @DataProvider(name = "templateListProvider")
+    public Object[][] provideListData() throws Exception {
+
+        return new Object[][]{
+                // limit, offset, tenantId, resultSize
+                {0, 0, -1234, 0},
+                {1, 1, -1234, 1},
+                {10, 0, -1234, 3}
+        };
+    }
+
     @Test(dataProvider = "TemplateDataProvider")
     public void testAddTemplate(Object template) throws Exception {
         DataSource dataSource = mock(DataSource.class);
@@ -196,8 +207,13 @@ public class TemplateManagerDAOImplTest extends PowerMockTestCase {
         }
     }
 
-    @Test
-    public void testGetTemplateList(int limit, int offset, int tenantId, int resultSize) throws Exception {
+    @Test(dataProvider = "templateListProvider")
+    public void testGetTemplateList(Integer limit, Integer offset, Integer tenantId, int resultSize) throws Exception {
+
+        Template template1 = new Template(SAMPLE_TENANT_ID,"T1","Description 1", sampleScript);
+        Template template2 = new Template(SAMPLE_TENANT_ID,"T2","Description 2",sampleScript);
+        Template template3 = new Template(SAMPLE_TENANT_ID,"Template3","Description 3","Script 3");
+
 
         DataSource dataSource = mock(DataSource.class);
         mockComponentDataHolder(dataSource);
@@ -208,11 +224,18 @@ public class TemplateManagerDAOImplTest extends PowerMockTestCase {
 
             TemplateManagerDAO templateManagerDAO = new TemplateManagerDAOImpl();
 
-//            addTemplates(templateManagerDAO, Collections.singletonList(templateObject),dataSource);
+            Template templateResult1 = templateManagerDAO.addTemplate(template1);
+            Assert.assertEquals(templateResult1.getTemplateName(),template1.getTemplateName());
 
-            List<Template> templateList = templateManagerDAO.getAllTemplates(templates.get(0).getTenantId(),null, null);
+            Template templateResult2 = templateManagerDAO.addTemplate(template2);
+            Assert.assertEquals(templateResult2.getTemplateName(),template2.getTemplateName());
 
-            Assert.assertEquals(templateList.get(0).getTemplateName(),templates.get(0).getTemplateName());
+            Template templateResult3 = templateManagerDAO.addTemplate(template3);
+            Assert.assertEquals(templateResult3.getTemplateName(),template3.getTemplateName());
+
+            List<Template> templateList = templateManagerDAO.getAllTemplates(tenantId,limit, offset);
+
+            Assert.assertEquals(templateList.size(),resultSize);
         }
 
     }

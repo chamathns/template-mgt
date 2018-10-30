@@ -18,14 +18,15 @@ package org.wso2.carbon.identity.template.mgt.util;
 
 import org.wso2.carbon.database.utils.jdbc.JdbcTemplate;
 import org.wso2.carbon.database.utils.jdbc.exceptions.DataAccessException;
-import org.wso2.carbon.identity.template.mgt.TemplateMgtConstants;
 import org.wso2.carbon.identity.template.mgt.internal.TemplateManagerComponentDataHolder;
+
+import static org.wso2.carbon.identity.template.mgt.TemplateMgtConstants.*;
 
 /**
  * A util class to support the Jdbc executions.
  */
 
-<span class="nc" id="L28">public class JdbcUtils {</span>
+<span class="nc" id="L29">public class JdbcUtils {</span>
 
     /**
      * Get a new Jdbc Template.
@@ -34,7 +35,7 @@ import org.wso2.carbon.identity.template.mgt.internal.TemplateManagerComponentDa
      */
     public static JdbcTemplate getNewTemplate() {
 
-<span class="nc" id="L37">        return new JdbcTemplate(TemplateManagerComponentDataHolder.getInstance().getDataSource());</span>
+<span class="fc" id="L38">        return new JdbcTemplate(TemplateManagerComponentDataHolder.getInstance().getDataSource());</span>
     }
 
     /**
@@ -45,7 +46,7 @@ import org.wso2.carbon.identity.template.mgt.internal.TemplateManagerComponentDa
      */
     public static boolean isH2MySqlOrPostgresDB() throws DataAccessException {
 
-<span class="nc bnc" id="L48" title="All 6 branches missed.">        return isDBTypeOf(TemplateMgtConstants.MY_SQL) || isDBTypeOf(TemplateMgtConstants.H2) || isDBTypeOf(TemplateMgtConstants.POSTGRE_SQL);</span>
+<span class="nc bnc" id="L49" title="All 6 branches missed.">        return isDBTypeOf(MY_SQL) || isDBTypeOf(H2) || isDBTypeOf(POSTGRE_SQL);</span>
     }
 
     /**
@@ -56,7 +57,7 @@ import org.wso2.carbon.identity.template.mgt.internal.TemplateManagerComponentDa
      */
     public static boolean isDB2DB() throws DataAccessException {
 
-<span class="nc" id="L59">        return isDBTypeOf(TemplateMgtConstants.DB2);</span>
+<span class="nc" id="L60">        return isDBTypeOf(DB2);</span>
     }
 
     /**
@@ -67,7 +68,7 @@ import org.wso2.carbon.identity.template.mgt.internal.TemplateManagerComponentDa
      */
     public static boolean isMSSqlDB() throws DataAccessException {
 
-<span class="nc bnc" id="L70" title="All 4 branches missed.">        return isDBTypeOf(TemplateMgtConstants.MICROSOFT) || isDBTypeOf(TemplateMgtConstants.S_MICROSOFT);</span>
+<span class="nc bnc" id="L71" title="All 4 branches missed.">        return isDBTypeOf(MICROSOFT) || isDBTypeOf(S_MICROSOFT);</span>
     }
 
     /**
@@ -78,7 +79,7 @@ import org.wso2.carbon.identity.template.mgt.internal.TemplateManagerComponentDa
      */
     public static boolean isInformixDB() throws DataAccessException {
 
-<span class="nc" id="L81">        return isDBTypeOf(TemplateMgtConstants.INFORMIX);</span>
+<span class="nc" id="L82">        return isDBTypeOf(INFORMIX);</span>
     }
 
     /**
@@ -90,8 +91,8 @@ import org.wso2.carbon.identity.template.mgt.internal.TemplateManagerComponentDa
      */
     private static boolean isDBTypeOf(String dbType) throws DataAccessException {
 
-<span class="nc" id="L93">        JdbcTemplate jdbcTemplate = JdbcUtils.getNewTemplate();</span>
-<span class="nc bnc" id="L94" title="All 4 branches missed.">        return jdbcTemplate.getDriverName().contains(dbType) || jdbcTemplate.getDatabaseProductName().contains(dbType);</span>
+<span class="nc" id="L94">        JdbcTemplate jdbcTemplate = JdbcUtils.getNewTemplate();</span>
+<span class="nc bnc" id="L95" title="All 4 branches missed.">        return jdbcTemplate.getDriverName().contains(dbType) || jdbcTemplate.getDatabaseProductName().contains(dbType);</span>
     }
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.7.9.201702052155</span></div></body></html>

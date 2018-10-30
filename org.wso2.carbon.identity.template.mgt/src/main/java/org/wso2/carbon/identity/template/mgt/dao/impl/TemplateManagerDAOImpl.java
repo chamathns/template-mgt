@@ -33,6 +33,7 @@ import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.util.List;
 
+import static org.wso2.carbon.identity.template.mgt.TemplateMgtConstants.ErrorMessages.*;
 import static org.wso2.carbon.identity.template.mgt.TemplateMgtConstants.SqlQueries.*;
 import static org.wso2.carbon.identity.template.mgt.util.JdbcUtils.*;
 
@@ -51,7 +52,7 @@ public class TemplateManagerDAOImpl implements TemplateManagerDAO {
 
             }),template,true);
         } catch (DataAccessException e) {
-            throw TemplateMgtUtils.handleServerException(TemplateMgtConstants.ErrorMessages.ERROR_CODE_INSERT_TEMPLATE, template.getTemplateName(),e);
+            throw TemplateMgtUtils.handleServerException(ERROR_CODE_INSERT_TEMPLATE, template.getTemplateName(),e);
         }
         templateResult = new Template(insertedId,template.getTenantId(),template.getTemplateName());
         return templateResult;
@@ -61,7 +62,7 @@ public class TemplateManagerDAOImpl implements TemplateManagerDAO {
         Template template;
         JdbcTemplate jdbcTemplate = JdbcUtils.getNewTemplate();
         try {
-            template = jdbcTemplate.fetchSingleRecord(TemplateMgtConstants.SqlQueries.GET_TEMPLATE_BY_NAME,(resultSet, rowNumber) ->
+            template = jdbcTemplate.fetchSingleRecord(GET_TEMPLATE_BY_NAME,(resultSet, rowNumber) ->
                     new Template(resultSet.getInt(1),
                             resultSet.getInt(2),
                             resultSet.getString(3),
@@ -72,8 +73,8 @@ public class TemplateManagerDAOImpl implements TemplateManagerDAO {
                         preparedStatement.setInt(2,tenantId);
             });
         } catch (DataAccessException e) {
-            throw new TemplateManagementServerException(String.format(TemplateMgtConstants.ErrorMessages.ERROR_CODE_SELECT_TEMPLATE_BY_NAME.getMessage(),tenantId, templateName),
-                    TemplateMgtConstants.ErrorMessages.ERROR_CODE_SELECT_TEMPLATE_BY_NAME.getCode(),e);
+            throw new TemplateManagementServerException(String.format(ERROR_CODE_SELECT_TEMPLATE_BY_NAME.getMessage(),tenantId, templateName),
+                    ERROR_CODE_SELECT_TEMPLATE_BY_NAME.getCode(),e);
         }
         return template;
     }
@@ -116,8 +117,8 @@ public class TemplateManagerDAOImpl implements TemplateManagerDAO {
                 preparedStatement.setInt(3, finalOffset);
                     });
         } catch (DataAccessException e) {
-            throw new TemplateManagementServerException(String.format(TemplateMgtConstants.ErrorMessages.ERROR_CODE_LIST_TEMPLATES.getMessage(),tenantId),
-                    TemplateMgtConstants.ErrorMessages.ERROR_CODE_LIST_TEMPLATES.getCode(),e);
+            throw new TemplateManagementServerException(String.format(ERROR_CODE_LIST_TEMPLATES.getMessage(),tenantId),
+                    ERROR_CODE_LIST_TEMPLATES.getCode(),e);
         }
         return templates;
     }
@@ -134,7 +135,7 @@ public class TemplateManagerDAOImpl implements TemplateManagerDAO {
                 preparedStatement.setString(5,templateName);
             });
         } catch (DataAccessException e) {
-            throw TemplateMgtUtils.handleServerException(TemplateMgtConstants.ErrorMessages.ERROR_CODE_UPDATE_TEMPLATE,newTemplate.getTemplateName(),e);
+            throw TemplateMgtUtils.handleServerException(ERROR_CODE_UPDATE_TEMPLATE,newTemplate.getTemplateName(),e);
         }
         return new Template(newTemplate.getTenantId(), newTemplate.getTemplateName());
     }
@@ -142,13 +143,13 @@ public class TemplateManagerDAOImpl implements TemplateManagerDAO {
     public void deleteTemplate(String templateName , Integer tenantId) throws TemplateManagementException{
         JdbcTemplate jdbcTemplate = JdbcUtils.getNewTemplate();
         try {
-            jdbcTemplate.executeUpdate(TemplateMgtConstants.SqlQueries.DELETE_TEMPLATE, preparedStatement ->{
+            jdbcTemplate.executeUpdate(DELETE_TEMPLATE, preparedStatement ->{
                 preparedStatement.setString(1,templateName);
                 preparedStatement.setInt(2,tenantId);
             });
         } catch (DataAccessException e) {
-            throw new TemplateManagementServerException(String.format(TemplateMgtConstants.ErrorMessages.ERROR_CODE_DELETE_TEMPLATE.getMessage(),tenantId.toString(),templateName),
-                    TemplateMgtConstants.ErrorMessages.ERROR_CODE_DELETE_TEMPLATE.getCode(),e);
+            throw new TemplateManagementServerException(String.format(ERROR_CODE_DELETE_TEMPLATE.getMessage(),tenantId.toString(),templateName),
+                    ERROR_CODE_DELETE_TEMPLATE.getCode(),e);
         }
     }
 

@@ -38,12 +38,12 @@ import org.wso2.carbon.identity.template.mgt.exception.TemplateManagementServerE
     public static TemplateManagementServerException handleServerException(TemplateMgtConstants.ErrorMessages error,
                                                                           String data, Throwable e) {
         String message;
-<span class="nc bnc" id="L41" title="All 2 branches missed.">        if (StringUtils.isNotBlank(data)) {</span>
-<span class="nc" id="L42">            message = String.format(error.getMessage(), data);</span>
+<span class="pc bpc" id="L41" title="1 of 2 branches missed.">        if (StringUtils.isNotBlank(data)) {</span>
+<span class="fc" id="L42">            message = String.format(error.getMessage(), data);</span>
         } else {
 <span class="nc" id="L44">            message = error.getMessage();</span>
         }
-<span class="nc" id="L46">        return new TemplateManagementServerException(message, error.getCode(), e);</span>
+<span class="fc" id="L46">        return new TemplateManagementServerException(message, error.getCode(), e);</span>
     }
 
     /**
