@@ -25,6 +25,7 @@ import org.wso2.carbon.identity.template.mgt.endpoint.dto.GetTemplatesResponseDT
 import org.wso2.carbon.identity.template.mgt.endpoint.dto.TemplateRequestDTO;
 import org.wso2.carbon.identity.template.mgt.endpoint.dto.UpdateTemplateRequestDTO;
 import org.wso2.carbon.identity.template.mgt.model.Template;
+import org.wso2.carbon.identity.template.mgt.model.TemplateInfo;
 import org.wso2.carbon.identity.template.mgt.util.TemplateMgtUtils;
 
 import java.util.List;
@@ -50,7 +51,7 @@ public class TemplateEndpointUtils {
                             templateRequestDTO.getData());
     }
 
-    public static List<GetTemplatesResponseDTO> getTemplatesResponseDTOList (List<Template> templates){
+    public static List<GetTemplatesResponseDTO> getTemplatesResponseDTOList (List<TemplateInfo> templates){
         return templates.stream()
                 .map(template -> {
                     GetTemplatesResponseDTO getTemplatesResponseDTO = new GetTemplatesResponseDTO();

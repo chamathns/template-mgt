@@ -51,7 +51,7 @@
         try{
             String currentUser = (String) session.getAttribute("logged-user");
             TemplateManagementServiceClient serviceClient = new TemplateManagementServiceClient(currentUser);
-            Template responseTemplate = serviceClient.addTemplate(templateRequestDTO);
+            serviceClient.addTemplate(templateRequestDTO);
 
 %>
 <script>
