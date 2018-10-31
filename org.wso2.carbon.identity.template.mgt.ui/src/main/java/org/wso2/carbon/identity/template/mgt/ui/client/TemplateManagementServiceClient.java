@@ -25,7 +25,6 @@ import org.wso2.carbon.identity.template.mgt.TemplateManager;
 import org.wso2.carbon.identity.template.mgt.TemplateMgtConstants;
 import org.wso2.carbon.identity.template.mgt.exception.TemplateManagementException;
 import org.wso2.carbon.identity.template.mgt.model.Template;
-import org.wso2.carbon.identity.template.mgt.model.TemplateInfo;
 import org.wso2.carbon.identity.template.mgt.ui.dto.AddTemplateResponseDTO;
 import org.wso2.carbon.identity.template.mgt.ui.dto.TemplateRequestDTO;
 import org.wso2.carbon.identity.template.mgt.ui.dto.UpdateTemplateRequestDTO;
@@ -42,11 +41,11 @@ public class TemplateManagementServiceClient {
     }
 
 
-    public TemplateInfo addTemplate(TemplateRequestDTO templateRequestDTO) throws TemplateManagementException {
+    public Template addTemplate(TemplateRequestDTO templateRequestDTO) throws TemplateManagementException {
 //        handleLoggedInUserAuthorization(TemplateMgtConstants.PERMISSION_TEMPLATE_MGT_ADD);
         Template template = new Template(templateRequestDTO.getTenantId(), templateRequestDTO.getTemplateName(),
                                 templateRequestDTO.getDescription(),templateRequestDTO.getTemplateScript());
-        TemplateInfo templateResponse = getTemplateManager().addTemplate(template);
+        Template templateResponse = getTemplateManager().addTemplate(template);
         return templateResponse;
     }
 
@@ -55,7 +54,7 @@ public class TemplateManagementServiceClient {
         return getTemplateManager().getTemplateByName(templateName);
     }
 
-    public TemplateInfo updateTemplate(String templateName, UpdateTemplateRequestDTO updateTemplateRequestDTO) throws TemplateManagementException{
+    public Template updateTemplate(String templateName, UpdateTemplateRequestDTO updateTemplateRequestDTO) throws TemplateManagementException{
 //        handleLoggedInUserAuthorization(TemplateMgtConstants.PERMISSION_TEMPLATE_MGT_UPDATE);
         Template updateTemplateRequest = new Template(updateTemplateRequestDTO.getTemplateName(),
                                             updateTemplateRequestDTO.getDescription(),updateTemplateRequestDTO.getTemplateScript());
@@ -67,7 +66,7 @@ public class TemplateManagementServiceClient {
         getTemplateManager().deleteTemplate(templateName);
     }
 
-    public List<TemplateInfo> listTemplates(Integer limit, Integer offset) throws TemplateManagementException{
+    public List<Template> listTemplates(Integer limit, Integer offset) throws TemplateManagementException{
 //        handleLoggedInUserAuthorization(TemplateMgtConstants.PERMISSION_TEMPLATE_MGT_UPDATE);
         return getTemplateManager().listTemplates(limit,offset);
     }

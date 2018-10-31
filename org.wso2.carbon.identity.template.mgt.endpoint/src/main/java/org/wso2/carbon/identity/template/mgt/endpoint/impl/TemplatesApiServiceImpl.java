@@ -31,7 +31,6 @@ import java.util.List;
 
 import org.wso2.carbon.identity.template.mgt.exception.TemplateManagementException;
 import org.wso2.carbon.identity.template.mgt.model.Template;
-import org.wso2.carbon.identity.template.mgt.model.TemplateInfo;
 
 import javax.ws.rs.core.Response;
 
@@ -127,14 +126,14 @@ TemplatesApiServiceImpl extends TemplatesApiService {
 
 
     private List<GetTemplatesResponseDTO> getTemplatesList (Integer limit, Integer offset) throws TemplateManagementException {
-        List<TemplateInfo> templates = TemplateEndpointUtils.getTemplateManager().listTemplates(limit, offset);
+        List<Template> templates = TemplateEndpointUtils.getTemplateManager().listTemplates(limit, offset);
         return TemplateEndpointUtils.getTemplatesResponseDTOList(templates);
     }
 
 
     private AddTemplateResponseDTO postTemplate(TemplateRequestDTO templateDTO) throws TemplateManagementException {
         Template templateRequest = TemplateEndpointUtils.getTemplateRequest(templateDTO);
-        TemplateInfo templateResponse = TemplateEndpointUtils.getTemplateManager().addTemplate(templateRequest);
+        Template templateResponse = TemplateEndpointUtils.getTemplateManager().addTemplate(templateRequest);
 
         AddTemplateResponseDTO responseDTO = new AddTemplateResponseDTO();
         responseDTO.setTemplateId(templateResponse.getTemplateId().toString());
@@ -145,7 +144,7 @@ TemplatesApiServiceImpl extends TemplatesApiService {
 
     private UpdateSuccessResponseDTO putTemplate(String templateName, UpdateTemplateRequestDTO updateTemplateRequestDTO) throws TemplateManagementException {
         Template updateTemplateRequest = TemplateEndpointUtils.getTemplateUpdateRequest(updateTemplateRequestDTO);
-        TemplateInfo updateTemplateResponse = TemplateEndpointUtils.getTemplateManager().updateTemplate(templateName,updateTemplateRequest);
+        Template updateTemplateResponse = TemplateEndpointUtils.getTemplateManager().updateTemplate(templateName,updateTemplateRequest);
 
         UpdateSuccessResponseDTO responseDTO= new UpdateSuccessResponseDTO();
         responseDTO.setName(updateTemplateResponse.getTemplateName());

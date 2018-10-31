@@ -20,7 +20,6 @@ package org.wso2.carbon.identity.template.mgt.dao.impl;
 
 import org.wso2.carbon.database.utils.jdbc.JdbcTemplate;
 import org.wso2.carbon.database.utils.jdbc.exceptions.DataAccessException;
-import org.wso2.carbon.identity.template.mgt.model.TemplateInfo;
 import org.wso2.carbon.identity.template.mgt.util.TemplateMgtUtils;
 import org.wso2.carbon.identity.template.mgt.TemplateMgtConstants;
 import org.wso2.carbon.identity.template.mgt.dao.TemplateManagerDAO;
@@ -41,8 +40,8 @@ import static org.wso2.carbon.identity.template.mgt.TemplateMgtConstants.SqlQuer
 import static org.wso2.carbon.identity.template.mgt.util.JdbcUtils.*;
 
 public class TemplateManagerDAOImpl implements TemplateManagerDAO {
-    public TemplateInfo addTemplate(Template template) throws TemplateManagementException {
-        TemplateInfo templateResult;
+    public Template addTemplate(Template template) throws TemplateManagementException {
+        Template templateResult;
         int insertedId;
         JdbcTemplate jdbcTemplate = JdbcUtils.getNewTemplate();
 
@@ -57,7 +56,7 @@ public class TemplateManagerDAOImpl implements TemplateManagerDAO {
         } catch (DataAccessException e) {
             throw TemplateMgtUtils.handleServerException(ERROR_CODE_INSERT_TEMPLATE, template.getTemplateName(),e);
         }
-        templateResult = new TemplateInfo(insertedId,template.getTenantId(),template.getTemplateName());
+        templateResult = new Template(insertedId,template.getTenantId(),template.getTemplateName());
         return templateResult;
     }
     
@@ -82,9 +81,9 @@ public class TemplateManagerDAOImpl implements TemplateManagerDAO {
         return template;
     }
 
-    public List<TemplateInfo> getAllTemplates(Integer tenantId, Integer limit, Integer offset) throws TemplateManagementException {
+    public List<Template> getAllTemplates(Integer tenantId, Integer limit, Integer offset) throws TemplateManagementException {
 
-        List<TemplateInfo> templates;
+        List<Template> templates;
         JdbcTemplate jdbcTemplate = JdbcUtils.getNewTemplate();
 
         try {
@@ -112,7 +111,7 @@ public class TemplateManagerDAOImpl implements TemplateManagerDAO {
             int finalOffset = offset;
 
             templates = jdbcTemplate.executeQuery(query,(resultSet, rowNumber) ->
-                    new TemplateInfo(resultSet.getString(1),
+                    new Template(resultSet.getString(1),
                             resultSet.getString(2)),
                     preparedStatement -> {
                 preparedStatement.setInt(1, tenantId);
@@ -126,7 +125,7 @@ public class TemplateManagerDAOImpl implements TemplateManagerDAO {
         return templates;
     }
 
-    public TemplateInfo updateTemplate(String templateName, Template newTemplate) throws TemplateManagementServerException {
+    public Template updateTemplate(String templateName, Template newTemplate) throws TemplateManagementServerException {
 
         JdbcTemplate jdbcTemplate = JdbcUtils.getNewTemplate();
         try {
@@ -140,7 +139,7 @@ public class TemplateManagerDAOImpl implements TemplateManagerDAO {
         } catch (DataAccessException e) {
             throw TemplateMgtUtils.handleServerException(ERROR_CODE_UPDATE_TEMPLATE,newTemplate.getTemplateName(),e);
         }
-        return new TemplateInfo(newTemplate.getTenantId(), newTemplate.getTemplateName());
+        return new Template(newTemplate.getTenantId(), newTemplate.getTemplateName());
     }
 
     public String deleteTemplate(String templateName , Integer tenantId) throws TemplateManagementException{
@@ -157,21 +156,21 @@ public class TemplateManagerDAOImpl implements TemplateManagerDAO {
         return templateName;
     }
 
-//    /**
-//     * Set given string as Blob for the given index into the prepared-statement
-//     *
-//     * @param value    string value to be converted to blob
-//     * @param prepStmt Prepared statement
-//     * @param index    column index
-//     * @throws SQLException
-//     * @throws IOException
-//     */
-//    private void setBlobValue(String value, PreparedStatement prepStmt, int index) throws IOException, SQLException {
-//        if (value != null) {
-//            InputStream inputStream = new ByteArrayInputStream(value.getBytes());
-//            prepStmt.setBinaryStream(index, inputStream, inputStream.available());
-//        } else {
-//            prepStmt.setBinaryStream(index, new ByteArrayInputStream(new byte[0]), 0);
-//        }
-//    }
+    /**
+     * Set given string as Blob for the given index into the prepared-statement
+     *
+     * @param value    string value to be converted to blob
+     * @param prepStmt Prepared statement
+     * @param index    column index
+     * @throws SQLException
+     * @throws IOException
+     */
+    private void setBlobValue(String value, PreparedStatement prepStmt, int index) throws IOException, SQLException {
+        if (value != null) {
+            InputStream inputStream = new ByteArrayInputStream(value.getBytes());
+            prepStmt.setBinaryStream(index, inputStream, inputStream.available());
+        } else {
+            prepStmt.setBinaryStream(index, new ByteArrayInputStream(new byte[0]), 0);
+        }
+    }
 }

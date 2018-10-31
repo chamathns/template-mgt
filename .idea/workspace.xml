@@ -2,133 +2,118 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a4b52234-6a17-458d-abd6-21576aba62b7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.endpoint/src/main/java/org/wso2/carbon/identity/template/mgt/endpoint/impl/TemplatesApiServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.endpoint/src/main/java/org/wso2/carbon/identity/template/mgt/endpoint/impl/TemplatesApiServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.endpoint/src/main/java/org/wso2/carbon/identity/template/mgt/endpoint/util/TemplateEndpointUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.endpoint/src/main/java/org/wso2/carbon/identity/template/mgt/endpoint/util/TemplateEndpointUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/java/org/wso2/carbon/identity/template/mgt/ui/client/TemplateManagementServiceClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/java/org/wso2/carbon/identity/template/mgt/ui/client/TemplateManagementServiceClient.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/add-template-finish.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/add-template-finish.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/addon/comment/comment.js" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/addon/comment/comment.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/addon/comment/continuecomment.js" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/addon/comment/continuecomment.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/addon/dialog/dialog.css" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/addon/dialog/dialog.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/addon/dialog/dialog.js" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/addon/dialog/dialog.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/addon/display/autorefresh.js" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/addon/display/autorefresh.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/addon/display/fullscreen.css" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/addon/display/fullscreen.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/addon/display/fullscreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/addon/display/fullscreen.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/addon/display/panel.js" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/addon/display/panel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/addon/display/placeholder.js" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/addon/display/placeholder.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/addon/display/rulers.js" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/addon/display/rulers.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/addon/edit/closebrackets.js" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/addon/edit/closebrackets.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/addon/edit/closetag.js" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/addon/edit/closetag.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/addon/edit/continuelist.js" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/addon/edit/continuelist.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/addon/edit/matchbrackets.js" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/addon/edit/matchbrackets.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/addon/edit/matchtags.js" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/addon/edit/matchtags.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/addon/edit/trailingspace.js" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/addon/edit/trailingspace.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/addon/fold/brace-fold.js" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/addon/fold/brace-fold.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/addon/fold/comment-fold.js" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/addon/fold/comment-fold.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/addon/fold/foldcode.js" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/addon/fold/foldcode.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/addon/fold/foldgutter.css" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/addon/fold/foldgutter.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/addon/fold/foldgutter.js" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/addon/fold/foldgutter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/addon/fold/indent-fold.js" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/addon/fold/indent-fold.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/addon/fold/markdown-fold.js" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/addon/fold/markdown-fold.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/addon/fold/xml-fold.js" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/addon/fold/xml-fold.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/addon/hint/anyword-hint.js" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/addon/hint/anyword-hint.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/addon/hint/css-hint.js" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/addon/hint/css-hint.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/addon/hint/html-hint.js" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/addon/hint/html-hint.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/addon/hint/javascript-hint.js" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/addon/hint/javascript-hint.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/addon/hint/show-hint.css" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/addon/hint/show-hint.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/addon/hint/show-hint.js" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/addon/hint/show-hint.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/addon/hint/sql-hint.js" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/addon/hint/sql-hint.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/addon/hint/wso2-hints.js" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/addon/hint/wso2-hints.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/addon/hint/xml-hint.js" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/addon/hint/xml-hint.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/addon/lint/coffeescript-lint.js" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/addon/lint/coffeescript-lint.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/addon/lint/css-lint.js" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/addon/lint/css-lint.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/addon/lint/html-lint.js" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/addon/lint/html-lint.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/addon/lint/javascript-lint.js" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/addon/lint/javascript-lint.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/addon/lint/json-lint.js" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/addon/lint/json-lint.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/addon/lint/lint.css" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/addon/lint/lint.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/addon/lint/lint.js" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/addon/lint/lint.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/addon/lint/yaml-lint.js" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/addon/lint/yaml-lint.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/addon/merge/merge.css" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/addon/merge/merge.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/addon/merge/merge.js" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/addon/merge/merge.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/addon/mode/loadmode.js" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/addon/mode/loadmode.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/addon/mode/multiplex.js" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/addon/mode/multiplex.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/addon/mode/multiplex_test.js" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/addon/mode/multiplex_test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/addon/mode/overlay.js" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/addon/mode/overlay.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/addon/mode/simple.js" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/addon/mode/simple.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/addon/runmode/colorize.js" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/addon/runmode/colorize.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/addon/runmode/runmode-standalone.js" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/addon/runmode/runmode-standalone.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/addon/runmode/runmode.js" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/addon/runmode/runmode.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/addon/runmode/runmode.node.js" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/addon/runmode/runmode.node.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/addon/scroll/annotatescrollbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/addon/scroll/annotatescrollbar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/addon/scroll/scrollpastend.js" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/addon/scroll/scrollpastend.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/addon/scroll/simplescrollbars.css" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/addon/scroll/simplescrollbars.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/addon/scroll/simplescrollbars.js" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/addon/scroll/simplescrollbars.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/addon/search/jump-to-line.js" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/addon/search/jump-to-line.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/addon/search/match-highlighter.js" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/addon/search/match-highlighter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/addon/search/matchesonscrollbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/addon/search/matchesonscrollbar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/addon/search/matchesonscrollbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/addon/search/matchesonscrollbar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/addon/search/search.js" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/addon/search/search.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/addon/search/searchcursor.js" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/addon/search/searchcursor.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/addon/selection/active-line.js" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/addon/selection/active-line.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/addon/selection/mark-selection.js" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/addon/selection/mark-selection.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/addon/selection/selection-pointer.js" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/addon/selection/selection-pointer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/addon/tern/tern.css" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/addon/tern/tern.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/addon/tern/tern.js" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/addon/tern/tern.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/addon/tern/worker.js" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/addon/tern/worker.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/addon/wrap/hardwrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/addon/wrap/hardwrap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/keymap/emacs.js" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/keymap/emacs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/keymap/sublime.js" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/keymap/sublime.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/keymap/vim.js" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/keymap/vim.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/lib/codemirror.css" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/lib/codemirror.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/lib/codemirror.js" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/lib/codemirror.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/mode/css/css.js" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/mode/css/css.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/mode/css/gss.html" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/mode/css/gss.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/mode/css/gss_test.js" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/mode/css/gss_test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/mode/css/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/mode/css/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/mode/css/less.html" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/mode/css/less.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/mode/css/less_test.js" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/mode/css/less_test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/mode/css/scss.html" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/mode/css/scss.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/mode/css/scss_test.js" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/mode/css/scss_test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/mode/css/test.js" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/mode/css/test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/mode/handlebars/handlebars.js" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/mode/handlebars/handlebars.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/mode/handlebars/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/mode/handlebars/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/mode/htmlmixed/htmlmixed.js" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/mode/htmlmixed/htmlmixed.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/mode/htmlmixed/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/mode/htmlmixed/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/mode/javascript/javascript.js" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/mode/javascript/javascript.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/mode/javascript/test.js" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/mode/javascript/test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/mode/meta.js" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/mode/meta.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/mode/vbscript/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/mode/vbscript/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/mode/vbscript/vbscript.js" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/mode/vbscript/vbscript.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/mode/xml/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/mode/xml/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/mode/xml/test.js" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/mode/xml/test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/mode/xml/xml.js" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/mode/xml/xml.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/theme/mdn-like.css" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/theme/mdn-like.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/theme/paraiso-light.css" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/theme/paraiso-light.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/util/formatting.js" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/util/formatting.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/edit-template-finish.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/edit-template-finish.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/META-INF/component.xml" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/META-INF/component.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/org/wso2/carbon/identity/template/mgt/ui/i18n/Resources.properties" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/org/wso2/carbon/identity/template/mgt/ui/i18n/Resources.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/add-template-finish.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/add-template-finish.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/add-template.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/add-template.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/addon/comment/comment.js" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/addon/comment/comment.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/addon/comment/continuecomment.js" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/addon/comment/continuecomment.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/addon/dialog/dialog.css" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/addon/dialog/dialog.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/addon/dialog/dialog.js" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/addon/dialog/dialog.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/addon/display/autorefresh.js" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/addon/display/autorefresh.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/addon/display/fullscreen.css" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/addon/display/fullscreen.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/addon/display/fullscreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/addon/display/fullscreen.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/addon/display/panel.js" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/addon/display/panel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/addon/display/placeholder.js" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/addon/display/placeholder.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/addon/display/rulers.js" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/addon/display/rulers.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/addon/edit/closebrackets.js" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/addon/edit/closebrackets.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/addon/edit/closetag.js" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/addon/edit/closetag.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/addon/edit/continuelist.js" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/addon/edit/continuelist.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/addon/edit/matchbrackets.js" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/addon/edit/matchbrackets.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/addon/edit/matchtags.js" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/addon/edit/matchtags.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/addon/edit/trailingspace.js" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/addon/edit/trailingspace.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/addon/fold/brace-fold.js" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/addon/fold/brace-fold.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/addon/fold/comment-fold.js" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/addon/fold/comment-fold.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/addon/fold/foldcode.js" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/addon/fold/foldcode.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/addon/fold/foldgutter.css" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/addon/fold/foldgutter.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/addon/fold/foldgutter.js" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/addon/fold/foldgutter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/addon/fold/indent-fold.js" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/addon/fold/indent-fold.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/addon/fold/markdown-fold.js" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/addon/fold/markdown-fold.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/addon/fold/xml-fold.js" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/addon/fold/xml-fold.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/addon/hint/anyword-hint.js" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/addon/hint/anyword-hint.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/addon/hint/css-hint.js" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/addon/hint/css-hint.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/addon/hint/html-hint.js" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/addon/hint/html-hint.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/addon/hint/javascript-hint.js" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/addon/hint/javascript-hint.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/addon/hint/show-hint.css" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/addon/hint/show-hint.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/addon/hint/show-hint.js" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/addon/hint/show-hint.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/addon/hint/sql-hint.js" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/addon/hint/sql-hint.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/addon/hint/wso2-hints.js" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/addon/hint/wso2-hints.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/addon/hint/xml-hint.js" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/addon/hint/xml-hint.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/addon/lint/coffeescript-lint.js" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/addon/lint/coffeescript-lint.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/addon/lint/css-lint.js" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/addon/lint/css-lint.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/addon/lint/html-lint.js" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/addon/lint/html-lint.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/addon/lint/javascript-lint.js" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/addon/lint/javascript-lint.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/addon/lint/json-lint.js" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/addon/lint/json-lint.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/addon/lint/lint.css" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/addon/lint/lint.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/addon/lint/lint.js" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/addon/lint/lint.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/addon/lint/yaml-lint.js" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/addon/lint/yaml-lint.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/addon/merge/merge.css" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/addon/merge/merge.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/addon/merge/merge.js" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/addon/merge/merge.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/addon/mode/loadmode.js" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/addon/mode/loadmode.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/addon/mode/multiplex.js" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/addon/mode/multiplex.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/addon/mode/multiplex_test.js" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/addon/mode/multiplex_test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/addon/mode/overlay.js" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/addon/mode/overlay.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/addon/mode/simple.js" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/addon/mode/simple.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/addon/runmode/colorize.js" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/addon/runmode/colorize.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/addon/runmode/runmode-standalone.js" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/addon/runmode/runmode-standalone.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/addon/runmode/runmode.js" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/addon/runmode/runmode.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/addon/runmode/runmode.node.js" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/addon/runmode/runmode.node.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/addon/scroll/annotatescrollbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/addon/scroll/annotatescrollbar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/addon/scroll/scrollpastend.js" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/addon/scroll/scrollpastend.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/addon/scroll/simplescrollbars.css" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/addon/scroll/simplescrollbars.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/addon/scroll/simplescrollbars.js" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/addon/scroll/simplescrollbars.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/addon/search/jump-to-line.js" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/addon/search/jump-to-line.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/addon/search/match-highlighter.js" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/addon/search/match-highlighter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/addon/search/matchesonscrollbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/addon/search/matchesonscrollbar.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/addon/search/matchesonscrollbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/addon/search/matchesonscrollbar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/addon/search/search.js" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/addon/search/search.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/addon/search/searchcursor.js" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/addon/search/searchcursor.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/addon/selection/active-line.js" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/addon/selection/active-line.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/addon/selection/mark-selection.js" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/addon/selection/mark-selection.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/addon/selection/selection-pointer.js" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/addon/selection/selection-pointer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/addon/tern/tern.css" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/addon/tern/tern.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/addon/tern/tern.js" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/addon/tern/tern.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/addon/tern/worker.js" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/addon/tern/worker.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/addon/wrap/hardwrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/addon/wrap/hardwrap.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/keymap/emacs.js" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/keymap/emacs.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/keymap/sublime.js" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/keymap/sublime.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/keymap/vim.js" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/keymap/vim.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/lib/codemirror.css" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/lib/codemirror.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/lib/codemirror.js" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/lib/codemirror.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/mode/css/css.js" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/mode/css/css.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/mode/css/gss.html" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/mode/css/gss.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/mode/css/gss_test.js" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/mode/css/gss_test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/mode/css/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/mode/css/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/mode/css/less.html" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/mode/css/less.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/mode/css/less_test.js" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/mode/css/less_test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/mode/css/scss.html" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/mode/css/scss.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/mode/css/scss_test.js" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/mode/css/scss_test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/mode/css/test.js" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/mode/css/test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/mode/handlebars/handlebars.js" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/mode/handlebars/handlebars.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/mode/handlebars/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/mode/handlebars/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/mode/htmlmixed/htmlmixed.js" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/mode/htmlmixed/htmlmixed.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/mode/htmlmixed/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/mode/htmlmixed/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/mode/javascript/javascript.js" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/mode/javascript/javascript.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/mode/javascript/test.js" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/mode/javascript/test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/mode/meta.js" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/mode/meta.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/mode/vbscript/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/mode/vbscript/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/mode/vbscript/vbscript.js" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/mode/vbscript/vbscript.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/mode/xml/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/mode/xml/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/mode/xml/test.js" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/mode/xml/test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/mode/xml/xml.js" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/mode/xml/xml.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/theme/mdn-like.css" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/theme/mdn-like.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/theme/paraiso-light.css" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/theme/paraiso-light.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/util/formatting.js" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/codemirror/util/formatting.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/css/template-mgt.css" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/css/template-mgt.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/edit-template-finish.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/edit-template-finish.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/edit-template.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/edit-template.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/get-template.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/get-template.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/js/template-mgt.js" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/js/template-mgt.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/list-templates.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/list-templates.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/remove-template-finish.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/classes/web/template-mgt/remove-template-finish.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/src/main/java/org/wso2/carbon/identity/template/mgt/TemplateManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/src/main/java/org/wso2/carbon/identity/template/mgt/TemplateManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/src/main/java/org/wso2/carbon/identity/template/mgt/TemplateManagerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/src/main/java/org/wso2/carbon/identity/template/mgt/TemplateManagerImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/src/main/java/org/wso2/carbon/identity/template/mgt/dao/TemplateManagerDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/src/main/java/org/wso2/carbon/identity/template/mgt/dao/TemplateManagerDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/src/main/java/org/wso2/carbon/identity/template/mgt/dao/impl/TemplateManagerDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/src/main/java/org/wso2/carbon/identity/template/mgt/dao/impl/TemplateManagerDAOImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/src/main/java/org/wso2/carbon/identity/template/mgt/model/Template.java" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/src/main/java/org/wso2/carbon/identity/template/mgt/model/Template.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/src/main/java/org/wso2/carbon/identity/template/mgt/model/TemplateInfo.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/src/test/java/org/wso2/carbon/identity/template/mgt/dao/impl/TemplateManagerDAOImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/src/test/java/org/wso2/carbon/identity/template/mgt/dao/impl/TemplateManagerDAOImplTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/target/classes/org/wso2/carbon/identity/template/mgt/TemplateManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/target/classes/org/wso2/carbon/identity/template/mgt/TemplateManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/target/classes/org/wso2/carbon/identity/template/mgt/TemplateManagerImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/target/classes/org/wso2/carbon/identity/template/mgt/TemplateManagerImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/target/classes/org/wso2/carbon/identity/template/mgt/dao/TemplateManagerDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/target/classes/org/wso2/carbon/identity/template/mgt/dao/TemplateManagerDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/target/classes/org/wso2/carbon/identity/template/mgt/dao/impl/TemplateManagerDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/target/classes/org/wso2/carbon/identity/template/mgt/dao/impl/TemplateManagerDAOImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/target/classes/org/wso2/carbon/identity/template/mgt/model/Template.class" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/target/classes/org/wso2/carbon/identity/template/mgt/model/Template.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/target/test-classes/org/wso2/carbon/identity/template/mgt/dao/impl/TemplateManagerDAOImplTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/target/test-classes/org/wso2/carbon/identity/template/mgt/dao/impl/TemplateManagerDAOImplTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/src/test/java/org/wso2/carbon/identity/template/mgt/model/TemplateTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/src/test/java/org/wso2/carbon/identity/template/mgt/model/TemplateTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -176,35 +161,35 @@
           <entry key="DEPENDENCIES" value="2" />
           <entry key="LICENSE" value="1" />
           <entry key="class" value="47" />
-          <entry key="css" value="1" />
+          <entry key="css" value="2" />
           <entry key="gif" value="1" />
           <entry key="gitignore" value="3" />
           <entry key="html" value="7" />
           <entry key="iml" value="1" />
-          <entry key="java" value="321" />
+          <entry key="java" value="322" />
           <entry key="js" value="12" />
           <entry key="jsp" value="39" />
           <entry key="png" value="1" />
-          <entry key="properties" value="6" />
+          <entry key="properties" value="7" />
           <entry key="sql" value="4" />
-          <entry key="xml" value="88" />
+          <entry key="xml" value="89" />
           <entry key="yaml" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="47" />
-          <entry key="CSS" value="1" />
+          <entry key="CSS" value="2" />
           <entry key="HTML" value="7" />
           <entry key="IDEA_MODULE" value="1" />
           <entry key="Image" value="2" />
-          <entry key="JAVA" value="321" />
+          <entry key="JAVA" value="322" />
           <entry key="JSP" value="36" />
           <entry key="JavaScript" value="12" />
           <entry key="PLAIN_TEXT" value="9" />
-          <entry key="Properties" value="6" />
+          <entry key="Properties" value="7" />
           <entry key="SQL" value="4" />
-          <entry key="XML" value="88" />
+          <entry key="XML" value="89" />
           <entry key="YAML" value="13" />
         </counts>
       </usages-collector>
@@ -250,47 +235,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/src/main/java/org/wso2/carbon/identity/template/mgt/dao/impl/TemplateManagerDAOImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="62" column="4" lean-forward="true" selection-start-line="62" selection-start-column="4" selection-end-line="62" selection-end-column="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/java/org/wso2/carbon/identity/template/mgt/ui/client/TemplateManagementServiceClient.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="69" column="28" selection-start-line="69" selection-start-column="28" selection-end-line="69" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/src/main/java/org/wso2/carbon/identity/template/mgt/model/TemplateInfo.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="990">
-              <caret line="82" column="27" lean-forward="true" selection-start-line="82" selection-start-column="27" selection-end-line="82" selection-end-column="27" />
-              <folding>
-                <element signature="e#1453#1454#0" expanded="true" />
-                <element signature="e#1486#1487#0" expanded="true" />
-                <element signature="e#1790#1791#0" expanded="true" />
-                <element signature="e#1821#1822#0" expanded="true" />
-                <element signature="e#2122#2123#0" expanded="true" />
-                <element signature="e#2157#2158#0" expanded="true" />
-                <element signature="e#2683#2684#0" expanded="true" />
-                <element signature="e#2717#2718#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/src/main/java/org/wso2/carbon/identity/template/mgt/model/Template.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="780">
-              <caret line="52" lean-forward="true" selection-start-line="52" selection-end-line="52" />
+              <caret line="70" selection-start-line="70" selection-end-line="70" />
               <folding>
                 <element signature="e#0#4340#0" expanded="true" />
               </folding>
@@ -302,16 +250,55 @@
         <entry file="file://$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/src/main/java/org/wso2/carbon/identity/template/mgt/TemplateManagerImpl.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="630">
-              <caret line="72" column="30" selection-start-line="72" selection-start-column="30" selection-end-line="72" selection-end-column="30" />
+              <caret line="74" column="26" selection-start-line="74" selection-start-column="26" selection-end-line="74" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/src/main/java/org/wso2/carbon/identity/template/mgt/TemplateMgtConstants.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="435">
+              <caret line="45" selection-start-line="45" selection-end-line="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/src/main/java/org/wso2/carbon/identity/template/mgt/exception/TemplateManagementClientException.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+              <folding>
+                <element signature="e#0#1330#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/org/wso2/carbon/identity/template/mgt/ui/i18n/Resources.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="405">
+              <caret line="27" column="53" lean-forward="true" selection-start-line="27" selection-start-column="53" selection-end-line="27" selection-end-column="53" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/css/template-mgt.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="20" column="26" lean-forward="true" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/src/main/java/org/wso2/carbon/identity/template/mgt/TemplateMgtConstants.java">
+        <entry file="file://$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="240">
-              <caret line="32" column="23" lean-forward="true" selection-start-line="32" selection-start-column="23" selection-end-line="32" selection-end-column="23" />
+              <caret line="16" selection-start-line="16" selection-end-line="16" />
             </state>
           </provider>
         </entry>
@@ -326,22 +313,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/src/test/java/org/wso2/carbon/identity/template/mgt/dao/impl/TemplateManagerDAOImplTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="615">
-              <caret line="57" column="63" lean-forward="true" selection-start-line="57" selection-start-column="63" selection-end-line="57" selection-end-column="63" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/src/main/java/org/wso2/carbon/identity/template/mgt/TemplateManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="630">
-              <caret line="62" column="17" selection-start-line="62" selection-start-column="17" selection-end-line="62" selection-end-column="17" />
+            <state relative-caret-position="900">
+              <caret line="61" column="17" selection-start-line="61" selection-start-column="17" selection-end-line="61" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -349,15 +324,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/src/test/java/org/wso2/carbon/identity/template/mgt/model/TemplateTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="825">
-              <caret line="75" lean-forward="true" selection-start-line="75" selection-end-line="75" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1895#1896#0" expanded="true" />
-                <element signature="e#1971#1972#0" expanded="true" />
-                <element signature="e#2239#2240#0" expanded="true" />
-                <element signature="e#2313#2314#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="750">
+              <caret line="68" selection-start-line="68" selection-end-line="68" />
             </state>
           </provider>
         </entry>
@@ -420,7 +388,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.endpoint/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.endpoint/src/main/webapp/META-INF/webapp-classloading.xml" />
         <option value="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/src/main/java/org/wso2/carbon/identity/template/mgt/internal/TemplateManagerComponent.java" />
         <option value="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.endpoint/src/gen/java/org/wso2/carbon/identity/template/mgt/endpoint/dto/UpdateTemplateRequestDTO.java" />
@@ -430,7 +397,6 @@
         <option value="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/java/org/wso2/carbon/identity/template/mgt/ui/util/TemplateUIUtils.java" />
         <option value="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/java/org/wso2/carbon/identity/template/mgt/ui/TemplateUIUtils.java" />
         <option value="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/java/org/wso2/carbon/identity/template/mgt/ui/dto/AddTemplateResponseDTO.java" />
-        <option value="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/css/template-mgt.css" />
         <option value="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/target/maven-shared-archive-resources/META-INF/DEPENDENCIES" />
         <option value="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/java/org/wso2/carbon/identity/template/mgt/ui/internal/TemplateManagementUIServiceDataHolder.java" />
         <option value="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/java/org/wso2/carbon/identity/template/mgt/ui/internal/TemplateMgtUIServiceComponent.java" />
@@ -471,6 +437,8 @@
         <option value="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/src/main/java/org/wso2/carbon/identity/template/mgt/model/Template.java" />
         <option value="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/src/main/java/org/wso2/carbon/identity/template/mgt/dao/impl/TemplateManagerDAOImpl.java" />
         <option value="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/src/main/java/org/wso2/carbon/identity/template/mgt/model/TemplateInfo.java" />
+        <option value="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/src/main/java/org/wso2/carbon/identity/template/mgt/exception/TemplateManagementClientException.java" />
+        <option value="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/css/template-mgt.css" />
       </list>
     </option>
   </component>
@@ -544,351 +512,6 @@
               <item name="template-mgt" type="b2602c69:ProjectViewProjectNode" />
               <item name="template-mgt" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="template-mgt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="template-mgt" type="462c0819:PsiDirectoryNode" />
-              <item name="org.wso2.carbon.identity.template.mgt" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="template-mgt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="template-mgt" type="462c0819:PsiDirectoryNode" />
-              <item name="org.wso2.carbon.identity.template.mgt" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="template-mgt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="template-mgt" type="462c0819:PsiDirectoryNode" />
-              <item name="org.wso2.carbon.identity.template.mgt" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="template-mgt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="template-mgt" type="462c0819:PsiDirectoryNode" />
-              <item name="org.wso2.carbon.identity.template.mgt" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="template-mgt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="template-mgt" type="462c0819:PsiDirectoryNode" />
-              <item name="org.wso2.carbon.identity.template.mgt" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="mgt" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="template-mgt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="template-mgt" type="462c0819:PsiDirectoryNode" />
-              <item name="org.wso2.carbon.identity.template.mgt" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="mgt" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="template-mgt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="template-mgt" type="462c0819:PsiDirectoryNode" />
-              <item name="org.wso2.carbon.identity.template.mgt" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="mgt" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="template-mgt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="template-mgt" type="462c0819:PsiDirectoryNode" />
-              <item name="org.wso2.carbon.identity.template.mgt" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="mgt" type="462c0819:PsiDirectoryNode" />
-              <item name="exception" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="template-mgt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="template-mgt" type="462c0819:PsiDirectoryNode" />
-              <item name="org.wso2.carbon.identity.template.mgt" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="mgt" type="462c0819:PsiDirectoryNode" />
-              <item name="internal" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="template-mgt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="template-mgt" type="462c0819:PsiDirectoryNode" />
-              <item name="org.wso2.carbon.identity.template.mgt" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="mgt" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="template-mgt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="template-mgt" type="462c0819:PsiDirectoryNode" />
-              <item name="org.wso2.carbon.identity.template.mgt" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="template-mgt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="template-mgt" type="462c0819:PsiDirectoryNode" />
-              <item name="org.wso2.carbon.identity.template.mgt" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="template-mgt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="template-mgt" type="462c0819:PsiDirectoryNode" />
-              <item name="org.wso2.carbon.identity.template.mgt" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="mgt" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="template-mgt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="template-mgt" type="462c0819:PsiDirectoryNode" />
-              <item name="org.wso2.carbon.identity.template.mgt" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="mgt" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="template-mgt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="template-mgt" type="462c0819:PsiDirectoryNode" />
-              <item name="org.wso2.carbon.identity.template.mgt" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="mgt" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="template-mgt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="template-mgt" type="462c0819:PsiDirectoryNode" />
-              <item name="org.wso2.carbon.identity.template.mgt" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="mgt" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="template-mgt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="template-mgt" type="462c0819:PsiDirectoryNode" />
-              <item name="org.wso2.carbon.identity.template.mgt" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="template-mgt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="template-mgt" type="462c0819:PsiDirectoryNode" />
-              <item name="org.wso2.carbon.identity.template.mgt" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="dbscripts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="template-mgt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="template-mgt" type="462c0819:PsiDirectoryNode" />
-              <item name="org.wso2.carbon.identity.template.mgt.endpoint" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="template-mgt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="template-mgt" type="462c0819:PsiDirectoryNode" />
-              <item name="org.wso2.carbon.identity.template.mgt.endpoint" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="template-mgt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="template-mgt" type="462c0819:PsiDirectoryNode" />
-              <item name="org.wso2.carbon.identity.template.mgt.endpoint" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="gen" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="template-mgt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="template-mgt" type="462c0819:PsiDirectoryNode" />
-              <item name="org.wso2.carbon.identity.template.mgt.endpoint" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="gen" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="template-mgt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="template-mgt" type="462c0819:PsiDirectoryNode" />
-              <item name="org.wso2.carbon.identity.template.mgt.endpoint" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="gen" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="endpoint" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="template-mgt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="template-mgt" type="462c0819:PsiDirectoryNode" />
-              <item name="org.wso2.carbon.identity.template.mgt.endpoint" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="gen" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="endpoint" type="462c0819:PsiDirectoryNode" />
-              <item name="dto" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="template-mgt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="template-mgt" type="462c0819:PsiDirectoryNode" />
-              <item name="org.wso2.carbon.identity.template.mgt.endpoint" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="template-mgt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="template-mgt" type="462c0819:PsiDirectoryNode" />
-              <item name="org.wso2.carbon.identity.template.mgt.endpoint" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="template-mgt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="template-mgt" type="462c0819:PsiDirectoryNode" />
-              <item name="org.wso2.carbon.identity.template.mgt.endpoint" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="endpoint" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="template-mgt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="template-mgt" type="462c0819:PsiDirectoryNode" />
-              <item name="org.wso2.carbon.identity.template.mgt.endpoint" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="endpoint" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="template-mgt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="template-mgt" type="462c0819:PsiDirectoryNode" />
-              <item name="org.wso2.carbon.identity.template.mgt.endpoint" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="endpoint" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="template-mgt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="template-mgt" type="462c0819:PsiDirectoryNode" />
-              <item name="org.wso2.carbon.identity.template.mgt.endpoint" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="template-mgt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="template-mgt" type="462c0819:PsiDirectoryNode" />
-              <item name="org.wso2.carbon.identity.template.mgt.ui" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="template-mgt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="template-mgt" type="462c0819:PsiDirectoryNode" />
-              <item name="org.wso2.carbon.identity.template.mgt.ui" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="template-mgt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="template-mgt" type="462c0819:PsiDirectoryNode" />
-              <item name="org.wso2.carbon.identity.template.mgt.ui" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="template-mgt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="template-mgt" type="462c0819:PsiDirectoryNode" />
-              <item name="org.wso2.carbon.identity.template.mgt.ui" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="template-mgt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="template-mgt" type="462c0819:PsiDirectoryNode" />
-              <item name="org.wso2.carbon.identity.template.mgt.ui" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ui" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="template-mgt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="template-mgt" type="462c0819:PsiDirectoryNode" />
-              <item name="org.wso2.carbon.identity.template.mgt.ui" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ui" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="template-mgt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="template-mgt" type="462c0819:PsiDirectoryNode" />
-              <item name="org.wso2.carbon.identity.template.mgt.ui" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ui" type="462c0819:PsiDirectoryNode" />
-              <item name="dto" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="template-mgt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="template-mgt" type="462c0819:PsiDirectoryNode" />
-              <item name="org.wso2.carbon.identity.template.mgt.ui" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ui" type="462c0819:PsiDirectoryNode" />
-              <item name="internal" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="template-mgt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="template-mgt" type="462c0819:PsiDirectoryNode" />
-              <item name="org.wso2.carbon.identity.template.mgt.ui" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="template-mgt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="template-mgt" type="462c0819:PsiDirectoryNode" />
-              <item name="org.wso2.carbon.identity.template.mgt.ui" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="i18n" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="template-mgt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="template-mgt" type="462c0819:PsiDirectoryNode" />
-              <item name="org.wso2.carbon.identity.template.mgt.ui" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="template-mgt" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -899,7 +522,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541002562152" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541003471458" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="TestNG" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.TestNG" value="" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers" value="true" />
@@ -1116,7 +739,7 @@
       <workItem from="1540870964683" duration="16353000" />
       <workItem from="1540897560075" duration="2261000" />
       <workItem from="1540958673843" duration="7009000" />
-      <workItem from="1540999759911" duration="3297000" />
+      <workItem from="1540999759911" duration="3707000" />
     </task>
     <servers />
   </component>
@@ -1153,7 +776,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="351739000" />
+    <option name="totallyTimeSpent" value="352149000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="-2" width="1920" height="1035" extended-state="6" />
@@ -1263,12 +886,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/images/templateManager.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/images/add.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/META-INF/component.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -1278,13 +895,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/mode/handlebars/handlebars.js">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/org/wso2/carbon/identity/template/mgt/ui/i18n/Resources.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="73" selection-start-line="27" selection-start-column="73" selection-end-line="27" selection-end-column="73" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/codemirror/mode/htmlmixed/htmlmixed.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -1384,13 +994,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -1473,6 +1076,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
           <caret line="39" column="22" selection-start-line="39" selection-start-column="22" selection-end-line="39" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1541,39 +1147,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/java/org/wso2/carbon/identity/template/mgt/ui/client/TemplateManagementServiceClient.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="69" column="28" selection-start-line="69" selection-start-column="28" selection-end-line="69" selection-end-column="28" />
+        <state relative-caret-position="1005">
+          <caret line="68" column="24" selection-start-line="68" selection-start-column="24" selection-end-line="68" selection-end-column="24" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/src/main/java/org/wso2/carbon/identity/template/mgt/dao/impl/TemplateManagerDAOImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="62" column="4" lean-forward="true" selection-start-line="62" selection-start-column="4" selection-end-line="62" selection-end-column="4" />
+        <state relative-caret-position="840">
+          <caret line="61" column="4" selection-start-line="61" selection-start-column="4" selection-end-line="61" selection-end-column="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/src/test/java/org/wso2/carbon/identity/template/mgt/dao/impl/TemplateManagerDAOImplTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="615">
-          <caret line="57" column="63" lean-forward="true" selection-start-line="57" selection-start-column="63" selection-end-line="57" selection-end-column="63" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="765">
+          <caret line="56" column="63" selection-start-line="56" selection-start-column="63" selection-end-line="56" selection-end-column="63" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/src/test/java/org/wso2/carbon/identity/template/mgt/model/TemplateTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="825">
-          <caret line="75" lean-forward="true" selection-start-line="75" selection-end-line="75" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1895#1896#0" expanded="true" />
-            <element signature="e#1971#1972#0" expanded="true" />
-            <element signature="e#2239#2240#0" expanded="true" />
-            <element signature="e#2313#2314#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="750">
+          <caret line="68" selection-start-line="68" selection-end-line="68" />
         </state>
       </provider>
     </entry>
@@ -1604,7 +1200,7 @@
     <entry file="file://$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/src/main/java/org/wso2/carbon/identity/template/mgt/model/Template.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="780">
-          <caret line="52" lean-forward="true" selection-start-line="52" selection-end-line="52" />
+          <caret line="70" selection-start-line="70" selection-end-line="70" />
           <folding>
             <element signature="e#0#4340#0" expanded="true" />
           </folding>
@@ -1613,22 +1209,53 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/src/main/java/org/wso2/carbon/identity/template/mgt/TemplateManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="62" column="17" selection-start-line="62" selection-start-column="17" selection-end-line="62" selection-end-column="17" />
+        <state relative-caret-position="900">
+          <caret line="61" column="17" selection-start-line="61" selection-start-column="17" selection-end-line="61" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/src/main/java/org/wso2/carbon/identity/template/mgt/TemplateManagerImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="630">
-          <caret line="72" column="30" selection-start-line="72" selection-start-column="30" selection-end-line="72" selection-end-column="30" />
+          <caret line="74" column="26" selection-start-line="74" selection-start-column="26" selection-end-line="74" selection-end-column="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/src/main/java/org/wso2/carbon/identity/template/mgt/TemplateMgtConstants.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="45" selection-start-line="45" selection-end-line="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/src/main/java/org/wso2/carbon/identity/template/mgt/exception/TemplateManagementClientException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#1330#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/org/wso2/carbon/identity/template/mgt/ui/i18n/Resources.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="53" lean-forward="true" selection-start-line="27" selection-start-column="53" selection-end-line="27" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/css/template-mgt.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="26" lean-forward="true" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
-          <caret line="32" column="23" lean-forward="true" selection-start-line="32" selection-start-column="23" selection-end-line="32" selection-end-column="23" />
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
         </state>
       </provider>
     </entry>

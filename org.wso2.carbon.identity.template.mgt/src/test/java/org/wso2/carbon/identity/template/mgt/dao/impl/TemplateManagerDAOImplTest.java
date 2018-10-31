@@ -30,7 +30,6 @@ import org.wso2.carbon.identity.template.mgt.exception.TemplateManagementExcepti
 import org.wso2.carbon.identity.template.mgt.exception.TemplateManagementServerException;
 import org.wso2.carbon.identity.template.mgt.internal.TemplateManagerComponentDataHolder;
 import org.wso2.carbon.identity.template.mgt.model.Template;
-import org.wso2.carbon.identity.template.mgt.model.TemplateInfo;
 
 import javax.sql.DataSource;
 import java.sql.Connection;
@@ -186,7 +185,7 @@ public class TemplateManagerDAOImplTest extends PowerMockTestCase {
             when(dataSource.getConnection()).thenReturn(connection);
 
             TemplateManagerDAO templateManagerDAO = new TemplateManagerDAOImpl();
-            TemplateInfo templateResult = templateManagerDAO.addTemplate(((Template) template));
+            Template templateResult = templateManagerDAO.addTemplate(((Template) template));
 
             Assert.assertEquals(templateResult.getTemplateName(), ((Template) template).getTemplateName());
             Assert.assertEquals(templateResult.getTenantId(), ((Template) template).getTenantId());
@@ -220,7 +219,7 @@ public class TemplateManagerDAOImplTest extends PowerMockTestCase {
 
             try(Connection connection1 = getConnection()){
                 when(dataSource.getConnection()).thenReturn(connection1);
-                TemplateInfo updatedTemplate = templateManagerDAO.updateTemplate(oldTemplateName, ((Template) newTemplate));
+                Template updatedTemplate = templateManagerDAO.updateTemplate(oldTemplateName, ((Template) newTemplate));
                 Assert.assertEquals(((Template) newTemplate).getTenantId(),updatedTemplate.getTenantId());
                 Assert.assertEquals(((Template) newTemplate).getTemplateName(),updatedTemplate.getTemplateName());
             }
@@ -298,16 +297,16 @@ public class TemplateManagerDAOImplTest extends PowerMockTestCase {
 
             TemplateManagerDAO templateManagerDAO = new TemplateManagerDAOImpl();
 
-            TemplateInfo templateResult1 = templateManagerDAO.addTemplate(template1);
+            Template templateResult1 = templateManagerDAO.addTemplate(template1);
             Assert.assertEquals(templateResult1.getTemplateName(),template1.getTemplateName());
 
-            TemplateInfo templateResult2 = templateManagerDAO.addTemplate(template2);
+            Template templateResult2 = templateManagerDAO.addTemplate(template2);
             Assert.assertEquals(templateResult2.getTemplateName(),template2.getTemplateName());
 
-            TemplateInfo templateResult3 = templateManagerDAO.addTemplate(template3);
+            Template templateResult3 = templateManagerDAO.addTemplate(template3);
             Assert.assertEquals(templateResult3.getTemplateName(),template3.getTemplateName());
 
-            List<TemplateInfo> templateList = templateManagerDAO.getAllTemplates(tenantId,limit, offset);
+            List<Template> templateList = templateManagerDAO.getAllTemplates(tenantId,limit, offset);
 
             Assert.assertEquals(templateList.size(),resultSize);
         }
@@ -329,13 +328,13 @@ public class TemplateManagerDAOImplTest extends PowerMockTestCase {
             Connection spyConnection = spyConnection(connection);
             when(dataSource.getConnection()).thenReturn(spyConnection);
 
-            TemplateInfo templateResult1 = templateManagerDAO.addTemplate(template1);
+            Template templateResult1 = templateManagerDAO.addTemplate(template1);
             Assert.assertEquals(templateResult1.getTemplateName(),template1.getTemplateName());
 
-            TemplateInfo templateResult2 = templateManagerDAO.addTemplate(template2);
+            Template templateResult2 = templateManagerDAO.addTemplate(template2);
             Assert.assertEquals(templateResult2.getTemplateName(),template2.getTemplateName());
 
-            TemplateInfo templateResult3 = templateManagerDAO.addTemplate(template3);
+            Template templateResult3 = templateManagerDAO.addTemplate(template3);
             Assert.assertEquals(templateResult3.getTemplateName(),template3.getTemplateName());
         }
 
@@ -357,7 +356,7 @@ public class TemplateManagerDAOImplTest extends PowerMockTestCase {
             when(dataSource.getConnection()).thenReturn(spyConnection);
 
             TemplateManagerDAO templateManagerDAO = new TemplateManagerDAOImpl();
-            TemplateInfo templateResult = templateManagerDAO.addTemplate(((Template) template));
+            Template templateResult = templateManagerDAO.addTemplate(((Template) template));
             Assert.assertEquals(templateResult.getTemplateName(), ((Template) template).getTemplateName());
 
             String deletedTemplateName = templateManagerDAO.deleteTemplate(templateResult.getTemplateName(),templateResult.getTenantId());
@@ -378,7 +377,7 @@ public class TemplateManagerDAOImplTest extends PowerMockTestCase {
             Connection spyConnection = spyConnection(connection);
             when(dataSource.getConnection()).thenReturn(spyConnection);
 
-            TemplateInfo templateResult = templateManagerDAO.addTemplate(((Template) template));
+            Template templateResult = templateManagerDAO.addTemplate(((Template) template));
             Assert.assertEquals(templateResult.getTemplateName(), ((Template) template).getTemplateName());
         }
         templateManagerDAO.deleteTemplate(((Template) template).getTemplateName(),((Template) template).getTenantId());

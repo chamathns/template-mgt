@@ -40,7 +40,7 @@ public class TemplateTest {
 
     @Test
     public void testSetTemplateId() {
-        Integer templateId = 101;
+        Integer templateId = 1;
         template.setTemplateId(templateId);
         Assert.assertEquals(template.getTemplateId(),templateId);
     }
@@ -52,45 +52,30 @@ public class TemplateTest {
 
     @Test
     public void testSetTenantId() {
-        Integer tenantId = 101;
-        template.setTenantId(tenantId);
-        Assert.assertEquals(template.getTenantId(),tenantId);
+        Integer tenantId = 1;
     }
 
     @Test
     public void testGetTemplateName() {
-        Assert.assertEquals(template.getTemplateName(),templateName);
     }
 
     @Test
     public void testSetTemplateName() {
-        String templateName = "test Name";
-        template.setTemplateName(templateName);
-        Assert.assertEquals(template.getTemplateName(),templateName);
     }
 
     @Test
     public void testGetDescription() {
-        Assert.assertEquals(template.getDescription(),description);
     }
 
     @Test
     public void testSetDescription() {
-        String description = "test description";
-        template.setDescription(description);
-        Assert.assertEquals(template.getDescription(),description);
     }
 
     @Test
     public void testGetTemplateScript() {
-        Assert.assertEquals(template.getTemplateScript(),script);
-
     }
 
     @Test
     public void testSetTemplateScript() {
-        String script = "test script";
-        template.setTemplateScript(script);
-        Assert.assertEquals(template.getTemplateScript(),script);
     }
 }

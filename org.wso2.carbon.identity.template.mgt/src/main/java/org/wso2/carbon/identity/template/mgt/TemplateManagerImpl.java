@@ -25,7 +25,6 @@ import org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImpl;
 import org.wso2.carbon.identity.template.mgt.exception.TemplateManagementClientException;
 import org.wso2.carbon.identity.template.mgt.exception.TemplateManagementException;
 import org.wso2.carbon.identity.template.mgt.model.Template;
-import org.wso2.carbon.identity.template.mgt.model.TemplateInfo;
 
 import java.util.List;
 
@@ -44,10 +43,11 @@ public class TemplateManagerImpl implements  TemplateManager {
     private static final Integer DEFAULT_SEARCH_LIMIT = 100;
 
     @Override
-    public TemplateInfo addTemplate(Template template) throws TemplateManagementException {
+    public Template addTemplate(Template template) throws TemplateManagementException {
         validateInputParameters(template);
         TemplateManagerDAO templateManagerDAO = new TemplateManagerDAOImpl();
-        return templateManagerDAO.addTemplate(template);
+        Template templateResponse = templateManagerDAO.addTemplate(template);
+        return templateResponse;
     }
 
     @Override
@@ -57,20 +57,22 @@ public class TemplateManagerImpl implements  TemplateManager {
     }
 
     @Override
-    public TemplateInfo updateTemplate(String templateName, Template template) throws TemplateManagementException {
+    public Template updateTemplate(String templateName, Template template) throws TemplateManagementException {
         validateInputParameters(template);
         TemplateManagerDAO templateManagerDAO = new TemplateManagerDAOImpl();
-        return templateManagerDAO.updateTemplate(templateName,template);
+        Template updateSuccessResponse = templateManagerDAO.updateTemplate(templateName,template);
+        return updateSuccessResponse;
     }
 
     @Override
     public String deleteTemplate(String templateName) throws TemplateManagementException {
         TemplateManagerDAO templateManagerDAO = new TemplateManagerDAOImpl();
-        return templateManagerDAO.deleteTemplate(templateName, getTenantIdFromCarbonContext());
+        String deletedTemplateName = templateManagerDAO.deleteTemplate(templateName, getTenantIdFromCarbonContext());
+        return deletedTemplateName;
     }
 
     @Override
-    public List<TemplateInfo> listTemplates(Integer limit, Integer offset) throws TemplateManagementException {
+    public List<Template> listTemplates(Integer limit, Integer offset) throws TemplateManagementException {
 
         validatePaginationParameters(limit,offset);
         if (limit == 0) {

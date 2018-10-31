@@ -39,6 +39,24 @@ public class Template {
         this.description = description;
     }
 
+    public Template(Integer templateId, Integer tenantId, String templateName){
+        this.templateId = templateId;
+        this.tenantId = tenantId;
+        this.templateName = templateName;
+    }
+
+    public Template(Integer templateId, Integer tenantId){
+        this.templateId = templateId;
+        this.tenantId = tenantId;
+    }
+    public Template(Integer tenantId, String templateName){
+        this.tenantId = tenantId;
+        this.templateName = templateName;
+    }
+    public Template(String templateName, String description){
+        this.templateName = templateName;
+        this.description = description;
+    }
     public Template(Integer tenantId, String templateName, String description, String templateScript){
         this.tenantId = tenantId;
         this.templateName = templateName;
