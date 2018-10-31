@@ -20,6 +20,7 @@ package org.wso2.carbon.identity.template.mgt;
 
 import org.wso2.carbon.identity.template.mgt.exception.TemplateManagementException;
 import org.wso2.carbon.identity.template.mgt.model.Template;
+import org.wso2.carbon.identity.template.mgt.model.TemplateInfo;
 
 import java.util.List;
 
@@ -39,7 +40,7 @@ public interface TemplateManager {
      * @throws TemplateManagementException Template Management Exception.
      */
 
-    Template addTemplate(Template template) throws TemplateManagementException;
+    TemplateInfo addTemplate(Template template) throws TemplateManagementException;
 
     /**
      * This API is used to get the template by template name and tenant ID.
@@ -59,7 +60,7 @@ public interface TemplateManager {
      * @throws TemplateManagementException Template Management Exception.
      */
 
-    Template updateTemplate(String templateName,Template template) throws TemplateManagementException;
+    TemplateInfo updateTemplate(String templateName,Template template) throws TemplateManagementException;
 
 
     /**
@@ -78,6 +79,6 @@ public interface TemplateManager {
      * @return Filtered list of Template elements
      * @throws TemplateManagementException Template Management Exception.
      */
-    List<Template> listTemplates(Integer limit, Integer offset) throws TemplateManagementException;
+    List<TemplateInfo> listTemplates(Integer limit, Integer offset) throws TemplateManagementException;
 
 }

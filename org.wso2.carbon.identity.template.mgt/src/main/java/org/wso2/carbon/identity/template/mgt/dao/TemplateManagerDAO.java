@@ -20,6 +20,7 @@ package org.wso2.carbon.identity.template.mgt.dao;
 import org.wso2.carbon.identity.template.mgt.exception.TemplateManagementException;
 import org.wso2.carbon.identity.template.mgt.exception.TemplateManagementServerException;
 import org.wso2.carbon.identity.template.mgt.model.Template;
+import org.wso2.carbon.identity.template.mgt.model.TemplateInfo;
 
 import java.util.List;
 
@@ -31,13 +32,13 @@ public interface TemplateManagerDAO {
      * @return Inserted {@link Template}.
      * @throws TemplateManagementException If error occurs while adding the {@link Template}.
      */
-    Template addTemplate (Template template) throws TemplateManagementException;
+    TemplateInfo addTemplate (Template template) throws TemplateManagementException;
 
     Template getTemplateByName(String templateName, Integer tenantId) throws TemplateManagementException;
 
-    List<Template> getAllTemplates(Integer tenantId, Integer limit, Integer offset) throws TemplateManagementException;
+    List<TemplateInfo> getAllTemplates(Integer tenantId, Integer limit, Integer offset) throws TemplateManagementException;
 
-    Template updateTemplate(String templateName, Template newTemplate) throws TemplateManagementServerException;
+    TemplateInfo updateTemplate(String templateName, Template newTemplate) throws TemplateManagementServerException;
 
     String deleteTemplate(String templateName, Integer tenantId) throws TemplateManagementException;
 }
