@@ -1,83 +1,110 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="8" passed="8">
+<testng-results skipped="0" failed="0" ignored="0" total="30" passed="30">
   <reporter-output>
   </reporter-output>
-  <suite name="TemplateManagementTestSuite" duration-ms="1704" started-at="2018-10-30T08:55:01Z" finished-at="2018-10-30T08:55:02Z">
+  <suite name="TemplateManagementTestSuite" duration-ms="1786" started-at="2018-10-31T16:40:08Z" finished-at="2018-10-31T16:40:10Z">
     <groups>
     </groups>
-    <test name="TemplateManagementTests" duration-ms="1704" started-at="2018-10-30T08:55:01Z" finished-at="2018-10-30T08:55:02Z">
+    <test name="TemplateManagementTests" duration-ms="1786" started-at="2018-10-31T16:40:08Z" finished-at="2018-10-31T16:40:10Z">
       <class name="org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest">
-        <test-method status="PASS" signature="beforePowerMockTestClass()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@50bb1c1f]" name="beforePowerMockTestClass" is-config="true" duration-ms="34" started-at="2018-10-30T08:55:01Z" finished-at="2018-10-30T08:55:01Z">
+        <test-method status="PASS" signature="beforePowerMockTestClass()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@740ad32e]" name="beforePowerMockTestClass" is-config="true" duration-ms="27" started-at="2018-10-31T16:40:08Z" finished-at="2018-10-31T16:40:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforePowerMockTestClass -->
-        <test-method status="PASS" signature="beforePowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@50bb1c1f]" name="beforePowerMockTestMethod" is-config="true" duration-ms="387" started-at="2018-10-30T08:55:01Z" finished-at="2018-10-30T08:55:01Z">
+        <test-method status="PASS" signature="beforePowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@740ad32e]" name="beforePowerMockTestMethod" is-config="true" duration-ms="174" started-at="2018-10-31T16:40:08Z" finished-at="2018-10-31T16:40:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforePowerMockTestMethod -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@50bb1c1f]" name="setUp" is-config="true" duration-ms="751" started-at="2018-10-30T08:55:01Z" finished-at="2018-10-30T08:55:02Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@740ad32e]" name="setUp" is-config="true" duration-ms="648" started-at="2018-10-31T16:40:08Z" finished-at="2018-10-31T16:40:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testAddTemplate(java.lang.Object)[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@50bb1c1f]" name="testAddTemplate" duration-ms="391" started-at="2018-10-30T08:55:02Z" data-provider="TemplateDataProvider" finished-at="2018-10-30T08:55:02Z">
+        <test-method status="PASS" signature="testAddTemplate(java.lang.Object)[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@740ad32e]" name="testAddTemplate" duration-ms="417" started-at="2018-10-31T16:40:09Z" data-provider="TemplateDataProvider" finished-at="2018-10-31T16:40:09Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.wso2.carbon.identity.template.mgt.model.Template@66098fc2]]>
+                <![CDATA[org.wso2.carbon.identity.template.mgt.model.Template@633301e2]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAddTemplate -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@50bb1c1f]" name="tearDown" is-config="true" duration-ms="1" started-at="2018-10-30T08:55:02Z" finished-at="2018-10-30T08:55:02Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@740ad32e]" name="tearDown" is-config="true" duration-ms="1" started-at="2018-10-31T16:40:09Z" finished-at="2018-10-31T16:40:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="afterPowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@50bb1c1f]" name="afterPowerMockTestMethod" is-config="true" duration-ms="5" started-at="2018-10-30T08:55:02Z" finished-at="2018-10-30T08:55:02Z">
+        <test-method status="PASS" signature="afterPowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@740ad32e]" name="afterPowerMockTestMethod" is-config="true" duration-ms="8" started-at="2018-10-31T16:40:09Z" finished-at="2018-10-31T16:40:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterPowerMockTestMethod -->
-        <test-method status="PASS" signature="beforePowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@50bb1c1f]" name="beforePowerMockTestMethod" is-config="true" duration-ms="1" started-at="2018-10-30T08:55:02Z" finished-at="2018-10-30T08:55:02Z">
+        <test-method status="PASS" signature="beforePowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@740ad32e]" name="beforePowerMockTestMethod" is-config="true" duration-ms="2" started-at="2018-10-31T16:40:09Z" finished-at="2018-10-31T16:40:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforePowerMockTestMethod -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@50bb1c1f]" name="setUp" is-config="true" duration-ms="13" started-at="2018-10-30T08:55:02Z" finished-at="2018-10-30T08:55:02Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@740ad32e]" name="setUp" is-config="true" duration-ms="11" started-at="2018-10-31T16:40:09Z" finished-at="2018-10-31T16:40:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testAddTemplate(java.lang.Object)[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@50bb1c1f]" name="testAddTemplate" duration-ms="3" started-at="2018-10-30T08:55:02Z" data-provider="TemplateDataProvider" finished-at="2018-10-30T08:55:02Z">
+        <test-method status="PASS" signature="testAddTemplate(java.lang.Object)[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@740ad32e]" name="testAddTemplate" duration-ms="4" started-at="2018-10-31T16:40:09Z" data-provider="TemplateDataProvider" finished-at="2018-10-31T16:40:09Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.wso2.carbon.identity.template.mgt.model.Template@64f6183e]]>
+                <![CDATA[org.wso2.carbon.identity.template.mgt.model.Template@4254821c]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAddTemplate -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@50bb1c1f]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-10-30T08:55:02Z" finished-at="2018-10-30T08:55:02Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@740ad32e]" name="tearDown" is-config="true" duration-ms="1" started-at="2018-10-31T16:40:09Z" finished-at="2018-10-31T16:40:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="afterPowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@50bb1c1f]" name="afterPowerMockTestMethod" is-config="true" duration-ms="0" started-at="2018-10-30T08:55:02Z" finished-at="2018-10-30T08:55:02Z">
+        <test-method status="PASS" signature="afterPowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@740ad32e]" name="afterPowerMockTestMethod" is-config="true" duration-ms="1" started-at="2018-10-31T16:40:09Z" finished-at="2018-10-31T16:40:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterPowerMockTestMethod -->
-        <test-method status="PASS" signature="beforePowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@50bb1c1f]" name="beforePowerMockTestMethod" is-config="true" duration-ms="1" started-at="2018-10-30T08:55:02Z" finished-at="2018-10-30T08:55:02Z">
+        <test-method status="PASS" signature="beforePowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@740ad32e]" name="beforePowerMockTestMethod" is-config="true" duration-ms="1" started-at="2018-10-31T16:40:09Z" finished-at="2018-10-31T16:40:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforePowerMockTestMethod -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@50bb1c1f]" name="setUp" is-config="true" duration-ms="7" started-at="2018-10-30T08:55:02Z" finished-at="2018-10-30T08:55:02Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@740ad32e]" name="setUp" is-config="true" duration-ms="12" started-at="2018-10-31T16:40:09Z" finished-at="2018-10-31T16:40:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testAddTemplateServerException(java.lang.Object)[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@50bb1c1f]" name="testAddTemplateServerException" duration-ms="6" started-at="2018-10-30T08:55:02Z" data-provider="TemplateDataProvider" finished-at="2018-10-30T08:55:02Z">
+        <test-method status="PASS" signature="testAddTemplate(java.lang.Object)[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@740ad32e]" name="testAddTemplate" duration-ms="4" started-at="2018-10-31T16:40:09Z" data-provider="TemplateDataProvider" finished-at="2018-10-31T16:40:09Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.wso2.carbon.identity.template.mgt.model.Template@39810d27]]>
+                <![CDATA[org.wso2.carbon.identity.template.mgt.model.Template@1270c8ec]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddTemplate -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@740ad32e]" name="tearDown" is-config="true" duration-ms="1" started-at="2018-10-31T16:40:09Z" finished-at="2018-10-31T16:40:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="afterPowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@740ad32e]" name="afterPowerMockTestMethod" is-config="true" duration-ms="1" started-at="2018-10-31T16:40:09Z" finished-at="2018-10-31T16:40:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterPowerMockTestMethod -->
+        <test-method status="PASS" signature="beforePowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@740ad32e]" name="beforePowerMockTestMethod" is-config="true" duration-ms="1" started-at="2018-10-31T16:40:09Z" finished-at="2018-10-31T16:40:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforePowerMockTestMethod -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@740ad32e]" name="setUp" is-config="true" duration-ms="10" started-at="2018-10-31T16:40:09Z" finished-at="2018-10-31T16:40:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testAddTemplateServerException(java.lang.Object)[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@740ad32e]" name="testAddTemplateServerException" duration-ms="7" started-at="2018-10-31T16:40:09Z" data-provider="TemplateDataProvider" finished-at="2018-10-31T16:40:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.wso2.carbon.identity.template.mgt.model.Template@2c41b93]]>
               </value>
             </param>
           </params>
@@ -87,9 +114,9 @@
             </message>
             <full-stacktrace>
               <![CDATA[org.wso2.carbon.identity.template.mgt.exception.TemplateManagementServerException: Error occurred while adding the template: T1.
-at org.wso2.carbon.identity.template.mgt.util.TemplateMgtUtils.handleServerException(TemplateMgtUtils.java:46)
-at org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImpl.addTemplate(TemplateManagerDAOImpl.java:54)
-at org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest.testAddTemplateServerException(TemplateManagerDAOImplTest.java:154)
+at org.wso2.carbon.identity.template.mgt.util.TemplateMgtUtils.handleServerException(TemplateMgtUtils.java:48)
+at org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImpl.addTemplate(TemplateManagerDAOImpl.java:58)
+at org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest.testAddTemplateServerException(TemplateManagerDAOImplTest.java:206)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -118,9 +145,9 @@ at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:12
 at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
 at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
 at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
-Caused by: org.wso2.carbon.database.utils.jdbc.exceptions.DataAccessException: Error in performing Database query: '%s.'INSERT INTO IDN_TEMPLATE_MGT (TENANT_ID, NAME, DESCRIPTION, TEMPLATE_SCRIPT) VALUES (?,?,?,?)
+Caused by: org.wso2.carbon.database.utils.jdbc.exceptions.DataAccessException: Error in performing Database query: '%s.'INSERT INTO IDN_TEMPLATE_MGT (TENANT_ID, NAME, DESCRIPTION, TEMPLATE_SCRIPT) VALUES (?,?,?,?  )
 at org.wso2.carbon.database.utils.jdbc.JdbcTemplate.executeInsert(JdbcTemplate.java:302)
-at org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImpl.addTemplate(TemplateManagerDAOImpl.java:46)
+at org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImpl.addTemplate(TemplateManagerDAOImpl.java:50)
 ... 29 more
 Caused by: java.sql.SQLException: Connection is closed.
 at org.apache.commons.dbcp.PoolingDataSource$PoolGuardConnectionWrapper.checkOpen(PoolingDataSource.java:185)
@@ -133,27 +160,27 @@ at org.wso2.carbon.database.utils.jdbc.JdbcTemplate.executeInsert(JdbcTemplate.j
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAddTemplateServerException -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@50bb1c1f]" name="tearDown" is-config="true" duration-ms="1" started-at="2018-10-30T08:55:02Z" finished-at="2018-10-30T08:55:02Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@740ad32e]" name="tearDown" is-config="true" duration-ms="1" started-at="2018-10-31T16:40:09Z" finished-at="2018-10-31T16:40:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="afterPowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@50bb1c1f]" name="afterPowerMockTestMethod" is-config="true" duration-ms="0" started-at="2018-10-30T08:55:02Z" finished-at="2018-10-30T08:55:02Z">
+        <test-method status="PASS" signature="afterPowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@740ad32e]" name="afterPowerMockTestMethod" is-config="true" duration-ms="1" started-at="2018-10-31T16:40:09Z" finished-at="2018-10-31T16:40:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterPowerMockTestMethod -->
-        <test-method status="PASS" signature="beforePowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@50bb1c1f]" name="beforePowerMockTestMethod" is-config="true" duration-ms="1" started-at="2018-10-30T08:55:02Z" finished-at="2018-10-30T08:55:02Z">
+        <test-method status="PASS" signature="beforePowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@740ad32e]" name="beforePowerMockTestMethod" is-config="true" duration-ms="1" started-at="2018-10-31T16:40:09Z" finished-at="2018-10-31T16:40:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforePowerMockTestMethod -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@50bb1c1f]" name="setUp" is-config="true" duration-ms="7" started-at="2018-10-30T08:55:02Z" finished-at="2018-10-30T08:55:02Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@740ad32e]" name="setUp" is-config="true" duration-ms="9" started-at="2018-10-31T16:40:09Z" finished-at="2018-10-31T16:40:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testAddTemplateServerException(java.lang.Object)[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@50bb1c1f]" name="testAddTemplateServerException" duration-ms="2" started-at="2018-10-30T08:55:02Z" data-provider="TemplateDataProvider" finished-at="2018-10-30T08:55:02Z">
+        <test-method status="PASS" signature="testAddTemplateServerException(java.lang.Object)[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@740ad32e]" name="testAddTemplateServerException" duration-ms="2" started-at="2018-10-31T16:40:09Z" data-provider="TemplateDataProvider" finished-at="2018-10-31T16:40:09Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.wso2.carbon.identity.template.mgt.model.Template@26e57fce]]>
+                <![CDATA[org.wso2.carbon.identity.template.mgt.model.Template@28b8c4b1]]>
               </value>
             </param>
           </params>
@@ -163,9 +190,9 @@ at org.wso2.carbon.database.utils.jdbc.JdbcTemplate.executeInsert(JdbcTemplate.j
             </message>
             <full-stacktrace>
               <![CDATA[org.wso2.carbon.identity.template.mgt.exception.TemplateManagementServerException: Error occurred while adding the template: T2.
-at org.wso2.carbon.identity.template.mgt.util.TemplateMgtUtils.handleServerException(TemplateMgtUtils.java:46)
-at org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImpl.addTemplate(TemplateManagerDAOImpl.java:54)
-at org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest.testAddTemplateServerException(TemplateManagerDAOImplTest.java:154)
+at org.wso2.carbon.identity.template.mgt.util.TemplateMgtUtils.handleServerException(TemplateMgtUtils.java:48)
+at org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImpl.addTemplate(TemplateManagerDAOImpl.java:58)
+at org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest.testAddTemplateServerException(TemplateManagerDAOImplTest.java:206)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -194,9 +221,9 @@ at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:12
 at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
 at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
 at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
-Caused by: org.wso2.carbon.database.utils.jdbc.exceptions.DataAccessException: Error in performing Database query: '%s.'INSERT INTO IDN_TEMPLATE_MGT (TENANT_ID, NAME, DESCRIPTION, TEMPLATE_SCRIPT) VALUES (?,?,?,?)
+Caused by: org.wso2.carbon.database.utils.jdbc.exceptions.DataAccessException: Error in performing Database query: '%s.'INSERT INTO IDN_TEMPLATE_MGT (TENANT_ID, NAME, DESCRIPTION, TEMPLATE_SCRIPT) VALUES (?,?,?,?  )
 at org.wso2.carbon.database.utils.jdbc.JdbcTemplate.executeInsert(JdbcTemplate.java:302)
-at org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImpl.addTemplate(TemplateManagerDAOImpl.java:46)
+at org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImpl.addTemplate(TemplateManagerDAOImpl.java:50)
 ... 29 more
 Caused by: java.sql.SQLException: Connection is closed.
 at org.apache.commons.dbcp.PoolingDataSource$PoolGuardConnectionWrapper.checkOpen(PoolingDataSource.java:185)
@@ -209,27 +236,412 @@ at org.wso2.carbon.database.utils.jdbc.JdbcTemplate.executeInsert(JdbcTemplate.j
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAddTemplateServerException -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@50bb1c1f]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-10-30T08:55:02Z" finished-at="2018-10-30T08:55:02Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@740ad32e]" name="tearDown" is-config="true" duration-ms="1" started-at="2018-10-31T16:40:09Z" finished-at="2018-10-31T16:40:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="afterPowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@50bb1c1f]" name="afterPowerMockTestMethod" is-config="true" duration-ms="1" started-at="2018-10-30T08:55:02Z" finished-at="2018-10-30T08:55:02Z">
+        <test-method status="PASS" signature="afterPowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@740ad32e]" name="afterPowerMockTestMethod" is-config="true" duration-ms="0" started-at="2018-10-31T16:40:09Z" finished-at="2018-10-31T16:40:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterPowerMockTestMethod -->
-        <test-method status="PASS" signature="beforePowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@50bb1c1f]" name="beforePowerMockTestMethod" is-config="true" duration-ms="1" started-at="2018-10-30T08:55:02Z" finished-at="2018-10-30T08:55:02Z">
+        <test-method status="PASS" signature="beforePowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@740ad32e]" name="beforePowerMockTestMethod" is-config="true" duration-ms="1" started-at="2018-10-31T16:40:09Z" finished-at="2018-10-31T16:40:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforePowerMockTestMethod -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@50bb1c1f]" name="setUp" is-config="true" duration-ms="7" started-at="2018-10-30T08:55:02Z" finished-at="2018-10-30T08:55:02Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@740ad32e]" name="setUp" is-config="true" duration-ms="7" started-at="2018-10-31T16:40:09Z" finished-at="2018-10-31T16:40:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testGetTemplateByName(java.lang.Object, java.lang.Integer)[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@50bb1c1f]" name="testGetTemplateByName" duration-ms="8" started-at="2018-10-30T08:55:02Z" data-provider="getTemplateByNameDataProvider" finished-at="2018-10-30T08:55:02Z">
+        <test-method status="PASS" signature="testAddTemplateServerException(java.lang.Object)[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@740ad32e]" name="testAddTemplateServerException" duration-ms="2" started-at="2018-10-31T16:40:09Z" data-provider="TemplateDataProvider" finished-at="2018-10-31T16:40:09Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.wso2.carbon.identity.template.mgt.model.Template@7a3eee76]]>
+                <![CDATA[org.wso2.carbon.identity.template.mgt.model.Template@5f581cf0]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.wso2.carbon.identity.template.mgt.exception.TemplateManagementServerException">
+            <message>
+              <![CDATA[Error occurred while adding the template: T3.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.wso2.carbon.identity.template.mgt.exception.TemplateManagementServerException: Error occurred while adding the template: T3.
+at org.wso2.carbon.identity.template.mgt.util.TemplateMgtUtils.handleServerException(TemplateMgtUtils.java:48)
+at org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImpl.addTemplate(TemplateManagerDAOImpl.java:58)
+at org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest.testAddTemplateServerException(TemplateManagerDAOImplTest.java:206)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
+Caused by: org.wso2.carbon.database.utils.jdbc.exceptions.DataAccessException: Error in performing Database query: '%s.'INSERT INTO IDN_TEMPLATE_MGT (TENANT_ID, NAME, DESCRIPTION, TEMPLATE_SCRIPT) VALUES (?,?,?,?  )
+at org.wso2.carbon.database.utils.jdbc.JdbcTemplate.executeInsert(JdbcTemplate.java:302)
+at org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImpl.addTemplate(TemplateManagerDAOImpl.java:50)
+... 29 more
+Caused by: java.sql.SQLException: Connection is closed.
+at org.apache.commons.dbcp.PoolingDataSource$PoolGuardConnectionWrapper.checkOpen(PoolingDataSource.java:185)
+at org.apache.commons.dbcp.PoolingDataSource$PoolGuardConnectionWrapper.getMetaData(PoolingDataSource.java:244)
+at org.wso2.carbon.database.utils.jdbc.JdbcTemplate.executeInsert(JdbcTemplate.java:270)
+... 30 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.wso2.carbon.identity.template.mgt.exception.TemplateManagementServerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddTemplateServerException -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@740ad32e]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-10-31T16:40:09Z" finished-at="2018-10-31T16:40:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="afterPowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@740ad32e]" name="afterPowerMockTestMethod" is-config="true" duration-ms="0" started-at="2018-10-31T16:40:09Z" finished-at="2018-10-31T16:40:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterPowerMockTestMethod -->
+        <test-method status="PASS" signature="beforePowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@740ad32e]" name="beforePowerMockTestMethod" is-config="true" duration-ms="1" started-at="2018-10-31T16:40:09Z" finished-at="2018-10-31T16:40:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforePowerMockTestMethod -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@740ad32e]" name="setUp" is-config="true" duration-ms="7" started-at="2018-10-31T16:40:09Z" finished-at="2018-10-31T16:40:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testDeleteTemplate(java.lang.Object)[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@740ad32e]" name="testDeleteTemplate" duration-ms="109" started-at="2018-10-31T16:40:09Z" data-provider="TemplateDataProvider" finished-at="2018-10-31T16:40:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.wso2.carbon.identity.template.mgt.model.Template@43adbe93]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDeleteTemplate -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@740ad32e]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-10-31T16:40:09Z" finished-at="2018-10-31T16:40:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="afterPowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@740ad32e]" name="afterPowerMockTestMethod" is-config="true" duration-ms="0" started-at="2018-10-31T16:40:09Z" finished-at="2018-10-31T16:40:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterPowerMockTestMethod -->
+        <test-method status="PASS" signature="beforePowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@740ad32e]" name="beforePowerMockTestMethod" is-config="true" duration-ms="1" started-at="2018-10-31T16:40:09Z" finished-at="2018-10-31T16:40:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforePowerMockTestMethod -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@740ad32e]" name="setUp" is-config="true" duration-ms="6" started-at="2018-10-31T16:40:09Z" finished-at="2018-10-31T16:40:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testDeleteTemplate(java.lang.Object)[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@740ad32e]" name="testDeleteTemplate" duration-ms="5" started-at="2018-10-31T16:40:09Z" data-provider="TemplateDataProvider" finished-at="2018-10-31T16:40:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.wso2.carbon.identity.template.mgt.model.Template@73d3b3fe]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDeleteTemplate -->
+        <test-method status="PASS" signature="afterPowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@740ad32e]" name="afterPowerMockTestMethod" is-config="true" duration-ms="1" started-at="2018-10-31T16:40:09Z" finished-at="2018-10-31T16:40:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterPowerMockTestMethod -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@740ad32e]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-10-31T16:40:09Z" finished-at="2018-10-31T16:40:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="beforePowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@740ad32e]" name="beforePowerMockTestMethod" is-config="true" duration-ms="1" started-at="2018-10-31T16:40:09Z" finished-at="2018-10-31T16:40:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforePowerMockTestMethod -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@740ad32e]" name="setUp" is-config="true" duration-ms="6" started-at="2018-10-31T16:40:09Z" finished-at="2018-10-31T16:40:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testDeleteTemplate(java.lang.Object)[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@740ad32e]" name="testDeleteTemplate" duration-ms="4" started-at="2018-10-31T16:40:10Z" data-provider="TemplateDataProvider" finished-at="2018-10-31T16:40:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.wso2.carbon.identity.template.mgt.model.Template@433e71aa]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDeleteTemplate -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@740ad32e]" name="tearDown" is-config="true" duration-ms="1" started-at="2018-10-31T16:40:10Z" finished-at="2018-10-31T16:40:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="afterPowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@740ad32e]" name="afterPowerMockTestMethod" is-config="true" duration-ms="0" started-at="2018-10-31T16:40:10Z" finished-at="2018-10-31T16:40:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterPowerMockTestMethod -->
+        <test-method status="PASS" signature="beforePowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@740ad32e]" name="beforePowerMockTestMethod" is-config="true" duration-ms="1" started-at="2018-10-31T16:40:10Z" finished-at="2018-10-31T16:40:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforePowerMockTestMethod -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@740ad32e]" name="setUp" is-config="true" duration-ms="5" started-at="2018-10-31T16:40:10Z" finished-at="2018-10-31T16:40:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testDeleteTemplateDataAccessException(java.lang.Object)[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@740ad32e]" name="testDeleteTemplateDataAccessException" duration-ms="6" started-at="2018-10-31T16:40:10Z" data-provider="TemplateDataProvider" finished-at="2018-10-31T16:40:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.wso2.carbon.identity.template.mgt.model.Template@73b0b1d5]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.wso2.carbon.identity.template.mgt.exception.TemplateManagementServerException">
+            <message>
+              <![CDATA[Error occurred while deleting template from DB for tenant ID: -1234 and template name: T1.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.wso2.carbon.identity.template.mgt.exception.TemplateManagementServerException: Error occurred while deleting template from DB for tenant ID: -1234 and template name: T1.
+at org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImpl.deleteTemplate(TemplateManagerDAOImpl.java:155)
+at org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest.testDeleteTemplateDataAccessException(TemplateManagerDAOImplTest.java:384)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
+Caused by: org.wso2.carbon.database.utils.jdbc.exceptions.DataAccessException: Error in performing Database query: '%s'DELETE FROM IDN_TEMPLATE_MGT WHERE NAME=? AND TENANT_ID =?
+at org.wso2.carbon.database.utils.jdbc.JdbcTemplate.executeUpdate(JdbcTemplate.java:230)
+at org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImpl.deleteTemplate(TemplateManagerDAOImpl.java:149)
+... 29 more
+Caused by: java.sql.SQLException: Connection conn59: url=jdbc:h2:mem:testTemplateMgtDB user=USERNAME is closed.
+at org.apache.commons.dbcp.DelegatingConnection.checkOpen(DelegatingConnection.java:398)
+at org.apache.commons.dbcp.DelegatingConnection.prepareStatement(DelegatingConnection.java:279)
+at org.apache.commons.dbcp.PoolingDataSource$PoolGuardConnectionWrapper.prepareStatement(PoolingDataSource.java:313)
+at org.wso2.carbon.database.utils.jdbc.JdbcTemplate.executeUpdate(JdbcTemplate.java:219)
+... 30 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.wso2.carbon.identity.template.mgt.exception.TemplateManagementServerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDeleteTemplateDataAccessException -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@740ad32e]" name="tearDown" is-config="true" duration-ms="1" started-at="2018-10-31T16:40:10Z" finished-at="2018-10-31T16:40:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="beforePowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@740ad32e]" name="beforePowerMockTestMethod" is-config="true" duration-ms="1" started-at="2018-10-31T16:40:10Z" finished-at="2018-10-31T16:40:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforePowerMockTestMethod -->
+        <test-method status="PASS" signature="afterPowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@740ad32e]" name="afterPowerMockTestMethod" is-config="true" duration-ms="0" started-at="2018-10-31T16:40:10Z" finished-at="2018-10-31T16:40:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterPowerMockTestMethod -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@740ad32e]" name="setUp" is-config="true" duration-ms="5" started-at="2018-10-31T16:40:10Z" finished-at="2018-10-31T16:40:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testDeleteTemplateDataAccessException(java.lang.Object)[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@740ad32e]" name="testDeleteTemplateDataAccessException" duration-ms="4" started-at="2018-10-31T16:40:10Z" data-provider="TemplateDataProvider" finished-at="2018-10-31T16:40:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.wso2.carbon.identity.template.mgt.model.Template@75ae7744]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.wso2.carbon.identity.template.mgt.exception.TemplateManagementServerException">
+            <message>
+              <![CDATA[Error occurred while deleting template from DB for tenant ID: 1 and template name: T2.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.wso2.carbon.identity.template.mgt.exception.TemplateManagementServerException: Error occurred while deleting template from DB for tenant ID: 1 and template name: T2.
+at org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImpl.deleteTemplate(TemplateManagerDAOImpl.java:155)
+at org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest.testDeleteTemplateDataAccessException(TemplateManagerDAOImplTest.java:384)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
+Caused by: org.wso2.carbon.database.utils.jdbc.exceptions.DataAccessException: Error in performing Database query: '%s'DELETE FROM IDN_TEMPLATE_MGT WHERE NAME=? AND TENANT_ID =?
+at org.wso2.carbon.database.utils.jdbc.JdbcTemplate.executeUpdate(JdbcTemplate.java:230)
+at org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImpl.deleteTemplate(TemplateManagerDAOImpl.java:149)
+... 29 more
+Caused by: java.sql.SQLException: Connection conn65: url=jdbc:h2:mem:testTemplateMgtDB user=USERNAME is closed.
+at org.apache.commons.dbcp.DelegatingConnection.checkOpen(DelegatingConnection.java:398)
+at org.apache.commons.dbcp.DelegatingConnection.prepareStatement(DelegatingConnection.java:279)
+at org.apache.commons.dbcp.PoolingDataSource$PoolGuardConnectionWrapper.prepareStatement(PoolingDataSource.java:313)
+at org.wso2.carbon.database.utils.jdbc.JdbcTemplate.executeUpdate(JdbcTemplate.java:219)
+... 30 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.wso2.carbon.identity.template.mgt.exception.TemplateManagementServerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDeleteTemplateDataAccessException -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@740ad32e]" name="tearDown" is-config="true" duration-ms="1" started-at="2018-10-31T16:40:10Z" finished-at="2018-10-31T16:40:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="beforePowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@740ad32e]" name="beforePowerMockTestMethod" is-config="true" duration-ms="1" started-at="2018-10-31T16:40:10Z" finished-at="2018-10-31T16:40:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforePowerMockTestMethod -->
+        <test-method status="PASS" signature="afterPowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@740ad32e]" name="afterPowerMockTestMethod" is-config="true" duration-ms="0" started-at="2018-10-31T16:40:10Z" finished-at="2018-10-31T16:40:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterPowerMockTestMethod -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@740ad32e]" name="setUp" is-config="true" duration-ms="5" started-at="2018-10-31T16:40:10Z" finished-at="2018-10-31T16:40:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testDeleteTemplateDataAccessException(java.lang.Object)[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@740ad32e]" name="testDeleteTemplateDataAccessException" duration-ms="3" started-at="2018-10-31T16:40:10Z" data-provider="TemplateDataProvider" finished-at="2018-10-31T16:40:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.wso2.carbon.identity.template.mgt.model.Template@3c108134]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.wso2.carbon.identity.template.mgt.exception.TemplateManagementServerException">
+            <message>
+              <![CDATA[Error occurred while deleting template from DB for tenant ID: -1234 and template name: T3.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.wso2.carbon.identity.template.mgt.exception.TemplateManagementServerException: Error occurred while deleting template from DB for tenant ID: -1234 and template name: T3.
+at org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImpl.deleteTemplate(TemplateManagerDAOImpl.java:155)
+at org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest.testDeleteTemplateDataAccessException(TemplateManagerDAOImplTest.java:384)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
+Caused by: org.wso2.carbon.database.utils.jdbc.exceptions.DataAccessException: Error in performing Database query: '%s'DELETE FROM IDN_TEMPLATE_MGT WHERE NAME=? AND TENANT_ID =?
+at org.wso2.carbon.database.utils.jdbc.JdbcTemplate.executeUpdate(JdbcTemplate.java:230)
+at org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImpl.deleteTemplate(TemplateManagerDAOImpl.java:149)
+... 29 more
+Caused by: java.sql.SQLException: Connection conn71: url=jdbc:h2:mem:testTemplateMgtDB user=USERNAME is closed.
+at org.apache.commons.dbcp.DelegatingConnection.checkOpen(DelegatingConnection.java:398)
+at org.apache.commons.dbcp.DelegatingConnection.prepareStatement(DelegatingConnection.java:279)
+at org.apache.commons.dbcp.PoolingDataSource$PoolGuardConnectionWrapper.prepareStatement(PoolingDataSource.java:313)
+at org.wso2.carbon.database.utils.jdbc.JdbcTemplate.executeUpdate(JdbcTemplate.java:219)
+... 30 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.wso2.carbon.identity.template.mgt.exception.TemplateManagementServerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDeleteTemplateDataAccessException -->
+        <test-method status="PASS" signature="afterPowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@740ad32e]" name="afterPowerMockTestMethod" is-config="true" duration-ms="0" started-at="2018-10-31T16:40:10Z" finished-at="2018-10-31T16:40:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterPowerMockTestMethod -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@740ad32e]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-10-31T16:40:10Z" finished-at="2018-10-31T16:40:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="beforePowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@740ad32e]" name="beforePowerMockTestMethod" is-config="true" duration-ms="1" started-at="2018-10-31T16:40:10Z" finished-at="2018-10-31T16:40:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforePowerMockTestMethod -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@740ad32e]" name="setUp" is-config="true" duration-ms="5" started-at="2018-10-31T16:40:10Z" finished-at="2018-10-31T16:40:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testGetTemplateByName(java.lang.Object, java.lang.Integer)[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@740ad32e]" name="testGetTemplateByName" duration-ms="6" started-at="2018-10-31T16:40:10Z" data-provider="getTemplateByNameDataProvider" finished-at="2018-10-31T16:40:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.wso2.carbon.identity.template.mgt.model.Template@75ed8f59]]>
               </value>
             </param>
             <param index="1">
@@ -241,27 +653,27 @@ at org.wso2.carbon.database.utils.jdbc.JdbcTemplate.executeInsert(JdbcTemplate.j
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testGetTemplateByName -->
-        <test-method status="PASS" signature="afterPowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@50bb1c1f]" name="afterPowerMockTestMethod" is-config="true" duration-ms="1" started-at="2018-10-30T08:55:02Z" finished-at="2018-10-30T08:55:02Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterPowerMockTestMethod -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@50bb1c1f]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-10-30T08:55:02Z" finished-at="2018-10-30T08:55:02Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@740ad32e]" name="tearDown" is-config="true" duration-ms="1" started-at="2018-10-31T16:40:10Z" finished-at="2018-10-31T16:40:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="beforePowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@50bb1c1f]" name="beforePowerMockTestMethod" is-config="true" duration-ms="1" started-at="2018-10-30T08:55:02Z" finished-at="2018-10-30T08:55:02Z">
+        <test-method status="PASS" signature="beforePowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@740ad32e]" name="beforePowerMockTestMethod" is-config="true" duration-ms="1" started-at="2018-10-31T16:40:10Z" finished-at="2018-10-31T16:40:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforePowerMockTestMethod -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@50bb1c1f]" name="setUp" is-config="true" duration-ms="6" started-at="2018-10-30T08:55:02Z" finished-at="2018-10-30T08:55:02Z">
+        <test-method status="PASS" signature="afterPowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@740ad32e]" name="afterPowerMockTestMethod" is-config="true" duration-ms="0" started-at="2018-10-31T16:40:10Z" finished-at="2018-10-31T16:40:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterPowerMockTestMethod -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@740ad32e]" name="setUp" is-config="true" duration-ms="5" started-at="2018-10-31T16:40:10Z" finished-at="2018-10-31T16:40:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testGetTemplateByName(java.lang.Object, java.lang.Integer)[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@50bb1c1f]" name="testGetTemplateByName" duration-ms="3" started-at="2018-10-30T08:55:02Z" data-provider="getTemplateByNameDataProvider" finished-at="2018-10-30T08:55:02Z">
+        <test-method status="PASS" signature="testGetTemplateByName(java.lang.Object, java.lang.Integer)[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@740ad32e]" name="testGetTemplateByName" duration-ms="3" started-at="2018-10-31T16:40:10Z" data-provider="getTemplateByNameDataProvider" finished-at="2018-10-31T16:40:10Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.wso2.carbon.identity.template.mgt.model.Template@1a74e65]]>
+                <![CDATA[org.wso2.carbon.identity.template.mgt.model.Template@5d9d7f05]]>
               </value>
             </param>
             <param index="1">
@@ -273,27 +685,59 @@ at org.wso2.carbon.database.utils.jdbc.JdbcTemplate.executeInsert(JdbcTemplate.j
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testGetTemplateByName -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@50bb1c1f]" name="tearDown" is-config="true" duration-ms="1" started-at="2018-10-30T08:55:02Z" finished-at="2018-10-30T08:55:02Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@740ad32e]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-10-31T16:40:10Z" finished-at="2018-10-31T16:40:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="afterPowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@50bb1c1f]" name="afterPowerMockTestMethod" is-config="true" duration-ms="0" started-at="2018-10-30T08:55:02Z" finished-at="2018-10-30T08:55:02Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterPowerMockTestMethod -->
-        <test-method status="PASS" signature="beforePowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@50bb1c1f]" name="beforePowerMockTestMethod" is-config="true" duration-ms="2" started-at="2018-10-30T08:55:02Z" finished-at="2018-10-30T08:55:02Z">
+        <test-method status="PASS" signature="beforePowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@740ad32e]" name="beforePowerMockTestMethod" is-config="true" duration-ms="1" started-at="2018-10-31T16:40:10Z" finished-at="2018-10-31T16:40:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforePowerMockTestMethod -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@50bb1c1f]" name="setUp" is-config="true" duration-ms="6" started-at="2018-10-30T08:55:02Z" finished-at="2018-10-30T08:55:02Z">
+        <test-method status="PASS" signature="afterPowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@740ad32e]" name="afterPowerMockTestMethod" is-config="true" duration-ms="0" started-at="2018-10-31T16:40:10Z" finished-at="2018-10-31T16:40:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterPowerMockTestMethod -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@740ad32e]" name="setUp" is-config="true" duration-ms="5" started-at="2018-10-31T16:40:10Z" finished-at="2018-10-31T16:40:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testGetTemplateByNameDataAccessException(java.lang.Object, java.lang.Integer)[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@50bb1c1f]" name="testGetTemplateByNameDataAccessException" duration-ms="4" started-at="2018-10-30T08:55:02Z" data-provider="getTemplateByNameDataProvider" finished-at="2018-10-30T08:55:02Z">
+        <test-method status="PASS" signature="testGetTemplateByName(java.lang.Object, java.lang.Integer)[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@740ad32e]" name="testGetTemplateByName" duration-ms="2" started-at="2018-10-31T16:40:10Z" data-provider="getTemplateByNameDataProvider" finished-at="2018-10-31T16:40:10Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.wso2.carbon.identity.template.mgt.model.Template@4325a2e6]]>
+                <![CDATA[org.wso2.carbon.identity.template.mgt.model.Template@73484926]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[-1234]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetTemplateByName -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@740ad32e]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-10-31T16:40:10Z" finished-at="2018-10-31T16:40:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="afterPowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@740ad32e]" name="afterPowerMockTestMethod" is-config="true" duration-ms="0" started-at="2018-10-31T16:40:10Z" finished-at="2018-10-31T16:40:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterPowerMockTestMethod -->
+        <test-method status="PASS" signature="beforePowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@740ad32e]" name="beforePowerMockTestMethod" is-config="true" duration-ms="1" started-at="2018-10-31T16:40:10Z" finished-at="2018-10-31T16:40:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforePowerMockTestMethod -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@740ad32e]" name="setUp" is-config="true" duration-ms="5" started-at="2018-10-31T16:40:10Z" finished-at="2018-10-31T16:40:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testGetTemplateByNameDataAccessException(java.lang.Object, java.lang.Integer)[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@740ad32e]" name="testGetTemplateByNameDataAccessException" duration-ms="3" started-at="2018-10-31T16:40:10Z" data-provider="getTemplateByNameDataProvider" finished-at="2018-10-31T16:40:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.wso2.carbon.identity.template.mgt.model.Template@5b5beabc]]>
               </value>
             </param>
             <param index="1">
@@ -308,8 +752,8 @@ at org.wso2.carbon.database.utils.jdbc.JdbcTemplate.executeInsert(JdbcTemplate.j
             </message>
             <full-stacktrace>
               <![CDATA[org.wso2.carbon.identity.template.mgt.exception.TemplateManagementServerException: Error occurred while retrieving template from DB for tenant ID: -1234 and template name: T1.
-at org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImpl.getTemplateByName(TemplateManagerDAOImpl.java:76)
-at org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest.testGetTemplateByNameDataAccessException(TemplateManagerDAOImplTest.java:193)
+at org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImpl.getTemplateByName(TemplateManagerDAOImpl.java:80)
+at org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest.testGetTemplateByNameDataAccessException(TemplateManagerDAOImplTest.java:280)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -340,7 +784,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter
 at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
 Caused by: org.wso2.carbon.database.utils.jdbc.exceptions.DataAccessException: Error in performing Database query: '%s'SELECT TEMPLATE_ID,TENANT_ID,NAME,DESCRIPTION,TEMPLATE_SCRIPT FROM IDN_TEMPLATE_MGT WHERE NAME=? AND TENANT_ID=?
 at org.wso2.carbon.database.utils.jdbc.JdbcTemplate.fetchSingleRecord(JdbcTemplate.java:205)
-at org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImpl.getTemplateByName(TemplateManagerDAOImpl.java:64)
+at org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImpl.getTemplateByName(TemplateManagerDAOImpl.java:68)
 ... 29 more
 Caused by: java.sql.SQLException: Connection is closed.
 at org.apache.commons.dbcp.PoolingDataSource$PoolGuardConnectionWrapper.checkOpen(PoolingDataSource.java:185)
@@ -353,27 +797,27 @@ at org.wso2.carbon.database.utils.jdbc.JdbcTemplate.fetchSingleRecord(JdbcTempla
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testGetTemplateByNameDataAccessException -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@50bb1c1f]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-10-30T08:55:02Z" finished-at="2018-10-30T08:55:02Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@740ad32e]" name="tearDown" is-config="true" duration-ms="1" started-at="2018-10-31T16:40:10Z" finished-at="2018-10-31T16:40:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="afterPowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@50bb1c1f]" name="afterPowerMockTestMethod" is-config="true" duration-ms="0" started-at="2018-10-30T08:55:02Z" finished-at="2018-10-30T08:55:02Z">
+        <test-method status="PASS" signature="afterPowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@740ad32e]" name="afterPowerMockTestMethod" is-config="true" duration-ms="1" started-at="2018-10-31T16:40:10Z" finished-at="2018-10-31T16:40:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterPowerMockTestMethod -->
-        <test-method status="PASS" signature="beforePowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@50bb1c1f]" name="beforePowerMockTestMethod" is-config="true" duration-ms="0" started-at="2018-10-30T08:55:02Z" finished-at="2018-10-30T08:55:02Z">
+        <test-method status="PASS" signature="beforePowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@740ad32e]" name="beforePowerMockTestMethod" is-config="true" duration-ms="1" started-at="2018-10-31T16:40:10Z" finished-at="2018-10-31T16:40:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforePowerMockTestMethod -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@50bb1c1f]" name="setUp" is-config="true" duration-ms="7" started-at="2018-10-30T08:55:02Z" finished-at="2018-10-30T08:55:02Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@740ad32e]" name="setUp" is-config="true" duration-ms="4" started-at="2018-10-31T16:40:10Z" finished-at="2018-10-31T16:40:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testGetTemplateByNameDataAccessException(java.lang.Object, java.lang.Integer)[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@50bb1c1f]" name="testGetTemplateByNameDataAccessException" duration-ms="3" started-at="2018-10-30T08:55:02Z" data-provider="getTemplateByNameDataProvider" finished-at="2018-10-30T08:55:02Z">
+        <test-method status="PASS" signature="testGetTemplateByNameDataAccessException(java.lang.Object, java.lang.Integer)[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@740ad32e]" name="testGetTemplateByNameDataAccessException" duration-ms="3" started-at="2018-10-31T16:40:10Z" data-provider="getTemplateByNameDataProvider" finished-at="2018-10-31T16:40:10Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.wso2.carbon.identity.template.mgt.model.Template@2b6c5c75]]>
+                <![CDATA[org.wso2.carbon.identity.template.mgt.model.Template@413c710e]]>
               </value>
             </param>
             <param index="1">
@@ -388,8 +832,8 @@ at org.wso2.carbon.database.utils.jdbc.JdbcTemplate.fetchSingleRecord(JdbcTempla
             </message>
             <full-stacktrace>
               <![CDATA[org.wso2.carbon.identity.template.mgt.exception.TemplateManagementServerException: Error occurred while retrieving template from DB for tenant ID: 1 and template name: T2.
-at org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImpl.getTemplateByName(TemplateManagerDAOImpl.java:76)
-at org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest.testGetTemplateByNameDataAccessException(TemplateManagerDAOImplTest.java:193)
+at org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImpl.getTemplateByName(TemplateManagerDAOImpl.java:80)
+at org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest.testGetTemplateByNameDataAccessException(TemplateManagerDAOImplTest.java:280)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -420,7 +864,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter
 at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
 Caused by: org.wso2.carbon.database.utils.jdbc.exceptions.DataAccessException: Error in performing Database query: '%s'SELECT TEMPLATE_ID,TENANT_ID,NAME,DESCRIPTION,TEMPLATE_SCRIPT FROM IDN_TEMPLATE_MGT WHERE NAME=? AND TENANT_ID=?
 at org.wso2.carbon.database.utils.jdbc.JdbcTemplate.fetchSingleRecord(JdbcTemplate.java:205)
-at org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImpl.getTemplateByName(TemplateManagerDAOImpl.java:64)
+at org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImpl.getTemplateByName(TemplateManagerDAOImpl.java:68)
 ... 29 more
 Caused by: java.sql.SQLException: Connection is closed.
 at org.apache.commons.dbcp.PoolingDataSource$PoolGuardConnectionWrapper.checkOpen(PoolingDataSource.java:185)
@@ -433,15 +877,869 @@ at org.wso2.carbon.database.utils.jdbc.JdbcTemplate.fetchSingleRecord(JdbcTempla
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testGetTemplateByNameDataAccessException -->
-        <test-method status="PASS" signature="afterPowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@50bb1c1f]" name="afterPowerMockTestMethod" is-config="true" duration-ms="1" started-at="2018-10-30T08:55:02Z" finished-at="2018-10-30T08:55:02Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterPowerMockTestMethod -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@50bb1c1f]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-10-30T08:55:02Z" finished-at="2018-10-30T08:55:02Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@740ad32e]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-10-31T16:40:10Z" finished-at="2018-10-31T16:40:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="afterPowerMockTestClass()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@50bb1c1f]" name="afterPowerMockTestClass" is-config="true" duration-ms="0" started-at="2018-10-30T08:55:02Z" finished-at="2018-10-30T08:55:02Z">
+        <test-method status="PASS" signature="afterPowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@740ad32e]" name="afterPowerMockTestMethod" is-config="true" duration-ms="1" started-at="2018-10-31T16:40:10Z" finished-at="2018-10-31T16:40:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterPowerMockTestMethod -->
+        <test-method status="PASS" signature="beforePowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@740ad32e]" name="beforePowerMockTestMethod" is-config="true" duration-ms="1" started-at="2018-10-31T16:40:10Z" finished-at="2018-10-31T16:40:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforePowerMockTestMethod -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@740ad32e]" name="setUp" is-config="true" duration-ms="5" started-at="2018-10-31T16:40:10Z" finished-at="2018-10-31T16:40:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testGetTemplateByNameDataAccessException(java.lang.Object, java.lang.Integer)[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@740ad32e]" name="testGetTemplateByNameDataAccessException" duration-ms="2" started-at="2018-10-31T16:40:10Z" data-provider="getTemplateByNameDataProvider" finished-at="2018-10-31T16:40:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.wso2.carbon.identity.template.mgt.model.Template@3aae6d53]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[-1234]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.wso2.carbon.identity.template.mgt.exception.TemplateManagementServerException">
+            <message>
+              <![CDATA[Error occurred while retrieving template from DB for tenant ID: -1234 and template name: T3.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.wso2.carbon.identity.template.mgt.exception.TemplateManagementServerException: Error occurred while retrieving template from DB for tenant ID: -1234 and template name: T3.
+at org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImpl.getTemplateByName(TemplateManagerDAOImpl.java:80)
+at org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest.testGetTemplateByNameDataAccessException(TemplateManagerDAOImplTest.java:280)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
+Caused by: org.wso2.carbon.database.utils.jdbc.exceptions.DataAccessException: Error in performing Database query: '%s'SELECT TEMPLATE_ID,TENANT_ID,NAME,DESCRIPTION,TEMPLATE_SCRIPT FROM IDN_TEMPLATE_MGT WHERE NAME=? AND TENANT_ID=?
+at org.wso2.carbon.database.utils.jdbc.JdbcTemplate.fetchSingleRecord(JdbcTemplate.java:205)
+at org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImpl.getTemplateByName(TemplateManagerDAOImpl.java:68)
+... 29 more
+Caused by: java.sql.SQLException: Connection is closed.
+at org.apache.commons.dbcp.PoolingDataSource$PoolGuardConnectionWrapper.checkOpen(PoolingDataSource.java:185)
+at org.apache.commons.dbcp.PoolingDataSource$PoolGuardConnectionWrapper.prepareStatement(PoolingDataSource.java:312)
+at org.wso2.carbon.database.utils.jdbc.JdbcTemplate.fetchSingleRecord(JdbcTemplate.java:186)
+... 30 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.wso2.carbon.identity.template.mgt.exception.TemplateManagementServerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetTemplateByNameDataAccessException -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@740ad32e]" name="tearDown" is-config="true" duration-ms="1" started-at="2018-10-31T16:40:10Z" finished-at="2018-10-31T16:40:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="afterPowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@740ad32e]" name="afterPowerMockTestMethod" is-config="true" duration-ms="0" started-at="2018-10-31T16:40:10Z" finished-at="2018-10-31T16:40:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterPowerMockTestMethod -->
+        <test-method status="PASS" signature="beforePowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@740ad32e]" name="beforePowerMockTestMethod" is-config="true" duration-ms="1" started-at="2018-10-31T16:40:10Z" finished-at="2018-10-31T16:40:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforePowerMockTestMethod -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@740ad32e]" name="setUp" is-config="true" duration-ms="4" started-at="2018-10-31T16:40:10Z" finished-at="2018-10-31T16:40:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testGetTemplateList(java.lang.Integer, java.lang.Integer, java.lang.Integer, int)[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@740ad32e]" name="testGetTemplateList" duration-ms="12" started-at="2018-10-31T16:40:10Z" data-provider="templateListProvider" finished-at="2018-10-31T16:40:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[-1234]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetTemplateList -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@740ad32e]" name="tearDown" is-config="true" duration-ms="1" started-at="2018-10-31T16:40:10Z" finished-at="2018-10-31T16:40:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="afterPowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@740ad32e]" name="afterPowerMockTestMethod" is-config="true" duration-ms="0" started-at="2018-10-31T16:40:10Z" finished-at="2018-10-31T16:40:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterPowerMockTestMethod -->
+        <test-method status="PASS" signature="beforePowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@740ad32e]" name="beforePowerMockTestMethod" is-config="true" duration-ms="1" started-at="2018-10-31T16:40:10Z" finished-at="2018-10-31T16:40:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforePowerMockTestMethod -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@740ad32e]" name="setUp" is-config="true" duration-ms="6" started-at="2018-10-31T16:40:10Z" finished-at="2018-10-31T16:40:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testGetTemplateList(java.lang.Integer, java.lang.Integer, java.lang.Integer, int)[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@740ad32e]" name="testGetTemplateList" duration-ms="5" started-at="2018-10-31T16:40:10Z" data-provider="templateListProvider" finished-at="2018-10-31T16:40:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[-1234]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetTemplateList -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@740ad32e]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-10-31T16:40:10Z" finished-at="2018-10-31T16:40:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="afterPowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@740ad32e]" name="afterPowerMockTestMethod" is-config="true" duration-ms="1" started-at="2018-10-31T16:40:10Z" finished-at="2018-10-31T16:40:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterPowerMockTestMethod -->
+        <test-method status="PASS" signature="beforePowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@740ad32e]" name="beforePowerMockTestMethod" is-config="true" duration-ms="1" started-at="2018-10-31T16:40:10Z" finished-at="2018-10-31T16:40:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforePowerMockTestMethod -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@740ad32e]" name="setUp" is-config="true" duration-ms="7" started-at="2018-10-31T16:40:10Z" finished-at="2018-10-31T16:40:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testGetTemplateList(java.lang.Integer, java.lang.Integer, java.lang.Integer, int)[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@740ad32e]" name="testGetTemplateList" duration-ms="8" started-at="2018-10-31T16:40:10Z" data-provider="templateListProvider" finished-at="2018-10-31T16:40:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[10]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[-1234]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetTemplateList -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@740ad32e]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-10-31T16:40:10Z" finished-at="2018-10-31T16:40:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="afterPowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@740ad32e]" name="afterPowerMockTestMethod" is-config="true" duration-ms="1" started-at="2018-10-31T16:40:10Z" finished-at="2018-10-31T16:40:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterPowerMockTestMethod -->
+        <test-method status="PASS" signature="beforePowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@740ad32e]" name="beforePowerMockTestMethod" is-config="true" duration-ms="1" started-at="2018-10-31T16:40:10Z" finished-at="2018-10-31T16:40:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforePowerMockTestMethod -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@740ad32e]" name="setUp" is-config="true" duration-ms="6" started-at="2018-10-31T16:40:10Z" finished-at="2018-10-31T16:40:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testGetTemplateListDataAccessException(java.lang.Integer, java.lang.Integer, java.lang.Integer, int)[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@740ad32e]" name="testGetTemplateListDataAccessException" duration-ms="8" started-at="2018-10-31T16:40:10Z" data-provider="templateListProvider" finished-at="2018-10-31T16:40:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[-1234]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.wso2.carbon.identity.template.mgt.exception.TemplateManagementServerException">
+            <message>
+              <![CDATA[Error occurred while listing template from DB for tenantID: -1234]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.wso2.carbon.identity.template.mgt.exception.TemplateManagementServerException: Error occurred while listing template from DB for tenantID: -1234
+at org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImpl.getAllTemplates(TemplateManagerDAOImpl.java:124)
+at org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest.testGetTemplateListDataAccessException(TemplateManagerDAOImplTest.java:342)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
+Caused by: org.wso2.carbon.database.utils.jdbc.exceptions.DataAccessException: Error while getting the database connection metadata.
+at org.wso2.carbon.database.utils.jdbc.JdbcTemplate.getDriverName(JdbcTemplate.java:368)
+at org.wso2.carbon.identity.template.mgt.util.JdbcUtils.isDBTypeOf(JdbcUtils.java:97)
+at org.wso2.carbon.identity.template.mgt.util.JdbcUtils.isH2MySqlOrPostgresDB(JdbcUtils.java:51)
+at org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImpl.getAllTemplates(TemplateManagerDAOImpl.java:92)
+... 29 more
+Caused by: java.sql.SQLException: Connection conn131: url=jdbc:h2:mem:testTemplateMgtDB user=USERNAME is closed.
+at org.apache.commons.dbcp.DelegatingConnection.checkOpen(DelegatingConnection.java:398)
+at org.apache.commons.dbcp.DelegatingConnection.getMetaData(DelegatingConnection.java:343)
+at org.apache.commons.dbcp.PoolingDataSource$PoolGuardConnectionWrapper.getMetaData(PoolingDataSource.java:245)
+at org.wso2.carbon.database.utils.jdbc.JdbcTemplate.getDriverName(JdbcTemplate.java:364)
+... 32 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.wso2.carbon.identity.template.mgt.exception.TemplateManagementServerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetTemplateListDataAccessException -->
+        <test-method status="PASS" signature="afterPowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@740ad32e]" name="afterPowerMockTestMethod" is-config="true" duration-ms="1" started-at="2018-10-31T16:40:10Z" finished-at="2018-10-31T16:40:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterPowerMockTestMethod -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@740ad32e]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-10-31T16:40:10Z" finished-at="2018-10-31T16:40:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="beforePowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@740ad32e]" name="beforePowerMockTestMethod" is-config="true" duration-ms="1" started-at="2018-10-31T16:40:10Z" finished-at="2018-10-31T16:40:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforePowerMockTestMethod -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@740ad32e]" name="setUp" is-config="true" duration-ms="7" started-at="2018-10-31T16:40:10Z" finished-at="2018-10-31T16:40:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testGetTemplateListDataAccessException(java.lang.Integer, java.lang.Integer, java.lang.Integer, int)[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@740ad32e]" name="testGetTemplateListDataAccessException" duration-ms="6" started-at="2018-10-31T16:40:10Z" data-provider="templateListProvider" finished-at="2018-10-31T16:40:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[-1234]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.wso2.carbon.identity.template.mgt.exception.TemplateManagementServerException">
+            <message>
+              <![CDATA[Error occurred while listing template from DB for tenantID: -1234]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.wso2.carbon.identity.template.mgt.exception.TemplateManagementServerException: Error occurred while listing template from DB for tenantID: -1234
+at org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImpl.getAllTemplates(TemplateManagerDAOImpl.java:124)
+at org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest.testGetTemplateListDataAccessException(TemplateManagerDAOImplTest.java:342)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
+Caused by: org.wso2.carbon.database.utils.jdbc.exceptions.DataAccessException: Error while getting the database connection metadata.
+at org.wso2.carbon.database.utils.jdbc.JdbcTemplate.getDriverName(JdbcTemplate.java:368)
+at org.wso2.carbon.identity.template.mgt.util.JdbcUtils.isDBTypeOf(JdbcUtils.java:97)
+at org.wso2.carbon.identity.template.mgt.util.JdbcUtils.isH2MySqlOrPostgresDB(JdbcUtils.java:51)
+at org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImpl.getAllTemplates(TemplateManagerDAOImpl.java:92)
+... 29 more
+Caused by: java.sql.SQLException: Connection conn137: url=jdbc:h2:mem:testTemplateMgtDB user=USERNAME is closed.
+at org.apache.commons.dbcp.DelegatingConnection.checkOpen(DelegatingConnection.java:398)
+at org.apache.commons.dbcp.DelegatingConnection.getMetaData(DelegatingConnection.java:343)
+at org.apache.commons.dbcp.PoolingDataSource$PoolGuardConnectionWrapper.getMetaData(PoolingDataSource.java:245)
+at org.wso2.carbon.database.utils.jdbc.JdbcTemplate.getDriverName(JdbcTemplate.java:364)
+... 32 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.wso2.carbon.identity.template.mgt.exception.TemplateManagementServerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetTemplateListDataAccessException -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@740ad32e]" name="tearDown" is-config="true" duration-ms="1" started-at="2018-10-31T16:40:10Z" finished-at="2018-10-31T16:40:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="beforePowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@740ad32e]" name="beforePowerMockTestMethod" is-config="true" duration-ms="1" started-at="2018-10-31T16:40:10Z" finished-at="2018-10-31T16:40:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforePowerMockTestMethod -->
+        <test-method status="PASS" signature="afterPowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@740ad32e]" name="afterPowerMockTestMethod" is-config="true" duration-ms="0" started-at="2018-10-31T16:40:10Z" finished-at="2018-10-31T16:40:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterPowerMockTestMethod -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@740ad32e]" name="setUp" is-config="true" duration-ms="5" started-at="2018-10-31T16:40:10Z" finished-at="2018-10-31T16:40:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testGetTemplateListDataAccessException(java.lang.Integer, java.lang.Integer, java.lang.Integer, int)[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@740ad32e]" name="testGetTemplateListDataAccessException" duration-ms="5" started-at="2018-10-31T16:40:10Z" data-provider="templateListProvider" finished-at="2018-10-31T16:40:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[10]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[-1234]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.wso2.carbon.identity.template.mgt.exception.TemplateManagementServerException">
+            <message>
+              <![CDATA[Error occurred while listing template from DB for tenantID: -1234]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.wso2.carbon.identity.template.mgt.exception.TemplateManagementServerException: Error occurred while listing template from DB for tenantID: -1234
+at org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImpl.getAllTemplates(TemplateManagerDAOImpl.java:124)
+at org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest.testGetTemplateListDataAccessException(TemplateManagerDAOImplTest.java:342)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
+Caused by: org.wso2.carbon.database.utils.jdbc.exceptions.DataAccessException: Error while getting the database connection metadata.
+at org.wso2.carbon.database.utils.jdbc.JdbcTemplate.getDriverName(JdbcTemplate.java:368)
+at org.wso2.carbon.identity.template.mgt.util.JdbcUtils.isDBTypeOf(JdbcUtils.java:97)
+at org.wso2.carbon.identity.template.mgt.util.JdbcUtils.isH2MySqlOrPostgresDB(JdbcUtils.java:51)
+at org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImpl.getAllTemplates(TemplateManagerDAOImpl.java:92)
+... 29 more
+Caused by: java.sql.SQLException: Connection conn143: url=jdbc:h2:mem:testTemplateMgtDB user=USERNAME is closed.
+at org.apache.commons.dbcp.DelegatingConnection.checkOpen(DelegatingConnection.java:398)
+at org.apache.commons.dbcp.DelegatingConnection.getMetaData(DelegatingConnection.java:343)
+at org.apache.commons.dbcp.PoolingDataSource$PoolGuardConnectionWrapper.getMetaData(PoolingDataSource.java:245)
+at org.wso2.carbon.database.utils.jdbc.JdbcTemplate.getDriverName(JdbcTemplate.java:364)
+... 32 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.wso2.carbon.identity.template.mgt.exception.TemplateManagementServerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetTemplateListDataAccessException -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@740ad32e]" name="tearDown" is-config="true" duration-ms="1" started-at="2018-10-31T16:40:10Z" finished-at="2018-10-31T16:40:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="afterPowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@740ad32e]" name="afterPowerMockTestMethod" is-config="true" duration-ms="0" started-at="2018-10-31T16:40:10Z" finished-at="2018-10-31T16:40:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterPowerMockTestMethod -->
+        <test-method status="PASS" signature="beforePowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@740ad32e]" name="beforePowerMockTestMethod" is-config="true" duration-ms="0" started-at="2018-10-31T16:40:10Z" finished-at="2018-10-31T16:40:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforePowerMockTestMethod -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@740ad32e]" name="setUp" is-config="true" duration-ms="5" started-at="2018-10-31T16:40:10Z" finished-at="2018-10-31T16:40:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testUpdateTemplate(java.lang.String, java.lang.Object, java.lang.Object)[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@740ad32e]" name="testUpdateTemplate" duration-ms="4" started-at="2018-10-31T16:40:10Z" data-provider="UpdateTemplateDataProvider" finished-at="2018-10-31T16:40:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[T1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.wso2.carbon.identity.template.mgt.model.Template@523e0ffb]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.wso2.carbon.identity.template.mgt.model.Template@8fa7f10]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUpdateTemplate -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@740ad32e]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-10-31T16:40:10Z" finished-at="2018-10-31T16:40:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="afterPowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@740ad32e]" name="afterPowerMockTestMethod" is-config="true" duration-ms="0" started-at="2018-10-31T16:40:10Z" finished-at="2018-10-31T16:40:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterPowerMockTestMethod -->
+        <test-method status="PASS" signature="beforePowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@740ad32e]" name="beforePowerMockTestMethod" is-config="true" duration-ms="1" started-at="2018-10-31T16:40:10Z" finished-at="2018-10-31T16:40:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforePowerMockTestMethod -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@740ad32e]" name="setUp" is-config="true" duration-ms="4" started-at="2018-10-31T16:40:10Z" finished-at="2018-10-31T16:40:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testUpdateTemplate(java.lang.String, java.lang.Object, java.lang.Object)[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@740ad32e]" name="testUpdateTemplate" duration-ms="3" started-at="2018-10-31T16:40:10Z" data-provider="UpdateTemplateDataProvider" finished-at="2018-10-31T16:40:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[T2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.wso2.carbon.identity.template.mgt.model.Template@6aa70b66]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.wso2.carbon.identity.template.mgt.model.Template@11ed8d43]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUpdateTemplate -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@740ad32e]" name="tearDown" is-config="true" duration-ms="1" started-at="2018-10-31T16:40:10Z" finished-at="2018-10-31T16:40:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="afterPowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@740ad32e]" name="afterPowerMockTestMethod" is-config="true" duration-ms="0" started-at="2018-10-31T16:40:10Z" finished-at="2018-10-31T16:40:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterPowerMockTestMethod -->
+        <test-method status="PASS" signature="beforePowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@740ad32e]" name="beforePowerMockTestMethod" is-config="true" duration-ms="1" started-at="2018-10-31T16:40:10Z" finished-at="2018-10-31T16:40:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforePowerMockTestMethod -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@740ad32e]" name="setUp" is-config="true" duration-ms="7" started-at="2018-10-31T16:40:10Z" finished-at="2018-10-31T16:40:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testUpdateTemplate(java.lang.String, java.lang.Object, java.lang.Object)[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@740ad32e]" name="testUpdateTemplate" duration-ms="3" started-at="2018-10-31T16:40:10Z" data-provider="UpdateTemplateDataProvider" finished-at="2018-10-31T16:40:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[T3]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.wso2.carbon.identity.template.mgt.model.Template@338e0952]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.wso2.carbon.identity.template.mgt.model.Template@6857e2cc]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUpdateTemplate -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@740ad32e]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-10-31T16:40:10Z" finished-at="2018-10-31T16:40:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="afterPowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@740ad32e]" name="afterPowerMockTestMethod" is-config="true" duration-ms="0" started-at="2018-10-31T16:40:10Z" finished-at="2018-10-31T16:40:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterPowerMockTestMethod -->
+        <test-method status="PASS" signature="beforePowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@740ad32e]" name="beforePowerMockTestMethod" is-config="true" duration-ms="1" started-at="2018-10-31T16:40:10Z" finished-at="2018-10-31T16:40:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforePowerMockTestMethod -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@740ad32e]" name="setUp" is-config="true" duration-ms="4" started-at="2018-10-31T16:40:10Z" finished-at="2018-10-31T16:40:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testUpdateTemplateServerException(java.lang.String, java.lang.Object, java.lang.Object)[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@740ad32e]" name="testUpdateTemplateServerException" duration-ms="2" started-at="2018-10-31T16:40:10Z" data-provider="UpdateTemplateDataProvider" finished-at="2018-10-31T16:40:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[T1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.wso2.carbon.identity.template.mgt.model.Template@3a79289b]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.wso2.carbon.identity.template.mgt.model.Template@47032d02]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.wso2.carbon.identity.template.mgt.exception.TemplateManagementServerException">
+            <message>
+              <![CDATA[Error occurred while updating the template: T1 Updated.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.wso2.carbon.identity.template.mgt.exception.TemplateManagementServerException: Error occurred while updating the template: T1 Updated.
+at org.wso2.carbon.identity.template.mgt.util.TemplateMgtUtils.handleServerException(TemplateMgtUtils.java:48)
+at org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImpl.updateTemplate(TemplateManagerDAOImpl.java:141)
+at org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest.testUpdateTemplateServerException(TemplateManagerDAOImplTest.java:240)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
+Caused by: org.wso2.carbon.database.utils.jdbc.exceptions.DataAccessException: Error in performing Database query: '%s'UPDATE IDN_TEMPLATE_MGT SET NAME= ?, DESCRIPTION= ?, TEMPLATE_SCRIPT= ? WHERE TENANT_ID= ? AND NAME = ?
+at org.wso2.carbon.database.utils.jdbc.JdbcTemplate.executeUpdate(JdbcTemplate.java:230)
+at org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImpl.updateTemplate(TemplateManagerDAOImpl.java:133)
+... 29 more
+Caused by: java.sql.SQLException: Connection is closed.
+at org.apache.commons.dbcp.PoolingDataSource$PoolGuardConnectionWrapper.checkOpen(PoolingDataSource.java:185)
+at org.apache.commons.dbcp.PoolingDataSource$PoolGuardConnectionWrapper.prepareStatement(PoolingDataSource.java:312)
+at org.wso2.carbon.database.utils.jdbc.JdbcTemplate.executeUpdate(JdbcTemplate.java:219)
+... 30 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.wso2.carbon.identity.template.mgt.exception.TemplateManagementServerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUpdateTemplateServerException -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@740ad32e]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-10-31T16:40:10Z" finished-at="2018-10-31T16:40:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="beforePowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@740ad32e]" name="beforePowerMockTestMethod" is-config="true" duration-ms="1" started-at="2018-10-31T16:40:10Z" finished-at="2018-10-31T16:40:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforePowerMockTestMethod -->
+        <test-method status="PASS" signature="afterPowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@740ad32e]" name="afterPowerMockTestMethod" is-config="true" duration-ms="0" started-at="2018-10-31T16:40:10Z" finished-at="2018-10-31T16:40:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterPowerMockTestMethod -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@740ad32e]" name="setUp" is-config="true" duration-ms="5" started-at="2018-10-31T16:40:10Z" finished-at="2018-10-31T16:40:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testUpdateTemplateServerException(java.lang.String, java.lang.Object, java.lang.Object)[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@740ad32e]" name="testUpdateTemplateServerException" duration-ms="3" started-at="2018-10-31T16:40:10Z" data-provider="UpdateTemplateDataProvider" finished-at="2018-10-31T16:40:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[T2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.wso2.carbon.identity.template.mgt.model.Template@7ee93eda]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.wso2.carbon.identity.template.mgt.model.Template@598bc41e]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.wso2.carbon.identity.template.mgt.exception.TemplateManagementServerException">
+            <message>
+              <![CDATA[Error occurred while updating the template: T2 Updated.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.wso2.carbon.identity.template.mgt.exception.TemplateManagementServerException: Error occurred while updating the template: T2 Updated.
+at org.wso2.carbon.identity.template.mgt.util.TemplateMgtUtils.handleServerException(TemplateMgtUtils.java:48)
+at org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImpl.updateTemplate(TemplateManagerDAOImpl.java:141)
+at org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest.testUpdateTemplateServerException(TemplateManagerDAOImplTest.java:240)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
+Caused by: org.wso2.carbon.database.utils.jdbc.exceptions.DataAccessException: Error in performing Database query: '%s'UPDATE IDN_TEMPLATE_MGT SET NAME= ?, DESCRIPTION= ?, TEMPLATE_SCRIPT= ? WHERE TENANT_ID= ? AND NAME = ?
+at org.wso2.carbon.database.utils.jdbc.JdbcTemplate.executeUpdate(JdbcTemplate.java:230)
+at org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImpl.updateTemplate(TemplateManagerDAOImpl.java:133)
+... 29 more
+Caused by: java.sql.SQLException: Connection is closed.
+at org.apache.commons.dbcp.PoolingDataSource$PoolGuardConnectionWrapper.checkOpen(PoolingDataSource.java:185)
+at org.apache.commons.dbcp.PoolingDataSource$PoolGuardConnectionWrapper.prepareStatement(PoolingDataSource.java:312)
+at org.wso2.carbon.database.utils.jdbc.JdbcTemplate.executeUpdate(JdbcTemplate.java:219)
+... 30 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.wso2.carbon.identity.template.mgt.exception.TemplateManagementServerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUpdateTemplateServerException -->
+        <test-method status="PASS" signature="afterPowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@740ad32e]" name="afterPowerMockTestMethod" is-config="true" duration-ms="1" started-at="2018-10-31T16:40:10Z" finished-at="2018-10-31T16:40:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterPowerMockTestMethod -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@740ad32e]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-10-31T16:40:10Z" finished-at="2018-10-31T16:40:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="beforePowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@740ad32e]" name="beforePowerMockTestMethod" is-config="true" duration-ms="1" started-at="2018-10-31T16:40:10Z" finished-at="2018-10-31T16:40:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforePowerMockTestMethod -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@740ad32e]" name="setUp" is-config="true" duration-ms="5" started-at="2018-10-31T16:40:10Z" finished-at="2018-10-31T16:40:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testUpdateTemplateServerException(java.lang.String, java.lang.Object, java.lang.Object)[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@740ad32e]" name="testUpdateTemplateServerException" duration-ms="2" started-at="2018-10-31T16:40:10Z" data-provider="UpdateTemplateDataProvider" finished-at="2018-10-31T16:40:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[T3]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.wso2.carbon.identity.template.mgt.model.Template@6cfccd32]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.wso2.carbon.identity.template.mgt.model.Template@776d13af]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.wso2.carbon.identity.template.mgt.exception.TemplateManagementServerException">
+            <message>
+              <![CDATA[Error occurred while updating the template: T3 Updated.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.wso2.carbon.identity.template.mgt.exception.TemplateManagementServerException: Error occurred while updating the template: T3 Updated.
+at org.wso2.carbon.identity.template.mgt.util.TemplateMgtUtils.handleServerException(TemplateMgtUtils.java:48)
+at org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImpl.updateTemplate(TemplateManagerDAOImpl.java:141)
+at org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest.testUpdateTemplateServerException(TemplateManagerDAOImplTest.java:240)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
+Caused by: org.wso2.carbon.database.utils.jdbc.exceptions.DataAccessException: Error in performing Database query: '%s'UPDATE IDN_TEMPLATE_MGT SET NAME= ?, DESCRIPTION= ?, TEMPLATE_SCRIPT= ? WHERE TENANT_ID= ? AND NAME = ?
+at org.wso2.carbon.database.utils.jdbc.JdbcTemplate.executeUpdate(JdbcTemplate.java:230)
+at org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImpl.updateTemplate(TemplateManagerDAOImpl.java:133)
+... 29 more
+Caused by: java.sql.SQLException: Connection is closed.
+at org.apache.commons.dbcp.PoolingDataSource$PoolGuardConnectionWrapper.checkOpen(PoolingDataSource.java:185)
+at org.apache.commons.dbcp.PoolingDataSource$PoolGuardConnectionWrapper.prepareStatement(PoolingDataSource.java:312)
+at org.wso2.carbon.database.utils.jdbc.JdbcTemplate.executeUpdate(JdbcTemplate.java:219)
+... 30 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.wso2.carbon.identity.template.mgt.exception.TemplateManagementServerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUpdateTemplateServerException -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@740ad32e]" name="tearDown" is-config="true" duration-ms="1" started-at="2018-10-31T16:40:10Z" finished-at="2018-10-31T16:40:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="afterPowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@740ad32e]" name="afterPowerMockTestMethod" is-config="true" duration-ms="0" started-at="2018-10-31T16:40:10Z" finished-at="2018-10-31T16:40:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterPowerMockTestMethod -->
+        <test-method status="PASS" signature="afterPowerMockTestClass()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@740ad32e]" name="afterPowerMockTestClass" is-config="true" duration-ms="1" started-at="2018-10-31T16:40:10Z" finished-at="2018-10-31T16:40:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterPowerMockTestClass -->

@@ -5,6 +5,7 @@ org/wso2/carbon/identity/template/mgt/TemplateManager.class
 org/wso2/carbon/identity/template/mgt/TemplateMgtConstants$ErrorMessages.class
 org/wso2/carbon/identity/template/mgt/util/TemplateMgtUtils.class
 org/wso2/carbon/identity/template/mgt/dao/TemplateManagerDAO.class
+org/wso2/carbon/identity/template/mgt/model/TemplateInfo.class
 org/wso2/carbon/identity/template/mgt/exception/TemplateManagementRuntimeException.class
 org/wso2/carbon/identity/template/mgt/internal/TemplateManagerComponent.class
 org/wso2/carbon/identity/template/mgt/TemplateMgtConstants.class

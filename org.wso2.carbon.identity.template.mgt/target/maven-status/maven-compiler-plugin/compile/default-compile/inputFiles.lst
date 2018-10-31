@@ -1,6 +1,7 @@
 /home/chamath/IdeaProjects/template-mgt/org.wso2.carbon.identity.template.mgt/src/main/java/org/wso2/carbon/identity/template/mgt/exception/TemplateManagementServerException.java
 /home/chamath/IdeaProjects/template-mgt/org.wso2.carbon.identity.template.mgt/src/main/java/org/wso2/carbon/identity/template/mgt/exception/TemplateManagementRuntimeException.java
 /home/chamath/IdeaProjects/template-mgt/org.wso2.carbon.identity.template.mgt/src/main/java/org/wso2/carbon/identity/template/mgt/TemplateManagerImpl.java
+/home/chamath/IdeaProjects/template-mgt/org.wso2.carbon.identity.template.mgt/src/main/java/org/wso2/carbon/identity/template/mgt/model/TemplateInfo.java
 /home/chamath/IdeaProjects/template-mgt/org.wso2.carbon.identity.template.mgt/src/main/java/org/wso2/carbon/identity/template/mgt/exception/TemplateManagementClientException.java
 /home/chamath/IdeaProjects/template-mgt/org.wso2.carbon.identity.template.mgt/src/main/java/org/wso2/carbon/identity/template/mgt/util/TemplateMgtUtils.java
 /home/chamath/IdeaProjects/template-mgt/org.wso2.carbon.identity.template.mgt/src/main/java/org/wso2/carbon/identity/template/mgt/exception/TemplateManagementException.java

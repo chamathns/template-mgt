@@ -55,8 +55,7 @@
             String currentUser = (String) session.getAttribute("logged-user");
             TemplateManagementServiceClient serviceClient = new TemplateManagementServiceClient(currentUser);
 
-            Template responseTemplate = serviceClient.updateTemplate(oldTemplateName,updateTemplateRequestDTO);
-
+            serviceClient.updateTemplate(oldTemplateName,updateTemplateRequestDTO);
 
         } catch (Exception e) {
             String message = resourceBundle.getString("alert.error.while.updating.template") + " : " + e.getMessage();
