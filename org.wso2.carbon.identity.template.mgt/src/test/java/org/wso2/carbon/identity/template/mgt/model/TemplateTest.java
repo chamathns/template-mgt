@@ -32,6 +32,7 @@ public class TemplateTest {
     private static final String script = "sample Script";
 
     Template template = new Template(templateId,tenantId,templateName,description,script);
+    Template template1 = new Template(templateName,description,script);
 
     @Test
     public void testGetTemplateId() {
@@ -41,8 +42,8 @@ public class TemplateTest {
     @Test
     public void testSetTemplateId() {
         Integer templateId = 101;
-        template.setTemplateId(templateId);
-        Assert.assertEquals(template.getTemplateId(),templateId);
+        template1.setTemplateId(templateId);
+        Assert.assertEquals(template1.getTemplateId(),templateId);
     }
 
     @Test
@@ -53,8 +54,8 @@ public class TemplateTest {
     @Test
     public void testSetTenantId() {
         Integer tenantId = 101;
-        template.setTenantId(tenantId);
-        Assert.assertEquals(template.getTenantId(),tenantId);
+        template1.setTenantId(tenantId);
+        Assert.assertEquals(template1.getTenantId(),tenantId);
     }
 
     @Test
@@ -84,7 +85,6 @@ public class TemplateTest {
     @Test
     public void testGetTemplateScript() {
         Assert.assertEquals(template.getTemplateScript(),script);
-
     }
 
     @Test

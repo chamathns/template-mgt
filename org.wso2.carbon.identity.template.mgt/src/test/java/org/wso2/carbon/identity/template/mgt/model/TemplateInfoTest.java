@@ -18,25 +18,40 @@
 
 package org.wso2.carbon.identity.template.mgt.model;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import static org.testng.Assert.*;
 
 public class TemplateInfoTest {
 
+    private static Integer templateId = 1;
+    private static Integer tenantId = -1234;
+    private static final String templateName = "sampleTemplate";
+    private static final String description = "sample Description";
+
+    TemplateInfo template = new TemplateInfo(templateId,tenantId,templateName);
+    TemplateInfo template1 = new TemplateInfo(templateName, description);
+
+
+
     @Test
     public void testGetTemplateId() {
+        Assert.assertEquals(template.getTemplateId(),templateId);
     }
 
     @Test
     public void testGetTenantId() {
+        Assert.assertEquals(template.getTenantId(),tenantId);
     }
 
     @Test
     public void testGetTemplateName() {
+        Assert.assertEquals(template.getTemplateName(),templateName);
     }
 
     @Test
     public void testGetDescription() {
+        Assert.assertEquals(template1.getDescription(),description);
     }
 }

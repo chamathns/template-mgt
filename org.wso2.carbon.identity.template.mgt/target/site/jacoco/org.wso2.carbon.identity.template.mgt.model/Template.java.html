@@ -31,25 +31,17 @@ public class Template {
 <span class="fc" id="L31">        this.description = description;</span>
 <span class="fc" id="L32">        this.templateScript = templateScript;</span>
 <span class="fc" id="L33">    }</span>
-
-<span class="nc" id="L35">    public Template(Integer templateId, Integer tenantId, String templateName, String description){</span>
-<span class="nc" id="L36">        this.templateId = templateId;</span>
-<span class="nc" id="L37">        this.tenantId = tenantId;</span>
-<span class="nc" id="L38">        this.templateName = templateName;</span>
-<span class="nc" id="L39">        this.description = description;</span>
-<span class="nc" id="L40">    }</span>
-
-<span class="fc" id="L42">    public Template(Integer tenantId, String templateName, String description, String templateScript){</span>
-<span class="fc" id="L43">        this.tenantId = tenantId;</span>
-<span class="fc" id="L44">        this.templateName = templateName;</span>
-<span class="fc" id="L45">        this.description = description;</span>
-<span class="fc" id="L46">        this.templateScript = templateScript;</span>
-<span class="fc" id="L47">    }</span>
-<span class="nc" id="L48">    public Template(String templateName, String description, String templateScript){</span>
-<span class="nc" id="L49">        this.templateName = templateName;</span>
-<span class="nc" id="L50">        this.description = description;</span>
-<span class="nc" id="L51">        this.templateScript = templateScript;</span>
-<span class="nc" id="L52">    }</span>
+<span class="fc" id="L34">    public Template(Integer tenantId, String templateName, String description, String templateScript){</span>
+<span class="fc" id="L35">        this.tenantId = tenantId;</span>
+<span class="fc" id="L36">        this.templateName = templateName;</span>
+<span class="fc" id="L37">        this.description = description;</span>
+<span class="fc" id="L38">        this.templateScript = templateScript;</span>
+<span class="fc" id="L39">    }</span>
+<span class="nc" id="L40">    public Template(String templateName, String description, String templateScript){</span>
+<span class="nc" id="L41">        this.templateName = templateName;</span>
+<span class="nc" id="L42">        this.description = description;</span>
+<span class="nc" id="L43">        this.templateScript = templateScript;</span>
+<span class="nc" id="L44">    }</span>
 
     /**
      * Get template ID.
@@ -57,7 +49,7 @@ public class Template {
      * @return template ID
      */
     public Integer getTemplateId() {
-<span class="nc" id="L60">        return templateId;</span>
+<span class="nc" id="L52">        return templateId;</span>
     }
 
     /**
@@ -66,8 +58,8 @@ public class Template {
      * @param templateId template ID
      */
     public void setTemplateId(Integer templateId) {
-<span class="nc" id="L69">        this.templateId = templateId;</span>
-<span class="nc" id="L70">    }</span>
+<span class="nc" id="L61">        this.templateId = templateId;</span>
+<span class="nc" id="L62">    }</span>
 
 
     /**
@@ -76,7 +68,7 @@ public class Template {
      * @return tenant ID
      */
     public Integer getTenantId() {
-<span class="fc" id="L79">        return tenantId;</span>
+<span class="fc" id="L71">        return tenantId;</span>
     }
 
     /**
@@ -85,8 +77,8 @@ public class Template {
      * @param tenantId tenant ID
      */
     public void setTenantId(Integer tenantId) {
-<span class="nc" id="L88">        this.tenantId = tenantId;</span>
-<span class="nc" id="L89">    }</span>
+<span class="nc" id="L80">        this.tenantId = tenantId;</span>
+<span class="nc" id="L81">    }</span>
 
 
     /**
@@ -95,7 +87,7 @@ public class Template {
      * @return template name
      */
     public String getTemplateName() {
-<span class="fc" id="L98">        return templateName;</span>
+<span class="fc" id="L90">        return templateName;</span>
     }
 
     /**
@@ -104,8 +96,8 @@ public class Template {
      * @param templateName template name
      */
     public void setTemplateName(String templateName) {
-<span class="nc" id="L107">        this.templateName = templateName;</span>
-<span class="nc" id="L108">    }</span>
+<span class="nc" id="L99">        this.templateName = templateName;</span>
+<span class="nc" id="L100">    }</span>
 
     /**
      * Get template description.
@@ -113,7 +105,7 @@ public class Template {
      * @return template description
      */
     public String getDescription() {
-<span class="fc" id="L116">        return description;</span>
+<span class="fc" id="L108">        return description;</span>
     }
 
     /**
@@ -122,8 +114,8 @@ public class Template {
      * @param description template description
      */
     public void setDescription(String description) {
-<span class="nc" id="L125">        this.description = description;</span>
-<span class="nc" id="L126">    }</span>
+<span class="nc" id="L117">        this.description = description;</span>
+<span class="nc" id="L118">    }</span>
 
     /**
      * Get template script.
@@ -131,7 +123,7 @@ public class Template {
      * @return templateScript
      */
     public String getTemplateScript() {
-<span class="fc" id="L134">        return templateScript;</span>
+<span class="fc" id="L126">        return templateScript;</span>
     }
 
     /**
@@ -140,7 +132,7 @@ public class Template {
      * @param content templateScript
      */
     public void setTemplateScript(String content) {
-<span class="nc" id="L143">        this.templateScript = content;</span>
-<span class="nc" id="L144">    }</span>
+<span class="nc" id="L135">        this.templateScript = content;</span>
+<span class="nc" id="L136">    }</span>
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.7.9.201702052155</span></div></body></html>
