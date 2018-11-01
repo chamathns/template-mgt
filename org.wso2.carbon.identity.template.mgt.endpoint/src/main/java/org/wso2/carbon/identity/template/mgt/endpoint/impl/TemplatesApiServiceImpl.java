@@ -127,6 +127,13 @@ TemplatesApiServiceImpl extends TemplatesApiService {
 
 
     private List<GetTemplatesResponseDTO> getTemplatesList (Integer limit, Integer offset) throws TemplateManagementException {
+        if (limit == null) {
+            limit = 0;
+        }
+
+        if (offset == null) {
+            offset = 0;
+        }
         List<TemplateInfo> templates = TemplateEndpointUtils.getTemplateManager().listTemplates(limit, offset);
         return TemplateEndpointUtils.getTemplatesResponseDTOList(templates);
     }

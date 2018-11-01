@@ -37,12 +37,6 @@ public class TemplateInfo {
         this.templateName = templateName;
         this.description = description;
     }
-    public TemplateInfo(Integer templateId, Integer tenantId, String templateName, String description){
-        this.templateId = templateId;
-        this.tenantId = tenantId;
-        this.templateName = templateName;
-        this.description = description;
-    }
 
     /**
      * Get template ID.
@@ -52,15 +46,6 @@ public class TemplateInfo {
     public Integer getTemplateId() {
         return templateId;
     }
-
-//    /**
-//     * Set template ID.
-//     *
-//     * @param templateId template ID
-//     */
-//    public void setTemplateId(Integer templateId) {
-//        this.templateId = templateId;
-//    }
 
 
     /**
@@ -72,15 +57,6 @@ public class TemplateInfo {
         return tenantId;
     }
 
-//    /**
-//     * Set tenant ID.
-//     *
-//     * @param tenantId tenant ID
-//     */
-//    public void setTenantId(Integer tenantId) {
-//        this.tenantId = tenantId;
-//    }
-
 
     /**
      * Get template name.
@@ -91,15 +67,6 @@ public class TemplateInfo {
         return templateName;
     }
 
-//    /**
-//     * Set template name.
-//     *
-//     * @param templateName template name
-//     */
-//    public void setTemplateName(String templateName) {
-//        this.templateName = templateName;
-//    }
-//
     /**
      * Get template description.
      *

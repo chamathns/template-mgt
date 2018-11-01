@@ -73,6 +73,7 @@ public class TemplateManagerImpl implements  TemplateManager {
     public List<TemplateInfo> listTemplates(Integer limit, Integer offset) throws TemplateManagementException {
 
         validatePaginationParameters(limit,offset);
+        
         if (limit == 0) {
             limit = DEFAULT_SEARCH_LIMIT;
             if (log.isDebugEnabled()) {

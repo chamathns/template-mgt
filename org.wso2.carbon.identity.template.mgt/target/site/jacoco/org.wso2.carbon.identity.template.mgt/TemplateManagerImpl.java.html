@@ -73,44 +73,45 @@ import static org.wso2.carbon.identity.template.mgt.util.TemplateMgtUtils.handle
     public List&lt;TemplateInfo&gt; listTemplates(Integer limit, Integer offset) throws TemplateManagementException {
 
 <span class="nc" id="L75">        validatePaginationParameters(limit,offset);</span>
-<span class="nc bnc" id="L76" title="All 2 branches missed.">        if (limit == 0) {</span>
-<span class="nc" id="L77">            limit = DEFAULT_SEARCH_LIMIT;</span>
-<span class="nc bnc" id="L78" title="All 2 branches missed.">            if (log.isDebugEnabled()) {</span>
-<span class="nc" id="L79">                log.debug(&quot;Limit is not defined in the request, default to: &quot; + limit);</span>
+        
+<span class="nc bnc" id="L77" title="All 2 branches missed.">        if (limit == 0) {</span>
+<span class="nc" id="L78">            limit = DEFAULT_SEARCH_LIMIT;</span>
+<span class="nc bnc" id="L79" title="All 2 branches missed.">            if (log.isDebugEnabled()) {</span>
+<span class="nc" id="L80">                log.debug(&quot;Limit is not defined in the request, default to: &quot; + limit);</span>
             }
         }
 
-<span class="nc" id="L83">        TemplateManagerDAO templateManagerDAO = new TemplateManagerDAOImpl();</span>
-<span class="nc" id="L84">        return templateManagerDAO.getAllTemplates(getTenantIdFromCarbonContext(),limit,offset);</span>
+<span class="nc" id="L84">        TemplateManagerDAO templateManagerDAO = new TemplateManagerDAOImpl();</span>
+<span class="nc" id="L85">        return templateManagerDAO.getAllTemplates(getTenantIdFromCarbonContext(),limit,offset);</span>
     }
 
     private void validateInputParameters(Template template) throws TemplateManagementClientException {
-<span class="nc bnc" id="L88" title="All 2 branches missed.">        if (isBlank(template.getTemplateName())){</span>
-<span class="nc bnc" id="L89" title="All 2 branches missed.">            if (log.isDebugEnabled()){</span>
-<span class="nc" id="L90">                log.debug(&quot;Template name cannot be empty&quot;);</span>
+<span class="nc bnc" id="L89" title="All 2 branches missed.">        if (isBlank(template.getTemplateName())){</span>
+<span class="nc bnc" id="L90" title="All 2 branches missed.">            if (log.isDebugEnabled()){</span>
+<span class="nc" id="L91">                log.debug(&quot;Template name cannot be empty&quot;);</span>
             }
-<span class="nc" id="L92">            throw handleClientException(ERROR_CODE_TEMPLATE_NAME_REQUIRED, null);</span>
+<span class="nc" id="L93">            throw handleClientException(ERROR_CODE_TEMPLATE_NAME_REQUIRED, null);</span>
         }
 
-<span class="nc bnc" id="L95" title="All 2 branches missed.">        if (isBlank(template.getTemplateScript())){</span>
-<span class="nc bnc" id="L96" title="All 2 branches missed.">            if (log.isDebugEnabled()){</span>
-<span class="nc" id="L97">                log.debug(&quot;Template script cannot be empty&quot;);</span>
+<span class="nc bnc" id="L96" title="All 2 branches missed.">        if (isBlank(template.getTemplateScript())){</span>
+<span class="nc bnc" id="L97" title="All 2 branches missed.">            if (log.isDebugEnabled()){</span>
+<span class="nc" id="L98">                log.debug(&quot;Template script cannot be empty&quot;);</span>
             }
-<span class="nc" id="L99">            throw handleClientException(ERROR_CODE_TEMPLATE_SCRIPT_REQUIRED, null);</span>
+<span class="nc" id="L100">            throw handleClientException(ERROR_CODE_TEMPLATE_SCRIPT_REQUIRED, null);</span>
         }
 
-<span class="nc bnc" id="L102" title="All 2 branches missed.">        if (template.getTenantId() == null){</span>
-<span class="nc" id="L103">            template.setTenantId(getTenantIdFromCarbonContext());</span>
+<span class="nc bnc" id="L103" title="All 2 branches missed.">        if (template.getTenantId() == null){</span>
+<span class="nc" id="L104">            template.setTenantId(getTenantIdFromCarbonContext());</span>
         }
 
-<span class="nc" id="L106">    }</span>
+<span class="nc" id="L107">    }</span>
 
     private void validatePaginationParameters(Integer limit, Integer offset) throws TemplateManagementClientException {
 
-<span class="nc bnc" id="L110" title="All 4 branches missed.">        if (limit &lt; 0 || offset &lt; 0) {</span>
-<span class="nc" id="L111">            throw handleClientException(ERROR_CODE_INVALID_ARGUMENTS_FOR_LIMIT_OFFSET, null);</span>
+<span class="nc bnc" id="L111" title="All 4 branches missed.">        if (limit &lt; 0 || offset &lt; 0) {</span>
+<span class="nc" id="L112">            throw handleClientException(ERROR_CODE_INVALID_ARGUMENTS_FOR_LIMIT_OFFSET, null);</span>
         }
-<span class="nc" id="L113">    }</span>
+<span class="nc" id="L114">    }</span>
 
 
 
