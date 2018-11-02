@@ -19,7 +19,6 @@
 package org.wso2.carbon.identity.template.mgt;
 
 import org.mockito.Mockito;
-import org.mockito.internal.matchers.Any;
 import org.powermock.core.classloader.annotations.PrepareForTest;
 import org.powermock.modules.testng.PowerMockTestCase;
 import org.testng.Assert;
@@ -30,10 +29,9 @@ import org.testng.annotations.Test;
 import org.wso2.carbon.base.CarbonBaseConstants;
 import org.wso2.carbon.context.PrivilegedCarbonContext;
 import org.wso2.carbon.context.internal.CarbonContextDataHolder;
-import org.wso2.carbon.identity.template.mgt.dao.TemplateManagerDAO;
-import org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImpl;
 import org.wso2.carbon.identity.template.mgt.exception.TemplateManagementClientException;
 import org.wso2.carbon.identity.template.mgt.exception.TemplateManagementException;
+import org.wso2.carbon.identity.template.mgt.exception.TemplateManagementServerException;
 import org.wso2.carbon.identity.template.mgt.internal.TemplateManagerComponentDataHolder;
 import org.wso2.carbon.identity.template.mgt.model.Template;
 import org.wso2.carbon.identity.template.mgt.model.TemplateInfo;
@@ -324,8 +322,46 @@ public class TemplateManagerImplTest extends PowerMockTestCase {
 
             TemplateManager templateManager = new TemplateManagerImpl();
             templateManager.addTemplate(((Template) template));
-
             Assert.fail("Expected: "+ TemplateManagementClientException.class.getName());
+        }
+    }
+
+    @Test
+    public void testSetTenantIdIfNull() throws Exception{
+        DataSource dataSource = mock(DataSource.class);
+        mockComponentDataHolder(dataSource);
+        Template template = new Template(null,"T1","Description 1", sampleScript);
+
+
+        try (Connection connection = getConnection()){
+            when(dataSource.getConnection()).thenReturn(connection);
+
+            TemplateManager templateManager = new TemplateManagerImpl();
+            TemplateInfo templateInfo = templateManager.addTemplate(template);
+            Assert.assertEquals(templateInfo.getTenantId(),new Integer(SUPER_TENANT_ID));
+        }
+
+    }
+
+    @Test()
+    public void testErrorCodes() throws Exception{
+        DataSource dataSource = mock(DataSource.class);
+        mockComponentDataHolder(dataSource);
+        Template template = new Template(SUPER_TENANT_ID,null,"sample description",sampleScript);
+        String errorCode = TemplateMgtConstants.ErrorMessages.ERROR_CODE_TEMPLATE_NAME_REQUIRED.getCode();
+
+
+        try (Connection connection = getConnection()){
+            when(dataSource.getConnection()).thenReturn(connection);
+
+            TemplateManager templateManager = new TemplateManagerImpl();
+            try {
+                templateManager.addTemplate(template);
+            }catch (TemplateManagementClientException e){
+                String errorCode1 = e.getErrorCode();
+                Assert.assertEquals(errorCode,errorCode1);
+            }
+
         }
     }
 
@@ -350,12 +386,6 @@ public class TemplateManagerImplTest extends PowerMockTestCase {
         }
 
     }
-
-
-
-
-
-
 
 
     private void addTemplates(TemplateManager templateManager, List<Object> templates, DataSource dataSource) throws SQLException, TemplateManagementException {

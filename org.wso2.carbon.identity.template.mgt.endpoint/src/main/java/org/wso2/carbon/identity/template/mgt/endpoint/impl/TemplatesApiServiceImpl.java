@@ -215,31 +215,4 @@ TemplatesApiServiceImpl extends TemplatesApiService {
 
         throw TemplateEndpointUtils.buildInternalServerErrorException(ERROR_CODE_UNEXPECTED.getCode(), LOG, e);
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }

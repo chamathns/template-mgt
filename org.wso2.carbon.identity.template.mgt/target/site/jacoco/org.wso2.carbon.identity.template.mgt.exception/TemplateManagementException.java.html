@@ -25,35 +25,21 @@ public class TemplateManagementException extends Exception {
     //    private static final long serialVersionUID = 2806215535431246551L;
     private String errorCode;
 
-
-    public TemplateManagementException(){
-<span class="nc" id="L30">        super();</span>
-<span class="nc" id="L31">    }</span>
-
     public TemplateManagementException (String message, String errorCode){
-<span class="fc" id="L34">        super(message);</span>
-<span class="fc" id="L35">        this.errorCode = errorCode;</span>
-<span class="fc" id="L36">    }</span>
+<span class="fc" id="L29">        super(message);</span>
+<span class="fc" id="L30">        this.errorCode = errorCode;</span>
+<span class="fc" id="L31">    }</span>
 
     public TemplateManagementException(String message, String errorCode, Throwable cause) {
 
-<span class="fc" id="L40">        super(message, cause);</span>
-<span class="fc" id="L41">        this.errorCode = errorCode;</span>
-<span class="fc" id="L42">    }</span>
-
-    public TemplateManagementException(Throwable cause) {
-
-<span class="nc" id="L46">        super(cause);</span>
-<span class="nc" id="L47">    }</span>
+<span class="fc" id="L35">        super(message, cause);</span>
+<span class="fc" id="L36">        this.errorCode = errorCode;</span>
+<span class="fc" id="L37">    }</span>
 
     public String getErrorCode() {
 
-<span class="nc" id="L51">        return errorCode;</span>
+<span class="fc" id="L41">        return errorCode;</span>
     }
 
-    protected void setErrorCode(String errorCode) {
-
-<span class="nc" id="L56">        this.errorCode = errorCode;</span>
-<span class="nc" id="L57">    }</span>
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.7.9.201702052155</span></div></body></html>

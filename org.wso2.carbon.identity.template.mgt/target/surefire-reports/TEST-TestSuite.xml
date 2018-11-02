@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="6.239" tests="62" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="5.166" tests="64" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-oracle/jre/lib/amd64"/>
@@ -61,61 +61,63 @@
     <property name="sun.desktop" value="gnome"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase name="testAddTemplate" classname="org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest" time="0.395"/>
+  <testcase name="testAddTemplate" classname="org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest" time="0.381"/>
   <testcase name="testAddTemplate" classname="org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest" time="0.002"/>
-  <testcase name="testAddTemplate" classname="org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest" time="0.003"/>
-  <testcase name="testAddTemplateServerException" classname="org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest" time="0.01"/>
+  <testcase name="testAddTemplate" classname="org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest" time="0.002"/>
+  <testcase name="testAddTemplateServerException" classname="org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest" time="0.006"/>
   <testcase name="testAddTemplateServerException" classname="org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest" time="0.002"/>
   <testcase name="testAddTemplateServerException" classname="org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest" time="0.002"/>
-  <testcase name="testDeleteTemplate" classname="org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest" time="0.118"/>
-  <testcase name="testDeleteTemplate" classname="org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest" time="0.005"/>
-  <testcase name="testDeleteTemplate" classname="org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest" time="0.004"/>
-  <testcase name="testDeleteTemplateDataAccessException" classname="org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest" time="0.006"/>
+  <testcase name="testDeleteTemplate" classname="org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest" time="0.104"/>
+  <testcase name="testDeleteTemplate" classname="org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest" time="0.006"/>
+  <testcase name="testDeleteTemplate" classname="org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest" time="0.008"/>
+  <testcase name="testDeleteTemplateDataAccessException" classname="org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest" time="0.007"/>
+  <testcase name="testDeleteTemplateDataAccessException" classname="org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest" time="0.005"/>
   <testcase name="testDeleteTemplateDataAccessException" classname="org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest" time="0.004"/>
-  <testcase name="testDeleteTemplateDataAccessException" classname="org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest" time="0.003"/>
-  <testcase name="testGetTemplateByName" classname="org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest" time="0.007"/>
+  <testcase name="testGetTemplateByName" classname="org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest" time="0.008"/>
   <testcase name="testGetTemplateByName" classname="org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest" time="0.003"/>
-  <testcase name="testGetTemplateByName" classname="org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest" time="0.002"/>
-  <testcase name="testGetTemplateByNameDataAccessException" classname="org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest" time="0.002"/>
+  <testcase name="testGetTemplateByName" classname="org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest" time="0.003"/>
   <testcase name="testGetTemplateByNameDataAccessException" classname="org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest" time="0.003"/>
   <testcase name="testGetTemplateByNameDataAccessException" classname="org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest" time="0.003"/>
-  <testcase name="testGetTemplateList" classname="org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest" time="0.011"/>
-  <testcase name="testGetTemplateList" classname="org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest" time="0.005"/>
+  <testcase name="testGetTemplateByNameDataAccessException" classname="org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest" time="0.004"/>
+  <testcase name="testGetTemplateList" classname="org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest" time="0.013"/>
   <testcase name="testGetTemplateList" classname="org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest" time="0.007"/>
-  <testcase name="testGetTemplateListDataAccessException" classname="org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest" time="0.005"/>
+  <testcase name="testGetTemplateList" classname="org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest" time="0.008"/>
+  <testcase name="testGetTemplateListDataAccessException" classname="org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest" time="0.006"/>
   <testcase name="testGetTemplateListDataAccessException" classname="org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest" time="0.006"/>
   <testcase name="testGetTemplateListDataAccessException" classname="org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest" time="0.005"/>
-  <testcase name="testUpdateTemplate" classname="org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest" time="0.004"/>
   <testcase name="testUpdateTemplate" classname="org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest" time="0.005"/>
+  <testcase name="testUpdateTemplate" classname="org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest" time="0.004"/>
   <testcase name="testUpdateTemplate" classname="org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest" time="0.003"/>
-  <testcase name="testUpdateTemplateServerException" classname="org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest" time="0.004"/>
-  <testcase name="testUpdateTemplateServerException" classname="org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest" time="0.004"/>
-  <testcase name="testUpdateTemplateServerException" classname="org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest" time="0.004"/>
-  <testcase name="testAddTemplate" classname="org.wso2.carbon.identity.template.mgt.TemplateManagerImplTest" time="0.048"/>
+  <testcase name="testUpdateTemplateServerException" classname="org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest" time="0.003"/>
+  <testcase name="testUpdateTemplateServerException" classname="org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest" time="0.003"/>
+  <testcase name="testUpdateTemplateServerException" classname="org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest" time="0.003"/>
+  <testcase name="testAddTemplate" classname="org.wso2.carbon.identity.template.mgt.TemplateManagerImplTest" time="0.042"/>
   <testcase name="testAddTemplate" classname="org.wso2.carbon.identity.template.mgt.TemplateManagerImplTest" time="0.002"/>
-  <testcase name="testAddTemplate" classname="org.wso2.carbon.identity.template.mgt.TemplateManagerImplTest" time="0.002"/>
-  <testcase name="testDeleteTemplate" classname="org.wso2.carbon.identity.template.mgt.TemplateManagerImplTest" time="0.059"/>
+  <testcase name="testAddTemplate" classname="org.wso2.carbon.identity.template.mgt.TemplateManagerImplTest" time="0.001"/>
+  <testcase name="testDeleteTemplate" classname="org.wso2.carbon.identity.template.mgt.TemplateManagerImplTest" time="0.056"/>
+  <testcase name="testDeleteTemplate" classname="org.wso2.carbon.identity.template.mgt.TemplateManagerImplTest" time="0.002"/>
   <testcase name="testDeleteTemplate" classname="org.wso2.carbon.identity.template.mgt.TemplateManagerImplTest" time="0.003"/>
-  <testcase name="testDeleteTemplate" classname="org.wso2.carbon.identity.template.mgt.TemplateManagerImplTest" time="0.003"/>
+  <testcase name="testErrorCodes" classname="org.wso2.carbon.identity.template.mgt.TemplateManagerImplTest" time="0.002"/>
   <testcase name="testGetTemplateByName" classname="org.wso2.carbon.identity.template.mgt.TemplateManagerImplTest" time="0.005"/>
-  <testcase name="testGetTemplateByName" classname="org.wso2.carbon.identity.template.mgt.TemplateManagerImplTest" time="0.002"/>
+  <testcase name="testGetTemplateByName" classname="org.wso2.carbon.identity.template.mgt.TemplateManagerImplTest" time="0.003"/>
   <testcase name="testGetTemplateByName" classname="org.wso2.carbon.identity.template.mgt.TemplateManagerImplTest" time="0.003"/>
   <testcase name="testGetTemplateList" classname="org.wso2.carbon.identity.template.mgt.TemplateManagerImplTest" time="0.009"/>
-  <testcase name="testGetTemplateList" classname="org.wso2.carbon.identity.template.mgt.TemplateManagerImplTest" time="0.005"/>
+  <testcase name="testGetTemplateList" classname="org.wso2.carbon.identity.template.mgt.TemplateManagerImplTest" time="0.009"/>
   <testcase name="testGetTemplateList" classname="org.wso2.carbon.identity.template.mgt.TemplateManagerImplTest" time="0.006"/>
-  <testcase name="testUpdateTemplate" classname="org.wso2.carbon.identity.template.mgt.TemplateManagerImplTest" time="0.004"/>
+  <testcase name="testSetTenantIdIfNull" classname="org.wso2.carbon.identity.template.mgt.TemplateManagerImplTest" time="0.002"/>
+  <testcase name="testUpdateTemplate" classname="org.wso2.carbon.identity.template.mgt.TemplateManagerImplTest" time="0.003"/>
   <testcase name="testUpdateTemplate" classname="org.wso2.carbon.identity.template.mgt.TemplateManagerImplTest" time="0.002"/>
-  <testcase name="testValidatingInputs" classname="org.wso2.carbon.identity.template.mgt.TemplateManagerImplTest" time="0.002"/>
   <testcase name="testValidatingInputs" classname="org.wso2.carbon.identity.template.mgt.TemplateManagerImplTest" time="0.001"/>
+  <testcase name="testValidatingInputs" classname="org.wso2.carbon.identity.template.mgt.TemplateManagerImplTest" time="0"/>
   <testcase name="testValidatingInputs" classname="org.wso2.carbon.identity.template.mgt.TemplateManagerImplTest" time="0.001"/>
   <testcase name="testvalidatingPaginationParameters" classname="org.wso2.carbon.identity.template.mgt.TemplateManagerImplTest" time="0.001"/>
   <testcase name="testGetDescription" classname="org.wso2.carbon.identity.template.mgt.model.TemplateTest" time="0"/>
-  <testcase name="testGetTemplateId" classname="org.wso2.carbon.identity.template.mgt.model.TemplateTest" time="0"/>
+  <testcase name="testGetTemplateId" classname="org.wso2.carbon.identity.template.mgt.model.TemplateTest" time="0.001"/>
   <testcase name="testGetTemplateName" classname="org.wso2.carbon.identity.template.mgt.model.TemplateTest" time="0"/>
   <testcase name="testGetTemplateScript" classname="org.wso2.carbon.identity.template.mgt.model.TemplateTest" time="0"/>
   <testcase name="testGetTenantId" classname="org.wso2.carbon.identity.template.mgt.model.TemplateTest" time="0"/>
   <testcase name="testSetDescription" classname="org.wso2.carbon.identity.template.mgt.model.TemplateTest" time="0"/>
-  <testcase name="testSetTemplateId" classname="org.wso2.carbon.identity.template.mgt.model.TemplateTest" time="0.001"/>
+  <testcase name="testSetTemplateId" classname="org.wso2.carbon.identity.template.mgt.model.TemplateTest" time="0"/>
   <testcase name="testSetTemplateName" classname="org.wso2.carbon.identity.template.mgt.model.TemplateTest" time="0"/>
   <testcase name="testSetTemplateScript" classname="org.wso2.carbon.identity.template.mgt.model.TemplateTest" time="0"/>
   <testcase name="testSetTenantId" classname="org.wso2.carbon.identity.template.mgt.model.TemplateTest" time="0"/>

@@ -100,8 +100,8 @@ import static org.wso2.carbon.identity.template.mgt.util.TemplateMgtUtils.handle
 <span class="fc" id="L100">            throw handleClientException(ERROR_CODE_TEMPLATE_SCRIPT_REQUIRED, null);</span>
         }
 
-<span class="pc bpc" id="L103" title="1 of 2 branches missed.">        if (template.getTenantId() == null){</span>
-<span class="nc" id="L104">            template.setTenantId(getTenantIdFromCarbonContext());</span>
+<span class="fc bfc" id="L103" title="All 2 branches covered.">        if (template.getTenantId() == null){</span>
+<span class="fc" id="L104">            template.setTenantId(getTenantIdFromCarbonContext());</span>
         }
 
 <span class="fc" id="L107">    }</span>

@@ -34,7 +34,7 @@ import org.wso2.carbon.identity.template.mgt.exception.TemplateManagementServerE
      *
      * @param error IdentityTemplateMgtConstants.ErrorMessages.
      * @param data  data to replace if the message needs to be replaced.
-     * @return ConsentManagementServerException.
+     * @return TemplateManagementServerException.
      */
     public static TemplateManagementServerException handleServerException(TemplateMgtConstants.ErrorMessages error,
                                                                           String data, Throwable e) {
@@ -76,17 +76,6 @@ import org.wso2.carbon.identity.template.mgt.exception.TemplateManagementServerE
     public static int getTenantIdFromCarbonContext() {
 <span class="fc" id="L77">        return PrivilegedCarbonContext.getThreadLocalCarbonContext().getTenantId();</span>
     }
-
-
-
-//    /**
-//     * Get the tenant domain from carbon context.
-//     *
-//     * @return Tenant domain.
-//     */
-//    public static String getTenantDomainFromCarbonContext() {
-//        return PrivilegedCarbonContext.getThreadLocalCarbonContext().getTenantDomain();
-//    }
 
 }
 
