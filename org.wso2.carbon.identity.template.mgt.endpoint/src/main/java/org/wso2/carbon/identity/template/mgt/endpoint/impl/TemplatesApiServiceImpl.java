@@ -71,16 +71,12 @@ TemplatesApiServiceImpl extends TemplatesApiService {
                     .entity(response)
                     .location(getUpdatedTemplateLocationURI(response))
                     .build();
-        } catch (TemplateManagementException e) {
-            e.printStackTrace();
-            return null;
-        } catch (URISyntaxException e) {
-            e.printStackTrace();
-            return null;
-        } catch (Throwable e){
-            e.printStackTrace();
-            return null;
-            //handle exceptions
+        } catch (TemplateManagementClientException e){
+            return handleBadRequestResponse(e);
+        }catch (TemplateManagementException e){
+            return handleServerErrorResponse(e);
+        }catch (Throwable throwable){
+            return handleUnexpectedServerError(throwable);
         }
     }
 
@@ -92,11 +88,12 @@ TemplatesApiServiceImpl extends TemplatesApiService {
             return Response.ok()
                     .entity(template)
                     .build();
-        } catch (Throwable e) {
-            e.printStackTrace();
-            return null;
-            //handle exception
-            //handle other exceptions
+        } catch (TemplateManagementClientException e){
+            return handleBadRequestResponse(e);
+        }catch (TemplateManagementException e){
+            return handleServerErrorResponse(e);
+        }catch (Throwable throwable){
+            return handleUnexpectedServerError(throwable);
         }
     }
 
@@ -107,14 +104,13 @@ TemplatesApiServiceImpl extends TemplatesApiService {
             TemplateEndpointUtils.getTemplateManager().deleteTemplate(templateName);
             return Response.ok()
                     .build();
-        } catch (TemplateManagementException e) {
-            e.printStackTrace();
-            return null;
-        }catch (Throwable e){
-            e.printStackTrace();
-            return null;
+        } catch (TemplateManagementClientException e){
+            return handleBadRequestResponse(e);
+        }catch (TemplateManagementException e){
+            return handleServerErrorResponse(e);
+        }catch (Throwable throwable){
+            return handleUnexpectedServerError(throwable);
         }
-
     }
 
     @Override
@@ -124,12 +120,12 @@ TemplatesApiServiceImpl extends TemplatesApiService {
             return Response.ok()
                     .entity(getTemplatesResponseDTOS)
                     .build();
-        } catch (TemplateManagementException e) {
-            e.printStackTrace();
-            return null;
-        }catch (Throwable e){
-            e.printStackTrace();
-            return null;
+        } catch (TemplateManagementClientException e){
+            return handleBadRequestResponse(e);
+        }catch (TemplateManagementException e){
+            return handleServerErrorResponse(e);
+        }catch (Throwable throwable){
+            return handleUnexpectedServerError(throwable);
         }
     }
 
