@@ -57,9 +57,9 @@ TemplatesApiServiceImpl extends TemplatesApiService {
         } catch (TemplateManagementClientException e){
             return handleBadRequestResponse(e);
         }catch (TemplateManagementException e){
-
-        }catch (TemplateManagementServerException e){
-
+            return handleServerErrorResponse(e);
+        }catch (Throwable throwable){
+            return handleUnexpectedServerError(throwable);
         }
     }
 
@@ -209,6 +209,15 @@ TemplatesApiServiceImpl extends TemplatesApiService {
     private boolean isConflictError(TemplateManagementClientException e) {
 
         return ERROR_CODE_TEMPLATE_ALREADY_EXIST.getCode().equals(e.getErrorCode());
+    }
+
+    private Response handleServerErrorResponse(TemplateManagementException e){
+        throw TemplateEndpointUtils.buildInternalServerErrorException(e.getErrorCode(),LOG,e);
+    }
+
+    private Response handleUnexpectedServerError(Throwable e) {
+
+        throw TemplateEndpointUtils.buildInternalServerErrorException(ERROR_CODE_UNEXPECTED.getCode(), LOG, e);
     }
 
 

@@ -27,10 +27,7 @@ import org.wso2.carbon.identity.template.mgt.endpoint.dto.ErrorDTO;
 import org.wso2.carbon.identity.template.mgt.endpoint.dto.GetTemplatesResponseDTO;
 import org.wso2.carbon.identity.template.mgt.endpoint.dto.TemplateRequestDTO;
 import org.wso2.carbon.identity.template.mgt.endpoint.dto.UpdateTemplateRequestDTO;
-import org.wso2.carbon.identity.template.mgt.endpoint.exception.BadRequestException;
-import org.wso2.carbon.identity.template.mgt.endpoint.exception.ConflictRequestException;
-import org.wso2.carbon.identity.template.mgt.endpoint.exception.ForbiddenException;
-import org.wso2.carbon.identity.template.mgt.endpoint.exception.NotFoundException;
+import org.wso2.carbon.identity.template.mgt.endpoint.exception.*;
 import org.wso2.carbon.identity.template.mgt.model.Template;
 import org.wso2.carbon.identity.template.mgt.model.TemplateInfo;
 import org.wso2.carbon.identity.template.mgt.util.TemplateMgtUtils;
@@ -68,6 +65,11 @@ public class TemplateEndpointUtils {
                 })
                 .collect(Collectors.toList());
     }
+
+    private static void logError(Log log, Throwable throwable) {
+
+        log.error(throwable.getMessage(), throwable);
+    }
     private static void logDebug(Log log, Throwable throwable) {
 
         if (log.isDebugEnabled()) {
@@ -82,6 +84,21 @@ public class TemplateEndpointUtils {
         errorDTO.setDescription(description);
         return errorDTO;
     }
+    /**
+     * This method is used to create an InternalServerErrorException with the known errorCode.
+     *
+     * @param code Error Code.
+     * @return a new InternalServerErrorException with default details.
+     */
+    public static InternalServerErrorException buildInternalServerErrorException(String code,
+                                                                                 Log log, Throwable e) {
+
+        ErrorDTO errorDTO = getErrorDTO(TemplateMgtConstants.STATUS_INTERNAL_SERVER_ERROR_MESSAGE_DEFAULT,
+                TemplateMgtConstants.STATUS_INTERNAL_SERVER_ERROR_MESSAGE_DEFAULT, code);
+        logError(log, e);
+        return new InternalServerErrorException(errorDTO);
+    }
+
     /**
      * This method is used to create a BadRequestException with the known errorCode and message.
      *
