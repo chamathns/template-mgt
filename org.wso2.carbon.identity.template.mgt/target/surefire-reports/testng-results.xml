@@ -1,110 +1,870 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="30" passed="30">
+<testng-results skipped="0" failed="0" ignored="0" total="62" passed="62">
   <reporter-output>
   </reporter-output>
-  <suite name="TemplateManagementTestSuite" duration-ms="1969" started-at="2018-11-01T06:38:20Z" finished-at="2018-11-01T06:38:22Z">
+  <suite name="TemplateManagementTestSuite" duration-ms="3682" started-at="2018-11-02T05:18:42Z" finished-at="2018-11-02T05:18:45Z">
     <groups>
     </groups>
-    <test name="TemplateManagementTests" duration-ms="1969" started-at="2018-11-01T06:38:20Z" finished-at="2018-11-01T06:38:22Z">
-      <class name="org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest">
-        <test-method status="PASS" signature="beforePowerMockTestClass()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@de0c402]" name="beforePowerMockTestClass" is-config="true" duration-ms="31" started-at="2018-11-01T06:38:20Z" finished-at="2018-11-01T06:38:20Z">
+    <test name="TemplateManagementTests" duration-ms="3682" started-at="2018-11-02T05:18:42Z" finished-at="2018-11-02T05:18:45Z">
+      <class name="org.wso2.carbon.identity.template.mgt.model.TemplateTest">
+        <test-method status="PASS" signature="testGetTemplateScript()[pri:0, instance:org.wso2.carbon.identity.template.mgt.model.TemplateTest@77d3c3d7]" name="testGetTemplateScript" duration-ms="0" started-at="2018-11-02T05:18:45Z" finished-at="2018-11-02T05:18:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetTemplateScript -->
+        <test-method status="PASS" signature="testGetTemplateName()[pri:0, instance:org.wso2.carbon.identity.template.mgt.model.TemplateTest@77d3c3d7]" name="testGetTemplateName" duration-ms="0" started-at="2018-11-02T05:18:45Z" finished-at="2018-11-02T05:18:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetTemplateName -->
+        <test-method status="PASS" signature="testGetDescription()[pri:0, instance:org.wso2.carbon.identity.template.mgt.model.TemplateTest@77d3c3d7]" name="testGetDescription" duration-ms="0" started-at="2018-11-02T05:18:45Z" finished-at="2018-11-02T05:18:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetDescription -->
+        <test-method status="PASS" signature="testGetTemplateId()[pri:0, instance:org.wso2.carbon.identity.template.mgt.model.TemplateTest@77d3c3d7]" name="testGetTemplateId" duration-ms="0" started-at="2018-11-02T05:18:45Z" finished-at="2018-11-02T05:18:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetTemplateId -->
+        <test-method status="PASS" signature="testSetDescription()[pri:0, instance:org.wso2.carbon.identity.template.mgt.model.TemplateTest@77d3c3d7]" name="testSetDescription" duration-ms="0" started-at="2018-11-02T05:18:45Z" finished-at="2018-11-02T05:18:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSetDescription -->
+        <test-method status="PASS" signature="testSetTemplateName()[pri:0, instance:org.wso2.carbon.identity.template.mgt.model.TemplateTest@77d3c3d7]" name="testSetTemplateName" duration-ms="0" started-at="2018-11-02T05:18:45Z" finished-at="2018-11-02T05:18:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSetTemplateName -->
+        <test-method status="PASS" signature="testSetTemplateScript()[pri:0, instance:org.wso2.carbon.identity.template.mgt.model.TemplateTest@77d3c3d7]" name="testSetTemplateScript" duration-ms="1" started-at="2018-11-02T05:18:45Z" finished-at="2018-11-02T05:18:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSetTemplateScript -->
+        <test-method status="PASS" signature="testGetTenantId()[pri:0, instance:org.wso2.carbon.identity.template.mgt.model.TemplateTest@77d3c3d7]" name="testGetTenantId" duration-ms="0" started-at="2018-11-02T05:18:45Z" finished-at="2018-11-02T05:18:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetTenantId -->
+        <test-method status="PASS" signature="testSetTemplateId()[pri:0, instance:org.wso2.carbon.identity.template.mgt.model.TemplateTest@77d3c3d7]" name="testSetTemplateId" duration-ms="0" started-at="2018-11-02T05:18:45Z" finished-at="2018-11-02T05:18:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSetTemplateId -->
+        <test-method status="PASS" signature="testSetTenantId()[pri:0, instance:org.wso2.carbon.identity.template.mgt.model.TemplateTest@77d3c3d7]" name="testSetTenantId" duration-ms="0" started-at="2018-11-02T05:18:45Z" finished-at="2018-11-02T05:18:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSetTenantId -->
+      </class> <!-- org.wso2.carbon.identity.template.mgt.model.TemplateTest -->
+      <class name="org.wso2.carbon.identity.template.mgt.TemplateManagerImplTest">
+        <test-method status="PASS" signature="beforePowerMockTestClass()[pri:0, instance:org.wso2.carbon.identity.template.mgt.TemplateManagerImplTest@1cca2e9d]" name="beforePowerMockTestClass" is-config="true" duration-ms="367" started-at="2018-11-02T05:18:44Z" finished-at="2018-11-02T05:18:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforePowerMockTestClass -->
-        <test-method status="PASS" signature="beforePowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@de0c402]" name="beforePowerMockTestMethod" is-config="true" duration-ms="226" started-at="2018-11-01T06:38:20Z" finished-at="2018-11-01T06:38:21Z">
+        <test-method status="PASS" signature="beforePowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.TemplateManagerImplTest@1cca2e9d]" name="beforePowerMockTestMethod" is-config="true" duration-ms="129" started-at="2018-11-02T05:18:44Z" finished-at="2018-11-02T05:18:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforePowerMockTestMethod -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@de0c402]" name="setUp" is-config="true" duration-ms="764" started-at="2018-11-01T06:38:21Z" finished-at="2018-11-01T06:38:21Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:org.wso2.carbon.identity.template.mgt.TemplateManagerImplTest@1cca2e9d]" name="setUp" is-config="true" duration-ms="760" started-at="2018-11-02T05:18:44Z" finished-at="2018-11-02T05:18:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testAddTemplate(java.lang.Object)[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@de0c402]" name="testAddTemplate" duration-ms="410" started-at="2018-11-01T06:38:21Z" data-provider="TemplateDataProvider" finished-at="2018-11-01T06:38:22Z">
+        <test-method status="PASS" signature="testAddTemplate(java.lang.Object)[pri:0, instance:org.wso2.carbon.identity.template.mgt.TemplateManagerImplTest@1cca2e9d]" name="testAddTemplate" duration-ms="57" started-at="2018-11-02T05:18:45Z" data-provider="TemplateDataProvider" finished-at="2018-11-02T05:18:45Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.wso2.carbon.identity.template.mgt.model.Template@634851c1]]>
+                <![CDATA[org.wso2.carbon.identity.template.mgt.model.Template@2efc70df]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAddTemplate -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@de0c402]" name="tearDown" is-config="true" duration-ms="1" started-at="2018-11-01T06:38:22Z" finished-at="2018-11-01T06:38:22Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:org.wso2.carbon.identity.template.mgt.TemplateManagerImplTest@1cca2e9d]" name="tearDown" is-config="true" duration-ms="1" started-at="2018-11-02T05:18:45Z" finished-at="2018-11-02T05:18:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="afterPowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@de0c402]" name="afterPowerMockTestMethod" is-config="true" duration-ms="5" started-at="2018-11-01T06:38:22Z" finished-at="2018-11-01T06:38:22Z">
+        <test-method status="PASS" signature="afterPowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.TemplateManagerImplTest@1cca2e9d]" name="afterPowerMockTestMethod" is-config="true" duration-ms="4" started-at="2018-11-02T05:18:45Z" finished-at="2018-11-02T05:18:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterPowerMockTestMethod -->
-        <test-method status="PASS" signature="beforePowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@de0c402]" name="beforePowerMockTestMethod" is-config="true" duration-ms="1" started-at="2018-11-01T06:38:22Z" finished-at="2018-11-01T06:38:22Z">
+        <test-method status="PASS" signature="beforePowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.TemplateManagerImplTest@1cca2e9d]" name="beforePowerMockTestMethod" is-config="true" duration-ms="1" started-at="2018-11-02T05:18:45Z" finished-at="2018-11-02T05:18:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforePowerMockTestMethod -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@de0c402]" name="setUp" is-config="true" duration-ms="8" started-at="2018-11-01T06:38:22Z" finished-at="2018-11-01T06:38:22Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:org.wso2.carbon.identity.template.mgt.TemplateManagerImplTest@1cca2e9d]" name="setUp" is-config="true" duration-ms="13" started-at="2018-11-02T05:18:45Z" finished-at="2018-11-02T05:18:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testAddTemplate(java.lang.Object)[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@de0c402]" name="testAddTemplate" duration-ms="3" started-at="2018-11-01T06:38:22Z" data-provider="TemplateDataProvider" finished-at="2018-11-01T06:38:22Z">
+        <test-method status="PASS" signature="testAddTemplate(java.lang.Object)[pri:0, instance:org.wso2.carbon.identity.template.mgt.TemplateManagerImplTest@1cca2e9d]" name="testAddTemplate" duration-ms="3" started-at="2018-11-02T05:18:45Z" data-provider="TemplateDataProvider" finished-at="2018-11-02T05:18:45Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.wso2.carbon.identity.template.mgt.model.Template@52c0568c]]>
+                <![CDATA[org.wso2.carbon.identity.template.mgt.model.Template@4426b017]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAddTemplate -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@de0c402]" name="tearDown" is-config="true" duration-ms="1" started-at="2018-11-01T06:38:22Z" finished-at="2018-11-01T06:38:22Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:org.wso2.carbon.identity.template.mgt.TemplateManagerImplTest@1cca2e9d]" name="tearDown" is-config="true" duration-ms="1" started-at="2018-11-02T05:18:45Z" finished-at="2018-11-02T05:18:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="afterPowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@de0c402]" name="afterPowerMockTestMethod" is-config="true" duration-ms="0" started-at="2018-11-01T06:38:22Z" finished-at="2018-11-01T06:38:22Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterPowerMockTestMethod -->
-        <test-method status="PASS" signature="beforePowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@de0c402]" name="beforePowerMockTestMethod" is-config="true" duration-ms="1" started-at="2018-11-01T06:38:22Z" finished-at="2018-11-01T06:38:22Z">
+        <test-method status="PASS" signature="beforePowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.TemplateManagerImplTest@1cca2e9d]" name="beforePowerMockTestMethod" is-config="true" duration-ms="2" started-at="2018-11-02T05:18:45Z" finished-at="2018-11-02T05:18:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforePowerMockTestMethod -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@de0c402]" name="setUp" is-config="true" duration-ms="9" started-at="2018-11-01T06:38:22Z" finished-at="2018-11-01T06:38:22Z">
+        <test-method status="PASS" signature="afterPowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.TemplateManagerImplTest@1cca2e9d]" name="afterPowerMockTestMethod" is-config="true" duration-ms="0" started-at="2018-11-02T05:18:45Z" finished-at="2018-11-02T05:18:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterPowerMockTestMethod -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:org.wso2.carbon.identity.template.mgt.TemplateManagerImplTest@1cca2e9d]" name="setUp" is-config="true" duration-ms="13" started-at="2018-11-02T05:18:45Z" finished-at="2018-11-02T05:18:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testAddTemplate(java.lang.Object)[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@de0c402]" name="testAddTemplate" duration-ms="2" started-at="2018-11-01T06:38:22Z" data-provider="TemplateDataProvider" finished-at="2018-11-01T06:38:22Z">
+        <test-method status="PASS" signature="testAddTemplate(java.lang.Object)[pri:0, instance:org.wso2.carbon.identity.template.mgt.TemplateManagerImplTest@1cca2e9d]" name="testAddTemplate" duration-ms="3" started-at="2018-11-02T05:18:45Z" data-provider="TemplateDataProvider" finished-at="2018-11-02T05:18:45Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.wso2.carbon.identity.template.mgt.model.Template@620e5544]]>
+                <![CDATA[org.wso2.carbon.identity.template.mgt.model.Template@1f0485e3]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAddTemplate -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@de0c402]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-11-01T06:38:22Z" finished-at="2018-11-01T06:38:22Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:org.wso2.carbon.identity.template.mgt.TemplateManagerImplTest@1cca2e9d]" name="tearDown" is-config="true" duration-ms="1" started-at="2018-11-02T05:18:45Z" finished-at="2018-11-02T05:18:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="afterPowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@de0c402]" name="afterPowerMockTestMethod" is-config="true" duration-ms="0" started-at="2018-11-01T06:38:22Z" finished-at="2018-11-01T06:38:22Z">
+        <test-method status="PASS" signature="afterPowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.TemplateManagerImplTest@1cca2e9d]" name="afterPowerMockTestMethod" is-config="true" duration-ms="0" started-at="2018-11-02T05:18:45Z" finished-at="2018-11-02T05:18:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterPowerMockTestMethod -->
-        <test-method status="PASS" signature="beforePowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@de0c402]" name="beforePowerMockTestMethod" is-config="true" duration-ms="1" started-at="2018-11-01T06:38:22Z" finished-at="2018-11-01T06:38:22Z">
+        <test-method status="PASS" signature="beforePowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.TemplateManagerImplTest@1cca2e9d]" name="beforePowerMockTestMethod" is-config="true" duration-ms="1" started-at="2018-11-02T05:18:45Z" finished-at="2018-11-02T05:18:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforePowerMockTestMethod -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@de0c402]" name="setUp" is-config="true" duration-ms="8" started-at="2018-11-01T06:38:22Z" finished-at="2018-11-01T06:38:22Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:org.wso2.carbon.identity.template.mgt.TemplateManagerImplTest@1cca2e9d]" name="setUp" is-config="true" duration-ms="11" started-at="2018-11-02T05:18:45Z" finished-at="2018-11-02T05:18:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testAddTemplateServerException(java.lang.Object)[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@de0c402]" name="testAddTemplateServerException" duration-ms="6" started-at="2018-11-01T06:38:22Z" data-provider="TemplateDataProvider" finished-at="2018-11-01T06:38:22Z">
+        <test-method status="PASS" signature="testDeleteTemplate(java.lang.Object)[pri:0, instance:org.wso2.carbon.identity.template.mgt.TemplateManagerImplTest@1cca2e9d]" name="testDeleteTemplate" duration-ms="85" started-at="2018-11-02T05:18:45Z" data-provider="TemplateDataProvider" finished-at="2018-11-02T05:18:45Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.wso2.carbon.identity.template.mgt.model.Template@633301e2]]>
+                <![CDATA[org.wso2.carbon.identity.template.mgt.model.Template@24ee1e7a]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDeleteTemplate -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:org.wso2.carbon.identity.template.mgt.TemplateManagerImplTest@1cca2e9d]" name="tearDown" is-config="true" duration-ms="1" started-at="2018-11-02T05:18:45Z" finished-at="2018-11-02T05:18:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="beforePowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.TemplateManagerImplTest@1cca2e9d]" name="beforePowerMockTestMethod" is-config="true" duration-ms="1" started-at="2018-11-02T05:18:45Z" finished-at="2018-11-02T05:18:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforePowerMockTestMethod -->
+        <test-method status="PASS" signature="afterPowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.TemplateManagerImplTest@1cca2e9d]" name="afterPowerMockTestMethod" is-config="true" duration-ms="0" started-at="2018-11-02T05:18:45Z" finished-at="2018-11-02T05:18:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterPowerMockTestMethod -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:org.wso2.carbon.identity.template.mgt.TemplateManagerImplTest@1cca2e9d]" name="setUp" is-config="true" duration-ms="9" started-at="2018-11-02T05:18:45Z" finished-at="2018-11-02T05:18:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testDeleteTemplate(java.lang.Object)[pri:0, instance:org.wso2.carbon.identity.template.mgt.TemplateManagerImplTest@1cca2e9d]" name="testDeleteTemplate" duration-ms="4" started-at="2018-11-02T05:18:45Z" data-provider="TemplateDataProvider" finished-at="2018-11-02T05:18:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.wso2.carbon.identity.template.mgt.model.Template@3bf910a2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDeleteTemplate -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:org.wso2.carbon.identity.template.mgt.TemplateManagerImplTest@1cca2e9d]" name="tearDown" is-config="true" duration-ms="1" started-at="2018-11-02T05:18:45Z" finished-at="2018-11-02T05:18:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="beforePowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.TemplateManagerImplTest@1cca2e9d]" name="beforePowerMockTestMethod" is-config="true" duration-ms="1" started-at="2018-11-02T05:18:45Z" finished-at="2018-11-02T05:18:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforePowerMockTestMethod -->
+        <test-method status="PASS" signature="afterPowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.TemplateManagerImplTest@1cca2e9d]" name="afterPowerMockTestMethod" is-config="true" duration-ms="0" started-at="2018-11-02T05:18:45Z" finished-at="2018-11-02T05:18:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterPowerMockTestMethod -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:org.wso2.carbon.identity.template.mgt.TemplateManagerImplTest@1cca2e9d]" name="setUp" is-config="true" duration-ms="10" started-at="2018-11-02T05:18:45Z" finished-at="2018-11-02T05:18:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testDeleteTemplate(java.lang.Object)[pri:0, instance:org.wso2.carbon.identity.template.mgt.TemplateManagerImplTest@1cca2e9d]" name="testDeleteTemplate" duration-ms="6" started-at="2018-11-02T05:18:45Z" data-provider="TemplateDataProvider" finished-at="2018-11-02T05:18:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.wso2.carbon.identity.template.mgt.model.Template@35bcb2b4]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDeleteTemplate -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:org.wso2.carbon.identity.template.mgt.TemplateManagerImplTest@1cca2e9d]" name="tearDown" is-config="true" duration-ms="1" started-at="2018-11-02T05:18:45Z" finished-at="2018-11-02T05:18:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="afterPowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.TemplateManagerImplTest@1cca2e9d]" name="afterPowerMockTestMethod" is-config="true" duration-ms="0" started-at="2018-11-02T05:18:45Z" finished-at="2018-11-02T05:18:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterPowerMockTestMethod -->
+        <test-method status="PASS" signature="beforePowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.TemplateManagerImplTest@1cca2e9d]" name="beforePowerMockTestMethod" is-config="true" duration-ms="1" started-at="2018-11-02T05:18:45Z" finished-at="2018-11-02T05:18:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforePowerMockTestMethod -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:org.wso2.carbon.identity.template.mgt.TemplateManagerImplTest@1cca2e9d]" name="setUp" is-config="true" duration-ms="11" started-at="2018-11-02T05:18:45Z" finished-at="2018-11-02T05:18:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testGetTemplateByName(java.lang.Object, java.lang.String)[pri:0, instance:org.wso2.carbon.identity.template.mgt.TemplateManagerImplTest@1cca2e9d]" name="testGetTemplateByName" duration-ms="8" started-at="2018-11-02T05:18:45Z" data-provider="getTemplateByNameDataProvider" finished-at="2018-11-02T05:18:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.wso2.carbon.identity.template.mgt.model.Template@590a8427]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[T1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetTemplateByName -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:org.wso2.carbon.identity.template.mgt.TemplateManagerImplTest@1cca2e9d]" name="tearDown" is-config="true" duration-ms="1" started-at="2018-11-02T05:18:45Z" finished-at="2018-11-02T05:18:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="beforePowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.TemplateManagerImplTest@1cca2e9d]" name="beforePowerMockTestMethod" is-config="true" duration-ms="2" started-at="2018-11-02T05:18:45Z" finished-at="2018-11-02T05:18:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforePowerMockTestMethod -->
+        <test-method status="PASS" signature="afterPowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.TemplateManagerImplTest@1cca2e9d]" name="afterPowerMockTestMethod" is-config="true" duration-ms="0" started-at="2018-11-02T05:18:45Z" finished-at="2018-11-02T05:18:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterPowerMockTestMethod -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:org.wso2.carbon.identity.template.mgt.TemplateManagerImplTest@1cca2e9d]" name="setUp" is-config="true" duration-ms="12" started-at="2018-11-02T05:18:45Z" finished-at="2018-11-02T05:18:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testGetTemplateByName(java.lang.Object, java.lang.String)[pri:0, instance:org.wso2.carbon.identity.template.mgt.TemplateManagerImplTest@1cca2e9d]" name="testGetTemplateByName" duration-ms="5" started-at="2018-11-02T05:18:45Z" data-provider="getTemplateByNameDataProvider" finished-at="2018-11-02T05:18:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.wso2.carbon.identity.template.mgt.model.Template@2169d6d4]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[T2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetTemplateByName -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:org.wso2.carbon.identity.template.mgt.TemplateManagerImplTest@1cca2e9d]" name="tearDown" is-config="true" duration-ms="1" started-at="2018-11-02T05:18:45Z" finished-at="2018-11-02T05:18:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="beforePowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.TemplateManagerImplTest@1cca2e9d]" name="beforePowerMockTestMethod" is-config="true" duration-ms="2" started-at="2018-11-02T05:18:45Z" finished-at="2018-11-02T05:18:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforePowerMockTestMethod -->
+        <test-method status="PASS" signature="afterPowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.TemplateManagerImplTest@1cca2e9d]" name="afterPowerMockTestMethod" is-config="true" duration-ms="0" started-at="2018-11-02T05:18:45Z" finished-at="2018-11-02T05:18:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterPowerMockTestMethod -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:org.wso2.carbon.identity.template.mgt.TemplateManagerImplTest@1cca2e9d]" name="setUp" is-config="true" duration-ms="9" started-at="2018-11-02T05:18:45Z" finished-at="2018-11-02T05:18:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testGetTemplateByName(java.lang.Object, java.lang.String)[pri:0, instance:org.wso2.carbon.identity.template.mgt.TemplateManagerImplTest@1cca2e9d]" name="testGetTemplateByName" duration-ms="5" started-at="2018-11-02T05:18:45Z" data-provider="getTemplateByNameDataProvider" finished-at="2018-11-02T05:18:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.wso2.carbon.identity.template.mgt.model.Template@2de0a3c7]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[T3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetTemplateByName -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:org.wso2.carbon.identity.template.mgt.TemplateManagerImplTest@1cca2e9d]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-11-02T05:18:45Z" finished-at="2018-11-02T05:18:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="afterPowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.TemplateManagerImplTest@1cca2e9d]" name="afterPowerMockTestMethod" is-config="true" duration-ms="1" started-at="2018-11-02T05:18:45Z" finished-at="2018-11-02T05:18:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterPowerMockTestMethod -->
+        <test-method status="PASS" signature="beforePowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.TemplateManagerImplTest@1cca2e9d]" name="beforePowerMockTestMethod" is-config="true" duration-ms="1" started-at="2018-11-02T05:18:45Z" finished-at="2018-11-02T05:18:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforePowerMockTestMethod -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:org.wso2.carbon.identity.template.mgt.TemplateManagerImplTest@1cca2e9d]" name="setUp" is-config="true" duration-ms="10" started-at="2018-11-02T05:18:45Z" finished-at="2018-11-02T05:18:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testGetTemplateList(java.lang.Integer, java.lang.Integer, int)[pri:0, instance:org.wso2.carbon.identity.template.mgt.TemplateManagerImplTest@1cca2e9d]" name="testGetTemplateList" duration-ms="14" started-at="2018-11-02T05:18:45Z" data-provider="templateListProvider" finished-at="2018-11-02T05:18:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetTemplateList -->
+        <test-method status="PASS" signature="afterPowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.TemplateManagerImplTest@1cca2e9d]" name="afterPowerMockTestMethod" is-config="true" duration-ms="1" started-at="2018-11-02T05:18:45Z" finished-at="2018-11-02T05:18:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterPowerMockTestMethod -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:org.wso2.carbon.identity.template.mgt.TemplateManagerImplTest@1cca2e9d]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-11-02T05:18:45Z" finished-at="2018-11-02T05:18:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="beforePowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.TemplateManagerImplTest@1cca2e9d]" name="beforePowerMockTestMethod" is-config="true" duration-ms="1" started-at="2018-11-02T05:18:45Z" finished-at="2018-11-02T05:18:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforePowerMockTestMethod -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:org.wso2.carbon.identity.template.mgt.TemplateManagerImplTest@1cca2e9d]" name="setUp" is-config="true" duration-ms="10" started-at="2018-11-02T05:18:45Z" finished-at="2018-11-02T05:18:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testGetTemplateList(java.lang.Integer, java.lang.Integer, int)[pri:0, instance:org.wso2.carbon.identity.template.mgt.TemplateManagerImplTest@1cca2e9d]" name="testGetTemplateList" duration-ms="6" started-at="2018-11-02T05:18:45Z" data-provider="templateListProvider" finished-at="2018-11-02T05:18:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetTemplateList -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:org.wso2.carbon.identity.template.mgt.TemplateManagerImplTest@1cca2e9d]" name="tearDown" is-config="true" duration-ms="1" started-at="2018-11-02T05:18:45Z" finished-at="2018-11-02T05:18:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="afterPowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.TemplateManagerImplTest@1cca2e9d]" name="afterPowerMockTestMethod" is-config="true" duration-ms="0" started-at="2018-11-02T05:18:45Z" finished-at="2018-11-02T05:18:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterPowerMockTestMethod -->
+        <test-method status="PASS" signature="beforePowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.TemplateManagerImplTest@1cca2e9d]" name="beforePowerMockTestMethod" is-config="true" duration-ms="1" started-at="2018-11-02T05:18:45Z" finished-at="2018-11-02T05:18:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforePowerMockTestMethod -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:org.wso2.carbon.identity.template.mgt.TemplateManagerImplTest@1cca2e9d]" name="setUp" is-config="true" duration-ms="8" started-at="2018-11-02T05:18:45Z" finished-at="2018-11-02T05:18:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testGetTemplateList(java.lang.Integer, java.lang.Integer, int)[pri:0, instance:org.wso2.carbon.identity.template.mgt.TemplateManagerImplTest@1cca2e9d]" name="testGetTemplateList" duration-ms="9" started-at="2018-11-02T05:18:45Z" data-provider="templateListProvider" finished-at="2018-11-02T05:18:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[10]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetTemplateList -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:org.wso2.carbon.identity.template.mgt.TemplateManagerImplTest@1cca2e9d]" name="tearDown" is-config="true" duration-ms="1" started-at="2018-11-02T05:18:45Z" finished-at="2018-11-02T05:18:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="afterPowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.TemplateManagerImplTest@1cca2e9d]" name="afterPowerMockTestMethod" is-config="true" duration-ms="0" started-at="2018-11-02T05:18:45Z" finished-at="2018-11-02T05:18:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterPowerMockTestMethod -->
+        <test-method status="PASS" signature="beforePowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.TemplateManagerImplTest@1cca2e9d]" name="beforePowerMockTestMethod" is-config="true" duration-ms="1" started-at="2018-11-02T05:18:45Z" finished-at="2018-11-02T05:18:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforePowerMockTestMethod -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:org.wso2.carbon.identity.template.mgt.TemplateManagerImplTest@1cca2e9d]" name="setUp" is-config="true" duration-ms="7" started-at="2018-11-02T05:18:45Z" finished-at="2018-11-02T05:18:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testUpdateTemplate(java.lang.String, java.lang.Object, java.lang.Object)[pri:0, instance:org.wso2.carbon.identity.template.mgt.TemplateManagerImplTest@1cca2e9d]" name="testUpdateTemplate" duration-ms="4" started-at="2018-11-02T05:18:45Z" data-provider="UpdateTemplateDataProvider" finished-at="2018-11-02T05:18:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[T1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.wso2.carbon.identity.template.mgt.model.Template@759ceb63]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.wso2.carbon.identity.template.mgt.model.Template@223c254f]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUpdateTemplate -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:org.wso2.carbon.identity.template.mgt.TemplateManagerImplTest@1cca2e9d]" name="tearDown" is-config="true" duration-ms="1" started-at="2018-11-02T05:18:45Z" finished-at="2018-11-02T05:18:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="beforePowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.TemplateManagerImplTest@1cca2e9d]" name="beforePowerMockTestMethod" is-config="true" duration-ms="1" started-at="2018-11-02T05:18:45Z" finished-at="2018-11-02T05:18:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforePowerMockTestMethod -->
+        <test-method status="PASS" signature="afterPowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.TemplateManagerImplTest@1cca2e9d]" name="afterPowerMockTestMethod" is-config="true" duration-ms="0" started-at="2018-11-02T05:18:45Z" finished-at="2018-11-02T05:18:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterPowerMockTestMethod -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:org.wso2.carbon.identity.template.mgt.TemplateManagerImplTest@1cca2e9d]" name="setUp" is-config="true" duration-ms="6" started-at="2018-11-02T05:18:45Z" finished-at="2018-11-02T05:18:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testUpdateTemplate(java.lang.String, java.lang.Object, java.lang.Object)[pri:0, instance:org.wso2.carbon.identity.template.mgt.TemplateManagerImplTest@1cca2e9d]" name="testUpdateTemplate" duration-ms="3" started-at="2018-11-02T05:18:45Z" data-provider="UpdateTemplateDataProvider" finished-at="2018-11-02T05:18:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[T2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.wso2.carbon.identity.template.mgt.model.Template@64645e6]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.wso2.carbon.identity.template.mgt.model.Template@20c71]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUpdateTemplate -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:org.wso2.carbon.identity.template.mgt.TemplateManagerImplTest@1cca2e9d]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-11-02T05:18:45Z" finished-at="2018-11-02T05:18:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="afterPowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.TemplateManagerImplTest@1cca2e9d]" name="afterPowerMockTestMethod" is-config="true" duration-ms="1" started-at="2018-11-02T05:18:45Z" finished-at="2018-11-02T05:18:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterPowerMockTestMethod -->
+        <test-method status="PASS" signature="beforePowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.TemplateManagerImplTest@1cca2e9d]" name="beforePowerMockTestMethod" is-config="true" duration-ms="1" started-at="2018-11-02T05:18:45Z" finished-at="2018-11-02T05:18:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforePowerMockTestMethod -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:org.wso2.carbon.identity.template.mgt.TemplateManagerImplTest@1cca2e9d]" name="setUp" is-config="true" duration-ms="6" started-at="2018-11-02T05:18:45Z" finished-at="2018-11-02T05:18:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testValidatingInputs(java.lang.Object)[pri:0, instance:org.wso2.carbon.identity.template.mgt.TemplateManagerImplTest@1cca2e9d]" name="testValidatingInputs" duration-ms="3" started-at="2018-11-02T05:18:45Z" data-provider="validateInputsDataProvider" finished-at="2018-11-02T05:18:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.wso2.carbon.identity.template.mgt.model.Template@4af3ef1e]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.wso2.carbon.identity.template.mgt.exception.TemplateManagementClientException">
+            <message>
+              <![CDATA[Template name is required.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.wso2.carbon.identity.template.mgt.exception.TemplateManagementClientException: Template name is required.
+at org.wso2.carbon.identity.template.mgt.util.TemplateMgtUtils.handleClientException(TemplateMgtUtils.java:90)
+at org.wso2.carbon.identity.template.mgt.TemplateManagerImpl.validateInputParameters(TemplateManagerImpl.java:93)
+at org.wso2.carbon.identity.template.mgt.TemplateManagerImpl.addTemplate(TemplateManagerImpl.java:48)
+at org.wso2.carbon.identity.template.mgt.TemplateManagerImplTest.testValidatingInputs(TemplateManagerImplTest.java:326)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.wso2.carbon.identity.template.mgt.exception.TemplateManagementClientException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testValidatingInputs -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:org.wso2.carbon.identity.template.mgt.TemplateManagerImplTest@1cca2e9d]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-11-02T05:18:45Z" finished-at="2018-11-02T05:18:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="afterPowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.TemplateManagerImplTest@1cca2e9d]" name="afterPowerMockTestMethod" is-config="true" duration-ms="1" started-at="2018-11-02T05:18:45Z" finished-at="2018-11-02T05:18:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterPowerMockTestMethod -->
+        <test-method status="PASS" signature="beforePowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.TemplateManagerImplTest@1cca2e9d]" name="beforePowerMockTestMethod" is-config="true" duration-ms="1" started-at="2018-11-02T05:18:45Z" finished-at="2018-11-02T05:18:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforePowerMockTestMethod -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:org.wso2.carbon.identity.template.mgt.TemplateManagerImplTest@1cca2e9d]" name="setUp" is-config="true" duration-ms="7" started-at="2018-11-02T05:18:45Z" finished-at="2018-11-02T05:18:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testValidatingInputs(java.lang.Object)[pri:0, instance:org.wso2.carbon.identity.template.mgt.TemplateManagerImplTest@1cca2e9d]" name="testValidatingInputs" duration-ms="1" started-at="2018-11-02T05:18:45Z" data-provider="validateInputsDataProvider" finished-at="2018-11-02T05:18:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.wso2.carbon.identity.template.mgt.model.Template@10e58da9]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.wso2.carbon.identity.template.mgt.exception.TemplateManagementClientException">
+            <message>
+              <![CDATA[Template script is required.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.wso2.carbon.identity.template.mgt.exception.TemplateManagementClientException: Template script is required.
+at org.wso2.carbon.identity.template.mgt.util.TemplateMgtUtils.handleClientException(TemplateMgtUtils.java:90)
+at org.wso2.carbon.identity.template.mgt.TemplateManagerImpl.validateInputParameters(TemplateManagerImpl.java:100)
+at org.wso2.carbon.identity.template.mgt.TemplateManagerImpl.addTemplate(TemplateManagerImpl.java:48)
+at org.wso2.carbon.identity.template.mgt.TemplateManagerImplTest.testValidatingInputs(TemplateManagerImplTest.java:326)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.wso2.carbon.identity.template.mgt.exception.TemplateManagementClientException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testValidatingInputs -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:org.wso2.carbon.identity.template.mgt.TemplateManagerImplTest@1cca2e9d]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-11-02T05:18:45Z" finished-at="2018-11-02T05:18:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="afterPowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.TemplateManagerImplTest@1cca2e9d]" name="afterPowerMockTestMethod" is-config="true" duration-ms="1" started-at="2018-11-02T05:18:45Z" finished-at="2018-11-02T05:18:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterPowerMockTestMethod -->
+        <test-method status="PASS" signature="beforePowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.TemplateManagerImplTest@1cca2e9d]" name="beforePowerMockTestMethod" is-config="true" duration-ms="0" started-at="2018-11-02T05:18:45Z" finished-at="2018-11-02T05:18:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforePowerMockTestMethod -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:org.wso2.carbon.identity.template.mgt.TemplateManagerImplTest@1cca2e9d]" name="setUp" is-config="true" duration-ms="6" started-at="2018-11-02T05:18:45Z" finished-at="2018-11-02T05:18:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testValidatingInputs(java.lang.Object)[pri:0, instance:org.wso2.carbon.identity.template.mgt.TemplateManagerImplTest@1cca2e9d]" name="testValidatingInputs" duration-ms="1" started-at="2018-11-02T05:18:45Z" data-provider="validateInputsDataProvider" finished-at="2018-11-02T05:18:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.wso2.carbon.identity.template.mgt.model.Template@2e27b0b2]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.wso2.carbon.identity.template.mgt.exception.TemplateManagementClientException">
+            <message>
+              <![CDATA[Template name is required.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.wso2.carbon.identity.template.mgt.exception.TemplateManagementClientException: Template name is required.
+at org.wso2.carbon.identity.template.mgt.util.TemplateMgtUtils.handleClientException(TemplateMgtUtils.java:90)
+at org.wso2.carbon.identity.template.mgt.TemplateManagerImpl.validateInputParameters(TemplateManagerImpl.java:93)
+at org.wso2.carbon.identity.template.mgt.TemplateManagerImpl.addTemplate(TemplateManagerImpl.java:48)
+at org.wso2.carbon.identity.template.mgt.TemplateManagerImplTest.testValidatingInputs(TemplateManagerImplTest.java:326)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.wso2.carbon.identity.template.mgt.exception.TemplateManagementClientException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testValidatingInputs -->
+        <test-method status="PASS" signature="afterPowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.TemplateManagerImplTest@1cca2e9d]" name="afterPowerMockTestMethod" is-config="true" duration-ms="1" started-at="2018-11-02T05:18:45Z" finished-at="2018-11-02T05:18:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterPowerMockTestMethod -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:org.wso2.carbon.identity.template.mgt.TemplateManagerImplTest@1cca2e9d]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-11-02T05:18:45Z" finished-at="2018-11-02T05:18:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="beforePowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.TemplateManagerImplTest@1cca2e9d]" name="beforePowerMockTestMethod" is-config="true" duration-ms="1" started-at="2018-11-02T05:18:45Z" finished-at="2018-11-02T05:18:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforePowerMockTestMethod -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:org.wso2.carbon.identity.template.mgt.TemplateManagerImplTest@1cca2e9d]" name="setUp" is-config="true" duration-ms="5" started-at="2018-11-02T05:18:45Z" finished-at="2018-11-02T05:18:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testvalidatingPaginationParameters()[pri:0, instance:org.wso2.carbon.identity.template.mgt.TemplateManagerImplTest@1cca2e9d]" name="testvalidatingPaginationParameters" duration-ms="1" started-at="2018-11-02T05:18:45Z" finished-at="2018-11-02T05:18:45Z">
+          <exception class="org.wso2.carbon.identity.template.mgt.exception.TemplateManagementClientException">
+            <message>
+              <![CDATA[Limit or offset values cannot be negative.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.wso2.carbon.identity.template.mgt.exception.TemplateManagementClientException: Limit or offset values cannot be negative.
+at org.wso2.carbon.identity.template.mgt.util.TemplateMgtUtils.handleClientException(TemplateMgtUtils.java:90)
+at org.wso2.carbon.identity.template.mgt.TemplateManagerImpl.validatePaginationParameters(TemplateManagerImpl.java:112)
+at org.wso2.carbon.identity.template.mgt.TemplateManagerImpl.listTemplates(TemplateManagerImpl.java:75)
+at org.wso2.carbon.identity.template.mgt.TemplateManagerImplTest.testvalidatingPaginationParameters(TemplateManagerImplTest.java:342)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:386)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:323)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:143)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.wso2.carbon.identity.template.mgt.exception.TemplateManagementClientException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testvalidatingPaginationParameters -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:org.wso2.carbon.identity.template.mgt.TemplateManagerImplTest@1cca2e9d]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-11-02T05:18:45Z" finished-at="2018-11-02T05:18:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="afterPowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.TemplateManagerImplTest@1cca2e9d]" name="afterPowerMockTestMethod" is-config="true" duration-ms="1" started-at="2018-11-02T05:18:45Z" finished-at="2018-11-02T05:18:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterPowerMockTestMethod -->
+        <test-method status="PASS" signature="afterPowerMockTestClass()[pri:0, instance:org.wso2.carbon.identity.template.mgt.TemplateManagerImplTest@1cca2e9d]" name="afterPowerMockTestClass" is-config="true" duration-ms="0" started-at="2018-11-02T05:18:45Z" finished-at="2018-11-02T05:18:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterPowerMockTestClass -->
+      </class> <!-- org.wso2.carbon.identity.template.mgt.TemplateManagerImplTest -->
+      <class name="org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest">
+        <test-method status="PASS" signature="beforePowerMockTestClass()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@68543a35]" name="beforePowerMockTestClass" is-config="true" duration-ms="39" started-at="2018-11-02T05:18:42Z" finished-at="2018-11-02T05:18:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforePowerMockTestClass -->
+        <test-method status="PASS" signature="beforePowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@68543a35]" name="beforePowerMockTestMethod" is-config="true" duration-ms="199" started-at="2018-11-02T05:18:42Z" finished-at="2018-11-02T05:18:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforePowerMockTestMethod -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@68543a35]" name="setUp" is-config="true" duration-ms="750" started-at="2018-11-02T05:18:42Z" finished-at="2018-11-02T05:18:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testAddTemplate(java.lang.Object)[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@68543a35]" name="testAddTemplate" duration-ms="454" started-at="2018-11-02T05:18:43Z" data-provider="TemplateDataProvider" finished-at="2018-11-02T05:18:43Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.wso2.carbon.identity.template.mgt.model.Template@351bf572]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddTemplate -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@68543a35]" name="tearDown" is-config="true" duration-ms="1" started-at="2018-11-02T05:18:43Z" finished-at="2018-11-02T05:18:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="afterPowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@68543a35]" name="afterPowerMockTestMethod" is-config="true" duration-ms="5" started-at="2018-11-02T05:18:43Z" finished-at="2018-11-02T05:18:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterPowerMockTestMethod -->
+        <test-method status="PASS" signature="beforePowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@68543a35]" name="beforePowerMockTestMethod" is-config="true" duration-ms="1" started-at="2018-11-02T05:18:43Z" finished-at="2018-11-02T05:18:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforePowerMockTestMethod -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@68543a35]" name="setUp" is-config="true" duration-ms="9" started-at="2018-11-02T05:18:43Z" finished-at="2018-11-02T05:18:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testAddTemplate(java.lang.Object)[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@68543a35]" name="testAddTemplate" duration-ms="2" started-at="2018-11-02T05:18:43Z" data-provider="TemplateDataProvider" finished-at="2018-11-02T05:18:43Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.wso2.carbon.identity.template.mgt.model.Template@18d87424]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddTemplate -->
+        <test-method status="PASS" signature="afterPowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@68543a35]" name="afterPowerMockTestMethod" is-config="true" duration-ms="0" started-at="2018-11-02T05:18:43Z" finished-at="2018-11-02T05:18:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterPowerMockTestMethod -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@68543a35]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-11-02T05:18:43Z" finished-at="2018-11-02T05:18:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="beforePowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@68543a35]" name="beforePowerMockTestMethod" is-config="true" duration-ms="0" started-at="2018-11-02T05:18:43Z" finished-at="2018-11-02T05:18:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforePowerMockTestMethod -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@68543a35]" name="setUp" is-config="true" duration-ms="8" started-at="2018-11-02T05:18:43Z" finished-at="2018-11-02T05:18:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testAddTemplate(java.lang.Object)[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@68543a35]" name="testAddTemplate" duration-ms="3" started-at="2018-11-02T05:18:43Z" data-provider="TemplateDataProvider" finished-at="2018-11-02T05:18:43Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.wso2.carbon.identity.template.mgt.model.Template@1f7c53ea]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddTemplate -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@68543a35]" name="tearDown" is-config="true" duration-ms="1" started-at="2018-11-02T05:18:43Z" finished-at="2018-11-02T05:18:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="afterPowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@68543a35]" name="afterPowerMockTestMethod" is-config="true" duration-ms="0" started-at="2018-11-02T05:18:43Z" finished-at="2018-11-02T05:18:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterPowerMockTestMethod -->
+        <test-method status="PASS" signature="beforePowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@68543a35]" name="beforePowerMockTestMethod" is-config="true" duration-ms="1" started-at="2018-11-02T05:18:43Z" finished-at="2018-11-02T05:18:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforePowerMockTestMethod -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@68543a35]" name="setUp" is-config="true" duration-ms="8" started-at="2018-11-02T05:18:43Z" finished-at="2018-11-02T05:18:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testAddTemplateServerException(java.lang.Object)[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@68543a35]" name="testAddTemplateServerException" duration-ms="7" started-at="2018-11-02T05:18:43Z" data-provider="TemplateDataProvider" finished-at="2018-11-02T05:18:43Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.wso2.carbon.identity.template.mgt.model.Template@629a76ea]]>
               </value>
             </param>
           </params>
@@ -160,27 +920,27 @@ at org.wso2.carbon.database.utils.jdbc.JdbcTemplate.executeInsert(JdbcTemplate.j
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAddTemplateServerException -->
-        <test-method status="PASS" signature="afterPowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@de0c402]" name="afterPowerMockTestMethod" is-config="true" duration-ms="1" started-at="2018-11-01T06:38:22Z" finished-at="2018-11-01T06:38:22Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterPowerMockTestMethod -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@de0c402]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-11-01T06:38:22Z" finished-at="2018-11-01T06:38:22Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@68543a35]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-11-02T05:18:43Z" finished-at="2018-11-02T05:18:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="beforePowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@de0c402]" name="beforePowerMockTestMethod" is-config="true" duration-ms="1" started-at="2018-11-01T06:38:22Z" finished-at="2018-11-01T06:38:22Z">
+        <test-method status="PASS" signature="afterPowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@68543a35]" name="afterPowerMockTestMethod" is-config="true" duration-ms="1" started-at="2018-11-02T05:18:43Z" finished-at="2018-11-02T05:18:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterPowerMockTestMethod -->
+        <test-method status="PASS" signature="beforePowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@68543a35]" name="beforePowerMockTestMethod" is-config="true" duration-ms="1" started-at="2018-11-02T05:18:43Z" finished-at="2018-11-02T05:18:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforePowerMockTestMethod -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@de0c402]" name="setUp" is-config="true" duration-ms="7" started-at="2018-11-01T06:38:22Z" finished-at="2018-11-01T06:38:22Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@68543a35]" name="setUp" is-config="true" duration-ms="7" started-at="2018-11-02T05:18:43Z" finished-at="2018-11-02T05:18:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testAddTemplateServerException(java.lang.Object)[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@de0c402]" name="testAddTemplateServerException" duration-ms="2" started-at="2018-11-01T06:38:22Z" data-provider="TemplateDataProvider" finished-at="2018-11-01T06:38:22Z">
+        <test-method status="PASS" signature="testAddTemplateServerException(java.lang.Object)[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@68543a35]" name="testAddTemplateServerException" duration-ms="2" started-at="2018-11-02T05:18:43Z" data-provider="TemplateDataProvider" finished-at="2018-11-02T05:18:43Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.wso2.carbon.identity.template.mgt.model.Template@49eac84f]]>
+                <![CDATA[org.wso2.carbon.identity.template.mgt.model.Template@49c45ceb]]>
               </value>
             </param>
           </params>
@@ -236,27 +996,27 @@ at org.wso2.carbon.database.utils.jdbc.JdbcTemplate.executeInsert(JdbcTemplate.j
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAddTemplateServerException -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@de0c402]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-11-01T06:38:22Z" finished-at="2018-11-01T06:38:22Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@68543a35]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-11-02T05:18:43Z" finished-at="2018-11-02T05:18:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="afterPowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@de0c402]" name="afterPowerMockTestMethod" is-config="true" duration-ms="1" started-at="2018-11-01T06:38:22Z" finished-at="2018-11-01T06:38:22Z">
+        <test-method status="PASS" signature="afterPowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@68543a35]" name="afterPowerMockTestMethod" is-config="true" duration-ms="1" started-at="2018-11-02T05:18:43Z" finished-at="2018-11-02T05:18:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterPowerMockTestMethod -->
-        <test-method status="PASS" signature="beforePowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@de0c402]" name="beforePowerMockTestMethod" is-config="true" duration-ms="1" started-at="2018-11-01T06:38:22Z" finished-at="2018-11-01T06:38:22Z">
+        <test-method status="PASS" signature="beforePowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@68543a35]" name="beforePowerMockTestMethod" is-config="true" duration-ms="1" started-at="2018-11-02T05:18:43Z" finished-at="2018-11-02T05:18:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforePowerMockTestMethod -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@de0c402]" name="setUp" is-config="true" duration-ms="7" started-at="2018-11-01T06:38:22Z" finished-at="2018-11-01T06:38:22Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@68543a35]" name="setUp" is-config="true" duration-ms="9" started-at="2018-11-02T05:18:43Z" finished-at="2018-11-02T05:18:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testAddTemplateServerException(java.lang.Object)[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@de0c402]" name="testAddTemplateServerException" duration-ms="2" started-at="2018-11-01T06:38:22Z" data-provider="TemplateDataProvider" finished-at="2018-11-01T06:38:22Z">
+        <test-method status="PASS" signature="testAddTemplateServerException(java.lang.Object)[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@68543a35]" name="testAddTemplateServerException" duration-ms="3" started-at="2018-11-02T05:18:43Z" data-provider="TemplateDataProvider" finished-at="2018-11-02T05:18:43Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.wso2.carbon.identity.template.mgt.model.Template@370fd959]]>
+                <![CDATA[org.wso2.carbon.identity.template.mgt.model.Template@d08b73b]]>
               </value>
             </param>
           </params>
@@ -312,108 +1072,108 @@ at org.wso2.carbon.database.utils.jdbc.JdbcTemplate.executeInsert(JdbcTemplate.j
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAddTemplateServerException -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@de0c402]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-11-01T06:38:22Z" finished-at="2018-11-01T06:38:22Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="afterPowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@de0c402]" name="afterPowerMockTestMethod" is-config="true" duration-ms="0" started-at="2018-11-01T06:38:22Z" finished-at="2018-11-01T06:38:22Z">
+        <test-method status="PASS" signature="afterPowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@68543a35]" name="afterPowerMockTestMethod" is-config="true" duration-ms="1" started-at="2018-11-02T05:18:43Z" finished-at="2018-11-02T05:18:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterPowerMockTestMethod -->
-        <test-method status="PASS" signature="beforePowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@de0c402]" name="beforePowerMockTestMethod" is-config="true" duration-ms="1" started-at="2018-11-01T06:38:22Z" finished-at="2018-11-01T06:38:22Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@68543a35]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-11-02T05:18:43Z" finished-at="2018-11-02T05:18:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="beforePowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@68543a35]" name="beforePowerMockTestMethod" is-config="true" duration-ms="1" started-at="2018-11-02T05:18:43Z" finished-at="2018-11-02T05:18:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforePowerMockTestMethod -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@de0c402]" name="setUp" is-config="true" duration-ms="9" started-at="2018-11-01T06:38:22Z" finished-at="2018-11-01T06:38:22Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@68543a35]" name="setUp" is-config="true" duration-ms="7" started-at="2018-11-02T05:18:43Z" finished-at="2018-11-02T05:18:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testDeleteTemplate(java.lang.Object)[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@de0c402]" name="testDeleteTemplate" duration-ms="89" started-at="2018-11-01T06:38:22Z" data-provider="TemplateDataProvider" finished-at="2018-11-01T06:38:22Z">
+        <test-method status="PASS" signature="testDeleteTemplate(java.lang.Object)[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@68543a35]" name="testDeleteTemplate" duration-ms="109" started-at="2018-11-02T05:18:43Z" data-provider="TemplateDataProvider" finished-at="2018-11-02T05:18:43Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.wso2.carbon.identity.template.mgt.model.Template@16d4d353]]>
+                <![CDATA[org.wso2.carbon.identity.template.mgt.model.Template@6a5ebac7]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDeleteTemplate -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@de0c402]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-11-01T06:38:22Z" finished-at="2018-11-01T06:38:22Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@68543a35]" name="tearDown" is-config="true" duration-ms="1" started-at="2018-11-02T05:18:43Z" finished-at="2018-11-02T05:18:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="afterPowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@de0c402]" name="afterPowerMockTestMethod" is-config="true" duration-ms="1" started-at="2018-11-01T06:38:22Z" finished-at="2018-11-01T06:38:22Z">
+        <test-method status="PASS" signature="afterPowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@68543a35]" name="afterPowerMockTestMethod" is-config="true" duration-ms="0" started-at="2018-11-02T05:18:43Z" finished-at="2018-11-02T05:18:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterPowerMockTestMethod -->
-        <test-method status="PASS" signature="beforePowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@de0c402]" name="beforePowerMockTestMethod" is-config="true" duration-ms="1" started-at="2018-11-01T06:38:22Z" finished-at="2018-11-01T06:38:22Z">
+        <test-method status="PASS" signature="beforePowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@68543a35]" name="beforePowerMockTestMethod" is-config="true" duration-ms="1" started-at="2018-11-02T05:18:43Z" finished-at="2018-11-02T05:18:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforePowerMockTestMethod -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@de0c402]" name="setUp" is-config="true" duration-ms="10" started-at="2018-11-01T06:38:22Z" finished-at="2018-11-01T06:38:22Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@68543a35]" name="setUp" is-config="true" duration-ms="11" started-at="2018-11-02T05:18:43Z" finished-at="2018-11-02T05:18:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testDeleteTemplate(java.lang.Object)[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@de0c402]" name="testDeleteTemplate" duration-ms="5" started-at="2018-11-01T06:38:22Z" data-provider="TemplateDataProvider" finished-at="2018-11-01T06:38:22Z">
+        <test-method status="PASS" signature="testDeleteTemplate(java.lang.Object)[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@68543a35]" name="testDeleteTemplate" duration-ms="5" started-at="2018-11-02T05:18:43Z" data-provider="TemplateDataProvider" finished-at="2018-11-02T05:18:43Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.wso2.carbon.identity.template.mgt.model.Template@331069bf]]>
+                <![CDATA[org.wso2.carbon.identity.template.mgt.model.Template@50fbc617]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDeleteTemplate -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@de0c402]" name="tearDown" is-config="true" duration-ms="1" started-at="2018-11-01T06:38:22Z" finished-at="2018-11-01T06:38:22Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@68543a35]" name="tearDown" is-config="true" duration-ms="1" started-at="2018-11-02T05:18:43Z" finished-at="2018-11-02T05:18:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="beforePowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@de0c402]" name="beforePowerMockTestMethod" is-config="true" duration-ms="1" started-at="2018-11-01T06:38:22Z" finished-at="2018-11-01T06:38:22Z">
+        <test-method status="PASS" signature="beforePowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@68543a35]" name="beforePowerMockTestMethod" is-config="true" duration-ms="1" started-at="2018-11-02T05:18:43Z" finished-at="2018-11-02T05:18:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforePowerMockTestMethod -->
-        <test-method status="PASS" signature="afterPowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@de0c402]" name="afterPowerMockTestMethod" is-config="true" duration-ms="0" started-at="2018-11-01T06:38:22Z" finished-at="2018-11-01T06:38:22Z">
+        <test-method status="PASS" signature="afterPowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@68543a35]" name="afterPowerMockTestMethod" is-config="true" duration-ms="0" started-at="2018-11-02T05:18:43Z" finished-at="2018-11-02T05:18:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterPowerMockTestMethod -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@de0c402]" name="setUp" is-config="true" duration-ms="6" started-at="2018-11-01T06:38:22Z" finished-at="2018-11-01T06:38:22Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@68543a35]" name="setUp" is-config="true" duration-ms="7" started-at="2018-11-02T05:18:43Z" finished-at="2018-11-02T05:18:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testDeleteTemplate(java.lang.Object)[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@de0c402]" name="testDeleteTemplate" duration-ms="4" started-at="2018-11-01T06:38:22Z" data-provider="TemplateDataProvider" finished-at="2018-11-01T06:38:22Z">
+        <test-method status="PASS" signature="testDeleteTemplate(java.lang.Object)[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@68543a35]" name="testDeleteTemplate" duration-ms="5" started-at="2018-11-02T05:18:43Z" data-provider="TemplateDataProvider" finished-at="2018-11-02T05:18:43Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.wso2.carbon.identity.template.mgt.model.Template@5c0d967e]]>
+                <![CDATA[org.wso2.carbon.identity.template.mgt.model.Template@3d56e04f]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDeleteTemplate -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@de0c402]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-11-01T06:38:22Z" finished-at="2018-11-01T06:38:22Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@68543a35]" name="tearDown" is-config="true" duration-ms="1" started-at="2018-11-02T05:18:43Z" finished-at="2018-11-02T05:18:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="afterPowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@de0c402]" name="afterPowerMockTestMethod" is-config="true" duration-ms="1" started-at="2018-11-01T06:38:22Z" finished-at="2018-11-01T06:38:22Z">
+        <test-method status="PASS" signature="afterPowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@68543a35]" name="afterPowerMockTestMethod" is-config="true" duration-ms="0" started-at="2018-11-02T05:18:43Z" finished-at="2018-11-02T05:18:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterPowerMockTestMethod -->
-        <test-method status="PASS" signature="beforePowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@de0c402]" name="beforePowerMockTestMethod" is-config="true" duration-ms="1" started-at="2018-11-01T06:38:22Z" finished-at="2018-11-01T06:38:22Z">
+        <test-method status="PASS" signature="beforePowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@68543a35]" name="beforePowerMockTestMethod" is-config="true" duration-ms="1" started-at="2018-11-02T05:18:43Z" finished-at="2018-11-02T05:18:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforePowerMockTestMethod -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@de0c402]" name="setUp" is-config="true" duration-ms="7" started-at="2018-11-01T06:38:22Z" finished-at="2018-11-01T06:38:22Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@68543a35]" name="setUp" is-config="true" duration-ms="7" started-at="2018-11-02T05:18:43Z" finished-at="2018-11-02T05:18:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testDeleteTemplateDataAccessException(java.lang.Object)[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@de0c402]" name="testDeleteTemplateDataAccessException" duration-ms="6" started-at="2018-11-01T06:38:22Z" data-provider="TemplateDataProvider" finished-at="2018-11-01T06:38:22Z">
+        <test-method status="PASS" signature="testDeleteTemplateDataAccessException(java.lang.Object)[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@68543a35]" name="testDeleteTemplateDataAccessException" duration-ms="7" started-at="2018-11-02T05:18:43Z" data-provider="TemplateDataProvider" finished-at="2018-11-02T05:18:43Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.wso2.carbon.identity.template.mgt.model.Template@43adbe93]]>
+                <![CDATA[org.wso2.carbon.identity.template.mgt.model.Template@3f6278d4]]>
               </value>
             </param>
           </params>
@@ -424,7 +1184,7 @@ at org.wso2.carbon.database.utils.jdbc.JdbcTemplate.executeInsert(JdbcTemplate.j
             <full-stacktrace>
               <![CDATA[org.wso2.carbon.identity.template.mgt.exception.TemplateManagementServerException: Error occurred while deleting template from DB for tenant ID: -1234 and template name: T1.
 at org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImpl.deleteTemplate(TemplateManagerDAOImpl.java:155)
-at org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest.testDeleteTemplateDataAccessException(TemplateManagerDAOImplTest.java:384)
+at org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest.testDeleteTemplateDataAccessException(TemplateManagerDAOImplTest.java:383)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -469,27 +1229,27 @@ at org.wso2.carbon.database.utils.jdbc.JdbcTemplate.executeUpdate(JdbcTemplate.j
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDeleteTemplateDataAccessException -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@de0c402]" name="tearDown" is-config="true" duration-ms="1" started-at="2018-11-01T06:38:22Z" finished-at="2018-11-01T06:38:22Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@68543a35]" name="tearDown" is-config="true" duration-ms="1" started-at="2018-11-02T05:18:43Z" finished-at="2018-11-02T05:18:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="beforePowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@de0c402]" name="beforePowerMockTestMethod" is-config="true" duration-ms="1" started-at="2018-11-01T06:38:22Z" finished-at="2018-11-01T06:38:22Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforePowerMockTestMethod -->
-        <test-method status="PASS" signature="afterPowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@de0c402]" name="afterPowerMockTestMethod" is-config="true" duration-ms="0" started-at="2018-11-01T06:38:22Z" finished-at="2018-11-01T06:38:22Z">
+        <test-method status="PASS" signature="afterPowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@68543a35]" name="afterPowerMockTestMethod" is-config="true" duration-ms="1" started-at="2018-11-02T05:18:43Z" finished-at="2018-11-02T05:18:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterPowerMockTestMethod -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@de0c402]" name="setUp" is-config="true" duration-ms="6" started-at="2018-11-01T06:38:22Z" finished-at="2018-11-01T06:38:22Z">
+        <test-method status="PASS" signature="beforePowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@68543a35]" name="beforePowerMockTestMethod" is-config="true" duration-ms="1" started-at="2018-11-02T05:18:43Z" finished-at="2018-11-02T05:18:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforePowerMockTestMethod -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@68543a35]" name="setUp" is-config="true" duration-ms="6" started-at="2018-11-02T05:18:43Z" finished-at="2018-11-02T05:18:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testDeleteTemplateDataAccessException(java.lang.Object)[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@de0c402]" name="testDeleteTemplateDataAccessException" duration-ms="5" started-at="2018-11-01T06:38:22Z" data-provider="TemplateDataProvider" finished-at="2018-11-01T06:38:22Z">
+        <test-method status="PASS" signature="testDeleteTemplateDataAccessException(java.lang.Object)[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@68543a35]" name="testDeleteTemplateDataAccessException" duration-ms="5" started-at="2018-11-02T05:18:43Z" data-provider="TemplateDataProvider" finished-at="2018-11-02T05:18:43Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.wso2.carbon.identity.template.mgt.model.Template@5dc7d016]]>
+                <![CDATA[org.wso2.carbon.identity.template.mgt.model.Template@64d580fe]]>
               </value>
             </param>
           </params>
@@ -500,7 +1260,7 @@ at org.wso2.carbon.database.utils.jdbc.JdbcTemplate.executeUpdate(JdbcTemplate.j
             <full-stacktrace>
               <![CDATA[org.wso2.carbon.identity.template.mgt.exception.TemplateManagementServerException: Error occurred while deleting template from DB for tenant ID: 1 and template name: T2.
 at org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImpl.deleteTemplate(TemplateManagerDAOImpl.java:155)
-at org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest.testDeleteTemplateDataAccessException(TemplateManagerDAOImplTest.java:384)
+at org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest.testDeleteTemplateDataAccessException(TemplateManagerDAOImplTest.java:383)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -545,27 +1305,27 @@ at org.wso2.carbon.database.utils.jdbc.JdbcTemplate.executeUpdate(JdbcTemplate.j
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDeleteTemplateDataAccessException -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@de0c402]" name="tearDown" is-config="true" duration-ms="1" started-at="2018-11-01T06:38:22Z" finished-at="2018-11-01T06:38:22Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@68543a35]" name="tearDown" is-config="true" duration-ms="1" started-at="2018-11-02T05:18:43Z" finished-at="2018-11-02T05:18:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="beforePowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@de0c402]" name="beforePowerMockTestMethod" is-config="true" duration-ms="1" started-at="2018-11-01T06:38:22Z" finished-at="2018-11-01T06:38:22Z">
+        <test-method status="PASS" signature="beforePowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@68543a35]" name="beforePowerMockTestMethod" is-config="true" duration-ms="1" started-at="2018-11-02T05:18:43Z" finished-at="2018-11-02T05:18:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforePowerMockTestMethod -->
-        <test-method status="PASS" signature="afterPowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@de0c402]" name="afterPowerMockTestMethod" is-config="true" duration-ms="0" started-at="2018-11-01T06:38:22Z" finished-at="2018-11-01T06:38:22Z">
+        <test-method status="PASS" signature="afterPowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@68543a35]" name="afterPowerMockTestMethod" is-config="true" duration-ms="0" started-at="2018-11-02T05:18:43Z" finished-at="2018-11-02T05:18:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterPowerMockTestMethod -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@de0c402]" name="setUp" is-config="true" duration-ms="6" started-at="2018-11-01T06:38:22Z" finished-at="2018-11-01T06:38:22Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@68543a35]" name="setUp" is-config="true" duration-ms="7" started-at="2018-11-02T05:18:43Z" finished-at="2018-11-02T05:18:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testDeleteTemplateDataAccessException(java.lang.Object)[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@de0c402]" name="testDeleteTemplateDataAccessException" duration-ms="4" started-at="2018-11-01T06:38:22Z" data-provider="TemplateDataProvider" finished-at="2018-11-01T06:38:22Z">
+        <test-method status="PASS" signature="testDeleteTemplateDataAccessException(java.lang.Object)[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@68543a35]" name="testDeleteTemplateDataAccessException" duration-ms="4" started-at="2018-11-02T05:18:43Z" data-provider="TemplateDataProvider" finished-at="2018-11-02T05:18:43Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.wso2.carbon.identity.template.mgt.model.Template@160a5e87]]>
+                <![CDATA[org.wso2.carbon.identity.template.mgt.model.Template@393b78f]]>
               </value>
             </param>
           </params>
@@ -576,7 +1336,7 @@ at org.wso2.carbon.database.utils.jdbc.JdbcTemplate.executeUpdate(JdbcTemplate.j
             <full-stacktrace>
               <![CDATA[org.wso2.carbon.identity.template.mgt.exception.TemplateManagementServerException: Error occurred while deleting template from DB for tenant ID: -1234 and template name: T3.
 at org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImpl.deleteTemplate(TemplateManagerDAOImpl.java:155)
-at org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest.testDeleteTemplateDataAccessException(TemplateManagerDAOImplTest.java:384)
+at org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest.testDeleteTemplateDataAccessException(TemplateManagerDAOImplTest.java:383)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -621,27 +1381,27 @@ at org.wso2.carbon.database.utils.jdbc.JdbcTemplate.executeUpdate(JdbcTemplate.j
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDeleteTemplateDataAccessException -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@de0c402]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-11-01T06:38:22Z" finished-at="2018-11-01T06:38:22Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@68543a35]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-11-02T05:18:43Z" finished-at="2018-11-02T05:18:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="afterPowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@de0c402]" name="afterPowerMockTestMethod" is-config="true" duration-ms="1" started-at="2018-11-01T06:38:22Z" finished-at="2018-11-01T06:38:22Z">
+        <test-method status="PASS" signature="afterPowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@68543a35]" name="afterPowerMockTestMethod" is-config="true" duration-ms="1" started-at="2018-11-02T05:18:43Z" finished-at="2018-11-02T05:18:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterPowerMockTestMethod -->
-        <test-method status="PASS" signature="beforePowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@de0c402]" name="beforePowerMockTestMethod" is-config="true" duration-ms="1" started-at="2018-11-01T06:38:22Z" finished-at="2018-11-01T06:38:22Z">
+        <test-method status="PASS" signature="beforePowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@68543a35]" name="beforePowerMockTestMethod" is-config="true" duration-ms="1" started-at="2018-11-02T05:18:43Z" finished-at="2018-11-02T05:18:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforePowerMockTestMethod -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@de0c402]" name="setUp" is-config="true" duration-ms="5" started-at="2018-11-01T06:38:22Z" finished-at="2018-11-01T06:38:22Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@68543a35]" name="setUp" is-config="true" duration-ms="6" started-at="2018-11-02T05:18:43Z" finished-at="2018-11-02T05:18:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testGetTemplateByName(java.lang.Object, java.lang.Integer)[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@de0c402]" name="testGetTemplateByName" duration-ms="7" started-at="2018-11-01T06:38:22Z" data-provider="getTemplateByNameDataProvider" finished-at="2018-11-01T06:38:22Z">
+        <test-method status="PASS" signature="testGetTemplateByName(java.lang.Object, java.lang.Integer)[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@68543a35]" name="testGetTemplateByName" duration-ms="8" started-at="2018-11-02T05:18:43Z" data-provider="getTemplateByNameDataProvider" finished-at="2018-11-02T05:18:43Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.wso2.carbon.identity.template.mgt.model.Template@782a0e57]]>
+                <![CDATA[org.wso2.carbon.identity.template.mgt.model.Template@228b4210]]>
               </value>
             </param>
             <param index="1">
@@ -653,27 +1413,27 @@ at org.wso2.carbon.database.utils.jdbc.JdbcTemplate.executeUpdate(JdbcTemplate.j
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testGetTemplateByName -->
-        <test-method status="PASS" signature="afterPowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@de0c402]" name="afterPowerMockTestMethod" is-config="true" duration-ms="1" started-at="2018-11-01T06:38:22Z" finished-at="2018-11-01T06:38:22Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterPowerMockTestMethod -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@de0c402]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-11-01T06:38:22Z" finished-at="2018-11-01T06:38:22Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@68543a35]" name="tearDown" is-config="true" duration-ms="1" started-at="2018-11-02T05:18:43Z" finished-at="2018-11-02T05:18:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="beforePowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@de0c402]" name="beforePowerMockTestMethod" is-config="true" duration-ms="1" started-at="2018-11-01T06:38:22Z" finished-at="2018-11-01T06:38:22Z">
+        <test-method status="PASS" signature="afterPowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@68543a35]" name="afterPowerMockTestMethod" is-config="true" duration-ms="0" started-at="2018-11-02T05:18:43Z" finished-at="2018-11-02T05:18:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterPowerMockTestMethod -->
+        <test-method status="PASS" signature="beforePowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@68543a35]" name="beforePowerMockTestMethod" is-config="true" duration-ms="1" started-at="2018-11-02T05:18:43Z" finished-at="2018-11-02T05:18:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforePowerMockTestMethod -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@de0c402]" name="setUp" is-config="true" duration-ms="8" started-at="2018-11-01T06:38:22Z" finished-at="2018-11-01T06:38:22Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@68543a35]" name="setUp" is-config="true" duration-ms="7" started-at="2018-11-02T05:18:43Z" finished-at="2018-11-02T05:18:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testGetTemplateByName(java.lang.Object, java.lang.Integer)[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@de0c402]" name="testGetTemplateByName" duration-ms="4" started-at="2018-11-01T06:38:22Z" data-provider="getTemplateByNameDataProvider" finished-at="2018-11-01T06:38:22Z">
+        <test-method status="PASS" signature="testGetTemplateByName(java.lang.Object, java.lang.Integer)[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@68543a35]" name="testGetTemplateByName" duration-ms="3" started-at="2018-11-02T05:18:43Z" data-provider="getTemplateByNameDataProvider" finished-at="2018-11-02T05:18:43Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.wso2.carbon.identity.template.mgt.model.Template@61c9e646]]>
+                <![CDATA[org.wso2.carbon.identity.template.mgt.model.Template@152334da]]>
               </value>
             </param>
             <param index="1">
@@ -685,27 +1445,27 @@ at org.wso2.carbon.database.utils.jdbc.JdbcTemplate.executeUpdate(JdbcTemplate.j
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testGetTemplateByName -->
-        <test-method status="PASS" signature="afterPowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@de0c402]" name="afterPowerMockTestMethod" is-config="true" duration-ms="1" started-at="2018-11-01T06:38:22Z" finished-at="2018-11-01T06:38:22Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterPowerMockTestMethod -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@de0c402]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-11-01T06:38:22Z" finished-at="2018-11-01T06:38:22Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@68543a35]" name="tearDown" is-config="true" duration-ms="1" started-at="2018-11-02T05:18:43Z" finished-at="2018-11-02T05:18:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="beforePowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@de0c402]" name="beforePowerMockTestMethod" is-config="true" duration-ms="1" started-at="2018-11-01T06:38:22Z" finished-at="2018-11-01T06:38:22Z">
+        <test-method status="PASS" signature="beforePowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@68543a35]" name="beforePowerMockTestMethod" is-config="true" duration-ms="1" started-at="2018-11-02T05:18:43Z" finished-at="2018-11-02T05:18:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforePowerMockTestMethod -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@de0c402]" name="setUp" is-config="true" duration-ms="6" started-at="2018-11-01T06:38:22Z" finished-at="2018-11-01T06:38:22Z">
+        <test-method status="PASS" signature="afterPowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@68543a35]" name="afterPowerMockTestMethod" is-config="true" duration-ms="0" started-at="2018-11-02T05:18:43Z" finished-at="2018-11-02T05:18:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterPowerMockTestMethod -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@68543a35]" name="setUp" is-config="true" duration-ms="6" started-at="2018-11-02T05:18:43Z" finished-at="2018-11-02T05:18:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testGetTemplateByName(java.lang.Object, java.lang.Integer)[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@de0c402]" name="testGetTemplateByName" duration-ms="3" started-at="2018-11-01T06:38:22Z" data-provider="getTemplateByNameDataProvider" finished-at="2018-11-01T06:38:22Z">
+        <test-method status="PASS" signature="testGetTemplateByName(java.lang.Object, java.lang.Integer)[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@68543a35]" name="testGetTemplateByName" duration-ms="3" started-at="2018-11-02T05:18:43Z" data-provider="getTemplateByNameDataProvider" finished-at="2018-11-02T05:18:43Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.wso2.carbon.identity.template.mgt.model.Template@4dccaef5]]>
+                <![CDATA[org.wso2.carbon.identity.template.mgt.model.Template@30f79bf3]]>
               </value>
             </param>
             <param index="1">
@@ -717,27 +1477,27 @@ at org.wso2.carbon.database.utils.jdbc.JdbcTemplate.executeUpdate(JdbcTemplate.j
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testGetTemplateByName -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@de0c402]" name="tearDown" is-config="true" duration-ms="1" started-at="2018-11-01T06:38:22Z" finished-at="2018-11-01T06:38:22Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="afterPowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@de0c402]" name="afterPowerMockTestMethod" is-config="true" duration-ms="0" started-at="2018-11-01T06:38:22Z" finished-at="2018-11-01T06:38:22Z">
+        <test-method status="PASS" signature="afterPowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@68543a35]" name="afterPowerMockTestMethod" is-config="true" duration-ms="1" started-at="2018-11-02T05:18:43Z" finished-at="2018-11-02T05:18:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterPowerMockTestMethod -->
-        <test-method status="PASS" signature="beforePowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@de0c402]" name="beforePowerMockTestMethod" is-config="true" duration-ms="1" started-at="2018-11-01T06:38:22Z" finished-at="2018-11-01T06:38:22Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@68543a35]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-11-02T05:18:43Z" finished-at="2018-11-02T05:18:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="beforePowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@68543a35]" name="beforePowerMockTestMethod" is-config="true" duration-ms="1" started-at="2018-11-02T05:18:43Z" finished-at="2018-11-02T05:18:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforePowerMockTestMethod -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@de0c402]" name="setUp" is-config="true" duration-ms="5" started-at="2018-11-01T06:38:22Z" finished-at="2018-11-01T06:38:22Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@68543a35]" name="setUp" is-config="true" duration-ms="6" started-at="2018-11-02T05:18:43Z" finished-at="2018-11-02T05:18:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testGetTemplateByNameDataAccessException(java.lang.Object, java.lang.Integer)[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@de0c402]" name="testGetTemplateByNameDataAccessException" duration-ms="3" started-at="2018-11-01T06:38:22Z" data-provider="getTemplateByNameDataProvider" finished-at="2018-11-01T06:38:22Z">
+        <test-method status="PASS" signature="testGetTemplateByNameDataAccessException(java.lang.Object, java.lang.Integer)[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@68543a35]" name="testGetTemplateByNameDataAccessException" duration-ms="3" started-at="2018-11-02T05:18:43Z" data-provider="getTemplateByNameDataProvider" finished-at="2018-11-02T05:18:43Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.wso2.carbon.identity.template.mgt.model.Template@75ed8f59]]>
+                <![CDATA[org.wso2.carbon.identity.template.mgt.model.Template@21c49d8b]]>
               </value>
             </param>
             <param index="1">
@@ -753,7 +1513,7 @@ at org.wso2.carbon.database.utils.jdbc.JdbcTemplate.executeUpdate(JdbcTemplate.j
             <full-stacktrace>
               <![CDATA[org.wso2.carbon.identity.template.mgt.exception.TemplateManagementServerException: Error occurred while retrieving template from DB for tenant ID: -1234 and template name: T1.
 at org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImpl.getTemplateByName(TemplateManagerDAOImpl.java:80)
-at org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest.testGetTemplateByNameDataAccessException(TemplateManagerDAOImplTest.java:280)
+at org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest.testGetTemplateByNameDataAccessException(TemplateManagerDAOImplTest.java:279)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -797,27 +1557,27 @@ at org.wso2.carbon.database.utils.jdbc.JdbcTemplate.fetchSingleRecord(JdbcTempla
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testGetTemplateByNameDataAccessException -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@de0c402]" name="tearDown" is-config="true" duration-ms="1" started-at="2018-11-01T06:38:22Z" finished-at="2018-11-01T06:38:22Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@68543a35]" name="tearDown" is-config="true" duration-ms="1" started-at="2018-11-02T05:18:43Z" finished-at="2018-11-02T05:18:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="afterPowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@de0c402]" name="afterPowerMockTestMethod" is-config="true" duration-ms="1" started-at="2018-11-01T06:38:22Z" finished-at="2018-11-01T06:38:22Z">
+        <test-method status="PASS" signature="afterPowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@68543a35]" name="afterPowerMockTestMethod" is-config="true" duration-ms="0" started-at="2018-11-02T05:18:43Z" finished-at="2018-11-02T05:18:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterPowerMockTestMethod -->
-        <test-method status="PASS" signature="beforePowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@de0c402]" name="beforePowerMockTestMethod" is-config="true" duration-ms="1" started-at="2018-11-01T06:38:22Z" finished-at="2018-11-01T06:38:22Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforePowerMockTestMethod -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@de0c402]" name="setUp" is-config="true" duration-ms="5" started-at="2018-11-01T06:38:22Z" finished-at="2018-11-01T06:38:22Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@68543a35]" name="setUp" is-config="true" duration-ms="5" started-at="2018-11-02T05:18:43Z" finished-at="2018-11-02T05:18:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testGetTemplateByNameDataAccessException(java.lang.Object, java.lang.Integer)[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@de0c402]" name="testGetTemplateByNameDataAccessException" duration-ms="4" started-at="2018-11-01T06:38:22Z" data-provider="getTemplateByNameDataProvider" finished-at="2018-11-01T06:38:22Z">
+        <test-method status="PASS" signature="beforePowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@68543a35]" name="beforePowerMockTestMethod" is-config="true" duration-ms="0" started-at="2018-11-02T05:18:43Z" finished-at="2018-11-02T05:18:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforePowerMockTestMethod -->
+        <test-method status="PASS" signature="testGetTemplateByNameDataAccessException(java.lang.Object, java.lang.Integer)[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@68543a35]" name="testGetTemplateByNameDataAccessException" duration-ms="3" started-at="2018-11-02T05:18:43Z" data-provider="getTemplateByNameDataProvider" finished-at="2018-11-02T05:18:43Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.wso2.carbon.identity.template.mgt.model.Template@425531c9]]>
+                <![CDATA[org.wso2.carbon.identity.template.mgt.model.Template@6e293f0e]]>
               </value>
             </param>
             <param index="1">
@@ -833,7 +1593,7 @@ at org.wso2.carbon.database.utils.jdbc.JdbcTemplate.fetchSingleRecord(JdbcTempla
             <full-stacktrace>
               <![CDATA[org.wso2.carbon.identity.template.mgt.exception.TemplateManagementServerException: Error occurred while retrieving template from DB for tenant ID: 1 and template name: T2.
 at org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImpl.getTemplateByName(TemplateManagerDAOImpl.java:80)
-at org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest.testGetTemplateByNameDataAccessException(TemplateManagerDAOImplTest.java:280)
+at org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest.testGetTemplateByNameDataAccessException(TemplateManagerDAOImplTest.java:279)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -877,27 +1637,27 @@ at org.wso2.carbon.database.utils.jdbc.JdbcTemplate.fetchSingleRecord(JdbcTempla
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testGetTemplateByNameDataAccessException -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@de0c402]" name="tearDown" is-config="true" duration-ms="1" started-at="2018-11-01T06:38:22Z" finished-at="2018-11-01T06:38:22Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@68543a35]" name="tearDown" is-config="true" duration-ms="1" started-at="2018-11-02T05:18:43Z" finished-at="2018-11-02T05:18:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="afterPowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@de0c402]" name="afterPowerMockTestMethod" is-config="true" duration-ms="0" started-at="2018-11-01T06:38:22Z" finished-at="2018-11-01T06:38:22Z">
+        <test-method status="PASS" signature="afterPowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@68543a35]" name="afterPowerMockTestMethod" is-config="true" duration-ms="0" started-at="2018-11-02T05:18:43Z" finished-at="2018-11-02T05:18:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterPowerMockTestMethod -->
-        <test-method status="PASS" signature="beforePowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@de0c402]" name="beforePowerMockTestMethod" is-config="true" duration-ms="1" started-at="2018-11-01T06:38:22Z" finished-at="2018-11-01T06:38:22Z">
+        <test-method status="PASS" signature="beforePowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@68543a35]" name="beforePowerMockTestMethod" is-config="true" duration-ms="1" started-at="2018-11-02T05:18:43Z" finished-at="2018-11-02T05:18:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforePowerMockTestMethod -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@de0c402]" name="setUp" is-config="true" duration-ms="7" started-at="2018-11-01T06:38:22Z" finished-at="2018-11-01T06:38:22Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@68543a35]" name="setUp" is-config="true" duration-ms="6" started-at="2018-11-02T05:18:43Z" finished-at="2018-11-02T05:18:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testGetTemplateByNameDataAccessException(java.lang.Object, java.lang.Integer)[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@de0c402]" name="testGetTemplateByNameDataAccessException" duration-ms="3" started-at="2018-11-01T06:38:22Z" data-provider="getTemplateByNameDataProvider" finished-at="2018-11-01T06:38:22Z">
+        <test-method status="PASS" signature="testGetTemplateByNameDataAccessException(java.lang.Object, java.lang.Integer)[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@68543a35]" name="testGetTemplateByNameDataAccessException" duration-ms="3" started-at="2018-11-02T05:18:43Z" data-provider="getTemplateByNameDataProvider" finished-at="2018-11-02T05:18:43Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.wso2.carbon.identity.template.mgt.model.Template@2a8ccb99]]>
+                <![CDATA[org.wso2.carbon.identity.template.mgt.model.Template@6e548071]]>
               </value>
             </param>
             <param index="1">
@@ -913,7 +1673,7 @@ at org.wso2.carbon.database.utils.jdbc.JdbcTemplate.fetchSingleRecord(JdbcTempla
             <full-stacktrace>
               <![CDATA[org.wso2.carbon.identity.template.mgt.exception.TemplateManagementServerException: Error occurred while retrieving template from DB for tenant ID: -1234 and template name: T3.
 at org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImpl.getTemplateByName(TemplateManagerDAOImpl.java:80)
-at org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest.testGetTemplateByNameDataAccessException(TemplateManagerDAOImplTest.java:280)
+at org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest.testGetTemplateByNameDataAccessException(TemplateManagerDAOImplTest.java:279)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -957,23 +1717,23 @@ at org.wso2.carbon.database.utils.jdbc.JdbcTemplate.fetchSingleRecord(JdbcTempla
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testGetTemplateByNameDataAccessException -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@de0c402]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-11-01T06:38:22Z" finished-at="2018-11-01T06:38:22Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@68543a35]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-11-02T05:18:43Z" finished-at="2018-11-02T05:18:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="afterPowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@de0c402]" name="afterPowerMockTestMethod" is-config="true" duration-ms="1" started-at="2018-11-01T06:38:22Z" finished-at="2018-11-01T06:38:22Z">
+        <test-method status="PASS" signature="afterPowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@68543a35]" name="afterPowerMockTestMethod" is-config="true" duration-ms="0" started-at="2018-11-02T05:18:43Z" finished-at="2018-11-02T05:18:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterPowerMockTestMethod -->
-        <test-method status="PASS" signature="beforePowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@de0c402]" name="beforePowerMockTestMethod" is-config="true" duration-ms="1" started-at="2018-11-01T06:38:22Z" finished-at="2018-11-01T06:38:22Z">
+        <test-method status="PASS" signature="beforePowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@68543a35]" name="beforePowerMockTestMethod" is-config="true" duration-ms="1" started-at="2018-11-02T05:18:43Z" finished-at="2018-11-02T05:18:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforePowerMockTestMethod -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@de0c402]" name="setUp" is-config="true" duration-ms="5" started-at="2018-11-01T06:38:22Z" finished-at="2018-11-01T06:38:22Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@68543a35]" name="setUp" is-config="true" duration-ms="5" started-at="2018-11-02T05:18:43Z" finished-at="2018-11-02T05:18:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testGetTemplateList(java.lang.Integer, java.lang.Integer, java.lang.Integer, int)[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@de0c402]" name="testGetTemplateList" duration-ms="13" started-at="2018-11-01T06:38:22Z" data-provider="templateListProvider" finished-at="2018-11-01T06:38:22Z">
+        <test-method status="PASS" signature="testGetTemplateList(java.lang.Integer, java.lang.Integer, java.lang.Integer, int)[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@68543a35]" name="testGetTemplateList" duration-ms="13" started-at="2018-11-02T05:18:43Z" data-provider="templateListProvider" finished-at="2018-11-02T05:18:43Z">
           <params>
             <param index="0">
               <value>
@@ -999,23 +1759,23 @@ at org.wso2.carbon.database.utils.jdbc.JdbcTemplate.fetchSingleRecord(JdbcTempla
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testGetTemplateList -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@de0c402]" name="tearDown" is-config="true" duration-ms="1" started-at="2018-11-01T06:38:22Z" finished-at="2018-11-01T06:38:22Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="afterPowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@de0c402]" name="afterPowerMockTestMethod" is-config="true" duration-ms="0" started-at="2018-11-01T06:38:22Z" finished-at="2018-11-01T06:38:22Z">
+        <test-method status="PASS" signature="afterPowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@68543a35]" name="afterPowerMockTestMethod" is-config="true" duration-ms="1" started-at="2018-11-02T05:18:43Z" finished-at="2018-11-02T05:18:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterPowerMockTestMethod -->
-        <test-method status="PASS" signature="beforePowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@de0c402]" name="beforePowerMockTestMethod" is-config="true" duration-ms="2" started-at="2018-11-01T06:38:22Z" finished-at="2018-11-01T06:38:22Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@68543a35]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-11-02T05:18:43Z" finished-at="2018-11-02T05:18:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="beforePowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@68543a35]" name="beforePowerMockTestMethod" is-config="true" duration-ms="1" started-at="2018-11-02T05:18:43Z" finished-at="2018-11-02T05:18:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforePowerMockTestMethod -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@de0c402]" name="setUp" is-config="true" duration-ms="7" started-at="2018-11-01T06:38:22Z" finished-at="2018-11-01T06:38:22Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@68543a35]" name="setUp" is-config="true" duration-ms="5" started-at="2018-11-02T05:18:43Z" finished-at="2018-11-02T05:18:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testGetTemplateList(java.lang.Integer, java.lang.Integer, java.lang.Integer, int)[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@de0c402]" name="testGetTemplateList" duration-ms="6" started-at="2018-11-01T06:38:22Z" data-provider="templateListProvider" finished-at="2018-11-01T06:38:22Z">
+        <test-method status="PASS" signature="testGetTemplateList(java.lang.Integer, java.lang.Integer, java.lang.Integer, int)[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@68543a35]" name="testGetTemplateList" duration-ms="6" started-at="2018-11-02T05:18:43Z" data-provider="templateListProvider" finished-at="2018-11-02T05:18:43Z">
           <params>
             <param index="0">
               <value>
@@ -1041,23 +1801,23 @@ at org.wso2.carbon.database.utils.jdbc.JdbcTemplate.fetchSingleRecord(JdbcTempla
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testGetTemplateList -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@de0c402]" name="tearDown" is-config="true" duration-ms="1" started-at="2018-11-01T06:38:22Z" finished-at="2018-11-01T06:38:22Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@68543a35]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-11-02T05:18:43Z" finished-at="2018-11-02T05:18:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="afterPowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@de0c402]" name="afterPowerMockTestMethod" is-config="true" duration-ms="0" started-at="2018-11-01T06:38:22Z" finished-at="2018-11-01T06:38:22Z">
+        <test-method status="PASS" signature="afterPowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@68543a35]" name="afterPowerMockTestMethod" is-config="true" duration-ms="1" started-at="2018-11-02T05:18:43Z" finished-at="2018-11-02T05:18:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterPowerMockTestMethod -->
-        <test-method status="PASS" signature="beforePowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@de0c402]" name="beforePowerMockTestMethod" is-config="true" duration-ms="2" started-at="2018-11-01T06:38:22Z" finished-at="2018-11-01T06:38:22Z">
+        <test-method status="PASS" signature="beforePowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@68543a35]" name="beforePowerMockTestMethod" is-config="true" duration-ms="1" started-at="2018-11-02T05:18:43Z" finished-at="2018-11-02T05:18:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforePowerMockTestMethod -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@de0c402]" name="setUp" is-config="true" duration-ms="6" started-at="2018-11-01T06:38:22Z" finished-at="2018-11-01T06:38:22Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@68543a35]" name="setUp" is-config="true" duration-ms="7" started-at="2018-11-02T05:18:43Z" finished-at="2018-11-02T05:18:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testGetTemplateList(java.lang.Integer, java.lang.Integer, java.lang.Integer, int)[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@de0c402]" name="testGetTemplateList" duration-ms="9" started-at="2018-11-01T06:38:22Z" data-provider="templateListProvider" finished-at="2018-11-01T06:38:22Z">
+        <test-method status="PASS" signature="testGetTemplateList(java.lang.Integer, java.lang.Integer, java.lang.Integer, int)[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@68543a35]" name="testGetTemplateList" duration-ms="7" started-at="2018-11-02T05:18:43Z" data-provider="templateListProvider" finished-at="2018-11-02T05:18:43Z">
           <params>
             <param index="0">
               <value>
@@ -1083,23 +1843,23 @@ at org.wso2.carbon.database.utils.jdbc.JdbcTemplate.fetchSingleRecord(JdbcTempla
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testGetTemplateList -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@de0c402]" name="tearDown" is-config="true" duration-ms="1" started-at="2018-11-01T06:38:22Z" finished-at="2018-11-01T06:38:22Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@68543a35]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-11-02T05:18:43Z" finished-at="2018-11-02T05:18:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="afterPowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@de0c402]" name="afterPowerMockTestMethod" is-config="true" duration-ms="1" started-at="2018-11-01T06:38:22Z" finished-at="2018-11-01T06:38:22Z">
+        <test-method status="PASS" signature="afterPowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@68543a35]" name="afterPowerMockTestMethod" is-config="true" duration-ms="1" started-at="2018-11-02T05:18:43Z" finished-at="2018-11-02T05:18:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterPowerMockTestMethod -->
-        <test-method status="PASS" signature="beforePowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@de0c402]" name="beforePowerMockTestMethod" is-config="true" duration-ms="2" started-at="2018-11-01T06:38:22Z" finished-at="2018-11-01T06:38:22Z">
+        <test-method status="PASS" signature="beforePowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@68543a35]" name="beforePowerMockTestMethod" is-config="true" duration-ms="1" started-at="2018-11-02T05:18:43Z" finished-at="2018-11-02T05:18:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforePowerMockTestMethod -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@de0c402]" name="setUp" is-config="true" duration-ms="7" started-at="2018-11-01T06:38:22Z" finished-at="2018-11-01T06:38:22Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@68543a35]" name="setUp" is-config="true" duration-ms="6" started-at="2018-11-02T05:18:43Z" finished-at="2018-11-02T05:18:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testGetTemplateListDataAccessException(java.lang.Integer, java.lang.Integer, java.lang.Integer, int)[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@de0c402]" name="testGetTemplateListDataAccessException" duration-ms="7" started-at="2018-11-01T06:38:22Z" data-provider="templateListProvider" finished-at="2018-11-01T06:38:22Z">
+        <test-method status="PASS" signature="testGetTemplateListDataAccessException(java.lang.Integer, java.lang.Integer, java.lang.Integer, int)[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@68543a35]" name="testGetTemplateListDataAccessException" duration-ms="6" started-at="2018-11-02T05:18:43Z" data-provider="templateListProvider" finished-at="2018-11-02T05:18:43Z">
           <params>
             <param index="0">
               <value>
@@ -1129,7 +1889,7 @@ at org.wso2.carbon.database.utils.jdbc.JdbcTemplate.fetchSingleRecord(JdbcTempla
             <full-stacktrace>
               <![CDATA[org.wso2.carbon.identity.template.mgt.exception.TemplateManagementServerException: Error occurred while listing template from DB for tenantID: -1234
 at org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImpl.getAllTemplates(TemplateManagerDAOImpl.java:124)
-at org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest.testGetTemplateListDataAccessException(TemplateManagerDAOImplTest.java:342)
+at org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest.testGetTemplateListDataAccessException(TemplateManagerDAOImplTest.java:341)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -1176,23 +1936,23 @@ at org.wso2.carbon.database.utils.jdbc.JdbcTemplate.getDriverName(JdbcTemplate.j
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testGetTemplateListDataAccessException -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@de0c402]" name="tearDown" is-config="true" duration-ms="1" started-at="2018-11-01T06:38:22Z" finished-at="2018-11-01T06:38:22Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@68543a35]" name="tearDown" is-config="true" duration-ms="1" started-at="2018-11-02T05:18:43Z" finished-at="2018-11-02T05:18:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="beforePowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@de0c402]" name="beforePowerMockTestMethod" is-config="true" duration-ms="1" started-at="2018-11-01T06:38:22Z" finished-at="2018-11-01T06:38:22Z">
+        <test-method status="PASS" signature="beforePowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@68543a35]" name="beforePowerMockTestMethod" is-config="true" duration-ms="1" started-at="2018-11-02T05:18:43Z" finished-at="2018-11-02T05:18:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforePowerMockTestMethod -->
-        <test-method status="PASS" signature="afterPowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@de0c402]" name="afterPowerMockTestMethod" is-config="true" duration-ms="0" started-at="2018-11-01T06:38:22Z" finished-at="2018-11-01T06:38:22Z">
+        <test-method status="PASS" signature="afterPowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@68543a35]" name="afterPowerMockTestMethod" is-config="true" duration-ms="0" started-at="2018-11-02T05:18:43Z" finished-at="2018-11-02T05:18:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterPowerMockTestMethod -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@de0c402]" name="setUp" is-config="true" duration-ms="6" started-at="2018-11-01T06:38:22Z" finished-at="2018-11-01T06:38:22Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@68543a35]" name="setUp" is-config="true" duration-ms="5" started-at="2018-11-02T05:18:43Z" finished-at="2018-11-02T05:18:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testGetTemplateListDataAccessException(java.lang.Integer, java.lang.Integer, java.lang.Integer, int)[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@de0c402]" name="testGetTemplateListDataAccessException" duration-ms="7" started-at="2018-11-01T06:38:22Z" data-provider="templateListProvider" finished-at="2018-11-01T06:38:22Z">
+        <test-method status="PASS" signature="testGetTemplateListDataAccessException(java.lang.Integer, java.lang.Integer, java.lang.Integer, int)[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@68543a35]" name="testGetTemplateListDataAccessException" duration-ms="6" started-at="2018-11-02T05:18:43Z" data-provider="templateListProvider" finished-at="2018-11-02T05:18:43Z">
           <params>
             <param index="0">
               <value>
@@ -1222,7 +1982,7 @@ at org.wso2.carbon.database.utils.jdbc.JdbcTemplate.getDriverName(JdbcTemplate.j
             <full-stacktrace>
               <![CDATA[org.wso2.carbon.identity.template.mgt.exception.TemplateManagementServerException: Error occurred while listing template from DB for tenantID: -1234
 at org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImpl.getAllTemplates(TemplateManagerDAOImpl.java:124)
-at org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest.testGetTemplateListDataAccessException(TemplateManagerDAOImplTest.java:342)
+at org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest.testGetTemplateListDataAccessException(TemplateManagerDAOImplTest.java:341)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -1269,23 +2029,23 @@ at org.wso2.carbon.database.utils.jdbc.JdbcTemplate.getDriverName(JdbcTemplate.j
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testGetTemplateListDataAccessException -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@de0c402]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-11-01T06:38:22Z" finished-at="2018-11-01T06:38:22Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@68543a35]" name="tearDown" is-config="true" duration-ms="1" started-at="2018-11-02T05:18:43Z" finished-at="2018-11-02T05:18:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="afterPowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@de0c402]" name="afterPowerMockTestMethod" is-config="true" duration-ms="1" started-at="2018-11-01T06:38:22Z" finished-at="2018-11-01T06:38:22Z">
+        <test-method status="PASS" signature="afterPowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@68543a35]" name="afterPowerMockTestMethod" is-config="true" duration-ms="0" started-at="2018-11-02T05:18:43Z" finished-at="2018-11-02T05:18:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterPowerMockTestMethod -->
-        <test-method status="PASS" signature="beforePowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@de0c402]" name="beforePowerMockTestMethod" is-config="true" duration-ms="1" started-at="2018-11-01T06:38:22Z" finished-at="2018-11-01T06:38:22Z">
+        <test-method status="PASS" signature="beforePowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@68543a35]" name="beforePowerMockTestMethod" is-config="true" duration-ms="1" started-at="2018-11-02T05:18:43Z" finished-at="2018-11-02T05:18:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforePowerMockTestMethod -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@de0c402]" name="setUp" is-config="true" duration-ms="7" started-at="2018-11-01T06:38:22Z" finished-at="2018-11-01T06:38:22Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@68543a35]" name="setUp" is-config="true" duration-ms="5" started-at="2018-11-02T05:18:43Z" finished-at="2018-11-02T05:18:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testGetTemplateListDataAccessException(java.lang.Integer, java.lang.Integer, java.lang.Integer, int)[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@de0c402]" name="testGetTemplateListDataAccessException" duration-ms="6" started-at="2018-11-01T06:38:22Z" data-provider="templateListProvider" finished-at="2018-11-01T06:38:22Z">
+        <test-method status="PASS" signature="testGetTemplateListDataAccessException(java.lang.Integer, java.lang.Integer, java.lang.Integer, int)[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@68543a35]" name="testGetTemplateListDataAccessException" duration-ms="8" started-at="2018-11-02T05:18:43Z" data-provider="templateListProvider" finished-at="2018-11-02T05:18:43Z">
           <params>
             <param index="0">
               <value>
@@ -1315,7 +2075,7 @@ at org.wso2.carbon.database.utils.jdbc.JdbcTemplate.getDriverName(JdbcTemplate.j
             <full-stacktrace>
               <![CDATA[org.wso2.carbon.identity.template.mgt.exception.TemplateManagementServerException: Error occurred while listing template from DB for tenantID: -1234
 at org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImpl.getAllTemplates(TemplateManagerDAOImpl.java:124)
-at org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest.testGetTemplateListDataAccessException(TemplateManagerDAOImplTest.java:342)
+at org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest.testGetTemplateListDataAccessException(TemplateManagerDAOImplTest.java:341)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -1362,23 +2122,23 @@ at org.wso2.carbon.database.utils.jdbc.JdbcTemplate.getDriverName(JdbcTemplate.j
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testGetTemplateListDataAccessException -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@de0c402]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-11-01T06:38:22Z" finished-at="2018-11-01T06:38:22Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@68543a35]" name="tearDown" is-config="true" duration-ms="1" started-at="2018-11-02T05:18:43Z" finished-at="2018-11-02T05:18:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="afterPowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@de0c402]" name="afterPowerMockTestMethod" is-config="true" duration-ms="1" started-at="2018-11-01T06:38:22Z" finished-at="2018-11-01T06:38:22Z">
+        <test-method status="PASS" signature="afterPowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@68543a35]" name="afterPowerMockTestMethod" is-config="true" duration-ms="1" started-at="2018-11-02T05:18:43Z" finished-at="2018-11-02T05:18:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterPowerMockTestMethod -->
-        <test-method status="PASS" signature="beforePowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@de0c402]" name="beforePowerMockTestMethod" is-config="true" duration-ms="1" started-at="2018-11-01T06:38:22Z" finished-at="2018-11-01T06:38:22Z">
+        <test-method status="PASS" signature="beforePowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@68543a35]" name="beforePowerMockTestMethod" is-config="true" duration-ms="1" started-at="2018-11-02T05:18:43Z" finished-at="2018-11-02T05:18:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforePowerMockTestMethod -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@de0c402]" name="setUp" is-config="true" duration-ms="6" started-at="2018-11-01T06:38:22Z" finished-at="2018-11-01T06:38:22Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@68543a35]" name="setUp" is-config="true" duration-ms="8" started-at="2018-11-02T05:18:43Z" finished-at="2018-11-02T05:18:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testUpdateTemplate(java.lang.String, java.lang.Object, java.lang.Object)[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@de0c402]" name="testUpdateTemplate" duration-ms="6" started-at="2018-11-01T06:38:22Z" data-provider="UpdateTemplateDataProvider" finished-at="2018-11-01T06:38:22Z">
+        <test-method status="PASS" signature="testUpdateTemplate(java.lang.String, java.lang.Object, java.lang.Object)[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@68543a35]" name="testUpdateTemplate" duration-ms="7" started-at="2018-11-02T05:18:43Z" data-provider="UpdateTemplateDataProvider" finished-at="2018-11-02T05:18:43Z">
           <params>
             <param index="0">
               <value>
@@ -1387,35 +2147,35 @@ at org.wso2.carbon.database.utils.jdbc.JdbcTemplate.getDriverName(JdbcTemplate.j
             </param>
             <param index="1">
               <value>
-                <![CDATA[org.wso2.carbon.identity.template.mgt.model.Template@1fb8b4d8]]>
+                <![CDATA[org.wso2.carbon.identity.template.mgt.model.Template@14da1b1e]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[org.wso2.carbon.identity.template.mgt.model.Template@342ad2a3]]>
+                <![CDATA[org.wso2.carbon.identity.template.mgt.model.Template@3883760f]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testUpdateTemplate -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@de0c402]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-11-01T06:38:22Z" finished-at="2018-11-01T06:38:22Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@68543a35]" name="tearDown" is-config="true" duration-ms="1" started-at="2018-11-02T05:18:43Z" finished-at="2018-11-02T05:18:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="afterPowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@de0c402]" name="afterPowerMockTestMethod" is-config="true" duration-ms="1" started-at="2018-11-01T06:38:22Z" finished-at="2018-11-01T06:38:22Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterPowerMockTestMethod -->
-        <test-method status="PASS" signature="beforePowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@de0c402]" name="beforePowerMockTestMethod" is-config="true" duration-ms="1" started-at="2018-11-01T06:38:22Z" finished-at="2018-11-01T06:38:22Z">
+        <test-method status="PASS" signature="beforePowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@68543a35]" name="beforePowerMockTestMethod" is-config="true" duration-ms="2" started-at="2018-11-02T05:18:43Z" finished-at="2018-11-02T05:18:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforePowerMockTestMethod -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@de0c402]" name="setUp" is-config="true" duration-ms="5" started-at="2018-11-01T06:38:22Z" finished-at="2018-11-01T06:38:22Z">
+        <test-method status="PASS" signature="afterPowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@68543a35]" name="afterPowerMockTestMethod" is-config="true" duration-ms="0" started-at="2018-11-02T05:18:43Z" finished-at="2018-11-02T05:18:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterPowerMockTestMethod -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@68543a35]" name="setUp" is-config="true" duration-ms="7" started-at="2018-11-02T05:18:43Z" finished-at="2018-11-02T05:18:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testUpdateTemplate(java.lang.String, java.lang.Object, java.lang.Object)[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@de0c402]" name="testUpdateTemplate" duration-ms="4" started-at="2018-11-01T06:38:22Z" data-provider="UpdateTemplateDataProvider" finished-at="2018-11-01T06:38:22Z">
+        <test-method status="PASS" signature="testUpdateTemplate(java.lang.String, java.lang.Object, java.lang.Object)[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@68543a35]" name="testUpdateTemplate" duration-ms="5" started-at="2018-11-02T05:18:43Z" data-provider="UpdateTemplateDataProvider" finished-at="2018-11-02T05:18:43Z">
           <params>
             <param index="0">
               <value>
@@ -1424,35 +2184,35 @@ at org.wso2.carbon.database.utils.jdbc.JdbcTemplate.getDriverName(JdbcTemplate.j
             </param>
             <param index="1">
               <value>
-                <![CDATA[org.wso2.carbon.identity.template.mgt.model.Template@40a772db]]>
+                <![CDATA[org.wso2.carbon.identity.template.mgt.model.Template@2bc32eaa]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[org.wso2.carbon.identity.template.mgt.model.Template@523e0ffb]]>
+                <![CDATA[org.wso2.carbon.identity.template.mgt.model.Template@20cef728]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testUpdateTemplate -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@de0c402]" name="tearDown" is-config="true" duration-ms="1" started-at="2018-11-01T06:38:22Z" finished-at="2018-11-01T06:38:22Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@68543a35]" name="tearDown" is-config="true" duration-ms="1" started-at="2018-11-02T05:18:43Z" finished-at="2018-11-02T05:18:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="afterPowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@de0c402]" name="afterPowerMockTestMethod" is-config="true" duration-ms="0" started-at="2018-11-01T06:38:22Z" finished-at="2018-11-01T06:38:22Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterPowerMockTestMethod -->
-        <test-method status="PASS" signature="beforePowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@de0c402]" name="beforePowerMockTestMethod" is-config="true" duration-ms="1" started-at="2018-11-01T06:38:22Z" finished-at="2018-11-01T06:38:22Z">
+        <test-method status="PASS" signature="beforePowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@68543a35]" name="beforePowerMockTestMethod" is-config="true" duration-ms="1" started-at="2018-11-02T05:18:43Z" finished-at="2018-11-02T05:18:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforePowerMockTestMethod -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@de0c402]" name="setUp" is-config="true" duration-ms="6" started-at="2018-11-01T06:38:22Z" finished-at="2018-11-01T06:38:22Z">
+        <test-method status="PASS" signature="afterPowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@68543a35]" name="afterPowerMockTestMethod" is-config="true" duration-ms="0" started-at="2018-11-02T05:18:43Z" finished-at="2018-11-02T05:18:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterPowerMockTestMethod -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@68543a35]" name="setUp" is-config="true" duration-ms="5" started-at="2018-11-02T05:18:43Z" finished-at="2018-11-02T05:18:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testUpdateTemplate(java.lang.String, java.lang.Object, java.lang.Object)[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@de0c402]" name="testUpdateTemplate" duration-ms="4" started-at="2018-11-01T06:38:22Z" data-provider="UpdateTemplateDataProvider" finished-at="2018-11-01T06:38:22Z">
+        <test-method status="PASS" signature="testUpdateTemplate(java.lang.String, java.lang.Object, java.lang.Object)[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@68543a35]" name="testUpdateTemplate" duration-ms="4" started-at="2018-11-02T05:18:43Z" data-provider="UpdateTemplateDataProvider" finished-at="2018-11-02T05:18:43Z">
           <params>
             <param index="0">
               <value>
@@ -1461,35 +2221,35 @@ at org.wso2.carbon.database.utils.jdbc.JdbcTemplate.getDriverName(JdbcTemplate.j
             </param>
             <param index="1">
               <value>
-                <![CDATA[org.wso2.carbon.identity.template.mgt.model.Template@8fa7f10]]>
+                <![CDATA[org.wso2.carbon.identity.template.mgt.model.Template@64080ac4]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[org.wso2.carbon.identity.template.mgt.model.Template@6aa70b66]]>
+                <![CDATA[org.wso2.carbon.identity.template.mgt.model.Template@47983b44]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testUpdateTemplate -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@de0c402]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-11-01T06:38:22Z" finished-at="2018-11-01T06:38:22Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@68543a35]" name="tearDown" is-config="true" duration-ms="1" started-at="2018-11-02T05:18:43Z" finished-at="2018-11-02T05:18:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="afterPowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@de0c402]" name="afterPowerMockTestMethod" is-config="true" duration-ms="0" started-at="2018-11-01T06:38:22Z" finished-at="2018-11-01T06:38:22Z">
+        <test-method status="PASS" signature="afterPowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@68543a35]" name="afterPowerMockTestMethod" is-config="true" duration-ms="0" started-at="2018-11-02T05:18:43Z" finished-at="2018-11-02T05:18:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterPowerMockTestMethod -->
-        <test-method status="PASS" signature="beforePowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@de0c402]" name="beforePowerMockTestMethod" is-config="true" duration-ms="1" started-at="2018-11-01T06:38:22Z" finished-at="2018-11-01T06:38:22Z">
+        <test-method status="PASS" signature="beforePowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@68543a35]" name="beforePowerMockTestMethod" is-config="true" duration-ms="1" started-at="2018-11-02T05:18:43Z" finished-at="2018-11-02T05:18:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforePowerMockTestMethod -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@de0c402]" name="setUp" is-config="true" duration-ms="6" started-at="2018-11-01T06:38:22Z" finished-at="2018-11-01T06:38:22Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@68543a35]" name="setUp" is-config="true" duration-ms="6" started-at="2018-11-02T05:18:43Z" finished-at="2018-11-02T05:18:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testUpdateTemplateServerException(java.lang.String, java.lang.Object, java.lang.Object)[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@de0c402]" name="testUpdateTemplateServerException" duration-ms="4" started-at="2018-11-01T06:38:22Z" data-provider="UpdateTemplateDataProvider" finished-at="2018-11-01T06:38:22Z">
+        <test-method status="PASS" signature="testUpdateTemplateServerException(java.lang.String, java.lang.Object, java.lang.Object)[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@68543a35]" name="testUpdateTemplateServerException" duration-ms="3" started-at="2018-11-02T05:18:43Z" data-provider="UpdateTemplateDataProvider" finished-at="2018-11-02T05:18:43Z">
           <params>
             <param index="0">
               <value>
@@ -1498,12 +2258,12 @@ at org.wso2.carbon.database.utils.jdbc.JdbcTemplate.getDriverName(JdbcTemplate.j
             </param>
             <param index="1">
               <value>
-                <![CDATA[org.wso2.carbon.identity.template.mgt.model.Template@11ed8d43]]>
+                <![CDATA[org.wso2.carbon.identity.template.mgt.model.Template@125728e1]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[org.wso2.carbon.identity.template.mgt.model.Template@338e0952]]>
+                <![CDATA[org.wso2.carbon.identity.template.mgt.model.Template@510261b9]]>
               </value>
             </param>
           </params>
@@ -1559,23 +2319,23 @@ at org.wso2.carbon.database.utils.jdbc.JdbcTemplate.executeUpdate(JdbcTemplate.j
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testUpdateTemplateServerException -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@de0c402]" name="tearDown" is-config="true" duration-ms="1" started-at="2018-11-01T06:38:22Z" finished-at="2018-11-01T06:38:22Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@68543a35]" name="tearDown" is-config="true" duration-ms="1" started-at="2018-11-02T05:18:43Z" finished-at="2018-11-02T05:18:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="beforePowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@de0c402]" name="beforePowerMockTestMethod" is-config="true" duration-ms="1" started-at="2018-11-01T06:38:22Z" finished-at="2018-11-01T06:38:22Z">
+        <test-method status="PASS" signature="beforePowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@68543a35]" name="beforePowerMockTestMethod" is-config="true" duration-ms="1" started-at="2018-11-02T05:18:43Z" finished-at="2018-11-02T05:18:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforePowerMockTestMethod -->
-        <test-method status="PASS" signature="afterPowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@de0c402]" name="afterPowerMockTestMethod" is-config="true" duration-ms="0" started-at="2018-11-01T06:38:22Z" finished-at="2018-11-01T06:38:22Z">
+        <test-method status="PASS" signature="afterPowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@68543a35]" name="afterPowerMockTestMethod" is-config="true" duration-ms="0" started-at="2018-11-02T05:18:43Z" finished-at="2018-11-02T05:18:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterPowerMockTestMethod -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@de0c402]" name="setUp" is-config="true" duration-ms="6" started-at="2018-11-01T06:38:22Z" finished-at="2018-11-01T06:38:22Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@68543a35]" name="setUp" is-config="true" duration-ms="5" started-at="2018-11-02T05:18:43Z" finished-at="2018-11-02T05:18:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testUpdateTemplateServerException(java.lang.String, java.lang.Object, java.lang.Object)[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@de0c402]" name="testUpdateTemplateServerException" duration-ms="4" started-at="2018-11-01T06:38:22Z" data-provider="UpdateTemplateDataProvider" finished-at="2018-11-01T06:38:22Z">
+        <test-method status="PASS" signature="testUpdateTemplateServerException(java.lang.String, java.lang.Object, java.lang.Object)[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@68543a35]" name="testUpdateTemplateServerException" duration-ms="3" started-at="2018-11-02T05:18:43Z" data-provider="UpdateTemplateDataProvider" finished-at="2018-11-02T05:18:44Z">
           <params>
             <param index="0">
               <value>
@@ -1584,12 +2344,12 @@ at org.wso2.carbon.database.utils.jdbc.JdbcTemplate.executeUpdate(JdbcTemplate.j
             </param>
             <param index="1">
               <value>
-                <![CDATA[org.wso2.carbon.identity.template.mgt.model.Template@4047829]]>
+                <![CDATA[org.wso2.carbon.identity.template.mgt.model.Template@1cd80de2]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[org.wso2.carbon.identity.template.mgt.model.Template@5392abe7]]>
+                <![CDATA[org.wso2.carbon.identity.template.mgt.model.Template@2a15e54]]>
               </value>
             </param>
           </params>
@@ -1645,23 +2405,23 @@ at org.wso2.carbon.database.utils.jdbc.JdbcTemplate.executeUpdate(JdbcTemplate.j
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testUpdateTemplateServerException -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@de0c402]" name="tearDown" is-config="true" duration-ms="1" started-at="2018-11-01T06:38:22Z" finished-at="2018-11-01T06:38:22Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@68543a35]" name="tearDown" is-config="true" duration-ms="1" started-at="2018-11-02T05:18:44Z" finished-at="2018-11-02T05:18:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="beforePowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@de0c402]" name="beforePowerMockTestMethod" is-config="true" duration-ms="1" started-at="2018-11-01T06:38:22Z" finished-at="2018-11-01T06:38:22Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforePowerMockTestMethod -->
-        <test-method status="PASS" signature="afterPowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@de0c402]" name="afterPowerMockTestMethod" is-config="true" duration-ms="0" started-at="2018-11-01T06:38:22Z" finished-at="2018-11-01T06:38:22Z">
+        <test-method status="PASS" signature="afterPowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@68543a35]" name="afterPowerMockTestMethod" is-config="true" duration-ms="0" started-at="2018-11-02T05:18:44Z" finished-at="2018-11-02T05:18:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterPowerMockTestMethod -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@de0c402]" name="setUp" is-config="true" duration-ms="5" started-at="2018-11-01T06:38:22Z" finished-at="2018-11-01T06:38:22Z">
+        <test-method status="PASS" signature="beforePowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@68543a35]" name="beforePowerMockTestMethod" is-config="true" duration-ms="1" started-at="2018-11-02T05:18:44Z" finished-at="2018-11-02T05:18:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforePowerMockTestMethod -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@68543a35]" name="setUp" is-config="true" duration-ms="5" started-at="2018-11-02T05:18:44Z" finished-at="2018-11-02T05:18:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testUpdateTemplateServerException(java.lang.String, java.lang.Object, java.lang.Object)[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@de0c402]" name="testUpdateTemplateServerException" duration-ms="2" started-at="2018-11-01T06:38:22Z" data-provider="UpdateTemplateDataProvider" finished-at="2018-11-01T06:38:22Z">
+        <test-method status="PASS" signature="testUpdateTemplateServerException(java.lang.String, java.lang.Object, java.lang.Object)[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@68543a35]" name="testUpdateTemplateServerException" duration-ms="3" started-at="2018-11-02T05:18:44Z" data-provider="UpdateTemplateDataProvider" finished-at="2018-11-02T05:18:44Z">
           <params>
             <param index="0">
               <value>
@@ -1670,12 +2430,12 @@ at org.wso2.carbon.database.utils.jdbc.JdbcTemplate.executeUpdate(JdbcTemplate.j
             </param>
             <param index="1">
               <value>
-                <![CDATA[org.wso2.carbon.identity.template.mgt.model.Template@1f80815b]]>
+                <![CDATA[org.wso2.carbon.identity.template.mgt.model.Template@24ab04cd]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[org.wso2.carbon.identity.template.mgt.model.Template@5cf8a5c9]]>
+                <![CDATA[org.wso2.carbon.identity.template.mgt.model.Template@42d6f75e]]>
               </value>
             </param>
           </params>
@@ -1731,19 +2491,37 @@ at org.wso2.carbon.database.utils.jdbc.JdbcTemplate.executeUpdate(JdbcTemplate.j
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testUpdateTemplateServerException -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@de0c402]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-11-01T06:38:22Z" finished-at="2018-11-01T06:38:22Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@68543a35]" name="tearDown" is-config="true" duration-ms="1" started-at="2018-11-02T05:18:44Z" finished-at="2018-11-02T05:18:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="afterPowerMockTestClass()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@de0c402]" name="afterPowerMockTestClass" is-config="true" duration-ms="0" started-at="2018-11-01T06:38:22Z" finished-at="2018-11-01T06:38:22Z">
+        <test-method status="PASS" signature="afterPowerMockTestClass()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@68543a35]" name="afterPowerMockTestClass" is-config="true" duration-ms="0" started-at="2018-11-02T05:18:44Z" finished-at="2018-11-02T05:18:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterPowerMockTestClass -->
-        <test-method status="PASS" signature="afterPowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@de0c402]" name="afterPowerMockTestMethod" is-config="true" duration-ms="0" started-at="2018-11-01T06:38:22Z" finished-at="2018-11-01T06:38:22Z">
+        <test-method status="PASS" signature="afterPowerMockTestMethod()[pri:0, instance:org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest@68543a35]" name="afterPowerMockTestMethod" is-config="true" duration-ms="0" started-at="2018-11-02T05:18:44Z" finished-at="2018-11-02T05:18:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterPowerMockTestMethod -->
       </class> <!-- org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest -->
+      <class name="org.wso2.carbon.identity.template.mgt.model.TemplateInfoTest">
+        <test-method status="PASS" signature="testGetTemplateId()[pri:0, instance:org.wso2.carbon.identity.template.mgt.model.TemplateInfoTest@4cefa0be]" name="testGetTemplateId" duration-ms="0" started-at="2018-11-02T05:18:45Z" finished-at="2018-11-02T05:18:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetTemplateId -->
+        <test-method status="PASS" signature="testGetDescription()[pri:0, instance:org.wso2.carbon.identity.template.mgt.model.TemplateInfoTest@4cefa0be]" name="testGetDescription" duration-ms="0" started-at="2018-11-02T05:18:45Z" finished-at="2018-11-02T05:18:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetDescription -->
+        <test-method status="PASS" signature="testGetTenantId()[pri:0, instance:org.wso2.carbon.identity.template.mgt.model.TemplateInfoTest@4cefa0be]" name="testGetTenantId" duration-ms="0" started-at="2018-11-02T05:18:45Z" finished-at="2018-11-02T05:18:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetTenantId -->
+        <test-method status="PASS" signature="testGetTemplateName()[pri:0, instance:org.wso2.carbon.identity.template.mgt.model.TemplateInfoTest@4cefa0be]" name="testGetTemplateName" duration-ms="0" started-at="2018-11-02T05:18:45Z" finished-at="2018-11-02T05:18:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetTemplateName -->
+      </class> <!-- org.wso2.carbon.identity.template.mgt.model.TemplateInfoTest -->
     </test> <!-- TemplateManagementTests -->
   </suite> <!-- TemplateManagementTestSuite -->
 </testng-results>

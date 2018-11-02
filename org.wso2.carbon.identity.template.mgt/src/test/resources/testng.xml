@@ -25,6 +25,10 @@
     <test name="TemplateManagementTests" preserve-order="true" parallel="false">
         <classes>
             <class name="org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest"/>
+            <class name="org.wso2.carbon.identity.template.mgt.TemplateManagerImplTest"/>
+            <class name="org.wso2.carbon.identity.template.mgt.model.TemplateTest"/>
+            <class name="org.wso2.carbon.identity.template.mgt.model.TemplateInfoTest"/>
+
         </classes>
     </test>
 </suite>

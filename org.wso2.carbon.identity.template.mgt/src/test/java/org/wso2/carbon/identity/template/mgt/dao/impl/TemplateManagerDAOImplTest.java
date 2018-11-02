@@ -385,6 +385,7 @@ public class TemplateManagerDAOImplTest extends PowerMockTestCase {
         Assert.fail("Expected: "+ TemplateManagementServerException.class.getName());
     }
 
+
     private void addTemplates(TemplateManagerDAO templateManagerDAO, List<Object> templates, DataSource dataSource) throws SQLException, TemplateManagementException {
 
         for (Object template : templates) {

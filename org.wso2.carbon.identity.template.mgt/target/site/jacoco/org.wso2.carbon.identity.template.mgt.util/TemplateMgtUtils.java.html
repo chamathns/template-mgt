@@ -81,13 +81,13 @@ import org.wso2.carbon.identity.template.mgt.exception.TemplateManagementServerE
                                                                           String data) {
 
         String message;
-<span class="nc bnc" id="L84" title="All 2 branches missed.">        if (StringUtils.isNotBlank(data)) {</span>
+<span class="pc bpc" id="L84" title="1 of 2 branches missed.">        if (StringUtils.isNotBlank(data)) {</span>
 <span class="nc" id="L85">            message = String.format(error.getMessage(), data);</span>
         } else {
-<span class="nc" id="L87">            message = error.getMessage();</span>
+<span class="fc" id="L87">            message = error.getMessage();</span>
         }
 
-<span class="nc" id="L90">        return new TemplateManagementClientException(message, error.getCode());</span>
+<span class="fc" id="L90">        return new TemplateManagementClientException(message, error.getCode());</span>
     }
 
     /**
@@ -96,7 +96,7 @@ import org.wso2.carbon.identity.template.mgt.exception.TemplateManagementServerE
      * @return Tenant id.
      */
     public static int getTenantIdFromCarbonContext() {
-<span class="nc" id="L99">        return PrivilegedCarbonContext.getThreadLocalCarbonContext().getTenantId();</span>
+<span class="fc" id="L99">        return PrivilegedCarbonContext.getThreadLocalCarbonContext().getTenantId();</span>
     }
 
 

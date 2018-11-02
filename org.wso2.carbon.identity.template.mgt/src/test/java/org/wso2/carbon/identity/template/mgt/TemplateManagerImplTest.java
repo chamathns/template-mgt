@@ -18,6 +18,8 @@
 
 package org.wso2.carbon.identity.template.mgt;
 
+import org.mockito.Mockito;
+import org.mockito.internal.matchers.Any;
 import org.powermock.core.classloader.annotations.PrepareForTest;
 import org.powermock.modules.testng.PowerMockTestCase;
 import org.testng.Assert;
@@ -25,15 +27,19 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
+import org.wso2.carbon.base.CarbonBaseConstants;
 import org.wso2.carbon.context.PrivilegedCarbonContext;
+import org.wso2.carbon.context.internal.CarbonContextDataHolder;
 import org.wso2.carbon.identity.template.mgt.dao.TemplateManagerDAO;
 import org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImpl;
+import org.wso2.carbon.identity.template.mgt.exception.TemplateManagementClientException;
 import org.wso2.carbon.identity.template.mgt.exception.TemplateManagementException;
 import org.wso2.carbon.identity.template.mgt.internal.TemplateManagerComponentDataHolder;
 import org.wso2.carbon.identity.template.mgt.model.Template;
 import org.wso2.carbon.identity.template.mgt.model.TemplateInfo;
 
 import javax.sql.DataSource;
+import java.nio.file.Paths;
 import java.sql.Connection;
 import java.sql.SQLException;
 import java.util.Collections;
@@ -43,13 +49,13 @@ import static org.powermock.api.mockito.PowerMockito.mock;
 import static org.powermock.api.mockito.PowerMockito.mockStatic;
 import static org.powermock.api.mockito.PowerMockito.when;
 import static org.testng.Assert.*;
+import static org.wso2.carbon.base.MultitenantConstants.SUPER_TENANT_DOMAIN_NAME;
+import static org.wso2.carbon.base.MultitenantConstants.SUPER_TENANT_ID;
 import static org.wso2.carbon.identity.template.mgt.util.TestUtils.*;
 
-@PrepareForTest ({TemplateManagerComponentDataHolder.class,PrivilegedCarbonContext.class})
+@PrepareForTest ({TemplateManagerComponentDataHolder.class,PrivilegedCarbonContext.class, CarbonContextDataHolder.class})
 public class TemplateManagerImplTest extends PowerMockTestCase {
 
-    private static final Integer SAMPLE_TENANT_ID = -1234;
-    private static final Integer SAMPLE_TENANT_ID2 = 1;
     private static String sampleScript = "<!-- You can customize the user prompt template here... -->\n" +
             "\t\n" +
             "<div class=\"uppercase\">\n" +
@@ -85,7 +91,17 @@ public class TemplateManagerImplTest extends PowerMockTestCase {
     @BeforeMethod
     public void setUp() throws Exception {
         initiateH2Base();
+        String carbonHome = Paths.get(System.getProperty("user.dir"), "target", "test-classes").toString();
+        System.setProperty(CarbonBaseConstants.CARBON_HOME, carbonHome);
+        System.setProperty(CarbonBaseConstants.CARBON_CONFIG_DIR_PATH, Paths.get(carbonHome, "conf").toString());
 
+        mockStatic(PrivilegedCarbonContext.class);
+        PrivilegedCarbonContext privilegedCarbonContext = Mockito.mock(PrivilegedCarbonContext.class);
+
+        Mockito.when(PrivilegedCarbonContext.getThreadLocalCarbonContext()).thenReturn(privilegedCarbonContext);
+        Mockito.when(privilegedCarbonContext.getTenantDomain()).thenReturn(SUPER_TENANT_DOMAIN_NAME);
+        Mockito.when(privilegedCarbonContext.getTenantId()).thenReturn(SUPER_TENANT_ID);
+        Mockito.when(privilegedCarbonContext.getUsername()).thenReturn("admin");
     }
 
     @AfterMethod
@@ -95,9 +111,9 @@ public class TemplateManagerImplTest extends PowerMockTestCase {
 
     @DataProvider(name = "TemplateDataProvider")
     public Object[][] addTemplateData() throws Exception {
-        Template template1 = new Template(SAMPLE_TENANT_ID,"T1","Description 1", sampleScript);
-        Template template2 = new Template(SAMPLE_TENANT_ID2,"T2","Description 2",sampleScript);
-        Template template3 = new Template(SAMPLE_TENANT_ID,"T3","Description 3",sampleScript);
+        Template template1 = new Template(SUPER_TENANT_ID,"T1","Description 1", sampleScript);
+        Template template2 = new Template(SUPER_TENANT_ID,"T2","Description 2",sampleScript);
+        Template template3 = new Template(SUPER_TENANT_ID,"T3","Description 3",sampleScript);
 
         return new Object[][]{
                 {
@@ -114,9 +130,9 @@ public class TemplateManagerImplTest extends PowerMockTestCase {
 
     @DataProvider (name = "getTemplateByNameDataProvider")
     public Object[][] getTemplateByNameData() throws Exception {
-        Template template1 = new Template(SAMPLE_TENANT_ID,"T1","Description 1", sampleScript);
-        Template template2 = new Template(SAMPLE_TENANT_ID,"T2","Description 2",sampleScript);
-        Template template3 = new Template(SAMPLE_TENANT_ID,"T3","Description 3",sampleScript);
+        Template template1 = new Template(SUPER_TENANT_ID,"T1","Description 1", sampleScript);
+        Template template2 = new Template(SUPER_TENANT_ID,"T2","Description 2",sampleScript);
+        Template template3 = new Template(SUPER_TENANT_ID,"T3","Description 3",sampleScript);
 
         return new Object[][]{
                 {
@@ -136,11 +152,10 @@ public class TemplateManagerImplTest extends PowerMockTestCase {
 
     @DataProvider (name = "UpdateTemplateDataProvider")
     public Object[][] updateTemplateData() throws Exception {
-        Template template1 = new Template(SAMPLE_TENANT_ID,"T1","Description 1", sampleScript);
-        Template template2 = new Template(SAMPLE_TENANT_ID2,"T2","Description 2",sampleScript);
-        Template template1New = new Template(SAMPLE_TENANT_ID,"T1 Updated","Updated Description 1", sampleScript);
-        Template template2New = new Template(SAMPLE_TENANT_ID2,"T2 Updated","Updated Description 2",sampleScript);
-
+        Template template1 = new Template(SUPER_TENANT_ID,"T1","Description 1", sampleScript);
+        Template template2 = new Template(SUPER_TENANT_ID,"T2","Description 2",sampleScript);
+        Template template1New = new Template(SUPER_TENANT_ID,"T1 Updated","Updated Description 1", sampleScript);
+        Template template2New = new Template(SUPER_TENANT_ID,"T2 Updated","Updated Description 2",sampleScript);
 
         return new Object[][]{
                 {
@@ -162,11 +177,32 @@ public class TemplateManagerImplTest extends PowerMockTestCase {
 
         return new Object[][]{
                 // limit, offset, tenantId, resultSize
-                {0, 0, -1234, 0},
-                {1, 1, -1234, 1},
-                {10, 0, -1234, 3}
+                {0, 0, 3},
+                {1, 1, 1},
+                {10, 0, 3}
         };
     }
+    @DataProvider(name = "validateInputsDataProvider")
+    public Object[][] provideInputData() throws Exception {
+        Template template = new Template(SUPER_TENANT_ID,null,"sample description",sampleScript);
+        Template template1 = new Template(null,"sample Template","sample description", null);
+        Template template2 = new Template(null,  null,"sample description", null);
+
+        return new Object[][]{
+                {
+                    template
+                },
+                {
+                    template1
+                },
+                {
+                    template2
+                }
+        };
+    }
+
+
+
     @Test(dataProvider = "TemplateDataProvider")
     public void testAddTemplate(Object template) throws Exception {
         DataSource dataSource = mock(DataSource.class);
@@ -204,8 +240,7 @@ public class TemplateManagerImplTest extends PowerMockTestCase {
 
     @Test(dataProvider = "getTemplateByNameDataProvider")
     public void testGetTemplateByName(Object templateObject, String templateName) throws Exception{
-        PrivilegedCarbonContext carbonContext = mock(PrivilegedCarbonContext.class);
-        carbonContext.setTenantId(SAMPLE_TENANT_ID);
+
         DataSource dataSource = mock(DataSource.class);
         mockComponentDataHolder(dataSource);
 
@@ -225,6 +260,98 @@ public class TemplateManagerImplTest extends PowerMockTestCase {
             }
         }
     }
+
+    @Test(dataProvider = "templateListProvider")
+    public void testGetTemplateList(Integer limit, Integer offset, int resultSize) throws Exception {
+
+        Template template1 = new Template(SUPER_TENANT_ID,"T1","Description 1", sampleScript);
+        Template template2 = new Template(SUPER_TENANT_ID,"T2","Description 2",sampleScript);
+        Template template3 = new Template(SUPER_TENANT_ID,"Template3","Description 3","Script 3");
+
+        DataSource dataSource = mock(DataSource.class);
+        mockComponentDataHolder(dataSource);
+
+        try (Connection connection = getConnection()) {
+            Connection spyConnection = spyConnection(connection);
+            when(dataSource.getConnection()).thenReturn(spyConnection);
+
+            TemplateManager templateManager = new TemplateManagerImpl();
+
+            TemplateInfo templateResult1 = templateManager.addTemplate(template1);
+            Assert.assertEquals(templateResult1.getTemplateName(),template1.getTemplateName());
+
+            TemplateInfo templateResult2 = templateManager.addTemplate(template2);
+            Assert.assertEquals(templateResult2.getTemplateName(),template2.getTemplateName());
+
+            TemplateInfo templateResult3 = templateManager.addTemplate(template3);
+            Assert.assertEquals(templateResult3.getTemplateName(),template3.getTemplateName());
+
+            List<TemplateInfo> templateList = templateManager.listTemplates(limit, offset);
+
+            Assert.assertEquals(templateList.size(),resultSize);
+        }
+    }
+
+    @Test(dataProvider = "TemplateDataProvider")
+    public void testDeleteTemplate(Object template) throws Exception {
+
+        DataSource dataSource = mock(DataSource.class);
+        mockComponentDataHolder(dataSource);
+
+        try (Connection connection = getConnection()) {
+
+            Connection spyConnection = spyConnection(connection);
+            when(dataSource.getConnection()).thenReturn(spyConnection);
+
+            TemplateManager templateManager = new TemplateManagerImpl();
+            TemplateInfo templateResult = templateManager.addTemplate(((Template) template));
+            Assert.assertEquals(templateResult.getTemplateName(), ((Template) template).getTemplateName());
+
+            String deletedTemplateName = templateManager.deleteTemplate(templateResult.getTemplateName());
+
+            Assert.assertEquals(deletedTemplateName, templateResult.getTemplateName());
+        }
+    }
+
+    @Test(dataProvider = "validateInputsDataProvider",expectedExceptions = TemplateManagementClientException.class)
+    public void testValidatingInputs(Object template) throws Exception{
+        DataSource dataSource = mock(DataSource.class);
+        mockComponentDataHolder(dataSource);
+
+        try (Connection connection = getConnection()){
+            Connection spyConnection = spyConnection(connection);
+            when(dataSource.getConnection()).thenReturn(spyConnection);
+
+            TemplateManager templateManager = new TemplateManagerImpl();
+            templateManager.addTemplate(((Template) template));
+
+            Assert.fail("Expected: "+ TemplateManagementClientException.class.getName());
+        }
+    }
+
+    @Test(expectedExceptions = TemplateManagementClientException.class)
+    public void testvalidatingPaginationParameters() throws Exception{
+        DataSource dataSource = mock(DataSource.class);
+        mockComponentDataHolder(dataSource);
+
+        try (Connection connection = getConnection()){
+            Connection spyConnection = spyConnection(connection);
+            when(dataSource.getConnection()).thenReturn(spyConnection);
+
+            TemplateManager templateManager = new TemplateManagerImpl();
+            templateManager.listTemplates(-10,-5);
+            Assert.fail("Expected: "+ TemplateManagementClientException.class.getName());
+
+            templateManager.listTemplates(0,-5);
+            Assert.fail("Expected: "+ TemplateManagementClientException.class.getName());
+
+            templateManager.listTemplates(-10,0);
+            Assert.fail("Expected: "+ TemplateManagementClientException.class.getName());
+        }
+
+    }
+
+
 
 
 
