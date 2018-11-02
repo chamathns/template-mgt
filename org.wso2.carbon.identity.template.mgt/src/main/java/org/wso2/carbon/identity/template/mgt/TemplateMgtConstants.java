@@ -31,6 +31,10 @@ public class TemplateMgtConstants {
     public static final String PERMISSION_TEMPLATE_MGT_LIST = "/permission/admin/manage/identity/template/mgt/list";
     public static final String PERMISSION_TEMPLATE_MGT_UPDATE = "/permission/admin/manage/identity/template/mgt/update";
     public static final String PERMISSION_TEMPLATE_MGT_DELETE = "/permission/admin/manage/identity/template/mgt/delete";
+    public static final String APPLICATION_JSON = "application/json";
+
+    public static final String HEADER_CONTENT_TYPE = "Content-Type";
+    public static final String DEFAULT_RESPONSE_CONTENT_TYPE = APPLICATION_JSON;
 
     public static final String TEMPLATE_RESOURCE_PATH = "/" + "templates";
 

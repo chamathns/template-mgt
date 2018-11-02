@@ -2,43 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a4b52234-6a17-458d-abd6-21576aba62b7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.endpoint/src/main/java/org/wso2/carbon/identity/template/mgt/endpoint/impl/TemplatesApiServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.endpoint/src/main/java/org/wso2/carbon/identity/template/mgt/endpoint/impl/TemplatesApiServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/src/main/java/org/wso2/carbon/identity/template/mgt/TemplateMgtConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/src/main/java/org/wso2/carbon/identity/template/mgt/TemplateMgtConstants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/src/main/java/org/wso2/carbon/identity/template/mgt/exception/TemplateManagementRuntimeException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/src/main/java/org/wso2/carbon/identity/template/mgt/util/TemplateMgtUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/src/main/java/org/wso2/carbon/identity/template/mgt/util/TemplateMgtUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/target/classes/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/target/classes/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/target/classes/org/wso2/carbon/identity/template/mgt/exception/TemplateManagementRuntimeException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/target/classes/org/wso2/carbon/identity/template/mgt/util/TemplateMgtUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/target/classes/org/wso2/carbon/identity/template/mgt/util/TemplateMgtUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/target/jacoco.exec" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/target/jacoco.exec" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/target/site/jacoco/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/target/site/jacoco/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/target/site/jacoco/jacoco-sessions.html" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/target/site/jacoco/jacoco-sessions.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/target/site/jacoco/jacoco.csv" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/target/site/jacoco/jacoco.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/target/site/jacoco/jacoco.xml" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/target/site/jacoco/jacoco.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/target/site/jacoco/org.wso2.carbon.identity.template.mgt.exception/TemplateManagementRuntimeException.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/target/site/jacoco/org.wso2.carbon.identity.template.mgt.exception/TemplateManagementRuntimeException.java.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/target/site/jacoco/org.wso2.carbon.identity.template.mgt.exception/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/target/site/jacoco/org.wso2.carbon.identity.template.mgt.exception/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/target/site/jacoco/org.wso2.carbon.identity.template.mgt.exception/index.source.html" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/target/site/jacoco/org.wso2.carbon.identity.template.mgt.exception/index.source.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/target/site/jacoco/org.wso2.carbon.identity.template.mgt.util/TemplateMgtUtils.html" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/target/site/jacoco/org.wso2.carbon.identity.template.mgt.util/TemplateMgtUtils.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/target/site/jacoco/org.wso2.carbon.identity.template.mgt.util/TemplateMgtUtils.java.html" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/target/site/jacoco/org.wso2.carbon.identity.template.mgt.util/TemplateMgtUtils.java.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/target/site/jacoco/org.wso2.carbon.identity.template.mgt.util/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/target/site/jacoco/org.wso2.carbon.identity.template.mgt.util/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/target/site/jacoco/org.wso2.carbon.identity.template.mgt.util/index.source.html" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/target/site/jacoco/org.wso2.carbon.identity.template.mgt.util/index.source.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/target/surefire-reports/TEST-TestSuite.xml" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/target/surefire-reports/TEST-TestSuite.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/target/surefire-reports/TemplateManagementTestSuite/TemplateManagementTests.html" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/target/surefire-reports/TemplateManagementTestSuite/TemplateManagementTests.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/target/surefire-reports/TemplateManagementTestSuite/TemplateManagementTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/target/surefire-reports/TemplateManagementTestSuite/TemplateManagementTests.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/target/surefire-reports/TestSuite.txt" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/target/surefire-reports/TestSuite.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/target/surefire-reports/emailable-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/target/surefire-reports/emailable-report.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/target/surefire-reports/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/target/surefire-reports/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/target/surefire-reports/junitreports/TEST-org.wso2.carbon.identity.template.mgt.TemplateManagerImplTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/target/surefire-reports/junitreports/TEST-org.wso2.carbon.identity.template.mgt.TemplateManagerImplTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/target/surefire-reports/junitreports/TEST-org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/target/surefire-reports/junitreports/TEST-org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/target/surefire-reports/junitreports/TEST-org.wso2.carbon.identity.template.mgt.model.TemplateInfoTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/target/surefire-reports/junitreports/TEST-org.wso2.carbon.identity.template.mgt.model.TemplateInfoTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/target/surefire-reports/junitreports/TEST-org.wso2.carbon.identity.template.mgt.model.TemplateTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/target/surefire-reports/junitreports/TEST-org.wso2.carbon.identity.template.mgt.model.TemplateTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/target/surefire-reports/old/TemplateManagementTestSuite/classes.html" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/target/surefire-reports/old/TemplateManagementTestSuite/classes.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/target/surefire-reports/old/TemplateManagementTestSuite/methods-alphabetical.html" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/target/surefire-reports/old/TemplateManagementTestSuite/methods-alphabetical.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/target/surefire-reports/old/TemplateManagementTestSuite/methods.html" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/target/surefire-reports/old/TemplateManagementTestSuite/methods.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/target/surefire-reports/testng-results.xml" beforeDir="false" afterPath="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/target/surefire-reports/testng-results.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -113,7 +77,7 @@
           <entry key="gitignore" value="3" />
           <entry key="html" value="7" />
           <entry key="iml" value="1" />
-          <entry key="java" value="363" />
+          <entry key="java" value="364" />
           <entry key="js" value="14" />
           <entry key="jsp" value="40" />
           <entry key="png" value="1" />
@@ -130,7 +94,7 @@
           <entry key="HTML" value="7" />
           <entry key="IDEA_MODULE" value="1" />
           <entry key="Image" value="2" />
-          <entry key="JAVA" value="363" />
+          <entry key="JAVA" value="364" />
           <entry key="JSP" value="37" />
           <entry key="JavaScript" value="14" />
           <entry key="PLAIN_TEXT" value="9" />
@@ -147,7 +111,7 @@
           <entry key="css" value="24" />
           <entry key="dummy" value="27" />
           <entry key="gitignore" value="6" />
-          <entry key="java" value="15011" />
+          <entry key="java" value="15022" />
           <entry key="js" value="248" />
           <entry key="jsp" value="1576" />
           <entry key="properties" value="455" />
@@ -160,7 +124,7 @@
         <counts>
           <entry key="CLASS" value="1" />
           <entry key="CSS" value="24" />
-          <entry key="JAVA" value="15011" />
+          <entry key="JAVA" value="15022" />
           <entry key="JSP" value="1575" />
           <entry key="JavaScript" value="248" />
           <entry key="PLAIN_TEXT" value="38" />
@@ -191,15 +155,6 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/src/main/java/org/wso2/carbon/identity/template/mgt/internal/TemplateManagerComponent.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="51" column="52" selection-start-line="51" selection-start-column="52" selection-end-line="51" selection-end-column="52" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/src/main/java/org/wso2/carbon/identity/template/mgt/TemplateManagerImpl.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="606">
@@ -211,8 +166,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/src/main/java/org/wso2/carbon/identity/template/mgt/TemplateMgtConstants.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="351">
-              <caret line="65" column="41" selection-start-line="65" selection-start-column="8" selection-end-line="65" selection-end-column="41" />
+            <state relative-caret-position="300">
+              <caret line="36" column="80" lean-forward="true" selection-start-line="36" selection-start-column="80" selection-end-line="36" selection-end-column="80" />
             </state>
           </provider>
         </entry>
@@ -247,11 +202,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.endpoint/src/main/java/org/wso2/carbon/identity/template/mgt/endpoint/impl/TemplatesApiServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="190" column="5" lean-forward="true" selection-start-line="190" selection-start-column="5" selection-end-line="190" selection-end-column="5" />
+            <state relative-caret-position="240">
+              <caret line="180" column="32" lean-forward="true" selection-start-line="180" selection-start-column="32" selection-end-line="180" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.endpoint/src/main/java/org/wso2/carbon/identity/template/mgt/endpoint/exception/BadRequestException.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="510">
+              <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -332,7 +299,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.endpoint/src/gen/java/org/wso2/carbon/identity/template/mgt/endpoint/TemplatesApiService.java" />
         <option value="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.endpoint/src/main/resources/org.wso2.carbon.identity.template.mgt.api.yaml" />
         <option value="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.endpoint/src/gen/java/org/wso2/carbon/identity/template/mgt/endpoint/dto/UpdateSuccessResponseDTO.java" />
         <option value="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/java/org/wso2/carbon/identity/template/mgt/ui/util/TemplateUIUtils.java" />
@@ -381,8 +347,9 @@
         <option value="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/src/test/resources/testng.xml" />
         <option value="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/src/test/java/org/wso2/carbon/identity/template/mgt/TemplateManagerImplTest.java" />
         <option value="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/src/main/java/org/wso2/carbon/identity/template/mgt/util/TemplateMgtUtils.java" />
-        <option value="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/src/main/java/org/wso2/carbon/identity/template/mgt/TemplateMgtConstants.java" />
         <option value="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.endpoint/src/main/java/org/wso2/carbon/identity/template/mgt/endpoint/impl/TemplatesApiServiceImpl.java" />
+        <option value="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/src/main/java/org/wso2/carbon/identity/template/mgt/TemplateMgtConstants.java" />
+        <option value="$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.endpoint/src/main/java/org/wso2/carbon/identity/template/mgt/endpoint/exception/BadRequestException.java" />
       </list>
     </option>
   </component>
@@ -437,7 +404,7 @@
     <option name="x" value="1920" />
     <option name="y" value="-2" />
     <option name="width" value="1920" />
-    <option name="height" value="1082" />
+    <option name="height" value="1035" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -650,32 +617,6 @@
             </path>
             <path>
               <item name="template-mgt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="template-mgt" type="462c0819:PsiDirectoryNode" />
-              <item name="org.wso2.carbon.identity.template.mgt.ui" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="template-mgt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="template-mgt" type="462c0819:PsiDirectoryNode" />
-              <item name="org.wso2.carbon.identity.template.mgt.ui" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="template-mgt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="template-mgt" type="462c0819:PsiDirectoryNode" />
-              <item name="org.wso2.carbon.identity.template.mgt.ui" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="template-mgt" type="b2602c69:ProjectViewProjectNode" />
-              <item name="template-mgt" type="462c0819:PsiDirectoryNode" />
-              <item name="org.wso2.carbon.identity.template.mgt.ui" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="template-mgt" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
             <path>
@@ -722,7 +663,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541138215710" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541141051788" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="TestNG" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.TestNG" value="" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers" value="true" />
@@ -943,7 +884,7 @@
       <workItem from="1540999759911" duration="5712000" />
       <workItem from="1541046465497" duration="17186000" />
       <workItem from="1541130269685" duration="229000" />
-      <workItem from="1541130523423" duration="9370000" />
+      <workItem from="1541130523423" duration="9635000" />
     </task>
     <servers />
   </component>
@@ -980,10 +921,11 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="380939000" />
+    <option name="totallyTimeSpent" value="381204000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1920" y="-2" width="1920" height="1035" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4966216" visible="true" weight="0.27582535" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -1090,13 +1032,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/add-template.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-378">
-          <caret line="144" column="18" lean-forward="true" selection-start-line="144" selection-start-column="18" selection-end-line="144" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.ui/src/main/resources/web/template-mgt/add-template-finish.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="825">
@@ -1432,13 +1367,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/src/main/java/org/wso2/carbon/identity/template/mgt/TemplateMgtConstants.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="65" column="41" selection-start-line="65" selection-start-column="8" selection-end-line="65" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.endpoint/src/main/java/org/wso2/carbon/identity/template/mgt/endpoint/util/TemplateEndpointUtils.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
@@ -1448,8 +1376,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.endpoint/src/main/java/org/wso2/carbon/identity/template/mgt/endpoint/impl/TemplatesApiServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="190" column="5" lean-forward="true" selection-start-line="190" selection-start-column="5" selection-end-line="190" selection-end-column="5" />
+        <state relative-caret-position="240">
+          <caret line="180" column="32" lean-forward="true" selection-start-line="180" selection-start-column="32" selection-end-line="180" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt/src/main/java/org/wso2/carbon/identity/template/mgt/TemplateMgtConstants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="36" column="80" lean-forward="true" selection-start-line="36" selection-start-column="80" selection-end-line="36" selection-end-column="80" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/org.wso2.carbon.identity.template.mgt.endpoint/src/main/java/org/wso2/carbon/identity/template/mgt/endpoint/exception/BadRequestException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
