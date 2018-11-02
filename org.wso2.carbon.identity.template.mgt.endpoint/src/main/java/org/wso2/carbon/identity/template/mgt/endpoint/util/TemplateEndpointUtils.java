@@ -18,12 +18,19 @@
 
 package org.wso2.carbon.identity.template.mgt.endpoint.util;
 
+import org.apache.commons.logging.Log;
 import org.apache.cxf.jaxrs.ext.MessageContext;
 import org.wso2.carbon.context.PrivilegedCarbonContext;
 import org.wso2.carbon.identity.template.mgt.TemplateManager;
+import org.wso2.carbon.identity.template.mgt.TemplateMgtConstants;
+import org.wso2.carbon.identity.template.mgt.endpoint.dto.ErrorDTO;
 import org.wso2.carbon.identity.template.mgt.endpoint.dto.GetTemplatesResponseDTO;
 import org.wso2.carbon.identity.template.mgt.endpoint.dto.TemplateRequestDTO;
 import org.wso2.carbon.identity.template.mgt.endpoint.dto.UpdateTemplateRequestDTO;
+import org.wso2.carbon.identity.template.mgt.endpoint.exception.BadRequestException;
+import org.wso2.carbon.identity.template.mgt.endpoint.exception.ConflictRequestException;
+import org.wso2.carbon.identity.template.mgt.endpoint.exception.ForbiddenException;
+import org.wso2.carbon.identity.template.mgt.endpoint.exception.NotFoundException;
 import org.wso2.carbon.identity.template.mgt.model.Template;
 import org.wso2.carbon.identity.template.mgt.model.TemplateInfo;
 import org.wso2.carbon.identity.template.mgt.util.TemplateMgtUtils;
@@ -61,15 +68,79 @@ public class TemplateEndpointUtils {
                 })
                 .collect(Collectors.toList());
     }
+    private static void logDebug(Log log, Throwable throwable) {
 
-//    public static String getTenantIdFromAuthenticatedUser(MessageContext context) {
-//        if (context.getHttpServletRequest().getAttribute("auth-context") instanceof AuthenticationContext){
-//            AuthenticationContext authenticationContext = (AuthenticationContext) context.getHttpServletRequest().getAttribute("auth-context");
-//            if (authenticationContext.getUser()!= null){
-//                return authenticationContext.getUser().getTenantDomain();
-//            }
-//
-//        }
-//        return null;
-//    }
+        if (log.isDebugEnabled()) {
+            log.debug(TemplateMgtConstants.STATUS_BAD_REQUEST_MESSAGE_DEFAULT, throwable);
+        }
+    }
+    private static ErrorDTO getErrorDTO(String message, String description, String code) {
+
+        ErrorDTO errorDTO = new ErrorDTO();
+        errorDTO.setCode(code);
+        errorDTO.setMessage(message);
+        errorDTO.setDescription(description);
+        return errorDTO;
+    }
+    /**
+     * This method is used to create a BadRequestException with the known errorCode and message.
+     *
+     * @param description Error Message Desription.
+     * @param code        Error Code.
+     * @return BadRequestException with the given errorCode and description.
+     */
+    public static BadRequestException buildBadRequestException(String description, String code,
+                                                               Log log, Throwable e) {
+
+        ErrorDTO errorDTO = getErrorDTO(TemplateMgtConstants.STATUS_BAD_REQUEST_MESSAGE_DEFAULT, description, code);
+        logDebug(log, e);
+        return new BadRequestException(errorDTO);
+    }
+
+    /**
+     * This method is used to create a ConflictRequestException with the known errorCode and message.
+     *
+     * @param description Error Message Description.
+     * @param code        Error Code.
+     * @return ConflictRequestException with the given errorCode and description.
+     */
+    public static ConflictRequestException buildConflictRequestException(String description, String code,
+                                                                         Log log, Throwable e) {
+
+        ErrorDTO errorDTO = getErrorDTO(TemplateMgtConstants.STATUS_BAD_REQUEST_MESSAGE_DEFAULT, description, code);
+        logDebug(log, e);
+        return new ConflictRequestException(errorDTO);
+    }
+
+    /**
+     * This method is used to create a NotFoundException with the known errorCode and message.
+     *
+     * @param description Error Message Description.
+     * @param code        Error Code.
+     * @return NotFoundException with the given errorCode and description.
+     */
+    public static NotFoundException buildNotFoundRequestException(String description, String code,
+                                                                  Log log, Throwable e) {
+
+        ErrorDTO errorDTO = getErrorDTO(TemplateMgtConstants.STATUS_BAD_REQUEST_MESSAGE_DEFAULT, description, code);
+        logDebug(log, e);
+        return new NotFoundException(errorDTO);
+    }
+
+    /**
+     * This method is used to create a Forbidden Exception with the known errorCode and message.
+     *
+     * @param description Error Message Description.
+     * @param code        Error Code.
+     * @return ForbiddenException with the given errorCode and description.
+     */
+    public static ForbiddenException buildForbiddenException(String description, String code,
+                                                             Log log, Throwable e) {
+
+        ErrorDTO errorDTO = getErrorDTO(TemplateMgtConstants.STATUS_BAD_REQUEST_MESSAGE_DEFAULT, description, code);
+        logDebug(log, e);
+        return new ForbiddenException(errorDTO);
+    }
+
+
 }

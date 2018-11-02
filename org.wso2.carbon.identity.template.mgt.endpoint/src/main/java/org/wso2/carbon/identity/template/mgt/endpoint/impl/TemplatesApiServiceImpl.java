@@ -18,6 +18,8 @@
 
 package org.wso2.carbon.identity.template.mgt.endpoint.impl;
 
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
 import org.wso2.carbon.identity.template.mgt.TemplateMgtConstants;
 import org.wso2.carbon.identity.template.mgt.endpoint.TemplatesApiService;
 import org.wso2.carbon.identity.template.mgt.endpoint.dto.AddTemplateResponseDTO;
@@ -41,6 +43,7 @@ import static org.wso2.carbon.identity.template.mgt.TemplateMgtConstants.ErrorMe
 
 public class
 TemplatesApiServiceImpl extends TemplatesApiService {
+    private static final Log LOG = LogFactory.getLog(TemplatesApiServiceImpl.class);
 
 
     @Override
@@ -52,7 +55,7 @@ TemplatesApiServiceImpl extends TemplatesApiService {
                     .location(getTemplateLocationURI(response))
                     .build();
         } catch (TemplateManagementClientException e){
-
+            return handleBadRequestResponse(e);
         }catch (TemplateManagementException e){
 
         }catch (TemplateManagementServerException e){
@@ -179,15 +182,15 @@ TemplatesApiServiceImpl extends TemplatesApiService {
 
     private Response handleBadRequestResponse(TemplateManagementClientException e){
         if (isConflictError(e)){
-
+            throw TemplateEndpointUtils.buildConflictRequestException(e.getMessage(),e.getErrorCode(),LOG,e);
         }
         if (isForbiddenError(e)){
-
+            throw TemplateEndpointUtils.buildForbiddenException(e.getMessage(),e.getErrorCode(),LOG,e);
         }
         if (isNotFoundError(e)){
-
+            throw TemplateEndpointUtils.buildNotFoundRequestException(e.getMessage(),e.getErrorCode(),LOG,e);
         }
-
+        throw TemplateEndpointUtils.buildBadRequestException(e.getMessage(),e.getErrorCode(),LOG,e);
     }
 
     private boolean isForbiddenError(TemplateManagementClientException e) {
