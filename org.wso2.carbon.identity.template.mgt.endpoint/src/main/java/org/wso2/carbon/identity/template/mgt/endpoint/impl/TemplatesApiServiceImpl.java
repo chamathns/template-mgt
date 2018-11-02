@@ -29,11 +29,15 @@ import java.net.URI;
 import java.net.URISyntaxException;
 import java.util.List;
 
+import org.wso2.carbon.identity.template.mgt.exception.TemplateManagementClientException;
 import org.wso2.carbon.identity.template.mgt.exception.TemplateManagementException;
+import org.wso2.carbon.identity.template.mgt.exception.TemplateManagementServerException;
 import org.wso2.carbon.identity.template.mgt.model.Template;
 import org.wso2.carbon.identity.template.mgt.model.TemplateInfo;
 
 import javax.ws.rs.core.Response;
+
+import static org.wso2.carbon.identity.template.mgt.TemplateMgtConstants.ErrorMessages.*;
 
 public class
 TemplatesApiServiceImpl extends TemplatesApiService {
@@ -47,11 +51,12 @@ TemplatesApiServiceImpl extends TemplatesApiService {
                     .entity(response)
                     .location(getTemplateLocationURI(response))
                     .build();
-        } catch (Throwable e) {
-            e.printStackTrace();
-            return null;
-            //handle exception
-            //handle other exceptions
+        } catch (TemplateManagementClientException e){
+
+        }catch (TemplateManagementException e){
+
+        }catch (TemplateManagementServerException e){
+
         }
     }
 
@@ -170,6 +175,37 @@ TemplatesApiServiceImpl extends TemplatesApiService {
     }
     private URI getUpdatedTemplateLocationURI(UpdateSuccessResponseDTO response) throws URISyntaxException {
         return new URI(TemplateMgtConstants.TEMPLATE_RESOURCE_PATH + response.getTenantId());
+    }
+
+    private Response handleBadRequestResponse(TemplateManagementClientException e){
+        if (isConflictError(e)){
+
+        }
+        if (isForbiddenError(e)){
+
+        }
+        if (isNotFoundError(e)){
+
+        }
+
+    }
+
+    private boolean isForbiddenError(TemplateManagementClientException e) {
+
+        return ERROR_CODE_NO_AUTH_USER_FOUND.getCode().equals(e.getErrorCode()) || ERROR_CODE_USER_NOT_AUTHORIZED.getCode()
+                .equals(e.getErrorCode());
+    }
+
+    private boolean isNotFoundError(TemplateManagementClientException e) {
+
+        return ERROR_CODE_TEMPLATE_ID_INVALID.getCode().equals(e.getErrorCode())
+                || ERROR_CODE_TENANT_ID_INVALID.getCode().equals(e.getErrorCode())
+                || ERROR_CODE_TEMPLATE_NAME_INVALID.getCode().equals(e.getErrorCode());
+    }
+
+    private boolean isConflictError(TemplateManagementClientException e) {
+
+        return ERROR_CODE_TEMPLATE_ALREADY_EXIST.getCode().equals(e.getErrorCode());
     }
 
 

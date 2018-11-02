@@ -21,13 +21,12 @@ import org.apache.commons.lang.StringUtils;
 import org.wso2.carbon.context.PrivilegedCarbonContext;
 import org.wso2.carbon.identity.template.mgt.exception.TemplateManagementClientException;
 import org.wso2.carbon.identity.template.mgt.TemplateMgtConstants;
-import org.wso2.carbon.identity.template.mgt.exception.TemplateManagementRuntimeException;
 import org.wso2.carbon.identity.template.mgt.exception.TemplateManagementServerException;
 
 /**
  * This class is used to define the Utilities required in template management feature.
  */
-<span class="nc" id="L30">public class TemplateMgtUtils {</span>
+<span class="nc" id="L29">public class TemplateMgtUtils {</span>
 
     /**
      * This method can be used to generate a TemplateManagementServerException from IdentityTemplateMgtConstants.ErrorMessages
@@ -40,33 +39,12 @@ import org.wso2.carbon.identity.template.mgt.exception.TemplateManagementServerE
     public static TemplateManagementServerException handleServerException(TemplateMgtConstants.ErrorMessages error,
                                                                           String data, Throwable e) {
         String message;
-<span class="pc bpc" id="L43" title="1 of 2 branches missed.">        if (StringUtils.isNotBlank(data)) {</span>
-<span class="fc" id="L44">            message = String.format(error.getMessage(), data);</span>
+<span class="pc bpc" id="L42" title="1 of 2 branches missed.">        if (StringUtils.isNotBlank(data)) {</span>
+<span class="fc" id="L43">            message = String.format(error.getMessage(), data);</span>
         } else {
-<span class="nc" id="L46">            message = error.getMessage();</span>
+<span class="nc" id="L45">            message = error.getMessage();</span>
         }
-<span class="fc" id="L48">        return new TemplateManagementServerException(message, error.getCode(), e);</span>
-    }
-
-    /**
-     * This method can be used to generate a ConsentManagementRuntimeException from ConsentConstants.ErrorMessages
-     * object when an exception is thrown.
-     *
-     * @param error ConsentConstants.ErrorMessages.
-     * @param data  data to replace if message needs to be replaced.
-     * @param e     Parent exception.
-     * @return ConsentManagementRuntimeException
-     */
-    public static TemplateManagementRuntimeException handleRuntimeException(TemplateMgtConstants.ErrorMessages error,
-                                                                            String data, Throwable e) {
-
-        String message;
-<span class="nc bnc" id="L64" title="All 2 branches missed.">        if (StringUtils.isNotBlank(data)) {</span>
-<span class="nc" id="L65">            message = String.format(error.getMessage(), data);</span>
-        } else {
-<span class="nc" id="L67">            message = error.getMessage();</span>
-        }
-<span class="nc" id="L69">        return new TemplateManagementRuntimeException(message, error.getCode(), e);</span>
+<span class="fc" id="L47">        return new TemplateManagementServerException(message, error.getCode(), e);</span>
     }
 
     /**
@@ -81,13 +59,13 @@ import org.wso2.carbon.identity.template.mgt.exception.TemplateManagementServerE
                                                                           String data) {
 
         String message;
-<span class="pc bpc" id="L84" title="1 of 2 branches missed.">        if (StringUtils.isNotBlank(data)) {</span>
-<span class="nc" id="L85">            message = String.format(error.getMessage(), data);</span>
+<span class="pc bpc" id="L62" title="1 of 2 branches missed.">        if (StringUtils.isNotBlank(data)) {</span>
+<span class="nc" id="L63">            message = String.format(error.getMessage(), data);</span>
         } else {
-<span class="fc" id="L87">            message = error.getMessage();</span>
+<span class="fc" id="L65">            message = error.getMessage();</span>
         }
 
-<span class="fc" id="L90">        return new TemplateManagementClientException(message, error.getCode());</span>
+<span class="fc" id="L68">        return new TemplateManagementClientException(message, error.getCode());</span>
     }
 
     /**
@@ -96,7 +74,7 @@ import org.wso2.carbon.identity.template.mgt.exception.TemplateManagementServerE
      * @return Tenant id.
      */
     public static int getTenantIdFromCarbonContext() {
-<span class="fc" id="L99">        return PrivilegedCarbonContext.getThreadLocalCarbonContext().getTenantId();</span>
+<span class="fc" id="L77">        return PrivilegedCarbonContext.getThreadLocalCarbonContext().getTenantId();</span>
     }
 
 
