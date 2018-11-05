@@ -29,9 +29,7 @@ import org.wso2.carbon.identity.template.mgt.exception.TemplateManagementServerE
 import org.wso2.carbon.identity.template.mgt.model.Template;
 import org.wso2.carbon.identity.template.mgt.util.JdbcUtils;
 
-import java.io.ByteArrayInputStream;
-import java.io.IOException;
-import java.io.InputStream;
+import java.io.*;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.util.List;
@@ -40,139 +38,183 @@ import static org.wso2.carbon.identity.template.mgt.TemplateMgtConstants.ErrorMe
 import static org.wso2.carbon.identity.template.mgt.TemplateMgtConstants.SqlQueries.*;
 import static org.wso2.carbon.identity.template.mgt.util.JdbcUtils.*;
 
-<span class="fc" id="L43">public class TemplateManagerDAOImpl implements TemplateManagerDAO {</span>
+<span class="fc" id="L41">public class TemplateManagerDAOImpl implements TemplateManagerDAO {</span>
     public TemplateInfo addTemplate(Template template) throws TemplateManagementException {
         TemplateInfo templateResult;
-        int insertedId;
-<span class="fc" id="L47">        JdbcTemplate jdbcTemplate = JdbcUtils.getNewTemplate();</span>
+<span class="fc" id="L44">        JdbcTemplate jdbcTemplate = JdbcUtils.getNewTemplate();</span>
 
         try {
-<span class="fc" id="L50">            insertedId = jdbcTemplate.executeInsert(TemplateMgtConstants.SqlQueries.INSERT_TEMPLATE,(preparedStatement -&gt;{</span>
-<span class="fc" id="L51">                preparedStatement.setString(1,template.getTenantId().toString());</span>
-<span class="fc" id="L52">                preparedStatement.setString(2,template.getTemplateName());</span>
-<span class="fc" id="L53">                preparedStatement.setString(3,template.getDescription());</span>
-<span class="fc" id="L54">                preparedStatement.setString(4,template.getTemplateScript());</span>
+<span class="fc" id="L47">            jdbcTemplate.executeUpdate(TemplateMgtConstants.SqlQueries.INSERT_TEMPLATE,(preparedStatement -&gt;{</span>
+<span class="fc" id="L48">                preparedStatement.setString(1,template.getTenantId().toString());</span>
+<span class="fc" id="L49">                preparedStatement.setString(2,template.getTemplateName());</span>
+<span class="fc" id="L50">                preparedStatement.setString(3,template.getDescription());</span>
+//                preparedStatement.setString(4,template.getTemplateScript());
+                try {
+<span class="fc" id="L53">                    setBlobValue(template.getTemplateScript(),preparedStatement,4);</span>
+<span class="nc" id="L54">                } catch (IOException e) {</span>
+<span class="nc" id="L55">                    e.printStackTrace();</span>
+<span class="fc" id="L56">                }</span>
 
-<span class="fc" id="L56">            }),template,true);</span>
-<span class="fc" id="L57">        } catch (DataAccessException e) {</span>
-<span class="fc" id="L58">            throw TemplateMgtUtils.handleServerException(ERROR_CODE_INSERT_TEMPLATE, template.getTemplateName(),e);</span>
-<span class="fc" id="L59">        }</span>
-<span class="fc" id="L60">        templateResult = new TemplateInfo(insertedId,template.getTenantId(),template.getTemplateName());</span>
-<span class="fc" id="L61">        return templateResult;</span>
+<span class="fc" id="L58">            }));</span>
+<span class="fc" id="L59">        } catch (DataAccessException e) {</span>
+<span class="fc" id="L60">            throw TemplateMgtUtils.handleServerException(ERROR_CODE_INSERT_TEMPLATE, template.getTemplateName(),e);</span>
+<span class="fc" id="L61">        }</span>
+<span class="fc" id="L62">        templateResult = new TemplateInfo(template.getTenantId(),template.getTemplateName());</span>
+<span class="fc" id="L63">        return templateResult;</span>
     }
     
     public Template getTemplateByName(String templateName, Integer tenantId) throws TemplateManagementException {
         Template template;
-<span class="fc" id="L66">        JdbcTemplate jdbcTemplate = JdbcUtils.getNewTemplate();</span>
+<span class="fc" id="L68">        JdbcTemplate jdbcTemplate = JdbcUtils.getNewTemplate();</span>
         try {
-<span class="fc" id="L68">            template = jdbcTemplate.fetchSingleRecord(GET_TEMPLATE_BY_NAME,(resultSet, rowNumber) -&gt;</span>
-<span class="fc" id="L69">                    new Template(resultSet.getInt(1),</span>
-<span class="fc" id="L70">                            resultSet.getInt(2),</span>
-<span class="fc" id="L71">                            resultSet.getString(3),</span>
-<span class="fc" id="L72">                            resultSet.getString(4),</span>
-<span class="fc" id="L73">                            resultSet.getString(5)),</span>
+<span class="fc" id="L70">            template = jdbcTemplate.fetchSingleRecord(GET_TEMPLATE_BY_NAME,(resultSet, rowNumber) -&gt;</span>
+<span class="fc" id="L71">                    new Template(resultSet.getInt(1),</span>
+<span class="fc" id="L72">                            resultSet.getInt(2),</span>
+<span class="fc" id="L73">                            resultSet.getString(3),</span>
+<span class="fc" id="L74">                            resultSet.getString(4),</span>
+//                            resultSet.getString(5)),
+<span class="fc" id="L76">                            getBlobValue(resultSet.getBinaryStream(5))),</span>
                     preparedStatement -&gt; {
-<span class="fc" id="L75">                        preparedStatement.setString(1,templateName);</span>
-<span class="fc" id="L76">                        preparedStatement.setInt(2,tenantId);</span>
-<span class="fc" id="L77">            });</span>
-<span class="fc" id="L78">        } catch (DataAccessException e) {</span>
-<span class="fc" id="L79">            throw new TemplateManagementServerException(String.format(ERROR_CODE_SELECT_TEMPLATE_BY_NAME.getMessage(),tenantId, templateName),</span>
-<span class="fc" id="L80">                    ERROR_CODE_SELECT_TEMPLATE_BY_NAME.getCode(),e);</span>
-<span class="fc" id="L81">        }</span>
-<span class="fc" id="L82">        return template;</span>
+<span class="fc" id="L78">                        preparedStatement.setString(1,templateName);</span>
+<span class="fc" id="L79">                        preparedStatement.setInt(2,tenantId);</span>
+<span class="fc" id="L80">            });</span>
+<span class="fc" id="L81">        } catch (DataAccessException e) {</span>
+<span class="fc" id="L82">            throw new TemplateManagementServerException(String.format(ERROR_CODE_SELECT_TEMPLATE_BY_NAME.getMessage(),tenantId, templateName),</span>
+<span class="fc" id="L83">                    ERROR_CODE_SELECT_TEMPLATE_BY_NAME.getCode(),e);</span>
+<span class="fc" id="L84">        }</span>
+<span class="fc" id="L85">        return template;</span>
     }
 
     public List&lt;TemplateInfo&gt; getAllTemplates(Integer tenantId, Integer limit, Integer offset) throws TemplateManagementException {
 
         List&lt;TemplateInfo&gt; templates;
-<span class="fc" id="L88">        JdbcTemplate jdbcTemplate = JdbcUtils.getNewTemplate();</span>
+<span class="fc" id="L91">        JdbcTemplate jdbcTemplate = JdbcUtils.getNewTemplate();</span>
 
         try {
             String query;
-<span class="pc bpc" id="L92" title="1 of 2 branches missed.">            if (isH2MySqlOrPostgresDB()) {</span>
-<span class="fc" id="L93">                query = LIST_PAGINATED_TEMPLATES_MYSQL;</span>
-<span class="nc bnc" id="L94" title="All 2 branches missed.">            } else if (isDB2DB()) {</span>
-<span class="nc" id="L95">                query = LIST_PAGINATED_TEMPLATES_DB2;</span>
-<span class="nc" id="L96">                int initialOffset = offset;</span>
-<span class="nc" id="L97">                offset = offset + limit;</span>
-<span class="nc" id="L98">                limit = initialOffset + 1;</span>
-<span class="nc bnc" id="L99" title="All 2 branches missed.">            } else if (isMSSqlDB()) {</span>
-<span class="nc" id="L100">                int initialOffset = offset;</span>
-<span class="nc" id="L101">                offset = limit + offset;</span>
-<span class="nc" id="L102">                limit = initialOffset + 1;</span>
-<span class="nc" id="L103">                query = LIST_PAGINATED_TEMPLATES_MSSQL;</span>
-<span class="nc bnc" id="L104" title="All 2 branches missed.">            } else if (isInformixDB()) {</span>
-<span class="nc" id="L105">                query = LIST_PAGINATED_TEMPLATES_INFORMIX;</span>
+<span class="pc bpc" id="L95" title="1 of 2 branches missed.">            if (isH2MySqlOrPostgresDB()) {</span>
+<span class="fc" id="L96">                query = LIST_PAGINATED_TEMPLATES_MYSQL;</span>
+<span class="nc bnc" id="L97" title="All 2 branches missed.">            } else if (isDB2DB()) {</span>
+<span class="nc" id="L98">                query = LIST_PAGINATED_TEMPLATES_DB2;</span>
+<span class="nc" id="L99">                int initialOffset = offset;</span>
+<span class="nc" id="L100">                offset = offset + limit;</span>
+<span class="nc" id="L101">                limit = initialOffset + 1;</span>
+<span class="nc bnc" id="L102" title="All 2 branches missed.">            } else if (isMSSqlDB()) {</span>
+<span class="nc" id="L103">                int initialOffset = offset;</span>
+<span class="nc" id="L104">                offset = limit + offset;</span>
+<span class="nc" id="L105">                limit = initialOffset + 1;</span>
+<span class="nc" id="L106">                query = LIST_PAGINATED_TEMPLATES_MSSQL;</span>
+<span class="nc bnc" id="L107" title="All 2 branches missed.">            } else if (isInformixDB()) {</span>
+<span class="nc" id="L108">                query = LIST_PAGINATED_TEMPLATES_INFORMIX;</span>
             } else {
                 //oracle
-<span class="nc" id="L108">                query = LIST_PAGINATED_TEMPLATES_ORACLE;</span>
-<span class="nc" id="L109">                limit = offset + limit;</span>
+<span class="nc" id="L111">                query = LIST_PAGINATED_TEMPLATES_ORACLE;</span>
+<span class="nc" id="L112">                limit = offset + limit;</span>
             }
-<span class="fc" id="L111">            int finalLimit = limit;</span>
-<span class="fc" id="L112">            int finalOffset = offset;</span>
+<span class="fc" id="L114">            int finalLimit = limit;</span>
+<span class="fc" id="L115">            int finalOffset = offset;</span>
 
-<span class="fc" id="L114">            templates = jdbcTemplate.executeQuery(query,(resultSet, rowNumber) -&gt;</span>
-<span class="fc" id="L115">                    new TemplateInfo(resultSet.getString(1),</span>
-<span class="fc" id="L116">                            resultSet.getString(2)),</span>
+<span class="fc" id="L117">            templates = jdbcTemplate.executeQuery(query,(resultSet, rowNumber) -&gt;</span>
+<span class="fc" id="L118">                    new TemplateInfo(resultSet.getString(1),</span>
+<span class="fc" id="L119">                            resultSet.getString(2)),</span>
                     preparedStatement -&gt; {
-<span class="fc" id="L118">                preparedStatement.setInt(1, tenantId);</span>
-<span class="fc" id="L119">                preparedStatement.setInt(2, finalLimit);</span>
-<span class="fc" id="L120">                preparedStatement.setInt(3, finalOffset);</span>
-<span class="fc" id="L121">                    });</span>
-<span class="fc" id="L122">        } catch (DataAccessException e) {</span>
-<span class="fc" id="L123">            throw new TemplateManagementServerException(String.format(ERROR_CODE_LIST_TEMPLATES.getMessage(),tenantId),</span>
-<span class="fc" id="L124">                    ERROR_CODE_LIST_TEMPLATES.getCode(),e);</span>
-<span class="fc" id="L125">        }</span>
-<span class="fc" id="L126">        return templates;</span>
+<span class="fc" id="L121">                preparedStatement.setInt(1, tenantId);</span>
+<span class="fc" id="L122">                preparedStatement.setInt(2, finalLimit);</span>
+<span class="fc" id="L123">                preparedStatement.setInt(3, finalOffset);</span>
+<span class="fc" id="L124">                    });</span>
+<span class="fc" id="L125">        } catch (DataAccessException e) {</span>
+<span class="fc" id="L126">            throw new TemplateManagementServerException(String.format(ERROR_CODE_LIST_TEMPLATES.getMessage(),tenantId),</span>
+<span class="fc" id="L127">                    ERROR_CODE_LIST_TEMPLATES.getCode(),e);</span>
+<span class="fc" id="L128">        }</span>
+<span class="fc" id="L129">        return templates;</span>
     }
 
     public TemplateInfo updateTemplate(String templateName, Template newTemplate) throws TemplateManagementServerException {
 
-<span class="fc" id="L131">        JdbcTemplate jdbcTemplate = JdbcUtils.getNewTemplate();</span>
+<span class="fc" id="L134">        JdbcTemplate jdbcTemplate = JdbcUtils.getNewTemplate();</span>
         try {
-<span class="fc" id="L133">            jdbcTemplate.executeUpdate(TemplateMgtConstants.SqlQueries.UPDATE_TEMPLATE, preparedStatement -&gt; {</span>
-<span class="fc" id="L134">                preparedStatement.setString(1,newTemplate.getTemplateName());</span>
-<span class="fc" id="L135">                preparedStatement.setString(2,newTemplate.getDescription());</span>
-<span class="fc" id="L136">                preparedStatement.setString(3,newTemplate.getTemplateScript());</span>
-<span class="fc" id="L137">                preparedStatement.setInt(4, newTemplate.getTenantId());</span>
-<span class="fc" id="L138">                preparedStatement.setString(5,templateName);</span>
-<span class="fc" id="L139">            });</span>
-<span class="fc" id="L140">        } catch (DataAccessException e) {</span>
-<span class="fc" id="L141">            throw TemplateMgtUtils.handleServerException(ERROR_CODE_UPDATE_TEMPLATE,newTemplate.getTemplateName(),e);</span>
-<span class="fc" id="L142">        }</span>
-<span class="fc" id="L143">        return new TemplateInfo(newTemplate.getTenantId(), newTemplate.getTemplateName());</span>
+<span class="nc" id="L136">            jdbcTemplate.executeUpdate(TemplateMgtConstants.SqlQueries.UPDATE_TEMPLATE, preparedStatement -&gt; {</span>
+<span class="fc" id="L137">                preparedStatement.setString(1,newTemplate.getTemplateName());</span>
+<span class="fc" id="L138">                preparedStatement.setString(2,newTemplate.getDescription());</span>
+//                preparedStatement.setString(3,newTemplate.getTemplateScript());
+                try {
+<span class="fc" id="L141">                    setBlobValue(newTemplate.getTemplateScript(),preparedStatement,4);</span>
+<span class="nc" id="L142">                } catch (IOException e) {</span>
+<span class="nc" id="L143">                    e.printStackTrace();</span>
+<span class="fc" id="L144">                }</span>
+<span class="fc" id="L145">                preparedStatement.setInt(4, newTemplate.getTenantId());</span>
+<span class="fc" id="L146">                preparedStatement.setString(5,templateName);</span>
+<span class="fc" id="L147">            });</span>
+<span class="fc" id="L148">        } catch (DataAccessException e) {</span>
+<span class="fc" id="L149">            throw TemplateMgtUtils.handleServerException(ERROR_CODE_UPDATE_TEMPLATE,newTemplate.getTemplateName(),e);</span>
+<span class="nc" id="L150">        }</span>
+<span class="nc" id="L151">        return new TemplateInfo(newTemplate.getTenantId(), newTemplate.getTemplateName());</span>
     }
 
     public String deleteTemplate(String templateName , Integer tenantId) throws TemplateManagementException{
-<span class="fc" id="L147">        JdbcTemplate jdbcTemplate = JdbcUtils.getNewTemplate();</span>
+<span class="fc" id="L155">        JdbcTemplate jdbcTemplate = JdbcUtils.getNewTemplate();</span>
         try {
-<span class="fc" id="L149">            jdbcTemplate.executeUpdate(DELETE_TEMPLATE, preparedStatement -&gt;{</span>
-<span class="fc" id="L150">                preparedStatement.setString(1,templateName);</span>
-<span class="fc" id="L151">                preparedStatement.setInt(2,tenantId);</span>
-<span class="fc" id="L152">            });</span>
-<span class="fc" id="L153">        } catch (DataAccessException e) {</span>
-<span class="fc" id="L154">            throw new TemplateManagementServerException(String.format(ERROR_CODE_DELETE_TEMPLATE.getMessage(),tenantId.toString(),templateName),</span>
-<span class="fc" id="L155">                    ERROR_CODE_DELETE_TEMPLATE.getCode(),e);</span>
-<span class="fc" id="L156">        }</span>
-<span class="fc" id="L157">        return templateName;</span>
+<span class="fc" id="L157">            jdbcTemplate.executeUpdate(DELETE_TEMPLATE, preparedStatement -&gt;{</span>
+<span class="fc" id="L158">                preparedStatement.setString(1,templateName);</span>
+<span class="fc" id="L159">                preparedStatement.setInt(2,tenantId);</span>
+<span class="fc" id="L160">            });</span>
+<span class="fc" id="L161">        } catch (DataAccessException e) {</span>
+<span class="fc" id="L162">            throw new TemplateManagementServerException(String.format(ERROR_CODE_DELETE_TEMPLATE.getMessage(),tenantId.toString(),templateName),</span>
+<span class="fc" id="L163">                    ERROR_CODE_DELETE_TEMPLATE.getCode(),e);</span>
+<span class="fc" id="L164">        }</span>
+<span class="fc" id="L165">        return templateName;</span>
     }
 
-//    /**
-//     * Set given string as Blob for the given index into the prepared-statement
-//     *
-//     * @param value    string value to be converted to blob
-//     * @param prepStmt Prepared statement
-//     * @param index    column index
-//     * @throws SQLException
-//     * @throws IOException
-//     */
-//    private void setBlobValue(String value, PreparedStatement prepStmt, int index) throws IOException, SQLException {
-//        if (value != null) {
-//            InputStream inputStream = new ByteArrayInputStream(value.getBytes());
-//            prepStmt.setBinaryStream(index, inputStream, inputStream.available());
-//        } else {
-//            prepStmt.setBinaryStream(index, new ByteArrayInputStream(new byte[0]), 0);
-//        }
-//    }
+    /**
+     * Set given string as Blob for the given index into the prepared-statement
+     *
+     * @param value    string value to be converted to blob
+     * @param prepStmt Prepared statement
+     * @param index    column index
+     * @throws SQLException
+     * @throws IOException
+     */
+    private void setBlobValue(String value, PreparedStatement prepStmt, int index) throws IOException, SQLException {
+<span class="pc bpc" id="L178" title="1 of 2 branches missed.">        if (value != null) {</span>
+<span class="fc" id="L179">            InputStream inputStream = new ByteArrayInputStream(value.getBytes());</span>
+<span class="fc" id="L180">            prepStmt.setBinaryStream(index, inputStream, inputStream.available());</span>
+<span class="fc" id="L181">        } else {</span>
+<span class="nc" id="L182">            prepStmt.setBinaryStream(index, new ByteArrayInputStream(new byte[0]), 0);</span>
+        }
+<span class="fc" id="L184">    }</span>
+
+    /**
+     * Get string from inputStream of a blob
+     * @param inputStream input stream
+     * @return
+     * @throws IOException
+     */
+    private String getBlobValue(InputStream inputStream) {
+
+<span class="pc bpc" id="L194" title="1 of 2 branches missed.">        if (inputStream != null) {</span>
+<span class="fc" id="L195">            BufferedReader bufferedReader = null;</span>
+<span class="fc" id="L196">            StringBuilder stringBuilder = new StringBuilder();</span>
+            String line;
+            try {
+<span class="fc" id="L199">                bufferedReader = new BufferedReader(new InputStreamReader(inputStream));</span>
+<span class="fc bfc" id="L200" title="All 2 branches covered.">                while ((line = bufferedReader.readLine()) != null) {</span>
+<span class="fc" id="L201">                    stringBuilder.append(line);</span>
+                }
+<span class="nc" id="L203">            } catch (IOException e) {</span>
+<span class="nc" id="L204">                e.printStackTrace();</span>
+            } finally {
+<span class="pc bpc" id="L206" title="5 of 6 branches missed.">                if (bufferedReader != null) {</span>
+                    try {
+<span class="pc" id="L208">                        bufferedReader.close();</span>
+<span class="nc" id="L209">                    } catch (IOException e) {</span>
+<span class="nc" id="L210">                        e.printStackTrace();</span>
+<span class="pc" id="L211">                    }</span>
+                }
+<span class="nc" id="L213">            }</span>
+
+<span class="fc" id="L215">            return stringBuilder.toString();</span>
+        }
+<span class="nc" id="L217">        return null;</span>
+    }
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.7.9.201702052155</span></div></body></html>

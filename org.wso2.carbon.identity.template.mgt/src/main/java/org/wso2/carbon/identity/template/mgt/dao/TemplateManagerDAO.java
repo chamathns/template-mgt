@@ -22,6 +22,7 @@ import org.wso2.carbon.identity.template.mgt.exception.TemplateManagementServerE
 import org.wso2.carbon.identity.template.mgt.model.Template;
 import org.wso2.carbon.identity.template.mgt.model.TemplateInfo;
 
+import java.io.IOException;
 import java.util.List;
 
 public interface TemplateManagerDAO {

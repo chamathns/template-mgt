@@ -29,9 +29,7 @@ import org.wso2.carbon.identity.template.mgt.exception.TemplateManagementServerE
 import org.wso2.carbon.identity.template.mgt.model.Template;
 import org.wso2.carbon.identity.template.mgt.util.JdbcUtils;
 
-import java.io.ByteArrayInputStream;
-import java.io.IOException;
-import java.io.InputStream;
+import java.io.*;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.util.List;
@@ -43,21 +41,25 @@ import static org.wso2.carbon.identity.template.mgt.util.JdbcUtils.*;
 public class TemplateManagerDAOImpl implements TemplateManagerDAO {
     public TemplateInfo addTemplate(Template template) throws TemplateManagementException {
         TemplateInfo templateResult;
-        int insertedId;
         JdbcTemplate jdbcTemplate = JdbcUtils.getNewTemplate();
 
         try {
-            insertedId = jdbcTemplate.executeInsert(TemplateMgtConstants.SqlQueries.INSERT_TEMPLATE,(preparedStatement ->{
+            jdbcTemplate.executeUpdate(TemplateMgtConstants.SqlQueries.INSERT_TEMPLATE,(preparedStatement ->{
                 preparedStatement.setString(1,template.getTenantId().toString());
                 preparedStatement.setString(2,template.getTemplateName());
                 preparedStatement.setString(3,template.getDescription());
-                preparedStatement.setString(4,template.getTemplateScript());
+//                preparedStatement.setString(4,template.getTemplateScript());
+                try {
+                    setBlobValue(template.getTemplateScript(),preparedStatement,4);
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
 
-            }),template,true);
+            }));
         } catch (DataAccessException e) {
             throw TemplateMgtUtils.handleServerException(ERROR_CODE_INSERT_TEMPLATE, template.getTemplateName(),e);
         }
-        templateResult = new TemplateInfo(insertedId,template.getTenantId(),template.getTemplateName());
+        templateResult = new TemplateInfo(template.getTenantId(),template.getTemplateName());
         return templateResult;
     }
     
@@ -70,7 +72,8 @@ public class TemplateManagerDAOImpl implements TemplateManagerDAO {
                             resultSet.getInt(2),
                             resultSet.getString(3),
                             resultSet.getString(4),
-                            resultSet.getString(5)),
+//                            resultSet.getString(5)),
+                            getBlobValue(resultSet.getBinaryStream(5))),
                     preparedStatement -> {
                         preparedStatement.setString(1,templateName);
                         preparedStatement.setInt(2,tenantId);
@@ -133,7 +136,12 @@ public class TemplateManagerDAOImpl implements TemplateManagerDAO {
             jdbcTemplate.executeUpdate(TemplateMgtConstants.SqlQueries.UPDATE_TEMPLATE, preparedStatement -> {
                 preparedStatement.setString(1,newTemplate.getTemplateName());
                 preparedStatement.setString(2,newTemplate.getDescription());
-                preparedStatement.setString(3,newTemplate.getTemplateScript());
+//                preparedStatement.setString(3,newTemplate.getTemplateScript());
+                try {
+                    setBlobValue(newTemplate.getTemplateScript(),preparedStatement,4);
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
                 preparedStatement.setInt(4, newTemplate.getTenantId());
                 preparedStatement.setString(5,templateName);
             });
@@ -157,21 +165,55 @@ public class TemplateManagerDAOImpl implements TemplateManagerDAO {
         return templateName;
     }
 
-//    /**
-//     * Set given string as Blob for the given index into the prepared-statement
-//     *
-//     * @param value    string value to be converted to blob
-//     * @param prepStmt Prepared statement
-//     * @param index    column index
-//     * @throws SQLException
-//     * @throws IOException
-//     */
-//    private void setBlobValue(String value, PreparedStatement prepStmt, int index) throws IOException, SQLException {
-//        if (value != null) {
-//            InputStream inputStream = new ByteArrayInputStream(value.getBytes());
-//            prepStmt.setBinaryStream(index, inputStream, inputStream.available());
-//        } else {
-//            prepStmt.setBinaryStream(index, new ByteArrayInputStream(new byte[0]), 0);
-//        }
-//    }
+    /**
+     * Set given string as Blob for the given index into the prepared-statement
+     *
+     * @param value    string value to be converted to blob
+     * @param prepStmt Prepared statement
+     * @param index    column index
+     * @throws SQLException
+     * @throws IOException
+     */
+    private void setBlobValue(String value, PreparedStatement prepStmt, int index) throws IOException, SQLException {
+        if (value != null) {
+            InputStream inputStream = new ByteArrayInputStream(value.getBytes());
+            prepStmt.setBinaryStream(index, inputStream, inputStream.available());
+        } else {
+            prepStmt.setBinaryStream(index, new ByteArrayInputStream(new byte[0]), 0);
+        }
+    }
+
+    /**
+     * Get string from inputStream of a blob
+     * @param inputStream input stream
+     * @return
+     * @throws IOException
+     */
+    private String getBlobValue(InputStream inputStream) {
+
+        if (inputStream != null) {
+            BufferedReader bufferedReader = null;
+            StringBuilder stringBuilder = new StringBuilder();
+            String line;
+            try {
+                bufferedReader = new BufferedReader(new InputStreamReader(inputStream));
+                while ((line = bufferedReader.readLine()) != null) {
+                    stringBuilder.append(line);
+                }
+            } catch (IOException e) {
+                e.printStackTrace();
+            } finally {
+                if (bufferedReader != null) {
+                    try {
+                        bufferedReader.close();
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+                }
+            }
+
+            return stringBuilder.toString();
+        }
+        return null;
+    }
 }

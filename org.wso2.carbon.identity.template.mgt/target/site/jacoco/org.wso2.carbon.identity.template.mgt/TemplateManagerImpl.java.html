@@ -60,7 +60,7 @@ import static org.wso2.carbon.identity.template.mgt.util.TemplateMgtUtils.handle
     public TemplateInfo updateTemplate(String templateName, Template template) throws TemplateManagementException {
 <span class="fc" id="L61">        validateInputParameters(template);</span>
 <span class="fc" id="L62">        TemplateManagerDAO templateManagerDAO = new TemplateManagerDAOImpl();</span>
-<span class="fc" id="L63">        return templateManagerDAO.updateTemplate(templateName,template);</span>
+<span class="nc" id="L63">        return templateManagerDAO.updateTemplate(templateName,template);</span>
     }
 
     @Override

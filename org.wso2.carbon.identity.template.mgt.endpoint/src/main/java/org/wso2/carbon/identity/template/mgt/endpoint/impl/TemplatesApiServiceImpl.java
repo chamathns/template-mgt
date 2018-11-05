@@ -148,7 +148,6 @@ TemplatesApiServiceImpl extends TemplatesApiService {
         TemplateInfo templateResponse = TemplateEndpointUtils.getTemplateManager().addTemplate(templateRequest);
 
         AddTemplateResponseDTO responseDTO = new AddTemplateResponseDTO();
-        responseDTO.setTemplateId(templateResponse.getTemplateId().toString());
         responseDTO.setTenantId(templateResponse.getTenantId().toString());
         responseDTO.setName(templateResponse.getTemplateName());
         return responseDTO;
