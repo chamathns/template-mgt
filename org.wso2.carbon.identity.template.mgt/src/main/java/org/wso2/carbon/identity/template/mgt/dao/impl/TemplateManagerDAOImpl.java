@@ -138,7 +138,7 @@ public class TemplateManagerDAOImpl implements TemplateManagerDAO {
                 preparedStatement.setString(2,newTemplate.getDescription());
 //                preparedStatement.setString(3,newTemplate.getTemplateScript());
                 try {
-                    setBlobValue(newTemplate.getTemplateScript(),preparedStatement,4);
+                    setBlobValue(newTemplate.getTemplateScript(),preparedStatement,3);
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
