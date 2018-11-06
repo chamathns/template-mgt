@@ -45,9 +45,15 @@ public class TemplateMgtConstants {
     public static class SqlQueries{
         public static final String INSERT_TEMPLATE = "INSERT INTO IDN_TEMPLATE_MGT (TENANT_ID, NAME, DESCRIPTION, TEMPLATE_SCRIPT) VALUES (?,?,?,?  )";
         public static final String GET_TEMPLATE_BY_NAME = "SELECT TEMPLATE_ID,TENANT_ID,NAME,DESCRIPTION,TEMPLATE_SCRIPT FROM IDN_TEMPLATE_MGT WHERE NAME=? AND TENANT_ID=?";
-//        public static final String LIST_TEMPLATES = "SELECT NAME,DESCRIPTION FROM IDN_TEMPLATE_MGT WHERE TENANT_ID =?";
-        public static final String LIST_PAGINATED_TEMPLATES_MYSQL = "SELECT NAME,DESCRIPTION FROM IDN_TEMPLATE_MGT WHERE TENANT_ID=? ORDER BY TEMPLATE_ID ASC LIMIT ? OFFSET ?";
-        public static final String LIST_PAGINATED_TEMPLATES_DB2 = "SELECT NAME,DESCRIPTION FROM IDN_TEMPLATE_MGT WHERE TENANT_ID=? ORDER BY TEMPLATE_ID ASC LIMIT ? OFFSET ?";
+        public static final String LIST_TEMPLATES = "SELECT NAME,DESCRIPTION FROM IDN_TEMPLATE_MGT WHERE TENANT_ID =?";
+
+        public static final String LIST_PAGINATED_TEMPLATES_MYSQL = "SELECT NAME,DESCRIPTION FROM IDN_TEMPLATE_MGT " +
+                                                                    "WHERE TENANT_ID=? ORDER BY TEMPLATE_ID ASC LIMIT ? OFFSET ?";
+
+        public static final String LIST_PAGINATED_TEMPLATES_DB2 = "SELECT NAME, DESCRIPTION FROM (SELECT ROW_NUMBER() OVER (ORDER BY TEMPLATE_ID) AS rn, " +
+                                                                    "t.* FROM IDN_TEMPLATE_MGT AS t) WHERE " +
+                                                                    "TENANT_ID=? AND rn BETWEEN ? AND ?";
+
         public static final String LIST_PAGINATED_TEMPLATES_MSSQL = "SELECT NAME,DESCRIPTION FROM IDN_TEMPLATE_MGT WHERE TENANT_ID=? ORDER BY TEMPLATE_ID ASC LIMIT ? OFFSET ?";
         public static final String LIST_PAGINATED_TEMPLATES_INFORMIX = "SELECT NAME,DESCRIPTION FROM IDN_TEMPLATE_MGT WHERE TENANT_ID=? ORDER BY TEMPLATE_ID ASC LIMIT ? OFFSET ?";
         public static final String LIST_PAGINATED_TEMPLATES_ORACLE = "SELECT NAME,DESCRIPTION FROM IDN_TEMPLATE_MGT WHERE TENANT_ID=? ORDER BY TEMPLATE_ID ASC LIMIT ? OFFSET ?";
@@ -59,7 +65,7 @@ public class TemplateMgtConstants {
     public enum ErrorMessages{
         ERROR_CODE_INSERT_TEMPLATE("TM_00001", "Error occurred while adding the template: %s."),
         ERROR_CODE_SELECT_TEMPLATE_BY_NAME("TM_00002","Error occurred while retrieving template from DB for tenant ID: %s and template name: %s."),
-        ERROR_CODE_LIST_TEMPLATES("TM_00003", "Error occurred while listing template from DB for tenantID: %s"),
+        ERROR_CODE_LIST_TEMPLATES("TM_00003", "Error occurred while listing template from DB for tenantID: %s, limit: %s and offset: %s."),
         ERROR_CODE_DELETE_TEMPLATE("TM_00004", "Error occurred while deleting template from DB for tenant ID: %s and template name: %s."),
         ERROR_CODE_SET_BLOB("TM_00005", "Error occurred while reading from input stream of template: %s."),
         ERROR_CODE_UPDATE_TEMPLATE("TM_00006", "Error occurred while updating the template: %s."),

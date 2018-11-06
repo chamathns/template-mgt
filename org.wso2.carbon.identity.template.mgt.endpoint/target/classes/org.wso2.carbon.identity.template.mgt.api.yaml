@@ -13,7 +13,7 @@ info:
     name: "Apache 2.0"
     url: "http://www.apache.org/licenses/LICENSE-2.0.html"
 host: "localhost"
-basePath: "/t/{tenant-domain}/api/identity/template/mgt/v1.0"
+basePath: "/t/{tenant-domain}/api/identity/template/mgt/v1.0.0"
 schemes:
 - "https"
 consumes:
@@ -301,8 +301,6 @@ definitions:
   AddTemplateResponse:
     type: "object"
     properties:
-      template_id:
-        type: "string"
       tenant_id:
         type: "string"
       name:

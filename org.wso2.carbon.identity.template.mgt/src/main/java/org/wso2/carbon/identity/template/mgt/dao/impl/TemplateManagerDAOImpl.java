@@ -123,7 +123,7 @@ public class TemplateManagerDAOImpl implements TemplateManagerDAO {
                 preparedStatement.setInt(3, finalOffset);
                     });
         } catch (DataAccessException e) {
-            throw new TemplateManagementServerException(String.format(ERROR_CODE_LIST_TEMPLATES.getMessage(),tenantId),
+            throw new TemplateManagementServerException(String.format(ERROR_CODE_LIST_TEMPLATES.getMessage(),tenantId,limit,offset),
                     ERROR_CODE_LIST_TEMPLATES.getCode(),e);
         }
         return templates;
@@ -133,7 +133,7 @@ public class TemplateManagerDAOImpl implements TemplateManagerDAO {
 
         JdbcTemplate jdbcTemplate = JdbcUtils.getNewTemplate();
         try {
-            jdbcTemplate.executeUpdate(TemplateMgtConstants.SqlQueries.UPDATE_TEMPLATE, preparedStatement -> {
+            jdbcTemplate.executeUpdate(TemplateMgtConstants.SqlQueries.UPDATE_TEMPLATE, (preparedStatement -> {
                 preparedStatement.setString(1,newTemplate.getTemplateName());
                 preparedStatement.setString(2,newTemplate.getDescription());
 //                preparedStatement.setString(3,newTemplate.getTemplateScript());
@@ -144,7 +144,7 @@ public class TemplateManagerDAOImpl implements TemplateManagerDAO {
                 }
                 preparedStatement.setInt(4, newTemplate.getTenantId());
                 preparedStatement.setString(5,templateName);
-            });
+            }));
         } catch (DataAccessException e) {
             throw TemplateMgtUtils.handleServerException(ERROR_CODE_UPDATE_TEMPLATE,newTemplate.getTemplateName(),e);
         }

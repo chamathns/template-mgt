@@ -123,7 +123,7 @@ import static org.wso2.carbon.identity.template.mgt.util.JdbcUtils.*;
 <span class="nc" id="L123">                preparedStatement.setInt(3, finalOffset);</span>
 <span class="nc" id="L124">                    });</span>
 <span class="nc" id="L125">        } catch (DataAccessException e) {</span>
-<span class="nc" id="L126">            throw new TemplateManagementServerException(String.format(ERROR_CODE_LIST_TEMPLATES.getMessage(),tenantId),</span>
+<span class="nc" id="L126">            throw new TemplateManagementServerException(String.format(ERROR_CODE_LIST_TEMPLATES.getMessage(),tenantId,limit,offset),</span>
 <span class="nc" id="L127">                    ERROR_CODE_LIST_TEMPLATES.getCode(),e);</span>
 <span class="nc" id="L128">        }</span>
 <span class="nc" id="L129">        return templates;</span>
@@ -133,7 +133,7 @@ import static org.wso2.carbon.identity.template.mgt.util.JdbcUtils.*;
 
 <span class="nc" id="L134">        JdbcTemplate jdbcTemplate = JdbcUtils.getNewTemplate();</span>
         try {
-<span class="nc" id="L136">            jdbcTemplate.executeUpdate(TemplateMgtConstants.SqlQueries.UPDATE_TEMPLATE, preparedStatement -&gt; {</span>
+<span class="nc" id="L136">            jdbcTemplate.executeUpdate(TemplateMgtConstants.SqlQueries.UPDATE_TEMPLATE, (preparedStatement -&gt; {</span>
 <span class="nc" id="L137">                preparedStatement.setString(1,newTemplate.getTemplateName());</span>
 <span class="nc" id="L138">                preparedStatement.setString(2,newTemplate.getDescription());</span>
 //                preparedStatement.setString(3,newTemplate.getTemplateScript());
@@ -144,7 +144,7 @@ import static org.wso2.carbon.identity.template.mgt.util.JdbcUtils.*;
 <span class="nc" id="L144">                }</span>
 <span class="nc" id="L145">                preparedStatement.setInt(4, newTemplate.getTenantId());</span>
 <span class="nc" id="L146">                preparedStatement.setString(5,templateName);</span>
-<span class="nc" id="L147">            });</span>
+<span class="nc" id="L147">            }));</span>
 <span class="nc" id="L148">        } catch (DataAccessException e) {</span>
 <span class="nc" id="L149">            throw TemplateMgtUtils.handleServerException(ERROR_CODE_UPDATE_TEMPLATE,newTemplate.getTemplateName(),e);</span>
 <span class="nc" id="L150">        }</span>
