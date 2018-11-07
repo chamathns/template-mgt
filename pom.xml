@@ -321,8 +321,10 @@
         <carbon.core.version>5.2.7</carbon.core.version>
         <carbon.ui.version>4.4.34</carbon.ui.version>
         <orbit.owasp.encoder.version>1.2.0.wso2v2</orbit.owasp.encoder.version>
-        <carbon.identity.application.common>5.12.134</carbon.identity.application.common>
-        <carbon.identity.core.version>5.12.134</carbon.identity.core.version>
+        <carbon.identity.application.common>5.12.199-SNAPSHOT</carbon.identity.application.common>
+        <!--<carbon.identity.application.common>5.12.134</carbon.identity.application.common>-->
+        <carbon.identity.core.version>5.12.199-SNAPSHOT</carbon.identity.core.version>
+        <!--<carbon.identity.core.version>5.12.134</carbon.identity.core.version>-->
         <carbon.utils.database.version>2.0.8</carbon.utils.database.version>
         <carbon.utils.version>4.4.34</carbon.utils.version>
         <commons-logging.version>1.2</commons-logging.version>

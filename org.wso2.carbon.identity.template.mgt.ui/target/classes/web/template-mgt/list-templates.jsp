@@ -10,6 +10,7 @@
 <%@ page import="org.wso2.carbon.identity.template.mgt.model.Template" %>
 <%@ page import="org.wso2.carbon.identity.template.mgt.ui.client.TemplateManagementServiceClient" %>
 <%@ page import="java.util.List" %>
+<%@ page import="org.wso2.carbon.identity.template.mgt.model.TemplateInfo" %>
 
 
 <%--
@@ -75,11 +76,11 @@
             </script>
 
             <%
-                List<Template> templateList = null;
+                List<TemplateInfo> templateList = null;
 
                 String BUNDLE = "org.wso2.carbon.identity.template.mgt.ui.i18n.Resources";
                 ResourceBundle resourceBundle = ResourceBundle.getBundle(BUNDLE, request.getLocale());
-                Template[] templateListToDisplay = new Template[0];
+                TemplateInfo[] templateListToDisplay = new TemplateInfo[0];
                 String paginationValue = "region=region1&item=list_templates";
                 String pageNumber = request.getParameter("pageNumber");
 
@@ -106,7 +107,7 @@
                         numberOfPages = (int) Math.ceil((double) templateList.size() / resultsPerPage);
                         int startIndex = pageNumberInt * resultsPerPage;
                         int endIndex = (pageNumberInt + 1) * resultsPerPage;
-                        templateListToDisplay = new Template[resultsPerPage];
+                        templateListToDisplay = new TemplateInfo[resultsPerPage];
 
                         for (int i = startIndex, j = 0; i < endIndex && i < templateList.size(); i++, j++) {
                             templateListToDisplay[j] = templateList.get(i);
@@ -142,7 +143,7 @@
                             %>
                             <tbody>
                             <%
-                                for(Template template:templateList){
+                                for(TemplateInfo template:templateList){
                                     if(template !=null){
 
                             %>

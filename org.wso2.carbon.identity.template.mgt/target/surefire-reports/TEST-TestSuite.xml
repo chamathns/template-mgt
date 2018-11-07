@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="5.109" tests="64" errors="0" skipped="0" failures="11">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="6.861" tests="64" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-oracle/jre/lib/amd64"/>
@@ -61,322 +61,62 @@
     <property name="sun.desktop" value="gnome"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase name="testAddTemplate" classname="org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest" time="0.446"/>
-  <testcase name="testAddTemplate" classname="org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest" time="0.004"/>
+  <testcase name="testAddTemplate" classname="org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest" time="0.527"/>
+  <testcase name="testAddTemplate" classname="org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest" time="0.003"/>
   <testcase name="testAddTemplate" classname="org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest" time="0.003"/>
   <testcase name="testAddTemplateServerException" classname="org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest" time="0.01"/>
-  <testcase name="testAddTemplateServerException" classname="org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest" time="0.002"/>
-  <testcase name="testAddTemplateServerException" classname="org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest" time="0.001"/>
-  <testcase name="testDeleteTemplate" classname="org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest" time="0.129"/>
-  <testcase name="testDeleteTemplate" classname="org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest" time="0.005"/>
-  <testcase name="testDeleteTemplate" classname="org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest" time="0.003"/>
-  <testcase name="testDeleteTemplateDataAccessException" classname="org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest" time="0.005"/>
-  <testcase name="testDeleteTemplateDataAccessException" classname="org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest" time="0.004"/>
+  <testcase name="testAddTemplateServerException" classname="org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest" time="0.003"/>
+  <testcase name="testAddTemplateServerException" classname="org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest" time="0.003"/>
+  <testcase name="testDeleteTemplate" classname="org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest" time="0.106"/>
+  <testcase name="testDeleteTemplate" classname="org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest" time="0.004"/>
+  <testcase name="testDeleteTemplate" classname="org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest" time="0.004"/>
+  <testcase name="testDeleteTemplateDataAccessException" classname="org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest" time="0.008"/>
   <testcase name="testDeleteTemplateDataAccessException" classname="org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest" time="0.003"/>
-  <testcase name="testGetTemplateByName" classname="org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest" time="0.03">
-    <failure message="expected [&lt;!-- You can customize the user prompt template here... --&gt;	&lt;div class=&quot;uppercase&quot;&gt;    &lt;h3&gt;Welcome {{name}}&lt;/h3&gt;&lt;/div&gt;&lt;div class=&quot;boarder-all &quot;&gt;    &lt;div class=&quot;clearfix&quot;&gt;&lt;/div&gt;    &lt;div class=&quot;padding-double login-form&quot;&gt;        &lt;form id=&quot;template-form&quot; method=&quot;POST&quot;&gt; &lt;!-- *DO NOT CHANGE THIS* --&gt;            &lt;div class=&quot;col-xs-12 col-sm-12 col-md-12 col-lg-12 form-group required&quot;&gt;                &lt;!-- Add the required input field/s here...                It should follow the below mentioned format--&gt;                &lt;label for=&quot;sampleInput&quot; class=&quot;control-label&quot;&gt;sample input&lt;/label&gt;                &lt;input type=&quot;text&quot; id=&quot;sampleInput&quot; name=&quot;sample_input&quot; class=&quot;form-control&quot; placeholder=&quot;sample input placeholder&quot; /&gt;            &lt;/div&gt;            &lt;input type=&quot;hidden&quot; id=&quot;promptResp&quot; name=&quot;promptResp&quot; value=&quot;true&quot;&gt; &lt;!-- *DO NOT CHANGE THIS* --&gt;            &lt;input type=&quot;hidden&quot; id=&quot;promptId&quot; name=&quot;promptId&quot;&gt; &lt;!-- *DO NOT CHANGE THIS* --&gt;            &lt;div class=&quot;col-xs-12 col-sm-12 col-md-12 col-lg-12 form-group required&quot;&gt;                &lt;input type=&quot;submit&quot; class=&quot;wr-btn grey-bg col-xs-12 col-md-12 col-lg-12 uppercase font-extra-large&quot; value=&quot;Submit&quot;&gt;            &lt;/div&gt;        &lt;/form&gt;        &lt;div class=&quot;clearfix&quot;&gt;&lt;/div&gt;    &lt;/div&gt;&lt;/div&gt;] but found [&lt;!-- You can customize the user prompt template here... --&gt;&#10;	&#10;&lt;div class=&quot;uppercase&quot;&gt;&#10;    &lt;h3&gt;Welcome {{name}}&lt;/h3&gt;&#10;&lt;/div&gt;&#10;&#10;&lt;div class=&quot;boarder-all &quot;&gt;&#10;    &lt;div class=&quot;clearfix&quot;&gt;&lt;/div&gt;&#10;    &lt;div class=&quot;padding-double login-form&quot;&gt;&#10;&#10;        &lt;form id=&quot;template-form&quot; method=&quot;POST&quot;&gt; &lt;!-- *DO NOT CHANGE THIS* --&gt;&#10;            &lt;div class=&quot;col-xs-12 col-sm-12 col-md-12 col-lg-12 form-group required&quot;&gt;&#10;&#10;                &lt;!-- Add the required input field/s here...&#10;                It should follow the below mentioned format--&gt;&#10;&#10;                &lt;label for=&quot;sampleInput&quot; class=&quot;control-label&quot;&gt;sample input&lt;/label&gt;&#10;                &lt;input type=&quot;text&quot; id=&quot;sampleInput&quot; name=&quot;sample_input&quot; class=&quot;form-control&quot; placeholder=&quot;sample input placeholder&quot; /&gt;&#10;&#10;            &lt;/div&gt;&#10;&#10;            &lt;input type=&quot;hidden&quot; id=&quot;promptResp&quot; name=&quot;promptResp&quot; value=&quot;true&quot;&gt; &lt;!-- *DO NOT CHANGE THIS* --&gt;&#10;            &lt;input type=&quot;hidden&quot; id=&quot;promptId&quot; name=&quot;promptId&quot;&gt; &lt;!-- *DO NOT CHANGE THIS* --&gt;&#10;&#10;            &lt;div class=&quot;col-xs-12 col-sm-12 col-md-12 col-lg-12 form-group required&quot;&gt;&#10;                &lt;input type=&quot;submit&quot; class=&quot;wr-btn grey-bg col-xs-12 col-md-12 col-lg-12 uppercase font-extra-large&quot; value=&quot;Submit&quot;&gt;&#10;            &lt;/div&gt;&#10;        &lt;/form&gt;&#10;        &lt;div class=&quot;clearfix&quot;&gt;&lt;/div&gt;&#10;    &lt;/div&gt;&#10;&lt;/div&gt;]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
-expected [<!-- You can customize the user prompt template here... -->	<div class="uppercase">    <h3>Welcome {{name}}</h3></div><div class="boarder-all ">    <div class="clearfix"></div>    <div class="padding-double login-form">        <form id="template-form" method="POST"> <!-- *DO NOT CHANGE THIS* -->            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 form-group required">                <!-- Add the required input field/s here...                It should follow the below mentioned format-->                <label for="sampleInput" class="control-label">sample input</label>                <input type="text" id="sampleInput" name="sample_input" class="form-control" placeholder="sample input placeholder" />            </div>            <input type="hidden" id="promptResp" name="promptResp" value="true"> <!-- *DO NOT CHANGE THIS* -->            <input type="hidden" id="promptId" name="promptId"> <!-- *DO NOT CHANGE THIS* -->            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 form-group required">                <input type="submit" class="wr-btn grey-bg col-xs-12 col-md-12 col-lg-12 uppercase font-extra-large" value="Submit">            </div>        </form>        <div class="clearfix"></div>    </div></div>] but found [<!-- You can customize the user prompt template here... -->
-	
-<div class="uppercase">
-    <h3>Welcome {{name}}</h3>
-</div>
-
-<div class="boarder-all ">
-    <div class="clearfix"></div>
-    <div class="padding-double login-form">
-
-        <form id="template-form" method="POST"> <!-- *DO NOT CHANGE THIS* -->
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 form-group required">
-
-                <!-- Add the required input field/s here...
-                It should follow the below mentioned format-->
-
-                <label for="sampleInput" class="control-label">sample input</label>
-                <input type="text" id="sampleInput" name="sample_input" class="form-control" placeholder="sample input placeholder" />
-
-            </div>
-
-            <input type="hidden" id="promptResp" name="promptResp" value="true"> <!-- *DO NOT CHANGE THIS* -->
-            <input type="hidden" id="promptId" name="promptId"> <!-- *DO NOT CHANGE THIS* -->
-
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 form-group required">
-                <input type="submit" class="wr-btn grey-bg col-xs-12 col-md-12 col-lg-12 uppercase font-extra-large" value="Submit">
-            </div>
-        </form>
-        <div class="clearfix"></div>
-    </div>
-</div>]
-	at org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest.testGetTemplateByName(TemplateManagerDAOImplTest.java:263)
-]]></failure>
-  </testcase>
-  <testcase name="testGetTemplateByName" classname="org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest" time="0.005">
-    <failure message="expected [&lt;!-- You can customize the user prompt template here... --&gt;	&lt;div class=&quot;uppercase&quot;&gt;    &lt;h3&gt;Welcome {{name}}&lt;/h3&gt;&lt;/div&gt;&lt;div class=&quot;boarder-all &quot;&gt;    &lt;div class=&quot;clearfix&quot;&gt;&lt;/div&gt;    &lt;div class=&quot;padding-double login-form&quot;&gt;        &lt;form id=&quot;template-form&quot; method=&quot;POST&quot;&gt; &lt;!-- *DO NOT CHANGE THIS* --&gt;            &lt;div class=&quot;col-xs-12 col-sm-12 col-md-12 col-lg-12 form-group required&quot;&gt;                &lt;!-- Add the required input field/s here...                It should follow the below mentioned format--&gt;                &lt;label for=&quot;sampleInput&quot; class=&quot;control-label&quot;&gt;sample input&lt;/label&gt;                &lt;input type=&quot;text&quot; id=&quot;sampleInput&quot; name=&quot;sample_input&quot; class=&quot;form-control&quot; placeholder=&quot;sample input placeholder&quot; /&gt;            &lt;/div&gt;            &lt;input type=&quot;hidden&quot; id=&quot;promptResp&quot; name=&quot;promptResp&quot; value=&quot;true&quot;&gt; &lt;!-- *DO NOT CHANGE THIS* --&gt;            &lt;input type=&quot;hidden&quot; id=&quot;promptId&quot; name=&quot;promptId&quot;&gt; &lt;!-- *DO NOT CHANGE THIS* --&gt;            &lt;div class=&quot;col-xs-12 col-sm-12 col-md-12 col-lg-12 form-group required&quot;&gt;                &lt;input type=&quot;submit&quot; class=&quot;wr-btn grey-bg col-xs-12 col-md-12 col-lg-12 uppercase font-extra-large&quot; value=&quot;Submit&quot;&gt;            &lt;/div&gt;        &lt;/form&gt;        &lt;div class=&quot;clearfix&quot;&gt;&lt;/div&gt;    &lt;/div&gt;&lt;/div&gt;] but found [&lt;!-- You can customize the user prompt template here... --&gt;&#10;	&#10;&lt;div class=&quot;uppercase&quot;&gt;&#10;    &lt;h3&gt;Welcome {{name}}&lt;/h3&gt;&#10;&lt;/div&gt;&#10;&#10;&lt;div class=&quot;boarder-all &quot;&gt;&#10;    &lt;div class=&quot;clearfix&quot;&gt;&lt;/div&gt;&#10;    &lt;div class=&quot;padding-double login-form&quot;&gt;&#10;&#10;        &lt;form id=&quot;template-form&quot; method=&quot;POST&quot;&gt; &lt;!-- *DO NOT CHANGE THIS* --&gt;&#10;            &lt;div class=&quot;col-xs-12 col-sm-12 col-md-12 col-lg-12 form-group required&quot;&gt;&#10;&#10;                &lt;!-- Add the required input field/s here...&#10;                It should follow the below mentioned format--&gt;&#10;&#10;                &lt;label for=&quot;sampleInput&quot; class=&quot;control-label&quot;&gt;sample input&lt;/label&gt;&#10;                &lt;input type=&quot;text&quot; id=&quot;sampleInput&quot; name=&quot;sample_input&quot; class=&quot;form-control&quot; placeholder=&quot;sample input placeholder&quot; /&gt;&#10;&#10;            &lt;/div&gt;&#10;&#10;            &lt;input type=&quot;hidden&quot; id=&quot;promptResp&quot; name=&quot;promptResp&quot; value=&quot;true&quot;&gt; &lt;!-- *DO NOT CHANGE THIS* --&gt;&#10;            &lt;input type=&quot;hidden&quot; id=&quot;promptId&quot; name=&quot;promptId&quot;&gt; &lt;!-- *DO NOT CHANGE THIS* --&gt;&#10;&#10;            &lt;div class=&quot;col-xs-12 col-sm-12 col-md-12 col-lg-12 form-group required&quot;&gt;&#10;                &lt;input type=&quot;submit&quot; class=&quot;wr-btn grey-bg col-xs-12 col-md-12 col-lg-12 uppercase font-extra-large&quot; value=&quot;Submit&quot;&gt;&#10;            &lt;/div&gt;&#10;        &lt;/form&gt;&#10;        &lt;div class=&quot;clearfix&quot;&gt;&lt;/div&gt;&#10;    &lt;/div&gt;&#10;&lt;/div&gt;]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
-expected [<!-- You can customize the user prompt template here... -->	<div class="uppercase">    <h3>Welcome {{name}}</h3></div><div class="boarder-all ">    <div class="clearfix"></div>    <div class="padding-double login-form">        <form id="template-form" method="POST"> <!-- *DO NOT CHANGE THIS* -->            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 form-group required">                <!-- Add the required input field/s here...                It should follow the below mentioned format-->                <label for="sampleInput" class="control-label">sample input</label>                <input type="text" id="sampleInput" name="sample_input" class="form-control" placeholder="sample input placeholder" />            </div>            <input type="hidden" id="promptResp" name="promptResp" value="true"> <!-- *DO NOT CHANGE THIS* -->            <input type="hidden" id="promptId" name="promptId"> <!-- *DO NOT CHANGE THIS* -->            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 form-group required">                <input type="submit" class="wr-btn grey-bg col-xs-12 col-md-12 col-lg-12 uppercase font-extra-large" value="Submit">            </div>        </form>        <div class="clearfix"></div>    </div></div>] but found [<!-- You can customize the user prompt template here... -->
-	
-<div class="uppercase">
-    <h3>Welcome {{name}}</h3>
-</div>
-
-<div class="boarder-all ">
-    <div class="clearfix"></div>
-    <div class="padding-double login-form">
-
-        <form id="template-form" method="POST"> <!-- *DO NOT CHANGE THIS* -->
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 form-group required">
-
-                <!-- Add the required input field/s here...
-                It should follow the below mentioned format-->
-
-                <label for="sampleInput" class="control-label">sample input</label>
-                <input type="text" id="sampleInput" name="sample_input" class="form-control" placeholder="sample input placeholder" />
-
-            </div>
-
-            <input type="hidden" id="promptResp" name="promptResp" value="true"> <!-- *DO NOT CHANGE THIS* -->
-            <input type="hidden" id="promptId" name="promptId"> <!-- *DO NOT CHANGE THIS* -->
-
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 form-group required">
-                <input type="submit" class="wr-btn grey-bg col-xs-12 col-md-12 col-lg-12 uppercase font-extra-large" value="Submit">
-            </div>
-        </form>
-        <div class="clearfix"></div>
-    </div>
-</div>]
-	at org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest.testGetTemplateByName(TemplateManagerDAOImplTest.java:263)
-]]></failure>
-  </testcase>
-  <testcase name="testGetTemplateByName" classname="org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest" time="0.005">
-    <failure message="expected [&lt;!-- You can customize the user prompt template here... --&gt;	&lt;div class=&quot;uppercase&quot;&gt;    &lt;h3&gt;Welcome {{name}}&lt;/h3&gt;&lt;/div&gt;&lt;div class=&quot;boarder-all &quot;&gt;    &lt;div class=&quot;clearfix&quot;&gt;&lt;/div&gt;    &lt;div class=&quot;padding-double login-form&quot;&gt;        &lt;form id=&quot;template-form&quot; method=&quot;POST&quot;&gt; &lt;!-- *DO NOT CHANGE THIS* --&gt;            &lt;div class=&quot;col-xs-12 col-sm-12 col-md-12 col-lg-12 form-group required&quot;&gt;                &lt;!-- Add the required input field/s here...                It should follow the below mentioned format--&gt;                &lt;label for=&quot;sampleInput&quot; class=&quot;control-label&quot;&gt;sample input&lt;/label&gt;                &lt;input type=&quot;text&quot; id=&quot;sampleInput&quot; name=&quot;sample_input&quot; class=&quot;form-control&quot; placeholder=&quot;sample input placeholder&quot; /&gt;            &lt;/div&gt;            &lt;input type=&quot;hidden&quot; id=&quot;promptResp&quot; name=&quot;promptResp&quot; value=&quot;true&quot;&gt; &lt;!-- *DO NOT CHANGE THIS* --&gt;            &lt;input type=&quot;hidden&quot; id=&quot;promptId&quot; name=&quot;promptId&quot;&gt; &lt;!-- *DO NOT CHANGE THIS* --&gt;            &lt;div class=&quot;col-xs-12 col-sm-12 col-md-12 col-lg-12 form-group required&quot;&gt;                &lt;input type=&quot;submit&quot; class=&quot;wr-btn grey-bg col-xs-12 col-md-12 col-lg-12 uppercase font-extra-large&quot; value=&quot;Submit&quot;&gt;            &lt;/div&gt;        &lt;/form&gt;        &lt;div class=&quot;clearfix&quot;&gt;&lt;/div&gt;    &lt;/div&gt;&lt;/div&gt;] but found [&lt;!-- You can customize the user prompt template here... --&gt;&#10;	&#10;&lt;div class=&quot;uppercase&quot;&gt;&#10;    &lt;h3&gt;Welcome {{name}}&lt;/h3&gt;&#10;&lt;/div&gt;&#10;&#10;&lt;div class=&quot;boarder-all &quot;&gt;&#10;    &lt;div class=&quot;clearfix&quot;&gt;&lt;/div&gt;&#10;    &lt;div class=&quot;padding-double login-form&quot;&gt;&#10;&#10;        &lt;form id=&quot;template-form&quot; method=&quot;POST&quot;&gt; &lt;!-- *DO NOT CHANGE THIS* --&gt;&#10;            &lt;div class=&quot;col-xs-12 col-sm-12 col-md-12 col-lg-12 form-group required&quot;&gt;&#10;&#10;                &lt;!-- Add the required input field/s here...&#10;                It should follow the below mentioned format--&gt;&#10;&#10;                &lt;label for=&quot;sampleInput&quot; class=&quot;control-label&quot;&gt;sample input&lt;/label&gt;&#10;                &lt;input type=&quot;text&quot; id=&quot;sampleInput&quot; name=&quot;sample_input&quot; class=&quot;form-control&quot; placeholder=&quot;sample input placeholder&quot; /&gt;&#10;&#10;            &lt;/div&gt;&#10;&#10;            &lt;input type=&quot;hidden&quot; id=&quot;promptResp&quot; name=&quot;promptResp&quot; value=&quot;true&quot;&gt; &lt;!-- *DO NOT CHANGE THIS* --&gt;&#10;            &lt;input type=&quot;hidden&quot; id=&quot;promptId&quot; name=&quot;promptId&quot;&gt; &lt;!-- *DO NOT CHANGE THIS* --&gt;&#10;&#10;            &lt;div class=&quot;col-xs-12 col-sm-12 col-md-12 col-lg-12 form-group required&quot;&gt;&#10;                &lt;input type=&quot;submit&quot; class=&quot;wr-btn grey-bg col-xs-12 col-md-12 col-lg-12 uppercase font-extra-large&quot; value=&quot;Submit&quot;&gt;&#10;            &lt;/div&gt;&#10;        &lt;/form&gt;&#10;        &lt;div class=&quot;clearfix&quot;&gt;&lt;/div&gt;&#10;    &lt;/div&gt;&#10;&lt;/div&gt;]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
-expected [<!-- You can customize the user prompt template here... -->	<div class="uppercase">    <h3>Welcome {{name}}</h3></div><div class="boarder-all ">    <div class="clearfix"></div>    <div class="padding-double login-form">        <form id="template-form" method="POST"> <!-- *DO NOT CHANGE THIS* -->            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 form-group required">                <!-- Add the required input field/s here...                It should follow the below mentioned format-->                <label for="sampleInput" class="control-label">sample input</label>                <input type="text" id="sampleInput" name="sample_input" class="form-control" placeholder="sample input placeholder" />            </div>            <input type="hidden" id="promptResp" name="promptResp" value="true"> <!-- *DO NOT CHANGE THIS* -->            <input type="hidden" id="promptId" name="promptId"> <!-- *DO NOT CHANGE THIS* -->            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 form-group required">                <input type="submit" class="wr-btn grey-bg col-xs-12 col-md-12 col-lg-12 uppercase font-extra-large" value="Submit">            </div>        </form>        <div class="clearfix"></div>    </div></div>] but found [<!-- You can customize the user prompt template here... -->
-	
-<div class="uppercase">
-    <h3>Welcome {{name}}</h3>
-</div>
-
-<div class="boarder-all ">
-    <div class="clearfix"></div>
-    <div class="padding-double login-form">
-
-        <form id="template-form" method="POST"> <!-- *DO NOT CHANGE THIS* -->
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 form-group required">
-
-                <!-- Add the required input field/s here...
-                It should follow the below mentioned format-->
-
-                <label for="sampleInput" class="control-label">sample input</label>
-                <input type="text" id="sampleInput" name="sample_input" class="form-control" placeholder="sample input placeholder" />
-
-            </div>
-
-            <input type="hidden" id="promptResp" name="promptResp" value="true"> <!-- *DO NOT CHANGE THIS* -->
-            <input type="hidden" id="promptId" name="promptId"> <!-- *DO NOT CHANGE THIS* -->
-
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 form-group required">
-                <input type="submit" class="wr-btn grey-bg col-xs-12 col-md-12 col-lg-12 uppercase font-extra-large" value="Submit">
-            </div>
-        </form>
-        <div class="clearfix"></div>
-    </div>
-</div>]
-	at org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest.testGetTemplateByName(TemplateManagerDAOImplTest.java:263)
-]]></failure>
-  </testcase>
-  <testcase name="testGetTemplateByNameDataAccessException" classname="org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest" time="0.002"/>
+  <testcase name="testDeleteTemplateDataAccessException" classname="org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest" time="0.003"/>
+  <testcase name="testGetTemplateByName" classname="org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest" time="0.031"/>
+  <testcase name="testGetTemplateByName" classname="org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest" time="0.003"/>
+  <testcase name="testGetTemplateByName" classname="org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest" time="0.003"/>
+  <testcase name="testGetTemplateByNameDataAccessException" classname="org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest" time="0.003"/>
   <testcase name="testGetTemplateByNameDataAccessException" classname="org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest" time="0.003"/>
   <testcase name="testGetTemplateByNameDataAccessException" classname="org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest" time="0.002"/>
-  <testcase name="testGetTemplateList" classname="org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest" time="0.026"/>
-  <testcase name="testGetTemplateList" classname="org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest" time="0.007"/>
-  <testcase name="testGetTemplateList" classname="org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest" time="0.006"/>
-  <testcase name="testGetTemplateListDataAccessException" classname="org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest" time="0.005"/>
-  <testcase name="testGetTemplateListDataAccessException" classname="org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest" time="0.006"/>
-  <testcase name="testGetTemplateListDataAccessException" classname="org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest" time="0.005"/>
-  <testcase name="testUpdateTemplate" classname="org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest" time="0.007">
-    <failure message="Error occurred while updating the template: T1 Updated." type="org.wso2.carbon.identity.template.mgt.exception.TemplateManagementServerException">org.wso2.carbon.identity.template.mgt.exception.TemplateManagementServerException: Error occurred while updating the template: T1 Updated.
-	at org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest.testUpdateTemplate(TemplateManagerDAOImplTest.java:223)
-Caused by: org.wso2.carbon.database.utils.jdbc.exceptions.DataAccessException: Error in performing Database query: '%s'UPDATE IDN_TEMPLATE_MGT SET NAME= ?, DESCRIPTION= ?, TEMPLATE_SCRIPT= ? WHERE TENANT_ID= ? AND NAME = ?
-	at org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest.testUpdateTemplate(TemplateManagerDAOImplTest.java:223)
-Caused by: org.h2.jdbc.JdbcSQLException: 
-Parameter "#3" is not set; SQL statement:
-UPDATE IDN_TEMPLATE_MGT SET NAME= ?, DESCRIPTION= ?, TEMPLATE_SCRIPT= ? WHERE TENANT_ID= ? AND NAME = ? [90012-175]
-	at org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest.testUpdateTemplate(TemplateManagerDAOImplTest.java:223)
-</failure>
-  </testcase>
-  <testcase name="testUpdateTemplate" classname="org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest" time="0.004">
-    <failure message="Error occurred while updating the template: T2 Updated." type="org.wso2.carbon.identity.template.mgt.exception.TemplateManagementServerException">org.wso2.carbon.identity.template.mgt.exception.TemplateManagementServerException: Error occurred while updating the template: T2 Updated.
-	at org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest.testUpdateTemplate(TemplateManagerDAOImplTest.java:223)
-Caused by: org.wso2.carbon.database.utils.jdbc.exceptions.DataAccessException: Error in performing Database query: '%s'UPDATE IDN_TEMPLATE_MGT SET NAME= ?, DESCRIPTION= ?, TEMPLATE_SCRIPT= ? WHERE TENANT_ID= ? AND NAME = ?
-	at org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest.testUpdateTemplate(TemplateManagerDAOImplTest.java:223)
-Caused by: org.h2.jdbc.JdbcSQLException: 
-Parameter "#3" is not set; SQL statement:
-UPDATE IDN_TEMPLATE_MGT SET NAME= ?, DESCRIPTION= ?, TEMPLATE_SCRIPT= ? WHERE TENANT_ID= ? AND NAME = ? [90012-175]
-	at org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest.testUpdateTemplate(TemplateManagerDAOImplTest.java:223)
-</failure>
-  </testcase>
-  <testcase name="testUpdateTemplate" classname="org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest" time="0.004">
-    <failure message="Error occurred while updating the template: T3 Updated." type="org.wso2.carbon.identity.template.mgt.exception.TemplateManagementServerException">org.wso2.carbon.identity.template.mgt.exception.TemplateManagementServerException: Error occurred while updating the template: T3 Updated.
-	at org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest.testUpdateTemplate(TemplateManagerDAOImplTest.java:223)
-Caused by: org.wso2.carbon.database.utils.jdbc.exceptions.DataAccessException: Error in performing Database query: '%s'UPDATE IDN_TEMPLATE_MGT SET NAME= ?, DESCRIPTION= ?, TEMPLATE_SCRIPT= ? WHERE TENANT_ID= ? AND NAME = ?
-	at org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest.testUpdateTemplate(TemplateManagerDAOImplTest.java:223)
-Caused by: org.h2.jdbc.JdbcSQLException: 
-Parameter "#3" is not set; SQL statement:
-UPDATE IDN_TEMPLATE_MGT SET NAME= ?, DESCRIPTION= ?, TEMPLATE_SCRIPT= ? WHERE TENANT_ID= ? AND NAME = ? [90012-175]
-	at org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest.testUpdateTemplate(TemplateManagerDAOImplTest.java:223)
-</failure>
-  </testcase>
+  <testcase name="testGetTemplateList" classname="org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest" time="0.029"/>
+  <testcase name="testGetTemplateList" classname="org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest" time="0.01"/>
+  <testcase name="testGetTemplateList" classname="org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest" time="0.01"/>
+  <testcase name="testGetTemplateListDataAccessException" classname="org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest" time="0.008"/>
+  <testcase name="testGetTemplateListDataAccessException" classname="org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest" time="0.008"/>
+  <testcase name="testGetTemplateListDataAccessException" classname="org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest" time="0.007"/>
+  <testcase name="testUpdateTemplate" classname="org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest" time="0.005"/>
+  <testcase name="testUpdateTemplate" classname="org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest" time="0.004"/>
+  <testcase name="testUpdateTemplate" classname="org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest" time="0.004"/>
   <testcase name="testUpdateTemplateServerException" classname="org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest" time="0.003"/>
-  <testcase name="testUpdateTemplateServerException" classname="org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest" time="0.004"/>
   <testcase name="testUpdateTemplateServerException" classname="org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest" time="0.003"/>
-  <testcase name="testAddTemplate" classname="org.wso2.carbon.identity.template.mgt.TemplateManagerImplTest" time="0.031"/>
-  <testcase name="testAddTemplate" classname="org.wso2.carbon.identity.template.mgt.TemplateManagerImplTest" time="0.001"/>
-  <testcase name="testAddTemplate" classname="org.wso2.carbon.identity.template.mgt.TemplateManagerImplTest" time="0.001"/>
-  <testcase name="testDeleteTemplate" classname="org.wso2.carbon.identity.template.mgt.TemplateManagerImplTest" time="0.055"/>
-  <testcase name="testDeleteTemplate" classname="org.wso2.carbon.identity.template.mgt.TemplateManagerImplTest" time="0.003"/>
-  <testcase name="testDeleteTemplate" classname="org.wso2.carbon.identity.template.mgt.TemplateManagerImplTest" time="0.003"/>
-  <testcase name="testErrorCodes" classname="org.wso2.carbon.identity.template.mgt.TemplateManagerImplTest" time="0.003"/>
-  <testcase name="testGetTemplateByName" classname="org.wso2.carbon.identity.template.mgt.TemplateManagerImplTest" time="0.009">
-    <failure message="expected [&lt;!-- You can customize the user prompt template here... --&gt;	&lt;div class=&quot;uppercase&quot;&gt;    &lt;h3&gt;Welcome {{name}}&lt;/h3&gt;&lt;/div&gt;&lt;div class=&quot;boarder-all &quot;&gt;    &lt;div class=&quot;clearfix&quot;&gt;&lt;/div&gt;    &lt;div class=&quot;padding-double login-form&quot;&gt;        &lt;form id=&quot;template-form&quot; method=&quot;POST&quot;&gt; &lt;!-- *DO NOT CHANGE THIS* --&gt;            &lt;div class=&quot;col-xs-12 col-sm-12 col-md-12 col-lg-12 form-group required&quot;&gt;                &lt;!-- Add the required input field/s here...                It should follow the below mentioned format--&gt;                &lt;label for=&quot;sampleInput&quot; class=&quot;control-label&quot;&gt;sample input&lt;/label&gt;                &lt;input type=&quot;text&quot; id=&quot;sampleInput&quot; name=&quot;sample_input&quot; class=&quot;form-control&quot; placeholder=&quot;sample input placeholder&quot; /&gt;            &lt;/div&gt;            &lt;input type=&quot;hidden&quot; id=&quot;promptResp&quot; name=&quot;promptResp&quot; value=&quot;true&quot;&gt; &lt;!-- *DO NOT CHANGE THIS* --&gt;            &lt;input type=&quot;hidden&quot; id=&quot;promptId&quot; name=&quot;promptId&quot;&gt; &lt;!-- *DO NOT CHANGE THIS* --&gt;            &lt;div class=&quot;col-xs-12 col-sm-12 col-md-12 col-lg-12 form-group required&quot;&gt;                &lt;input type=&quot;submit&quot; class=&quot;wr-btn grey-bg col-xs-12 col-md-12 col-lg-12 uppercase font-extra-large&quot; value=&quot;Submit&quot;&gt;            &lt;/div&gt;        &lt;/form&gt;        &lt;div class=&quot;clearfix&quot;&gt;&lt;/div&gt;    &lt;/div&gt;&lt;/div&gt;] but found [&lt;!-- You can customize the user prompt template here... --&gt;&#10;	&#10;&lt;div class=&quot;uppercase&quot;&gt;&#10;    &lt;h3&gt;Welcome {{name}}&lt;/h3&gt;&#10;&lt;/div&gt;&#10;&#10;&lt;div class=&quot;boarder-all &quot;&gt;&#10;    &lt;div class=&quot;clearfix&quot;&gt;&lt;/div&gt;&#10;    &lt;div class=&quot;padding-double login-form&quot;&gt;&#10;&#10;        &lt;form id=&quot;template-form&quot; method=&quot;POST&quot;&gt; &lt;!-- *DO NOT CHANGE THIS* --&gt;&#10;            &lt;div class=&quot;col-xs-12 col-sm-12 col-md-12 col-lg-12 form-group required&quot;&gt;&#10;&#10;                &lt;!-- Add the required input field/s here...&#10;                It should follow the below mentioned format--&gt;&#10;&#10;                &lt;label for=&quot;sampleInput&quot; class=&quot;control-label&quot;&gt;sample input&lt;/label&gt;&#10;                &lt;input type=&quot;text&quot; id=&quot;sampleInput&quot; name=&quot;sample_input&quot; class=&quot;form-control&quot; placeholder=&quot;sample input placeholder&quot; /&gt;&#10;&#10;            &lt;/div&gt;&#10;&#10;            &lt;input type=&quot;hidden&quot; id=&quot;promptResp&quot; name=&quot;promptResp&quot; value=&quot;true&quot;&gt; &lt;!-- *DO NOT CHANGE THIS* --&gt;&#10;            &lt;input type=&quot;hidden&quot; id=&quot;promptId&quot; name=&quot;promptId&quot;&gt; &lt;!-- *DO NOT CHANGE THIS* --&gt;&#10;&#10;            &lt;div class=&quot;col-xs-12 col-sm-12 col-md-12 col-lg-12 form-group required&quot;&gt;&#10;                &lt;input type=&quot;submit&quot; class=&quot;wr-btn grey-bg col-xs-12 col-md-12 col-lg-12 uppercase font-extra-large&quot; value=&quot;Submit&quot;&gt;&#10;            &lt;/div&gt;&#10;        &lt;/form&gt;&#10;        &lt;div class=&quot;clearfix&quot;&gt;&lt;/div&gt;&#10;    &lt;/div&gt;&#10;&lt;/div&gt;]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
-expected [<!-- You can customize the user prompt template here... -->	<div class="uppercase">    <h3>Welcome {{name}}</h3></div><div class="boarder-all ">    <div class="clearfix"></div>    <div class="padding-double login-form">        <form id="template-form" method="POST"> <!-- *DO NOT CHANGE THIS* -->            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 form-group required">                <!-- Add the required input field/s here...                It should follow the below mentioned format-->                <label for="sampleInput" class="control-label">sample input</label>                <input type="text" id="sampleInput" name="sample_input" class="form-control" placeholder="sample input placeholder" />            </div>            <input type="hidden" id="promptResp" name="promptResp" value="true"> <!-- *DO NOT CHANGE THIS* -->            <input type="hidden" id="promptId" name="promptId"> <!-- *DO NOT CHANGE THIS* -->            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 form-group required">                <input type="submit" class="wr-btn grey-bg col-xs-12 col-md-12 col-lg-12 uppercase font-extra-large" value="Submit">            </div>        </form>        <div class="clearfix"></div>    </div></div>] but found [<!-- You can customize the user prompt template here... -->
-	
-<div class="uppercase">
-    <h3>Welcome {{name}}</h3>
-</div>
-
-<div class="boarder-all ">
-    <div class="clearfix"></div>
-    <div class="padding-double login-form">
-
-        <form id="template-form" method="POST"> <!-- *DO NOT CHANGE THIS* -->
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 form-group required">
-
-                <!-- Add the required input field/s here...
-                It should follow the below mentioned format-->
-
-                <label for="sampleInput" class="control-label">sample input</label>
-                <input type="text" id="sampleInput" name="sample_input" class="form-control" placeholder="sample input placeholder" />
-
-            </div>
-
-            <input type="hidden" id="promptResp" name="promptResp" value="true"> <!-- *DO NOT CHANGE THIS* -->
-            <input type="hidden" id="promptId" name="promptId"> <!-- *DO NOT CHANGE THIS* -->
-
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 form-group required">
-                <input type="submit" class="wr-btn grey-bg col-xs-12 col-md-12 col-lg-12 uppercase font-extra-large" value="Submit">
-            </div>
-        </form>
-        <div class="clearfix"></div>
-    </div>
-</div>]
-	at org.wso2.carbon.identity.template.mgt.TemplateManagerImplTest.testGetTemplateByName(TemplateManagerImplTest.java:257)
-]]></failure>
-  </testcase>
-  <testcase name="testGetTemplateByName" classname="org.wso2.carbon.identity.template.mgt.TemplateManagerImplTest" time="0.004">
-    <failure message="expected [&lt;!-- You can customize the user prompt template here... --&gt;	&lt;div class=&quot;uppercase&quot;&gt;    &lt;h3&gt;Welcome {{name}}&lt;/h3&gt;&lt;/div&gt;&lt;div class=&quot;boarder-all &quot;&gt;    &lt;div class=&quot;clearfix&quot;&gt;&lt;/div&gt;    &lt;div class=&quot;padding-double login-form&quot;&gt;        &lt;form id=&quot;template-form&quot; method=&quot;POST&quot;&gt; &lt;!-- *DO NOT CHANGE THIS* --&gt;            &lt;div class=&quot;col-xs-12 col-sm-12 col-md-12 col-lg-12 form-group required&quot;&gt;                &lt;!-- Add the required input field/s here...                It should follow the below mentioned format--&gt;                &lt;label for=&quot;sampleInput&quot; class=&quot;control-label&quot;&gt;sample input&lt;/label&gt;                &lt;input type=&quot;text&quot; id=&quot;sampleInput&quot; name=&quot;sample_input&quot; class=&quot;form-control&quot; placeholder=&quot;sample input placeholder&quot; /&gt;            &lt;/div&gt;            &lt;input type=&quot;hidden&quot; id=&quot;promptResp&quot; name=&quot;promptResp&quot; value=&quot;true&quot;&gt; &lt;!-- *DO NOT CHANGE THIS* --&gt;            &lt;input type=&quot;hidden&quot; id=&quot;promptId&quot; name=&quot;promptId&quot;&gt; &lt;!-- *DO NOT CHANGE THIS* --&gt;            &lt;div class=&quot;col-xs-12 col-sm-12 col-md-12 col-lg-12 form-group required&quot;&gt;                &lt;input type=&quot;submit&quot; class=&quot;wr-btn grey-bg col-xs-12 col-md-12 col-lg-12 uppercase font-extra-large&quot; value=&quot;Submit&quot;&gt;            &lt;/div&gt;        &lt;/form&gt;        &lt;div class=&quot;clearfix&quot;&gt;&lt;/div&gt;    &lt;/div&gt;&lt;/div&gt;] but found [&lt;!-- You can customize the user prompt template here... --&gt;&#10;	&#10;&lt;div class=&quot;uppercase&quot;&gt;&#10;    &lt;h3&gt;Welcome {{name}}&lt;/h3&gt;&#10;&lt;/div&gt;&#10;&#10;&lt;div class=&quot;boarder-all &quot;&gt;&#10;    &lt;div class=&quot;clearfix&quot;&gt;&lt;/div&gt;&#10;    &lt;div class=&quot;padding-double login-form&quot;&gt;&#10;&#10;        &lt;form id=&quot;template-form&quot; method=&quot;POST&quot;&gt; &lt;!-- *DO NOT CHANGE THIS* --&gt;&#10;            &lt;div class=&quot;col-xs-12 col-sm-12 col-md-12 col-lg-12 form-group required&quot;&gt;&#10;&#10;                &lt;!-- Add the required input field/s here...&#10;                It should follow the below mentioned format--&gt;&#10;&#10;                &lt;label for=&quot;sampleInput&quot; class=&quot;control-label&quot;&gt;sample input&lt;/label&gt;&#10;                &lt;input type=&quot;text&quot; id=&quot;sampleInput&quot; name=&quot;sample_input&quot; class=&quot;form-control&quot; placeholder=&quot;sample input placeholder&quot; /&gt;&#10;&#10;            &lt;/div&gt;&#10;&#10;            &lt;input type=&quot;hidden&quot; id=&quot;promptResp&quot; name=&quot;promptResp&quot; value=&quot;true&quot;&gt; &lt;!-- *DO NOT CHANGE THIS* --&gt;&#10;            &lt;input type=&quot;hidden&quot; id=&quot;promptId&quot; name=&quot;promptId&quot;&gt; &lt;!-- *DO NOT CHANGE THIS* --&gt;&#10;&#10;            &lt;div class=&quot;col-xs-12 col-sm-12 col-md-12 col-lg-12 form-group required&quot;&gt;&#10;                &lt;input type=&quot;submit&quot; class=&quot;wr-btn grey-bg col-xs-12 col-md-12 col-lg-12 uppercase font-extra-large&quot; value=&quot;Submit&quot;&gt;&#10;            &lt;/div&gt;&#10;        &lt;/form&gt;&#10;        &lt;div class=&quot;clearfix&quot;&gt;&lt;/div&gt;&#10;    &lt;/div&gt;&#10;&lt;/div&gt;]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
-expected [<!-- You can customize the user prompt template here... -->	<div class="uppercase">    <h3>Welcome {{name}}</h3></div><div class="boarder-all ">    <div class="clearfix"></div>    <div class="padding-double login-form">        <form id="template-form" method="POST"> <!-- *DO NOT CHANGE THIS* -->            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 form-group required">                <!-- Add the required input field/s here...                It should follow the below mentioned format-->                <label for="sampleInput" class="control-label">sample input</label>                <input type="text" id="sampleInput" name="sample_input" class="form-control" placeholder="sample input placeholder" />            </div>            <input type="hidden" id="promptResp" name="promptResp" value="true"> <!-- *DO NOT CHANGE THIS* -->            <input type="hidden" id="promptId" name="promptId"> <!-- *DO NOT CHANGE THIS* -->            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 form-group required">                <input type="submit" class="wr-btn grey-bg col-xs-12 col-md-12 col-lg-12 uppercase font-extra-large" value="Submit">            </div>        </form>        <div class="clearfix"></div>    </div></div>] but found [<!-- You can customize the user prompt template here... -->
-	
-<div class="uppercase">
-    <h3>Welcome {{name}}</h3>
-</div>
-
-<div class="boarder-all ">
-    <div class="clearfix"></div>
-    <div class="padding-double login-form">
-
-        <form id="template-form" method="POST"> <!-- *DO NOT CHANGE THIS* -->
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 form-group required">
-
-                <!-- Add the required input field/s here...
-                It should follow the below mentioned format-->
-
-                <label for="sampleInput" class="control-label">sample input</label>
-                <input type="text" id="sampleInput" name="sample_input" class="form-control" placeholder="sample input placeholder" />
-
-            </div>
-
-            <input type="hidden" id="promptResp" name="promptResp" value="true"> <!-- *DO NOT CHANGE THIS* -->
-            <input type="hidden" id="promptId" name="promptId"> <!-- *DO NOT CHANGE THIS* -->
-
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 form-group required">
-                <input type="submit" class="wr-btn grey-bg col-xs-12 col-md-12 col-lg-12 uppercase font-extra-large" value="Submit">
-            </div>
-        </form>
-        <div class="clearfix"></div>
-    </div>
-</div>]
-	at org.wso2.carbon.identity.template.mgt.TemplateManagerImplTest.testGetTemplateByName(TemplateManagerImplTest.java:257)
-]]></failure>
-  </testcase>
-  <testcase name="testGetTemplateByName" classname="org.wso2.carbon.identity.template.mgt.TemplateManagerImplTest" time="0.003">
-    <failure message="expected [&lt;!-- You can customize the user prompt template here... --&gt;	&lt;div class=&quot;uppercase&quot;&gt;    &lt;h3&gt;Welcome {{name}}&lt;/h3&gt;&lt;/div&gt;&lt;div class=&quot;boarder-all &quot;&gt;    &lt;div class=&quot;clearfix&quot;&gt;&lt;/div&gt;    &lt;div class=&quot;padding-double login-form&quot;&gt;        &lt;form id=&quot;template-form&quot; method=&quot;POST&quot;&gt; &lt;!-- *DO NOT CHANGE THIS* --&gt;            &lt;div class=&quot;col-xs-12 col-sm-12 col-md-12 col-lg-12 form-group required&quot;&gt;                &lt;!-- Add the required input field/s here...                It should follow the below mentioned format--&gt;                &lt;label for=&quot;sampleInput&quot; class=&quot;control-label&quot;&gt;sample input&lt;/label&gt;                &lt;input type=&quot;text&quot; id=&quot;sampleInput&quot; name=&quot;sample_input&quot; class=&quot;form-control&quot; placeholder=&quot;sample input placeholder&quot; /&gt;            &lt;/div&gt;            &lt;input type=&quot;hidden&quot; id=&quot;promptResp&quot; name=&quot;promptResp&quot; value=&quot;true&quot;&gt; &lt;!-- *DO NOT CHANGE THIS* --&gt;            &lt;input type=&quot;hidden&quot; id=&quot;promptId&quot; name=&quot;promptId&quot;&gt; &lt;!-- *DO NOT CHANGE THIS* --&gt;            &lt;div class=&quot;col-xs-12 col-sm-12 col-md-12 col-lg-12 form-group required&quot;&gt;                &lt;input type=&quot;submit&quot; class=&quot;wr-btn grey-bg col-xs-12 col-md-12 col-lg-12 uppercase font-extra-large&quot; value=&quot;Submit&quot;&gt;            &lt;/div&gt;        &lt;/form&gt;        &lt;div class=&quot;clearfix&quot;&gt;&lt;/div&gt;    &lt;/div&gt;&lt;/div&gt;] but found [&lt;!-- You can customize the user prompt template here... --&gt;&#10;	&#10;&lt;div class=&quot;uppercase&quot;&gt;&#10;    &lt;h3&gt;Welcome {{name}}&lt;/h3&gt;&#10;&lt;/div&gt;&#10;&#10;&lt;div class=&quot;boarder-all &quot;&gt;&#10;    &lt;div class=&quot;clearfix&quot;&gt;&lt;/div&gt;&#10;    &lt;div class=&quot;padding-double login-form&quot;&gt;&#10;&#10;        &lt;form id=&quot;template-form&quot; method=&quot;POST&quot;&gt; &lt;!-- *DO NOT CHANGE THIS* --&gt;&#10;            &lt;div class=&quot;col-xs-12 col-sm-12 col-md-12 col-lg-12 form-group required&quot;&gt;&#10;&#10;                &lt;!-- Add the required input field/s here...&#10;                It should follow the below mentioned format--&gt;&#10;&#10;                &lt;label for=&quot;sampleInput&quot; class=&quot;control-label&quot;&gt;sample input&lt;/label&gt;&#10;                &lt;input type=&quot;text&quot; id=&quot;sampleInput&quot; name=&quot;sample_input&quot; class=&quot;form-control&quot; placeholder=&quot;sample input placeholder&quot; /&gt;&#10;&#10;            &lt;/div&gt;&#10;&#10;            &lt;input type=&quot;hidden&quot; id=&quot;promptResp&quot; name=&quot;promptResp&quot; value=&quot;true&quot;&gt; &lt;!-- *DO NOT CHANGE THIS* --&gt;&#10;            &lt;input type=&quot;hidden&quot; id=&quot;promptId&quot; name=&quot;promptId&quot;&gt; &lt;!-- *DO NOT CHANGE THIS* --&gt;&#10;&#10;            &lt;div class=&quot;col-xs-12 col-sm-12 col-md-12 col-lg-12 form-group required&quot;&gt;&#10;                &lt;input type=&quot;submit&quot; class=&quot;wr-btn grey-bg col-xs-12 col-md-12 col-lg-12 uppercase font-extra-large&quot; value=&quot;Submit&quot;&gt;&#10;            &lt;/div&gt;&#10;        &lt;/form&gt;&#10;        &lt;div class=&quot;clearfix&quot;&gt;&lt;/div&gt;&#10;    &lt;/div&gt;&#10;&lt;/div&gt;]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
-expected [<!-- You can customize the user prompt template here... -->	<div class="uppercase">    <h3>Welcome {{name}}</h3></div><div class="boarder-all ">    <div class="clearfix"></div>    <div class="padding-double login-form">        <form id="template-form" method="POST"> <!-- *DO NOT CHANGE THIS* -->            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 form-group required">                <!-- Add the required input field/s here...                It should follow the below mentioned format-->                <label for="sampleInput" class="control-label">sample input</label>                <input type="text" id="sampleInput" name="sample_input" class="form-control" placeholder="sample input placeholder" />            </div>            <input type="hidden" id="promptResp" name="promptResp" value="true"> <!-- *DO NOT CHANGE THIS* -->            <input type="hidden" id="promptId" name="promptId"> <!-- *DO NOT CHANGE THIS* -->            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 form-group required">                <input type="submit" class="wr-btn grey-bg col-xs-12 col-md-12 col-lg-12 uppercase font-extra-large" value="Submit">            </div>        </form>        <div class="clearfix"></div>    </div></div>] but found [<!-- You can customize the user prompt template here... -->
-	
-<div class="uppercase">
-    <h3>Welcome {{name}}</h3>
-</div>
-
-<div class="boarder-all ">
-    <div class="clearfix"></div>
-    <div class="padding-double login-form">
-
-        <form id="template-form" method="POST"> <!-- *DO NOT CHANGE THIS* -->
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 form-group required">
-
-                <!-- Add the required input field/s here...
-                It should follow the below mentioned format-->
-
-                <label for="sampleInput" class="control-label">sample input</label>
-                <input type="text" id="sampleInput" name="sample_input" class="form-control" placeholder="sample input placeholder" />
-
-            </div>
-
-            <input type="hidden" id="promptResp" name="promptResp" value="true"> <!-- *DO NOT CHANGE THIS* -->
-            <input type="hidden" id="promptId" name="promptId"> <!-- *DO NOT CHANGE THIS* -->
-
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 form-group required">
-                <input type="submit" class="wr-btn grey-bg col-xs-12 col-md-12 col-lg-12 uppercase font-extra-large" value="Submit">
-            </div>
-        </form>
-        <div class="clearfix"></div>
-    </div>
-</div>]
-	at org.wso2.carbon.identity.template.mgt.TemplateManagerImplTest.testGetTemplateByName(TemplateManagerImplTest.java:257)
-]]></failure>
-  </testcase>
-  <testcase name="testGetTemplateList" classname="org.wso2.carbon.identity.template.mgt.TemplateManagerImplTest" time="0.014"/>
-  <testcase name="testGetTemplateList" classname="org.wso2.carbon.identity.template.mgt.TemplateManagerImplTest" time="0.005"/>
-  <testcase name="testGetTemplateList" classname="org.wso2.carbon.identity.template.mgt.TemplateManagerImplTest" time="0.004"/>
-  <testcase name="testSetTenantIdIfNull" classname="org.wso2.carbon.identity.template.mgt.TemplateManagerImplTest" time="0.001"/>
-  <testcase name="testUpdateTemplate" classname="org.wso2.carbon.identity.template.mgt.TemplateManagerImplTest" time="0.005">
-    <failure message="Error occurred while updating the template: T1 Updated." type="org.wso2.carbon.identity.template.mgt.exception.TemplateManagementServerException">org.wso2.carbon.identity.template.mgt.exception.TemplateManagementServerException: Error occurred while updating the template: T1 Updated.
-	at org.wso2.carbon.identity.template.mgt.TemplateManagerImplTest.testUpdateTemplate(TemplateManagerImplTest.java:232)
-Caused by: org.wso2.carbon.database.utils.jdbc.exceptions.DataAccessException: Error in performing Database query: '%s'UPDATE IDN_TEMPLATE_MGT SET NAME= ?, DESCRIPTION= ?, TEMPLATE_SCRIPT= ? WHERE TENANT_ID= ? AND NAME = ?
-	at org.wso2.carbon.identity.template.mgt.TemplateManagerImplTest.testUpdateTemplate(TemplateManagerImplTest.java:232)
-Caused by: org.h2.jdbc.JdbcSQLException: 
-Parameter "#3" is not set; SQL statement:
-UPDATE IDN_TEMPLATE_MGT SET NAME= ?, DESCRIPTION= ?, TEMPLATE_SCRIPT= ? WHERE TENANT_ID= ? AND NAME = ? [90012-175]
-	at org.wso2.carbon.identity.template.mgt.TemplateManagerImplTest.testUpdateTemplate(TemplateManagerImplTest.java:232)
-</failure>
-  </testcase>
-  <testcase name="testUpdateTemplate" classname="org.wso2.carbon.identity.template.mgt.TemplateManagerImplTest" time="0.002">
-    <failure message="Error occurred while updating the template: T2 Updated." type="org.wso2.carbon.identity.template.mgt.exception.TemplateManagementServerException">org.wso2.carbon.identity.template.mgt.exception.TemplateManagementServerException: Error occurred while updating the template: T2 Updated.
-	at org.wso2.carbon.identity.template.mgt.TemplateManagerImplTest.testUpdateTemplate(TemplateManagerImplTest.java:232)
-Caused by: org.wso2.carbon.database.utils.jdbc.exceptions.DataAccessException: Error in performing Database query: '%s'UPDATE IDN_TEMPLATE_MGT SET NAME= ?, DESCRIPTION= ?, TEMPLATE_SCRIPT= ? WHERE TENANT_ID= ? AND NAME = ?
-	at org.wso2.carbon.identity.template.mgt.TemplateManagerImplTest.testUpdateTemplate(TemplateManagerImplTest.java:232)
-Caused by: org.h2.jdbc.JdbcSQLException: 
-Parameter "#3" is not set; SQL statement:
-UPDATE IDN_TEMPLATE_MGT SET NAME= ?, DESCRIPTION= ?, TEMPLATE_SCRIPT= ? WHERE TENANT_ID= ? AND NAME = ? [90012-175]
-	at org.wso2.carbon.identity.template.mgt.TemplateManagerImplTest.testUpdateTemplate(TemplateManagerImplTest.java:232)
-</failure>
-  </testcase>
+  <testcase name="testUpdateTemplateServerException" classname="org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImplTest" time="0.005"/>
+  <testcase name="testAddTemplate" classname="org.wso2.carbon.identity.template.mgt.TemplateManagerImplTest" time="0.051"/>
+  <testcase name="testAddTemplate" classname="org.wso2.carbon.identity.template.mgt.TemplateManagerImplTest" time="0.002"/>
+  <testcase name="testAddTemplate" classname="org.wso2.carbon.identity.template.mgt.TemplateManagerImplTest" time="0.004"/>
+  <testcase name="testDeleteTemplate" classname="org.wso2.carbon.identity.template.mgt.TemplateManagerImplTest" time="0.13"/>
+  <testcase name="testDeleteTemplate" classname="org.wso2.carbon.identity.template.mgt.TemplateManagerImplTest" time="0.01"/>
+  <testcase name="testDeleteTemplate" classname="org.wso2.carbon.identity.template.mgt.TemplateManagerImplTest" time="0.014"/>
+  <testcase name="testErrorCodes" classname="org.wso2.carbon.identity.template.mgt.TemplateManagerImplTest" time="0.01"/>
+  <testcase name="testGetTemplateByName" classname="org.wso2.carbon.identity.template.mgt.TemplateManagerImplTest" time="0.042"/>
+  <testcase name="testGetTemplateByName" classname="org.wso2.carbon.identity.template.mgt.TemplateManagerImplTest" time="0.014"/>
+  <testcase name="testGetTemplateByName" classname="org.wso2.carbon.identity.template.mgt.TemplateManagerImplTest" time="0.01"/>
+  <testcase name="testGetTemplateList" classname="org.wso2.carbon.identity.template.mgt.TemplateManagerImplTest" time="0.038"/>
+  <testcase name="testGetTemplateList" classname="org.wso2.carbon.identity.template.mgt.TemplateManagerImplTest" time="0.015"/>
+  <testcase name="testGetTemplateList" classname="org.wso2.carbon.identity.template.mgt.TemplateManagerImplTest" time="0.011"/>
+  <testcase name="testSetTenantIdIfNull" classname="org.wso2.carbon.identity.template.mgt.TemplateManagerImplTest" time="0.002"/>
+  <testcase name="testUpdateTemplate" classname="org.wso2.carbon.identity.template.mgt.TemplateManagerImplTest" time="0.004"/>
+  <testcase name="testUpdateTemplate" classname="org.wso2.carbon.identity.template.mgt.TemplateManagerImplTest" time="0.002"/>
   <testcase name="testValidatingInputs" classname="org.wso2.carbon.identity.template.mgt.TemplateManagerImplTest" time="0.001"/>
-  <testcase name="testValidatingInputs" classname="org.wso2.carbon.identity.template.mgt.TemplateManagerImplTest" time="0.001"/>
+  <testcase name="testValidatingInputs" classname="org.wso2.carbon.identity.template.mgt.TemplateManagerImplTest" time="0.003"/>
   <testcase name="testValidatingInputs" classname="org.wso2.carbon.identity.template.mgt.TemplateManagerImplTest" time="0.001"/>
   <testcase name="testvalidatingPaginationParameters" classname="org.wso2.carbon.identity.template.mgt.TemplateManagerImplTest" time="0.001"/>
-  <testcase name="testGetDescription" classname="org.wso2.carbon.identity.template.mgt.model.TemplateTest" time="0.001"/>
+  <testcase name="testGetDescription" classname="org.wso2.carbon.identity.template.mgt.model.TemplateTest" time="0"/>
   <testcase name="testGetTemplateId" classname="org.wso2.carbon.identity.template.mgt.model.TemplateTest" time="0"/>
   <testcase name="testGetTemplateName" classname="org.wso2.carbon.identity.template.mgt.model.TemplateTest" time="0"/>
   <testcase name="testGetTemplateScript" classname="org.wso2.carbon.identity.template.mgt.model.TemplateTest" time="0"/>
   <testcase name="testGetTenantId" classname="org.wso2.carbon.identity.template.mgt.model.TemplateTest" time="0"/>
-  <testcase name="testSetDescription" classname="org.wso2.carbon.identity.template.mgt.model.TemplateTest" time="0.001"/>
+  <testcase name="testSetDescription" classname="org.wso2.carbon.identity.template.mgt.model.TemplateTest" time="0"/>
   <testcase name="testSetTemplateId" classname="org.wso2.carbon.identity.template.mgt.model.TemplateTest" time="0"/>
   <testcase name="testSetTemplateName" classname="org.wso2.carbon.identity.template.mgt.model.TemplateTest" time="0"/>
   <testcase name="testSetTemplateScript" classname="org.wso2.carbon.identity.template.mgt.model.TemplateTest" time="0"/>

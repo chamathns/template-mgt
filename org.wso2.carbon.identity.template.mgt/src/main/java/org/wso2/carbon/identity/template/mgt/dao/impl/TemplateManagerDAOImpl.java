@@ -19,6 +19,7 @@
 package org.wso2.carbon.identity.template.mgt.dao.impl;
 
 import org.apache.commons.io.IOUtils;
+import org.apache.commons.lang.StringUtils;
 import org.wso2.carbon.database.utils.jdbc.JdbcTemplate;
 import org.wso2.carbon.database.utils.jdbc.exceptions.DataAccessException;
 import org.wso2.carbon.identity.core.util.LambdaExceptionUtils;
@@ -31,8 +32,11 @@ import org.wso2.carbon.identity.template.mgt.exception.TemplateManagementServerE
 import org.wso2.carbon.identity.template.mgt.model.Template;
 import org.wso2.carbon.identity.template.mgt.util.JdbcUtils;
 
-import java.io.*;
+import java.io.ByteArrayInputStream;
+import java.io.IOException;
+import java.io.InputStream;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.List;
 
@@ -47,7 +51,7 @@ public class TemplateManagerDAOImpl implements TemplateManagerDAO {
 
         try {
             jdbcTemplate.executeUpdate(TemplateMgtConstants.SqlQueries.INSERT_TEMPLATE,(preparedStatement ->{
-                preparedStatement.setString(1,template.getTenantId().toString());
+                preparedStatement.setInt(1,template.getTenantId());
                 preparedStatement.setString(2,template.getTemplateName());
                 preparedStatement.setString(3,template.getDescription());
 //                preparedStatement.setString(4,template.getTemplateScript());
@@ -64,35 +68,62 @@ public class TemplateManagerDAOImpl implements TemplateManagerDAO {
         templateResult = new TemplateInfo(template.getTenantId(),template.getTemplateName());
         return templateResult;
     }
-    
+
     public Template getTemplateByName(String templateName, Integer tenantId) throws TemplateManagementException {
         Template template;
         JdbcTemplate jdbcTemplate = JdbcUtils.getNewTemplate();
         try {
-            template = jdbcTemplate.fetchSingleRecord(GET_TEMPLATE_BY_NAME, LambdaExceptionUtils.rethrowFunction(
-                    (resultSet, rowNumber) ->
-                    {
-                            return new Template(resultSet.getInt(1),
-                                    resultSet.getInt(2),
-                                    resultSet.getString(3),
-                                    resultSet.getString(4),
-        //                            resultSet.getString(5)),
-        //                            getBlobValue(resultSet.getBinaryStream(5))),
-                                    IOUtils.toString(resultSet.getBinaryStream(5)));
-
-                    }),
+            template = jdbcTemplate.fetchSingleRecord(GET_TEMPLATE_BY_NAME,((resultSet, rowNumber) ->
+            {Template template1= null;
+                try {
+                    template1 = new Template(resultSet.getInt(1),
+                            resultSet.getInt(2),
+                            resultSet.getString(3),
+                            resultSet.getString(4),
+//                            resultSet.getString(5)),
+                            IOUtils.toString(resultSet.getBinaryStream(5)));
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+                return template1;
+            }),
                     preparedStatement -> {
                         preparedStatement.setString(1,templateName);
                         preparedStatement.setInt(2,tenantId);
-            });
+                    });
         } catch (DataAccessException e) {
             throw new TemplateManagementServerException(String.format(ERROR_CODE_SELECT_TEMPLATE_BY_NAME.getMessage(),tenantId, templateName),
                     ERROR_CODE_SELECT_TEMPLATE_BY_NAME.getCode(),e);
-        } catch (java.io.IOException exception){
-
         }
         return template;
     }
+    
+//    public Template getTemplateByName(String templateName, Integer tenantId) throws TemplateManagementException {
+//        Template template;
+//        JdbcTemplate jdbcTemplate = JdbcUtils.getNewTemplate();
+//        try {
+//            template = jdbcTemplate.fetchSingleRecord(GET_TEMPLATE_BY_NAME, LambdaExceptionUtils.rethrowFunction(this::funn), LambdaExceptionUtils.rethrowConsumer(this::funn2));
+//        } catch (DataAccessException e) {
+//            throw new TemplateManagementServerException(String.format(ERROR_CODE_SELECT_TEMPLATE_BY_NAME.getMessage(),tenantId, templateName),
+//                    ERROR_CODE_SELECT_TEMPLATE_BY_NAME.getCode(),e);
+//        }
+//
+//        return template;
+//    }
+
+//    public Template funn(ResultSet resultSet, int rowNumber) throws SQLException, IOException {
+//
+//        return new Template(resultSet.getInt(1),
+//                resultSet.getInt(2),
+//                resultSet.getString(3),
+//                resultSet.getString(4),
+//                IOUtils.toString(resultSet.getBinaryStream(5)));
+//    }
+
+//    public void funn2(PreparedStatement preparedStatement) {
+//        preparedStatement.setString(1, templateName);
+//        preparedStatement.setInt(2, tenantId);
+//    }
 
     public List<TemplateInfo> getAllTemplates(Integer tenantId, Integer limit, Integer offset) throws TemplateManagementException {
 
@@ -198,31 +229,31 @@ public class TemplateManagerDAOImpl implements TemplateManagerDAO {
      * @return
      * @throws IOException
      */
-    private String getBlobValue(InputStream inputStream) {
-
-        if (inputStream != null) {
-            BufferedReader bufferedReader = null;
-            StringBuilder stringBuilder = new StringBuilder();
-            String line;
-            try {
-                bufferedReader = new BufferedReader(new InputStreamReader(inputStream));
-                while ((line = bufferedReader.readLine()) != null) {
-                    stringBuilder.append(line);
-                }
-            } catch (IOException e) {
-                e.printStackTrace();
-            } finally {
-                if (bufferedReader != null) {
-                    try {
-                        bufferedReader.close();
-                    } catch (IOException e) {
-                        e.printStackTrace();
-                    }
-                }
-            }
-
-            return stringBuilder.toString();
-        }
-        return null;
-    }
+//    private String getBlobValue(InputStream inputStream) {
+//
+//        if (inputStream != null) {
+//            BufferedReader bufferedReader = null;
+//            StringBuilder stringBuilder = new StringBuilder();
+//            String line;
+//            try {
+//                bufferedReader = new BufferedReader(new InputStreamReader(inputStream));
+//                while ((line = bufferedReader.readLine()) != null) {
+//                    stringBuilder.append(line);
+//                }
+//            } catch (IOException e) {
+//                e.printStackTrace();
+//            } finally {
+//                if (bufferedReader != null) {
+//                    try {
+//                        bufferedReader.close();
+//                    } catch (IOException e) {
+//                        e.printStackTrace();
+//                    }
+//                }
+//            }
+//
+//            return stringBuilder.toString();
+//        }
+//        return null;
+//    }
 }

@@ -269,11 +269,11 @@ From: 'WSO2' (http://www.wso2.org/)
     License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
   - Carbon Configuration (http://wso2.com) org.wso2.carbon.config:org.wso2.carbon.config:bundle:2.1.0
     License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
-  - WSO2 Carbon - Identity Application Common Bundle (http://wso2.org/org.wso2.carbon.identity.application.common) org.wso2.carbon.identity.framework:org.wso2.carbon.identity.application.common:bundle:5.12.134
+  - WSO2 Carbon - Identity Application Common Bundle (http://wso2.org/org.wso2.carbon.identity.application.common) org.wso2.carbon.identity.framework:org.wso2.carbon.identity.application.common:bundle:5.12.199-SNAPSHOT
     License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
-  - WSO2 Carbon - Identity Base (http://www.wso2.com) org.wso2.carbon.identity.framework:org.wso2.carbon.identity.base:bundle:5.12.134
+  - WSO2 Carbon - Identity Base (http://www.wso2.com) org.wso2.carbon.identity.framework:org.wso2.carbon.identity.base:bundle:5.12.199-SNAPSHOT
     License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
-  - WSO2 Carbon - Identity Core (http://www.wso2.com) org.wso2.carbon.identity.framework:org.wso2.carbon.identity.core:bundle:5.12.134
+  - WSO2 Carbon - Identity Core (http://www.wso2.com) org.wso2.carbon.identity.framework:org.wso2.carbon.identity.core:bundle:5.12.199-SNAPSHOT
     License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
   - WSO2 Carbon Secure Vault - Component (http://wso2.com) org.wso2.carbon.secvault:org.wso2.carbon.secvault:bundle:5.0.8
     License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)

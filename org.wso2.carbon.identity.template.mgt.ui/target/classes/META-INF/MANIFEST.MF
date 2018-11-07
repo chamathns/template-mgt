@@ -1,5 +1,5 @@
 Manifest-Version: 1.0
-Bnd-LastModified: 1541481614066
+Bnd-LastModified: 1541607506177
 Build-Jdk: 1.8.0_181
 Built-By: chamath
 Bundle-Description: Template Management UI component for WSO2 Carbon
