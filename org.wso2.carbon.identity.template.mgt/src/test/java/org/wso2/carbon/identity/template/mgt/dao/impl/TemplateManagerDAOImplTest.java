@@ -261,7 +261,7 @@ public class TemplateManagerDAOImplTest extends PowerMockTestCase {
                 Assert.assertEquals(((Template) templateObject).getTenantId(),templateByName.getTenantId());
                 Assert.assertEquals(((Template) templateObject).getTemplateName(),templateByName.getTemplateName());
                 Assert.assertEquals(((Template) templateObject).getDescription(),templateByName.getDescription());
-                Assert.assertEquals(((Template) templateObject).getTemplateScript().trim(),templateByName.getTemplateScript().trim());
+                Assert.assertEquals(((Template) templateObject).getTemplateScript(),templateByName.getTemplateScript());
             }
         }
     }

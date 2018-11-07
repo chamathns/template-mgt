@@ -18,8 +18,10 @@
 
 package org.wso2.carbon.identity.template.mgt.dao.impl;
 
+import org.apache.commons.io.IOUtils;
 import org.wso2.carbon.database.utils.jdbc.JdbcTemplate;
 import org.wso2.carbon.database.utils.jdbc.exceptions.DataAccessException;
+import org.wso2.carbon.identity.core.util.LambdaExceptionUtils;
 import org.wso2.carbon.identity.template.mgt.model.TemplateInfo;
 import org.wso2.carbon.identity.template.mgt.util.TemplateMgtUtils;
 import org.wso2.carbon.identity.template.mgt.TemplateMgtConstants;
@@ -67,13 +69,18 @@ public class TemplateManagerDAOImpl implements TemplateManagerDAO {
         Template template;
         JdbcTemplate jdbcTemplate = JdbcUtils.getNewTemplate();
         try {
-            template = jdbcTemplate.fetchSingleRecord(GET_TEMPLATE_BY_NAME,(resultSet, rowNumber) ->
-                    new Template(resultSet.getInt(1),
-                            resultSet.getInt(2),
-                            resultSet.getString(3),
-                            resultSet.getString(4),
-//                            resultSet.getString(5)),
-                            getBlobValue(resultSet.getBinaryStream(5))),
+            template = jdbcTemplate.fetchSingleRecord(GET_TEMPLATE_BY_NAME, LambdaExceptionUtils.rethrowFunction(
+                    (resultSet, rowNumber) ->
+                    {
+                            return new Template(resultSet.getInt(1),
+                                    resultSet.getInt(2),
+                                    resultSet.getString(3),
+                                    resultSet.getString(4),
+        //                            resultSet.getString(5)),
+        //                            getBlobValue(resultSet.getBinaryStream(5))),
+                                    IOUtils.toString(resultSet.getBinaryStream(5)));
+
+                    }),
                     preparedStatement -> {
                         preparedStatement.setString(1,templateName);
                         preparedStatement.setInt(2,tenantId);
@@ -81,6 +88,8 @@ public class TemplateManagerDAOImpl implements TemplateManagerDAO {
         } catch (DataAccessException e) {
             throw new TemplateManagementServerException(String.format(ERROR_CODE_SELECT_TEMPLATE_BY_NAME.getMessage(),tenantId, templateName),
                     ERROR_CODE_SELECT_TEMPLATE_BY_NAME.getCode(),e);
+        } catch (java.io.IOException exception){
+
         }
         return template;
     }
