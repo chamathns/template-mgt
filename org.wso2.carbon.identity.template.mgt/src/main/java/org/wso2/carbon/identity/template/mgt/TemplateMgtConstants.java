@@ -54,7 +54,13 @@ public class TemplateMgtConstants {
                                                                     "t.* FROM IDN_TEMPLATE_MGT AS t) WHERE " +
                                                                     "TENANT_ID=? AND rn BETWEEN ? AND ?";
 
-        public static final String LIST_PAGINATED_TEMPLATES_MSSQL = "SELECT NAME,DESCRIPTION FROM IDN_TEMPLATE_MGT WHERE TENANT_ID=? ORDER BY TEMPLATE_ID ASC LIMIT ? OFFSET ?";
+
+
+        public static final String LIST_PAGINATED_TEMPLATES_MSSQL = "SELECT NAME, DESCRIPTION FROM (SELECT TENANT_ID, NAME, DESCRIPTION, ROW_NUMBER() OVER " +
+                                                                    "(ORDER BY TEMPLATE_ID) AS RowNum FROM IDN_TEMPLATE_MGT) AS T WHERE T" +
+                                                                    ".TENANT_ID = ? AND T.RowNum BETWEEN ? AND ?";
+
+
         public static final String LIST_PAGINATED_TEMPLATES_INFORMIX = "SELECT NAME,DESCRIPTION FROM IDN_TEMPLATE_MGT WHERE TENANT_ID=? ORDER BY TEMPLATE_ID ASC LIMIT ? OFFSET ?";
         public static final String LIST_PAGINATED_TEMPLATES_ORACLE = "SELECT NAME,DESCRIPTION FROM IDN_TEMPLATE_MGT WHERE TENANT_ID=? ORDER BY TEMPLATE_ID ASC LIMIT ? OFFSET ?";
 

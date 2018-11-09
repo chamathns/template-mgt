@@ -58,7 +58,7 @@ TemplatesApiServiceImpl extends TemplatesApiService {
             return handleBadRequestResponse(e);
         }catch (TemplateManagementException e){
             return handleServerErrorResponse(e);
-        }catch (Throwable throwable){
+}catch (Throwable throwable){
             return handleUnexpectedServerError(throwable);
         }
     }

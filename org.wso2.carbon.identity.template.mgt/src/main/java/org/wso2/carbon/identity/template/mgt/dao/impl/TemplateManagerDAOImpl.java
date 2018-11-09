@@ -55,6 +55,7 @@ public class TemplateManagerDAOImpl implements TemplateManagerDAO {
                 preparedStatement.setString(2,template.getTemplateName());
                 preparedStatement.setString(3,template.getDescription());
 //                preparedStatement.setString(4,template.getTemplateScript());
+//                preparedStatement.setBinaryStream(4, IOUtils.toInputStream(template.getTemplateScript()));
                 try {
                     setBlobValue(template.getTemplateScript(),preparedStatement,4);
                 } catch (IOException e) {
