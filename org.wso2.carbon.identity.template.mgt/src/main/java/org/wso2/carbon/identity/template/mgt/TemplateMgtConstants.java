@@ -62,7 +62,9 @@ public class TemplateMgtConstants {
 
 
         public static final String LIST_PAGINATED_TEMPLATES_INFORMIX = "SELECT NAME,DESCRIPTION FROM IDN_TEMPLATE_MGT WHERE TENANT_ID=? ORDER BY TEMPLATE_ID ASC LIMIT ? OFFSET ?";
-        public static final String LIST_PAGINATED_TEMPLATES_ORACLE = "SELECT NAME,DESCRIPTION FROM IDN_TEMPLATE_MGT WHERE TENANT_ID=? ORDER BY TEMPLATE_ID ASC LIMIT ? OFFSET ?";
+        public static final String LIST_PAGINATED_TEMPLATES_ORACLE = "SELECT NAME,DESCRIPTION FROM (SELECT TENANT_ID, NAME, DESCRIPTION, rownum AS rnum FROM " +
+                                                                        "(SELECT TENANT_ID, NAME, DESCRIPTION FROM IDN_TEMPLATE_MGT ORDER BY TENANT_ID) " +
+                                                                        "WHERE TENANT_ID =? AND rownum <= ?) WHERE rnum > ?";
 
         public static final String UPDATE_TEMPLATE = "UPDATE IDN_TEMPLATE_MGT SET NAME= ?, DESCRIPTION= ?, TEMPLATE_SCRIPT= ? WHERE TENANT_ID= ? AND NAME = ?";
         public static final String DELETE_TEMPLATE = "DELETE FROM IDN_TEMPLATE_MGT WHERE NAME=? AND TENANT_ID =?";
