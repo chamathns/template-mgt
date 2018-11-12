@@ -20,12 +20,15 @@ package org.wso2.carbon.identity.template.mgt.internal;
 import javax.sql.DataSource;
 
 public class TemplateManagerComponentDataHolder {
+
     private static TemplateManagerComponentDataHolder instance = new TemplateManagerComponentDataHolder();
     private DataSource dataSource;
 
-    public static TemplateManagerComponentDataHolder getInstance(){
+    public static TemplateManagerComponentDataHolder getInstance() {
+
         return instance;
     }
+
     public DataSource getDataSource() {
 
         return dataSource;

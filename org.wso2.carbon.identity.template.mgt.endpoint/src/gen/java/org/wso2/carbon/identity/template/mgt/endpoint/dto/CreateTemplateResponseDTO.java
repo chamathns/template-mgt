@@ -18,60 +18,54 @@
 
 package org.wso2.carbon.identity.template.mgt.endpoint.dto;
 
-
-import io.swagger.annotations.*;
-import com.fasterxml.jackson.annotation.*;
-
-import javax.validation.constraints.NotNull;
-
-
-
-
+import com.fasterxml.jackson.annotation.JsonProperty;
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
 
 @ApiModel(description = "")
-public class CreateTemplateResponseDTO  {
-  
-  
-  
-  private String token = null;
-  
-  
-  private String createdBy = null;
+public class CreateTemplateResponseDTO {
 
-  
-  /**
-   **/
-  @ApiModelProperty(value = "")
-  @JsonProperty("token")
-  public String getToken() {
-    return token;
-  }
-  public void setToken(String token) {
-    this.token = token;
-  }
+    private String token = null;
 
-  
-  /**
-   **/
-  @ApiModelProperty(value = "")
-  @JsonProperty("createdBy")
-  public String getCreatedBy() {
-    return createdBy;
-  }
-  public void setCreatedBy(String createdBy) {
-    this.createdBy = createdBy;
-  }
+    private String createdBy = null;
 
-  
+    /**
+     **/
+    @ApiModelProperty(value = "")
+    @JsonProperty("token")
+    public String getToken() {
 
-  @Override
-  public String toString()  {
-    StringBuilder sb = new StringBuilder();
-    sb.append("class CreateTemplateResponseDTO {\n");
-    
-    sb.append("  token: ").append(token).append("\n");
-    sb.append("  createdBy: ").append(createdBy).append("\n");
-    sb.append("}\n");
-    return sb.toString();
-  }
+        return token;
+    }
+
+    public void setToken(String token) {
+
+        this.token = token;
+    }
+
+    /**
+     **/
+    @ApiModelProperty(value = "")
+    @JsonProperty("createdBy")
+    public String getCreatedBy() {
+
+        return createdBy;
+    }
+
+    public void setCreatedBy(String createdBy) {
+
+        this.createdBy = createdBy;
+    }
+
+    @Override
+    public String toString() {
+
+        StringBuilder sb = new StringBuilder();
+        sb.append("class CreateTemplateResponseDTO {\n");
+
+        sb.append("  token: ").append(token).append("\n");
+        sb.append("  createdBy: ").append(createdBy).append("\n");
+        sb.append("}\n");
+        return sb.toString();
+    }
 }

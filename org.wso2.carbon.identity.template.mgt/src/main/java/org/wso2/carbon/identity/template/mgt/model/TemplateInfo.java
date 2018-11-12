@@ -19,21 +19,27 @@
 package org.wso2.carbon.identity.template.mgt.model;
 
 public class TemplateInfo {
+
     private Integer templateId;
     private Integer tenantId;
     private String templateName;
     private String description;
 
-    public TemplateInfo (Integer templateId, Integer tenantId, String templateName){
+    public TemplateInfo(Integer templateId, Integer tenantId, String templateName) {
+
         this.templateId = templateId;
         this.tenantId = tenantId;
         this.templateName = templateName;
     }
-    public TemplateInfo(Integer tenantId, String templateName){
+
+    public TemplateInfo(Integer tenantId, String templateName) {
+
         this.tenantId = tenantId;
         this.templateName = templateName;
     }
-    public TemplateInfo(String templateName, String description){
+
+    public TemplateInfo(String templateName, String description) {
+
         this.templateName = templateName;
         this.description = description;
     }
@@ -44,9 +50,9 @@ public class TemplateInfo {
      * @return template ID
      */
     public Integer getTemplateId() {
+
         return templateId;
     }
-
 
     /**
      * Get tenant ID.
@@ -54,9 +60,9 @@ public class TemplateInfo {
      * @return tenant ID
      */
     public Integer getTenantId() {
+
         return tenantId;
     }
-
 
     /**
      * Get template name.
@@ -64,6 +70,7 @@ public class TemplateInfo {
      * @return template name
      */
     public String getTemplateName() {
+
         return templateName;
     }
 
@@ -73,8 +80,8 @@ public class TemplateInfo {
      * @return template description
      */
     public String getDescription() {
+
         return description;
     }
-
 
 }

@@ -18,26 +18,32 @@
 package org.wso2.carbon.identity.template.mgt.model;
 
 public class Template {
+
     private Integer templateId;
     private Integer tenantId;
     private String templateName;
     private String description;
     private String templateScript;
 
-    public Template(Integer templateId, Integer tenantId, String templateName, String description, String templateScript){
+    public Template(Integer templateId, Integer tenantId, String templateName, String description, String templateScript) {
+
         this.templateId = templateId;
         this.tenantId = tenantId;
         this.templateName = templateName;
         this.description = description;
         this.templateScript = templateScript;
     }
-    public Template(Integer tenantId, String templateName, String description, String templateScript){
+
+    public Template(Integer tenantId, String templateName, String description, String templateScript) {
+
         this.tenantId = tenantId;
         this.templateName = templateName;
         this.description = description;
         this.templateScript = templateScript;
     }
-    public Template(String templateName, String description, String templateScript){
+
+    public Template(String templateName, String description, String templateScript) {
+
         this.templateName = templateName;
         this.description = description;
         this.templateScript = templateScript;
@@ -49,6 +55,7 @@ public class Template {
      * @return template ID
      */
     public Integer getTemplateId() {
+
         return templateId;
     }
 
@@ -58,9 +65,9 @@ public class Template {
      * @param templateId template ID
      */
     public void setTemplateId(Integer templateId) {
+
         this.templateId = templateId;
     }
-
 
     /**
      * Get tenant ID.
@@ -68,6 +75,7 @@ public class Template {
      * @return tenant ID
      */
     public Integer getTenantId() {
+
         return tenantId;
     }
 
@@ -77,9 +85,9 @@ public class Template {
      * @param tenantId tenant ID
      */
     public void setTenantId(Integer tenantId) {
+
         this.tenantId = tenantId;
     }
-
 
     /**
      * Get template name.
@@ -87,6 +95,7 @@ public class Template {
      * @return template name
      */
     public String getTemplateName() {
+
         return templateName;
     }
 
@@ -96,6 +105,7 @@ public class Template {
      * @param templateName template name
      */
     public void setTemplateName(String templateName) {
+
         this.templateName = templateName;
     }
 
@@ -105,6 +115,7 @@ public class Template {
      * @return template description
      */
     public String getDescription() {
+
         return description;
     }
 
@@ -114,6 +125,7 @@ public class Template {
      * @param description template description
      */
     public void setDescription(String description) {
+
         this.description = description;
     }
 
@@ -123,6 +135,7 @@ public class Template {
      * @return templateScript
      */
     public String getTemplateScript() {
+
         return templateScript;
     }
 
@@ -132,6 +145,7 @@ public class Template {
      * @param content templateScript
      */
     public void setTemplateScript(String content) {
+
         this.templateScript = content;
     }
 }

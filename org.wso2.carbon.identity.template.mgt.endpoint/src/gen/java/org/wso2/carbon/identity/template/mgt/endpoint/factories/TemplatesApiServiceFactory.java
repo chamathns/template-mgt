@@ -23,10 +23,10 @@ import org.wso2.carbon.identity.template.mgt.endpoint.impl.TemplatesApiServiceIm
 
 public class TemplatesApiServiceFactory {
 
-   private final static TemplatesApiService service = new TemplatesApiServiceImpl();
+    private final static TemplatesApiService service = new TemplatesApiServiceImpl();
 
-   public static TemplatesApiService getTemplatesApi()
-   {
-      return service;
-   }
+    public static TemplatesApiService getTemplatesApi() {
+
+        return service;
+    }
 }

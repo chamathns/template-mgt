@@ -23,12 +23,9 @@ package org.wso2.carbon.identity.template.mgt.exception;
  */
 public class TemplateManagementClientException extends TemplateManagementException {
 
-
     public TemplateManagementClientException(String message, String errorCode) {
 
         super(message, errorCode);
     }
-
-
 
 }

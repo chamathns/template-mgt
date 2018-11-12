@@ -21,7 +21,7 @@
         <transports>
             <transport>https</transport>
         </transports>
-        <schema schemaNamespace="http://org.apache.axis2/xsd" elementFormDefaultQualified="true" />
+        <schema schemaNamespace="http://org.apache.axis2/xsd" elementFormDefaultQualified="true"/>
         <description>Function library related functionality</description>
         <parameter name="ServiceClass">org.wso2.carbon.identity.template.mgt.TemplateManager</parameter>
 

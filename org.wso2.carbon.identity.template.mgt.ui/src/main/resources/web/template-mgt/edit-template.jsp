@@ -73,45 +73,42 @@
 <script type="text/javascript" src="../identity/validation/js/identity-validate.js"></script>
 
 
-
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
-<%@ taglib prefix="carbon" uri="http://wso2.org/projects/carbon/taglibs/carbontags.jar"%>
-<%@ page import="org.wso2.carbon.ui.CarbonUIUtil" %>
-<%@ page import="org.wso2.carbon.ui.CarbonUIMessage" %>
-<%@ page import="java.util.ResourceBundle" %>
-<%@ page import="org.wso2.carbon.utils.ServerConstants" %>
-<%@ page import="org.apache.axis2.context.ConfigurationContext" %>
-<%@ page import="org.wso2.carbon.CarbonConstants" %>
+<%@ taglib prefix="carbon" uri="http://wso2.org/projects/carbon/taglibs/carbontags.jar" %>
 <%@ page import="org.owasp.encoder.Encode" %>
 <%@ page import="org.wso2.carbon.identity.template.mgt.model.Template" %>
 <%@ page import="org.wso2.carbon.identity.template.mgt.ui.client.TemplateManagementServiceClient" %>
-<jsp:include page="../dialog/display_messages.jsp" />
+<%@ page import="org.wso2.carbon.ui.CarbonUIMessage" %>
+<%@ page import="java.util.ResourceBundle" %>
+<jsp:include page="../dialog/display_messages.jsp"/>
 
 <script type="text/javascript">
     function UpdateTemplateOnclick() {
         var templateName = document.getElementById("templateName").value.trim();
         var oldTemplateName = document.getElementById("oldTemplateName").value.trim();
         console.log(templateName);
-        if( templateName == '') {
+        if (templateName == '') {
             CARBON.showWarningDialog('Please provide template Name');
             location.href = '#';
             /*} else if (!validateTextForIllegal(document.getElementById("templateName"))) {
                      return false;*/
-        }else {
-            if(templateName != oldTemplateName){
+        } else {
+            if (templateName != oldTemplateName) {
                 CARBON.showConfirmationDialog('Are you sure you want to edit "' + oldTemplateName + '" Template name ? \n WARN: If you edit this library name, ' +
                     'the authentication scripts which used this will no longer function properly!',
-                    doEdit,null);
+                    doEdit, null);
             }
-            else{
+            else {
                 doEdit();
             }
-            function doEdit(){
+
+            function doEdit() {
                 $("#update-template-form").submit();
                 return true;
             }
         }
     }
+
     function validateTextForIllegal(fild) {
         var isValid = doValidateInput(fild, "Provided template name is invalid.");
         if (isValid) {
@@ -126,55 +123,60 @@
     <carbon:breadcrumb label="template.mgt"
                        resourceBundle="org.wso2.carbon.identity.template.mgt.ui.i18n.Resources"
                        topPage="true" request="<%=request%>"/>
-
-
-
+    
+    
     <%
         String templateName = request.getParameter("templateName");
         String BUNDLE = "org.wso2.carbon.identity.template.mgt.ui.i18n.Resources";
         ResourceBundle resourceBundle = ResourceBundle.getBundle(BUNDLE, request.getLocale());
-        Template template =null;
+        Template template = null;
         if (templateName != null && !"".equals(templateName)) {
-
+            
             try {
                 String currentUser = (String) session.getAttribute("logged-user");
                 TemplateManagementServiceClient serviceClient = new TemplateManagementServiceClient(currentUser);
                 template = serviceClient.getTemplateByName(templateName);
-
-
+                
             } catch (Exception e) {
                 String message = resourceBundle.getString("alert.error.while.reading.template") + " : " + e.getMessage();
                 CarbonUIMessage.sendCarbonUIMessage(message, CarbonUIMessage.ERROR, request, e);
             }
         }
-
+    
     %>
     <div id="workArea">
         <div id="middle">
             <h2>Edit Template</h2>
-
+            
             <form id="update-template-form" name="update-template-form" method="post"
                   action="edit-template-finish.jsp">
-
-                <input type="hidden" name="oldTemplateName" id="oldTemplateName" value="<%=Encode.forHtmlAttribute(templateName)%>"/>
-
-                <div class="sectionSeperator togglebleTitle"><fmt:message key='title.config.template.basic.config'/></div>
+                
+                <input type="hidden" name="oldTemplateName" id="oldTemplateName"
+                       value="<%=Encode.forHtmlAttribute(templateName)%>"/>
+                
+                <div class="sectionSeperator togglebleTitle"><fmt:message
+                        key='title.config.template.basic.config'/></div>
                 <div class="sectionSub">
                     <table class="carbonFormTable">
                         <tr>
-                            <td style="width:15%" class="leftCol-med labelField"><fmt:message key='config.template.info.basic.name'/>:<span class="required">*</span></td>
+                            <td style="width:15%" class="leftCol-med labelField"><fmt:message
+                                    key='config.template.info.basic.name'/>:<span class="required">*</span></td>
                             <td>
-                                <input id="templateName" name="templateName" type="text" value="<%=Encode.forHtmlAttribute(templateName)%>" white-list-patterns="^[a-zA-Z0-9\s._-]*$" autofocus/>
+                                <input id="templateName" name="templateName" type="text"
+                                       value="<%=Encode.forHtmlAttribute(templateName)%>"
+                                       white-list-patterns="^[a-zA-Z0-9\s._-]*$" autofocus/>
                                 <div class="sectionHelp">
                                     <fmt:message key='help.name'/>
                                 </div>
                             </td>
                         </tr>
                         <tr>
-
+                            
                             <td class="leftCol-med labelField">Description:</td>
                             <td>
-                                <textarea style="width:50%" type="text" name="template-description" id="template-description" class="text-box-big"><%=template.getDescription() != null ? Encode.forHtmlContent(template.getDescription()):""%>
+                                <textarea style="width:50%" type="text" name="template-description"
+                                          id="template-description"
+                                          class="text-box-big"><%=template.getDescription() != null ? Encode.forHtmlContent(template.getDescription()) : ""%>
                                 </textarea>
                                 <div class="sectionHelp">
                                     <fmt:message key='help.desc'/>
@@ -183,7 +185,7 @@
                         </tr>
                     </table>
                 </div>
-
+                
                 <h2 id="authentication_step_config_head" class="sectionSeperator trigger active">
                     <a href="#">Template Script</a>
                 </h2>
@@ -194,16 +196,17 @@
                       placeholder="Write JavaScript Function..."
                       style="height: 500px;width: 100%; display: none;"><%=template.getTemplateScript() != null ? Encode.forHtmlContent(template.getTemplateScript()) : "" %>
             </textarea>
-
+                        
                         </div>
-
+                    
                     </div>
                 </div>
                 <div style="clear:both"></div>
                 <div class="buttonRow" style=" margin-top: 10px;">
                     <input id="update" type="button" value="<fmt:message key='button.update.template.manager'/>"
                            onclick="UpdateTemplateOnclick()"/>
-                    <input type="button" onclick="javascript:location.href='list-templates.jsp'" value="<fmt:message key='button.cancel'/>" />
+                    <input type="button" onclick="javascript:location.href='list-templates.jsp'"
+                           value="<fmt:message key='button.cancel'/>"/>
                 </div>
             </form>
         </div>

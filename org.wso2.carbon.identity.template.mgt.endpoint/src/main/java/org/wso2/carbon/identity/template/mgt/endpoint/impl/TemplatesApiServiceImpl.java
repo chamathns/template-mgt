@@ -23,113 +23,122 @@ import org.apache.commons.logging.LogFactory;
 import org.wso2.carbon.identity.template.mgt.TemplateMgtConstants;
 import org.wso2.carbon.identity.template.mgt.endpoint.TemplatesApiService;
 import org.wso2.carbon.identity.template.mgt.endpoint.dto.AddTemplateResponseDTO;
+import org.wso2.carbon.identity.template.mgt.endpoint.dto.GetTemplatesResponseDTO;
 import org.wso2.carbon.identity.template.mgt.endpoint.dto.TemplateRequestDTO;
+import org.wso2.carbon.identity.template.mgt.endpoint.dto.UpdateSuccessResponseDTO;
+import org.wso2.carbon.identity.template.mgt.endpoint.dto.UpdateTemplateRequestDTO;
 import org.wso2.carbon.identity.template.mgt.endpoint.util.TemplateEndpointUtils;
-import org.wso2.carbon.identity.template.mgt.endpoint.dto.*;
+import org.wso2.carbon.identity.template.mgt.exception.TemplateManagementClientException;
+import org.wso2.carbon.identity.template.mgt.exception.TemplateManagementException;
+import org.wso2.carbon.identity.template.mgt.model.Template;
+import org.wso2.carbon.identity.template.mgt.model.TemplateInfo;
 
 import java.net.URI;
 import java.net.URISyntaxException;
 import java.util.List;
-
-import org.wso2.carbon.identity.template.mgt.exception.TemplateManagementClientException;
-import org.wso2.carbon.identity.template.mgt.exception.TemplateManagementException;
-import org.wso2.carbon.identity.template.mgt.exception.TemplateManagementServerException;
-import org.wso2.carbon.identity.template.mgt.model.Template;
-import org.wso2.carbon.identity.template.mgt.model.TemplateInfo;
-
 import javax.ws.rs.core.Response;
 
-import static org.wso2.carbon.identity.template.mgt.TemplateMgtConstants.ErrorMessages.*;
+import static org.wso2.carbon.identity.template.mgt.TemplateMgtConstants.ErrorMessages.ERROR_CODE_NO_AUTH_USER_FOUND;
+import static org.wso2.carbon.identity.template.mgt.TemplateMgtConstants.ErrorMessages.ERROR_CODE_TEMPLATE_ALREADY_EXIST;
+import static org.wso2.carbon.identity.template.mgt.TemplateMgtConstants.ErrorMessages.ERROR_CODE_TEMPLATE_ID_INVALID;
+import static org.wso2.carbon.identity.template.mgt.TemplateMgtConstants.ErrorMessages.ERROR_CODE_TEMPLATE_NAME_INVALID;
+import static org.wso2.carbon.identity.template.mgt.TemplateMgtConstants.ErrorMessages.ERROR_CODE_TENANT_ID_INVALID;
+import static org.wso2.carbon.identity.template.mgt.TemplateMgtConstants.ErrorMessages.ERROR_CODE_UNEXPECTED;
+import static org.wso2.carbon.identity.template.mgt.TemplateMgtConstants.ErrorMessages.ERROR_CODE_USER_NOT_AUTHORIZED;
 
 public class
 TemplatesApiServiceImpl extends TemplatesApiService {
-    private static final Log LOG = LogFactory.getLog(TemplatesApiServiceImpl.class);
 
+    private static final Log LOG = LogFactory.getLog(TemplatesApiServiceImpl.class);
 
     @Override
     public Response addTemplate(TemplateRequestDTO template) {
+
         try {
             AddTemplateResponseDTO response = postTemplate(template);
             return Response.ok()
                     .entity(response)
                     .location(getTemplateLocationURI(response))
                     .build();
-        } catch (TemplateManagementClientException e){
+        } catch (TemplateManagementClientException e) {
             return handleBadRequestResponse(e);
-        }catch (TemplateManagementException e){
+        } catch (TemplateManagementException e) {
             return handleServerErrorResponse(e);
-}catch (Throwable throwable){
+        } catch (Throwable throwable) {
             return handleUnexpectedServerError(throwable);
         }
     }
 
     @Override
-    public Response updateTemplate(String templateName, UpdateTemplateRequestDTO updateTemplateRequestDTO){
+    public Response updateTemplate(String templateName, UpdateTemplateRequestDTO updateTemplateRequestDTO) {
+
         try {
-            UpdateSuccessResponseDTO response = putTemplate(templateName,updateTemplateRequestDTO);
+            UpdateSuccessResponseDTO response = putTemplate(templateName, updateTemplateRequestDTO);
             return Response.ok()
                     .entity(response)
                     .location(getUpdatedTemplateLocationURI(response))
                     .build();
-        } catch (TemplateManagementClientException e){
+        } catch (TemplateManagementClientException e) {
             return handleBadRequestResponse(e);
-        }catch (TemplateManagementException e){
+        } catch (TemplateManagementException e) {
             return handleServerErrorResponse(e);
-        }catch (Throwable throwable){
+        } catch (Throwable throwable) {
             return handleUnexpectedServerError(throwable);
         }
     }
 
     @Override
-    public Response getTemplateByName(String templateName){
+    public Response getTemplateByName(String templateName) {
+
         try {
             Template template = getTemplate(templateName);
             return Response.ok()
                     .entity(template)
                     .build();
-        } catch (TemplateManagementClientException e){
+        } catch (TemplateManagementClientException e) {
             return handleBadRequestResponse(e);
-        }catch (TemplateManagementException e){
+        } catch (TemplateManagementException e) {
             return handleServerErrorResponse(e);
-        }catch (Throwable throwable){
+        } catch (Throwable throwable) {
             return handleUnexpectedServerError(throwable);
         }
     }
 
-
     @Override
-    public Response deleteTemplate(String templateName){
+    public Response deleteTemplate(String templateName) {
+
         try {
             TemplateEndpointUtils.getTemplateManager().deleteTemplate(templateName);
             return Response.ok()
                     .build();
-        } catch (TemplateManagementClientException e){
+        } catch (TemplateManagementClientException e) {
             return handleBadRequestResponse(e);
-        }catch (TemplateManagementException e){
+        } catch (TemplateManagementException e) {
             return handleServerErrorResponse(e);
-        }catch (Throwable throwable){
+        } catch (Throwable throwable) {
             return handleUnexpectedServerError(throwable);
         }
     }
 
     @Override
-    public Response getTemplates(Integer limit,Integer offset){
+    public Response getTemplates(Integer limit, Integer offset) {
+
         try {
-            List<GetTemplatesResponseDTO> getTemplatesResponseDTOS = getTemplatesList(limit,offset);
+            List<GetTemplatesResponseDTO> getTemplatesResponseDTOS = getTemplatesList(limit, offset);
             return Response.ok()
                     .entity(getTemplatesResponseDTOS)
                     .build();
-        } catch (TemplateManagementClientException e){
+        } catch (TemplateManagementClientException e) {
             return handleBadRequestResponse(e);
-        }catch (TemplateManagementException e){
+        } catch (TemplateManagementException e) {
             return handleServerErrorResponse(e);
-        }catch (Throwable throwable){
+        } catch (Throwable throwable) {
             return handleUnexpectedServerError(throwable);
         }
     }
 
+    private List<GetTemplatesResponseDTO> getTemplatesList(Integer limit, Integer offset) throws TemplateManagementException {
 
-    private List<GetTemplatesResponseDTO> getTemplatesList (Integer limit, Integer offset) throws TemplateManagementException {
         if (limit == null) {
             limit = 0;
         }
@@ -141,8 +150,8 @@ TemplatesApiServiceImpl extends TemplatesApiService {
         return TemplateEndpointUtils.getTemplatesResponseDTOList(templates);
     }
 
-
     private AddTemplateResponseDTO postTemplate(TemplateRequestDTO templateDTO) throws TemplateManagementException {
+
         Template templateRequest = TemplateEndpointUtils.getTemplateRequest(templateDTO);
         TemplateInfo templateResponse = TemplateEndpointUtils.getTemplateManager().addTemplate(templateRequest);
 
@@ -153,38 +162,44 @@ TemplatesApiServiceImpl extends TemplatesApiService {
     }
 
     private UpdateSuccessResponseDTO putTemplate(String templateName, UpdateTemplateRequestDTO updateTemplateRequestDTO) throws TemplateManagementException {
-        Template updateTemplateRequest = TemplateEndpointUtils.getTemplateUpdateRequest(updateTemplateRequestDTO);
-        TemplateInfo updateTemplateResponse = TemplateEndpointUtils.getTemplateManager().updateTemplate(templateName,updateTemplateRequest);
 
-        UpdateSuccessResponseDTO responseDTO= new UpdateSuccessResponseDTO();
+        Template updateTemplateRequest = TemplateEndpointUtils.getTemplateUpdateRequest(updateTemplateRequestDTO);
+        TemplateInfo updateTemplateResponse = TemplateEndpointUtils.getTemplateManager().updateTemplate(templateName, updateTemplateRequest);
+
+        UpdateSuccessResponseDTO responseDTO = new UpdateSuccessResponseDTO();
         responseDTO.setName(updateTemplateResponse.getTemplateName());
         responseDTO.setTenantId(updateTemplateResponse.getTenantId().toString());
         return responseDTO;
     }
 
     private Template getTemplate(String templateName) throws TemplateManagementException {
+
         Template getTemplateResponse = TemplateEndpointUtils.getTemplateManager().getTemplateByName(templateName);
         return getTemplateResponse;
     }
 
     private URI getTemplateLocationURI(AddTemplateResponseDTO response) throws URISyntaxException {
-        return new URI(TemplateMgtConstants.TEMPLATE_RESOURCE_PATH + response.getTenantId());
-    }
-    private URI getUpdatedTemplateLocationURI(UpdateSuccessResponseDTO response) throws URISyntaxException {
+
         return new URI(TemplateMgtConstants.TEMPLATE_RESOURCE_PATH + response.getTenantId());
     }
 
-    private Response handleBadRequestResponse(TemplateManagementClientException e){
-        if (isConflictError(e)){
-            throw TemplateEndpointUtils.buildConflictRequestException(e.getMessage(),e.getErrorCode(),LOG,e);
+    private URI getUpdatedTemplateLocationURI(UpdateSuccessResponseDTO response) throws URISyntaxException {
+
+        return new URI(TemplateMgtConstants.TEMPLATE_RESOURCE_PATH + response.getTenantId());
+    }
+
+    private Response handleBadRequestResponse(TemplateManagementClientException e) {
+
+        if (isConflictError(e)) {
+            throw TemplateEndpointUtils.buildConflictRequestException(e.getMessage(), e.getErrorCode(), LOG, e);
         }
-        if (isForbiddenError(e)){
-            throw TemplateEndpointUtils.buildForbiddenException(e.getMessage(),e.getErrorCode(),LOG,e);
+        if (isForbiddenError(e)) {
+            throw TemplateEndpointUtils.buildForbiddenException(e.getMessage(), e.getErrorCode(), LOG, e);
         }
-        if (isNotFoundError(e)){
-            throw TemplateEndpointUtils.buildNotFoundRequestException(e.getMessage(),e.getErrorCode(),LOG,e);
+        if (isNotFoundError(e)) {
+            throw TemplateEndpointUtils.buildNotFoundRequestException(e.getMessage(), e.getErrorCode(), LOG, e);
         }
-        throw TemplateEndpointUtils.buildBadRequestException(e.getMessage(),e.getErrorCode(),LOG,e);
+        throw TemplateEndpointUtils.buildBadRequestException(e.getMessage(), e.getErrorCode(), LOG, e);
     }
 
     private boolean isForbiddenError(TemplateManagementClientException e) {
@@ -205,8 +220,9 @@ TemplatesApiServiceImpl extends TemplatesApiService {
         return ERROR_CODE_TEMPLATE_ALREADY_EXIST.getCode().equals(e.getErrorCode());
     }
 
-    private Response handleServerErrorResponse(TemplateManagementException e){
-        throw TemplateEndpointUtils.buildInternalServerErrorException(e.getErrorCode(),LOG,e);
+    private Response handleServerErrorResponse(TemplateManagementException e) {
+
+        throw TemplateEndpointUtils.buildInternalServerErrorException(e.getErrorCode(), LOG, e);
     }
 
     private Response handleUnexpectedServerError(Throwable e) {

@@ -19,8 +19,8 @@ package org.wso2.carbon.identity.template.mgt.util;
 
 import org.apache.commons.lang.StringUtils;
 import org.wso2.carbon.context.PrivilegedCarbonContext;
-import org.wso2.carbon.identity.template.mgt.exception.TemplateManagementClientException;
 import org.wso2.carbon.identity.template.mgt.TemplateMgtConstants;
+import org.wso2.carbon.identity.template.mgt.exception.TemplateManagementClientException;
 import org.wso2.carbon.identity.template.mgt.exception.TemplateManagementServerException;
 
 /**
@@ -38,6 +38,7 @@ public class TemplateMgtUtils {
      */
     public static TemplateManagementServerException handleServerException(TemplateMgtConstants.ErrorMessages error,
                                                                           String data, Throwable e) {
+
         String message;
         if (StringUtils.isNotBlank(data)) {
             message = String.format(error.getMessage(), data);
@@ -74,6 +75,7 @@ public class TemplateMgtUtils {
      * @return Tenant id.
      */
     public static int getTenantIdFromCarbonContext() {
+
         return PrivilegedCarbonContext.getThreadLocalCarbonContext().getTenantId();
     }
 

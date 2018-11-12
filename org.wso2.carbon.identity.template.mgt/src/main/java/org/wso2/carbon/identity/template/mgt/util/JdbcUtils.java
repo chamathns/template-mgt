@@ -17,12 +17,16 @@
  */
 package org.wso2.carbon.identity.template.mgt.util;
 
-
 import org.wso2.carbon.database.utils.jdbc.JdbcTemplate;
 import org.wso2.carbon.database.utils.jdbc.exceptions.DataAccessException;
 import org.wso2.carbon.identity.template.mgt.internal.TemplateManagerComponentDataHolder;
 
-import static org.wso2.carbon.identity.template.mgt.TemplateMgtConstants.*;
+import static org.wso2.carbon.identity.template.mgt.TemplateMgtConstants.DB2;
+import static org.wso2.carbon.identity.template.mgt.TemplateMgtConstants.H2;
+import static org.wso2.carbon.identity.template.mgt.TemplateMgtConstants.MICROSOFT;
+import static org.wso2.carbon.identity.template.mgt.TemplateMgtConstants.MY_SQL;
+import static org.wso2.carbon.identity.template.mgt.TemplateMgtConstants.POSTGRE_SQL;
+import static org.wso2.carbon.identity.template.mgt.TemplateMgtConstants.S_MICROSOFT;
 
 /**
  * A util class to support the Jdbc executions.

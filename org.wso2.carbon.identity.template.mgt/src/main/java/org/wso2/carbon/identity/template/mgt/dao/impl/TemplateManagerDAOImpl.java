@@ -19,41 +19,48 @@
 package org.wso2.carbon.identity.template.mgt.dao.impl;
 
 import org.apache.commons.io.IOUtils;
-import org.apache.commons.lang.StringUtils;
 import org.wso2.carbon.database.utils.jdbc.JdbcTemplate;
 import org.wso2.carbon.database.utils.jdbc.exceptions.DataAccessException;
-import org.wso2.carbon.identity.core.util.LambdaExceptionUtils;
-import org.wso2.carbon.identity.template.mgt.model.TemplateInfo;
-import org.wso2.carbon.identity.template.mgt.util.TemplateMgtUtils;
 import org.wso2.carbon.identity.template.mgt.TemplateMgtConstants;
 import org.wso2.carbon.identity.template.mgt.dao.TemplateManagerDAO;
 import org.wso2.carbon.identity.template.mgt.exception.TemplateManagementException;
 import org.wso2.carbon.identity.template.mgt.exception.TemplateManagementServerException;
 import org.wso2.carbon.identity.template.mgt.model.Template;
+import org.wso2.carbon.identity.template.mgt.model.TemplateInfo;
 import org.wso2.carbon.identity.template.mgt.util.JdbcUtils;
+import org.wso2.carbon.identity.template.mgt.util.TemplateMgtUtils;
 
-import java.io.ByteArrayInputStream;
 import java.io.IOException;
 import java.io.InputStream;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
 import java.util.List;
 
-import static org.wso2.carbon.identity.template.mgt.TemplateMgtConstants.ErrorMessages.*;
-import static org.wso2.carbon.identity.template.mgt.TemplateMgtConstants.SqlQueries.*;
-import static org.wso2.carbon.identity.template.mgt.util.JdbcUtils.*;
+import static org.wso2.carbon.identity.template.mgt.TemplateMgtConstants.ErrorMessages.ERROR_CODE_DELETE_TEMPLATE;
+import static org.wso2.carbon.identity.template.mgt.TemplateMgtConstants.ErrorMessages.ERROR_CODE_INSERT_TEMPLATE;
+import static org.wso2.carbon.identity.template.mgt.TemplateMgtConstants.ErrorMessages.ERROR_CODE_LIST_TEMPLATES;
+import static org.wso2.carbon.identity.template.mgt.TemplateMgtConstants.ErrorMessages.ERROR_CODE_SELECT_TEMPLATE_BY_NAME;
+import static org.wso2.carbon.identity.template.mgt.TemplateMgtConstants.ErrorMessages.ERROR_CODE_UPDATE_TEMPLATE;
+import static org.wso2.carbon.identity.template.mgt.TemplateMgtConstants.SqlQueries.DELETE_TEMPLATE;
+import static org.wso2.carbon.identity.template.mgt.TemplateMgtConstants.SqlQueries.GET_TEMPLATE_BY_NAME;
+import static org.wso2.carbon.identity.template.mgt.TemplateMgtConstants.SqlQueries.LIST_PAGINATED_TEMPLATES_DB2;
+import static org.wso2.carbon.identity.template.mgt.TemplateMgtConstants.SqlQueries.LIST_PAGINATED_TEMPLATES_MSSQL;
+import static org.wso2.carbon.identity.template.mgt.TemplateMgtConstants.SqlQueries.LIST_PAGINATED_TEMPLATES_MYSQL;
+import static org.wso2.carbon.identity.template.mgt.TemplateMgtConstants.SqlQueries.LIST_PAGINATED_TEMPLATES_ORACLE;
+import static org.wso2.carbon.identity.template.mgt.util.JdbcUtils.isDB2DB;
+import static org.wso2.carbon.identity.template.mgt.util.JdbcUtils.isH2MySqlOrPostgresDB;
+import static org.wso2.carbon.identity.template.mgt.util.JdbcUtils.isMSSqlDB;
 
 public class TemplateManagerDAOImpl implements TemplateManagerDAO {
+
     public TemplateInfo addTemplate(Template template) throws TemplateManagementException {
+
         TemplateInfo templateResult;
         JdbcTemplate jdbcTemplate = JdbcUtils.getNewTemplate();
 
         try {
-            jdbcTemplate.executeUpdate(TemplateMgtConstants.SqlQueries.INSERT_TEMPLATE,(preparedStatement ->{
-                preparedStatement.setInt(1,template.getTenantId());
-                preparedStatement.setString(2,template.getTemplateName());
-                preparedStatement.setString(3,template.getDescription());
+            jdbcTemplate.executeUpdate(TemplateMgtConstants.SqlQueries.INSERT_TEMPLATE, (preparedStatement -> {
+                preparedStatement.setInt(1, template.getTenantId());
+                preparedStatement.setString(2, template.getTemplateName());
+                preparedStatement.setString(3, template.getDescription());
                 try {
                     InputStream inputStream = IOUtils.toInputStream(template.getTemplateScript());
                     preparedStatement.setBinaryStream(4, inputStream, inputStream.available());
@@ -68,40 +75,42 @@ public class TemplateManagerDAOImpl implements TemplateManagerDAO {
 
             }));
         } catch (DataAccessException e) {
-            throw TemplateMgtUtils.handleServerException(ERROR_CODE_INSERT_TEMPLATE, template.getTemplateName(),e);
+            throw TemplateMgtUtils.handleServerException(ERROR_CODE_INSERT_TEMPLATE, template.getTemplateName(), e);
         }
-        templateResult = new TemplateInfo(template.getTenantId(),template.getTemplateName());
+        templateResult = new TemplateInfo(template.getTenantId(), template.getTemplateName());
         return templateResult;
     }
 
     public Template getTemplateByName(String templateName, Integer tenantId) throws TemplateManagementException {
+
         Template template;
         JdbcTemplate jdbcTemplate = JdbcUtils.getNewTemplate();
         try {
-            template = jdbcTemplate.fetchSingleRecord(GET_TEMPLATE_BY_NAME,((resultSet, rowNumber) ->
-            {Template template1= null;
-                try {
-                    template1 = new Template(resultSet.getInt(1),
-                            resultSet.getInt(2),
-                            resultSet.getString(3),
-                            resultSet.getString(4),
-                            IOUtils.toString(resultSet.getBinaryStream(5)));
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
-                return template1;
-            }),
+            template = jdbcTemplate.fetchSingleRecord(GET_TEMPLATE_BY_NAME, ((resultSet, rowNumber) ->
+                    {
+                        Template template1 = null;
+                        try {
+                            template1 = new Template(resultSet.getInt(1),
+                                    resultSet.getInt(2),
+                                    resultSet.getString(3),
+                                    resultSet.getString(4),
+                                    IOUtils.toString(resultSet.getBinaryStream(5)));
+                        } catch (IOException e) {
+                            e.printStackTrace();
+                        }
+                        return template1;
+                    }),
                     preparedStatement -> {
-                        preparedStatement.setString(1,templateName);
-                        preparedStatement.setInt(2,tenantId);
+                        preparedStatement.setString(1, templateName);
+                        preparedStatement.setInt(2, tenantId);
                     });
         } catch (DataAccessException e) {
-            throw new TemplateManagementServerException(String.format(ERROR_CODE_SELECT_TEMPLATE_BY_NAME.getMessage(),tenantId, templateName),
-                    ERROR_CODE_SELECT_TEMPLATE_BY_NAME.getCode(),e);
+            throw new TemplateManagementServerException(String.format(ERROR_CODE_SELECT_TEMPLATE_BY_NAME.getMessage(), tenantId, templateName),
+                    ERROR_CODE_SELECT_TEMPLATE_BY_NAME.getCode(), e);
         }
         return template;
     }
-    
+
 //    public Template getTemplateByName(String templateName, Integer tenantId) throws TemplateManagementException {
 //        Template template;
 //        JdbcTemplate jdbcTemplate = JdbcUtils.getNewTemplate();
@@ -156,17 +165,17 @@ public class TemplateManagerDAOImpl implements TemplateManagerDAO {
             int finalLimit = limit;
             int finalOffset = offset;
 
-            templates = jdbcTemplate.executeQuery(query,(resultSet, rowNumber) ->
-                    new TemplateInfo(resultSet.getString(1),
-                            resultSet.getString(2)),
+            templates = jdbcTemplate.executeQuery(query, (resultSet, rowNumber) ->
+                            new TemplateInfo(resultSet.getString(1),
+                                    resultSet.getString(2)),
                     preparedStatement -> {
-                preparedStatement.setInt(1, tenantId);
-                preparedStatement.setInt(2, finalLimit);
-                preparedStatement.setInt(3, finalOffset);
+                        preparedStatement.setInt(1, tenantId);
+                        preparedStatement.setInt(2, finalLimit);
+                        preparedStatement.setInt(3, finalOffset);
                     });
         } catch (DataAccessException e) {
-            throw new TemplateManagementServerException(String.format(ERROR_CODE_LIST_TEMPLATES.getMessage(),tenantId,limit,offset),
-                    ERROR_CODE_LIST_TEMPLATES.getCode(),e);
+            throw new TemplateManagementServerException(String.format(ERROR_CODE_LIST_TEMPLATES.getMessage(), tenantId, limit, offset),
+                    ERROR_CODE_LIST_TEMPLATES.getCode(), e);
         }
         return templates;
     }
@@ -176,8 +185,8 @@ public class TemplateManagerDAOImpl implements TemplateManagerDAO {
         JdbcTemplate jdbcTemplate = JdbcUtils.getNewTemplate();
         try {
             jdbcTemplate.executeUpdate(TemplateMgtConstants.SqlQueries.UPDATE_TEMPLATE, (preparedStatement -> {
-                preparedStatement.setString(1,newTemplate.getTemplateName());
-                preparedStatement.setString(2,newTemplate.getDescription());
+                preparedStatement.setString(1, newTemplate.getTemplateName());
+                preparedStatement.setString(2, newTemplate.getDescription());
                 try {
                     InputStream inputStream = IOUtils.toInputStream(newTemplate.getTemplateScript());
                     preparedStatement.setBinaryStream(3, inputStream, inputStream.available());
@@ -186,24 +195,25 @@ public class TemplateManagerDAOImpl implements TemplateManagerDAO {
                     e.printStackTrace();
                 }
                 preparedStatement.setInt(4, newTemplate.getTenantId());
-                preparedStatement.setString(5,templateName);
+                preparedStatement.setString(5, templateName);
             }));
         } catch (DataAccessException e) {
-            throw TemplateMgtUtils.handleServerException(ERROR_CODE_UPDATE_TEMPLATE,newTemplate.getTemplateName(),e);
+            throw TemplateMgtUtils.handleServerException(ERROR_CODE_UPDATE_TEMPLATE, newTemplate.getTemplateName(), e);
         }
         return new TemplateInfo(newTemplate.getTenantId(), newTemplate.getTemplateName());
     }
 
-    public String deleteTemplate(String templateName , Integer tenantId) throws TemplateManagementException{
+    public String deleteTemplate(String templateName, Integer tenantId) throws TemplateManagementException {
+
         JdbcTemplate jdbcTemplate = JdbcUtils.getNewTemplate();
         try {
-            jdbcTemplate.executeUpdate(DELETE_TEMPLATE, preparedStatement ->{
-                preparedStatement.setString(1,templateName);
-                preparedStatement.setInt(2,tenantId);
+            jdbcTemplate.executeUpdate(DELETE_TEMPLATE, preparedStatement -> {
+                preparedStatement.setString(1, templateName);
+                preparedStatement.setInt(2, tenantId);
             });
         } catch (DataAccessException e) {
-            throw new TemplateManagementServerException(String.format(ERROR_CODE_DELETE_TEMPLATE.getMessage(),tenantId.toString(),templateName),
-                    ERROR_CODE_DELETE_TEMPLATE.getCode(),e);
+            throw new TemplateManagementServerException(String.format(ERROR_CODE_DELETE_TEMPLATE.getMessage(), tenantId.toString(), templateName),
+                    ERROR_CODE_DELETE_TEMPLATE.getCode(), e);
         }
         return templateName;
     }

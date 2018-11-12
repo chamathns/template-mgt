@@ -55,13 +55,12 @@ public interface TemplateManager {
      * This API is used to add a new Purpose.
      *
      * @param templateName Name of the updated template.
-     * @param template Template element.
+     * @param template     Template element.
      * @return 202 Updated. Return the updated template element with template id, tenant Id and name.
      * @throws TemplateManagementException Template Management Exception.
      */
 
-    TemplateInfo updateTemplate(String templateName,Template template) throws TemplateManagementException;
-
+    TemplateInfo updateTemplate(String templateName, Template template) throws TemplateManagementException;
 
     /**
      * This API is used to delete existing template by template name.

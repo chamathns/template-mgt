@@ -24,18 +24,22 @@ import org.wso2.carbon.user.core.service.RealmService;
  * This singleton data holder contains all the data required by the Template UI OSGi bundle
  */
 public class TemplateManagementUIServiceDataHolder {
+
     private static TemplateManagementUIServiceDataHolder instance = new TemplateManagementUIServiceDataHolder();
     private TemplateManager templateManager;
     private RealmService realmService;
 
-    private TemplateManagementUIServiceDataHolder(){
+    private TemplateManagementUIServiceDataHolder() {
 
     }
-    public static TemplateManagementUIServiceDataHolder getInstance(){
+
+    public static TemplateManagementUIServiceDataHolder getInstance() {
+
         return instance;
     }
 
     public TemplateManager getTemplateManager() {
+
         return templateManager;
     }
 
@@ -45,10 +49,12 @@ public class TemplateManagementUIServiceDataHolder {
     }
 
     public RealmService getRealmService() {
+
         return realmService;
     }
 
     public void setRealmService(RealmService realmService) {
+
         this.realmService = realmService;
     }
 }

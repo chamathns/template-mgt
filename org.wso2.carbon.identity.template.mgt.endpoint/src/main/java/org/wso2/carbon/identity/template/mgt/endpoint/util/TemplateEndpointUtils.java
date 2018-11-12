@@ -19,7 +19,6 @@
 package org.wso2.carbon.identity.template.mgt.endpoint.util;
 
 import org.apache.commons.logging.Log;
-import org.apache.cxf.jaxrs.ext.MessageContext;
 import org.wso2.carbon.context.PrivilegedCarbonContext;
 import org.wso2.carbon.identity.template.mgt.TemplateManager;
 import org.wso2.carbon.identity.template.mgt.TemplateMgtConstants;
@@ -27,7 +26,11 @@ import org.wso2.carbon.identity.template.mgt.endpoint.dto.ErrorDTO;
 import org.wso2.carbon.identity.template.mgt.endpoint.dto.GetTemplatesResponseDTO;
 import org.wso2.carbon.identity.template.mgt.endpoint.dto.TemplateRequestDTO;
 import org.wso2.carbon.identity.template.mgt.endpoint.dto.UpdateTemplateRequestDTO;
-import org.wso2.carbon.identity.template.mgt.endpoint.exception.*;
+import org.wso2.carbon.identity.template.mgt.endpoint.exception.BadRequestException;
+import org.wso2.carbon.identity.template.mgt.endpoint.exception.ConflictRequestException;
+import org.wso2.carbon.identity.template.mgt.endpoint.exception.ForbiddenException;
+import org.wso2.carbon.identity.template.mgt.endpoint.exception.InternalServerErrorException;
+import org.wso2.carbon.identity.template.mgt.endpoint.exception.NotFoundException;
 import org.wso2.carbon.identity.template.mgt.model.Template;
 import org.wso2.carbon.identity.template.mgt.model.TemplateInfo;
 import org.wso2.carbon.identity.template.mgt.util.TemplateMgtUtils;
@@ -37,25 +40,29 @@ import java.util.stream.Collectors;
 
 public class TemplateEndpointUtils {
 
-    public static TemplateManager getTemplateManager(){
-        return (TemplateManager) PrivilegedCarbonContext.getThreadLocalCarbonContext().getOSGiService(TemplateManager.class,null);
+    public static TemplateManager getTemplateManager() {
+
+        return (TemplateManager) PrivilegedCarbonContext.getThreadLocalCarbonContext().getOSGiService(TemplateManager.class, null);
     }
 
-    public static Template getTemplateRequest (TemplateRequestDTO templateDTO){
+    public static Template getTemplateRequest(TemplateRequestDTO templateDTO) {
+
         return new Template(TemplateMgtUtils.getTenantIdFromCarbonContext(),
-                            templateDTO.getTemplateName(),
-                            templateDTO.getDescription(),
-                            templateDTO.getTemplateScript());
+                templateDTO.getTemplateName(),
+                templateDTO.getDescription(),
+                templateDTO.getTemplateScript());
     }
 
-    public static Template getTemplateUpdateRequest (UpdateTemplateRequestDTO templateRequestDTO){
+    public static Template getTemplateUpdateRequest(UpdateTemplateRequestDTO templateRequestDTO) {
+
         return new Template(TemplateMgtUtils.getTenantIdFromCarbonContext(),
-                            templateRequestDTO.getTemplateName(),
-                            templateRequestDTO.getDescription(),
-                            templateRequestDTO.getTemplateScript());
+                templateRequestDTO.getTemplateName(),
+                templateRequestDTO.getDescription(),
+                templateRequestDTO.getTemplateScript());
     }
 
-    public static List<GetTemplatesResponseDTO> getTemplatesResponseDTOList (List<TemplateInfo> templates){
+    public static List<GetTemplatesResponseDTO> getTemplatesResponseDTOList(List<TemplateInfo> templates) {
+
         return templates.stream()
                 .map(template -> {
                     GetTemplatesResponseDTO getTemplatesResponseDTO = new GetTemplatesResponseDTO();
@@ -70,12 +77,14 @@ public class TemplateEndpointUtils {
 
         log.error(throwable.getMessage(), throwable);
     }
+
     private static void logDebug(Log log, Throwable throwable) {
 
         if (log.isDebugEnabled()) {
             log.debug(TemplateMgtConstants.STATUS_BAD_REQUEST_MESSAGE_DEFAULT, throwable);
         }
     }
+
     private static ErrorDTO getErrorDTO(String message, String description, String code) {
 
         ErrorDTO errorDTO = new ErrorDTO();
@@ -84,6 +93,7 @@ public class TemplateEndpointUtils {
         errorDTO.setDescription(description);
         return errorDTO;
     }
+
     /**
      * This method is used to create an InternalServerErrorException with the known errorCode.
      *
@@ -158,6 +168,5 @@ public class TemplateEndpointUtils {
         logDebug(log, e);
         return new ForbiddenException(errorDTO);
     }
-
 
 }

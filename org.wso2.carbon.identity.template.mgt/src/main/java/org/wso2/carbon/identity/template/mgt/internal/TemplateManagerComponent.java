@@ -21,15 +21,17 @@ import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.osgi.framework.BundleContext;
 import org.osgi.service.component.ComponentContext;
-import org.osgi.service.component.annotations.*;
+import org.osgi.service.component.annotations.Activate;
+import org.osgi.service.component.annotations.Component;
+import org.osgi.service.component.annotations.Reference;
+import org.osgi.service.component.annotations.ReferenceCardinality;
+import org.osgi.service.component.annotations.ReferencePolicy;
 import org.wso2.carbon.identity.core.util.IdentityCoreInitializedEvent;
 import org.wso2.carbon.identity.core.util.IdentityDatabaseUtil;
 import org.wso2.carbon.identity.template.mgt.TemplateManager;
 import org.wso2.carbon.identity.template.mgt.TemplateManagerImpl;
-import org.wso2.carbon.identity.template.mgt.dao.TemplateManagerDAO;
-import org.wso2.carbon.identity.template.mgt.dao.impl.TemplateManagerDAOImpl;
 import org.wso2.carbon.user.core.util.DatabaseUtil;
-import org.wso2.carbon.utils.DBUtils;
+
 import javax.sql.DataSource;
 
 @Component(
@@ -38,7 +40,9 @@ import javax.sql.DataSource;
 )
 
 public class TemplateManagerComponent {
-    private  static Log log = LogFactory.getLog(TemplateManagerComponent.class);
+
+    private static Log log = LogFactory.getLog(TemplateManagerComponent.class);
+
     /**
      * Register Template Manager as an OSGi service.
      *
@@ -46,13 +50,14 @@ public class TemplateManagerComponent {
      */
     @Activate
     protected void activate(ComponentContext componentContext) {
+
         try {
             BundleContext bundleContext = componentContext.getBundleContext();
             DataSource dataSource = IdentityDatabaseUtil.getDataSource();
             DatabaseUtil.getDBConnection(dataSource);
             setDataSourceToDataHolder(dataSource);
 
-            bundleContext.registerService(TemplateManager.class, new TemplateManagerImpl(),null);
+            bundleContext.registerService(TemplateManager.class, new TemplateManagerImpl(), null);
 //            bundleContext.registerService(TemplateManagerDAO.class, new TemplateManagerDAOImpl(), null);
             if (log.isDebugEnabled()) {
                 log.debug("Template Manager bundle is activated");
@@ -69,7 +74,6 @@ public class TemplateManagerComponent {
             log.debug("Data Source is set to the Template Management Service.");
         }
     }
-
 
     @Reference(
             name = "identityCoreInitializedEventService",

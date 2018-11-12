@@ -30,21 +30,23 @@ import org.wso2.carbon.identity.template.mgt.model.TemplateInfo;
 import java.util.List;
 
 import static org.apache.commons.lang.StringUtils.isBlank;
-import static org.wso2.carbon.identity.template.mgt.TemplateMgtConstants.ErrorMessages.*;
+import static org.wso2.carbon.identity.template.mgt.TemplateMgtConstants.ErrorMessages.ERROR_CODE_INVALID_ARGUMENTS_FOR_LIMIT_OFFSET;
+import static org.wso2.carbon.identity.template.mgt.TemplateMgtConstants.ErrorMessages.ERROR_CODE_TEMPLATE_NAME_REQUIRED;
+import static org.wso2.carbon.identity.template.mgt.TemplateMgtConstants.ErrorMessages.ERROR_CODE_TEMPLATE_SCRIPT_REQUIRED;
 import static org.wso2.carbon.identity.template.mgt.util.TemplateMgtUtils.getTenantIdFromCarbonContext;
 import static org.wso2.carbon.identity.template.mgt.util.TemplateMgtUtils.handleClientException;
-
 
 /**
  * Template manager service implementation.
  */
-public class TemplateManagerImpl implements  TemplateManager {
+public class TemplateManagerImpl implements TemplateManager {
 
     private static final Log log = LogFactory.getLog(TemplateManagerImpl.class);
     private static final Integer DEFAULT_SEARCH_LIMIT = 100;
 
     @Override
     public TemplateInfo addTemplate(Template template) throws TemplateManagementException {
+
         validateInputParameters(template);
         TemplateManagerDAO templateManagerDAO = new TemplateManagerDAOImpl();
         return templateManagerDAO.addTemplate(template);
@@ -52,19 +54,22 @@ public class TemplateManagerImpl implements  TemplateManager {
 
     @Override
     public Template getTemplateByName(String templateName) throws TemplateManagementException {
+
         TemplateManagerDAO templateManagerDAO = new TemplateManagerDAOImpl();
         return templateManagerDAO.getTemplateByName(templateName, getTenantIdFromCarbonContext());
     }
 
     @Override
     public TemplateInfo updateTemplate(String templateName, Template template) throws TemplateManagementException {
+
         validateInputParameters(template);
         TemplateManagerDAO templateManagerDAO = new TemplateManagerDAOImpl();
-        return templateManagerDAO.updateTemplate(templateName,template);
+        return templateManagerDAO.updateTemplate(templateName, template);
     }
 
     @Override
     public String deleteTemplate(String templateName) throws TemplateManagementException {
+
         TemplateManagerDAO templateManagerDAO = new TemplateManagerDAOImpl();
         return templateManagerDAO.deleteTemplate(templateName, getTenantIdFromCarbonContext());
     }
@@ -72,8 +77,8 @@ public class TemplateManagerImpl implements  TemplateManager {
     @Override
     public List<TemplateInfo> listTemplates(Integer limit, Integer offset) throws TemplateManagementException {
 
-        validatePaginationParameters(limit,offset);
-        
+        validatePaginationParameters(limit, offset);
+
         if (limit == 0) {
             limit = DEFAULT_SEARCH_LIMIT;
             if (log.isDebugEnabled()) {
@@ -82,25 +87,26 @@ public class TemplateManagerImpl implements  TemplateManager {
         }
 
         TemplateManagerDAO templateManagerDAO = new TemplateManagerDAOImpl();
-        return templateManagerDAO.getAllTemplates(getTenantIdFromCarbonContext(),limit,offset);
+        return templateManagerDAO.getAllTemplates(getTenantIdFromCarbonContext(), limit, offset);
     }
 
     private void validateInputParameters(Template template) throws TemplateManagementClientException {
-        if (isBlank(template.getTemplateName())){
-            if (log.isDebugEnabled()){
+
+        if (isBlank(template.getTemplateName())) {
+            if (log.isDebugEnabled()) {
                 log.debug("Template name cannot be empty");
             }
             throw handleClientException(ERROR_CODE_TEMPLATE_NAME_REQUIRED, null);
         }
 
-        if (isBlank(template.getTemplateScript())){
-            if (log.isDebugEnabled()){
+        if (isBlank(template.getTemplateScript())) {
+            if (log.isDebugEnabled()) {
                 log.debug("Template script cannot be empty");
             }
             throw handleClientException(ERROR_CODE_TEMPLATE_SCRIPT_REQUIRED, null);
         }
 
-        if (template.getTenantId() == null){
+        if (template.getTenantId() == null) {
             template.setTenantId(getTenantIdFromCarbonContext());
         }
 
@@ -112,7 +118,5 @@ public class TemplateManagerImpl implements  TemplateManager {
             throw handleClientException(ERROR_CODE_INVALID_ARGUMENTS_FOR_LIMIT_OFFSET, null);
         }
     }
-
-
 
 }

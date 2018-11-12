@@ -22,10 +22,10 @@ import org.wso2.carbon.identity.template.mgt.exception.TemplateManagementServerE
 import org.wso2.carbon.identity.template.mgt.model.Template;
 import org.wso2.carbon.identity.template.mgt.model.TemplateInfo;
 
-import java.io.IOException;
 import java.util.List;
 
 public interface TemplateManagerDAO {
+
     /**
      * Add a {@link Template}.
      *
@@ -33,7 +33,7 @@ public interface TemplateManagerDAO {
      * @return Inserted {@link Template}.
      * @throws TemplateManagementException If error occurs while adding the {@link Template}.
      */
-    TemplateInfo addTemplate (Template template) throws TemplateManagementException;
+    TemplateInfo addTemplate(Template template) throws TemplateManagementException;
 
     Template getTemplateByName(String templateName, Integer tenantId) throws TemplateManagementException;
 

@@ -18,7 +18,6 @@
 
 package org.wso2.carbon.identity.template.mgt.ui.internal;
 
-
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.osgi.service.component.ComponentContext;
@@ -62,15 +61,18 @@ public class TemplateMgtUIServiceComponent {
             policy = ReferencePolicy.DYNAMIC,
             unbind = "unsetTemplateManagementService"
     )
-    protected void setTemplateManagementService(TemplateManager templateManagementService){
+    protected void setTemplateManagementService(TemplateManager templateManagementService) {
+
         TemplateManagementUIServiceDataHolder.getInstance().setTemplateManager(templateManagementService);
-        if (templateManagementService != null && log.isDebugEnabled()){
+        if (templateManagementService != null && log.isDebugEnabled()) {
             log.debug("TemplateManager is registered in TemplateManager UI service.");
         }
     }
-    protected void unsetTemplateManagementService(TemplateManager templateManagementService){
+
+    protected void unsetTemplateManagementService(TemplateManager templateManagementService) {
+
         TemplateManagementUIServiceDataHolder.getInstance().setTemplateManager(null);
-        if (log.isDebugEnabled()){
+        if (log.isDebugEnabled()) {
             log.debug("TemplateManager is unregistered in TemplateManager UI service.");
         }
     }
@@ -83,17 +85,19 @@ public class TemplateMgtUIServiceComponent {
             unbind = "unsetRealmService"
     )
     protected void setRealmService(RealmService realmService) {
+
         TemplateManagementUIServiceDataHolder.getInstance().setRealmService(realmService);
         if (realmService != null && log.isDebugEnabled()) {
             log.debug("RealmService is registered in ConsentManager service.");
         }
     }
+
     protected void unsetRealmService(RealmService realmService) {
+
         TemplateManagementUIServiceDataHolder.getInstance().setRealmService(null);
         if (log.isDebugEnabled()) {
             log.debug("RealmService is unregistered in ConsentManager service.");
         }
     }
-
 
 }

@@ -17,14 +17,12 @@
  */
 package org.wso2.carbon.identity.template.mgt.exception;
 
-public class TemplateManagementServerException extends TemplateManagementException{
+public class TemplateManagementServerException extends TemplateManagementException {
 
     public TemplateManagementServerException(String message, String errorCode, Throwable cause) {
 
         super(message, errorCode, cause);
     }
-
-
 
 }
 
