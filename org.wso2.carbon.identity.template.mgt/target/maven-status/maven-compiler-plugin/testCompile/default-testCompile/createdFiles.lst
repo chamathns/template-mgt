@@ -1,5 +1,0 @@
-org/wso2/carbon/identity/template/mgt/model/TemplateTest.class
-org/wso2/carbon/identity/template/mgt/model/TemplateInfoTest.class
-org/wso2/carbon/identity/template/mgt/dao/impl/TemplateManagerDAOImplTest.class
-org/wso2/carbon/identity/template/mgt/TemplateManagerImplTest.class
-org/wso2/carbon/identity/template/mgt/util/TestUtils.class
