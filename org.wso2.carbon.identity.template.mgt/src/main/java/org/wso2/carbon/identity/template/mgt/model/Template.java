@@ -17,6 +17,9 @@
  */
 package org.wso2.carbon.identity.template.mgt.model;
 
+/**
+ * A data model class to define the Template element.
+ */
 public class Template {
 
     private Integer templateId;

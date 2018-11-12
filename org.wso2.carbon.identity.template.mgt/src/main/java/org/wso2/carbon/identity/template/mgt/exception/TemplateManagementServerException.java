@@ -17,6 +17,9 @@
  */
 package org.wso2.carbon.identity.template.mgt.exception;
 
+/**
+ * This class is used to define the server side errors which need to be handled.
+ */
 public class TemplateManagementServerException extends TemplateManagementException {
 
     public TemplateManagementServerException(String message, String errorCode, Throwable cause) {

@@ -44,6 +44,14 @@ public class TemplateManagerImpl implements TemplateManager {
     private static final Log log = LogFactory.getLog(TemplateManagerImpl.class);
     private static final Integer DEFAULT_SEARCH_LIMIT = 100;
 
+    /**
+     * This method is used to add a new template.
+     *
+     * @param template Template element.
+     * @return Return template element with template id, tenant Id and name.
+     * @throws TemplateManagementException Template Management Exception.
+     */
+
     @Override
     public TemplateInfo addTemplate(Template template) throws TemplateManagementException {
 
@@ -52,12 +60,29 @@ public class TemplateManagerImpl implements TemplateManager {
         return templateManagerDAO.addTemplate(template);
     }
 
+    /**
+     * This method is used to get the template by template name and tenant ID.
+     *
+     * @param templateName Name of the template.
+     * @return Template matching the input parameters.
+     * @throws TemplateManagementException Template Management Exception.
+     */
+
     @Override
     public Template getTemplateByName(String templateName) throws TemplateManagementException {
 
         TemplateManagerDAO templateManagerDAO = new TemplateManagerDAOImpl();
         return templateManagerDAO.getTemplateByName(templateName, getTenantIdFromCarbonContext());
     }
+
+    /**
+     * This method is used to add a new Template.
+     *
+     * @param templateName Name of the updated template.
+     * @param template     Template element.
+     * @return Return the updated TemplateInfo element with tenant Id and name.
+     * @throws TemplateManagementException Template Management Exception.
+     */
 
     @Override
     public TemplateInfo updateTemplate(String templateName, Template template) throws TemplateManagementException {
@@ -67,12 +92,28 @@ public class TemplateManagerImpl implements TemplateManager {
         return templateManagerDAO.updateTemplate(templateName, template);
     }
 
+    /**
+     * This method is used to delete existing template by template name.
+     *
+     * @param templateName Name of the template.
+     * @throws TemplateManagementException Template Management Exception.
+     */
+
     @Override
     public String deleteTemplate(String templateName) throws TemplateManagementException {
 
         TemplateManagerDAO templateManagerDAO = new TemplateManagerDAOImpl();
         return templateManagerDAO.deleteTemplate(templateName, getTenantIdFromCarbonContext());
     }
+
+    /**
+     * This method is used to get the names and descriptions of all or filtered existing templates.
+     *
+     * @param limit  Number of search results.
+     * @param offset Start index of the search.
+     * @return Filtered list of TemplateInfo elements
+     * @throws TemplateManagementException Template Management Exception.
+     */
 
     @Override
     public List<TemplateInfo> listTemplates(Integer limit, Integer offset) throws TemplateManagementException {

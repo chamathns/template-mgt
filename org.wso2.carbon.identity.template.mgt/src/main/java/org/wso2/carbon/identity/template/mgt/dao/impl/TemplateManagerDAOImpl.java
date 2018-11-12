@@ -49,8 +49,20 @@ import static org.wso2.carbon.identity.template.mgt.util.JdbcUtils.isDB2DB;
 import static org.wso2.carbon.identity.template.mgt.util.JdbcUtils.isH2MySqlOrPostgresDB;
 import static org.wso2.carbon.identity.template.mgt.util.JdbcUtils.isMSSqlDB;
 
+/**
+ * Perform CRUD operations for {@link Template}.
+ *
+ * @since 1.0.0
+ */
 public class TemplateManagerDAOImpl implements TemplateManagerDAO {
 
+    /**
+     * Add a {@link Template}.
+     *
+     * @param template {@link Template} to insert.
+     * @return Inserted {@link TemplateInfo}.
+     * @throws TemplateManagementException If error occurs while adding the {@link Template}.
+     */
     public TemplateInfo addTemplate(Template template) throws TemplateManagementException {
 
         TemplateInfo templateResult;
@@ -67,11 +79,6 @@ public class TemplateManagerDAOImpl implements TemplateManagerDAO {
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
-//                try {
-//                    setBlobValue(template.getTemplateScript(),preparedStatement,4);
-//                } catch (IOException e) {
-//                    e.printStackTrace();
-//                }
 
             }));
         } catch (DataAccessException e) {
@@ -81,6 +88,14 @@ public class TemplateManagerDAOImpl implements TemplateManagerDAO {
         return templateResult;
     }
 
+    /**
+     * Retrieve {@link Template} by template name and tenant Id.
+     *
+     * @param templateName name of the {@link Template} to retrieve.
+     * @param tenantId     tenant Id of the tenant which the {@link Template} resides.
+     * @return {@link Template} for the given name and tenant Id.
+     * @throws TemplateManagementException If error occurs while retrieving {@link Template}.
+     */
     public Template getTemplateByName(String templateName, Integer tenantId) throws TemplateManagementException {
 
         Template template;
@@ -111,33 +126,15 @@ public class TemplateManagerDAOImpl implements TemplateManagerDAO {
         return template;
     }
 
-//    public Template getTemplateByName(String templateName, Integer tenantId) throws TemplateManagementException {
-//        Template template;
-//        JdbcTemplate jdbcTemplate = JdbcUtils.getNewTemplate();
-//        try {
-//            template = jdbcTemplate.fetchSingleRecord(GET_TEMPLATE_BY_NAME, LambdaExceptionUtils.rethrowFunction(this::funn), LambdaExceptionUtils.rethrowConsumer(this::funn2));
-//        } catch (DataAccessException e) {
-//            throw new TemplateManagementServerException(String.format(ERROR_CODE_SELECT_TEMPLATE_BY_NAME.getMessage(),tenantId, templateName),
-//                    ERROR_CODE_SELECT_TEMPLATE_BY_NAME.getCode(),e);
-//        }
-//
-//        return template;
-//    }
-
-//    public Template funn(ResultSet resultSet, int rowNumber) throws SQLException, IOException {
-//
-//        return new Template(resultSet.getInt(1),
-//                resultSet.getInt(2),
-//                resultSet.getString(3),
-//                resultSet.getString(4),
-//                IOUtils.toString(resultSet.getBinaryStream(5)));
-//    }
-
-//    public void funn2(PreparedStatement preparedStatement) {
-//        preparedStatement.setString(1, templateName);
-//        preparedStatement.setInt(2, tenantId);
-//    }
-
+    /**
+     * List {@link TemplateInfo} items for a given search criteria.
+     *
+     * @param tenantId Tenant Id to be searched.
+     * @param limit    Maximum number of results expected.
+     * @param offset   Result offset.
+     * @return List of {@link TemplateInfo} entries.
+     * @throws TemplateManagementException If error occurs while searching the Templates.
+     */
     public List<TemplateInfo> getAllTemplates(Integer tenantId, Integer limit, Integer offset) throws TemplateManagementException {
 
         List<TemplateInfo> templates;
@@ -180,6 +177,14 @@ public class TemplateManagerDAOImpl implements TemplateManagerDAO {
         return templates;
     }
 
+    /**
+     * Update a {@link Template}.
+     *
+     * @param templateName name of the to be updated {@link Template}.
+     * @param newTemplate  new {@link Template} to insert.
+     * @return Inserted {@link TemplateInfo}.
+     * @throws TemplateManagementException If error occurs while adding the {@link Template}.
+     */
     public TemplateInfo updateTemplate(String templateName, Template newTemplate) throws TemplateManagementServerException {
 
         JdbcTemplate jdbcTemplate = JdbcUtils.getNewTemplate();
@@ -203,6 +208,14 @@ public class TemplateManagerDAOImpl implements TemplateManagerDAO {
         return new TemplateInfo(newTemplate.getTenantId(), newTemplate.getTemplateName());
     }
 
+    /**
+     * Delete {@link Template} for a given template name and a tenant Id.
+     *
+     * @param templateName name of the {@link Template} to be deleted.the tenant
+     * @param tenantId     tenant Id of the tenant which the {@link Template} resides.
+     * @return Name of the deleted {@link Template}.
+     * @throws TemplateManagementException If error occurs while deleting the {@link Template}
+     */
     public String deleteTemplate(String templateName, Integer tenantId) throws TemplateManagementException {
 
         JdbcTemplate jdbcTemplate = JdbcUtils.getNewTemplate();
@@ -217,56 +230,4 @@ public class TemplateManagerDAOImpl implements TemplateManagerDAO {
         }
         return templateName;
     }
-
-//    /**
-//     * Set given string as Blob for the given index into the prepared-statement
-//     *
-//     * @param value    string value to be converted to blob
-//     * @param prepStmt Prepared statement
-//     * @param index    column index
-//     * @throws SQLException
-//     * @throws IOException
-//     */
-//    private void setBlobValue(String value, PreparedStatement prepStmt, int index) throws IOException, SQLException {
-//        if (value != null) {
-//            InputStream inputStream = new ByteArrayInputStream(value.getBytes());
-//            prepStmt.setBinaryStream(index, inputStream, inputStream.available());
-//        } else {
-//            prepStmt.setBinaryStream(index, new ByteArrayInputStream(new byte[0]), 0);
-//        }
-//    }
-
-//    /**
-//     * Get string from inputStream of a blob
-//     * @param inputStream input stream
-//     * @return
-//     * @throws IOException
-//     */
-//    private String getBlobValue(InputStream inputStream) {
-//
-//        if (inputStream != null) {
-//            BufferedReader bufferedReader = null;
-//            StringBuilder stringBuilder = new StringBuilder();
-//            String line;
-//            try {
-//                bufferedReader = new BufferedReader(new InputStreamReader(inputStream));
-//                while ((line = bufferedReader.readLine()) != null) {
-//                    stringBuilder.append(line);
-//                }
-//            } catch (IOException e) {
-//                e.printStackTrace();
-//            } finally {
-//                if (bufferedReader != null) {
-//                    try {
-//                        bufferedReader.close();
-//                    } catch (IOException e) {
-//                        e.printStackTrace();
-//                    }
-//                }
-//            }
-//
-//            return stringBuilder.toString();
-//        }
-//        return null;
-//    }
 }

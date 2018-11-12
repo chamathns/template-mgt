@@ -19,6 +19,9 @@ package org.wso2.carbon.identity.template.mgt.internal;
 
 import javax.sql.DataSource;
 
+/**
+ * A class to keep the data of the Template Manager component.
+ */
 public class TemplateManagerComponentDataHolder {
 
     private static TemplateManagerComponentDataHolder instance = new TemplateManagerComponentDataHolder();

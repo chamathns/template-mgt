@@ -33,17 +33,17 @@ import java.util.List;
 public interface TemplateManager {
 
     /**
-     * This API is used to add a new template.
+     * This method is used to add a new template.
      *
      * @param template Template element.
-     * @return 201 Created. Return template element with template id, tenant Id and name.
+     * @return Return template element with template id, tenant Id and name.
      * @throws TemplateManagementException Template Management Exception.
      */
 
     TemplateInfo addTemplate(Template template) throws TemplateManagementException;
 
     /**
-     * This API is used to get the template by template name and tenant ID.
+     * This method is used to get the template by template name and tenant ID.
      *
      * @param templateName Name of the template.
      * @return Template matching the input parameters.
@@ -52,18 +52,18 @@ public interface TemplateManager {
     Template getTemplateByName(String templateName) throws TemplateManagementException;
 
     /**
-     * This API is used to add a new Purpose.
+     * This method is used to add a new Template.
      *
      * @param templateName Name of the updated template.
      * @param template     Template element.
-     * @return 202 Updated. Return the updated template element with template id, tenant Id and name.
+     * @return Return the updated TemplateInfo element with tenant Id and name.
      * @throws TemplateManagementException Template Management Exception.
      */
 
     TemplateInfo updateTemplate(String templateName, Template template) throws TemplateManagementException;
 
     /**
-     * This API is used to delete existing template by template name.
+     * This method is used to delete existing template by template name.
      *
      * @param templateName Name of the template.
      * @throws TemplateManagementException Template Management Exception.
@@ -71,11 +71,11 @@ public interface TemplateManager {
     String deleteTemplate(String templateName) throws TemplateManagementException;
 
     /**
-     * This API is used to get the names and descriptions of all or filtered existing templates.
+     * This method is used to get the names and descriptions of all or filtered existing templates.
      *
      * @param limit  Number of search results.
      * @param offset Start index of the search.
-     * @return Filtered list of Template elements
+     * @return Filtered list of TemplateInfo elements
      * @throws TemplateManagementException Template Management Exception.
      */
     List<TemplateInfo> listTemplates(Integer limit, Integer offset) throws TemplateManagementException;

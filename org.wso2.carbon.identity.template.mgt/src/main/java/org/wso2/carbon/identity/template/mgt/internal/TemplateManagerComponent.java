@@ -34,6 +34,9 @@ import org.wso2.carbon.user.core.util.DatabaseUtil;
 
 import javax.sql.DataSource;
 
+/**
+ * OSGi declarative services component which handles registration and un-registration of template management service.
+ */
 @Component(
         name = "carbon.identity.template.mgt.component",
         immediate = true

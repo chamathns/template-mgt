@@ -70,9 +70,9 @@ public class TemplateMgtUtils {
     }
 
     /**
-     * Get the tenant id from carbon context.
+     * Get the Tenant Id from carbon context.
      *
-     * @return Tenant id.
+     * @return Tenant Id.
      */
     public static int getTenantIdFromCarbonContext() {
 

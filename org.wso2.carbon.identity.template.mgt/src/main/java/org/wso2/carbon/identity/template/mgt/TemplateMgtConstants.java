@@ -17,6 +17,9 @@
  */
 package org.wso2.carbon.identity.template.mgt;
 
+/**
+ * Constants used in the module, template-mgt.
+ */
 public class TemplateMgtConstants {
 
     public static final String MY_SQL = "MySQL";
@@ -61,6 +64,12 @@ public class TemplateMgtConstants {
         private final String code;
         private final String message;
 
+        /**
+         * Error Messages
+         *
+         * @param code    Code of the error message.
+         * @param message Error message string.
+         */
         ErrorMessages(String code, String message) {
 
             this.code = code;
@@ -84,11 +93,13 @@ public class TemplateMgtConstants {
         }
     }
 
+    /**
+     * SQL Query definitions.
+     */
     public static class SqlQueries {
 
         public static final String INSERT_TEMPLATE = "INSERT INTO IDN_TEMPLATE_MGT (TENANT_ID, NAME, DESCRIPTION, TEMPLATE_SCRIPT) VALUES (?,?,?,?  )";
         public static final String GET_TEMPLATE_BY_NAME = "SELECT TEMPLATE_ID,TENANT_ID,NAME,DESCRIPTION,TEMPLATE_SCRIPT FROM IDN_TEMPLATE_MGT WHERE NAME=? AND TENANT_ID=?";
-        public static final String LIST_TEMPLATES = "SELECT NAME,DESCRIPTION FROM IDN_TEMPLATE_MGT WHERE TENANT_ID =?";
 
         public static final String LIST_PAGINATED_TEMPLATES_MYSQL = "SELECT NAME,DESCRIPTION FROM IDN_TEMPLATE_MGT " +
                 "WHERE TENANT_ID=? ORDER BY TEMPLATE_ID ASC LIMIT ? OFFSET ?";
