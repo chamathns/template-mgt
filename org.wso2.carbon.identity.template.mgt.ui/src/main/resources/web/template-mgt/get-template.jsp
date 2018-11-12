@@ -42,7 +42,8 @@
                 Template template = serviceClient.getTemplateByName(templateName);
                 
             } catch (Exception e) {
-                String message = resourceBundle.getString("alert.error.while.reading.template") + " : " + e.getMessage();
+                String message = resourceBundle.getString("alert.error.while.reading.template") +
+                        " : " + e.getMessage();
                 CarbonUIMessage.sendCarbonUIMessage(message, CarbonUIMessage.ERROR, request, e);
             }
         }

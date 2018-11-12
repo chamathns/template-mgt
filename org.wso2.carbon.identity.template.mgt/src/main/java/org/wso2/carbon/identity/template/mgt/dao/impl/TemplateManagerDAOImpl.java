@@ -120,7 +120,8 @@ public class TemplateManagerDAOImpl implements TemplateManagerDAO {
                         preparedStatement.setInt(2, tenantId);
                     });
         } catch (DataAccessException e) {
-            throw new TemplateManagementServerException(String.format(ERROR_CODE_SELECT_TEMPLATE_BY_NAME.getMessage(), tenantId, templateName),
+            throw new TemplateManagementServerException(String.format(ERROR_CODE_SELECT_TEMPLATE_BY_NAME.getMessage(),
+                    tenantId, templateName),
                     ERROR_CODE_SELECT_TEMPLATE_BY_NAME.getCode(), e);
         }
         return template;
@@ -135,7 +136,8 @@ public class TemplateManagerDAOImpl implements TemplateManagerDAO {
      * @return List of {@link TemplateInfo} entries.
      * @throws TemplateManagementException If error occurs while searching the Templates.
      */
-    public List<TemplateInfo> getAllTemplates(Integer tenantId, Integer limit, Integer offset) throws TemplateManagementException {
+    public List<TemplateInfo> getAllTemplates(Integer tenantId, Integer limit, Integer offset)
+            throws TemplateManagementException {
 
         List<TemplateInfo> templates;
         JdbcTemplate jdbcTemplate = JdbcUtils.getNewTemplate();
@@ -171,7 +173,8 @@ public class TemplateManagerDAOImpl implements TemplateManagerDAO {
                         preparedStatement.setInt(3, finalOffset);
                     });
         } catch (DataAccessException e) {
-            throw new TemplateManagementServerException(String.format(ERROR_CODE_LIST_TEMPLATES.getMessage(), tenantId, limit, offset),
+            throw new TemplateManagementServerException(String.format(ERROR_CODE_LIST_TEMPLATES.getMessage(),
+                    tenantId, limit, offset),
                     ERROR_CODE_LIST_TEMPLATES.getCode(), e);
         }
         return templates;
@@ -185,7 +188,8 @@ public class TemplateManagerDAOImpl implements TemplateManagerDAO {
      * @return Inserted {@link TemplateInfo}.
      * @throws TemplateManagementException If error occurs while adding the {@link Template}.
      */
-    public TemplateInfo updateTemplate(String templateName, Template newTemplate) throws TemplateManagementServerException {
+    public TemplateInfo updateTemplate(String templateName, Template newTemplate)
+            throws TemplateManagementServerException {
 
         JdbcTemplate jdbcTemplate = JdbcUtils.getNewTemplate();
         try {
@@ -225,7 +229,8 @@ public class TemplateManagerDAOImpl implements TemplateManagerDAO {
                 preparedStatement.setInt(2, tenantId);
             });
         } catch (DataAccessException e) {
-            throw new TemplateManagementServerException(String.format(ERROR_CODE_DELETE_TEMPLATE.getMessage(), tenantId.toString(), templateName),
+            throw new TemplateManagementServerException(String.format(ERROR_CODE_DELETE_TEMPLATE.getMessage(),
+                    tenantId.toString(), templateName),
                     ERROR_CODE_DELETE_TEMPLATE.getCode(), e);
         }
         return templateName;

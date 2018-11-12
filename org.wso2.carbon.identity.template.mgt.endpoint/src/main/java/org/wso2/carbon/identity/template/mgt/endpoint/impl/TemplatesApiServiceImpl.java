@@ -137,7 +137,8 @@ TemplatesApiServiceImpl extends TemplatesApiService {
         }
     }
 
-    private List<GetTemplatesResponseDTO> getTemplatesList(Integer limit, Integer offset) throws TemplateManagementException {
+    private List<GetTemplatesResponseDTO> getTemplatesList(Integer limit, Integer offset)
+            throws TemplateManagementException {
 
         if (limit == null) {
             limit = 0;
@@ -161,10 +162,12 @@ TemplatesApiServiceImpl extends TemplatesApiService {
         return responseDTO;
     }
 
-    private UpdateSuccessResponseDTO putTemplate(String templateName, UpdateTemplateRequestDTO updateTemplateRequestDTO) throws TemplateManagementException {
+    private UpdateSuccessResponseDTO putTemplate(String templateName, UpdateTemplateRequestDTO updateTemplateRequestDTO)
+            throws TemplateManagementException {
 
         Template updateTemplateRequest = TemplateEndpointUtils.getTemplateUpdateRequest(updateTemplateRequestDTO);
-        TemplateInfo updateTemplateResponse = TemplateEndpointUtils.getTemplateManager().updateTemplate(templateName, updateTemplateRequest);
+        TemplateInfo updateTemplateResponse = TemplateEndpointUtils.getTemplateManager()
+                                                                   .updateTemplate(templateName, updateTemplateRequest);
 
         UpdateSuccessResponseDTO responseDTO = new UpdateSuccessResponseDTO();
         responseDTO.setName(updateTemplateResponse.getTemplateName());
@@ -204,8 +207,9 @@ TemplatesApiServiceImpl extends TemplatesApiService {
 
     private boolean isForbiddenError(TemplateManagementClientException e) {
 
-        return ERROR_CODE_NO_AUTH_USER_FOUND.getCode().equals(e.getErrorCode()) || ERROR_CODE_USER_NOT_AUTHORIZED.getCode()
-                .equals(e.getErrorCode());
+        return ERROR_CODE_NO_AUTH_USER_FOUND.getCode().equals(e.getErrorCode()) ||
+                                                                ERROR_CODE_USER_NOT_AUTHORIZED.getCode()
+                                                                .equals(e.getErrorCode());
     }
 
     private boolean isNotFoundError(TemplateManagementClientException e) {

@@ -57,7 +57,8 @@ public class TemplateManagementServiceClient {
         return getTemplateManager().getTemplateByName(templateName);
     }
 
-    public TemplateInfo updateTemplate(String templateName, UpdateTemplateRequestDTO updateTemplateRequestDTO) throws TemplateManagementException {
+    public TemplateInfo updateTemplate(String templateName, UpdateTemplateRequestDTO updateTemplateRequestDTO)
+            throws TemplateManagementException {
 
         handleLoggedInUserAuthorization(TemplateMgtConstants.PERMISSION_TEMPLATE_MGT_UPDATE);
         Template updateTemplateRequest = new Template(updateTemplateRequestDTO.getTemplateName(),
@@ -88,15 +89,19 @@ public class TemplateManagementServiceClient {
             int tenantId = PrivilegedCarbonContext.getThreadLocalCarbonContext().getTenantId();
 
             if (StringUtils.isBlank(loggedInUser)) {
-                throw new TemplateManagementException(TemplateMgtConstants.ErrorMessages.ERROR_CODE_NO_AUTH_USER_FOUND.getMessage(),
+                throw new TemplateManagementException(TemplateMgtConstants.ErrorMessages.
+                        ERROR_CODE_NO_AUTH_USER_FOUND.getMessage(),
                         TemplateMgtConstants.ErrorMessages.ERROR_CODE_NO_AUTH_USER_FOUND.getCode());
             }
-            AuthorizationManager authorizationManager = TemplateManagementUIServiceDataHolder.getInstance().getRealmService()
+            AuthorizationManager authorizationManager = TemplateManagementUIServiceDataHolder
+                    .getInstance().getRealmService()
                     .getTenantUserRealm(tenantId)
                     .getAuthorizationManager();
             if (!authorizationManager.isUserAuthorized(loggedInUser, permission, CarbonConstants.UI_PERMISSION_ACTION)) {
-                throw new TemplateManagementException(TemplateMgtConstants.ErrorMessages.ERROR_CODE_USER_NOT_AUTHORIZED.getMessage(),
-                        TemplateMgtConstants.ErrorMessages.ERROR_CODE_USER_NOT_AUTHORIZED.getCode());
+                throw new TemplateManagementException(TemplateMgtConstants.
+                        ErrorMessages.ERROR_CODE_USER_NOT_AUTHORIZED.getMessage(),
+                        TemplateMgtConstants.ErrorMessages
+                                .ERROR_CODE_USER_NOT_AUTHORIZED.getCode());
             }
         } catch (UserStoreException e) {
             throw new TemplateManagementException(TemplateMgtConstants.ErrorMessages.ERROR_CODE_UNEXPECTED.getMessage(),

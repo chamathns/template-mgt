@@ -94,7 +94,8 @@
                      return false;*/
         } else {
             if (templateName != oldTemplateName) {
-                CARBON.showConfirmationDialog('Are you sure you want to edit "' + oldTemplateName + '" Template name ? \n WARN: If you edit this library name, ' +
+                CARBON.showConfirmationDialog('Are you sure you want to edit "' + oldTemplateName + '" ' +
+                    'Template name ? \n WARN: If you edit this library name, ' +
                     'the authentication scripts which used this will no longer function properly!',
                     doEdit, null);
             }
@@ -176,7 +177,8 @@
                             <td>
                                 <textarea style="width:50%" type="text" name="template-description"
                                           id="template-description"
-                                          class="text-box-big"><%=template.getDescription() != null ? Encode.forHtmlContent(template.getDescription()) : ""%>
+                                          class="text-box-big"><%=template.getDescription() != null ?
+                                        Encode.forHtmlContent(template.getDescription()) : ""%>
                                 </textarea>
                                 <div class="sectionHelp">
                                     <fmt:message key='help.desc'/>
@@ -194,7 +196,8 @@
                         <div id="codeMirror">
             <textarea id="scriptTextArea" name="scriptTextArea"
                       placeholder="Write JavaScript Function..."
-                      style="height: 500px;width: 100%; display: none;"><%=template.getTemplateScript() != null ? Encode.forHtmlContent(template.getTemplateScript()) : "" %>
+                      style="height: 500px;width: 100%; display: none;"><%=template.getTemplateScript() != null ?
+                    Encode.forHtmlContent(template.getTemplateScript()) : "" %>
             </textarea>
                         
                         </div>

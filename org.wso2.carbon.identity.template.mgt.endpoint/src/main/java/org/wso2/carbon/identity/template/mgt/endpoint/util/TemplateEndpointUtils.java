@@ -42,7 +42,8 @@ public class TemplateEndpointUtils {
 
     public static TemplateManager getTemplateManager() {
 
-        return (TemplateManager) PrivilegedCarbonContext.getThreadLocalCarbonContext().getOSGiService(TemplateManager.class, null);
+        return (TemplateManager) PrivilegedCarbonContext.getThreadLocalCarbonContext()
+                                                        .getOSGiService(TemplateManager.class, null);
     }
 
     public static Template getTemplateRequest(TemplateRequestDTO templateDTO) {

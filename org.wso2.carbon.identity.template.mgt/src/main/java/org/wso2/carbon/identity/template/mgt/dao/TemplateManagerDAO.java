@@ -59,7 +59,8 @@ public interface TemplateManagerDAO {
      * @return List of {@link TemplateInfo} entries.
      * @throws TemplateManagementException If error occurs while searching the Templates.
      */
-    List<TemplateInfo> getAllTemplates(Integer tenantId, Integer limit, Integer offset) throws TemplateManagementException;
+    List<TemplateInfo> getAllTemplates(Integer tenantId, Integer limit, Integer offset)
+            throws TemplateManagementException;
 
     /**
      * Update a {@link Template}.

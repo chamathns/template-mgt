@@ -154,15 +154,18 @@
                 "                It should follow the below mentioned format-->\n" +
                 "\n" +
                 "                <label for=\"sampleInput\" class=\"control-label\">sample input</label>\n" +
-                "                <input type=\"text\" id=\"sampleInput\" name=\"sample_input\" class=\"form-control\" placeholder=\"sample input placeholder\" />\n" +
+                "                <input type=\"text\" id=\"sampleInput\" name=\"sample_input\" class=\"form-control\" " +
+                "placeholder=\"sample input placeholder\" />\n" +
                 "\n" +
                 "            </div>\n" +
                 "\n" +
-                "            <input type=\"hidden\" id=\"promptResp\" name=\"promptResp\" value=\"true\"> <!-- *DO NOT CHANGE THIS* -->\n" +
+                "            <input type=\"hidden\" id=\"promptResp\" name=\"promptResp\" value=\"true\"> " +
+                "<!-- *DO NOT CHANGE THIS* -->\n" +
                 "            <input type=\"hidden\" id=\"promptId\" name=\"promptId\"> <!-- *DO NOT CHANGE THIS* -->\n" +
                 "\n" +
                 "            <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12 form-group required\">\n" +
-                "                <input type=\"submit\" class=\"wr-btn grey-bg col-xs-12 col-md-12 col-lg-12 uppercase font-extra-large\" value=\"Submit\">\n" +
+                "                <input type=\"submit\" class=\"wr-btn grey-bg col-xs-12 col-md-12 col-lg-12" +
+                " uppercase font-extra-large\" value=\"Submit\">\n" +
                 "            </div>\n" +
                 "        </form>\n" +
                 "        <div class=\"clearfix\"></div>\n" +

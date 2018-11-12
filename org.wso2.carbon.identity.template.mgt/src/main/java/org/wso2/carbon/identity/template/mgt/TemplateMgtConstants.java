@@ -18,7 +18,7 @@
 package org.wso2.carbon.identity.template.mgt;
 
 /**
- * Constants used in the module, template-mgt.
+ * This class holds the constants used in the module, template-mgt.
  */
 public class TemplateMgtConstants {
 
@@ -44,9 +44,12 @@ public class TemplateMgtConstants {
 
     public enum ErrorMessages {
         ERROR_CODE_INSERT_TEMPLATE("TM_00001", "Error occurred while adding the template: %s."),
-        ERROR_CODE_SELECT_TEMPLATE_BY_NAME("TM_00002", "Error occurred while retrieving template from DB for tenant ID: %s and template name: %s."),
-        ERROR_CODE_LIST_TEMPLATES("TM_00003", "Error occurred while listing template from DB for tenantID: %s, limit: %s and offset: %s."),
-        ERROR_CODE_DELETE_TEMPLATE("TM_00004", "Error occurred while deleting template from DB for tenant ID: %s and template name: %s."),
+        ERROR_CODE_SELECT_TEMPLATE_BY_NAME("TM_00002", "Error occurred while retrieving template" +
+                " from DB for tenant ID: %s and template name: %s."),
+        ERROR_CODE_LIST_TEMPLATES("TM_00003", "Error occurred while listing template " +
+                "from DB for tenantID: %s, limit: %s and offset: %s."),
+        ERROR_CODE_DELETE_TEMPLATE("TM_00004", "Error occurred while deleting template " +
+                "from DB for tenant ID: %s and template name: %s."),
         ERROR_CODE_SET_BLOB("TM_00005", "Error occurred while reading from input stream of template: %s."),
         ERROR_CODE_UPDATE_TEMPLATE("TM_00006", "Error occurred while updating the template: %s."),
         ERROR_CODE_TEMPLATE_NAME_REQUIRED("TM_00007", "Template name is required."),
@@ -98,25 +101,37 @@ public class TemplateMgtConstants {
      */
     public static class SqlQueries {
 
-        public static final String INSERT_TEMPLATE = "INSERT INTO IDN_TEMPLATE_MGT (TENANT_ID, NAME, DESCRIPTION, TEMPLATE_SCRIPT) VALUES (?,?,?,?  )";
-        public static final String GET_TEMPLATE_BY_NAME = "SELECT TEMPLATE_ID,TENANT_ID,NAME,DESCRIPTION,TEMPLATE_SCRIPT FROM IDN_TEMPLATE_MGT WHERE NAME=? AND TENANT_ID=?";
+        public static final String INSERT_TEMPLATE = "INSERT INTO IDN_TEMPLATE_MGT (TENANT_ID, NAME," +
+                " DESCRIPTION, TEMPLATE_SCRIPT) VALUES (?,?,?,?  )";
 
-        public static final String LIST_PAGINATED_TEMPLATES_MYSQL = "SELECT NAME,DESCRIPTION FROM IDN_TEMPLATE_MGT " +
-                "WHERE TENANT_ID=? ORDER BY TEMPLATE_ID ASC LIMIT ? OFFSET ?";
+        public static final String GET_TEMPLATE_BY_NAME = "SELECT TEMPLATE_ID,TENANT_ID,NAME,DESCRIPTION," +
+                "TEMPLATE_SCRIPT FROM IDN_TEMPLATE_MGT WHERE NAME=?" +
+                " AND TENANT_ID=?";
 
-        public static final String LIST_PAGINATED_TEMPLATES_DB2 = "SELECT NAME, DESCRIPTION FROM (SELECT ROW_NUMBER() OVER (ORDER BY TEMPLATE_ID) AS rn, " +
+        public static final String LIST_PAGINATED_TEMPLATES_MYSQL = "SELECT NAME,DESCRIPTION FROM " +
+                "IDN_TEMPLATE_MGT WHERE TENANT_ID=? ORDER BY" +
+                " TEMPLATE_ID ASC LIMIT ? OFFSET ?";
+
+        public static final String LIST_PAGINATED_TEMPLATES_DB2 = "SELECT NAME, DESCRIPTION FROM (SELECT ROW_NUMBER()" +
+                " OVER (ORDER BY TEMPLATE_ID) AS rn, " +
                 "t.* FROM IDN_TEMPLATE_MGT AS t) WHERE " +
                 "TENANT_ID=? AND rn BETWEEN ? AND ?";
 
-        public static final String LIST_PAGINATED_TEMPLATES_MSSQL = "SELECT NAME, DESCRIPTION FROM (SELECT TENANT_ID, NAME, DESCRIPTION, ROW_NUMBER() OVER " +
-                "(ORDER BY TEMPLATE_ID) AS RowNum FROM IDN_TEMPLATE_MGT) AS T WHERE T" +
-                ".TENANT_ID = ? AND T.RowNum BETWEEN ? AND ?";
+        public static final String LIST_PAGINATED_TEMPLATES_MSSQL = "SELECT NAME, DESCRIPTION FROM (SELECT TENANT_ID," +
+                " NAME, DESCRIPTION, ROW_NUMBER() OVER " +
+                "(ORDER BY TEMPLATE_ID) AS RowNum FROM " +
+                "IDN_TEMPLATE_MGT) AS T WHERE T.TENANT_ID = ? " +
+                "AND T.RowNum BETWEEN ? AND ?";
 
-        public static final String LIST_PAGINATED_TEMPLATES_ORACLE = "SELECT NAME,DESCRIPTION FROM (SELECT TENANT_ID, NAME, DESCRIPTION, rownum AS rnum FROM " +
-                "(SELECT TENANT_ID, NAME, DESCRIPTION FROM IDN_TEMPLATE_MGT ORDER BY TENANT_ID) " +
-                "WHERE TENANT_ID =? AND rownum <= ?) WHERE rnum > ?";
+        public static final String LIST_PAGINATED_TEMPLATES_ORACLE = "SELECT NAME,DESCRIPTION FROM (SELECT TENANT_ID," +
+                " NAME, DESCRIPTION, rownum AS rnum FROM " +
+                "(SELECT TENANT_ID, NAME, DESCRIPTION FROM " +
+                "IDN_TEMPLATE_MGT ORDER BY TENANT_ID) WHERE " +
+                "TENANT_ID =? AND rownum <= ?) WHERE rnum > ?";
 
-        public static final String UPDATE_TEMPLATE = "UPDATE IDN_TEMPLATE_MGT SET NAME= ?, DESCRIPTION= ?, TEMPLATE_SCRIPT= ? WHERE TENANT_ID= ? AND NAME = ?";
+        public static final String UPDATE_TEMPLATE = "UPDATE IDN_TEMPLATE_MGT SET NAME= ?, DESCRIPTION= ?, " +
+                "TEMPLATE_SCRIPT= ? WHERE TENANT_ID= ? AND NAME = ?";
+
         public static final String DELETE_TEMPLATE = "DELETE FROM IDN_TEMPLATE_MGT WHERE NAME=? AND TENANT_ID =?";
     }
 }

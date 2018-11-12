@@ -28,7 +28,8 @@ public class Template {
     private String description;
     private String templateScript;
 
-    public Template(Integer templateId, Integer tenantId, String templateName, String description, String templateScript) {
+    public Template(Integer templateId, Integer tenantId, String templateName,
+                    String description, String templateScript) {
 
         this.templateId = templateId;
         this.tenantId = tenantId;

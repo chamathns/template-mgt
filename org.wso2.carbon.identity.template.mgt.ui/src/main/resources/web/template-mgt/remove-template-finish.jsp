@@ -40,7 +40,8 @@
             serviceClient.deleteTemplate(templateName);
             
         } catch (Exception e) {
-            String message = resourceBundle.getString("template.list.error.while.removing.template") + " : " + e.getMessage();
+            String message = resourceBundle.getString("template.list.error.while.removing.template")
+                    + " : " + e.getMessage();
             CarbonUIMessage.sendCarbonUIMessage(message, CarbonUIMessage.ERROR, request, e);
         }
     }

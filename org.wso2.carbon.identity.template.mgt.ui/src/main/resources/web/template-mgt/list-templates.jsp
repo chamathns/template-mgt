@@ -150,7 +150,8 @@
                                 <td>
                                     <a title="<fmt:message key='edit.template.info'/>"
                                        onclick=""
-                                       href="get-template.jsp?templateName=<%=Encode.forUriComponent(template.getTemplateName())%>"
+                                       href="get-template.jsp?templateName=
+                                        <%=Encode.forUriComponent(template.getTemplateName())%>"
                                        class="icon-link"
                                        style="background-image: url(images/edit.gif)">
                                         <fmt:message key='edit'/>
@@ -163,7 +164,8 @@
                                         <fmt:message key='export'/>
                                     </a>
                                     <a title="<fmt:message key='delete.template.info'/>"
-                                       onclick="removeItem('<%=Encode.forJavaScriptAttribute(template.getTemplateName())%>'); return false;"
+                                       onclick="removeItem('<%=Encode.forJavaScriptAttribute(template
+                                                                .getTemplateName())%>'); return false;"
                                        href=""
                                        class="icon-link"
                                        style="background-image: url(images/delete.gif)">
