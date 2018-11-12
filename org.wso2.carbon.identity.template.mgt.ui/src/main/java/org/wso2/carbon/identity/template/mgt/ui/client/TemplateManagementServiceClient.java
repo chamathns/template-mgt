@@ -36,7 +36,7 @@ import org.wso2.carbon.user.api.UserStoreException;
 import java.util.List;
 
 public class TemplateManagementServiceClient {
-    public String loggedInUser = PrivilegedCarbonContext.getThreadLocalCarbonContext().getUsername();
+    private String loggedInUser ;
     public TemplateManagementServiceClient(String loggedInUser){
         this.loggedInUser = loggedInUser;
     }
@@ -51,24 +51,24 @@ public class TemplateManagementServiceClient {
     }
 
     public Template getTemplateByName(String templateName) throws TemplateManagementException{
-//        handleLoggedInUserAuthorization(TemplateMgtConstants.PERMISSION_TEMPLATE_MGT_VIEW);
+        handleLoggedInUserAuthorization(TemplateMgtConstants.PERMISSION_TEMPLATE_MGT_VIEW);
         return getTemplateManager().getTemplateByName(templateName);
     }
 
     public TemplateInfo updateTemplate(String templateName, UpdateTemplateRequestDTO updateTemplateRequestDTO) throws TemplateManagementException{
-//        handleLoggedInUserAuthorization(TemplateMgtConstants.PERMISSION_TEMPLATE_MGT_UPDATE);
+        handleLoggedInUserAuthorization(TemplateMgtConstants.PERMISSION_TEMPLATE_MGT_UPDATE);
         Template updateTemplateRequest = new Template(updateTemplateRequestDTO.getTemplateName(),
                                             updateTemplateRequestDTO.getDescription(),updateTemplateRequestDTO.getTemplateScript());
         return getTemplateManager().updateTemplate(templateName,updateTemplateRequest);
     }
 
     public void deleteTemplate(String templateName) throws TemplateManagementException{
-//        handleLoggedInUserAuthorization(TemplateMgtConstants.PERMISSION_TEMPLATE_MGT_DELETE);
+        handleLoggedInUserAuthorization(TemplateMgtConstants.PERMISSION_TEMPLATE_MGT_DELETE);
         getTemplateManager().deleteTemplate(templateName);
     }
 
     public List<TemplateInfo> listTemplates(Integer limit, Integer offset) throws TemplateManagementException{
-//        handleLoggedInUserAuthorization(TemplateMgtConstants.PERMISSION_TEMPLATE_MGT_UPDATE);
+        handleLoggedInUserAuthorization(TemplateMgtConstants.PERMISSION_TEMPLATE_MGT_UPDATE);
         return getTemplateManager().listTemplates(limit,offset);
     }
 
