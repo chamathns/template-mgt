@@ -36,14 +36,14 @@ import org.wso2.carbon.user.api.UserStoreException;
 import java.util.List;
 
 public class TemplateManagementServiceClient {
-    private String loggedInUser;
+    public String loggedInUser = PrivilegedCarbonContext.getThreadLocalCarbonContext().getUsername();
     public TemplateManagementServiceClient(String loggedInUser){
         this.loggedInUser = loggedInUser;
     }
 
 
     public TemplateInfo addTemplate(TemplateRequestDTO templateRequestDTO) throws TemplateManagementException {
-//        handleLoggedInUserAuthorization(TemplateMgtConstants.PERMISSION_TEMPLATE_MGT_ADD);
+        handleLoggedInUserAuthorization(TemplateMgtConstants.PERMISSION_TEMPLATE_MGT_ADD);
         Template template = new Template(templateRequestDTO.getTenantId(), templateRequestDTO.getTemplateName(),
                                 templateRequestDTO.getDescription(),templateRequestDTO.getTemplateScript());
         TemplateInfo templateResponse = getTemplateManager().addTemplate(template);

@@ -54,13 +54,17 @@ public class TemplateManagerDAOImpl implements TemplateManagerDAO {
                 preparedStatement.setInt(1,template.getTenantId());
                 preparedStatement.setString(2,template.getTemplateName());
                 preparedStatement.setString(3,template.getDescription());
-//                preparedStatement.setString(4,template.getTemplateScript());
-//                preparedStatement.setBinaryStream(4, IOUtils.toInputStream(template.getTemplateScript()));
                 try {
-                    setBlobValue(template.getTemplateScript(),preparedStatement,4);
+                    InputStream inputStream = IOUtils.toInputStream(template.getTemplateScript());
+                    preparedStatement.setBinaryStream(4, inputStream, inputStream.available());
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
+//                try {
+//                    setBlobValue(template.getTemplateScript(),preparedStatement,4);
+//                } catch (IOException e) {
+//                    e.printStackTrace();
+//                }
 
             }));
         } catch (DataAccessException e) {
@@ -81,7 +85,6 @@ public class TemplateManagerDAOImpl implements TemplateManagerDAO {
                             resultSet.getInt(2),
                             resultSet.getString(3),
                             resultSet.getString(4),
-//                            resultSet.getString(5)),
                             IOUtils.toString(resultSet.getBinaryStream(5)));
                 } catch (IOException e) {
                     e.printStackTrace();
@@ -145,8 +148,6 @@ public class TemplateManagerDAOImpl implements TemplateManagerDAO {
                 offset = limit + offset;
                 limit = initialOffset + 1;
                 query = LIST_PAGINATED_TEMPLATES_MSSQL;
-            } else if (isInformixDB()) {
-                query = LIST_PAGINATED_TEMPLATES_INFORMIX;
             } else {
                 //oracle
                 query = LIST_PAGINATED_TEMPLATES_ORACLE;
@@ -177,9 +178,10 @@ public class TemplateManagerDAOImpl implements TemplateManagerDAO {
             jdbcTemplate.executeUpdate(TemplateMgtConstants.SqlQueries.UPDATE_TEMPLATE, (preparedStatement -> {
                 preparedStatement.setString(1,newTemplate.getTemplateName());
                 preparedStatement.setString(2,newTemplate.getDescription());
-//                preparedStatement.setString(3,newTemplate.getTemplateScript());
                 try {
-                    setBlobValue(newTemplate.getTemplateScript(),preparedStatement,3);
+                    InputStream inputStream = IOUtils.toInputStream(newTemplate.getTemplateScript());
+                    preparedStatement.setBinaryStream(3, inputStream, inputStream.available());
+
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
@@ -206,30 +208,30 @@ public class TemplateManagerDAOImpl implements TemplateManagerDAO {
         return templateName;
     }
 
-    /**
-     * Set given string as Blob for the given index into the prepared-statement
-     *
-     * @param value    string value to be converted to blob
-     * @param prepStmt Prepared statement
-     * @param index    column index
-     * @throws SQLException
-     * @throws IOException
-     */
-    private void setBlobValue(String value, PreparedStatement prepStmt, int index) throws IOException, SQLException {
-        if (value != null) {
-            InputStream inputStream = new ByteArrayInputStream(value.getBytes());
-            prepStmt.setBinaryStream(index, inputStream, inputStream.available());
-        } else {
-            prepStmt.setBinaryStream(index, new ByteArrayInputStream(new byte[0]), 0);
-        }
-    }
+//    /**
+//     * Set given string as Blob for the given index into the prepared-statement
+//     *
+//     * @param value    string value to be converted to blob
+//     * @param prepStmt Prepared statement
+//     * @param index    column index
+//     * @throws SQLException
+//     * @throws IOException
+//     */
+//    private void setBlobValue(String value, PreparedStatement prepStmt, int index) throws IOException, SQLException {
+//        if (value != null) {
+//            InputStream inputStream = new ByteArrayInputStream(value.getBytes());
+//            prepStmt.setBinaryStream(index, inputStream, inputStream.available());
+//        } else {
+//            prepStmt.setBinaryStream(index, new ByteArrayInputStream(new byte[0]), 0);
+//        }
+//    }
 
-    /**
-     * Get string from inputStream of a blob
-     * @param inputStream input stream
-     * @return
-     * @throws IOException
-     */
+//    /**
+//     * Get string from inputStream of a blob
+//     * @param inputStream input stream
+//     * @return
+//     * @throws IOException
+//     */
 //    private String getBlobValue(InputStream inputStream) {
 //
 //        if (inputStream != null) {

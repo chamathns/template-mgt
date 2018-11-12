@@ -74,17 +74,6 @@ public class JdbcUtils {
     }
 
     /**
-     * Check if the DB is Informix.
-     *
-     * @return true if DB is Informix, false otherwise.
-     * @throws DataAccessException if error occurred while checking the DB metadata.
-     */
-    public static boolean isInformixDB() throws DataAccessException {
-
-        return isDBTypeOf(INFORMIX);
-    }
-
-    /**
      * Check whether the DB type string contains in the driver name or db product name.
      *
      * @param dbType database type string.

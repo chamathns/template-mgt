@@ -25,7 +25,6 @@ public class TemplateMgtConstants {
     public static final String H2 = "H2";
     public static final String MICROSOFT = "Microsoft";
     public static final String S_MICROSOFT = "microsoft";
-    public static final String INFORMIX = "Informix";
     public static final String PERMISSION_TEMPLATE_MGT_ADD = "/permission/admin/manage/identity/template/mgt/add";
     public static final String PERMISSION_TEMPLATE_MGT_VIEW = "/permission/admin/manage/identity/template/mgt/view";
     public static final String PERMISSION_TEMPLATE_MGT_LIST = "/permission/admin/manage/identity/template/mgt/list";
@@ -60,8 +59,6 @@ public class TemplateMgtConstants {
                                                                     "(ORDER BY TEMPLATE_ID) AS RowNum FROM IDN_TEMPLATE_MGT) AS T WHERE T" +
                                                                     ".TENANT_ID = ? AND T.RowNum BETWEEN ? AND ?";
 
-
-        public static final String LIST_PAGINATED_TEMPLATES_INFORMIX = "SELECT NAME,DESCRIPTION FROM IDN_TEMPLATE_MGT WHERE TENANT_ID=? ORDER BY TEMPLATE_ID ASC LIMIT ? OFFSET ?";
         public static final String LIST_PAGINATED_TEMPLATES_ORACLE = "SELECT NAME,DESCRIPTION FROM (SELECT TENANT_ID, NAME, DESCRIPTION, rownum AS rnum FROM " +
                                                                         "(SELECT TENANT_ID, NAME, DESCRIPTION FROM IDN_TEMPLATE_MGT ORDER BY TENANT_ID) " +
                                                                         "WHERE TENANT_ID =? AND rownum <= ?) WHERE rnum > ?";
