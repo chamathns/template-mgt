@@ -42,7 +42,7 @@
             <order>1</order>
             <style-class>manage</style-class>
             <icon>../template-mgt/images/add.png</icon>
-            <require-permission>/permission/admin/manage/identity/templatemgt/add</require-permission>
+            <require-permission>/permission/admin/manage/identity/template/mgt/add</require-permission>
             <require-not-logged-in>false</require-not-logged-in>
         </menu>
         <menu>
@@ -55,7 +55,7 @@
             <order>2</order>
             <style-class>manage</style-class>
             <icon>../template-mgt/images/list.png</icon>
-            <require-permission>/permission/admin/manage/identity/templatemgt/list</require-permission>
+            <require-permission>/permission/admin/manage/identity/template/mgt/list</require-permission>
             <require-not-logged-in>false</require-not-logged-in>
         </menu>
     </menus>
