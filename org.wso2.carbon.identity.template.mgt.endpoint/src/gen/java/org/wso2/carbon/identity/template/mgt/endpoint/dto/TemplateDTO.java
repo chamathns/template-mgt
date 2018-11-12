@@ -27,7 +27,7 @@ public class TemplateDTO  {
   private String description = null;
   
   
-  private String data = null;
+  private String templateScript = null;
 
   
   /**
@@ -86,12 +86,12 @@ public class TemplateDTO  {
    * This indicates the script of the template
    **/
   @ApiModelProperty(value = "This indicates the script of the template")
-  @JsonProperty("data")
-  public String getData() {
-    return data;
+  @JsonProperty("templateScript")
+  public String getTemplateScript() {
+    return templateScript;
   }
-  public void setData(String data) {
-    this.data = data;
+  public void setTemplateScript(String templateScript) {
+    this.templateScript = templateScript;
   }
 
   
@@ -105,7 +105,7 @@ public class TemplateDTO  {
     sb.append("  tenantId: ").append(tenantId).append("\n");
     sb.append("  templateName: ").append(templateName).append("\n");
     sb.append("  description: ").append(description).append("\n");
-    sb.append("  data: ").append(data).append("\n");
+    sb.append("  templateScript: ").append(templateScript).append("\n");
     sb.append("}\n");
     return sb.toString();
   }

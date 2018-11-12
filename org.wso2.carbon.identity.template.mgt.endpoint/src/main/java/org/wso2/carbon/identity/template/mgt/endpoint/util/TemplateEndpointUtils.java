@@ -45,14 +45,14 @@ public class TemplateEndpointUtils {
         return new Template(TemplateMgtUtils.getTenantIdFromCarbonContext(),
                             templateDTO.getTemplateName(),
                             templateDTO.getDescription(),
-                            templateDTO.getData());
+                            templateDTO.getTemplateScript());
     }
 
     public static Template getTemplateUpdateRequest (UpdateTemplateRequestDTO templateRequestDTO){
         return new Template(TemplateMgtUtils.getTenantIdFromCarbonContext(),
                             templateRequestDTO.getTemplateName(),
                             templateRequestDTO.getDescription(),
-                            templateRequestDTO.getData());
+                            templateRequestDTO.getTemplateScript());
     }
 
     public static List<GetTemplatesResponseDTO> getTemplatesResponseDTOList (List<TemplateInfo> templates){

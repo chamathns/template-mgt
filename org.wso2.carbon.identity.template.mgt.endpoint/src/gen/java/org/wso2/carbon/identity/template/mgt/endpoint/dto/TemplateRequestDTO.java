@@ -15,29 +15,13 @@ public class TemplateRequestDTO  {
   
   
   @NotNull
-  private Integer tenantId = null;
-  
-  @NotNull
   private String templateName = null;
   
   
   private String description = null;
   
   
-  private String data = null;
-
-  
-  /**
-   * A unique ID for a tenant
-   **/
-  @ApiModelProperty(required = true, value = "A unique ID for a tenant")
-  @JsonProperty("tenantId")
-  public Integer getTenantId() {
-    return tenantId;
-  }
-  public void setTenantId(Integer tenantId) {
-    this.tenantId = tenantId;
-  }
+  private String templateScript = null;
 
   
   /**
@@ -70,12 +54,12 @@ public class TemplateRequestDTO  {
    * This indicates the script of the template
    **/
   @ApiModelProperty(value = "This indicates the script of the template")
-  @JsonProperty("data")
-  public String getData() {
-    return data;
+  @JsonProperty("templateScript")
+  public String getTemplateScript() {
+    return templateScript;
   }
-  public void setData(String data) {
-    this.data = data;
+  public void setTemplateScript(String templateScript) {
+    this.templateScript = templateScript;
   }
 
   
@@ -85,10 +69,9 @@ public class TemplateRequestDTO  {
     StringBuilder sb = new StringBuilder();
     sb.append("class TemplateRequestDTO {\n");
     
-    sb.append("  tenantId: ").append(tenantId).append("\n");
     sb.append("  templateName: ").append(templateName).append("\n");
     sb.append("  description: ").append(description).append("\n");
-    sb.append("  data: ").append(data).append("\n");
+    sb.append("  templateScript: ").append(templateScript).append("\n");
     sb.append("}\n");
     return sb.toString();
   }

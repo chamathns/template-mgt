@@ -9,7 +9,6 @@ import io.swagger.annotations.ApiParam;
 import org.wso2.carbon.identity.template.mgt.endpoint.dto.ErrorDTO;
 import org.wso2.carbon.identity.template.mgt.endpoint.dto.AddTemplateResponseDTO;
 import org.wso2.carbon.identity.template.mgt.endpoint.dto.TemplateRequestDTO;
-import org.wso2.carbon.identity.template.mgt.endpoint.dto.DeleteTemplateResponseDTO;
 import org.wso2.carbon.identity.template.mgt.endpoint.dto.TemplateDTO;
 import org.wso2.carbon.identity.template.mgt.endpoint.dto.GetTemplatesResponseDTO;
 import org.wso2.carbon.identity.template.mgt.endpoint.dto.UpdateTemplateRequestDTO;
@@ -53,10 +52,10 @@ public class TemplatesApi  {
     return delegate.addTemplate(template);
     }
     @DELETE
-    @Path("/{template_name}")
+    @Path("/{templateName}")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
-    @io.swagger.annotations.ApiOperation(value = "Delete a template", notes = "This API is used to delete a template.\n", response = DeleteTemplateResponseDTO.class)
+    @io.swagger.annotations.ApiOperation(value = "Delete a template", notes = "This API is used to delete a template.\n", response = void.class)
     @io.swagger.annotations.ApiResponses(value = { 
         @io.swagger.annotations.ApiResponse(code = 202, message = "Template deleted"),
         
@@ -68,12 +67,12 @@ public class TemplatesApi  {
         
         @io.swagger.annotations.ApiResponse(code = 500, message = "Server Error") })
 
-    public Response deleteTemplate(@ApiParam(value = "Name of the template to be deleted",required=true ) @PathParam("template_name")  String templateName)
+    public Response deleteTemplate(@ApiParam(value = "Name of the template to be deleted",required=true ) @PathParam("templateName")  String templateName)
     {
     return delegate.deleteTemplate(templateName);
     }
     @GET
-    @Path("/{template_name}")
+    @Path("/{templateName}")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "Find template by Name\n", notes = "This API is used to retrieve a specific template using the template name. \n", response = TemplateDTO.class)
@@ -88,7 +87,7 @@ public class TemplatesApi  {
         
         @io.swagger.annotations.ApiResponse(code = 500, message = "Server Error") })
 
-    public Response getTemplateByName(@ApiParam(value = "Name of template to return",required=true ) @PathParam("template_name")  String templateName)
+    public Response getTemplateByName(@ApiParam(value = "Name of template to return",required=true ) @PathParam("templateName")  String templateName)
     {
     return delegate.getTemplateByName(templateName);
     }
@@ -114,7 +113,7 @@ public class TemplatesApi  {
     return delegate.getTemplates(limit,offset);
     }
     @PUT
-    @Path("/{template_name}")
+    @Path("/{templateName}")
     @Consumes({ "application/json" })
     @Produces({ "application/json" })
     @io.swagger.annotations.ApiOperation(value = "Update an existing template      \n", notes = "This API is used to update a template. \n", response = UpdateSuccessResponseDTO.class)
@@ -129,7 +128,7 @@ public class TemplatesApi  {
         
         @io.swagger.annotations.ApiResponse(code = 500, message = "Server Error") })
 
-    public Response updateTemplate(@ApiParam(value = "Name of the template to be updated",required=true ) @PathParam("template_name")  String templateName,
+    public Response updateTemplate(@ApiParam(value = "Name of the template to be updated",required=true ) @PathParam("templateName")  String templateName,
     @ApiParam(value = "" ,required=true ) UpdateTemplateRequestDTO newTemplate)
     {
     return delegate.updateTemplate(templateName,newTemplate);

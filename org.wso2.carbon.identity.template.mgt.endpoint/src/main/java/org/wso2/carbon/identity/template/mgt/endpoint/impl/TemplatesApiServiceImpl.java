@@ -80,7 +80,6 @@ TemplatesApiServiceImpl extends TemplatesApiService {
         }
     }
 
-
     @Override
     public Response getTemplateByName(String templateName){
         try {

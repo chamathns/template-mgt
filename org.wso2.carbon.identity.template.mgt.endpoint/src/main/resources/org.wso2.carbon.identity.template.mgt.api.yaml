@@ -101,7 +101,7 @@ paths:
           description: "Server Error"
           schema:
             $ref: "#/definitions/Error"
-  /templates/{template_name}:
+  /templates/{templateName}:
     get:
       summary: "Find template by Name\n"
       description: "This API is used to retrieve a specific template using the template\
@@ -110,7 +110,7 @@ paths:
       produces:
       - "application/json"
       parameters:
-      - name: "template_name"
+      - name: "templateName"
         in: "path"
         description: "Name of template to return"
         required: true
@@ -143,7 +143,7 @@ paths:
       produces:
       - "application/json"
       parameters:
-      - name: "template_name"
+      - name: "templateName"
         in: "path"
         description: "Name of the template to be updated"
         required: true
@@ -181,7 +181,7 @@ paths:
       produces:
       - "application/json"
       parameters:
-      - name: "template_name"
+      - name: "templateName"
         in: "path"
         description: "Name of the template to be deleted"
         required: true
@@ -189,8 +189,6 @@ paths:
       responses:
         202:
           description: "Template deleted"
-          schema:
-            $ref: "#/definitions/DeleteTemplateResponse"
         400:
           description: "Bad Request"
           schema:
@@ -214,71 +212,65 @@ definitions:
   TemplateRequest:
     type: "object"
     required:
-    - "template_name"
-    - "tenant_id"
+    - "templateName"
     properties:
-      tenant_id:
-        type: "integer"
-        description: "A unique ID for a tenant"
-      template_name:
+      templateName:
         type: "string"
         description: "The name of the template given by the admin"
       description:
         type: "string"
         description: "A description for the template given by the admin"
-      data:
+      templateScript:
         type: "string"
         description: "This indicates the script of the template"
     example:
-      tenant_id: 1
-      template_name: "template_name"
-      data: "data"
-      description: "description"
-      template_id: 6
+      templateName: "sample template name"
+      description: "sample description"
+      templateScript: "sample template script"
   Template:
     type: "object"
     required:
-    - "tenant_id"
+    - "tenantId"
     properties:
-      template_id:
+      templateId:
         type: "integer"
         description: "An auto-incremented unique ID for a template"
-      tenant_id:
+      tenantId:
         type: "integer"
         description: "A unique ID for a tenant"
-      template_name:
+      templateName:
         type: "string"
         description: "The name of the template given by the admin"
       description:
         type: "string"
         description: "A description for the template given by the admin"
-      data:
+      templateScript:
         type: "string"
         description: "This indicates the script of the template"
     example:
-      tenant_id: 2
-      template_name: "template_name"
-      data: "data"
-      description: "description"
-      template_id: 3
+      templateId: 3
+      tenantId: -1234
+      templateName: "sample template name"
+      description: "sample description"
+      templateScript: "sample script"
   UpdateTemplateRequest:
     type: "object"
     required:
     - "data"
     properties:
-      template_name:
+      templateName:
         type: "string"
         description: "The name of the template given by the admin"
       description:
         type: "string"
         description: "A description for the template given by the admin"
-      data:
+      templateScript:
         type: "string"
         description: "This indicates the script of the template"
     example:
-      template_name: "template_name"
-      data: "data"
-      description: "description"
+      templateName: "sample template name"
+      description: "sample description"
+      templateScript: "sample template script"
   Error:
     type: "object"
     properties:
@@ -291,23 +283,23 @@ definitions:
   UpdateSuccessResponse:
     type: "object"
     properties:
-      tenant_id:
+      tenantId:
         type: "string"
       name:
         type: "string"
     example:
-      tenant_id: 1
-      name: "smapleTemplate"
+      tenantId: 1
+      name: "sample template name"
   AddTemplateResponse:
     type: "object"
     properties:
-      tenant_id:
+      tenantId:
         type: "string"
       name:
         type: "string"
     example:
-      tenant_id: 1
-      name: "smapleTemplate"
+      tenantId: 1
+      name: "sample template name"
   GetTemplatesResponse:
     type: "object"
     properties:
@@ -316,15 +308,5 @@ definitions:
       description:
         type: "string"
     example:
-      name: "smapleTemplate"
-      description: "description"
-  DeleteTemplateResponse:
-    type: "object"
-    properties:
-      token:
-        type: "string"
-      deleted-by:
-        type: "string"
-    example:
-      deleted-by: "deleted-by"
-      token: "token"
+      name: "sample template name"
+      description: "sample description"

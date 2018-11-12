@@ -20,8 +20,8 @@ public class UpdateTemplateRequestDTO  {
   
   private String description = null;
   
-  @NotNull
-  private String data = null;
+  
+  private String templateScript = null;
 
   
   /**
@@ -53,13 +53,13 @@ public class UpdateTemplateRequestDTO  {
   /**
    * This indicates the script of the template
    **/
-  @ApiModelProperty(required = true, value = "This indicates the script of the template")
-  @JsonProperty("data")
-  public String getData() {
-    return data;
+  @ApiModelProperty(value = "This indicates the script of the template")
+  @JsonProperty("templateScript")
+  public String getTemplateScript() {
+    return templateScript;
   }
-  public void setData(String data) {
-    this.data = data;
+  public void setTemplateScript(String templateScript) {
+    this.templateScript = templateScript;
   }
 
   
@@ -71,7 +71,7 @@ public class UpdateTemplateRequestDTO  {
     
     sb.append("  templateName: ").append(templateName).append("\n");
     sb.append("  description: ").append(description).append("\n");
-    sb.append("  data: ").append(data).append("\n");
+    sb.append("  templateScript: ").append(templateScript).append("\n");
     sb.append("}\n");
     return sb.toString();
   }
